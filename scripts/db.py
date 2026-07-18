@@ -62,7 +62,7 @@ CREATE INDEX IF NOT EXISTS idx_trades_month
 CREATE TABLE IF NOT EXISTS apartment_monthly_metrics (
   apartment_key   TEXT NOT NULL,
   reference_month TEXT NOT NULL,
-  area_group      INTEGER NOT NULL,
+  area_group      REAL NOT NULL,
   apt_name        TEXT NOT NULL,
   sgg_code        TEXT NOT NULL,
   umd_name        TEXT,
