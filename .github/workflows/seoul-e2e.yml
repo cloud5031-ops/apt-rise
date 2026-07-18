@@ -2,6 +2,9 @@ name: seoul-e2e-test
 on:
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   collect-and-compute:
     runs-on: ubuntu-latest
