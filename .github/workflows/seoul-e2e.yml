@@ -8,6 +8,7 @@ permissions:
 jobs:
   collect-and-compute:
     runs-on: ubuntu-latest
+    timeout-minutes: 30
     env:
       DATA_GO_KR_API_KEY: ${{ secrets.DATA_GO_KR_API_KEY }}
       RONE_API_KEY: ${{ secrets.RONE_API_KEY }}
