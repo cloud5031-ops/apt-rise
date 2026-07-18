@@ -176,6 +176,9 @@ def main():
     results.sort(key=lambda x: x["riseRate"], reverse=True)
     for i, r in enumerate(results, 1):
         r["rank"] = i
+        
+    if len(results) == 0:
+        sys.exit(f"오류: {ref_month} 기준 단지 순위 생성 실패. (유효한 거래 표본 부족)")
 
     os.makedirs(config.SITE_DATA_DIR, exist_ok=True)
     out = {
@@ -185,11 +188,20 @@ def main():
         "items": results[:300],
     }
     path = os.path.join(config.SITE_DATA_DIR, f"apt_rankings_{ref_month}.json")
-    with open(path, "w", encoding="utf-8") as f:
+    latest_path = os.path.join(config.SITE_DATA_DIR, "apt_rankings_latest.json")
+    
+    temp_path = path + ".tmp"
+    temp_latest_path = latest_path + ".tmp"
+    
+    with open(temp_path, "w", encoding="utf-8") as f:
         json.dump(out, f, ensure_ascii=False, indent=1)
-    with open(os.path.join(config.SITE_DATA_DIR, "apt_rankings_latest.json"), "w", encoding="utf-8") as f:
+    with open(temp_latest_path, "w", encoding="utf-8") as f:
         json.dump(out, f, ensure_ascii=False, indent=1)
-    print(f"단지 순위 {len(results)}건 → {path}")
+        
+    os.replace(temp_path, path)
+    os.replace(temp_latest_path, latest_path)
+    
+    print(f"단지 순위 {len(results)}건 정상 생성 완료 → {path}, {latest_path}")
 
 
 if __name__ == "__main__":

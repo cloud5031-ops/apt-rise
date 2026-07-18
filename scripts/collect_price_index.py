@@ -1,11 +1,6 @@
 """한국부동산원 R-ONE 아파트 매매가격지수 수집 (설계안 3장).
 
-실행:
-  python scripts/collect_price_index.py                  # 최근 2개월
-  python scripts/collect_price_index.py 202601 202606    # 기간 백필
-
-전년 동월 대비 계산을 위해 최초 1회는 13개월 이상 백필을 권장한다.
-예: python scripts/collect_price_index.py 202501 202606
+최신 공표월을 동적으로 탐색하고, 13개월간의 데이터를 수집하여 상승률을 계산합니다.
 """
 import sys
 from datetime import datetime, timezone
@@ -16,6 +11,44 @@ import config
 import db
 from utils import change_rate, recent_months, shift_month
 
+def check_data_exists(month: str) -> bool:
+    """해당 월에 데이터가 존재하는지 API 통신으로 확인합니다."""
+    try:
+        resp = requests.get(
+            config.RONE_ENDPOINT,
+            params={
+                "KEY": config.RONE_API_KEY,
+                "Type": "json",
+                "pIndex": 1,
+                "pSize": 1,
+                "STATBL_ID": config.RONE_STATBL_ID,
+                "DTACYCLE_CD": config.RONE_DTACYCLE_CD,
+                "WRTTIME_IDTFR_ID": month,
+            },
+            timeout=10,
+        )
+        if resp.status_code == 401 or resp.status_code == 403:
+            sys.exit("오류: R-ONE API 인증 실패 (API 키를 확인하세요)")
+        resp.raise_for_status()
+        data = resp.json()
+        
+        for block in data.get("SttsApiTblData", []):
+            if isinstance(block, dict) and "row" in block:
+                return len(block["row"]) > 0
+        return False
+    except requests.RequestException as e:
+        sys.exit(f"오류: R-ONE API 통신 실패 ({e})")
+        
+def find_latest_published_month() -> str:
+    """현재 월부터 최대 6개월 전까지 탐색하여 데이터가 존재하는 최신 월을 반환합니다."""
+    current_month = datetime.now().strftime("%Y%m")
+    for i in range(6):
+        test_month = shift_month(current_month, -i)
+        print(f"{test_month} 공표 여부 탐색 중...")
+        if check_data_exists(test_month):
+            print(f"최신 공표월 발견: {test_month}")
+            return test_month
+    sys.exit("오류: 최근 6개월 내에 발표된 R-ONE 가격지수 데이터가 없습니다.")
 
 def fetch_month(month: str) -> list[dict]:
     """해당 월 지수 전체 페이지 수집."""
@@ -36,7 +69,6 @@ def fetch_month(month: str) -> list[dict]:
         )
         resp.raise_for_status()
         data = resp.json()
-        # 응답 구조: {"SttsApiTblData": [{"head": [...]}, {"row": [...]}]}
         page_rows = []
         for block in data.get("SttsApiTblData", []):
             if isinstance(block, dict) and "row" in block:
@@ -48,7 +80,6 @@ def fetch_month(month: str) -> list[dict]:
             break
         page += 1
     return rows
-
 
 def save_month(conn, month: str, rows: list[dict]):
     now = datetime.now(timezone.utc).isoformat()
@@ -74,7 +105,7 @@ def save_month(conn, month: str, rows: list[dict]):
         )
         n += 1
     print(f"{month}: 지수 {n}건 저장")
-
+    return n
 
 def compute_rates(conn, month: str):
     """전월·3개월·전년 동월 대비 상승률 갱신 (설계안 3-2)."""
@@ -105,28 +136,31 @@ def compute_rates(conn, month: str):
             ),
         )
 
-
 def main():
     if not config.RONE_API_KEY:
         sys.exit("RONE_API_KEY 환경변수가 없습니다.")
-    if len(sys.argv) == 3:  # 백필 모드
-        start, end = sys.argv[1], sys.argv[2]
-        months = []
-        m = start
-        while m <= end:
-            months.append(m)
-            m = shift_month(m, 1)
-    else:  # 정기 수집: 최근 2개월 재수집 (설계안 3-4)
-        months = sorted(recent_months(2))
+        
+    latest_month = find_latest_published_month()
+    
+    # 최신 월 포함 과거 13개월 생성 (오름차순)
+    months = [shift_month(latest_month, -i) for i in range(12, -1, -1)]
+    print(f"수집 대상 13개월: {months}")
 
     conn = db.connect()
+    total_saved = 0
     for month in months:
-        save_month(conn, month, fetch_month(month))
+        count = save_month(conn, month, fetch_month(month))
+        if count == 0:
+            sys.exit(f"오류: {month}의 데이터가 0건입니다. 연속된 13개월 수집에 실패했습니다.")
+        total_saved += count
+        
     for month in months:
         compute_rates(conn, month)
+        
     conn.commit()
     conn.close()
-
+    
+    print(f"총 {total_saved}건의 가격지수가 성공적으로 수집/계산되었습니다.")
 
 if __name__ == "__main__":
     main()

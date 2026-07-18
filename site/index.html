@@ -8,7 +8,7 @@
 <style>
   :root{
     --ink:#191f28; --sub:#6b7684; --line:#e5e8eb; --bg:#fff; --panel:#f7f8fa;
-    --up:#d6293e; --down:#2563c9; /* 국내 시세 관례: 상승=적색, 하락=청색 */
+    --up:#d6293e; --down:#2563c9;
   }
   *{box-sizing:border-box; margin:0}
   body{font-family:"Pretendard Variable",Pretendard,-apple-system,sans-serif;
@@ -39,7 +39,6 @@
   .conf{font-size:.72rem; color:var(--sub); display:inline-block; margin-top:4px; line-height:1.3}
   .empty{padding:48px 0; text-align:center; color:var(--sub); font-size:.9rem}
   
-  /* 포탈 툴팁 및 아이콘 CSS */
   .warn-icon { cursor:help; display:inline-block; margin-left:4px; font-size:1rem; outline:none; }
   #portal-tooltip {
     position:fixed; z-index:9999; visibility:hidden; opacity:0;
@@ -70,8 +69,8 @@
   </header>
 
   <nav role="tablist">
-    <button role="tab" aria-selected="true"  data-tab="region">시군구 상승률</button>
-    <button role="tab" aria-selected="false" data-tab="apt">개별 아파트</button>
+    <button role="tab" aria-selected="true"  data-tab="region">시군구 상승률 <span id="tab-meta-region" style="font-weight:normal; font-size:0.8em; color:var(--sub);"></span></button>
+    <button role="tab" aria-selected="false" data-tab="apt">개별 아파트 <span id="tab-meta-apt" style="font-weight:normal; font-size:0.8em; color:var(--sub);"></span></button>
   </nav>
 
   <div id="aptFilters" class="filters" style="display:none;">
@@ -103,7 +102,6 @@
 </div>
 
 <script>
-// --- Portal Tooltip Logic ---
 let activeTooltipTarget = null;
 const portalTooltip = document.createElement('div');
 portalTooltip.id = 'portal-tooltip';
@@ -120,17 +118,12 @@ function showTooltip(target) {
   portalTooltip.innerHTML = reasons;
   activeTooltipTarget = target;
   
-  const rect = target.getBoundingClientRect();
-  
-  // 툴팁의 크기를 알아내기 위해 잠시 보이게 함 (opacity 0인 상태)
   portalTooltip.style.visibility = 'visible';
   const tipRect = portalTooltip.getBoundingClientRect();
+  const rect = target.getBoundingClientRect();
   
-  // 위치 계산
   let top = rect.top - tipRect.height - 10;
-  if(top < 10) { // 상단 공간 부족 시 아이콘 아래로
-    top = rect.bottom + 10;
-  }
+  if(top < 10) top = rect.bottom + 10;
   
   let left = rect.left + (rect.width / 2) - (tipRect.width / 2);
   if(left < 10) left = 10;
@@ -143,18 +136,10 @@ function showTooltip(target) {
   portalTooltip.classList.add('visible');
 }
 
-document.addEventListener('mouseover', e => {
-  if(e.target.classList.contains('warn-icon')) showTooltip(e.target);
-});
-document.addEventListener('mouseout', e => {
-  if(e.target.classList.contains('warn-icon')) hideTooltip();
-});
-document.addEventListener('focusin', e => {
-  if(e.target.classList.contains('warn-icon')) showTooltip(e.target);
-});
-document.addEventListener('focusout', e => {
-  if(e.target.classList.contains('warn-icon')) hideTooltip();
-});
+document.addEventListener('mouseover', e => { if(e.target.classList.contains('warn-icon')) showTooltip(e.target); });
+document.addEventListener('mouseout', e => { if(e.target.classList.contains('warn-icon')) hideTooltip(); });
+document.addEventListener('focusin', e => { if(e.target.classList.contains('warn-icon')) showTooltip(e.target); });
+document.addEventListener('focusout', e => { if(e.target.classList.contains('warn-icon')) hideTooltip(); });
 document.addEventListener('click', e => {
   if(e.target.classList.contains('warn-icon')) {
     if(activeTooltipTarget === e.target) hideTooltip();
@@ -163,12 +148,9 @@ document.addEventListener('click', e => {
     hideTooltip();
   }
 });
-document.addEventListener('keydown', e => {
-  if(e.key === 'Escape') hideTooltip();
-});
+document.addEventListener('keydown', e => { if(e.key === 'Escape') hideTooltip(); });
 window.addEventListener('scroll', hideTooltip, {passive:true});
 window.addEventListener('resize', hideTooltip, {passive:true});
-// -----------------------------
 
 
 const state = { tab: "region", region: null, apt: null };
@@ -178,7 +160,6 @@ const rate = v => v == null ? "–" :
   `<span class="rate ${v>0?"up":v<0?"down":""}">${v>0?"+":""}${v.toFixed(2)}%</span>`;
 const confLabel = { high:"높음", medium:"보통", low:"낮음" };
 
-// 필터 이벤트 리스너 추가
 document.querySelectorAll('input[name="confFilter"]').forEach(radio => {
   radio.addEventListener('change', () => paint());
 });
@@ -186,13 +167,16 @@ document.querySelectorAll('input[name="confFilter"]').forEach(radio => {
 async function load(name){
   try{
     const r = await fetch(`data/${name}_rankings_latest.json`, {cache:"no-store"});
-    if(!r.ok) throw 0;
-    return await r.json();
-  }catch{ return null; }
+    if(!r.ok) return { error: true };
+    const data = await r.json();
+    return data;
+  }catch{ return { error: true }; }
 }
 
 function renderRegion(d){
-  if(!d || !d.items.length) return `<p class="empty">아직 지역 데이터가 없습니다.<br>collect_price_index.py → compute_region_rankings.py 순으로 실행해 주세요.</p>`;
+  if(d && d.error) return `<p class="empty">데이터 파일을 불러오지 못했습니다.</p>`;
+  if(!d || !d.items || d.items.length === 0) return `<p class="empty">현재 조건에 해당하는 지역 순위 결과가 없습니다.</p>`;
+  
   const max = Math.max(...d.items.map(i=>Math.abs(i.momRate||0)), 0.01);
   const rows = d.items.slice(0,50).map(i=>`
     <tr><td>${i.rank}</td><td class="name">${i.regionName}</td>
@@ -217,7 +201,8 @@ function formatPeriod(m) {
 }
 
 function renderApt(d){
-  if(!d || !d.items.length) return `<p class="empty">아직 단지 데이터가 없습니다.<br>collect_trades.py → compute_apt_rankings.py 순으로 실행해 주세요.</p>`;
+  if(d && d.error) return `<p class="empty">데이터 파일을 불러오지 못했습니다.</p>`;
+  if(!d || !d.items || d.items.length === 0) return `<p class="empty">현재 조건에 해당하는 아파트 순위 결과가 없습니다.</p>`;
   
   const { baseStr, curStr } = formatPeriod(d.referenceMonth);
   const filterVal = document.querySelector('input[name="confFilter"]:checked').value;
@@ -228,7 +213,6 @@ function renderApt(d){
 
   const rows = filteredItems.slice(0,100).map(i=>{
     const exact = i.exact_areas ? i.exact_areas.join(', ') : "";
-    // 포탈 툴팁을 위한 마크업 변경
     const warnHtml = i.composition_warning ? `<span class="warn-icon" tabindex="0" data-reasons="${(i.warning_reasons||[]).join('<br>')}">⚠️</span>` : "";
     const dtInfo = (i.baseline_direct_trade_count || i.current_direct_trade_count) ? 
       `<div style="font-size:0.75rem; color:#d6293e; margin-top:2px;">직거래 이력 (과거 ${i.baseline_direct_trade_count||0}건, 현재 ${i.current_direct_trade_count||0}건)</div>` : "";
@@ -254,7 +238,7 @@ function renderApt(d){
     </tr>`;
   }).join("");
   
-  if(!rows) return `<p class="empty">조건에 맞는 결과가 없습니다.</p>`;
+  if(!rows) return `<p class="empty">현재 조건에 해당하는 아파트 순위 결과가 없습니다.</p>`;
 
   return `<table><thead><tr><th>순위</th><th>단지</th>
     <th class="hide-m">기준가<br><span style="font-weight:normal;font-size:0.75rem">${baseStr}</span></th>
@@ -263,18 +247,23 @@ function renderApt(d){
     <tbody>${rows}</tbody></table>`;
 }
 
+function updateTabMeta(d, idPrefix) {
+  const metaSpan = document.getElementById(`tab-meta-${idPrefix}`);
+  if(d && !d.error && d.referenceMonth) {
+    const m = d.referenceMonth;
+    metaSpan.innerHTML = `· ${m.slice(0,4)}년 ${+m.slice(4)}월 기준`;
+  } else {
+    metaSpan.innerHTML = ``;
+  }
+}
+
 function paint(){
   const d = state[state.tab];
   document.getElementById("aptFilters").style.display = state.tab === "apt" ? "flex" : "none";
-  document.getElementById("content").innerHTML =
-    state.tab === "region" ? renderRegion(d) : renderApt(d);
-    
-  const meta = document.getElementById("meta");
-  if(d){
-    const m = d.referenceMonth;
-    meta.innerHTML = `${m.slice(0,4)}년 ${+m.slice(4)}월 기준` +
-      (d.status === "provisional" ? `<span class="badge">잠정 집계</span>` : "");
-  } else meta.textContent = "데이터 없음";
+  document.getElementById("content").innerHTML = state.tab === "region" ? renderRegion(d) : renderApt(d);
+  
+  // 전체 헤더의 meta 설명 제거, 탭 안에서 기준월 처리
+  document.getElementById("meta").innerHTML = "매일 업데이트되는 실거래 데이터 기반의 실시간 랭킹입니다.";
 }
 
 document.querySelectorAll("nav button").forEach(b=>b.addEventListener("click",()=>{
@@ -284,6 +273,8 @@ document.querySelectorAll("nav button").forEach(b=>b.addEventListener("click",()
 
 (async()=>{
   [state.region, state.apt] = await Promise.all([load("region"), load("apt")]);
+  updateTabMeta(state.region, 'region');
+  updateTabMeta(state.apt, 'apt');
   paint();
 })();
 </script>

@@ -53,6 +53,9 @@ jobs:
       - name: 지역 순위 계산
         run: python scripts/compute_region_rankings.py
 
+      - name: 데이터 무결성 깐깐한 검증
+        run: python scripts/validate_json.py
+
       - name: 결과 JSON만 커밋 & 푸시
         run: |
           git config user.name "github-actions"
