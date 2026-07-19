@@ -43,7 +43,7 @@ jobs:
         env:
           DATA_GO_KR_API_KEY: ${{ secrets.DATA_GO_KR_API_KEY }}
         run: |
-          rm -f apt_rise.db run_meta.json
+          rm -f data/apt.sqlite run_meta.json
           python scripts/db.py
           python scripts/collect_trades.py --region-group seoul --stable-month ${{ steps.parse_manifest.outputs.stable_month }} --provisional-month ${{ steps.parse_manifest.outputs.provisional_month }}
 
@@ -54,7 +54,7 @@ jobs:
         env:
           DATA_GO_KR_API_KEY: ${{ secrets.DATA_GO_KR_API_KEY }}
         run: |
-          rm -f apt_rise.db run_meta.json
+          rm -f data/apt.sqlite run_meta.json
           python scripts/db.py
           python scripts/collect_trades.py --region-group gyeonggi_incheon --stable-month ${{ steps.parse_manifest.outputs.stable_month }} --provisional-month ${{ steps.parse_manifest.outputs.provisional_month }}
 

@@ -170,30 +170,48 @@ def compute_for_month(conn, ref_month: str, regions: dict, now: str, status: str
             and rise_amount >= config.MIN_RISE_AMOUNT
             and rise_rate >= config.MIN_RISE_RATE
         ):
-            results.append({
-                "region": f"{regions.get(g['sgg_code'], g['sgg_code'])} {g['umd_name'] or ''}".strip(),
+            from shard_schema import normalize_code
+            sgg_str = normalize_code(g["sgg_code"], 5)
+            sido_str = sgg_str[:2]
+            
+            # apt_seq는 현재 g에 없음, 하지만 apt_key 생성 시 원본이 뭐였는지 알 수 있거나 그냥 apartmentKey 자체를 쓴다.
+            # apt_key는 utils.py의 apartment_key()에서 생성된 문자열.
+            # aptSeq 필드는 필수가 되었으므로, 만약 apt_key가 sgg_code-번호 형태면 번호를 추출하거나 apt_key 자체를 aptSeq로 사용할 수 있다.
+            # 가장 좋은 방법은 g에 apt_seq를 저장하는 것. 일단 apt_key에서 파생하거나 apt_key를 쓴다.
+            # wait, I'll extract it if it has dash, else it's the whole key.
+            apt_seq_val = apt_key.split("-", 1)[1] if "-" in apt_key else apt_key
+            
+            item = {
                 "apartmentKey": apt_key,
+                "aptSeq": apt_seq_val,
                 "apartmentName": g["apt_name"],
-                "area_group": ag,
-                "exact_areas": list(g["exact_areas"]),
-                "baseline_median_floor": base_med_floor,
-                "current_median_floor": cur_med_floor,
-                "baseline_direct_trade_count": base_direct_count,
-                "current_direct_trade_count": cur_direct_count,
-                "floor_mix_warning": floor_mix_warning,
-                "direct_trade_warning": direct_trade_warning,
-                "composition_warning": composition_warning,
-                "warning_reasons": warning_reasons,
-                "exclusiveAreaGroup": ag,
-                "currentMedianPrice": cur_median,
-                "baselineMedianPrice": base_median,
+                "sidoCode": sido_str,
+                "sggCode": sgg_str,
+                "areaGroup": ag,
+                "referenceMonth": ref_month,
+                "baselineMedian": base_median,
+                "currentMedian": cur_median,
                 "riseAmount": rise_amount,
                 "riseRate": rise_rate,
-                "currentTradeCount": len(cur_prices),
                 "baselineTradeCount": len(base_prices),
+                "currentTradeCount": len(cur_prices),
                 "confidence": conf,
-                "calculation_version": "v1.1",
-            })
+                "warnings": warning_reasons,
+                
+                # 기존 랭킹에 쓰이던 부가 정보 (선택적이지만 UI에서 쓸 수 있음)
+                "region": f"{regions.get(g['sgg_code'], g['sgg_code'])} {g['umd_name'] or ''}".strip(),
+                "exactAreas": list(g["exact_areas"]),
+                "baselineMedianFloor": base_med_floor,
+                "currentMedianFloor": cur_med_floor,
+                "baselineDirectTradeCount": base_direct_count,
+                "currentDirectTradeCount": cur_direct_count,
+                "floorMixWarning": floor_mix_warning,
+                "directTradeWarning": direct_trade_warning,
+                "compositionWarning": composition_warning,
+                "exclusiveAreaGroup": ag,
+                "calculationVersion": "v1.1",
+            }
+            results.append(item)
 
     results.sort(key=lambda x: x["riseRate"], reverse=True)
     for i, r in enumerate(results, 1):
@@ -298,6 +316,12 @@ def main():
                 "items": items
             }
             path = os.path.join(config.SHARDS_DIR, month, status, f"{args.region_group}.json")
+            
+            from shard_schema import validate_item
+            included = run_meta.get("includedSidoCodes", [])
+            for i, it in enumerate(items):
+                validate_item(it, i, included, path)
+                
             save_json_atomically(shard_data, path)
             print(f"Shard 생성 완료: {path} ({valid_status}, {len(items)}건)")
             

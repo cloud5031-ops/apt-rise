@@ -3,6 +3,8 @@ import glob
 import sys
 import os
 
+from shard_schema import validate_item
+
 def validate_shard(path: str):
     print(f"Shard 검증 중: {path}")
     try:
@@ -15,31 +17,10 @@ def validate_shard(path: str):
     if not included_sidos:
         sys.exit(f"오류: {path} 에 'includedSidoCodes' 메타데이터가 없거나 비어 있습니다.")
 
-    region_group = data.get("regionGroup")
     items = data.get("items", [])
     
     for i, item in enumerate(items):
-        sido_code = item.get("sidoCode")
-        sgg_code = item.get("sggCode")
-        apt_key = item.get("apartmentKey")
-        
-        if not sido_code or not sgg_code or not apt_key:
-            sys.exit(f"오류: {path} 의 {i}번째 item에 필수 코드(sidoCode, sggCode, apartmentKey)가 누락되었습니다.")
-            
-        # sidoCode 검증
-        if sido_code not in included_sidos:
-            print(f"오류: {path} 의 item(apartmentKey: {apt_key})이 포함되지 않은 sidoCode({sido_code})를 가지고 있습니다. 허용된 코드: {included_sidos}")
-            sys.exit(1)
-            
-        # sggCode 앞 2자리 검증
-        if not sgg_code.startswith(sido_code):
-            print(f"오류: {path} 의 item(apartmentKey: {apt_key})의 sggCode({sgg_code})가 sidoCode({sido_code})와 일치하지 않습니다.")
-            sys.exit(1)
-            
-        # apartmentKey 앞부분 검증 (apartmentKey가 {sggCode}-... 형식이어야 함)
-        if not apt_key.startswith(sgg_code):
-            print(f"오류: {path} 의 item(apartmentKey: {apt_key})이 sggCode({sgg_code})로 시작하지 않습니다.")
-            sys.exit(1)
+        validate_item(item, i, included_sidos, path)
 
 def main():
     import argparse

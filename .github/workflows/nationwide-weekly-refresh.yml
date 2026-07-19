@@ -39,7 +39,7 @@ jobs:
         env:
           DATA_GO_KR_API_KEY: ${{ secrets.DATA_GO_KR_API_KEY }}
         run: |
-          rm -f apt_rise.db run_meta.json
+          rm -f data/apt.sqlite run_meta.json
           python scripts/db.py
           python scripts/collect_trades.py --region-group seoul
           python scripts/compute_apt_rankings.py --region-group seoul
@@ -48,7 +48,7 @@ jobs:
         env:
           DATA_GO_KR_API_KEY: ${{ secrets.DATA_GO_KR_API_KEY }}
         run: |
-          rm -f apt_rise.db run_meta.json
+          rm -f data/apt.sqlite run_meta.json
           python scripts/db.py
           python scripts/collect_trades.py --region-group gyeonggi_incheon
           python scripts/compute_apt_rankings.py --region-group gyeonggi_incheon
@@ -57,7 +57,7 @@ jobs:
         env:
           DATA_GO_KR_API_KEY: ${{ secrets.DATA_GO_KR_API_KEY }}
         run: |
-          rm -f apt_rise.db run_meta.json
+          rm -f data/apt.sqlite run_meta.json
           python scripts/db.py
           python scripts/collect_trades.py --region-group metro
           python scripts/compute_apt_rankings.py --region-group metro
@@ -66,7 +66,7 @@ jobs:
         env:
           DATA_GO_KR_API_KEY: ${{ secrets.DATA_GO_KR_API_KEY }}
         run: |
-          rm -f apt_rise.db run_meta.json
+          rm -f data/apt.sqlite run_meta.json
           python scripts/db.py
           python scripts/collect_trades.py --region-group central
           python scripts/compute_apt_rankings.py --region-group central
@@ -75,7 +75,7 @@ jobs:
         env:
           DATA_GO_KR_API_KEY: ${{ secrets.DATA_GO_KR_API_KEY }}
         run: |
-          rm -f apt_rise.db run_meta.json
+          rm -f data/apt.sqlite run_meta.json
           python scripts/db.py
           python scripts/collect_trades.py --region-group south
           python scripts/compute_apt_rankings.py --region-group south
