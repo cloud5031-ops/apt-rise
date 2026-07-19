@@ -210,9 +210,24 @@ def main():
     import argparse
     parser = argparse.ArgumentParser()
     parser.add_argument("--region-group", help="권역 그룹 (shard 생성 모드)")
+    parser.add_argument("--stable-month", help="고정 기준월 (안정 집계)")
+    parser.add_argument("--provisional-month", help="고정 기준월 (잠정 집계)")
     args = parser.parse_args()
 
-    months_info = get_dynamic_months()
+    from utils import get_dynamic_months, validate_fixed_months
+    
+    # 자동 모드 vs 고정 모드 검증
+    if bool(args.stable_month) != bool(args.provisional_month):
+        sys.exit("오류: --stable-month와 --provisional-month는 둘 다 지정하거나 둘 다 생략해야 합니다.")
+        
+    if args.stable_month and args.provisional_month:
+        try:
+            months_info = validate_fixed_months(args.stable_month, args.provisional_month)
+        except ValueError as e:
+            sys.exit(f"오류: 기준월 검증 실패 - {e}")
+    else:
+        months_info = get_dynamic_months()
+        
     stable_month = months_info["stableMonth"]
     provisional_month = months_info["provisionalMonth"]
     

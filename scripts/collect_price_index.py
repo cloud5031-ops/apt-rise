@@ -169,12 +169,62 @@ def compute_rates(conn, month: str):
             ),
         )
 
+def set_github_output(name, value):
+    import os
+    gh_output = os.environ.get("GITHUB_OUTPUT")
+    if gh_output:
+        with open(gh_output, "a", encoding="utf-8") as f:
+            f.write(f"{name}={value}\n")
+    else:
+        print(f"::set-output name={name}::{value}")
+
 def main():
     if not config.RONE_API_KEY:
         sys.exit("RONE_API_KEY 환경변수가 없습니다.")
         
     session = get_session()
     latest_month = find_latest_published_month(session)
+    
+    # ── NO-OP 로직 판단 ──
+    import os, json
+    latest_json_path = os.path.join(config.SITE_DATA_DIR, "region_rankings_latest.json")
+    date_json_path = os.path.join(config.SITE_DATA_DIR, f"region_rankings_{latest_month}.json")
+    
+    is_noop = False
+    if os.path.exists(latest_json_path) and os.path.exists(date_json_path):
+        try:
+            with open(latest_json_path, "r", encoding="utf-8") as f:
+                latest_data = json.load(f)
+            with open(date_json_path, "r", encoding="utf-8") as f:
+                date_data = json.load(f)
+                
+            # 필수 조건 검증
+            if (
+                latest_data.get("referenceMonth") == latest_month and
+                date_data.get("referenceMonth") == latest_month and
+                isinstance(latest_data.get("items"), list) and
+                len(latest_data["items"]) > 0 and
+                latest_data.get("schemaVersion") == "v1.0" and
+                latest_data.get("calculationVersion") == "v1.1"
+            ):
+                # NaN, Infinity 점검 (json 파서는 기본으로 float 처리 가능하지만 엄격히 검사)
+                has_invalid_num = False
+                for it in latest_data["items"]:
+                    for k in ["riseRate", "riseAmount", "priceIndex"]:
+                        val = it.get(k)
+                        if isinstance(val, float) and (val != val or val == float('inf') or val == float('-inf')):
+                            has_invalid_num = True
+                            break
+                if not has_invalid_num:
+                    is_noop = True
+        except Exception as e:
+            print(f"경고: 기존 JSON 파일 검증 중 오류 발생. 새로 수집합니다 ({e})")
+            
+    if is_noop:
+        print(f"NO-OP: 최신 공표월({latest_month})의 데이터가 이미 정상적으로 존재합니다.")
+        set_github_output("action", "no_op")
+        set_github_output("reference_month", latest_month)
+        sys.exit(0)
     
     # 최신 월 포함 과거 13개월 생성 (오름차순)
     months = [shift_month(latest_month, -i) for i in range(12, -1, -1)]
@@ -212,6 +262,9 @@ def main():
     conn.close()
     
     print(f"총 {total_saved}건의 가격지수가 성공적으로 수집/계산되었습니다.")
+    set_github_output("action", "updated")
+    set_github_output("reference_month", latest_month)
+    set_github_output("item_count", total_saved)
 
 if __name__ == "__main__":
     main()

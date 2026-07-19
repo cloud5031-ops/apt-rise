@@ -96,6 +96,36 @@ def get_dynamic_months() -> dict:
     }
 
 
+def validate_fixed_months(stable_month: str, provisional_month: str) -> dict:
+    """고정된 안정/잠정 월을 검증하고 필요한 target_months를 반환합니다."""
+    if not re.match(r"^\d{6}$", stable_month) or not re.match(r"^\d{6}$", provisional_month):
+        raise ValueError("월은 YYYYMM 형식이어야 합니다.")
+        
+    expected_prov = shift_month(stable_month, 1)
+    if provisional_month != expected_prov:
+        raise ValueError(f"잠정월({provisional_month})은 안정월({stable_month})의 정확히 다음 달이어야 합니다.")
+        
+    start_month = shift_month(stable_month, -3)
+    target_months = []
+    m = start_month
+    while m <= provisional_month:
+        target_months.append(m)
+        m = shift_month(m, 1)
+        
+    # 오름차순 검증 (while 루프로 생성했으므로 당연히 성립하지만 명시적 확인)
+    if target_months != sorted(target_months):
+        raise ValueError("월 목록이 오름차순 정렬되지 않았습니다.")
+        
+    if len(target_months) != 5:
+        raise ValueError(f"필요한 연속 5개월이 수집되지 않았습니다. ({len(target_months)}개)")
+        
+    return {
+        "provisionalMonth": provisional_month,
+        "stableMonth": stable_month,
+        "targetMonths": target_months
+    }
+
+
 def parse_deal_amount(raw: str) -> int:
     """'125,000' (만원) → 1,250,000,000 (원)."""
     return int(raw.replace(",", "").strip()) * 10_000

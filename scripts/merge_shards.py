@@ -95,7 +95,26 @@ def save_json_atomically(data: dict, filepath: str):
     os.replace(temp_path, filepath)
 
 def main():
-    months_info = get_dynamic_months()
+    import argparse
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--stable-month", help="고정 기준월 (안정 집계)")
+    parser.add_argument("--provisional-month", help="고정 기준월 (잠정 집계)")
+    args = parser.parse_args()
+
+    from utils import get_dynamic_months, validate_fixed_months
+    
+    # 자동 모드 vs 고정 모드 검증
+    if bool(args.stable_month) != bool(args.provisional_month):
+        sys.exit("오류: --stable-month와 --provisional-month는 둘 다 지정하거나 둘 다 생략해야 합니다.")
+        
+    if args.stable_month and args.provisional_month:
+        try:
+            months_info = validate_fixed_months(args.stable_month, args.provisional_month)
+        except ValueError as e:
+            sys.exit(f"오류: 기준월 검증 실패 - {e}")
+    else:
+        months_info = get_dynamic_months()
+        
     stable_month = months_info["stableMonth"]
     provisional_month = months_info["provisionalMonth"]
     now = datetime.now(zoneinfo.ZoneInfo("Asia/Seoul")).isoformat()
@@ -109,11 +128,16 @@ def main():
     if len(stable_items) == 0:
         sys.exit("오류: 병합 후 안정 집계 항목이 0건입니다.")
         
+    region_updated_at = {}
+    for s in stable_shards:
+        region_updated_at[s["regionGroup"]] = s["generatedAt"]
+        
     # 2. 잠정 집계 병합
     provisional_shards = load_and_validate_shards(provisional_month, "provisional")
     provisional_items = []
     if provisional_shards:
         provisional_items = merge_and_sort(provisional_shards)
+        # 잠정 집계에서도 regionUpdatedAt을 반영할 수 있으나 보통 안정/잠정은 같은 수집 루프에서 생성이므로 동일시간
     
     # 3. 배포
     os.makedirs(config.SITE_DATA_DIR, exist_ok=True)
@@ -135,6 +159,7 @@ def main():
         "stableFile": f"apt_rankings_{stable_month}.json",
         "latestFile": "apt_rankings_latest.json",
         "generatedAt": now,
+        "regionUpdatedAt": region_updated_at,
     }
     
     if provisional_items:

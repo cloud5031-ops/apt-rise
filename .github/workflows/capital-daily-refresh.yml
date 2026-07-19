@@ -1,0 +1,87 @@
+name: Capital Daily Refresh
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '17 4 * * 1-6'
+
+concurrency:
+  group: apt-rise-data-write
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  capital-daily:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests
+
+      - name: Setup DB
+        run: python scripts/db.py
+
+      - name: Parse and Validate Manifest
+        id: parse_manifest
+        run: python scripts/verify_manifest.py
+
+      - name: Collect Trades (Seoul)
+        env:
+          DATA_GO_KR_API_KEY: ${{ secrets.DATA_GO_KR_API_KEY }}
+        run: python scripts/collect_trades.py --region-group seoul --stable-month ${{ steps.parse_manifest.outputs.stable_month }} --provisional-month ${{ steps.parse_manifest.outputs.provisional_month }}
+
+      - name: Compute Apt Rankings (Seoul)
+        run: python scripts/compute_apt_rankings.py --region-group seoul --stable-month ${{ steps.parse_manifest.outputs.stable_month }} --provisional-month ${{ steps.parse_manifest.outputs.provisional_month }}
+
+      - name: Collect Trades (Gyeonggi Incheon)
+        env:
+          DATA_GO_KR_API_KEY: ${{ secrets.DATA_GO_KR_API_KEY }}
+        run: python scripts/collect_trades.py --region-group gyeonggi_incheon --stable-month ${{ steps.parse_manifest.outputs.stable_month }} --provisional-month ${{ steps.parse_manifest.outputs.provisional_month }}
+
+      - name: Compute Apt Rankings (Gyeonggi Incheon)
+        run: python scripts/compute_apt_rankings.py --region-group gyeonggi_incheon --stable-month ${{ steps.parse_manifest.outputs.stable_month }} --provisional-month ${{ steps.parse_manifest.outputs.provisional_month }}
+
+      - name: Merge Shards
+        run: python scripts/merge_shards.py --stable-month ${{ steps.parse_manifest.outputs.stable_month }} --provisional-month ${{ steps.parse_manifest.outputs.provisional_month }}
+
+      - name: Validate JSON
+        run: python scripts/validate_json.py
+
+      - name: Push Shards and National JSON
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/shards/*/seoul.json
+          git add data/shards/*/gyeonggi_incheon.json
+          git add site/data/apt_rankings_*.json
+          git commit -m "Update capital apt rankings" || echo "No changes to commit"
+          
+          # 재시도 루프 (최대 3회)
+          for i in {1..4}; do
+            git fetch origin main
+            git rebase origin/main
+            if git push origin HEAD:main; then
+              echo "Push successful."
+              break
+            fi
+            if [ $i -eq 4 ]; then
+              echo "Push failed after 3 retries"
+              exit 1
+            fi
+            echo "Push conflict, retrying in 5 seconds..."
+            sleep 5
+          done

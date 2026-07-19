@@ -121,12 +121,26 @@ def main():
         sys.exit("DATA_GO_KR_API_KEY 환경변수가 없습니다.")
     parser = argparse.ArgumentParser()
     parser.add_argument("--sgg", nargs="*", help="시군구 코드 (생략 시 regions.json 전체)")
-    parser.add_argument("--months", nargs="*", help="YYYYMM (생략 시 최근 3개월)")
+    parser.add_argument("--stable-month", help="고정 기준월 (안정 집계)")
+    parser.add_argument("--provisional-month", help="고정 기준월 (잠정 집계)")
     parser.add_argument("--region-group", help="권역 그룹 (seoul, gyeonggi_incheon 등)")
     args = parser.parse_args()
 
-    from utils import get_dynamic_months
-    months = args.months or get_dynamic_months()["targetMonths"]
+    from utils import get_dynamic_months, validate_fixed_months
+    
+    # 자동 모드 vs 고정 모드 검증
+    if bool(args.stable_month) != bool(args.provisional_month):
+        sys.exit("오류: --stable-month와 --provisional-month는 둘 다 지정하거나 둘 다 생략해야 합니다.")
+        
+    if args.stable_month and args.provisional_month:
+        try:
+            months_info = validate_fixed_months(args.stable_month, args.provisional_month)
+        except ValueError as e:
+            sys.exit(f"오류: 기준월 검증 실패 - {e}")
+    else:
+        months_info = get_dynamic_months()
+        
+    months = months_info["targetMonths"]
     
     with open(config.REGIONS_PATH, encoding="utf-8") as f:
         all_regions = json.load(f)

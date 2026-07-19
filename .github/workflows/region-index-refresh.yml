@@ -2,6 +2,8 @@ name: Region Index Refresh
 
 on:
   workflow_dispatch:
+  schedule:
+    - cron: '43 6 * * 0'
 
 concurrency:
   group: apt-rise-data-write
@@ -34,18 +36,22 @@ jobs:
         run: python scripts/db.py
 
       - name: Collect Region Price Indices
+        id: collect
         env:
           RONE_API_KEY: ${{ secrets.RONE_API_KEY }}
           RONE_STATBL_ID: ${{ env.RONE_STATBL_ID || 'A_2024_00045' }}
         run: python scripts/collect_price_index.py
 
       - name: Compute Region Rankings
+        if: steps.collect.outputs.action == 'updated'
         run: python scripts/compute_region_rankings.py
 
       - name: Validate JSON
+        if: steps.collect.outputs.action == 'updated'
         run: python scripts/validate_json.py
 
       - name: Push Region Index JSON
+        if: steps.collect.outputs.action == 'updated'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
