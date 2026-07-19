@@ -57,9 +57,34 @@ def load_groups(conn, months: list[str]) -> dict:
 def compute_for_month(conn, ref_month: str, regions: dict, now: str, status: str):
     baseline = [shift_month(ref_month, -i) for i in range(1, config.BASELINE_MONTHS + 1)]
     results = []
+    
+    # ── 기초 통계 데이터 계산 ──
+    # 해당 월의 전체 거래(취소 포함, 직거래 포함 등) 건수 측정
+    raw_cur = conn.execute(
+        "SELECT COUNT(*) as cnt, SUM(is_cancelled) as canc FROM apartment_trades WHERE deal_month = ?",
+        (ref_month,)
+    ).fetchone()
+    
+    raw_trade_count = raw_cur["cnt"] or 0
+    cancelled_trade_count = raw_cur["canc"] or 0
+    
+    # 직거래는 is_cancelled=0 중에 dealing_type에 '직'이 포함된 것
+    dir_cur = conn.execute(
+        "SELECT COUNT(*) as cnt FROM apartment_trades WHERE deal_month = ? AND is_cancelled=0 AND dealing_type LIKE '%직%'",
+        (ref_month,)
+    ).fetchone()
+    direct_trade_count = dir_cur["cnt"] or 0
+    
+    valid_trade_count = raw_trade_count - cancelled_trade_count
+    
+    groups = load_groups(conn, [ref_month] + baseline)
+    candidate_group_count = 0
 
-    for (apt_key, ag), g in load_groups(conn, [ref_month] + baseline).items():
+    for (apt_key, ag), g in groups.items():
         cur_trades = g["trades"].get(ref_month, [])
+        if not cur_trades:
+            continue
+        candidate_group_count += 1
         base_trades = [t for m in baseline for t in g["trades"].get(m, [])]
         
         # 중개거래만 가격 계산에 포함
@@ -138,6 +163,7 @@ def compute_for_month(conn, ref_month: str, regions: dict, now: str, status: str
         ):
             results.append({
                 "region": f"{regions.get(g['sgg_code'], g['sgg_code'])} {g['umd_name'] or ''}".strip(),
+                "apartmentKey": apt_key,
                 "apartmentName": g["apt_name"],
                 "area_group": ag,
                 "exact_areas": list(g["exact_areas"]),
@@ -164,7 +190,15 @@ def compute_for_month(conn, ref_month: str, regions: dict, now: str, status: str
     for i, r in enumerate(results, 1):
         r["rank"] = i
         
-    return results
+    stats = {
+        "rawTradeCount": raw_trade_count,
+        "validTradeCount": valid_trade_count,
+        "cancelledTradeCount": cancelled_trade_count,
+        "directTradeCount": direct_trade_count,
+        "candidateGroupCount": candidate_group_count,
+        "filteredOutGroupCount": candidate_group_count - len(results)
+    }
+    return results, stats
 
 def save_json_atomically(data: dict, filepath: str):
     temp_path = filepath + ".tmp"
@@ -173,6 +207,11 @@ def save_json_atomically(data: dict, filepath: str):
     os.replace(temp_path, filepath)
 
 def main():
+    import argparse
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--region-group", help="권역 그룹 (shard 생성 모드)")
+    args = parser.parse_args()
+
     months_info = get_dynamic_months()
     stable_month = months_info["stableMonth"]
     provisional_month = months_info["provisionalMonth"]
@@ -184,21 +223,69 @@ def main():
     }
     now = datetime.now(zoneinfo.ZoneInfo("Asia/Seoul")).isoformat()
     
+    run_meta = {}
+    if args.region_group:
+        meta_path = os.path.join(config.ROOT, "run_meta.json")
+        if os.path.exists(meta_path):
+            with open(meta_path, "r", encoding="utf-8") as f:
+                run_meta = json.load(f)
+        else:
+            sys.exit("오류: run_meta.json 파일이 없습니다. collect_trades.py가 성공적으로 실행되지 않았습니다.")
+            
     # 1. 안정 집계 계산
     print(f"=== 안정 집계 ({stable_month}) 계산 시작 ===")
-    stable_results = compute_for_month(conn, stable_month, regions, now, "stable")
-    if not stable_results:
-        sys.exit(f"오류: 안정 집계({stable_month}) 단지 순위 결과가 0건입니다. 워크플로를 중단합니다.")
+    stable_results, stable_stats = compute_for_month(conn, stable_month, regions, now, "stable")
     
     # 2. 잠정 집계 계산
     print(f"=== 잠정 집계 ({provisional_month}) 계산 시작 ===")
-    provisional_results = compute_for_month(conn, provisional_month, regions, now, "provisional")
+    provisional_results, prov_stats = compute_for_month(conn, provisional_month, regions, now, "provisional")
     conn.commit()
     conn.close()
-    
+
+    if args.region_group:
+        os.makedirs(os.path.join(config.SHARDS_DIR, stable_month, "stable"), exist_ok=True)
+        os.makedirs(os.path.join(config.SHARDS_DIR, provisional_month, "provisional"), exist_ok=True)
+        
+        def save_shard(month, status, items, stats):
+            valid_status = "valid" if len(items) > 0 else "valid_no_matches"
+            
+            if len(run_meta.get("failedSggCodes", [])) > 0:
+                sys.exit(f"오류: 실패한 지역 코드가 있습니다. Shard 저장을 건너뜁니다.")
+                
+            shard_data = {
+                "regionGroup": args.region_group,
+                "referenceMonth": month,
+                "status": status,
+                "validationStatus": valid_status,
+                "generatedAt": now,
+                "calculationVersion": "v1.1",
+                "schemaVersion": "v1.0",
+                "includedSidoCodes": run_meta.get("includedSidoCodes", []),
+                "expectedSggCodes": run_meta.get("expectedSggCodes", []),
+                "successfulSggCodes": run_meta.get("successfulSggCodes", []),
+                "failedSggCodes": run_meta.get("failedSggCodes", []),
+                "rawTradeCount": stats.get("rawTradeCount", 0),
+                "validTradeCount": stats.get("validTradeCount", 0),
+                "cancelledTradeCount": stats.get("cancelledTradeCount", 0),
+                "directTradeCount": stats.get("directTradeCount", 0),
+                "candidateGroupCount": stats.get("candidateGroupCount", 0),
+                "filteredOutGroupCount": stats.get("filteredOutGroupCount", 0),
+                "items": items
+            }
+            path = os.path.join(config.SHARDS_DIR, month, status, f"{args.region_group}.json")
+            save_json_atomically(shard_data, path)
+            print(f"Shard 생성 완료: {path} ({valid_status}, {len(items)}건)")
+            
+        save_shard(stable_month, "stable", stable_results, stable_stats)
+        save_shard(provisional_month, "provisional", provisional_results, prov_stats)
+        return
+
+    # 기존 방식 (전국 단일 실행 시)
+    if not stable_results:
+        sys.exit(f"오류: 안정 집계({stable_month}) 단지 순위 결과가 0건입니다. 워크플로를 중단합니다.")
+        
     os.makedirs(config.SITE_DATA_DIR, exist_ok=True)
     
-    # JSON 객체 생성
     stable_out = {
         "referenceMonth": stable_month,
         "status": "stable",
@@ -207,7 +294,6 @@ def main():
     }
     stable_path = os.path.join(config.SITE_DATA_DIR, f"apt_rankings_{stable_month}.json")
     latest_path = os.path.join(config.SITE_DATA_DIR, "apt_rankings_latest.json")
-    
     save_json_atomically(stable_out, stable_path)
     save_json_atomically(stable_out, latest_path)
     
@@ -230,15 +316,12 @@ def main():
         manifest["provisionalMonth"] = provisional_month
         manifest["provisionalFile"] = f"apt_rankings_{provisional_month}.json"
     else:
-        print(f"경고: 잠정 집계({provisional_month}) 결과가 0건입니다. 잠정 파일 생성을 건너뜁니다.")
         manifest["provisionalMonth"] = None
         manifest["provisionalFile"] = None
         
     manifest_path = os.path.join(config.SITE_DATA_DIR, "apt_rankings_manifest.json")
     save_json_atomically(manifest, manifest_path)
-    
     print(f"완료: 안정 집계 {len(stable_results)}건, 잠정 집계 {len(provisional_results)}건")
-    print(f"Manifest 파일 생성 완료: {manifest_path}")
 
 if __name__ == "__main__":
     main()

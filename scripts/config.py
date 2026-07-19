@@ -25,6 +25,16 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DB_PATH = os.path.join(ROOT, "data", "apt.sqlite")
 REGIONS_PATH = os.path.join(ROOT, "data", "regions.json")
 SITE_DATA_DIR = os.path.join(ROOT, "site", "data")
+SHARDS_DIR = os.path.join(ROOT, "data", "shards")
+
+# ── 권역 분류 (설계안 5개 권역) ──────────────────────────────────
+REGION_GROUPS = {
+    "seoul": ["11"],
+    "gyeonggi_incheon": ["41", "28"],
+    "metro": ["26", "27", "30", "29", "31"],
+    "central": ["36", "51", "43", "44"],
+    "south": ["52", "45", "46", "47", "48", "50"]
+}
 
 # ── 통계 기준 (설계안 7, 8장) ─────────────────────────────────────
 BASELINE_MONTHS = 3          # 기준가 = 직전 3개월 중위가격

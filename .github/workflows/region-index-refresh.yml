@@ -1,0 +1,69 @@
+name: Region Index Refresh
+
+on:
+  workflow_dispatch:
+
+concurrency:
+  group: apt-rise-data-write
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests urllib3
+
+      - name: Setup DB
+        run: python scripts/db.py
+
+      - name: Collect Region Price Indices
+        env:
+          RONE_API_KEY: ${{ secrets.RONE_API_KEY }}
+          RONE_STATBL_ID: ${{ env.RONE_STATBL_ID || 'A_2024_00045' }}
+        run: python scripts/collect_price_index.py
+
+      - name: Compute Region Rankings
+        run: python scripts/compute_region_rankings.py
+
+      - name: Validate JSON
+        run: python scripts/validate_json.py
+
+      - name: Push Region Index JSON
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add site/data/region_rankings_*.json
+          git commit -m "Update region price index rankings" || echo "No changes to commit"
+          
+          # 재시도 루프 (최대 3회)
+          for i in {1..4}; do
+            git fetch origin main
+            git rebase origin/main
+            if git push origin HEAD:main; then
+              echo "Push successful."
+              break
+            fi
+            if [ $i -eq 4 ]; then
+              echo "Push failed after 3 retries"
+              exit 1
+            fi
+            echo "Push conflict, retrying in 5 seconds..."
+            sleep 5
+          done
