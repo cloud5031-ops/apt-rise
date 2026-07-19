@@ -1,18 +1,18 @@
 """개별 아파트 상승률 계산 → 순위 JSON 생성 (설계안 7, 8, 12장).
 
 실행:
-  python scripts/compute_apt_rankings.py            # 이번 달 기준
-  python scripts/compute_apt_rankings.py 202606     # 기준월 지정
+  python scripts/compute_apt_rankings.py
 """
 import json
 import os
 import sys
 from collections import defaultdict
 from datetime import datetime, timezone
+import zoneinfo
 
 import config
 import db
-from utils import confidence, median, recent_months, shift_month
+from utils import confidence, median, shift_month, get_dynamic_months
 
 
 def floor_bucket(floor: int) -> str:
@@ -54,16 +54,8 @@ def load_groups(conn, months: list[str]) -> dict:
     return groups
 
 
-def main():
-    ref_month = sys.argv[1] if len(sys.argv) > 1 else recent_months(1)[0]
+def compute_for_month(conn, ref_month: str, regions: dict, now: str, status: str):
     baseline = [shift_month(ref_month, -i) for i in range(1, config.BASELINE_MONTHS + 1)]
-
-    conn = db.connect()
-    regions = {
-        r["sgg_code"]: r["full_name"]
-        for r in conn.execute("SELECT sgg_code, full_name FROM region_codes")
-    }
-    now = datetime.now(timezone.utc).isoformat()
     results = []
 
     for (apt_key, ag), g in load_groups(conn, [ref_month] + baseline).items():
@@ -119,7 +111,6 @@ def main():
             if conf == "high": conf = "medium"
             elif conf == "medium": conf = "low"
 
-        # 계산 결과는 전 단지 metrics 테이블에 저장 (재활용 대비)
         conn.execute(
             """INSERT INTO apartment_monthly_metrics
                (apartment_key, reference_month, area_group, apt_name, sgg_code, umd_name,
@@ -138,7 +129,6 @@ def main():
              rise_amount, rise_rate, conf, now),
         )
 
-        # 순위 JSON에는 필터 통과분만
         if (
             rise_rate is not None
             and len(cur_prices) >= config.MIN_CURRENT_TRADES
@@ -159,7 +149,7 @@ def main():
                 "direct_trade_warning": direct_trade_warning,
                 "composition_warning": composition_warning,
                 "warning_reasons": warning_reasons,
-                "exclusiveAreaGroup": ag,  # for compatibility
+                "exclusiveAreaGroup": ag,
                 "currentMedianPrice": cur_median,
                 "baselineMedianPrice": base_median,
                 "riseAmount": rise_amount,
@@ -170,39 +160,85 @@ def main():
                 "calculation_version": "v1.1",
             })
 
-    conn.commit()
-    conn.close()
-
     results.sort(key=lambda x: x["riseRate"], reverse=True)
     for i, r in enumerate(results, 1):
         r["rank"] = i
         
-    if len(results) == 0:
-        sys.exit(f"오류: {ref_month} 기준 단지 순위 생성 실패. (유효한 거래 표본 부족)")
+    return results
 
-    os.makedirs(config.SITE_DATA_DIR, exist_ok=True)
-    out = {
-        "referenceMonth": ref_month,
-        "status": "provisional",
-        "collectedAt": now,
-        "items": results[:300],
+def save_json_atomically(data: dict, filepath: str):
+    temp_path = filepath + ".tmp"
+    with open(temp_path, "w", encoding="utf-8") as f:
+        json.dump(data, f, ensure_ascii=False, indent=1)
+    os.replace(temp_path, filepath)
+
+def main():
+    months_info = get_dynamic_months()
+    stable_month = months_info["stableMonth"]
+    provisional_month = months_info["provisionalMonth"]
+    
+    conn = db.connect()
+    regions = {
+        r["sgg_code"]: r["full_name"]
+        for r in conn.execute("SELECT sgg_code, full_name FROM region_codes")
     }
-    path = os.path.join(config.SITE_DATA_DIR, f"apt_rankings_{ref_month}.json")
+    now = datetime.now(zoneinfo.ZoneInfo("Asia/Seoul")).isoformat()
+    
+    # 1. 안정 집계 계산
+    print(f"=== 안정 집계 ({stable_month}) 계산 시작 ===")
+    stable_results = compute_for_month(conn, stable_month, regions, now, "stable")
+    if not stable_results:
+        sys.exit(f"오류: 안정 집계({stable_month}) 단지 순위 결과가 0건입니다. 워크플로를 중단합니다.")
+    
+    # 2. 잠정 집계 계산
+    print(f"=== 잠정 집계 ({provisional_month}) 계산 시작 ===")
+    provisional_results = compute_for_month(conn, provisional_month, regions, now, "provisional")
+    conn.commit()
+    conn.close()
+    
+    os.makedirs(config.SITE_DATA_DIR, exist_ok=True)
+    
+    # JSON 객체 생성
+    stable_out = {
+        "referenceMonth": stable_month,
+        "status": "stable",
+        "collectedAt": now,
+        "items": stable_results[:300],
+    }
+    stable_path = os.path.join(config.SITE_DATA_DIR, f"apt_rankings_{stable_month}.json")
     latest_path = os.path.join(config.SITE_DATA_DIR, "apt_rankings_latest.json")
     
-    temp_path = path + ".tmp"
-    temp_latest_path = latest_path + ".tmp"
+    save_json_atomically(stable_out, stable_path)
+    save_json_atomically(stable_out, latest_path)
     
-    with open(temp_path, "w", encoding="utf-8") as f:
-        json.dump(out, f, ensure_ascii=False, indent=1)
-    with open(temp_latest_path, "w", encoding="utf-8") as f:
-        json.dump(out, f, ensure_ascii=False, indent=1)
+    manifest = {
+        "stableMonth": stable_month,
+        "stableFile": f"apt_rankings_{stable_month}.json",
+        "latestFile": "apt_rankings_latest.json",
+        "generatedAt": now,
+    }
+    
+    if provisional_results:
+        provisional_out = {
+            "referenceMonth": provisional_month,
+            "status": "provisional",
+            "collectedAt": now,
+            "items": provisional_results[:300],
+        }
+        provisional_path = os.path.join(config.SITE_DATA_DIR, f"apt_rankings_{provisional_month}.json")
+        save_json_atomically(provisional_out, provisional_path)
+        manifest["provisionalMonth"] = provisional_month
+        manifest["provisionalFile"] = f"apt_rankings_{provisional_month}.json"
+    else:
+        print(f"경고: 잠정 집계({provisional_month}) 결과가 0건입니다. 잠정 파일 생성을 건너뜁니다.")
+        manifest["provisionalMonth"] = None
+        manifest["provisionalFile"] = None
         
-    os.replace(temp_path, path)
-    os.replace(temp_latest_path, latest_path)
+    manifest_path = os.path.join(config.SITE_DATA_DIR, "apt_rankings_manifest.json")
+    save_json_atomically(manifest, manifest_path)
     
-    print(f"단지 순위 {len(results)}건 정상 생성 완료 → {path}, {latest_path}")
-
+    print(f"완료: 안정 집계 {len(stable_results)}건, 잠정 집계 {len(provisional_results)}건")
+    print(f"Manifest 파일 생성 완료: {manifest_path}")
 
 if __name__ == "__main__":
     main()

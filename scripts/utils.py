@@ -1,6 +1,7 @@
 """공통 계산 로직 (설계안 6, 7, 8장)."""
 import re
-from datetime import date
+from datetime import datetime
+import zoneinfo
 
 
 def median(values):
@@ -64,9 +65,35 @@ def shift_month(yyyymm: str, delta: int) -> str:
 def recent_months(n: int, base: str | None = None) -> list[str]:
     """이번 달 포함 최근 n개월 목록 (내림차순)."""
     if base is None:
-        today = date.today()
+        today = datetime.now(zoneinfo.ZoneInfo("Asia/Seoul"))
         base = f"{today.year:04d}{today.month:02d}"
     return [shift_month(base, -i) for i in range(n)]
+
+
+def get_dynamic_months() -> dict:
+    """Asia/Seoul 기준 현재 월을 제외하고 안정 집계월과 잠정 집계월, 수집 대상 월 목록을 반환합니다."""
+    today = datetime.now(zoneinfo.ZoneInfo("Asia/Seoul"))
+    current_month = f"{today.year:04d}{today.month:02d}"
+    
+    provisional_month = shift_month(current_month, -1)
+    stable_month = shift_month(current_month, -2)
+    
+    # 안정 집계 기준(stable_month)의 3개월 전부터 잠정 집계 기준(provisional_month)까지 수집 (총 5개월)
+    # 예: current=202607 -> provisional=202606, stable=202605 -> target=202602, 202603, 202604, 202605, 202606
+    start_month = shift_month(stable_month, -3)
+    
+    target_months = []
+    m = start_month
+    while m <= provisional_month:
+        target_months.append(m)
+        m = shift_month(m, 1)
+        
+    return {
+        "currentMonth": current_month,
+        "provisionalMonth": provisional_month,
+        "stableMonth": stable_month,
+        "targetMonths": target_months
+    }
 
 
 def parse_deal_amount(raw: str) -> int:

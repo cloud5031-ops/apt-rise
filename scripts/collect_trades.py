@@ -124,7 +124,8 @@ def main():
     parser.add_argument("--months", nargs="*", help="YYYYMM (생략 시 최근 3개월)")
     args = parser.parse_args()
 
-    months = args.months or recent_months(3)  # 설계안 9장: 현재 월 + 직전 2개월
+    from utils import get_dynamic_months
+    months = args.months or get_dynamic_months()["targetMonths"]
     if args.sgg:
         sgg_list = args.sgg
     else:

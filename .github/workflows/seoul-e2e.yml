@@ -41,15 +41,15 @@ jobs:
       - name: 법정동 코드 수집 (DB 초기화)
         run: python scripts/collect_region_codes.py
         
-      - name: 실거래가 수집 (서울 25개 구, 202502~202505)
+      - name: 실거래가 수집 (서울 25개 구, 동적 5개월)
         run: |
-          python scripts/collect_trades.py --sgg 11110 11140 11170 11200 11215 11230 11260 11290 11305 11320 11350 11380 11410 11440 11470 11500 11530 11545 11560 11590 11620 11650 11680 11710 11740 --months 202502 202503 202504 202505
+          python scripts/collect_trades.py --sgg 11110 11140 11170 11200 11215 11230 11260 11290 11305 11320 11350 11380 11410 11440 11470 11500 11530 11545 11560 11590 11620 11650 11680 11710 11740
 
       - name: 한국부동산원 가격지수 수집
         run: python scripts/collect_price_index.py
         
-      - name: 단지 순위 계산
-        run: python scripts/compute_apt_rankings.py 202505
+      - name: 단지 순위 계산 (동적 2개월 안정/잠정)
+        run: python scripts/compute_apt_rankings.py
         
       - name: 지역 순위 계산
         run: python scripts/compute_region_rankings.py

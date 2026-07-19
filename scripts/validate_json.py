@@ -14,10 +14,14 @@ def validate_file(path: str):
             data = json.load(f)
     except json.JSONDecodeError as e:
         sys.exit(f"오류: {path} 형식이 올바르지 않은 JSON입니다: {e}")
-        
+    if "manifest.json" in path:
+        if "stableMonth" not in data or "stableFile" not in data or "latestFile" not in data or "generatedAt" not in data:
+            sys.exit(f"오류: {path} 의 매니페스트 필수 키가 누락되었습니다.")
+        return
+
     if "referenceMonth" not in data:
         sys.exit(f"오류: {path} 에 'referenceMonth' 필드가 없습니다.")
-        
+
     if "generatedAt" not in data and "collectedAt" not in data:
         sys.exit(f"오류: {path} 에 생성 시각 필드가 없습니다.")
         

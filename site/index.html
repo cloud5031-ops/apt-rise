@@ -24,8 +24,14 @@
   nav button{border:0; background:none; font:inherit; font-weight:600; color:var(--sub);
              padding:10px 14px; cursor:pointer; border-bottom:2px solid transparent}
   nav button[aria-selected="true"]{color:var(--ink); border-bottom-color:var(--ink)}
-  .filters{margin-top:12px; font-size:0.85rem; display:flex; gap:12px; align-items:center}
+  
+  .filters{margin-top:12px; font-size:0.85rem; display:flex; gap:12px; align-items:center; flex-wrap:wrap;}
   .filters label{cursor:pointer; display:flex; align-items:center; gap:4px}
+  
+  .mode-switch { background:var(--panel); padding:10px 14px; border-radius:8px; margin-top:12px; display:flex; gap:16px; align-items:center; font-size:0.85rem;}
+  .mode-switch label { cursor:pointer; display:flex; align-items:center; gap:4px; font-weight:600;}
+  .mode-switch .mode-desc { font-size:0.75rem; color:var(--sub); font-weight:normal; margin-left:4px; }
+  
   table{width:100%; border-collapse:collapse; margin-top:8px; font-size:.9rem}
   th,td{padding:10px 8px; text-align:right; border-bottom:1px solid var(--line);
         white-space:nowrap}
@@ -57,7 +63,6 @@
   footer{margin-top:32px; color:var(--sub); font-size:.75rem; text-align:center}
   @media (max-width:640px){ 
     .hide-m{display:none} 
-    .filters{flex-wrap:wrap}
   }
 </style>
 </head>
@@ -65,13 +70,24 @@
 <div class="wrap">
   <header>
     <h1>단지·면적별 실거래 중위가격 변화율</h1>
-    <p class="meta" id="meta">데이터 불러오는 중…</p>
+    <p class="meta" id="meta">정기 업데이트되는 실거래 데이터 기반 월간 랭킹입니다.</p>
   </header>
 
   <nav role="tablist">
     <button role="tab" aria-selected="true"  data-tab="region">시군구 상승률 <span id="tab-meta-region" style="font-weight:normal; font-size:0.8em; color:var(--sub);"></span></button>
     <button role="tab" aria-selected="false" data-tab="apt">개별 아파트 <span id="tab-meta-apt" style="font-weight:normal; font-size:0.8em; color:var(--sub);"></span></button>
   </nav>
+
+  <div id="aptMode" class="mode-switch" style="display:none;">
+    <label>
+      <input type="radio" name="dataMode" value="stable" checked> 
+      <span>안정 집계 <span class="mode-desc">(신고가 비교적 반영된 기준월)</span></span>
+    </label>
+    <label id="provisionalOption" style="display:none;">
+      <input type="radio" name="dataMode" value="provisional"> 
+      <span>잠정 집계 <span class="mode-desc">(신고 지연 및 계약 해제로 결과가 변경될 수 있음)</span></span>
+    </label>
+  </div>
 
   <div id="aptFilters" class="filters" style="display:none;">
     <b>필터:</b>
@@ -83,7 +99,7 @@
   <div id="content"><p class="empty">불러오는 중…</p></div>
 
   <div class="desc-box">
-    <b>[데이터 소스]</b> 시군구: 한국부동산원 가격지수 · 개별 단지: 국토교통부 실거래가 (최신 잠정치, 해제 거래 제외)<br><br>
+    <b>[데이터 소스]</b> 시군구: 한국부동산원 가격지수 · 개별 단지: 국토교통부 실거래가 (해제 거래 제외)<br><br>
     <b>[산출 방식]</b>
     <ul>
       <li><b>기준가:</b> 현재 월 직전 3개월의 중개거래 실거래가 중앙값</li>
@@ -152,24 +168,22 @@ document.addEventListener('keydown', e => { if(e.key === 'Escape') hideTooltip()
 window.addEventListener('scroll', hideTooltip, {passive:true});
 window.addEventListener('resize', hideTooltip, {passive:true});
 
-
-const state = { tab: "region", region: null, apt: null };
+const state = { tab: "region", region: null, aptStable: null, aptProvisional: null };
 const won = v => v == null ? "–" :
   v >= 1e8 ? (v/1e8).toFixed(v % 1e8 ? 1 : 0) + "억" : Math.round(v/1e4).toLocaleString() + "만";
 const rate = v => v == null ? "–" :
   `<span class="rate ${v>0?"up":v<0?"down":""}">${v>0?"+":""}${v.toFixed(2)}%</span>`;
 const confLabel = { high:"높음", medium:"보통", low:"낮음" };
 
-document.querySelectorAll('input[name="confFilter"]').forEach(radio => {
+document.querySelectorAll('input[name="confFilter"], input[name="dataMode"]').forEach(radio => {
   radio.addEventListener('change', () => paint());
 });
 
-async function load(name){
+async function loadJson(url){
   try{
-    const r = await fetch(`data/${name}_rankings_latest.json`, {cache:"no-store"});
+    const r = await fetch(url, {cache:"no-store"});
     if(!r.ok) return { error: true };
-    const data = await r.json();
-    return data;
+    return await r.json();
   }catch{ return { error: true }; }
 }
 
@@ -247,23 +261,32 @@ function renderApt(d){
     <tbody>${rows}</tbody></table>`;
 }
 
-function updateTabMeta(d, idPrefix) {
+function updateTabMeta(d, idPrefix, isProvisional=false) {
   const metaSpan = document.getElementById(`tab-meta-${idPrefix}`);
   if(d && !d.error && d.referenceMonth) {
     const m = d.referenceMonth;
-    metaSpan.innerHTML = `· ${m.slice(0,4)}년 ${+m.slice(4)}월 기준`;
+    const suffix = isProvisional ? " 잠정" : " 기준";
+    metaSpan.innerHTML = `· ${m.slice(0,4)}년 ${+m.slice(4)}월${suffix}`;
   } else {
     metaSpan.innerHTML = ``;
   }
 }
 
 function paint(){
-  const d = state[state.tab];
-  document.getElementById("aptFilters").style.display = state.tab === "apt" ? "flex" : "none";
-  document.getElementById("content").innerHTML = state.tab === "region" ? renderRegion(d) : renderApt(d);
-  
-  // 전체 헤더의 meta 설명 제거, 탭 안에서 기준월 처리
-  document.getElementById("meta").innerHTML = "매일 업데이트되는 실거래 데이터 기반의 실시간 랭킹입니다.";
+  if (state.tab === "region") {
+    document.getElementById("aptMode").style.display = "none";
+    document.getElementById("aptFilters").style.display = "none";
+    document.getElementById("content").innerHTML = renderRegion(state.region);
+    updateTabMeta(state.region, 'region');
+  } else {
+    document.getElementById("aptMode").style.display = "flex";
+    document.getElementById("aptFilters").style.display = "flex";
+    const mode = document.querySelector('input[name="dataMode"]:checked').value;
+    const isProvisional = mode === "provisional";
+    const d = isProvisional ? state.aptProvisional : state.aptStable;
+    document.getElementById("content").innerHTML = renderApt(d);
+    updateTabMeta(d, 'apt', isProvisional);
+  }
 }
 
 document.querySelectorAll("nav button").forEach(b=>b.addEventListener("click",()=>{
@@ -272,9 +295,23 @@ document.querySelectorAll("nav button").forEach(b=>b.addEventListener("click",()
 }));
 
 (async()=>{
-  [state.region, state.apt] = await Promise.all([load("region"), load("apt")]);
-  updateTabMeta(state.region, 'region');
-  updateTabMeta(state.apt, 'apt');
+  // 지역 랭킹 로드
+  state.region = await loadJson("data/region_rankings_latest.json");
+  
+  // 아파트 매니페스트 로드
+  const manifest = await loadJson("data/apt_rankings_manifest.json");
+  
+  if (manifest && !manifest.error && manifest.stableFile) {
+    state.aptStable = await loadJson(`data/${manifest.stableFile}`);
+    if (manifest.provisionalFile) {
+      document.getElementById('provisionalOption').style.display = 'block';
+      state.aptProvisional = await loadJson(`data/${manifest.provisionalFile}`);
+    }
+  } else {
+    // 매니페스트가 없을 경우 하위 호환
+    state.aptStable = await loadJson("data/apt_rankings_latest.json");
+  }
+  
   paint();
 })();
 </script>
