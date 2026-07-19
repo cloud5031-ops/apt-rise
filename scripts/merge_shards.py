@@ -56,13 +56,23 @@ def merge_and_sort(shards):
     seen = {}
     
     for s in shards:
+        region_group = s.get("regionGroup", "unknown")
         for item in s.get("items", []):
-            key = (item["apartmentKey"], item["area_group"], item.get("referenceMonth", ""))
+            key = (item["apartmentKey"], item.get("area_group", item.get("exclusiveAreaGroup")), item.get("referenceMonth", ""))
             
             if key in seen:
-                sys.exit(f"오류: 권역 간 데이터 중복 발생! apartmentKey: {item['apartmentKey']}")
+                prev_item, prev_region = seen[key]
+                print(f"오류: 권역 간 데이터 중복 발생!")
+                print(f"- apartmentKey: {item['apartmentKey']}")
+                print(f"- areaGroup: {key[1]}")
+                print(f"- referenceMonth: {key[2]}")
+                print(f"- 첫 번째 shard: regionGroup={prev_region}")
+                print(f"- 두 번째 shard: regionGroup={region_group}")
+                print(f"- 첫 번째 item: sidoCode={prev_item.get('sidoCode')}, sggCode={prev_item.get('sggCode')}, aptName={prev_item.get('apartmentName')}, full_name={prev_item.get('full_name', '')}")
+                print(f"- 두 번째 item: sidoCode={item.get('sidoCode')}, sggCode={item.get('sggCode')}, aptName={item.get('apartmentName')}, full_name={item.get('full_name', '')}")
+                sys.exit(1)
                 
-            seen[key] = True
+            seen[key] = (item, region_group)
             merged_items.append(item)
             
     # 정렬: 1. riseRate DESC, 2. riseAmount DESC, 3. currentTradeCount DESC, 4. apartmentKey ASC

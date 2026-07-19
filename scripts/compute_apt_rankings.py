@@ -25,16 +25,25 @@ def floor_bucket(floor: int) -> str:
     return "고층"
 
 
-def load_groups(conn, months: list[str]) -> dict:
+def load_groups(conn, months: list[str], included_sido_codes: list[str] = None) -> dict:
     """(단지키, 전용면적 첫째자리) → 상세 데이터 구조로 적재."""
     placeholders = ",".join("?" * len(months))
+    params = list(months)
+    
+    where_clause = f"deal_month IN ({placeholders}) AND is_cancelled = 0 AND is_outlier = 0"
+    
+    if included_sido_codes:
+        sido_placeholders = ",".join("?" * len(included_sido_codes))
+        # SUBSTR(sgg_code, 1, 2) IN (...)
+        where_clause += f" AND SUBSTR(sgg_code, 1, 2) IN ({sido_placeholders})"
+        params.extend(included_sido_codes)
+        
     rows = conn.execute(
         f"""SELECT apartment_key, exclusive_area, deal_month, deal_amount,
                    floor, dealing_type, apt_name, sgg_code, umd_name
             FROM apartment_trades
-            WHERE deal_month IN ({placeholders})
-              AND is_cancelled = 0 AND is_outlier = 0""",
-        months,
+            WHERE {where_clause}""",
+        params,
     )
     groups = {}
     for r in rows:
@@ -54,7 +63,7 @@ def load_groups(conn, months: list[str]) -> dict:
     return groups
 
 
-def compute_for_month(conn, ref_month: str, regions: dict, now: str, status: str):
+def compute_for_month(conn, ref_month: str, regions: dict, now: str, status: str, included_sido_codes: list[str] = None):
     baseline = [shift_month(ref_month, -i) for i in range(1, config.BASELINE_MONTHS + 1)]
     results = []
     
@@ -77,7 +86,7 @@ def compute_for_month(conn, ref_month: str, regions: dict, now: str, status: str
     
     valid_trade_count = raw_trade_count - cancelled_trade_count
     
-    groups = load_groups(conn, [ref_month] + baseline)
+    groups = load_groups(conn, [ref_month] + baseline, included_sido_codes)
     candidate_group_count = 0
 
     for (apt_key, ag), g in groups.items():
@@ -249,11 +258,12 @@ def main():
             
     # 1. 안정 집계 계산
     print(f"=== 안정 집계 ({stable_month}) 계산 시작 ===")
-    stable_results, stable_stats = compute_for_month(conn, stable_month, regions, now, "stable")
+    included_sido_codes = run_meta.get("includedSidoCodes")
+    stable_results, stable_stats = compute_for_month(conn, stable_month, regions, now, "stable", included_sido_codes)
     
     # 2. 잠정 집계 계산
-    print(f"=== 잠정 집계 ({provisional_month}) 계산 시작 ===")
-    provisional_results, prov_stats = compute_for_month(conn, provisional_month, regions, now, "provisional")
+    print(f"\n=== 잠정 집계 ({provisional_month}) 계산 시작 ===")
+    provisional_results, prov_stats = compute_for_month(conn, provisional_month, regions, now, "provisional", included_sido_codes)
     conn.commit()
     conn.close()
 

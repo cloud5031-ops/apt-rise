@@ -40,7 +40,9 @@ def normalize_apt_name(name: str) -> str:
 def apartment_key(apt_seq, sgg_code, umd_name, jibun, apt_name) -> str:
     """단지 고유키. aptSeq가 없으면 보조키 조합 사용 (설계안 6-1)."""
     if apt_seq:
-        return str(apt_seq)
+        if str(apt_seq).startswith(sgg_code):
+            return str(apt_seq)
+        return f"{sgg_code}-{apt_seq}"
     return f"{sgg_code}:{umd_name}:{jibun or ''}:{normalize_apt_name(apt_name)}"
 
 
