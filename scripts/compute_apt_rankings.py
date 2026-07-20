@@ -201,8 +201,8 @@ def compute_for_month(conn, ref_month: str, regions: dict, now: str, status: str
                 # 기존 랭킹에 쓰이던 부가 정보 (선택적이지만 UI에서 쓸 수 있음)
                 "region": f"{regions.get(g['sgg_code'], g['sgg_code'])} {g['umd_name'] or ''}".strip(),
                 "exactAreas": list(g["exact_areas"]),
-                "baselineMedianFloor": base_med_floor,
-                "currentMedianFloor": cur_med_floor,
+                "baselineFloorMedian": base_med_floor,
+                "currentFloorMedian": cur_med_floor,
                 "baselineDirectTradeCount": base_direct_count,
                 "currentDirectTradeCount": cur_direct_count,
                 "floorMixWarning": floor_mix_warning,

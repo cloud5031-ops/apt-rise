@@ -169,8 +169,17 @@ window.addEventListener('scroll', hideTooltip, {passive:true});
 window.addEventListener('resize', hideTooltip, {passive:true});
 
 const state = { tab: "region", region: null, aptStable: null, aptProvisional: null };
-const won = v => v == null ? "–" :
-  v >= 1e8 ? (v/1e8).toFixed(v % 1e8 ? 1 : 0) + "억" : Math.round(v/1e4).toLocaleString() + "만";
+const won = v => {
+  if (v == null || Number.isNaN(v)) return "–";
+  const num = Number(v);
+  if (!isFinite(num)) return "–";
+  const uk = Math.floor(num / 100000000);
+  const man = Math.round((num % 100000000) / 10000);
+  let res = "";
+  if (uk > 0) res += uk + "억 ";
+  if (man > 0 || uk === 0) res += man.toLocaleString() + "만원";
+  return res.trim();
+};
 const rate = v => v == null ? "–" :
   `<span class="rate ${v>0?"up":v<0?"down":""}">${v>0?"+":""}${v.toFixed(2)}%</span>`;
 const confLabel = { high:"높음", medium:"보통", low:"낮음" };
@@ -214,6 +223,24 @@ function formatPeriod(m) {
   return { baseStr, curStr };
 }
 
+function normalizeAptRankingItem(raw) {
+  return {
+    ...raw,
+    areaGroup: raw.areaGroup || raw.area_group,
+    baselineMedian: raw.baselineMedian || raw.baselineMedianPrice,
+    currentMedian: raw.currentMedian || raw.currentMedianPrice,
+    baselineFloorMedian: raw.baselineFloorMedian || raw.baselineMedianFloor || raw.baseline_median_floor,
+    currentFloorMedian: raw.currentFloorMedian || raw.currentMedianFloor || raw.current_median_floor,
+    baselineTradeCount: raw.baselineTradeCount || raw.baseline_trade_count,
+    currentTradeCount: raw.currentTradeCount || raw.current_trade_count,
+    warnings: raw.warnings || raw.warning_reasons || [],
+    compositionWarning: raw.compositionWarning || raw.composition_warning || false,
+    exactAreas: raw.exactAreas || raw.exact_areas || [],
+    baselineDirectTradeCount: raw.baselineDirectTradeCount || raw.baseline_direct_trade_count || 0,
+    currentDirectTradeCount: raw.currentDirectTradeCount || raw.current_direct_trade_count || 0,
+  };
+}
+
 function renderApt(d){
   if(d && d.error) return `<p class="empty">데이터 파일을 불러오지 못했습니다.</p>`;
   if(!d || !d.items || d.items.length === 0) return `<p class="empty">현재 조건에 해당하는 아파트 순위 결과가 없습니다.</p>`;
@@ -221,33 +248,43 @@ function renderApt(d){
   const { baseStr, curStr } = formatPeriod(d.referenceMonth);
   const filterVal = document.querySelector('input[name="confFilter"]:checked').value;
   
-  let filteredItems = d.items;
-  if(filterVal === 'nowarn') filteredItems = filteredItems.filter(i => !i.composition_warning);
-  if(filterVal === 'medup') filteredItems = filteredItems.filter(i => i.confidence === 'high' || i.confidence === 'medium');
+  let normalizedItems = d.items.map(normalizeAptRankingItem);
+  
+  if(filterVal === 'nowarn') normalizedItems = normalizedItems.filter(i => !i.compositionWarning);
+  if(filterVal === 'medup') normalizedItems = normalizedItems.filter(i => i.confidence === 'high' || i.confidence === 'medium');
 
-  const rows = filteredItems.slice(0,100).map(i=>{
-    const exact = i.exact_areas ? i.exact_areas.join(', ') : "";
-    const warnHtml = i.composition_warning ? `<span class="warn-icon" tabindex="0" data-reasons="${(i.warning_reasons||[]).join('<br>')}">⚠️</span>` : "";
-    const dtInfo = (i.baseline_direct_trade_count || i.current_direct_trade_count) ? 
-      `<div style="font-size:0.75rem; color:#d6293e; margin-top:2px;">직거래 이력 (과거 ${i.baseline_direct_trade_count||0}건, 현재 ${i.current_direct_trade_count||0}건)</div>` : "";
+  const rows = normalizedItems.slice(0,100).map(i=>{
+    const exact = i.exactAreas && i.exactAreas.length > 0 ? i.exactAreas.join(', ') : "";
+    const warnHtml = i.compositionWarning ? `<span class="warn-icon" tabindex="0" data-reasons="${(i.warnings||[]).join('<br>')}">⚠️</span>` : "";
+    const dtInfo = (i.baselineDirectTradeCount || i.currentDirectTradeCount) ? 
+      `<div style="font-size:0.75rem; color:#d6293e; margin-top:2px;">직거래 이력 (과거 ${i.baselineDirectTradeCount||0}건, 현재 ${i.currentDirectTradeCount||0}건)</div>` : "";
+      
+    const areaText = i.areaGroup ? `${i.areaGroup}㎡` : '면적 정보 없음';
+    const exactHtml = exact ? ` <span style="font-size:0.75rem; color:#888;">(${exact}㎡)</span>` : "";
+    
+    const baseFloorHtml = (i.baselineFloorMedian != null && isFinite(i.baselineFloorMedian)) 
+      ? `<br><span style="font-size:0.75rem;color:var(--sub)">거래층 중앙값 ${i.baselineFloorMedian}층</span>` 
+      : "";
+    const curFloorHtml = (i.currentFloorMedian != null && isFinite(i.currentFloorMedian)) 
+      ? `<br><span style="font-size:0.75rem;color:var(--sub)">거래층 중앙값 ${i.currentFloorMedian}층</span>` 
+      : "";
+
     return `
     <tr><td>${i.rank}</td>
     <td class="name">
-      <div style="font-size:0.8rem;color:var(--sub)">${i.region}</div>
-      <b>${i.apartmentName}</b> ${i.area_group}㎡ <span style="font-size:0.75rem; color:#888;">(${exact}㎡)</span> ${warnHtml}
+      <div style="font-size:0.8rem;color:var(--sub)">${i.region || i.sggCode}</div>
+      <b>${i.apartmentName}</b> ${areaText}${exactHtml} ${warnHtml}
       ${dtInfo}
     </td>
     <td class="hide-m">
-      ${won(i.baselineMedianPrice)}<br>
-      <span style="font-size:0.75rem;color:var(--sub)">거래층 중앙값 ${i.baseline_median_floor}층</span>
+      ${won(i.baselineMedian)}${baseFloorHtml}
     </td>
     <td>
-      ${won(i.currentMedianPrice)}<br>
-      <span style="font-size:0.75rem;color:var(--sub)">거래층 중앙값 ${i.current_median_floor}층</span>
+      ${won(i.currentMedian)}${curFloorHtml}
     </td>
     <td>
       ${rate(i.riseRate)}<br>
-      <span class="conf">신뢰도 ${confLabel[i.confidence]||""}<br>기준 ${i.baselineTradeCount}건 · 최근 ${i.currentTradeCount}건</span>
+      <span class="conf">신뢰도 ${confLabel[i.confidence]||""}<br>기준 ${i.baselineTradeCount||0}건 · 최근 ${i.currentTradeCount||0}건</span>
     </td>
     </tr>`;
   }).join("");

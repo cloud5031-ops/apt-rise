@@ -14,6 +14,8 @@ REQUIRED_ITEM_FIELDS = [
     "riseRate",
     "baselineTradeCount",
     "currentTradeCount",
+    "baselineFloorMedian",
+    "currentFloorMedian",
     "confidence",
     "warnings"
 ]
