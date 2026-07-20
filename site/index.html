@@ -61,8 +61,28 @@
   .desc-box ul{margin-top:6px; padding-left:20px}
   .desc-box li{margin-bottom:4px}
   footer{margin-top:32px; color:var(--sub); font-size:.75rem; text-align:center}
+
+  /* Sub-nav and Region selectors */
+  .sub-nav { display:flex; gap:16px; margin:16px 0 0; padding-bottom:0; border:none; }
+  .sub-nav button { font-size: 0.9rem; padding: 6px 4px; color: var(--sub); border-bottom: 2px solid transparent; cursor: pointer; background:none; font-weight:600;}
+  .sub-nav button[aria-selected="true"] { color: var(--ink); border-bottom-color: var(--ink); font-weight:700;}
+  
+  .chip-container { display:flex; gap:8px; overflow-x:auto; padding:12px 0; scrollbar-width:none;}
+  .chip-container::-webkit-scrollbar { display:none; }
+  .chip { background: var(--panel); border:1px solid var(--line); border-radius:20px; padding:6px 14px; font-size:0.85rem; color:var(--sub); cursor:pointer; white-space:nowrap; }
+  .chip[aria-selected="true"] { background: var(--ink); color: #fff; border-color: var(--ink); font-weight:600;}
+  
+  .micro-container { margin: 8px 0 16px; }
+  .micro-select { width:100%; padding:10px; border:1px solid var(--line); border-radius:8px; font-size:0.9rem; background:var(--bg); color:var(--ink); }
+  .selected-info { font-size:0.85rem; font-weight:600; color:var(--ink); margin: 12px 0; }
+
   @media (max-width:640px){ 
-    .hide-m{display:none} 
+    .hide-m{display:none !important} 
+  }
+  @media (min-width:641px){
+    .hide-d{display:none !important}
+    .micro-desktop { display:flex; flex-wrap:wrap; gap:6px; margin-top:8px; }
+    .micro-desktop .chip { padding:4px 10px; font-size:0.8rem; }
   }
 </style>
 </head>
@@ -73,10 +93,26 @@
     <p class="meta" id="meta">정기 업데이트되는 실거래 데이터 기반 월간 랭킹입니다.</p>
   </header>
 
-  <nav role="tablist">
+  <nav role="tablist" id="main-nav">
     <button role="tab" aria-selected="true"  data-tab="region">시군구 상승률 <span id="tab-meta-region" style="font-weight:normal; font-size:0.8em; color:var(--sub);"></span></button>
     <button role="tab" aria-selected="false" data-tab="apt">개별 아파트 <span id="tab-meta-apt" style="font-weight:normal; font-size:0.8em; color:var(--sub);"></span></button>
   </nav>
+
+  <nav role="tablist" id="region-sub-nav" class="sub-nav">
+    <button role="tab" aria-selected="true" data-subtab="national">전국 상승순위</button>
+    <button role="tab" aria-selected="false" data-subtab="local">지역별 보기</button>
+  </nav>
+
+  <div id="macro-container" class="chip-container" style="display:none;"></div>
+  
+  <div id="micro-container" class="micro-container" style="display:none;">
+    <div class="micro-desktop hide-m"></div>
+    <div class="micro-mobile hide-d">
+      <select class="micro-select"></select>
+    </div>
+  </div>
+
+  <div id="selected-region-info" class="selected-info" style="display:none;"></div>
 
   <div id="aptMode" class="mode-switch" style="display:none;">
     <label>
@@ -168,7 +204,27 @@ document.addEventListener('keydown', e => { if(e.key === 'Escape') hideTooltip()
 window.addEventListener('scroll', hideTooltip, {passive:true});
 window.addEventListener('resize', hideTooltip, {passive:true});
 
-const state = { tab: "region", region: null, aptStable: null, aptProvisional: null };
+const state = { 
+  tab: "region", 
+  region: null, 
+  aptStable: null, 
+  aptProvisional: null,
+  regionSubTab: "national",
+  macroRegion: "서울",
+  microRegion: "서울 전체"
+};
+
+const MACRO_GROUPS = [
+  { id: "서울", match: ["서울"] },
+  { id: "경기", match: ["경기"] },
+  { id: "인천", match: ["인천"] },
+  { id: "강원", match: ["강원"] },
+  { id: "충청", match: ["대전", "세종", "충북", "충남"] },
+  { id: "전라", match: ["광주", "전북", "전남"] },
+  { id: "경상", match: ["부산", "대구", "울산", "경북", "경남"] },
+  { id: "제주", match: ["제주"] }
+];
+
 const won = v => {
   if (v == null || Number.isNaN(v)) return "–";
   const num = Number(v);
@@ -200,16 +256,124 @@ function renderRegion(d){
   if(d && d.error) return `<p class="empty">데이터 파일을 불러오지 못했습니다.</p>`;
   if(!d || !d.items || d.items.length === 0) return `<p class="empty">현재 조건에 해당하는 지역 순위 결과가 없습니다.</p>`;
   
-  const max = Math.max(...d.items.map(i=>Math.abs(i.momRate||0)), 0.01);
-  const rows = d.items.slice(0,50).map(i=>`
-    <tr><td>${i.rank}</td><td class="name">${i.regionName}</td>
-    <td>${rate(i.momRate)}<span class="bar" style="width:${Math.abs(i.momRate)/max*48}px"></span></td>
+  let filtered = d.items;
+  
+  if (state.regionSubTab === "local") {
+     const group = MACRO_GROUPS.find(g => g.id === state.macroRegion);
+     if (state.microRegion === `${state.macroRegion} 전체`) {
+        filtered = filtered.filter(item => {
+           const parts = item.regionName.split('>');
+           return group.match.includes(parts[0]);
+        });
+     } else {
+        filtered = filtered.filter(item => {
+           const parts = item.regionName.split('>').filter(p => !p.endsWith('권') && !p.endsWith('지역'));
+           const micro = parts.slice(1).join(' ');
+           return micro === state.microRegion;
+        });
+     }
+  }
+  
+  if (filtered.length === 0) {
+     return `<p class="empty">선택한 지역의 순위 데이터가 없습니다.</p>`;
+  }
+  
+  const max = Math.max(...filtered.map(i=>Math.abs(i.momRate||0)), 0.01);
+  const rows = filtered.map((i, idx) => {
+    const parts = i.regionName.split('>').filter(p => !p.endsWith('권') && !p.endsWith('지역'));
+    const displayName = parts.join(' ');
+    return `
+    <tr><td>${idx + 1}</td><td class="name" title="${i.regionName}">${displayName}</td>
+    <td>${rate(i.momRate)}<span class="bar" style="width:${Math.abs(i.momRate||0)/max*48}px"></span></td>
     <td class="hide-m">${rate(i.threeMonthRate)}</td>
-    <td class="hide-m">${rate(i.yoyRate)}</td></tr>`).join("");
+    <td class="hide-m">${rate(i.yoyRate)}</td></tr>`;
+  }).join("");
   return `<table><thead><tr><th>순위</th><th>지역</th><th>전월 대비</th>
     <th class="hide-m">3개월</th><th class="hide-m">전년 동월</th></tr></thead>
     <tbody>${rows}</tbody></table>`;
 }
+
+function renderMacroRegions() {
+  const html = MACRO_GROUPS.map(g => {
+    const isSelected = g.id === state.macroRegion;
+    return `<button class="chip" aria-selected="${isSelected}" data-macro="${g.id}">${g.id}</button>`;
+  }).join("");
+  document.getElementById("macro-container").innerHTML = html;
+  
+  document.querySelectorAll('#macro-container .chip').forEach(b => {
+    b.addEventListener('click', () => {
+      state.macroRegion = b.dataset.macro;
+      state.microRegion = b.dataset.macro + " 전체";
+      paint();
+    });
+  });
+}
+
+function getMicroRegions(macroId) {
+  const group = MACRO_GROUPS.find(g => g.id === macroId);
+  const items = state.region.items.filter(item => {
+    return group.match.includes(item.regionName.split('>')[0]);
+  });
+  
+  const microMap = {};
+  items.forEach(item => {
+    const parts = item.regionName.split('>').filter(p => !p.endsWith('권') && !p.endsWith('지역'));
+    const sido = parts[0];
+    const micro = parts.slice(1).join(' ');
+    if (micro) {
+      if (!microMap[sido]) microMap[sido] = new Set();
+      microMap[sido].add(micro);
+    }
+  });
+  return microMap;
+}
+
+function renderMicroRegions() {
+  if (!state.region || !state.region.items) return;
+  const microMap = getMicroRegions(state.macroRegion);
+  const group = MACRO_GROUPS.find(g => g.id === state.macroRegion);
+  const isMultiSido = group.match.length > 1;
+  
+  const isAll = state.microRegion === state.macroRegion + ' 전체';
+  let htmlDesktop = `<button class="chip" aria-selected="${isAll}" data-micro="${state.macroRegion} 전체">${state.macroRegion} 전체</button>`;
+  let htmlMobile = `<option value="${state.macroRegion} 전체">${state.macroRegion} 전체</option>`;
+  
+  group.match.forEach(sido => {
+    if (!microMap[sido]) return;
+    const sortedMicros = Array.from(microMap[sido]).sort();
+    
+    if (isMultiSido) {
+       htmlDesktop += `<div style="width:100%; margin-top:8px; font-size:0.8rem; color:var(--sub); font-weight:600; padding-left:4px;">${sido}</div>`;
+       htmlMobile += `<optgroup label="${sido}">`;
+    }
+    
+    sortedMicros.forEach(micro => {
+      const isSelected = state.microRegion === micro;
+      htmlDesktop += `<button class="chip" aria-selected="${isSelected}" data-micro="${micro}">${micro}</button>`;
+      htmlMobile += `<option value="${micro}" ${isSelected ? 'selected' : ''}>${micro}</option>`;
+    });
+    
+    if (isMultiSido) htmlMobile += `</optgroup>`;
+  });
+  
+  const deskContainer = document.querySelector('.micro-desktop');
+  const mobSelect = document.querySelector('.micro-select');
+  
+  deskContainer.innerHTML = htmlDesktop;
+  mobSelect.innerHTML = htmlMobile;
+  
+  deskContainer.querySelectorAll('button').forEach(b => {
+     b.addEventListener('click', () => {
+        state.microRegion = b.dataset.micro;
+        paint();
+     });
+  });
+}
+
+document.querySelector('.micro-select').addEventListener('change', (e) => {
+  state.microRegion = e.target.value;
+  paint();
+});
 
 function formatPeriod(m) {
   const y = +m.slice(0,4), mo = +m.slice(4);
@@ -313,11 +477,34 @@ function paint(){
   if (state.tab === "region") {
     document.getElementById("aptMode").style.display = "none";
     document.getElementById("aptFilters").style.display = "none";
+    document.getElementById("region-sub-nav").style.display = "flex";
+    
+    if (state.regionSubTab === "national") {
+       document.getElementById("macro-container").style.display = "none";
+       document.getElementById("micro-container").style.display = "none";
+       document.getElementById("selected-region-info").style.display = "none";
+    } else {
+       document.getElementById("macro-container").style.display = "flex";
+       document.getElementById("micro-container").style.display = "block";
+       document.getElementById("selected-region-info").style.display = "block";
+       
+       renderMacroRegions();
+       renderMicroRegions();
+       
+       const infoTxt = `선택 지역: ${state.macroRegion} · ${state.microRegion}`;
+       document.getElementById("selected-region-info").innerText = infoTxt;
+    }
+    
     document.getElementById("content").innerHTML = renderRegion(state.region);
     updateTabMeta(state.region, 'region');
   } else {
     document.getElementById("aptMode").style.display = "flex";
     document.getElementById("aptFilters").style.display = "flex";
+    document.getElementById("region-sub-nav").style.display = "none";
+    document.getElementById("macro-container").style.display = "none";
+    document.getElementById("micro-container").style.display = "none";
+    document.getElementById("selected-region-info").style.display = "none";
+    
     const mode = document.querySelector('input[name="dataMode"]:checked').value;
     const isProvisional = mode === "provisional";
     const d = isProvisional ? state.aptProvisional : state.aptStable;
@@ -326,9 +513,14 @@ function paint(){
   }
 }
 
-document.querySelectorAll("nav button").forEach(b=>b.addEventListener("click",()=>{
-  document.querySelectorAll("nav button").forEach(x=>x.setAttribute("aria-selected", x===b));
+document.querySelectorAll("#main-nav button").forEach(b=>b.addEventListener("click",()=>{
+  document.querySelectorAll("#main-nav button").forEach(x=>x.setAttribute("aria-selected", x===b));
   state.tab = b.dataset.tab; paint();
+}));
+
+document.querySelectorAll("#region-sub-nav button").forEach(b=>b.addEventListener("click",()=>{
+  document.querySelectorAll("#region-sub-nav button").forEach(x=>x.setAttribute("aria-selected", x===b));
+  state.regionSubTab = b.dataset.subtab; paint();
 }));
 
 (async()=>{
