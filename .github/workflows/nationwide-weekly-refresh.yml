@@ -4,6 +4,7 @@ on:
   workflow_dispatch:
   schedule:
     - cron: '17 3 * * 0'
+      timezone: 'Asia/Seoul'
 
 concurrency:
   group: apt-rise-data-write
