@@ -3,7 +3,7 @@
  "referenceMonth": "202605",
  "status": "stable",
  "validationStatus": "valid",
- "generatedAt": "2026-07-19T22:53:46.674244+09:00",
+ "generatedAt": "2026-07-21T23:37:41.076072+09:00",
  "calculationVersion": "v1.1",
  "schemaVersion": "v1.0",
  "includedSidoCodes": [
@@ -82,76 +82,76 @@
   "52800"
  ],
  "successfulSggCodes": [
-  "52210",
-  "47230",
-  "48250",
-  "48860",
-  "47840",
-  "52730",
-  "52140",
-  "47830",
-  "47850",
-  "47730",
-  "47290",
-  "47190",
-  "47170",
-  "47250",
-  "47110",
-  "48121",
-  "48125",
-  "48310",
-  "47930",
-  "52790",
-  "52113",
-  "48240",
-  "47770",
-  "52111",
-  "48870",
-  "52110",
-  "48170",
-  "48330",
-  "47900",
-  "48880",
-  "47760",
-  "48730",
-  "48720",
-  "47280",
-  "48740",
-  "48120",
-  "48127",
-  "48820",
-  "52750",
-  "48270",
-  "48220",
-  "52190",
-  "50130",
-  "47820",
   "47130",
-  "47113",
-  "52710",
-  "52130",
-  "48890",
-  "47111",
+  "52730",
+  "47830",
+  "47930",
+  "48120",
+  "48330",
   "50110",
-  "52720",
-  "52800",
-  "47920",
-  "47150",
-  "52180",
-  "47750",
+  "48220",
   "48129",
-  "48123",
-  "48850",
+  "48890",
+  "52710",
+  "47250",
+  "48740",
+  "52110",
+  "52113",
+  "47730",
+  "52720",
+  "48820",
+  "48125",
+  "47170",
+  "47230",
+  "52750",
+  "48250",
+  "47750",
+  "52790",
+  "48310",
+  "48870",
+  "47900",
+  "47111",
+  "48720",
+  "48880",
+  "52140",
+  "47150",
+  "47280",
+  "47820",
+  "47110",
+  "52800",
   "52740",
-  "47210",
+  "47190",
   "47940",
+  "50130",
+  "48121",
+  "52111",
+  "52190",
+  "47840",
+  "47770",
+  "48123",
+  "47850",
+  "48240",
+  "48270",
+  "48730",
+  "48850",
   "48840",
-  "52770"
+  "47210",
+  "47920",
+  "47760",
+  "52130",
+  "47113",
+  "48127",
+  "52770",
+  "47290",
+  "52180",
+  "52210",
+  "48860",
+  "48170"
  ],
  "failedSggCodes": [],
- "rawTradeCount": 6396,
+ "rawTradeCount": 6398,
  "validTradeCount": 6131,
- "cancelledTradeCount": 265,
+ "cancelledTradeCount": 267,
  "directTradeCount": 756,
  "candidateGroupCount": 3677,
  "filteredOutGroupCount": 3633,
@@ -179,8 +179,8 @@
    "exactAreas": [
     59.82
    ],
-   "baselineMedianFloor": 11.0,
-   "currentMedianFloor": 12.5,
+   "baselineFloorMedian": 11.0,
+   "currentFloorMedian": 12.5,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 1,
    "floorMixWarning": false,
@@ -214,8 +214,8 @@
    "exactAreas": [
     84.7888
    ],
-   "baselineMedianFloor": 13,
-   "currentMedianFloor": 16,
+   "baselineFloorMedian": 13,
+   "currentFloorMedian": 16,
    "baselineDirectTradeCount": 2,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -248,8 +248,8 @@
    "exactAreas": [
     84.9814
    ],
-   "baselineMedianFloor": 7,
-   "currentMedianFloor": 13,
+   "baselineFloorMedian": 7,
+   "currentFloorMedian": 13,
    "baselineDirectTradeCount": 1,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -281,8 +281,8 @@
    "exactAreas": [
     84.87
    ],
-   "baselineMedianFloor": 5,
-   "currentMedianFloor": 7.5,
+   "baselineFloorMedian": 5,
+   "currentFloorMedian": 7.5,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -315,8 +315,8 @@
    "exactAreas": [
     84.92
    ],
-   "baselineMedianFloor": 8.0,
-   "currentMedianFloor": 4,
+   "baselineFloorMedian": 8.0,
+   "currentFloorMedian": 4,
    "baselineDirectTradeCount": 1,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -349,8 +349,8 @@
    "exactAreas": [
     84.8782
    ],
-   "baselineMedianFloor": 15,
-   "currentMedianFloor": 4.5,
+   "baselineFloorMedian": 15,
+   "currentFloorMedian": 4.5,
    "baselineDirectTradeCount": 1,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -383,8 +383,8 @@
    "exactAreas": [
     59.9093
    ],
-   "baselineMedianFloor": 8.5,
-   "currentMedianFloor": 4.0,
+   "baselineFloorMedian": 8.5,
+   "currentFloorMedian": 4.0,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -418,8 +418,8 @@
     84.9875,
     84.959
    ],
-   "baselineMedianFloor": 8.5,
-   "currentMedianFloor": 7.5,
+   "baselineFloorMedian": 8.5,
+   "currentFloorMedian": 7.5,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -451,8 +451,8 @@
    "exactAreas": [
     113.1152
    ],
-   "baselineMedianFloor": 8,
-   "currentMedianFloor": 23.0,
+   "baselineFloorMedian": 8,
+   "currentFloorMedian": 23.0,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -484,8 +484,8 @@
    "exactAreas": [
     84.9875
    ],
-   "baselineMedianFloor": 4,
-   "currentMedianFloor": 5.5,
+   "baselineFloorMedian": 4,
+   "currentFloorMedian": 5.5,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -519,8 +519,8 @@
     74.993,
     74.986
    ],
-   "baselineMedianFloor": 10.0,
-   "currentMedianFloor": 9.0,
+   "baselineFloorMedian": 10.0,
+   "currentFloorMedian": 9.0,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -550,8 +550,8 @@
    "exactAreas": [
     84.996
    ],
-   "baselineMedianFloor": 2.5,
-   "currentMedianFloor": 2,
+   "baselineFloorMedian": 2.5,
+   "currentFloorMedian": 2,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -581,8 +581,8 @@
    "exactAreas": [
     73.35
    ],
-   "baselineMedianFloor": 4,
-   "currentMedianFloor": 4.5,
+   "baselineFloorMedian": 4,
+   "currentFloorMedian": 4.5,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -615,8 +615,8 @@
    "exactAreas": [
     83.7991
    ],
-   "baselineMedianFloor": 17.5,
-   "currentMedianFloor": 21.0,
+   "baselineFloorMedian": 17.5,
+   "currentFloorMedian": 21.0,
    "baselineDirectTradeCount": 2,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -649,8 +649,8 @@
    "exactAreas": [
     75.99
    ],
-   "baselineMedianFloor": 7.0,
-   "currentMedianFloor": 17.5,
+   "baselineFloorMedian": 7.0,
+   "currentFloorMedian": 17.5,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -682,8 +682,8 @@
    "exactAreas": [
     84.71
    ],
-   "baselineMedianFloor": 10,
-   "currentMedianFloor": 19.0,
+   "baselineFloorMedian": 10,
+   "currentFloorMedian": 19.0,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -718,8 +718,8 @@
     84.839,
     84.84
    ],
-   "baselineMedianFloor": 8.5,
-   "currentMedianFloor": 18.0,
+   "baselineFloorMedian": 8.5,
+   "currentFloorMedian": 18.0,
    "baselineDirectTradeCount": 1,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -751,8 +751,8 @@
    "exactAreas": [
     84.9715
    ],
-   "baselineMedianFloor": 12.0,
-   "currentMedianFloor": 6.5,
+   "baselineFloorMedian": 12.0,
+   "currentFloorMedian": 6.5,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -784,8 +784,8 @@
    "exactAreas": [
     84.6211
    ],
-   "baselineMedianFloor": 17.5,
-   "currentMedianFloor": 44.0,
+   "baselineFloorMedian": 17.5,
+   "currentFloorMedian": 44.0,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -815,8 +815,8 @@
    "exactAreas": [
     84.95
    ],
-   "baselineMedianFloor": 11,
-   "currentMedianFloor": 14.0,
+   "baselineFloorMedian": 11,
+   "currentFloorMedian": 14.0,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -846,8 +846,8 @@
    "exactAreas": [
     124.6639
    ],
-   "baselineMedianFloor": 12,
-   "currentMedianFloor": 9,
+   "baselineFloorMedian": 12,
+   "currentFloorMedian": 9,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -879,8 +879,8 @@
    "exactAreas": [
     84.9474
    ],
-   "baselineMedianFloor": 10.5,
-   "currentMedianFloor": 14.5,
+   "baselineFloorMedian": 10.5,
+   "currentFloorMedian": 14.5,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -914,8 +914,8 @@
     84.993,
     84.9966
    ],
-   "baselineMedianFloor": 15,
-   "currentMedianFloor": 23,
+   "baselineFloorMedian": 15,
+   "currentFloorMedian": 23,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -950,8 +950,8 @@
     84.9734,
     84.9954
    ],
-   "baselineMedianFloor": 15,
-   "currentMedianFloor": 24.0,
+   "baselineFloorMedian": 15,
+   "currentFloorMedian": 24.0,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -983,8 +983,8 @@
    "exactAreas": [
     93.874
    ],
-   "baselineMedianFloor": 9,
-   "currentMedianFloor": 17,
+   "baselineFloorMedian": 9,
+   "currentFloorMedian": 17,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -1017,8 +1017,8 @@
    "exactAreas": [
     125.12
    ],
-   "baselineMedianFloor": 5.0,
-   "currentMedianFloor": 8.0,
+   "baselineFloorMedian": 5.0,
+   "currentFloorMedian": 8.0,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -1052,8 +1052,8 @@
     84.995,
     84.983
    ],
-   "baselineMedianFloor": 19,
-   "currentMedianFloor": 12.0,
+   "baselineFloorMedian": 19,
+   "currentFloorMedian": 12.0,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -1083,8 +1083,8 @@
    "exactAreas": [
     84.9614
    ],
-   "baselineMedianFloor": 6.5,
-   "currentMedianFloor": 12.0,
+   "baselineFloorMedian": 6.5,
+   "currentFloorMedian": 12.0,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -1118,8 +1118,8 @@
     84.8922,
     84.8827
    ],
-   "baselineMedianFloor": 9.5,
-   "currentMedianFloor": 10.0,
+   "baselineFloorMedian": 9.5,
+   "currentFloorMedian": 10.0,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -1154,8 +1154,8 @@
     75.98,
     76.03
    ],
-   "baselineMedianFloor": 11,
-   "currentMedianFloor": 16,
+   "baselineFloorMedian": 11,
+   "currentFloorMedian": 16,
    "baselineDirectTradeCount": 1,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -1190,8 +1190,8 @@
     84.9515,
     84.9543
    ],
-   "baselineMedianFloor": 25.5,
-   "currentMedianFloor": 15,
+   "baselineFloorMedian": 25.5,
+   "currentFloorMedian": 15,
    "baselineDirectTradeCount": 1,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -1223,8 +1223,8 @@
    "exactAreas": [
     100.3943
    ],
-   "baselineMedianFloor": 12,
-   "currentMedianFloor": 4.0,
+   "baselineFloorMedian": 12,
+   "currentFloorMedian": 4.0,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -1257,8 +1257,8 @@
     59.7772,
     59.7504
    ],
-   "baselineMedianFloor": 13,
-   "currentMedianFloor": 9,
+   "baselineFloorMedian": 13,
+   "currentFloorMedian": 9,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -1294,8 +1294,8 @@
     84.9967,
     84.9713
    ],
-   "baselineMedianFloor": 7.0,
-   "currentMedianFloor": 21,
+   "baselineFloorMedian": 7.0,
+   "currentFloorMedian": 21,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -1325,8 +1325,8 @@
    "exactAreas": [
     59.98
    ],
-   "baselineMedianFloor": 6.5,
-   "currentMedianFloor": 9.0,
+   "baselineFloorMedian": 6.5,
+   "currentFloorMedian": 9.0,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -1359,8 +1359,8 @@
    "exactAreas": [
     117.348
    ],
-   "baselineMedianFloor": 6.5,
-   "currentMedianFloor": 17.0,
+   "baselineFloorMedian": 6.5,
+   "currentFloorMedian": 17.0,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -1392,8 +1392,8 @@
    "exactAreas": [
     106.3379
    ],
-   "baselineMedianFloor": 9.0,
-   "currentMedianFloor": 17,
+   "baselineFloorMedian": 9.0,
+   "currentFloorMedian": 17,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -1423,8 +1423,8 @@
    "exactAreas": [
     84.9926
    ],
-   "baselineMedianFloor": 14.0,
-   "currentMedianFloor": 12.0,
+   "baselineFloorMedian": 14.0,
+   "currentFloorMedian": 12.0,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -1454,8 +1454,8 @@
    "exactAreas": [
     119.4105
    ],
-   "baselineMedianFloor": 12.5,
-   "currentMedianFloor": 14.0,
+   "baselineFloorMedian": 12.5,
+   "currentFloorMedian": 14.0,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -1487,8 +1487,8 @@
    "exactAreas": [
     101.961
    ],
-   "baselineMedianFloor": 9.0,
-   "currentMedianFloor": 18.0,
+   "baselineFloorMedian": 9.0,
+   "currentFloorMedian": 18.0,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -1520,8 +1520,8 @@
    "exactAreas": [
     97.7268
    ],
-   "baselineMedianFloor": 15.5,
-   "currentMedianFloor": 9.0,
+   "baselineFloorMedian": 15.5,
+   "currentFloorMedian": 9.0,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -1556,8 +1556,8 @@
     84.9905,
     84.9755
    ],
-   "baselineMedianFloor": 12.5,
-   "currentMedianFloor": 20,
+   "baselineFloorMedian": 12.5,
+   "currentFloorMedian": 20,
    "baselineDirectTradeCount": 1,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -1590,8 +1590,8 @@
    "exactAreas": [
     99.1742
    ],
-   "baselineMedianFloor": 15.5,
-   "currentMedianFloor": 27.0,
+   "baselineFloorMedian": 15.5,
+   "currentFloorMedian": 27.0,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -1625,8 +1625,8 @@
     84.7312,
     84.7227
    ],
-   "baselineMedianFloor": 9.0,
-   "currentMedianFloor": 18.0,
+   "baselineFloorMedian": 9.0,
+   "currentFloorMedian": 18.0,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,

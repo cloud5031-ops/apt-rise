@@ -3,7 +3,7 @@
  "referenceMonth": "202606",
  "status": "provisional",
  "validationStatus": "valid",
- "generatedAt": "2026-07-19T22:59:56.145909+09:00",
+ "generatedAt": "2026-07-21T23:04:27.263431+09:00",
  "calculationVersion": "v1.1",
  "schemaVersion": "v1.0",
  "includedSidoCodes": [
@@ -37,39 +37,39 @@
   "11740"
  ],
  "successfulSggCodes": [
-  "11215",
-  "11500",
-  "11530",
-  "11560",
-  "11410",
-  "11320",
-  "11290",
-  "11545",
-  "11170",
-  "11200",
-  "11470",
   "11140",
-  "11710",
-  "11680",
-  "11260",
-  "11110",
+  "11500",
+  "11650",
+  "11380",
+  "11350",
+  "11560",
   "11305",
   "11620",
-  "11650",
   "11740",
-  "11350",
-  "11230",
+  "11170",
+  "11440",
+  "11545",
+  "11470",
+  "11110",
+  "11410",
+  "11530",
   "11590",
-  "11380",
-  "11440"
+  "11230",
+  "11215",
+  "11200",
+  "11290",
+  "11260",
+  "11680",
+  "11710",
+  "11320"
  ],
  "failedSggCodes": [],
- "rawTradeCount": 4820,
- "validTradeCount": 4742,
- "cancelledTradeCount": 78,
- "directTradeCount": 158,
- "candidateGroupCount": 3251,
- "filteredOutGroupCount": 2922,
+ "rawTradeCount": 4921,
+ "validTradeCount": 4841,
+ "cancelledTradeCount": 80,
+ "directTradeCount": 160,
+ "candidateGroupCount": 3302,
+ "filteredOutGroupCount": 2965,
  "items": [
   {
    "apartmentKey": "11530-56",
@@ -94,8 +94,8 @@
    "exactAreas": [
     54.61
    ],
-   "baselineMedianFloor": 6.5,
-   "currentMedianFloor": 7.5,
+   "baselineFloorMedian": 6.5,
+   "currentFloorMedian": 7.5,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -125,8 +125,8 @@
    "exactAreas": [
     39.6
    ],
-   "baselineMedianFloor": 7.5,
-   "currentMedianFloor": 9.5,
+   "baselineFloorMedian": 7.5,
+   "currentFloorMedian": 9.5,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -156,8 +156,8 @@
    "exactAreas": [
     45.9
    ],
-   "baselineMedianFloor": 9.5,
-   "currentMedianFloor": 7.5,
+   "baselineFloorMedian": 9.5,
+   "currentFloorMedian": 7.5,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -187,8 +187,8 @@
    "exactAreas": [
     41.3
    ],
-   "baselineMedianFloor": 7,
-   "currentMedianFloor": 11.0,
+   "baselineFloorMedian": 7,
+   "currentFloorMedian": 11.0,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -221,8 +221,8 @@
    "exactAreas": [
     41.85
    ],
-   "baselineMedianFloor": 4,
-   "currentMedianFloor": 6.5,
+   "baselineFloorMedian": 4,
+   "currentFloorMedian": 6.5,
    "baselineDirectTradeCount": 1,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -231,6 +231,39 @@
    "exclusiveAreaGroup": 41.9,
    "calculationVersion": "v1.1",
    "rank": 5
+  },
+  {
+   "apartmentKey": "11530-115",
+   "aptSeq": "115",
+   "apartmentName": "영풍마드레빌",
+   "sidoCode": "11",
+   "sggCode": "11530",
+   "areaGroup": 84.7,
+   "referenceMonth": "202606",
+   "baselineMedian": 720000000.0,
+   "currentMedian": 840750000.0,
+   "riseAmount": 120750000,
+   "riseRate": 16.77,
+   "baselineTradeCount": 8,
+   "currentTradeCount": 2,
+   "confidence": "low",
+   "warnings": [
+    "층수 차이(8층 이상 또는 구간 차이)"
+   ],
+   "region": "11530 오류동",
+   "exactAreas": [
+    84.741
+   ],
+   "baselineFloorMedian": 4.5,
+   "currentFloorMedian": 17.5,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": true,
+   "directTradeWarning": false,
+   "compositionWarning": true,
+   "exclusiveAreaGroup": 84.7,
+   "calculationVersion": "v1.1",
+   "rank": 6
   },
   {
    "apartmentKey": "11260-99",
@@ -254,8 +287,8 @@
    "exactAreas": [
     49.77
    ],
-   "baselineMedianFloor": 8,
-   "currentMedianFloor": 12,
+   "baselineFloorMedian": 8,
+   "currentFloorMedian": 12,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 1,
    "floorMixWarning": false,
@@ -263,7 +296,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 49.8,
    "calculationVersion": "v1.1",
-   "rank": 6
+   "rank": 7
   },
   {
    "apartmentKey": "11500-54",
@@ -285,8 +318,8 @@
    "exactAreas": [
     41.85
    ],
-   "baselineMedianFloor": 8.0,
-   "currentMedianFloor": 10,
+   "baselineFloorMedian": 8.0,
+   "currentFloorMedian": 10,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -294,7 +327,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 41.9,
    "calculationVersion": "v1.1",
-   "rank": 7
+   "rank": 8
   },
   {
    "apartmentKey": "11530-98",
@@ -316,8 +349,8 @@
    "exactAreas": [
     84.96
    ],
-   "baselineMedianFloor": 8,
-   "currentMedianFloor": 10.5,
+   "baselineFloorMedian": 8,
+   "currentFloorMedian": 10.5,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -325,7 +358,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 8
+   "rank": 9
   },
   {
    "apartmentKey": "11410-67",
@@ -349,8 +382,8 @@
    "exactAreas": [
     60.06
    ],
-   "baselineMedianFloor": 4,
-   "currentMedianFloor": 10.0,
+   "baselineFloorMedian": 4,
+   "currentFloorMedian": 10.0,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -358,7 +391,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 60.1,
    "calculationVersion": "v1.1",
-   "rank": 9
+   "rank": 10
   },
   {
    "apartmentKey": "11545-17",
@@ -383,8 +416,8 @@
     44.94,
     44.89
    ],
-   "baselineMedianFloor": 7,
-   "currentMedianFloor": 12.0,
+   "baselineFloorMedian": 7,
+   "currentFloorMedian": 12.0,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -392,7 +425,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 44.9,
    "calculationVersion": "v1.1",
-   "rank": 10
+   "rank": 11
   },
   {
    "apartmentKey": "11470-2",
@@ -417,8 +450,8 @@
     84.33,
     84.27
    ],
-   "baselineMedianFloor": 7.0,
-   "currentMedianFloor": 9.5,
+   "baselineFloorMedian": 7.0,
+   "currentFloorMedian": 9.5,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -426,7 +459,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.3,
    "calculationVersion": "v1.1",
-   "rank": 11
+   "rank": 12
   },
   {
    "apartmentKey": "11530-84",
@@ -450,8 +483,8 @@
    "exactAreas": [
     84.96
    ],
-   "baselineMedianFloor": 5,
-   "currentMedianFloor": 18.5,
+   "baselineFloorMedian": 5,
+   "currentFloorMedian": 18.5,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -459,7 +492,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 12
+   "rank": 13
   },
   {
    "apartmentKey": "11350-48",
@@ -485,8 +518,8 @@
    "exactAreas": [
     84.59
    ],
-   "baselineMedianFloor": 4,
-   "currentMedianFloor": 9.0,
+   "baselineFloorMedian": 4,
+   "currentFloorMedian": 9.0,
    "baselineDirectTradeCount": 1,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -494,7 +527,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.6,
    "calculationVersion": "v1.1",
-   "rank": 13
+   "rank": 14
   },
   {
    "apartmentKey": "11710-19",
@@ -516,8 +549,8 @@
    "exactAreas": [
     43.2
    ],
-   "baselineMedianFloor": 8.5,
-   "currentMedianFloor": 10.5,
+   "baselineFloorMedian": 8.5,
+   "currentFloorMedian": 10.5,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -525,7 +558,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 43.2,
    "calculationVersion": "v1.1",
-   "rank": 14
+   "rank": 15
   },
   {
    "apartmentKey": "11350-120",
@@ -550,8 +583,8 @@
     39.92,
     39.91
    ],
-   "baselineMedianFloor": 7.5,
-   "currentMedianFloor": 10,
+   "baselineFloorMedian": 7.5,
+   "currentFloorMedian": 10,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -559,7 +592,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 39.9,
    "calculationVersion": "v1.1",
-   "rank": 15
+   "rank": 16
   },
   {
    "apartmentKey": "11350-83",
@@ -583,8 +616,8 @@
    "exactAreas": [
     138.29
    ],
-   "baselineMedianFloor": 6.0,
-   "currentMedianFloor": 8.5,
+   "baselineFloorMedian": 6.0,
+   "currentFloorMedian": 8.5,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -592,7 +625,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 138.3,
    "calculationVersion": "v1.1",
-   "rank": 16
+   "rank": 17
   },
   {
    "apartmentKey": "11320-100",
@@ -616,8 +649,8 @@
    "exactAreas": [
     49.94
    ],
-   "baselineMedianFloor": 7,
-   "currentMedianFloor": 1.0,
+   "baselineFloorMedian": 7,
+   "currentFloorMedian": 1.0,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -625,7 +658,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 49.9,
    "calculationVersion": "v1.1",
-   "rank": 17
+   "rank": 18
   },
   {
    "apartmentKey": "11320-12",
@@ -650,8 +683,8 @@
    "exactAreas": [
     84.98
    ],
-   "baselineMedianFloor": 7.5,
-   "currentMedianFloor": 3.0,
+   "baselineFloorMedian": 7.5,
+   "currentFloorMedian": 3.0,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -659,7 +692,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 18
+   "rank": 19
   },
   {
    "apartmentKey": "11620-37",
@@ -685,8 +718,8 @@
     74.22,
     74.16
    ],
-   "baselineMedianFloor": 8.5,
-   "currentMedianFloor": 7.0,
+   "baselineFloorMedian": 8.5,
+   "currentFloorMedian": 7.0,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -694,7 +727,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 74.2,
    "calculationVersion": "v1.1",
-   "rank": 19
+   "rank": 20
   },
   {
    "apartmentKey": "11230-44",
@@ -716,8 +749,8 @@
    "exactAreas": [
     84.92
    ],
-   "baselineMedianFloor": 7.5,
-   "currentMedianFloor": 9.0,
+   "baselineFloorMedian": 7.5,
+   "currentFloorMedian": 9.0,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -725,7 +758,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 20
+   "rank": 21
   },
   {
    "apartmentKey": "11305-33",
@@ -749,8 +782,8 @@
    "exactAreas": [
     122.58
    ],
-   "baselineMedianFloor": 5.0,
-   "currentMedianFloor": 8.5,
+   "baselineFloorMedian": 5.0,
+   "currentFloorMedian": 8.5,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -758,7 +791,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 122.6,
    "calculationVersion": "v1.1",
-   "rank": 21
+   "rank": 22
   },
   {
    "apartmentKey": "11500-150",
@@ -780,8 +813,8 @@
    "exactAreas": [
     39.6
    ],
-   "baselineMedianFloor": 8.0,
-   "currentMedianFloor": 6.0,
+   "baselineFloorMedian": 8.0,
+   "currentFloorMedian": 6.0,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -789,7 +822,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 39.6,
    "calculationVersion": "v1.1",
-   "rank": 22
+   "rank": 23
   },
   {
    "apartmentKey": "11260-92",
@@ -813,45 +846,14 @@
    "exactAreas": [
     39.84
    ],
-   "baselineMedianFloor": 4,
-   "currentMedianFloor": 6,
+   "baselineFloorMedian": 4,
+   "currentFloorMedian": 6,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
    "directTradeWarning": false,
    "compositionWarning": true,
    "exclusiveAreaGroup": 39.8,
-   "calculationVersion": "v1.1",
-   "rank": 23
-  },
-  {
-   "apartmentKey": "11305-24",
-   "aptSeq": "24",
-   "apartmentName": "주공1단지",
-   "sidoCode": "11",
-   "sggCode": "11305",
-   "areaGroup": 41.3,
-   "referenceMonth": "202606",
-   "baselineMedian": 470000000,
-   "currentMedian": 530000000,
-   "riseAmount": 60000000,
-   "riseRate": 12.77,
-   "baselineTradeCount": 19,
-   "currentTradeCount": 3,
-   "confidence": "medium",
-   "warnings": [],
-   "region": "11305 번동",
-   "exactAreas": [
-    41.3
-   ],
-   "baselineMedianFloor": 7,
-   "currentMedianFloor": 7,
-   "baselineDirectTradeCount": 0,
-   "currentDirectTradeCount": 0,
-   "floorMixWarning": false,
-   "directTradeWarning": false,
-   "compositionWarning": false,
-   "exclusiveAreaGroup": 41.3,
    "calculationVersion": "v1.1",
    "rank": 24
   },
@@ -878,8 +880,8 @@
    "exactAreas": [
     39.6
    ],
-   "baselineMedianFloor": 4.0,
-   "currentMedianFloor": 11.5,
+   "baselineFloorMedian": 4.0,
+   "currentFloorMedian": 11.5,
    "baselineDirectTradeCount": 1,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -911,8 +913,8 @@
    "exactAreas": [
     84.8681
    ],
-   "baselineMedianFloor": 12.0,
-   "currentMedianFloor": 5,
+   "baselineFloorMedian": 12.0,
+   "currentFloorMedian": 5,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -944,8 +946,8 @@
    "exactAreas": [
     63.53
    ],
-   "baselineMedianFloor": 4,
-   "currentMedianFloor": 6.5,
+   "baselineFloorMedian": 4,
+   "currentFloorMedian": 6.5,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -977,8 +979,8 @@
    "exactAreas": [
     39.6
    ],
-   "baselineMedianFloor": 10,
-   "currentMedianFloor": 11,
+   "baselineFloorMedian": 10,
+   "currentFloorMedian": 11,
    "baselineDirectTradeCount": 1,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -1010,8 +1012,8 @@
    "exactAreas": [
     84.72
    ],
-   "baselineMedianFloor": 23,
-   "currentMedianFloor": 15,
+   "baselineFloorMedian": 23,
+   "currentFloorMedian": 15,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -1044,8 +1046,8 @@
     84.9965,
     84.9926
    ],
-   "baselineMedianFloor": 11,
-   "currentMedianFloor": 11.0,
+   "baselineFloorMedian": 11,
+   "currentFloorMedian": 11.0,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -1077,8 +1079,8 @@
    "exactAreas": [
     58.87
    ],
-   "baselineMedianFloor": 4,
-   "currentMedianFloor": 9.5,
+   "baselineFloorMedian": 4,
+   "currentFloorMedian": 9.5,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -1113,8 +1115,8 @@
     84.764,
     84.762
    ],
-   "baselineMedianFloor": 13.5,
-   "currentMedianFloor": 11.0,
+   "baselineFloorMedian": 13.5,
+   "currentFloorMedian": 11.0,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -1146,8 +1148,8 @@
    "exactAreas": [
     84.92
    ],
-   "baselineMedianFloor": 7.0,
-   "currentMedianFloor": 10.0,
+   "baselineFloorMedian": 7.0,
+   "currentFloorMedian": 10.0,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -1179,8 +1181,8 @@
    "exactAreas": [
     84.92
    ],
-   "baselineMedianFloor": 10,
-   "currentMedianFloor": 8.5,
+   "baselineFloorMedian": 10,
+   "currentFloorMedian": 8.5,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 1,
    "floorMixWarning": false,
@@ -1210,8 +1212,8 @@
    "exactAreas": [
     58.46
    ],
-   "baselineMedianFloor": 7,
-   "currentMedianFloor": 9.0,
+   "baselineFloorMedian": 7,
+   "currentFloorMedian": 9.0,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -1241,8 +1243,8 @@
    "exactAreas": [
     58.64
    ],
-   "baselineMedianFloor": 2.5,
-   "currentMedianFloor": 5.0,
+   "baselineFloorMedian": 2.5,
+   "currentFloorMedian": 5.0,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -1251,6 +1253,37 @@
    "exclusiveAreaGroup": 58.6,
    "calculationVersion": "v1.1",
    "rank": 36
+  },
+  {
+   "apartmentKey": "11305-24",
+   "aptSeq": "24",
+   "apartmentName": "주공1단지",
+   "sidoCode": "11",
+   "sggCode": "11305",
+   "areaGroup": 41.3,
+   "referenceMonth": "202606",
+   "baselineMedian": 470000000,
+   "currentMedian": 525000000.0,
+   "riseAmount": 55000000,
+   "riseRate": 11.7,
+   "baselineTradeCount": 19,
+   "currentTradeCount": 4,
+   "confidence": "medium",
+   "warnings": [],
+   "region": "11305 번동",
+   "exactAreas": [
+    41.3
+   ],
+   "baselineFloorMedian": 7,
+   "currentFloorMedian": 7.5,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": false,
+   "directTradeWarning": false,
+   "compositionWarning": false,
+   "exclusiveAreaGroup": 41.3,
+   "calculationVersion": "v1.1",
+   "rank": 37
   },
   {
    "apartmentKey": "11500-20",
@@ -1272,8 +1305,8 @@
    "exactAreas": [
     59.91
    ],
-   "baselineMedianFloor": 9.0,
-   "currentMedianFloor": 10,
+   "baselineFloorMedian": 9.0,
+   "currentFloorMedian": 10,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -1281,7 +1314,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 59.9,
    "calculationVersion": "v1.1",
-   "rank": 37
+   "rank": 38
   },
   {
    "apartmentKey": "11410-60",
@@ -1305,8 +1338,8 @@
    "exactAreas": [
     84.9
    ],
-   "baselineMedianFloor": 3,
-   "currentMedianFloor": 15.5,
+   "baselineFloorMedian": 3,
+   "currentFloorMedian": 15.5,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -1314,7 +1347,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 38
+   "rank": 39
   },
   {
    "apartmentKey": "11290-207",
@@ -1338,8 +1371,8 @@
    "exactAreas": [
     59.6983
    ],
-   "baselineMedianFloor": 10.0,
-   "currentMedianFloor": 2.5,
+   "baselineFloorMedian": 10.0,
+   "currentFloorMedian": 2.5,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -1347,7 +1380,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 59.7,
    "calculationVersion": "v1.1",
-   "rank": 39
+   "rank": 40
   },
   {
    "apartmentKey": "11350-120",
@@ -1371,8 +1404,8 @@
    "exactAreas": [
     49.85
    ],
-   "baselineMedianFloor": 3,
-   "currentMedianFloor": 11,
+   "baselineFloorMedian": 3,
+   "currentFloorMedian": 11,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -1380,7 +1413,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 49.9,
    "calculationVersion": "v1.1",
-   "rank": 40
+   "rank": 41
   },
   {
    "apartmentKey": "11305-6",
@@ -1406,8 +1439,8 @@
     84.86,
     84.92
    ],
-   "baselineMedianFloor": 12,
-   "currentMedianFloor": 15.5,
+   "baselineFloorMedian": 12,
+   "currentFloorMedian": 15.5,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -1415,38 +1448,41 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 41
+   "rank": 42
   },
   {
-   "apartmentKey": "11560-56",
-   "aptSeq": "56",
-   "apartmentName": "남성",
+   "apartmentKey": "11215-16",
+   "aptSeq": "16",
+   "apartmentName": "현대3",
    "sidoCode": "11",
-   "sggCode": "11560",
-   "areaGroup": 58.5,
+   "sggCode": "11215",
+   "areaGroup": 59.7,
    "referenceMonth": "202606",
-   "baselineMedian": 1046000000.0,
-   "currentMedian": 1165000000.0,
-   "riseAmount": 119000000,
+   "baselineMedian": 1560000000,
+   "currentMedian": 1737500000.0,
+   "riseAmount": 177500000,
    "riseRate": 11.38,
-   "baselineTradeCount": 6,
+   "baselineTradeCount": 3,
    "currentTradeCount": 2,
-   "confidence": "medium",
-   "warnings": [],
-   "region": "11560 문래동2가",
-   "exactAreas": [
-    58.52
+   "confidence": "low",
+   "warnings": [
+    "층수 차이(8층 이상 또는 구간 차이)",
+    "직거래 포함 이력 존재"
    ],
-   "baselineMedianFloor": 10.0,
-   "currentMedianFloor": 11.5,
-   "baselineDirectTradeCount": 0,
+   "region": "11215 광장동",
+   "exactAreas": [
+    59.67
+   ],
+   "baselineFloorMedian": 2.0,
+   "currentFloorMedian": 13.5,
+   "baselineDirectTradeCount": 1,
    "currentDirectTradeCount": 0,
-   "floorMixWarning": false,
-   "directTradeWarning": false,
-   "compositionWarning": false,
-   "exclusiveAreaGroup": 58.5,
+   "floorMixWarning": true,
+   "directTradeWarning": true,
+   "compositionWarning": true,
+   "exclusiveAreaGroup": 59.7,
    "calculationVersion": "v1.1",
-   "rank": 42
+   "rank": 43
   },
   {
    "apartmentKey": "11305-21",
@@ -1471,8 +1507,8 @@
    "exactAreas": [
     59.82
    ],
-   "baselineMedianFloor": 17,
-   "currentMedianFloor": 11,
+   "baselineFloorMedian": 17,
+   "currentFloorMedian": 11,
    "baselineDirectTradeCount": 1,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -1480,7 +1516,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 59.8,
    "calculationVersion": "v1.1",
-   "rank": 43
+   "rank": 44
   },
   {
    "apartmentKey": "11230-44",
@@ -1504,8 +1540,8 @@
    "exactAreas": [
     114.95
    ],
-   "baselineMedianFloor": 6.0,
-   "currentMedianFloor": 10.5,
+   "baselineFloorMedian": 6.0,
+   "currentFloorMedian": 10.5,
    "baselineDirectTradeCount": 1,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -1513,7 +1549,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 115.0,
    "calculationVersion": "v1.1",
-   "rank": 44
+   "rank": 45
   },
   {
    "apartmentKey": "11530-3798",
@@ -1538,8 +1574,8 @@
     84.94,
     84.88
    ],
-   "baselineMedianFloor": 14.0,
-   "currentMedianFloor": 14.0,
+   "baselineFloorMedian": 14.0,
+   "currentFloorMedian": 14.0,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -1547,7 +1583,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 45
+   "rank": 46
   },
   {
    "apartmentKey": "11290-116",
@@ -1569,8 +1605,8 @@
    "exactAreas": [
     59.99
    ],
-   "baselineMedianFloor": 11,
-   "currentMedianFloor": 10.0,
+   "baselineFloorMedian": 11,
+   "currentFloorMedian": 10.0,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -1578,7 +1614,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 60.0,
    "calculationVersion": "v1.1",
-   "rank": 46
+   "rank": 47
   },
   {
    "apartmentKey": "11500-150",
@@ -1600,8 +1636,8 @@
    "exactAreas": [
     34.44
    ],
-   "baselineMedianFloor": 8,
-   "currentMedianFloor": 5.5,
+   "baselineFloorMedian": 8,
+   "currentFloorMedian": 5.5,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -1609,7 +1645,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 34.4,
    "calculationVersion": "v1.1",
-   "rank": 47
+   "rank": 48
   },
   {
    "apartmentKey": "11290-17",
@@ -1631,8 +1667,8 @@
    "exactAreas": [
     114.66
    ],
-   "baselineMedianFloor": 8,
-   "currentMedianFloor": 6.5,
+   "baselineFloorMedian": 8,
+   "currentFloorMedian": 6.5,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -1640,7 +1676,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 114.7,
    "calculationVersion": "v1.1",
-   "rank": 48
+   "rank": 49
   },
   {
    "apartmentKey": "11305-6",
@@ -1664,8 +1700,8 @@
    "exactAreas": [
     84.76
    ],
-   "baselineMedianFloor": 13,
-   "currentMedianFloor": 18.5,
+   "baselineFloorMedian": 13,
+   "currentFloorMedian": 18.5,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -1673,7 +1709,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.8,
    "calculationVersion": "v1.1",
-   "rank": 49
+   "rank": 50
   },
   {
    "apartmentKey": "11440-135",
@@ -1697,8 +1733,8 @@
    "exactAreas": [
     84.94
    ],
-   "baselineMedianFloor": 10.5,
-   "currentMedianFloor": 6.0,
+   "baselineFloorMedian": 10.5,
+   "currentFloorMedian": 6.0,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -1706,7 +1742,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 50
+   "rank": 51
   },
   {
    "apartmentKey": "11500-5552",
@@ -1728,8 +1764,8 @@
    "exactAreas": [
     84.99
    ],
-   "baselineMedianFloor": 10.5,
-   "currentMedianFloor": 9.5,
+   "baselineFloorMedian": 10.5,
+   "currentFloorMedian": 9.5,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -1737,7 +1773,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 51
+   "rank": 52
   },
   {
    "apartmentKey": "11260-103",
@@ -1759,8 +1795,8 @@
    "exactAreas": [
     59.34
    ],
-   "baselineMedianFloor": 8.0,
-   "currentMedianFloor": 13,
+   "baselineFloorMedian": 8.0,
+   "currentFloorMedian": 13,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -1768,7 +1804,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 59.3,
    "calculationVersion": "v1.1",
-   "rank": 52
+   "rank": 53
   },
   {
    "apartmentKey": "11560-20",
@@ -1790,8 +1826,8 @@
    "exactAreas": [
     79.24
    ],
-   "baselineMedianFloor": 7.0,
-   "currentMedianFloor": 7,
+   "baselineFloorMedian": 7.0,
+   "currentFloorMedian": 7,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -1799,7 +1835,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 79.2,
    "calculationVersion": "v1.1",
-   "rank": 53
+   "rank": 54
   },
   {
    "apartmentKey": "11350-156",
@@ -1824,8 +1860,8 @@
    "exactAreas": [
     114.99
    ],
-   "baselineMedianFloor": 8.0,
-   "currentMedianFloor": 19.0,
+   "baselineFloorMedian": 8.0,
+   "currentFloorMedian": 19.0,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -1833,7 +1869,38 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 115.0,
    "calculationVersion": "v1.1",
-   "rank": 54
+   "rank": 55
+  },
+  {
+   "apartmentKey": "11560-56",
+   "aptSeq": "56",
+   "apartmentName": "남성",
+   "sidoCode": "11",
+   "sggCode": "11560",
+   "areaGroup": 58.5,
+   "referenceMonth": "202606",
+   "baselineMedian": 1046000000.0,
+   "currentMedian": 1155000000,
+   "riseAmount": 109000000,
+   "riseRate": 10.42,
+   "baselineTradeCount": 6,
+   "currentTradeCount": 3,
+   "confidence": "medium",
+   "warnings": [],
+   "region": "11560 문래동2가",
+   "exactAreas": [
+    58.52
+   ],
+   "baselineFloorMedian": 10.0,
+   "currentFloorMedian": 8,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": false,
+   "directTradeWarning": false,
+   "compositionWarning": false,
+   "exclusiveAreaGroup": 58.5,
+   "calculationVersion": "v1.1",
+   "rank": 56
   },
   {
    "apartmentKey": "11290-3492",
@@ -1857,8 +1924,8 @@
    "exactAreas": [
     59.754
    ],
-   "baselineMedianFloor": 8.0,
-   "currentMedianFloor": 18.0,
+   "baselineFloorMedian": 8.0,
+   "currentFloorMedian": 18.0,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -1866,7 +1933,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 59.8,
    "calculationVersion": "v1.1",
-   "rank": 55
+   "rank": 57
   },
   {
    "apartmentKey": "11320-98",
@@ -1890,8 +1957,8 @@
    "exactAreas": [
     41.3
    ],
-   "baselineMedianFloor": 7,
-   "currentMedianFloor": 4.5,
+   "baselineFloorMedian": 7,
+   "currentFloorMedian": 4.5,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -1899,7 +1966,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 41.3,
    "calculationVersion": "v1.1",
-   "rank": 56
+   "rank": 58
   },
   {
    "apartmentKey": "11290-18",
@@ -1923,8 +1990,8 @@
    "exactAreas": [
     84.68
    ],
-   "baselineMedianFloor": 4,
-   "currentMedianFloor": 7,
+   "baselineFloorMedian": 4,
+   "currentFloorMedian": 7,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -1932,7 +1999,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.7,
    "calculationVersion": "v1.1",
-   "rank": 57
+   "rank": 59
   },
   {
    "apartmentKey": "11380-100",
@@ -1954,8 +2021,8 @@
    "exactAreas": [
     84.951
    ],
-   "baselineMedianFloor": 6,
-   "currentMedianFloor": 10.0,
+   "baselineFloorMedian": 6,
+   "currentFloorMedian": 10.0,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -1963,7 +2030,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 58
+   "rank": 60
   },
   {
    "apartmentKey": "11350-29",
@@ -1985,8 +2052,8 @@
    "exactAreas": [
     32.39
    ],
-   "baselineMedianFloor": 6,
-   "currentMedianFloor": 6.0,
+   "baselineFloorMedian": 6,
+   "currentFloorMedian": 6.0,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -1994,7 +2061,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 32.4,
    "calculationVersion": "v1.1",
-   "rank": 59
+   "rank": 61
   },
   {
    "apartmentKey": "11290-56",
@@ -2016,8 +2083,8 @@
    "exactAreas": [
     59.998
    ],
-   "baselineMedianFloor": 11,
-   "currentMedianFloor": 13.5,
+   "baselineFloorMedian": 11,
+   "currentFloorMedian": 13.5,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -2025,7 +2092,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 60.0,
    "calculationVersion": "v1.1",
-   "rank": 60
+   "rank": 62
   },
   {
    "apartmentKey": "11260-24",
@@ -2047,8 +2114,8 @@
    "exactAreas": [
     84.92
    ],
-   "baselineMedianFloor": 6,
-   "currentMedianFloor": 12.0,
+   "baselineFloorMedian": 6,
+   "currentFloorMedian": 12.0,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -2056,7 +2123,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 61
+   "rank": 63
   },
   {
    "apartmentKey": "11290-3473",
@@ -2080,8 +2147,8 @@
    "exactAreas": [
     84.98
    ],
-   "baselineMedianFloor": 5.0,
-   "currentMedianFloor": 8.5,
+   "baselineFloorMedian": 5.0,
+   "currentFloorMedian": 8.5,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -2089,7 +2156,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 62
+   "rank": 64
   },
   {
    "apartmentKey": "11530-9",
@@ -2113,8 +2180,8 @@
    "exactAreas": [
     51.84
    ],
-   "baselineMedianFloor": 8,
-   "currentMedianFloor": 15.5,
+   "baselineFloorMedian": 8,
+   "currentFloorMedian": 15.5,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -2122,7 +2189,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 51.8,
    "calculationVersion": "v1.1",
-   "rank": 63
+   "rank": 65
   },
   {
    "apartmentKey": "11470-46",
@@ -2147,8 +2214,8 @@
     84.76,
     84.77
    ],
-   "baselineMedianFloor": 8.5,
-   "currentMedianFloor": 6.0,
+   "baselineFloorMedian": 8.5,
+   "currentFloorMedian": 6.0,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -2156,7 +2223,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.8,
    "calculationVersion": "v1.1",
-   "rank": 64
+   "rank": 66
   },
   {
    "apartmentKey": "11350-120",
@@ -2181,8 +2248,8 @@
    "exactAreas": [
     59.87
    ],
-   "baselineMedianFloor": 4.5,
-   "currentMedianFloor": 8.0,
+   "baselineFloorMedian": 4.5,
+   "currentFloorMedian": 8.0,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -2190,7 +2257,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 59.9,
    "calculationVersion": "v1.1",
-   "rank": 65
+   "rank": 67
   },
   {
    "apartmentKey": "11410-60",
@@ -2212,8 +2279,8 @@
    "exactAreas": [
     59.93
    ],
-   "baselineMedianFloor": 6.0,
-   "currentMedianFloor": 13,
+   "baselineFloorMedian": 6.0,
+   "currentFloorMedian": 13,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -2221,7 +2288,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 59.9,
    "calculationVersion": "v1.1",
-   "rank": 66
+   "rank": 68
   },
   {
    "apartmentKey": "11500-199",
@@ -2245,8 +2312,8 @@
    "exactAreas": [
     59.92
    ],
-   "baselineMedianFloor": 6.0,
-   "currentMedianFloor": 10.0,
+   "baselineFloorMedian": 6.0,
+   "currentFloorMedian": 10.0,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -2254,7 +2321,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 59.9,
    "calculationVersion": "v1.1",
-   "rank": 67
+   "rank": 69
   },
   {
    "apartmentKey": "11620-54",
@@ -2278,8 +2345,8 @@
    "exactAreas": [
     113.31
    ],
-   "baselineMedianFloor": 19,
-   "currentMedianFloor": 15.0,
+   "baselineFloorMedian": 19,
+   "currentFloorMedian": 15.0,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -2287,7 +2354,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 113.3,
    "calculationVersion": "v1.1",
-   "rank": 68
+   "rank": 70
   },
   {
    "apartmentKey": "11530-38",
@@ -2309,8 +2376,8 @@
    "exactAreas": [
     79.98
    ],
-   "baselineMedianFloor": 7,
-   "currentMedianFloor": 8.5,
+   "baselineFloorMedian": 7,
+   "currentFloorMedian": 8.5,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -2318,7 +2385,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 80.0,
    "calculationVersion": "v1.1",
-   "rank": 69
+   "rank": 71
   },
   {
    "apartmentKey": "11350-182",
@@ -2340,8 +2407,8 @@
    "exactAreas": [
     49.6
    ],
-   "baselineMedianFloor": 6.0,
-   "currentMedianFloor": 13,
+   "baselineFloorMedian": 6.0,
+   "currentFloorMedian": 13,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -2349,7 +2416,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 49.6,
    "calculationVersion": "v1.1",
-   "rank": 70
+   "rank": 72
   },
   {
    "apartmentKey": "11290-71",
@@ -2371,8 +2438,8 @@
    "exactAreas": [
     59.95
    ],
-   "baselineMedianFloor": 13,
-   "currentMedianFloor": 14,
+   "baselineFloorMedian": 13,
+   "currentFloorMedian": 14,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -2380,7 +2447,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 60.0,
    "calculationVersion": "v1.1",
-   "rank": 71
+   "rank": 73
   },
   {
    "apartmentKey": "11350-202",
@@ -2405,8 +2472,8 @@
    "exactAreas": [
     79.25
    ],
-   "baselineMedianFloor": 8.0,
-   "currentMedianFloor": 4.5,
+   "baselineFloorMedian": 8.0,
+   "currentFloorMedian": 4.5,
    "baselineDirectTradeCount": 2,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -2414,7 +2481,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 79.2,
    "calculationVersion": "v1.1",
-   "rank": 72
+   "rank": 74
   },
   {
    "apartmentKey": "11350-75",
@@ -2438,8 +2505,8 @@
    "exactAreas": [
     127.22
    ],
-   "baselineMedianFloor": 5,
-   "currentMedianFloor": 13.5,
+   "baselineFloorMedian": 5,
+   "currentFloorMedian": 13.5,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -2447,7 +2514,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 127.2,
    "calculationVersion": "v1.1",
-   "rank": 73
+   "rank": 75
   },
   {
    "apartmentKey": "11530-141",
@@ -2469,8 +2536,8 @@
    "exactAreas": [
     84.75
    ],
-   "baselineMedianFloor": 10,
-   "currentMedianFloor": 14.0,
+   "baselineFloorMedian": 10,
+   "currentFloorMedian": 14.0,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -2478,7 +2545,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 84.8,
    "calculationVersion": "v1.1",
-   "rank": 74
+   "rank": 76
   },
   {
    "apartmentKey": "11350-24",
@@ -2502,8 +2569,8 @@
    "exactAreas": [
     59.4
    ],
-   "baselineMedianFloor": 5.5,
-   "currentMedianFloor": 5.5,
+   "baselineFloorMedian": 5.5,
+   "currentFloorMedian": 5.5,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -2511,7 +2578,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 59.4,
    "calculationVersion": "v1.1",
-   "rank": 75
+   "rank": 77
   },
   {
    "apartmentKey": "11500-189",
@@ -2535,8 +2602,8 @@
    "exactAreas": [
     84.29
    ],
-   "baselineMedianFloor": 9,
-   "currentMedianFloor": 5,
+   "baselineFloorMedian": 9,
+   "currentFloorMedian": 5,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -2544,7 +2611,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.3,
    "calculationVersion": "v1.1",
-   "rank": 76
+   "rank": 78
   },
   {
    "apartmentKey": "11740-2894",
@@ -2566,8 +2633,8 @@
    "exactAreas": [
     84.98
    ],
-   "baselineMedianFloor": 6,
-   "currentMedianFloor": 13.0,
+   "baselineFloorMedian": 6,
+   "currentFloorMedian": 13.0,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -2575,7 +2642,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 77
+   "rank": 79
   },
   {
    "apartmentKey": "11305-4255",
@@ -2600,8 +2667,8 @@
     84.99,
     84.97
    ],
-   "baselineMedianFloor": 8.5,
-   "currentMedianFloor": 7.5,
+   "baselineFloorMedian": 8.5,
+   "currentFloorMedian": 7.5,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -2609,7 +2676,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 78
+   "rank": 80
   },
   {
    "apartmentKey": "11350-114",
@@ -2633,8 +2700,8 @@
    "exactAreas": [
     58.46
    ],
-   "baselineMedianFloor": 7,
-   "currentMedianFloor": 7,
+   "baselineFloorMedian": 7,
+   "currentFloorMedian": 7,
    "baselineDirectTradeCount": 1,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -2642,7 +2709,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 58.5,
    "calculationVersion": "v1.1",
-   "rank": 79
+   "rank": 81
   },
   {
    "apartmentKey": "11470-4993",
@@ -2666,8 +2733,8 @@
    "exactAreas": [
     59.747
    ],
-   "baselineMedianFloor": 5,
-   "currentMedianFloor": 9,
+   "baselineFloorMedian": 5,
+   "currentFloorMedian": 9,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -2675,7 +2742,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 59.7,
    "calculationVersion": "v1.1",
-   "rank": 80
+   "rank": 82
   },
   {
    "apartmentKey": "11560-107",
@@ -2699,8 +2766,8 @@
    "exactAreas": [
     114.87
    ],
-   "baselineMedianFloor": 13.5,
-   "currentMedianFloor": 12.5,
+   "baselineFloorMedian": 13.5,
+   "currentFloorMedian": 12.5,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -2708,7 +2775,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 114.9,
    "calculationVersion": "v1.1",
-   "rank": 81
+   "rank": 83
   },
   {
    "apartmentKey": "11530-153",
@@ -2730,8 +2797,8 @@
    "exactAreas": [
     60.054
    ],
-   "baselineMedianFloor": 4,
-   "currentMedianFloor": 3.0,
+   "baselineFloorMedian": 4,
+   "currentFloorMedian": 3.0,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -2739,7 +2806,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 60.1,
    "calculationVersion": "v1.1",
-   "rank": 82
+   "rank": 84
   },
   {
    "apartmentKey": "11260-4103",
@@ -2765,8 +2832,8 @@
     59.9699,
     59.9855
    ],
-   "baselineMedianFloor": 15.5,
-   "currentMedianFloor": 15.5,
+   "baselineFloorMedian": 15.5,
+   "currentFloorMedian": 15.5,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -2774,7 +2841,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 60.0,
    "calculationVersion": "v1.1",
-   "rank": 83
+   "rank": 85
   },
   {
    "apartmentKey": "11560-113",
@@ -2798,8 +2865,8 @@
    "exactAreas": [
     53.24
    ],
-   "baselineMedianFloor": 1,
-   "currentMedianFloor": 9,
+   "baselineFloorMedian": 1,
+   "currentFloorMedian": 9,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -2807,7 +2874,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 53.2,
    "calculationVersion": "v1.1",
-   "rank": 84
+   "rank": 86
   },
   {
    "apartmentKey": "11350-117",
@@ -2831,8 +2898,8 @@
    "exactAreas": [
     49.72
    ],
-   "baselineMedianFloor": 10.0,
-   "currentMedianFloor": 9,
+   "baselineFloorMedian": 10.0,
+   "currentFloorMedian": 9,
    "baselineDirectTradeCount": 1,
    "currentDirectTradeCount": 1,
    "floorMixWarning": false,
@@ -2840,7 +2907,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 49.7,
    "calculationVersion": "v1.1",
-   "rank": 85
+   "rank": 87
   },
   {
    "apartmentKey": "11530-77",
@@ -2862,8 +2929,8 @@
    "exactAreas": [
     111.69
    ],
-   "baselineMedianFloor": 9,
-   "currentMedianFloor": 15,
+   "baselineFloorMedian": 9,
+   "currentFloorMedian": 15,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -2871,7 +2938,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 111.7,
    "calculationVersion": "v1.1",
-   "rank": 86
+   "rank": 88
   },
   {
    "apartmentKey": "11320-25",
@@ -2893,8 +2960,8 @@
    "exactAreas": [
     83.86
    ],
-   "baselineMedianFloor": 8,
-   "currentMedianFloor": 7.0,
+   "baselineFloorMedian": 8,
+   "currentFloorMedian": 7.0,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -2902,7 +2969,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 83.9,
    "calculationVersion": "v1.1",
-   "rank": 87
+   "rank": 89
   },
   {
    "apartmentKey": "11170-3299",
@@ -2924,8 +2991,8 @@
    "exactAreas": [
     114.5011
    ],
-   "baselineMedianFloor": 26,
-   "currentMedianFloor": 30.5,
+   "baselineFloorMedian": 26,
+   "currentFloorMedian": 30.5,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -2933,7 +3000,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 114.5,
    "calculationVersion": "v1.1",
-   "rank": 88
+   "rank": 90
   },
   {
    "apartmentKey": "11545-17",
@@ -2955,8 +3022,8 @@
    "exactAreas": [
     38.64
    ],
-   "baselineMedianFloor": 8.5,
-   "currentMedianFloor": 7.5,
+   "baselineFloorMedian": 8.5,
+   "currentFloorMedian": 7.5,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -2964,7 +3031,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 38.6,
    "calculationVersion": "v1.1",
-   "rank": 89
+   "rank": 91
   },
   {
    "apartmentKey": "11320-53",
@@ -2986,8 +3053,8 @@
    "exactAreas": [
     59.86
    ],
-   "baselineMedianFloor": 8,
-   "currentMedianFloor": 15,
+   "baselineFloorMedian": 8,
+   "currentFloorMedian": 15,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -2995,7 +3062,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 59.9,
    "calculationVersion": "v1.1",
-   "rank": 90
+   "rank": 92
   },
   {
    "apartmentKey": "11545-2",
@@ -3019,8 +3086,8 @@
    "exactAreas": [
     59.84
    ],
-   "baselineMedianFloor": 11.0,
-   "currentMedianFloor": 16.0,
+   "baselineFloorMedian": 11.0,
+   "currentFloorMedian": 16.0,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -3028,7 +3095,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 59.8,
    "calculationVersion": "v1.1",
-   "rank": 91
+   "rank": 93
   },
   {
    "apartmentKey": "11320-53",
@@ -3050,8 +3117,8 @@
    "exactAreas": [
     84.88
    ],
-   "baselineMedianFloor": 7.5,
-   "currentMedianFloor": 11.0,
+   "baselineFloorMedian": 7.5,
+   "currentFloorMedian": 11.0,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -3059,7 +3126,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 92
+   "rank": 94
   },
   {
    "apartmentKey": "11440-5410",
@@ -3081,8 +3148,8 @@
    "exactAreas": [
     84.5978
    ],
-   "baselineMedianFloor": 18.0,
-   "currentMedianFloor": 19.5,
+   "baselineFloorMedian": 18.0,
+   "currentFloorMedian": 19.5,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -3090,7 +3157,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 84.6,
    "calculationVersion": "v1.1",
-   "rank": 93
+   "rank": 95
   },
   {
    "apartmentKey": "11290-19",
@@ -3114,8 +3181,8 @@
    "exactAreas": [
     132.96
    ],
-   "baselineMedianFloor": 12.0,
-   "currentMedianFloor": 12,
+   "baselineFloorMedian": 12.0,
+   "currentFloorMedian": 12,
    "baselineDirectTradeCount": 1,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -3123,7 +3190,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 133.0,
    "calculationVersion": "v1.1",
-   "rank": 94
+   "rank": 96
   },
   {
    "apartmentKey": "11545-2479",
@@ -3147,8 +3214,8 @@
    "exactAreas": [
     84.408
    ],
-   "baselineMedianFloor": 8,
-   "currentMedianFloor": 22.0,
+   "baselineFloorMedian": 8,
+   "currentFloorMedian": 22.0,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -3156,7 +3223,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.4,
    "calculationVersion": "v1.1",
-   "rank": 95
+   "rank": 97
   },
   {
    "apartmentKey": "11545-2262",
@@ -3180,8 +3247,8 @@
    "exactAreas": [
     84.8114
    ],
-   "baselineMedianFloor": 26,
-   "currentMedianFloor": 17,
+   "baselineFloorMedian": 26,
+   "currentFloorMedian": 17,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -3189,7 +3256,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.8,
    "calculationVersion": "v1.1",
-   "rank": 96
+   "rank": 98
   },
   {
    "apartmentKey": "11260-35",
@@ -3211,8 +3278,8 @@
    "exactAreas": [
     54.0
    ],
-   "baselineMedianFloor": 9,
-   "currentMedianFloor": 7.0,
+   "baselineFloorMedian": 9,
+   "currentFloorMedian": 7.0,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -3220,7 +3287,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 54.0,
    "calculationVersion": "v1.1",
-   "rank": 97
+   "rank": 99
   },
   {
    "apartmentKey": "11560-15",
@@ -3242,8 +3309,8 @@
    "exactAreas": [
     92.13
    ],
-   "baselineMedianFloor": 8,
-   "currentMedianFloor": 9.5,
+   "baselineFloorMedian": 8,
+   "currentFloorMedian": 9.5,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -3251,7 +3318,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 92.1,
    "calculationVersion": "v1.1",
-   "rank": 98
+   "rank": 100
   },
   {
    "apartmentKey": "11650-605",
@@ -3273,8 +3340,8 @@
    "exactAreas": [
     49.92
    ],
-   "baselineMedianFloor": 6.5,
-   "currentMedianFloor": 7,
+   "baselineFloorMedian": 6.5,
+   "currentFloorMedian": 7,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -3282,7 +3349,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 49.9,
    "calculationVersion": "v1.1",
-   "rank": 99
+   "rank": 101
   },
   {
    "apartmentKey": "11290-22",
@@ -3306,8 +3373,8 @@
    "exactAreas": [
     80.54
    ],
-   "baselineMedianFloor": 12.5,
-   "currentMedianFloor": 3.0,
+   "baselineFloorMedian": 12.5,
+   "currentFloorMedian": 3.0,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -3315,7 +3382,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 80.5,
    "calculationVersion": "v1.1",
-   "rank": 100
+   "rank": 102
   },
   {
    "apartmentKey": "11290-4978",
@@ -3341,8 +3408,8 @@
     84.48,
     84.47
    ],
-   "baselineMedianFloor": 16.0,
-   "currentMedianFloor": 11,
+   "baselineFloorMedian": 16.0,
+   "currentFloorMedian": 11,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -3350,7 +3417,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.5,
    "calculationVersion": "v1.1",
-   "rank": 101
+   "rank": 103
   },
   {
    "apartmentKey": "11500-263",
@@ -3372,8 +3439,8 @@
    "exactAreas": [
     165.8299
    ],
-   "baselineMedianFloor": 9.0,
-   "currentMedianFloor": 5.5,
+   "baselineFloorMedian": 9.0,
+   "currentFloorMedian": 5.5,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -3381,7 +3448,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 165.8,
    "calculationVersion": "v1.1",
-   "rank": 102
+   "rank": 104
   },
   {
    "apartmentKey": "11650-232",
@@ -3406,8 +3473,8 @@
    "exactAreas": [
     64.53
    ],
-   "baselineMedianFloor": 5.0,
-   "currentMedianFloor": 8.5,
+   "baselineFloorMedian": 5.0,
+   "currentFloorMedian": 8.5,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -3415,7 +3482,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 64.5,
    "calculationVersion": "v1.1",
-   "rank": 103
+   "rank": 105
   },
   {
    "apartmentKey": "11350-43",
@@ -3439,8 +3506,8 @@
    "exactAreas": [
     66.56
    ],
-   "baselineMedianFloor": 5,
-   "currentMedianFloor": 8.0,
+   "baselineFloorMedian": 5,
+   "currentFloorMedian": 8.0,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -3448,7 +3515,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 66.6,
    "calculationVersion": "v1.1",
-   "rank": 104
+   "rank": 106
   },
   {
    "apartmentKey": "11380-11",
@@ -3472,8 +3539,8 @@
    "exactAreas": [
     66.7
    ],
-   "baselineMedianFloor": 8.0,
-   "currentMedianFloor": 9.0,
+   "baselineFloorMedian": 8.0,
+   "currentFloorMedian": 9.0,
    "baselineDirectTradeCount": 2,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -3481,7 +3548,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 66.7,
    "calculationVersion": "v1.1",
-   "rank": 105
+   "rank": 107
   },
   {
    "apartmentKey": "11500-6",
@@ -3503,8 +3570,8 @@
    "exactAreas": [
     59.97
    ],
-   "baselineMedianFloor": 6,
-   "currentMedianFloor": 8.5,
+   "baselineFloorMedian": 6,
+   "currentFloorMedian": 8.5,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -3512,7 +3579,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 60.0,
    "calculationVersion": "v1.1",
-   "rank": 106
+   "rank": 108
   },
   {
    "apartmentKey": "11350-140",
@@ -3534,8 +3601,8 @@
    "exactAreas": [
     33.28
    ],
-   "baselineMedianFloor": 4.0,
-   "currentMedianFloor": 5.0,
+   "baselineFloorMedian": 4.0,
+   "currentFloorMedian": 5.0,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -3543,7 +3610,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 33.3,
    "calculationVersion": "v1.1",
-   "rank": 107
+   "rank": 109
   },
   {
    "apartmentKey": "11290-60",
@@ -3567,8 +3634,8 @@
    "exactAreas": [
     84.96
    ],
-   "baselineMedianFloor": 13.5,
-   "currentMedianFloor": 13.0,
+   "baselineFloorMedian": 13.5,
+   "currentFloorMedian": 13.0,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -3576,7 +3643,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 108
+   "rank": 110
   },
   {
    "apartmentKey": "11380-8697",
@@ -3598,8 +3665,8 @@
    "exactAreas": [
     59.99
    ],
-   "baselineMedianFloor": 5.5,
-   "currentMedianFloor": 6.5,
+   "baselineFloorMedian": 5.5,
+   "currentFloorMedian": 6.5,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -3607,7 +3674,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 60.0,
    "calculationVersion": "v1.1",
-   "rank": 109
+   "rank": 111
   },
   {
    "apartmentKey": "11530-133",
@@ -3631,8 +3698,8 @@
    "exactAreas": [
     83.67
    ],
-   "baselineMedianFloor": 7,
-   "currentMedianFloor": 5.5,
+   "baselineFloorMedian": 7,
+   "currentFloorMedian": 5.5,
    "baselineDirectTradeCount": 1,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -3640,7 +3707,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 83.7,
    "calculationVersion": "v1.1",
-   "rank": 110
+   "rank": 112
   },
   {
    "apartmentKey": "11410-104",
@@ -3664,8 +3731,8 @@
    "exactAreas": [
     84.78
    ],
-   "baselineMedianFloor": 8,
-   "currentMedianFloor": 4.0,
+   "baselineFloorMedian": 8,
+   "currentFloorMedian": 4.0,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -3673,7 +3740,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.8,
    "calculationVersion": "v1.1",
-   "rank": 111
+   "rank": 113
   },
   {
    "apartmentKey": "11620-102",
@@ -3697,8 +3764,8 @@
    "exactAreas": [
     84.75
    ],
-   "baselineMedianFloor": 6.0,
-   "currentMedianFloor": 13.0,
+   "baselineFloorMedian": 6.0,
+   "currentFloorMedian": 13.0,
    "baselineDirectTradeCount": 2,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -3706,7 +3773,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.8,
    "calculationVersion": "v1.1",
-   "rank": 112
+   "rank": 114
   },
   {
    "apartmentKey": "11350-184",
@@ -3728,8 +3795,8 @@
    "exactAreas": [
     59.4
    ],
-   "baselineMedianFloor": 9,
-   "currentMedianFloor": 12.0,
+   "baselineFloorMedian": 9,
+   "currentFloorMedian": 12.0,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -3737,7 +3804,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 59.4,
    "calculationVersion": "v1.1",
-   "rank": 113
+   "rank": 115
   },
   {
    "apartmentKey": "11530-3213",
@@ -3759,8 +3826,8 @@
    "exactAreas": [
     59.99
    ],
-   "baselineMedianFloor": 10.0,
-   "currentMedianFloor": 11.0,
+   "baselineFloorMedian": 10.0,
+   "currentFloorMedian": 11.0,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -3768,7 +3835,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 60.0,
    "calculationVersion": "v1.1",
-   "rank": 114
+   "rank": 116
   },
   {
    "apartmentKey": "11500-194",
@@ -3790,8 +3857,8 @@
    "exactAreas": [
     84.95
    ],
-   "baselineMedianFloor": 8.5,
-   "currentMedianFloor": 7.0,
+   "baselineFloorMedian": 8.5,
+   "currentFloorMedian": 7.0,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -3799,7 +3866,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 115
+   "rank": 117
   },
   {
    "apartmentKey": "11410-85",
@@ -3821,8 +3888,8 @@
    "exactAreas": [
     84.96
    ],
-   "baselineMedianFloor": 5,
-   "currentMedianFloor": 2,
+   "baselineFloorMedian": 5,
+   "currentFloorMedian": 2,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -3830,7 +3897,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 116
+   "rank": 118
   },
   {
    "apartmentKey": "11380-11",
@@ -3854,8 +3921,8 @@
    "exactAreas": [
     84.65
    ],
-   "baselineMedianFloor": 6,
-   "currentMedianFloor": 13.0,
+   "baselineFloorMedian": 6,
+   "currentFloorMedian": 13.0,
    "baselineDirectTradeCount": 1,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -3863,38 +3930,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.7,
    "calculationVersion": "v1.1",
-   "rank": 117
-  },
-  {
-   "apartmentKey": "11350-72",
-   "aptSeq": "72",
-   "apartmentName": "장미(시영6)",
-   "sidoCode": "11",
-   "sggCode": "11350",
-   "areaGroup": 39.8,
-   "referenceMonth": "202606",
-   "baselineMedian": 530000000,
-   "currentMedian": 570000000.0,
-   "riseAmount": 40000000,
-   "riseRate": 7.55,
-   "baselineTradeCount": 9,
-   "currentTradeCount": 6,
-   "confidence": "high",
-   "warnings": [],
-   "region": "11350 하계동",
-   "exactAreas": [
-    39.78
-   ],
-   "baselineMedianFloor": 6,
-   "currentMedianFloor": 7.5,
-   "baselineDirectTradeCount": 0,
-   "currentDirectTradeCount": 0,
-   "floorMixWarning": false,
-   "directTradeWarning": false,
-   "compositionWarning": false,
-   "exclusiveAreaGroup": 39.8,
-   "calculationVersion": "v1.1",
-   "rank": 118
+   "rank": 119
   },
   {
    "apartmentKey": "11410-69",
@@ -3916,8 +3952,8 @@
    "exactAreas": [
     84.96
    ],
-   "baselineMedianFloor": 7.0,
-   "currentMedianFloor": 8,
+   "baselineFloorMedian": 7.0,
+   "currentFloorMedian": 8,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -3925,7 +3961,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 119
+   "rank": 120
   },
   {
    "apartmentKey": "11260-98",
@@ -3950,8 +3986,8 @@
    "exactAreas": [
     49.93
    ],
-   "baselineMedianFloor": 9,
-   "currentMedianFloor": 5,
+   "baselineFloorMedian": 9,
+   "currentFloorMedian": 5,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 1,
    "floorMixWarning": true,
@@ -3959,7 +3995,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 49.9,
    "calculationVersion": "v1.1",
-   "rank": 120
+   "rank": 121
   },
   {
    "apartmentKey": "11620-5987",
@@ -3981,8 +4017,8 @@
    "exactAreas": [
     84.31
    ],
-   "baselineMedianFloor": 9.5,
-   "currentMedianFloor": 8.5,
+   "baselineFloorMedian": 9.5,
+   "currentFloorMedian": 8.5,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -3990,7 +4026,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 84.3,
    "calculationVersion": "v1.1",
-   "rank": 121
+   "rank": 122
   },
   {
    "apartmentKey": "11380-11015",
@@ -4016,8 +4052,8 @@
     59.99,
     59.98
    ],
-   "baselineMedianFloor": 6.0,
-   "currentMedianFloor": 15.5,
+   "baselineFloorMedian": 6.0,
+   "currentFloorMedian": 15.5,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -4025,7 +4061,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 60.0,
    "calculationVersion": "v1.1",
-   "rank": 122
+   "rank": 123
   },
   {
    "apartmentKey": "11410-22",
@@ -4049,8 +4085,8 @@
    "exactAreas": [
     83.38
    ],
-   "baselineMedianFloor": 5,
-   "currentMedianFloor": 11.0,
+   "baselineFloorMedian": 5,
+   "currentFloorMedian": 11.0,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -4058,7 +4094,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 83.4,
    "calculationVersion": "v1.1",
-   "rank": 123
+   "rank": 124
   },
   {
    "apartmentKey": "11350-36",
@@ -4082,8 +4118,8 @@
    "exactAreas": [
     58.01
    ],
-   "baselineMedianFloor": 10,
-   "currentMedianFloor": 6.5,
+   "baselineFloorMedian": 10,
+   "currentFloorMedian": 6.5,
    "baselineDirectTradeCount": 1,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -4091,7 +4127,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 58.0,
    "calculationVersion": "v1.1",
-   "rank": 124
+   "rank": 125
   },
   {
    "apartmentKey": "11305-6",
@@ -4113,8 +4149,8 @@
    "exactAreas": [
     114.85
    ],
-   "baselineMedianFloor": 10,
-   "currentMedianFloor": 13.0,
+   "baselineFloorMedian": 10,
+   "currentFloorMedian": 13.0,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -4122,7 +4158,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 114.8,
    "calculationVersion": "v1.1",
-   "rank": 125
+   "rank": 126
   },
   {
    "apartmentKey": "11680-319",
@@ -4144,8 +4180,8 @@
    "exactAreas": [
     33.18
    ],
-   "baselineMedianFloor": 7.5,
-   "currentMedianFloor": 6.0,
+   "baselineFloorMedian": 7.5,
+   "currentFloorMedian": 6.0,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -4153,7 +4189,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 33.2,
    "calculationVersion": "v1.1",
-   "rank": 126
+   "rank": 127
   },
   {
    "apartmentKey": "11530-92",
@@ -4175,8 +4211,8 @@
    "exactAreas": [
     84.915
    ],
-   "baselineMedianFloor": 18,
-   "currentMedianFloor": 15.5,
+   "baselineFloorMedian": 18,
+   "currentFloorMedian": 15.5,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -4184,7 +4220,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 127
+   "rank": 128
   },
   {
    "apartmentKey": "11500-56",
@@ -4206,8 +4242,8 @@
    "exactAreas": [
     58.14
    ],
-   "baselineMedianFloor": 11,
-   "currentMedianFloor": 10.0,
+   "baselineFloorMedian": 11,
+   "currentFloorMedian": 10.0,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -4215,7 +4251,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 58.1,
    "calculationVersion": "v1.1",
-   "rank": 128
+   "rank": 129
   },
   {
    "apartmentKey": "11530-3249",
@@ -4240,8 +4276,8 @@
    "exactAreas": [
     36.88
    ],
-   "baselineMedianFloor": 5.0,
-   "currentMedianFloor": 13.0,
+   "baselineFloorMedian": 5.0,
+   "currentFloorMedian": 13.0,
    "baselineDirectTradeCount": 1,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -4249,7 +4285,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 36.9,
    "calculationVersion": "v1.1",
-   "rank": 129
+   "rank": 130
   },
   {
    "apartmentKey": "11290-71",
@@ -4273,8 +4309,8 @@
    "exactAreas": [
     84.97
    ],
-   "baselineMedianFloor": 11.0,
-   "currentMedianFloor": 19.5,
+   "baselineFloorMedian": 11.0,
+   "currentFloorMedian": 19.5,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -4282,7 +4318,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 130
+   "rank": 131
   },
   {
    "apartmentKey": "11350-2313",
@@ -4306,8 +4342,8 @@
    "exactAreas": [
     59.98
    ],
-   "baselineMedianFloor": 11.5,
-   "currentMedianFloor": 19,
+   "baselineFloorMedian": 11.5,
+   "currentFloorMedian": 19,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -4315,7 +4351,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 60.0,
    "calculationVersion": "v1.1",
-   "rank": 131
+   "rank": 132
   },
   {
    "apartmentKey": "11290-82",
@@ -4339,8 +4375,8 @@
    "exactAreas": [
     59.88
    ],
-   "baselineMedianFloor": 10,
-   "currentMedianFloor": 4.5,
+   "baselineFloorMedian": 10,
+   "currentFloorMedian": 4.5,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -4348,7 +4384,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 59.9,
    "calculationVersion": "v1.1",
-   "rank": 132
+   "rank": 133
   },
   {
    "apartmentKey": "11290-113",
@@ -4372,8 +4408,8 @@
    "exactAreas": [
     84.98
    ],
-   "baselineMedianFloor": 8.0,
-   "currentMedianFloor": 11.5,
+   "baselineFloorMedian": 8.0,
+   "currentFloorMedian": 11.5,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -4381,7 +4417,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 133
+   "rank": 134
   },
   {
    "apartmentKey": "11350-127",
@@ -4403,8 +4439,8 @@
    "exactAreas": [
     59.84
    ],
-   "baselineMedianFloor": 6,
-   "currentMedianFloor": 11.0,
+   "baselineFloorMedian": 6,
+   "currentFloorMedian": 11.0,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -4412,7 +4448,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 59.8,
    "calculationVersion": "v1.1",
-   "rank": 134
+   "rank": 135
   },
   {
    "apartmentKey": "11530-90",
@@ -4436,8 +4472,8 @@
    "exactAreas": [
     59.95
    ],
-   "baselineMedianFloor": 10,
-   "currentMedianFloor": 17.5,
+   "baselineFloorMedian": 10,
+   "currentFloorMedian": 17.5,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -4445,7 +4481,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 60.0,
    "calculationVersion": "v1.1",
-   "rank": 135
+   "rank": 136
   },
   {
    "apartmentKey": "11350-190",
@@ -4469,8 +4505,8 @@
    "exactAreas": [
     99.917
    ],
-   "baselineMedianFloor": 2,
-   "currentMedianFloor": 7,
+   "baselineFloorMedian": 2,
+   "currentFloorMedian": 7,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -4478,7 +4514,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 99.9,
    "calculationVersion": "v1.1",
-   "rank": 136
+   "rank": 137
   },
   {
    "apartmentKey": "11710-145",
@@ -4503,8 +4539,8 @@
    "exactAreas": [
     84.94
    ],
-   "baselineMedianFloor": 9.5,
-   "currentMedianFloor": 5.0,
+   "baselineFloorMedian": 9.5,
+   "currentFloorMedian": 5.0,
    "baselineDirectTradeCount": 1,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -4512,7 +4548,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 137
+   "rank": 138
   },
   {
    "apartmentKey": "11530-4392",
@@ -4534,8 +4570,8 @@
    "exactAreas": [
     84.9416
    ],
-   "baselineMedianFloor": 9,
-   "currentMedianFloor": 14.0,
+   "baselineFloorMedian": 9,
+   "currentFloorMedian": 14.0,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -4543,7 +4579,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 138
+   "rank": 139
   },
   {
    "apartmentKey": "11350-36",
@@ -4565,8 +4601,8 @@
    "exactAreas": [
     41.3
    ],
-   "baselineMedianFloor": 10.0,
-   "currentMedianFloor": 6.0,
+   "baselineFloorMedian": 10.0,
+   "currentFloorMedian": 6.0,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -4574,7 +4610,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 41.3,
    "calculationVersion": "v1.1",
-   "rank": 139
+   "rank": 140
   },
   {
    "apartmentKey": "11350-41",
@@ -4596,8 +4632,8 @@
    "exactAreas": [
     49.94
    ],
-   "baselineMedianFloor": 9.5,
-   "currentMedianFloor": 7,
+   "baselineFloorMedian": 9.5,
+   "currentFloorMedian": 7,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -4605,7 +4641,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 49.9,
    "calculationVersion": "v1.1",
-   "rank": 140
+   "rank": 141
   },
   {
    "apartmentKey": "11410-93",
@@ -4629,8 +4665,8 @@
    "exactAreas": [
     58.5
    ],
-   "baselineMedianFloor": 9.5,
-   "currentMedianFloor": 3.0,
+   "baselineFloorMedian": 9.5,
+   "currentFloorMedian": 3.0,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -4638,7 +4674,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 58.5,
    "calculationVersion": "v1.1",
-   "rank": 141
+   "rank": 142
   },
   {
    "apartmentKey": "11350-40",
@@ -4662,8 +4698,8 @@
    "exactAreas": [
     58.01
    ],
-   "baselineMedianFloor": 8.5,
-   "currentMedianFloor": 10,
+   "baselineFloorMedian": 8.5,
+   "currentFloorMedian": 10,
    "baselineDirectTradeCount": 2,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -4671,7 +4707,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 58.0,
    "calculationVersion": "v1.1",
-   "rank": 142
+   "rank": 143
   },
   {
    "apartmentKey": "11620-21",
@@ -4695,8 +4731,8 @@
    "exactAreas": [
     59.76
    ],
-   "baselineMedianFloor": 15.5,
-   "currentMedianFloor": 9.0,
+   "baselineFloorMedian": 15.5,
+   "currentFloorMedian": 9.0,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -4704,7 +4740,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 59.8,
    "calculationVersion": "v1.1",
-   "rank": 143
+   "rank": 144
   },
   {
    "apartmentKey": "11290-20",
@@ -4726,8 +4762,8 @@
    "exactAreas": [
     59.58
    ],
-   "baselineMedianFloor": 9.5,
-   "currentMedianFloor": 11,
+   "baselineFloorMedian": 9.5,
+   "currentFloorMedian": 11,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -4735,7 +4771,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 59.6,
    "calculationVersion": "v1.1",
-   "rank": 144
+   "rank": 145
   },
   {
    "apartmentKey": "11290-3510",
@@ -4757,8 +4793,8 @@
    "exactAreas": [
     59.77
    ],
-   "baselineMedianFloor": 8.5,
-   "currentMedianFloor": 12.0,
+   "baselineFloorMedian": 8.5,
+   "currentFloorMedian": 12.0,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -4766,7 +4802,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 59.8,
    "calculationVersion": "v1.1",
-   "rank": 145
+   "rank": 146
   },
   {
    "apartmentKey": "11290-3696",
@@ -4790,8 +4826,8 @@
    "exactAreas": [
     84.65
    ],
-   "baselineMedianFloor": 13.0,
-   "currentMedianFloor": 16.5,
+   "baselineFloorMedian": 13.0,
+   "currentFloorMedian": 16.5,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -4799,7 +4835,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.7,
    "calculationVersion": "v1.1",
-   "rank": 146
+   "rank": 147
   },
   {
    "apartmentKey": "11500-39",
@@ -4821,8 +4857,8 @@
    "exactAreas": [
     59.91
    ],
-   "baselineMedianFloor": 9,
-   "currentMedianFloor": 14.0,
+   "baselineFloorMedian": 9,
+   "currentFloorMedian": 14.0,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -4830,7 +4866,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 59.9,
    "calculationVersion": "v1.1",
-   "rank": 147
+   "rank": 148
   },
   {
    "apartmentKey": "11350-38",
@@ -4854,8 +4890,8 @@
    "exactAreas": [
     49.94
    ],
-   "baselineMedianFloor": 10.0,
-   "currentMedianFloor": 13,
+   "baselineFloorMedian": 10.0,
+   "currentFloorMedian": 13,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 1,
    "floorMixWarning": false,
@@ -4863,7 +4899,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 49.9,
    "calculationVersion": "v1.1",
-   "rank": 148
+   "rank": 149
   },
   {
    "apartmentKey": "11530-56",
@@ -4887,8 +4923,8 @@
    "exactAreas": [
     64.39
    ],
-   "baselineMedianFloor": 5.5,
-   "currentMedianFloor": 3,
+   "baselineFloorMedian": 5.5,
+   "currentFloorMedian": 3,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -4896,7 +4932,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 64.4,
    "calculationVersion": "v1.1",
-   "rank": 149
+   "rank": 150
   },
   {
    "apartmentKey": "11470-140",
@@ -4920,8 +4956,8 @@
    "exactAreas": [
     59.73
    ],
-   "baselineMedianFloor": 10,
-   "currentMedianFloor": 11.0,
+   "baselineFloorMedian": 10,
+   "currentFloorMedian": 11.0,
    "baselineDirectTradeCount": 1,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -4929,7 +4965,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 59.7,
    "calculationVersion": "v1.1",
-   "rank": 150
+   "rank": 151
   },
   {
    "apartmentKey": "11560-111",
@@ -4953,8 +4989,8 @@
    "exactAreas": [
     64.4
    ],
-   "baselineMedianFloor": 10,
-   "currentMedianFloor": 9.0,
+   "baselineFloorMedian": 10,
+   "currentFloorMedian": 9.0,
    "baselineDirectTradeCount": 1,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -4962,7 +4998,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 64.4,
    "calculationVersion": "v1.1",
-   "rank": 151
+   "rank": 152
   },
   {
    "apartmentKey": "11710-151",
@@ -4987,8 +5023,8 @@
    "exactAreas": [
     59.88
    ],
-   "baselineMedianFloor": 4.5,
-   "currentMedianFloor": 6.0,
+   "baselineFloorMedian": 4.5,
+   "currentFloorMedian": 6.0,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -4996,7 +5032,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 59.9,
    "calculationVersion": "v1.1",
-   "rank": 152
+   "rank": 153
   },
   {
    "apartmentKey": "11290-3794",
@@ -5020,8 +5056,8 @@
    "exactAreas": [
     59.65
    ],
-   "baselineMedianFloor": 7,
-   "currentMedianFloor": 7,
+   "baselineFloorMedian": 7,
+   "currentFloorMedian": 7,
    "baselineDirectTradeCount": 1,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -5029,7 +5065,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 59.6,
    "calculationVersion": "v1.1",
-   "rank": 153
+   "rank": 154
   },
   {
    "apartmentKey": "11350-17",
@@ -5051,8 +5087,8 @@
    "exactAreas": [
     59.22
    ],
-   "baselineMedianFloor": 12.5,
-   "currentMedianFloor": 14.5,
+   "baselineFloorMedian": 12.5,
+   "currentFloorMedian": 14.5,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -5060,7 +5096,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 59.2,
    "calculationVersion": "v1.1",
-   "rank": 154
+   "rank": 155
   },
   {
    "apartmentKey": "11710-175",
@@ -5084,8 +5120,8 @@
    "exactAreas": [
     41.99
    ],
-   "baselineMedianFloor": 7,
-   "currentMedianFloor": 7,
+   "baselineFloorMedian": 7,
+   "currentFloorMedian": 7,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 1,
    "floorMixWarning": false,
@@ -5093,7 +5129,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 42.0,
    "calculationVersion": "v1.1",
-   "rank": 155
+   "rank": 156
   },
   {
    "apartmentKey": "11500-146",
@@ -5115,8 +5151,8 @@
    "exactAreas": [
     49.5
    ],
-   "baselineMedianFloor": 11.5,
-   "currentMedianFloor": 14,
+   "baselineFloorMedian": 11.5,
+   "currentFloorMedian": 14,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -5124,7 +5160,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 49.5,
    "calculationVersion": "v1.1",
-   "rank": 156
+   "rank": 157
   },
   {
    "apartmentKey": "11350-10",
@@ -5148,8 +5184,8 @@
    "exactAreas": [
     75.03
    ],
-   "baselineMedianFloor": 3,
-   "currentMedianFloor": 8.0,
+   "baselineFloorMedian": 3,
+   "currentFloorMedian": 8.0,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -5157,7 +5193,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 75.0,
    "calculationVersion": "v1.1",
-   "rank": 157
+   "rank": 158
   },
   {
    "apartmentKey": "11380-65",
@@ -5181,8 +5217,8 @@
    "exactAreas": [
     84.42
    ],
-   "baselineMedianFloor": 9,
-   "currentMedianFloor": 4.0,
+   "baselineFloorMedian": 9,
+   "currentFloorMedian": 4.0,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -5190,7 +5226,38 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.4,
    "calculationVersion": "v1.1",
-   "rank": 158
+   "rank": 159
+  },
+  {
+   "apartmentKey": "11440-118",
+   "aptSeq": "118",
+   "apartmentName": "성산월드타운대림",
+   "sidoCode": "11",
+   "sggCode": "11440",
+   "areaGroup": 59.9,
+   "referenceMonth": "202606",
+   "baselineMedian": 1000000000,
+   "currentMedian": 1065000000.0,
+   "riseAmount": 65000000,
+   "riseRate": 6.5,
+   "baselineTradeCount": 3,
+   "currentTradeCount": 2,
+   "confidence": "medium",
+   "warnings": [],
+   "region": "11440 성산동",
+   "exactAreas": [
+    59.888
+   ],
+   "baselineFloorMedian": 14,
+   "currentFloorMedian": 12.0,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": false,
+   "directTradeWarning": false,
+   "compositionWarning": false,
+   "exclusiveAreaGroup": 59.9,
+   "calculationVersion": "v1.1",
+   "rank": 160
   },
   {
    "apartmentKey": "11740-83",
@@ -5215,8 +5282,8 @@
    "exactAreas": [
     59.4
    ],
-   "baselineMedianFloor": 11.5,
-   "currentMedianFloor": 4.5,
+   "baselineFloorMedian": 11.5,
+   "currentFloorMedian": 4.5,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -5224,7 +5291,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 59.4,
    "calculationVersion": "v1.1",
-   "rank": 159
+   "rank": 161
   },
   {
    "apartmentKey": "11260-4103",
@@ -5249,8 +5316,8 @@
     84.9814,
     84.9672
    ],
-   "baselineMedianFloor": 7,
-   "currentMedianFloor": 10.5,
+   "baselineFloorMedian": 7,
+   "currentFloorMedian": 10.5,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -5258,7 +5325,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 160
+   "rank": 162
   },
   {
    "apartmentKey": "11620-11",
@@ -5283,8 +5350,8 @@
     59.89,
     59.92
    ],
-   "baselineMedianFloor": 12,
-   "currentMedianFloor": 13,
+   "baselineFloorMedian": 12,
+   "currentFloorMedian": 13,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -5292,38 +5359,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 59.9,
    "calculationVersion": "v1.1",
-   "rank": 161
-  },
-  {
-   "apartmentKey": "11740-4672",
-   "aptSeq": "4672",
-   "apartmentName": "고덕롯데캐슬베네루체",
-   "sidoCode": "11",
-   "sggCode": "11740",
-   "areaGroup": 84.9,
-   "referenceMonth": "202606",
-   "baselineMedian": 1780000000,
-   "currentMedian": 1892500000.0,
-   "riseAmount": 112500000,
-   "riseRate": 6.32,
-   "baselineTradeCount": 9,
-   "currentTradeCount": 4,
-   "confidence": "medium",
-   "warnings": [],
-   "region": "11740 상일동",
-   "exactAreas": [
-    84.923
-   ],
-   "baselineMedianFloor": 15,
-   "currentMedianFloor": 14.5,
-   "baselineDirectTradeCount": 0,
-   "currentDirectTradeCount": 0,
-   "floorMixWarning": false,
-   "directTradeWarning": false,
-   "compositionWarning": false,
-   "exclusiveAreaGroup": 84.9,
-   "calculationVersion": "v1.1",
-   "rank": 162
+   "rank": 163
   },
   {
    "apartmentKey": "11560-84",
@@ -5347,8 +5383,8 @@
    "exactAreas": [
     114.63
    ],
-   "baselineMedianFloor": 14,
-   "currentMedianFloor": 12.0,
+   "baselineFloorMedian": 14,
+   "currentFloorMedian": 12.0,
    "baselineDirectTradeCount": 1,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -5356,7 +5392,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 114.6,
    "calculationVersion": "v1.1",
-   "rank": 163
+   "rank": 164
   },
   {
    "apartmentKey": "11530-128",
@@ -5383,8 +5419,8 @@
     59.9,
     59.93
    ],
-   "baselineMedianFloor": 5,
-   "currentMedianFloor": 6.5,
+   "baselineFloorMedian": 5,
+   "currentFloorMedian": 6.5,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -5392,7 +5428,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 59.9,
    "calculationVersion": "v1.1",
-   "rank": 164
+   "rank": 165
   },
   {
    "apartmentKey": "11260-11",
@@ -5416,8 +5452,8 @@
    "exactAreas": [
     59.5
    ],
-   "baselineMedianFloor": 16.5,
-   "currentMedianFloor": 9.5,
+   "baselineFloorMedian": 16.5,
+   "currentFloorMedian": 9.5,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -5425,7 +5461,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 59.5,
    "calculationVersion": "v1.1",
-   "rank": 165
+   "rank": 166
   },
   {
    "apartmentKey": "11740-4214",
@@ -5452,8 +5488,8 @@
     84.9,
     84.88
    ],
-   "baselineMedianFloor": 10,
-   "currentMedianFloor": 18.5,
+   "baselineFloorMedian": 10,
+   "currentFloorMedian": 18.5,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -5461,7 +5497,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 166
+   "rank": 167
   },
   {
    "apartmentKey": "11590-3954",
@@ -5483,8 +5519,8 @@
    "exactAreas": [
     84.6099
    ],
-   "baselineMedianFloor": 9.0,
-   "currentMedianFloor": 8.0,
+   "baselineFloorMedian": 9.0,
+   "currentFloorMedian": 8.0,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -5492,7 +5528,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 84.6,
    "calculationVersion": "v1.1",
-   "rank": 167
+   "rank": 168
   },
   {
    "apartmentKey": "11320-98",
@@ -5516,8 +5552,8 @@
    "exactAreas": [
     58.01
    ],
-   "baselineMedianFloor": 11,
-   "currentMedianFloor": 3.5,
+   "baselineFloorMedian": 11,
+   "currentFloorMedian": 3.5,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -5525,7 +5561,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 58.0,
    "calculationVersion": "v1.1",
-   "rank": 168
+   "rank": 169
   },
   {
    "apartmentKey": "11305-157",
@@ -5549,8 +5585,8 @@
    "exactAreas": [
     84.88
    ],
-   "baselineMedianFloor": 6,
-   "currentMedianFloor": 13,
+   "baselineFloorMedian": 6,
+   "currentFloorMedian": 13,
    "baselineDirectTradeCount": 1,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -5558,7 +5594,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 169
+   "rank": 170
   },
   {
    "apartmentKey": "11350-102",
@@ -5580,8 +5616,8 @@
    "exactAreas": [
     59.26
    ],
-   "baselineMedianFloor": 9.0,
-   "currentMedianFloor": 6,
+   "baselineFloorMedian": 9.0,
+   "currentFloorMedian": 6,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -5589,7 +5625,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 59.3,
    "calculationVersion": "v1.1",
-   "rank": 170
+   "rank": 171
   },
   {
    "apartmentKey": "11560-133",
@@ -5613,8 +5649,8 @@
    "exactAreas": [
     84.89
    ],
-   "baselineMedianFloor": 16.5,
-   "currentMedianFloor": 11.5,
+   "baselineFloorMedian": 16.5,
+   "currentFloorMedian": 11.5,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -5622,7 +5658,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 171
+   "rank": 172
   },
   {
    "apartmentKey": "11500-149",
@@ -5646,8 +5682,8 @@
    "exactAreas": [
     58.65
    ],
-   "baselineMedianFloor": 4,
-   "currentMedianFloor": 12,
+   "baselineFloorMedian": 4,
+   "currentFloorMedian": 12,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -5655,7 +5691,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 58.6,
    "calculationVersion": "v1.1",
-   "rank": 172
+   "rank": 173
   },
   {
    "apartmentKey": "11590-52",
@@ -5677,8 +5713,8 @@
    "exactAreas": [
     59.96
    ],
-   "baselineMedianFloor": 5.0,
-   "currentMedianFloor": 4,
+   "baselineFloorMedian": 5.0,
+   "currentFloorMedian": 4,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -5686,7 +5722,38 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 60.0,
    "calculationVersion": "v1.1",
-   "rank": 173
+   "rank": 174
+  },
+  {
+   "apartmentKey": "11740-4672",
+   "aptSeq": "4672",
+   "apartmentName": "고덕롯데캐슬베네루체",
+   "sidoCode": "11",
+   "sggCode": "11740",
+   "areaGroup": 84.9,
+   "referenceMonth": "202606",
+   "baselineMedian": 1785000000.0,
+   "currentMedian": 1892500000.0,
+   "riseAmount": 107500000,
+   "riseRate": 6.02,
+   "baselineTradeCount": 10,
+   "currentTradeCount": 4,
+   "confidence": "medium",
+   "warnings": [],
+   "region": "11740 상일동",
+   "exactAreas": [
+    84.923
+   ],
+   "baselineFloorMedian": 14.5,
+   "currentFloorMedian": 14.5,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": false,
+   "directTradeWarning": false,
+   "compositionWarning": false,
+   "exclusiveAreaGroup": 84.9,
+   "calculationVersion": "v1.1",
+   "rank": 175
   },
   {
    "apartmentKey": "11710-6346",
@@ -5710,8 +5777,8 @@
    "exactAreas": [
     59.96
    ],
-   "baselineMedianFloor": 13.5,
-   "currentMedianFloor": 18.0,
+   "baselineFloorMedian": 13.5,
+   "currentFloorMedian": 18.0,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -5719,7 +5786,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 60.0,
    "calculationVersion": "v1.1",
-   "rank": 174
+   "rank": 176
   },
   {
    "apartmentKey": "11350-33",
@@ -5744,8 +5811,8 @@
    "exactAreas": [
     58.01
    ],
-   "baselineMedianFloor": 4.5,
-   "currentMedianFloor": 12.0,
+   "baselineFloorMedian": 4.5,
+   "currentFloorMedian": 12.0,
    "baselineDirectTradeCount": 1,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -5753,7 +5820,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 58.0,
    "calculationVersion": "v1.1",
-   "rank": 175
+   "rank": 177
   },
   {
    "apartmentKey": "11140-1144",
@@ -5779,8 +5846,8 @@
     84.95,
     84.96
    ],
-   "baselineMedianFloor": 4.0,
-   "currentMedianFloor": 11,
+   "baselineFloorMedian": 4.0,
+   "currentFloorMedian": 11,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -5788,7 +5855,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 176
+   "rank": 178
   },
   {
    "apartmentKey": "11500-146",
@@ -5810,8 +5877,8 @@
    "exactAreas": [
     39.6
    ],
-   "baselineMedianFloor": 8.0,
-   "currentMedianFloor": 12.5,
+   "baselineFloorMedian": 8.0,
+   "currentFloorMedian": 12.5,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -5819,7 +5886,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 39.6,
    "calculationVersion": "v1.1",
-   "rank": 177
+   "rank": 179
   },
   {
    "apartmentKey": "11740-7",
@@ -5841,8 +5908,8 @@
    "exactAreas": [
     54.81
    ],
-   "baselineMedianFloor": 6,
-   "currentMedianFloor": 11.0,
+   "baselineFloorMedian": 6,
+   "currentFloorMedian": 11.0,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -5850,7 +5917,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 54.8,
    "calculationVersion": "v1.1",
-   "rank": 178
+   "rank": 180
   },
   {
    "apartmentKey": "11290-4536",
@@ -5872,8 +5939,8 @@
    "exactAreas": [
     59.81
    ],
-   "baselineMedianFloor": 7.0,
-   "currentMedianFloor": 11.5,
+   "baselineFloorMedian": 7.0,
+   "currentFloorMedian": 11.5,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -5881,7 +5948,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 59.8,
    "calculationVersion": "v1.1",
-   "rank": 179
+   "rank": 181
   },
   {
    "apartmentKey": "11470-5271",
@@ -5903,8 +5970,8 @@
    "exactAreas": [
     84.98
    ],
-   "baselineMedianFloor": 10,
-   "currentMedianFloor": 8,
+   "baselineFloorMedian": 10,
+   "currentFloorMedian": 8,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -5912,7 +5979,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 180
+   "rank": 182
   },
   {
    "apartmentKey": "11710-6266",
@@ -5936,8 +6003,8 @@
    "exactAreas": [
     84.9
    ],
-   "baselineMedianFloor": 20,
-   "currentMedianFloor": 34.0,
+   "baselineFloorMedian": 20,
+   "currentFloorMedian": 34.0,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -5945,7 +6012,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 181
+   "rank": 183
   },
   {
    "apartmentKey": "11380-11086",
@@ -5970,8 +6037,8 @@
     84.93,
     84.87
    ],
-   "baselineMedianFloor": 11.0,
-   "currentMedianFloor": 8,
+   "baselineFloorMedian": 11.0,
+   "currentFloorMedian": 8,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -5979,7 +6046,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 182
+   "rank": 184
   },
   {
    "apartmentKey": "11410-10",
@@ -6001,8 +6068,8 @@
    "exactAreas": [
     59.58
    ],
-   "baselineMedianFloor": 13.0,
-   "currentMedianFloor": 6.0,
+   "baselineFloorMedian": 13.0,
+   "currentFloorMedian": 6.0,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -6010,7 +6077,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 59.6,
    "calculationVersion": "v1.1",
-   "rank": 183
+   "rank": 185
   },
   {
    "apartmentKey": "11215-4893",
@@ -6035,8 +6102,8 @@
     84.9716,
     84.9839
    ],
-   "baselineMedianFloor": 7,
-   "currentMedianFloor": 12,
+   "baselineFloorMedian": 7,
+   "currentFloorMedian": 12,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -6044,7 +6111,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 184
+   "rank": 186
   },
   {
    "apartmentKey": "11305-4255",
@@ -6068,8 +6135,8 @@
    "exactAreas": [
     114.88
    ],
-   "baselineMedianFloor": 3,
-   "currentMedianFloor": 6.5,
+   "baselineFloorMedian": 3,
+   "currentFloorMedian": 6.5,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -6077,7 +6144,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 114.9,
    "calculationVersion": "v1.1",
-   "rank": 185
+   "rank": 187
   },
   {
    "apartmentKey": "11500-6",
@@ -6099,8 +6166,8 @@
    "exactAreas": [
     114.84
    ],
-   "baselineMedianFloor": 8.5,
-   "currentMedianFloor": 11.0,
+   "baselineFloorMedian": 8.5,
+   "currentFloorMedian": 11.0,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -6108,7 +6175,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 114.8,
    "calculationVersion": "v1.1",
-   "rank": 186
+   "rank": 188
   },
   {
    "apartmentKey": "11740-4672",
@@ -6130,8 +6197,8 @@
    "exactAreas": [
     84.146
    ],
-   "baselineMedianFloor": 6,
-   "currentMedianFloor": 9.5,
+   "baselineFloorMedian": 6,
+   "currentFloorMedian": 9.5,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -6139,7 +6206,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 84.1,
    "calculationVersion": "v1.1",
-   "rank": 187
+   "rank": 189
   },
   {
    "apartmentKey": "11320-70",
@@ -6161,8 +6228,8 @@
    "exactAreas": [
     59.91
    ],
-   "baselineMedianFloor": 11.0,
-   "currentMedianFloor": 7.5,
+   "baselineFloorMedian": 11.0,
+   "currentFloorMedian": 7.5,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -6170,7 +6237,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 59.9,
    "calculationVersion": "v1.1",
-   "rank": 188
+   "rank": 190
   },
   {
    "apartmentKey": "11230-2",
@@ -6192,8 +6259,8 @@
    "exactAreas": [
     58.59
    ],
-   "baselineMedianFloor": 7,
-   "currentMedianFloor": 10.5,
+   "baselineFloorMedian": 7,
+   "currentFloorMedian": 10.5,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -6201,7 +6268,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 58.6,
    "calculationVersion": "v1.1",
-   "rank": 189
+   "rank": 191
   },
   {
    "apartmentKey": "11170-3299",
@@ -6225,8 +6292,8 @@
    "exactAreas": [
     102.8617
    ],
-   "baselineMedianFloor": 13.0,
-   "currentMedianFloor": 29.5,
+   "baselineFloorMedian": 13.0,
+   "currentFloorMedian": 29.5,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -6234,7 +6301,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 102.9,
    "calculationVersion": "v1.1",
-   "rank": 190
+   "rank": 192
   },
   {
    "apartmentKey": "11350-102",
@@ -6258,8 +6325,8 @@
    "exactAreas": [
     49.54
    ],
-   "baselineMedianFloor": 7,
-   "currentMedianFloor": 4,
+   "baselineFloorMedian": 7,
+   "currentFloorMedian": 4,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -6267,7 +6334,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 49.5,
    "calculationVersion": "v1.1",
-   "rank": 191
+   "rank": 193
   },
   {
    "apartmentKey": "11290-111",
@@ -6291,8 +6358,8 @@
    "exactAreas": [
     84.98
    ],
-   "baselineMedianFloor": 9,
-   "currentMedianFloor": 11.5,
+   "baselineFloorMedian": 9,
+   "currentFloorMedian": 11.5,
    "baselineDirectTradeCount": 1,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -6300,7 +6367,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 192
+   "rank": 194
   },
   {
    "apartmentKey": "11380-8392",
@@ -6325,8 +6392,8 @@
     59.87,
     59.85
    ],
-   "baselineMedianFloor": 6,
-   "currentMedianFloor": 9.0,
+   "baselineFloorMedian": 6,
+   "currentFloorMedian": 9.0,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -6334,7 +6401,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 59.9,
    "calculationVersion": "v1.1",
-   "rank": 193
+   "rank": 195
   },
   {
    "apartmentKey": "11260-46",
@@ -6356,8 +6423,8 @@
    "exactAreas": [
     50.37
    ],
-   "baselineMedianFloor": 7.0,
-   "currentMedianFloor": 13.5,
+   "baselineFloorMedian": 7.0,
+   "currentFloorMedian": 13.5,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -6365,7 +6432,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 50.4,
    "calculationVersion": "v1.1",
-   "rank": 194
+   "rank": 196
   },
   {
    "apartmentKey": "11260-53",
@@ -6387,8 +6454,8 @@
    "exactAreas": [
     126.28
    ],
-   "baselineMedianFloor": 3.0,
-   "currentMedianFloor": 1.5,
+   "baselineFloorMedian": 3.0,
+   "currentFloorMedian": 1.5,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -6396,7 +6463,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 126.3,
    "calculationVersion": "v1.1",
-   "rank": 195
+   "rank": 197
   },
   {
    "apartmentKey": "11530-51",
@@ -6422,8 +6489,8 @@
     59.97,
     59.95
    ],
-   "baselineMedianFloor": 12.0,
-   "currentMedianFloor": 6,
+   "baselineFloorMedian": 12.0,
+   "currentFloorMedian": 6,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -6431,7 +6498,38 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 60.0,
    "calculationVersion": "v1.1",
-   "rank": 196
+   "rank": 198
+  },
+  {
+   "apartmentKey": "11350-72",
+   "aptSeq": "72",
+   "apartmentName": "장미(시영6)",
+   "sidoCode": "11",
+   "sggCode": "11350",
+   "areaGroup": 39.8,
+   "referenceMonth": "202606",
+   "baselineMedian": 530000000,
+   "currentMedian": 560000000,
+   "riseAmount": 30000000,
+   "riseRate": 5.66,
+   "baselineTradeCount": 9,
+   "currentTradeCount": 7,
+   "confidence": "high",
+   "warnings": [],
+   "region": "11350 하계동",
+   "exactAreas": [
+    39.78
+   ],
+   "baselineFloorMedian": 6,
+   "currentFloorMedian": 7,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": false,
+   "directTradeWarning": false,
+   "compositionWarning": false,
+   "exclusiveAreaGroup": 39.8,
+   "calculationVersion": "v1.1",
+   "rank": 199
   },
   {
    "apartmentKey": "11230-2823",
@@ -6456,8 +6554,8 @@
     59.94,
     59.86
    ],
-   "baselineMedianFloor": 16.0,
-   "currentMedianFloor": 23.0,
+   "baselineFloorMedian": 16.0,
+   "currentFloorMedian": 23.0,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -6465,7 +6563,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 59.9,
    "calculationVersion": "v1.1",
-   "rank": 197
+   "rank": 200
   },
   {
    "apartmentKey": "11740-4804",
@@ -6487,8 +6585,8 @@
    "exactAreas": [
     49.74
    ],
-   "baselineMedianFloor": 9,
-   "currentMedianFloor": 11.5,
+   "baselineFloorMedian": 9,
+   "currentFloorMedian": 11.5,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -6496,7 +6594,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 49.7,
    "calculationVersion": "v1.1",
-   "rank": 198
+   "rank": 201
   },
   {
    "apartmentKey": "11470-5515",
@@ -6521,8 +6619,8 @@
     59.984,
     59.9846
    ],
-   "baselineMedianFloor": 10,
-   "currentMedianFloor": 6,
+   "baselineFloorMedian": 10,
+   "currentFloorMedian": 6,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -6530,7 +6628,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 60.0,
    "calculationVersion": "v1.1",
-   "rank": 199
+   "rank": 202
   },
   {
    "apartmentKey": "11110-2445",
@@ -6554,8 +6652,8 @@
    "exactAreas": [
     84.8359
    ],
-   "baselineMedianFloor": 10.0,
-   "currentMedianFloor": 11.5,
+   "baselineFloorMedian": 10.0,
+   "currentFloorMedian": 11.5,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -6563,7 +6661,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.8,
    "calculationVersion": "v1.1",
-   "rank": 200
+   "rank": 203
   },
   {
    "apartmentKey": "11290-74",
@@ -6585,8 +6683,8 @@
    "exactAreas": [
     59.97
    ],
-   "baselineMedianFloor": 12,
-   "currentMedianFloor": 11,
+   "baselineFloorMedian": 12,
+   "currentFloorMedian": 11,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -6594,7 +6692,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 60.0,
    "calculationVersion": "v1.1",
-   "rank": 201
+   "rank": 204
   },
   {
    "apartmentKey": "11560-127",
@@ -6618,8 +6716,8 @@
    "exactAreas": [
     59.94
    ],
-   "baselineMedianFloor": 5,
-   "currentMedianFloor": 19.5,
+   "baselineFloorMedian": 5,
+   "currentFloorMedian": 19.5,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -6627,7 +6725,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 59.9,
    "calculationVersion": "v1.1",
-   "rank": 202
+   "rank": 205
   },
   {
    "apartmentKey": "11305-4123",
@@ -6649,8 +6747,8 @@
    "exactAreas": [
     84.97
    ],
-   "baselineMedianFloor": 13.5,
-   "currentMedianFloor": 9,
+   "baselineFloorMedian": 13.5,
+   "currentFloorMedian": 9,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -6658,7 +6756,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 203
+   "rank": 206
   },
   {
    "apartmentKey": "11500-103",
@@ -6682,8 +6780,8 @@
    "exactAreas": [
     59.34
    ],
-   "baselineMedianFloor": 6.5,
-   "currentMedianFloor": 4.0,
+   "baselineFloorMedian": 6.5,
+   "currentFloorMedian": 4.0,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -6691,7 +6789,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 59.3,
    "calculationVersion": "v1.1",
-   "rank": 204
+   "rank": 207
   },
   {
    "apartmentKey": "11620-104",
@@ -6715,8 +6813,8 @@
    "exactAreas": [
     81.42
    ],
-   "baselineMedianFloor": 7.0,
-   "currentMedianFloor": 6.5,
+   "baselineFloorMedian": 7.0,
+   "currentFloorMedian": 6.5,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -6724,7 +6822,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 81.4,
    "calculationVersion": "v1.1",
-   "rank": 205
+   "rank": 208
   },
   {
    "apartmentKey": "11260-25",
@@ -6746,8 +6844,8 @@
    "exactAreas": [
     74.79
    ],
-   "baselineMedianFloor": 11,
-   "currentMedianFloor": 12.0,
+   "baselineFloorMedian": 11,
+   "currentFloorMedian": 12.0,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -6755,7 +6853,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 74.8,
    "calculationVersion": "v1.1",
-   "rank": 206
+   "rank": 209
   },
   {
    "apartmentKey": "11350-120",
@@ -6777,8 +6875,8 @@
    "exactAreas": [
     49.5
    ],
-   "baselineMedianFloor": 7.0,
-   "currentMedianFloor": 7.0,
+   "baselineFloorMedian": 7.0,
+   "currentFloorMedian": 7.0,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -6786,7 +6884,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 49.5,
    "calculationVersion": "v1.1",
-   "rank": 207
+   "rank": 210
   },
   {
    "apartmentKey": "11290-74",
@@ -6808,8 +6906,8 @@
    "exactAreas": [
     134.97
    ],
-   "baselineMedianFloor": 11.0,
-   "currentMedianFloor": 10.5,
+   "baselineFloorMedian": 11.0,
+   "currentFloorMedian": 10.5,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -6817,7 +6915,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 135.0,
    "calculationVersion": "v1.1",
-   "rank": 208
+   "rank": 211
   },
   {
    "apartmentKey": "11740-91",
@@ -6839,8 +6937,8 @@
    "exactAreas": [
     59.64
    ],
-   "baselineMedianFloor": 10,
-   "currentMedianFloor": 11.0,
+   "baselineFloorMedian": 10,
+   "currentFloorMedian": 11.0,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -6848,7 +6946,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 59.6,
    "calculationVersion": "v1.1",
-   "rank": 209
+   "rank": 212
   },
   {
    "apartmentKey": "11410-4932",
@@ -6870,8 +6968,8 @@
    "exactAreas": [
     59.94
    ],
-   "baselineMedianFloor": 8,
-   "currentMedianFloor": 14.0,
+   "baselineFloorMedian": 8,
+   "currentFloorMedian": 14.0,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -6879,7 +6977,40 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 59.9,
    "calculationVersion": "v1.1",
-   "rank": 210
+   "rank": 213
+  },
+  {
+   "apartmentKey": "11500-149",
+   "aptSeq": "149",
+   "apartmentName": "가양6단지",
+   "sidoCode": "11",
+   "sggCode": "11500",
+   "areaGroup": 49.5,
+   "referenceMonth": "202606",
+   "baselineMedian": 1030000000,
+   "currentMedian": 1085000000,
+   "riseAmount": 55000000,
+   "riseRate": 5.34,
+   "baselineTradeCount": 17,
+   "currentTradeCount": 5,
+   "confidence": "medium",
+   "warnings": [
+    "직거래 포함 이력 존재"
+   ],
+   "region": "11500 가양동",
+   "exactAreas": [
+    49.5
+   ],
+   "baselineFloorMedian": 6.0,
+   "currentFloorMedian": 12,
+   "baselineDirectTradeCount": 1,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": false,
+   "directTradeWarning": true,
+   "compositionWarning": true,
+   "exclusiveAreaGroup": 49.5,
+   "calculationVersion": "v1.1",
+   "rank": 214
   },
   {
    "apartmentKey": "11260-92",
@@ -6904,8 +7035,8 @@
    "exactAreas": [
     59.76
    ],
-   "baselineMedianFloor": 6.0,
-   "currentMedianFloor": 2.0,
+   "baselineFloorMedian": 6.0,
+   "currentFloorMedian": 2.0,
    "baselineDirectTradeCount": 1,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -6913,7 +7044,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 59.8,
    "calculationVersion": "v1.1",
-   "rank": 211
+   "rank": 215
   },
   {
    "apartmentKey": "11230-2822",
@@ -6938,8 +7069,8 @@
    "exactAreas": [
     84.98
    ],
-   "baselineMedianFloor": 11.5,
-   "currentMedianFloor": 16.5,
+   "baselineFloorMedian": 11.5,
+   "currentFloorMedian": 16.5,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -6947,7 +7078,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 212
+   "rank": 216
   },
   {
    "apartmentKey": "11545-22",
@@ -6971,8 +7102,8 @@
    "exactAreas": [
     89.46
    ],
-   "baselineMedianFloor": 14.0,
-   "currentMedianFloor": 8.0,
+   "baselineFloorMedian": 14.0,
+   "currentFloorMedian": 8.0,
    "baselineDirectTradeCount": 1,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -6980,7 +7111,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 89.5,
    "calculationVersion": "v1.1",
-   "rank": 213
+   "rank": 217
   },
   {
    "apartmentKey": "11620-21",
@@ -7004,8 +7135,8 @@
    "exactAreas": [
     84.96
    ],
-   "baselineMedianFloor": 13,
-   "currentMedianFloor": 24.0,
+   "baselineFloorMedian": 13,
+   "currentFloorMedian": 24.0,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -7013,7 +7144,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 214
+   "rank": 218
   },
   {
    "apartmentKey": "11530-92",
@@ -7035,8 +7166,8 @@
    "exactAreas": [
     59.49
    ],
-   "baselineMedianFloor": 12,
-   "currentMedianFloor": 7.0,
+   "baselineFloorMedian": 12,
+   "currentFloorMedian": 7.0,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -7044,7 +7175,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 59.5,
    "calculationVersion": "v1.1",
-   "rank": 215
+   "rank": 219
   },
   {
    "apartmentKey": "11290-212",
@@ -7068,8 +7199,8 @@
    "exactAreas": [
     59.97
    ],
-   "baselineMedianFloor": 17,
-   "currentMedianFloor": 10.5,
+   "baselineFloorMedian": 17,
+   "currentFloorMedian": 10.5,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -7077,7 +7208,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 60.0,
    "calculationVersion": "v1.1",
-   "rank": 216
+   "rank": 220
   },
   {
    "apartmentKey": "11350-41",
@@ -7101,8 +7232,8 @@
    "exactAreas": [
     41.3
    ],
-   "baselineMedianFloor": 9.0,
-   "currentMedianFloor": 13,
+   "baselineFloorMedian": 9.0,
+   "currentFloorMedian": 13,
    "baselineDirectTradeCount": 1,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -7110,7 +7241,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 41.3,
    "calculationVersion": "v1.1",
-   "rank": 217
+   "rank": 221
   },
   {
    "apartmentKey": "11350-2275",
@@ -7136,8 +7267,8 @@
     84.999,
     84.994
    ],
-   "baselineMedianFloor": 12,
-   "currentMedianFloor": 16.0,
+   "baselineFloorMedian": 12,
+   "currentFloorMedian": 16.0,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -7145,7 +7276,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 218
+   "rank": 222
   },
   {
    "apartmentKey": "11620-54",
@@ -7167,8 +7298,8 @@
    "exactAreas": [
     83.21
    ],
-   "baselineMedianFloor": 13.0,
-   "currentMedianFloor": 11.0,
+   "baselineFloorMedian": 13.0,
+   "currentFloorMedian": 11.0,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -7176,7 +7307,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 83.2,
    "calculationVersion": "v1.1",
-   "rank": 219
+   "rank": 223
   },
   {
    "apartmentKey": "11260-4220",
@@ -7200,8 +7331,8 @@
    "exactAreas": [
     84.9871
    ],
-   "baselineMedianFloor": 11,
-   "currentMedianFloor": 16,
+   "baselineFloorMedian": 11,
+   "currentFloorMedian": 16,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -7209,7 +7340,38 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 220
+   "rank": 224
+  },
+  {
+   "apartmentKey": "11740-4628",
+   "aptSeq": "4628",
+   "apartmentName": "고덕그라시움",
+   "sidoCode": "11",
+   "sggCode": "11740",
+   "areaGroup": 73.9,
+   "referenceMonth": "202606",
+   "baselineMedian": 2090000000,
+   "currentMedian": 2200000000,
+   "riseAmount": 110000000,
+   "riseRate": 5.26,
+   "baselineTradeCount": 5,
+   "currentTradeCount": 3,
+   "confidence": "medium",
+   "warnings": [],
+   "region": "11740 고덕동",
+   "exactAreas": [
+    73.873
+   ],
+   "baselineFloorMedian": 6,
+   "currentFloorMedian": 7,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": false,
+   "directTradeWarning": false,
+   "compositionWarning": false,
+   "exclusiveAreaGroup": 73.9,
+   "calculationVersion": "v1.1",
+   "rank": 225
   },
   {
    "apartmentKey": "11215-41",
@@ -7233,8 +7395,8 @@
    "exactAreas": [
     59.96
    ],
-   "baselineMedianFloor": 19,
-   "currentMedianFloor": 9.5,
+   "baselineFloorMedian": 19,
+   "currentFloorMedian": 9.5,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -7242,7 +7404,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 60.0,
    "calculationVersion": "v1.1",
-   "rank": 221
+   "rank": 226
   },
   {
    "apartmentKey": "11350-202",
@@ -7266,8 +7428,8 @@
    "exactAreas": [
     68.99
    ],
-   "baselineMedianFloor": 7,
-   "currentMedianFloor": 4.0,
+   "baselineFloorMedian": 7,
+   "currentFloorMedian": 4.0,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -7275,7 +7437,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 69.0,
    "calculationVersion": "v1.1",
-   "rank": 222
+   "rank": 227
   },
   {
    "apartmentKey": "11560-7",
@@ -7299,8 +7461,8 @@
    "exactAreas": [
     59.91
    ],
-   "baselineMedianFloor": 16,
-   "currentMedianFloor": 14,
+   "baselineFloorMedian": 16,
+   "currentFloorMedian": 14,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -7308,7 +7470,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 59.9,
    "calculationVersion": "v1.1",
-   "rank": 223
+   "rank": 228
   },
   {
    "apartmentKey": "11350-156",
@@ -7332,8 +7494,8 @@
    "exactAreas": [
     59.95
    ],
-   "baselineMedianFloor": 13,
-   "currentMedianFloor": 4.5,
+   "baselineFloorMedian": 13,
+   "currentFloorMedian": 4.5,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -7341,7 +7503,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 60.0,
    "calculationVersion": "v1.1",
-   "rank": 224
+   "rank": 229
   },
   {
    "apartmentKey": "11350-113",
@@ -7363,8 +7525,8 @@
    "exactAreas": [
     59.39
    ],
-   "baselineMedianFloor": 9.0,
-   "currentMedianFloor": 6.0,
+   "baselineFloorMedian": 9.0,
+   "currentFloorMedian": 6.0,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -7372,7 +7534,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 59.4,
    "calculationVersion": "v1.1",
-   "rank": 225
+   "rank": 230
   },
   {
    "apartmentKey": "11530-27",
@@ -7394,8 +7556,8 @@
    "exactAreas": [
     59.82
    ],
-   "baselineMedianFloor": 8.0,
-   "currentMedianFloor": 13,
+   "baselineFloorMedian": 8.0,
+   "currentFloorMedian": 13,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -7403,7 +7565,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 59.8,
    "calculationVersion": "v1.1",
-   "rank": 226
+   "rank": 231
   },
   {
    "apartmentKey": "11500-194",
@@ -7427,8 +7589,8 @@
    "exactAreas": [
     64.65
    ],
-   "baselineMedianFloor": 7.0,
-   "currentMedianFloor": 1.0,
+   "baselineFloorMedian": 7.0,
+   "currentFloorMedian": 1.0,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -7436,7 +7598,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 64.7,
    "calculationVersion": "v1.1",
-   "rank": 227
+   "rank": 232
   },
   {
    "apartmentKey": "11530-89",
@@ -7460,8 +7622,8 @@
    "exactAreas": [
     59.57
    ],
-   "baselineMedianFloor": 13,
-   "currentMedianFloor": 20,
+   "baselineFloorMedian": 13,
+   "currentFloorMedian": 20,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -7469,7 +7631,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 59.6,
    "calculationVersion": "v1.1",
-   "rank": 228
+   "rank": 233
   },
   {
    "apartmentKey": "11500-199",
@@ -7493,8 +7655,8 @@
    "exactAreas": [
     84.95
    ],
-   "baselineMedianFloor": 9.0,
-   "currentMedianFloor": 6.0,
+   "baselineFloorMedian": 9.0,
+   "currentFloorMedian": 6.0,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -7502,7 +7664,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 229
+   "rank": 234
   },
   {
    "apartmentKey": "11410-85",
@@ -7526,8 +7688,8 @@
    "exactAreas": [
     142.98
    ],
-   "baselineMedianFloor": 9.0,
-   "currentMedianFloor": 7,
+   "baselineFloorMedian": 9.0,
+   "currentFloorMedian": 7,
    "baselineDirectTradeCount": 1,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -7535,7 +7697,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 143.0,
    "calculationVersion": "v1.1",
-   "rank": 230
+   "rank": 235
   },
   {
    "apartmentKey": "11320-66",
@@ -7557,8 +7719,8 @@
    "exactAreas": [
     95.633
    ],
-   "baselineMedianFloor": 14,
-   "currentMedianFloor": 7.0,
+   "baselineFloorMedian": 14,
+   "currentFloorMedian": 7.0,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -7566,7 +7728,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 95.6,
    "calculationVersion": "v1.1",
-   "rank": 231
+   "rank": 236
   },
   {
    "apartmentKey": "11470-5271",
@@ -7590,8 +7752,8 @@
    "exactAreas": [
     59.95
    ],
-   "baselineMedianFloor": 11.0,
-   "currentMedianFloor": 13.5,
+   "baselineFloorMedian": 11.0,
+   "currentFloorMedian": 13.5,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -7599,7 +7761,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 60.0,
    "calculationVersion": "v1.1",
-   "rank": 232
+   "rank": 237
   },
   {
    "apartmentKey": "11320-2999",
@@ -7621,8 +7783,8 @@
    "exactAreas": [
     84.98
    ],
-   "baselineMedianFloor": 15,
-   "currentMedianFloor": 9.5,
+   "baselineFloorMedian": 15,
+   "currentFloorMedian": 9.5,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -7630,7 +7792,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 233
+   "rank": 238
   },
   {
    "apartmentKey": "11290-3807",
@@ -7654,8 +7816,8 @@
    "exactAreas": [
     59.99
    ],
-   "baselineMedianFloor": 6,
-   "currentMedianFloor": 4.5,
+   "baselineFloorMedian": 6,
+   "currentFloorMedian": 4.5,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -7663,7 +7825,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 60.0,
    "calculationVersion": "v1.1",
-   "rank": 234
+   "rank": 239
   },
   {
    "apartmentKey": "11290-82",
@@ -7687,8 +7849,8 @@
    "exactAreas": [
     114.75
    ],
-   "baselineMedianFloor": 8.0,
-   "currentMedianFloor": 3,
+   "baselineFloorMedian": 8.0,
+   "currentFloorMedian": 3,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -7696,7 +7858,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 114.8,
    "calculationVersion": "v1.1",
-   "rank": 235
+   "rank": 240
   },
   {
    "apartmentKey": "11350-139",
@@ -7721,8 +7883,8 @@
    "exactAreas": [
     51.48
    ],
-   "baselineMedianFloor": 7,
-   "currentMedianFloor": 5,
+   "baselineFloorMedian": 7,
+   "currentFloorMedian": 5,
    "baselineDirectTradeCount": 1,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -7730,7 +7892,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 51.5,
    "calculationVersion": "v1.1",
-   "rank": 236
+   "rank": 241
   },
   {
    "apartmentKey": "11230-84",
@@ -7752,8 +7914,8 @@
    "exactAreas": [
     84.98
    ],
-   "baselineMedianFloor": 9.0,
-   "currentMedianFloor": 10.0,
+   "baselineFloorMedian": 9.0,
+   "currentFloorMedian": 10.0,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -7761,7 +7923,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 237
+   "rank": 242
   },
   {
    "apartmentKey": "11560-60",
@@ -7785,8 +7947,8 @@
    "exactAreas": [
     121.53
    ],
-   "baselineMedianFloor": 19.0,
-   "currentMedianFloor": 22.5,
+   "baselineFloorMedian": 19.0,
+   "currentFloorMedian": 22.5,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -7794,7 +7956,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 121.5,
    "calculationVersion": "v1.1",
-   "rank": 238
+   "rank": 243
   },
   {
    "apartmentKey": "11710-8865",
@@ -7821,8 +7983,8 @@
     49.19,
     49.21
    ],
-   "baselineMedianFloor": 16.0,
-   "currentMedianFloor": 27.0,
+   "baselineFloorMedian": 16.0,
+   "currentFloorMedian": 27.0,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -7830,7 +7992,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 49.2,
    "calculationVersion": "v1.1",
-   "rank": 239
+   "rank": 244
   },
   {
    "apartmentKey": "11590-100",
@@ -7857,8 +8019,8 @@
     84.9883,
     84.9794
    ],
-   "baselineMedianFloor": 3,
-   "currentMedianFloor": 7,
+   "baselineFloorMedian": 3,
+   "currentFloorMedian": 7,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -7866,7 +8028,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 240
+   "rank": 245
   },
   {
    "apartmentKey": "11380-9188",
@@ -7890,8 +8052,8 @@
    "exactAreas": [
     84.59
    ],
-   "baselineMedianFloor": 3,
-   "currentMedianFloor": 5.5,
+   "baselineFloorMedian": 3,
+   "currentFloorMedian": 5.5,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -7899,38 +8061,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.6,
    "calculationVersion": "v1.1",
-   "rank": 241
-  },
-  {
-   "apartmentKey": "11740-4628",
-   "aptSeq": "4628",
-   "apartmentName": "고덕그라시움",
-   "sidoCode": "11",
-   "sggCode": "11740",
-   "areaGroup": 73.9,
-   "referenceMonth": "202606",
-   "baselineMedian": 2090000000,
-   "currentMedian": 2190000000.0,
-   "riseAmount": 100000000,
-   "riseRate": 4.78,
-   "baselineTradeCount": 5,
-   "currentTradeCount": 2,
-   "confidence": "medium",
-   "warnings": [],
-   "region": "11740 고덕동",
-   "exactAreas": [
-    73.873
-   ],
-   "baselineMedianFloor": 6,
-   "currentMedianFloor": 7.0,
-   "baselineDirectTradeCount": 0,
-   "currentDirectTradeCount": 0,
-   "floorMixWarning": false,
-   "directTradeWarning": false,
-   "compositionWarning": false,
-   "exclusiveAreaGroup": 73.9,
-   "calculationVersion": "v1.1",
-   "rank": 242
+   "rank": 246
   },
   {
    "apartmentKey": "11530-138",
@@ -7954,8 +8085,8 @@
    "exactAreas": [
     56.49
    ],
-   "baselineMedianFloor": 9,
-   "currentMedianFloor": 4.5,
+   "baselineFloorMedian": 9,
+   "currentFloorMedian": 4.5,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -7963,7 +8094,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 56.5,
    "calculationVersion": "v1.1",
-   "rank": 243
+   "rank": 247
   },
   {
    "apartmentKey": "11620-145",
@@ -7988,8 +8119,8 @@
    "exactAreas": [
     59.8
    ],
-   "baselineMedianFloor": 4.0,
-   "currentMedianFloor": 10.0,
+   "baselineFloorMedian": 4.0,
+   "currentFloorMedian": 10.0,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -7997,7 +8128,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 59.8,
    "calculationVersion": "v1.1",
-   "rank": 244
+   "rank": 248
   },
   {
    "apartmentKey": "11350-187",
@@ -8022,8 +8153,8 @@
     84.65,
     84.74
    ],
-   "baselineMedianFloor": 8,
-   "currentMedianFloor": 9,
+   "baselineFloorMedian": 8,
+   "currentFloorMedian": 9,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -8031,7 +8162,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.7,
    "calculationVersion": "v1.1",
-   "rank": 245
+   "rank": 249
   },
   {
    "apartmentKey": "11290-4786",
@@ -8056,8 +8187,8 @@
     59.99,
     59.97
    ],
-   "baselineMedianFloor": 9.5,
-   "currentMedianFloor": 10.0,
+   "baselineFloorMedian": 9.5,
+   "currentFloorMedian": 10.0,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -8065,7 +8196,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 60.0,
    "calculationVersion": "v1.1",
-   "rank": 246
+   "rank": 250
   },
   {
    "apartmentKey": "11410-11",
@@ -8087,8 +8218,8 @@
    "exactAreas": [
     59.4
    ],
-   "baselineMedianFloor": 6.0,
-   "currentMedianFloor": 11,
+   "baselineFloorMedian": 6.0,
+   "currentFloorMedian": 11,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -8096,7 +8227,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 59.4,
    "calculationVersion": "v1.1",
-   "rank": 247
+   "rank": 251
   },
   {
    "apartmentKey": "11290-4173",
@@ -8121,8 +8252,8 @@
     84.88,
     84.94
    ],
-   "baselineMedianFloor": 14.0,
-   "currentMedianFloor": 9.5,
+   "baselineFloorMedian": 14.0,
+   "currentFloorMedian": 9.5,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -8130,7 +8261,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 248
+   "rank": 252
   },
   {
    "apartmentKey": "11290-17",
@@ -8152,8 +8283,8 @@
    "exactAreas": [
     84.59
    ],
-   "baselineMedianFloor": 18.5,
-   "currentMedianFloor": 16.0,
+   "baselineFloorMedian": 18.5,
+   "currentFloorMedian": 16.0,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -8161,7 +8292,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 84.6,
    "calculationVersion": "v1.1",
-   "rank": 249
+   "rank": 253
   },
   {
    "apartmentKey": "11740-4628",
@@ -8183,8 +8314,8 @@
    "exactAreas": [
     59.785
    ],
-   "baselineMedianFloor": 13.5,
-   "currentMedianFloor": 8.5,
+   "baselineFloorMedian": 13.5,
+   "currentFloorMedian": 8.5,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -8192,7 +8323,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 59.8,
    "calculationVersion": "v1.1",
-   "rank": 250
+   "rank": 254
   },
   {
    "apartmentKey": "11290-4834",
@@ -8214,8 +8345,8 @@
    "exactAreas": [
     59.92
    ],
-   "baselineMedianFloor": 13.0,
-   "currentMedianFloor": 12,
+   "baselineFloorMedian": 13.0,
+   "currentFloorMedian": 12,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -8223,38 +8354,38 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 59.9,
    "calculationVersion": "v1.1",
-   "rank": 251
+   "rank": 255
   },
   {
-   "apartmentKey": "11440-169",
-   "aptSeq": "169",
-   "apartmentName": "성산시영(대우)",
+   "apartmentKey": "11500-151",
+   "aptSeq": "151",
+   "apartmentName": "가양2단지(성지)",
    "sidoCode": "11",
-   "sggCode": "11440",
-   "areaGroup": 50.0,
+   "sggCode": "11500",
+   "areaGroup": 39.6,
    "referenceMonth": "202606",
-   "baselineMedian": 1415000000,
-   "currentMedian": 1480000000,
-   "riseAmount": 65000000,
-   "riseRate": 4.59,
-   "baselineTradeCount": 3,
-   "currentTradeCount": 3,
+   "baselineMedian": 789000000.0,
+   "currentMedian": 825000000.0,
+   "riseAmount": 36000000,
+   "riseRate": 4.56,
+   "baselineTradeCount": 20,
+   "currentTradeCount": 2,
    "confidence": "medium",
    "warnings": [],
-   "region": "11440 성산동",
+   "region": "11500 가양동",
    "exactAreas": [
-    50.03
+    39.6
    ],
-   "baselineMedianFloor": 8,
-   "currentMedianFloor": 8,
+   "baselineFloorMedian": 7.5,
+   "currentFloorMedian": 9.5,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
    "directTradeWarning": false,
    "compositionWarning": false,
-   "exclusiveAreaGroup": 50.0,
+   "exclusiveAreaGroup": 39.6,
    "calculationVersion": "v1.1",
-   "rank": 252
+   "rank": 256
   },
   {
    "apartmentKey": "11500-7",
@@ -8278,8 +8409,8 @@
    "exactAreas": [
     59.7
    ],
-   "baselineMedianFloor": 8,
-   "currentMedianFloor": 16,
+   "baselineFloorMedian": 8,
+   "currentFloorMedian": 16,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -8287,7 +8418,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 59.7,
    "calculationVersion": "v1.1",
-   "rank": 253
+   "rank": 257
   },
   {
    "apartmentKey": "11290-3786",
@@ -8309,8 +8440,8 @@
    "exactAreas": [
     59.97
    ],
-   "baselineMedianFloor": 11,
-   "currentMedianFloor": 7,
+   "baselineFloorMedian": 11,
+   "currentFloorMedian": 7,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -8318,7 +8449,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 60.0,
    "calculationVersion": "v1.1",
-   "rank": 254
+   "rank": 258
   },
   {
    "apartmentKey": "11530-3469",
@@ -8343,8 +8474,8 @@
    "exactAreas": [
     84.97
    ],
-   "baselineMedianFloor": 8,
-   "currentMedianFloor": 7.5,
+   "baselineFloorMedian": 8,
+   "currentFloorMedian": 7.5,
    "baselineDirectTradeCount": 1,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -8352,7 +8483,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 255
+   "rank": 259
   },
   {
    "apartmentKey": "11380-8029",
@@ -8378,8 +8509,8 @@
     84.79,
     84.83
    ],
-   "baselineMedianFloor": 3.5,
-   "currentMedianFloor": 8.0,
+   "baselineFloorMedian": 3.5,
+   "currentFloorMedian": 8.0,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -8387,7 +8518,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.8,
    "calculationVersion": "v1.1",
-   "rank": 256
+   "rank": 260
   },
   {
    "apartmentKey": "11500-385",
@@ -8414,8 +8545,8 @@
     84.9588,
     84.9829
    ],
-   "baselineMedianFloor": 9,
-   "currentMedianFloor": 6.0,
+   "baselineFloorMedian": 9,
+   "currentFloorMedian": 6.0,
    "baselineDirectTradeCount": 1,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -8423,7 +8554,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 257
+   "rank": 261
   },
   {
    "apartmentKey": "11350-2280",
@@ -8447,8 +8578,8 @@
    "exactAreas": [
     84.99
    ],
-   "baselineMedianFloor": 11.5,
-   "currentMedianFloor": 10,
+   "baselineFloorMedian": 11.5,
+   "currentFloorMedian": 10,
    "baselineDirectTradeCount": 1,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -8456,7 +8587,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 258
+   "rank": 262
   },
   {
    "apartmentKey": "11350-172",
@@ -8478,8 +8609,8 @@
    "exactAreas": [
     84.6
    ],
-   "baselineMedianFloor": 6.5,
-   "currentMedianFloor": 10,
+   "baselineFloorMedian": 6.5,
+   "currentFloorMedian": 10,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -8487,7 +8618,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 84.6,
    "calculationVersion": "v1.1",
-   "rank": 259
+   "rank": 263
   },
   {
    "apartmentKey": "11290-88",
@@ -8509,8 +8640,8 @@
    "exactAreas": [
     59.855
    ],
-   "baselineMedianFloor": 10.0,
-   "currentMedianFloor": 9,
+   "baselineFloorMedian": 10.0,
+   "currentFloorMedian": 9,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -8518,7 +8649,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 59.9,
    "calculationVersion": "v1.1",
-   "rank": 260
+   "rank": 264
   },
   {
    "apartmentKey": "11320-149",
@@ -8542,8 +8673,8 @@
    "exactAreas": [
     84.4516
    ],
-   "baselineMedianFloor": 4,
-   "currentMedianFloor": 10.0,
+   "baselineFloorMedian": 4,
+   "currentFloorMedian": 10.0,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -8551,7 +8682,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.5,
    "calculationVersion": "v1.1",
-   "rank": 261
+   "rank": 265
   },
   {
    "apartmentKey": "11230-12",
@@ -8573,8 +8704,8 @@
    "exactAreas": [
     84.84
    ],
-   "baselineMedianFloor": 6,
-   "currentMedianFloor": 7.0,
+   "baselineFloorMedian": 6,
+   "currentFloorMedian": 7.0,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -8582,7 +8713,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 84.8,
    "calculationVersion": "v1.1",
-   "rank": 262
+   "rank": 266
   },
   {
    "apartmentKey": "11170-27",
@@ -8604,8 +8735,8 @@
    "exactAreas": [
     59.94
    ],
-   "baselineMedianFloor": 6,
-   "currentMedianFloor": 9.0,
+   "baselineFloorMedian": 6,
+   "currentFloorMedian": 9.0,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -8613,7 +8744,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 59.9,
    "calculationVersion": "v1.1",
-   "rank": 263
+   "rank": 267
   },
   {
    "apartmentKey": "11290-60",
@@ -8637,8 +8768,8 @@
    "exactAreas": [
     59.99
    ],
-   "baselineMedianFloor": 11.0,
-   "currentMedianFloor": 5,
+   "baselineFloorMedian": 11.0,
+   "currentFloorMedian": 5,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -8646,7 +8777,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 60.0,
    "calculationVersion": "v1.1",
-   "rank": 264
+   "rank": 268
   },
   {
    "apartmentKey": "11440-3927",
@@ -8668,8 +8799,8 @@
    "exactAreas": [
     84.9
    ],
-   "baselineMedianFloor": 10,
-   "currentMedianFloor": 12.0,
+   "baselineFloorMedian": 10,
+   "currentFloorMedian": 12.0,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -8677,7 +8808,38 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 265
+   "rank": 269
+  },
+  {
+   "apartmentKey": "11350-2275",
+   "aptSeq": "2275",
+   "apartmentName": "노원센트럴푸르지오",
+   "sidoCode": "11",
+   "sggCode": "11350",
+   "areaGroup": 60.0,
+   "referenceMonth": "202606",
+   "baselineMedian": 908000000.0,
+   "currentMedian": 947500000.0,
+   "riseAmount": 39500000,
+   "riseRate": 4.35,
+   "baselineTradeCount": 12,
+   "currentTradeCount": 2,
+   "confidence": "medium",
+   "warnings": [],
+   "region": "11350 상계동",
+   "exactAreas": [
+    59.996
+   ],
+   "baselineFloorMedian": 7.0,
+   "currentFloorMedian": 7.5,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": false,
+   "directTradeWarning": false,
+   "compositionWarning": false,
+   "exclusiveAreaGroup": 60.0,
+   "calculationVersion": "v1.1",
+   "rank": 270
   },
   {
    "apartmentKey": "11470-23",
@@ -8701,8 +8863,8 @@
    "exactAreas": [
     53.88
    ],
-   "baselineMedianFloor": 9.0,
-   "currentMedianFloor": 4.5,
+   "baselineFloorMedian": 9.0,
+   "currentFloorMedian": 4.5,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -8710,7 +8872,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 53.9,
    "calculationVersion": "v1.1",
-   "rank": 266
+   "rank": 271
   },
   {
    "apartmentKey": "11590-57",
@@ -8732,8 +8894,8 @@
    "exactAreas": [
     59.84
    ],
-   "baselineMedianFloor": 11.0,
-   "currentMedianFloor": 11.0,
+   "baselineFloorMedian": 11.0,
+   "currentFloorMedian": 11.0,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -8741,7 +8903,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 59.8,
    "calculationVersion": "v1.1",
-   "rank": 267
+   "rank": 272
   },
   {
    "apartmentKey": "11350-133",
@@ -8763,8 +8925,8 @@
    "exactAreas": [
     114.97
    ],
-   "baselineMedianFloor": 18.0,
-   "currentMedianFloor": 19,
+   "baselineFloorMedian": 18.0,
+   "currentFloorMedian": 19,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -8772,7 +8934,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 115.0,
    "calculationVersion": "v1.1",
-   "rank": 268
+   "rank": 273
   },
   {
    "apartmentKey": "11710-5714",
@@ -8797,8 +8959,8 @@
    "exactAreas": [
     121.23
    ],
-   "baselineMedianFloor": 6.0,
-   "currentMedianFloor": 5.0,
+   "baselineFloorMedian": 6.0,
+   "currentFloorMedian": 5.0,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -8806,7 +8968,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 121.2,
    "calculationVersion": "v1.1",
-   "rank": 269
+   "rank": 274
   },
   {
    "apartmentKey": "11440-4800",
@@ -8832,8 +8994,8 @@
     84.94,
     84.89
    ],
-   "baselineMedianFloor": 7,
-   "currentMedianFloor": 5.0,
+   "baselineFloorMedian": 7,
+   "currentFloorMedian": 5.0,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -8841,7 +9003,41 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 270
+   "rank": 275
+  },
+  {
+   "apartmentKey": "11305-4064",
+   "aptSeq": "4064",
+   "apartmentName": "수유역두산위브1",
+   "sidoCode": "11",
+   "sggCode": "11305",
+   "areaGroup": 85.0,
+   "referenceMonth": "202606",
+   "baselineMedian": 763000000,
+   "currentMedian": 795000000.0,
+   "riseAmount": 32000000,
+   "riseRate": 4.19,
+   "baselineTradeCount": 3,
+   "currentTradeCount": 2,
+   "confidence": "low",
+   "warnings": [
+    "서로 다른 세부 전용면적 혼합"
+   ],
+   "region": "11305 번동",
+   "exactAreas": [
+    84.9909,
+    84.9986
+   ],
+   "baselineFloorMedian": 13,
+   "currentFloorMedian": 14.5,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": false,
+   "directTradeWarning": false,
+   "compositionWarning": true,
+   "exclusiveAreaGroup": 85.0,
+   "calculationVersion": "v1.1",
+   "rank": 276
   },
   {
    "apartmentKey": "11305-5365",
@@ -8865,8 +9061,8 @@
    "exactAreas": [
     84.67
    ],
-   "baselineMedianFloor": 7.5,
-   "currentMedianFloor": 2,
+   "baselineFloorMedian": 7.5,
+   "currentFloorMedian": 2,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -8874,7 +9070,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.7,
    "calculationVersion": "v1.1",
-   "rank": 271
+   "rank": 277
   },
   {
    "apartmentKey": "11710-6249",
@@ -8898,8 +9094,8 @@
    "exactAreas": [
     84.99
    ],
-   "baselineMedianFloor": 12.5,
-   "currentMedianFloor": 25,
+   "baselineFloorMedian": 12.5,
+   "currentFloorMedian": 25,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -8907,7 +9103,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 272
+   "rank": 278
   },
   {
    "apartmentKey": "11590-5055",
@@ -8931,8 +9127,8 @@
    "exactAreas": [
     84.9869
    ],
-   "baselineMedianFloor": 22,
-   "currentMedianFloor": 6,
+   "baselineFloorMedian": 22,
+   "currentFloorMedian": 6,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -8940,7 +9136,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 273
+   "rank": 279
   },
   {
    "apartmentKey": "11710-177",
@@ -8962,8 +9158,8 @@
    "exactAreas": [
     82.45
    ],
-   "baselineMedianFloor": 10,
-   "currentMedianFloor": 7,
+   "baselineFloorMedian": 10,
+   "currentFloorMedian": 7,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -8971,7 +9167,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 82.5,
    "calculationVersion": "v1.1",
-   "rank": 274
+   "rank": 280
   },
   {
    "apartmentKey": "11290-3492",
@@ -8996,8 +9192,8 @@
    "exactAreas": [
     84.589
    ],
-   "baselineMedianFloor": 7.0,
-   "currentMedianFloor": 17,
+   "baselineFloorMedian": 7.0,
+   "currentFloorMedian": 17,
    "baselineDirectTradeCount": 1,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -9005,7 +9201,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.6,
    "calculationVersion": "v1.1",
-   "rank": 275
+   "rank": 281
   },
   {
    "apartmentKey": "11140-1039",
@@ -9032,8 +9228,8 @@
     84.92,
     84.89
    ],
-   "baselineMedianFloor": 20.0,
-   "currentMedianFloor": 11.0,
+   "baselineFloorMedian": 20.0,
+   "currentFloorMedian": 11.0,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -9041,7 +9237,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 276
+   "rank": 282
   },
   {
    "apartmentKey": "11710-177",
@@ -9063,8 +9259,8 @@
    "exactAreas": [
     71.2
    ],
-   "baselineMedianFloor": 8.5,
-   "currentMedianFloor": 10.0,
+   "baselineFloorMedian": 8.5,
+   "currentFloorMedian": 10.0,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -9072,7 +9268,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 71.2,
    "calculationVersion": "v1.1",
-   "rank": 277
+   "rank": 283
   },
   {
    "apartmentKey": "11200-22",
@@ -9096,8 +9292,8 @@
    "exactAreas": [
     84.71
    ],
-   "baselineMedianFloor": 13,
-   "currentMedianFloor": 14.0,
+   "baselineFloorMedian": 13,
+   "currentFloorMedian": 14.0,
    "baselineDirectTradeCount": 1,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -9105,7 +9301,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.7,
    "calculationVersion": "v1.1",
-   "rank": 278
+   "rank": 284
   },
   {
    "apartmentKey": "11680-3623",
@@ -9129,8 +9325,8 @@
    "exactAreas": [
     119.8906
    ],
-   "baselineMedianFloor": 14.5,
-   "currentMedianFloor": 5,
+   "baselineFloorMedian": 14.5,
+   "currentFloorMedian": 5,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -9138,7 +9334,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 119.9,
    "calculationVersion": "v1.1",
-   "rank": 279
+   "rank": 285
   },
   {
    "apartmentKey": "11230-129",
@@ -9160,8 +9356,8 @@
    "exactAreas": [
     81.05
    ],
-   "baselineMedianFloor": 12,
-   "currentMedianFloor": 11,
+   "baselineFloorMedian": 12,
+   "currentFloorMedian": 11,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -9169,7 +9365,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 81.0,
    "calculationVersion": "v1.1",
-   "rank": 280
+   "rank": 286
   },
   {
    "apartmentKey": "11530-17",
@@ -9191,8 +9387,8 @@
    "exactAreas": [
     84.87
    ],
-   "baselineMedianFloor": 11,
-   "currentMedianFloor": 11.0,
+   "baselineFloorMedian": 11,
+   "currentFloorMedian": 11.0,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -9200,7 +9396,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 281
+   "rank": 287
   },
   {
    "apartmentKey": "11500-263",
@@ -9211,19 +9407,19 @@
    "areaGroup": 85.0,
    "referenceMonth": "202606",
    "baselineMedian": 1230000000.0,
-   "currentMedian": 1280000000.0,
+   "currentMedian": 1280000000,
    "riseAmount": 50000000,
    "riseRate": 4.07,
    "baselineTradeCount": 4,
-   "currentTradeCount": 2,
+   "currentTradeCount": 3,
    "confidence": "medium",
    "warnings": [],
    "region": "11500 등촌동",
    "exactAreas": [
     84.9958
    ],
-   "baselineMedianFloor": 11.5,
-   "currentMedianFloor": 13.0,
+   "baselineFloorMedian": 11.5,
+   "currentFloorMedian": 12,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -9231,7 +9427,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 282
+   "rank": 288
   },
   {
    "apartmentKey": "11500-5165",
@@ -9255,8 +9451,8 @@
    "exactAreas": [
     84.9941
    ],
-   "baselineMedianFloor": 7.5,
-   "currentMedianFloor": 12.5,
+   "baselineFloorMedian": 7.5,
+   "currentFloorMedian": 12.5,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -9264,7 +9460,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 283
+   "rank": 289
   },
   {
    "apartmentKey": "11470-23",
@@ -9286,8 +9482,8 @@
    "exactAreas": [
     101.2
    ],
-   "baselineMedianFloor": 8,
-   "currentMedianFloor": 10,
+   "baselineFloorMedian": 8,
+   "currentFloorMedian": 10,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -9295,7 +9491,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 101.2,
    "calculationVersion": "v1.1",
-   "rank": 284
+   "rank": 290
   },
   {
    "apartmentKey": "11590-5",
@@ -9319,8 +9515,8 @@
    "exactAreas": [
     59.82
    ],
-   "baselineMedianFloor": 8.0,
-   "currentMedianFloor": 8.0,
+   "baselineFloorMedian": 8.0,
+   "currentFloorMedian": 8.0,
    "baselineDirectTradeCount": 1,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -9328,7 +9524,38 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 59.8,
    "calculationVersion": "v1.1",
-   "rank": 285
+   "rank": 291
+  },
+  {
+   "apartmentKey": "11590-127",
+   "aptSeq": "127",
+   "apartmentName": "래미안상도3차",
+   "sidoCode": "11",
+   "sggCode": "11590",
+   "areaGroup": 85.0,
+   "referenceMonth": "202606",
+   "baselineMedian": 1662500000.0,
+   "currentMedian": 1728500000.0,
+   "riseAmount": 66000000,
+   "riseRate": 3.97,
+   "baselineTradeCount": 12,
+   "currentTradeCount": 2,
+   "confidence": "medium",
+   "warnings": [],
+   "region": "11590 상도동",
+   "exactAreas": [
+    84.96
+   ],
+   "baselineFloorMedian": 9.0,
+   "currentFloorMedian": 14.0,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": false,
+   "directTradeWarning": false,
+   "compositionWarning": false,
+   "exclusiveAreaGroup": 85.0,
+   "calculationVersion": "v1.1",
+   "rank": 292
   },
   {
    "apartmentKey": "11350-133",
@@ -9350,8 +9577,8 @@
    "exactAreas": [
     59.94
    ],
-   "baselineMedianFloor": 15,
-   "currentMedianFloor": 9,
+   "baselineFloorMedian": 15,
+   "currentFloorMedian": 9,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -9359,7 +9586,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 59.9,
    "calculationVersion": "v1.1",
-   "rank": 286
+   "rank": 293
   },
   {
    "apartmentKey": "11500-6594",
@@ -9383,8 +9610,8 @@
    "exactAreas": [
     59.978
    ],
-   "baselineMedianFloor": 3,
-   "currentMedianFloor": 6.0,
+   "baselineFloorMedian": 3,
+   "currentFloorMedian": 6.0,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -9392,7 +9619,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 60.0,
    "calculationVersion": "v1.1",
-   "rank": 287
+   "rank": 294
   },
   {
    "apartmentKey": "11470-5628",
@@ -9419,8 +9646,8 @@
     84.98,
     84.97
    ],
-   "baselineMedianFloor": 11,
-   "currentMedianFloor": 4,
+   "baselineFloorMedian": 11,
+   "currentFloorMedian": 4,
    "baselineDirectTradeCount": 2,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -9428,7 +9655,38 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 288
+   "rank": 295
+  },
+  {
+   "apartmentKey": "11440-169",
+   "aptSeq": "169",
+   "apartmentName": "성산시영(대우)",
+   "sidoCode": "11",
+   "sggCode": "11440",
+   "areaGroup": 50.0,
+   "referenceMonth": "202606",
+   "baselineMedian": 1415000000,
+   "currentMedian": 1470000000.0,
+   "riseAmount": 55000000,
+   "riseRate": 3.89,
+   "baselineTradeCount": 3,
+   "currentTradeCount": 4,
+   "confidence": "medium",
+   "warnings": [],
+   "region": "11440 성산동",
+   "exactAreas": [
+    50.03
+   ],
+   "baselineFloorMedian": 8,
+   "currentFloorMedian": 9.0,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": false,
+   "directTradeWarning": false,
+   "compositionWarning": false,
+   "exclusiveAreaGroup": 50.0,
+   "calculationVersion": "v1.1",
+   "rank": 296
   },
   {
    "apartmentKey": "11710-5957",
@@ -9452,8 +9710,8 @@
    "exactAreas": [
     59.97
    ],
-   "baselineMedianFloor": 15.5,
-   "currentMedianFloor": 10,
+   "baselineFloorMedian": 15.5,
+   "currentFloorMedian": 10,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -9461,7 +9719,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 60.0,
    "calculationVersion": "v1.1",
-   "rank": 289
+   "rank": 297
   },
   {
    "apartmentKey": "11350-80",
@@ -9483,8 +9741,8 @@
    "exactAreas": [
     84.77
    ],
-   "baselineMedianFloor": 8,
-   "currentMedianFloor": 7.0,
+   "baselineFloorMedian": 8,
+   "currentFloorMedian": 7.0,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -9492,7 +9750,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 84.8,
    "calculationVersion": "v1.1",
-   "rank": 290
+   "rank": 298
   },
   {
    "apartmentKey": "11500-7596",
@@ -9517,8 +9775,8 @@
     84.9881,
     84.9805
    ],
-   "baselineMedianFloor": 11,
-   "currentMedianFloor": 15.0,
+   "baselineFloorMedian": 11,
+   "currentFloorMedian": 15.0,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -9526,7 +9784,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 291
+   "rank": 299
   },
   {
    "apartmentKey": "11200-81",
@@ -9550,8 +9808,8 @@
    "exactAreas": [
     81.567
    ],
-   "baselineMedianFloor": 9.5,
-   "currentMedianFloor": 6.0,
+   "baselineFloorMedian": 9.5,
+   "currentFloorMedian": 6.0,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -9559,7 +9817,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 81.6,
    "calculationVersion": "v1.1",
-   "rank": 292
+   "rank": 300
   },
   {
    "apartmentKey": "11380-11008",
@@ -9583,8 +9841,8 @@
    "exactAreas": [
     84.9039
    ],
-   "baselineMedianFloor": 11,
-   "currentMedianFloor": 18.0,
+   "baselineFloorMedian": 11,
+   "currentFloorMedian": 18.0,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -9592,7 +9850,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 293
+   "rank": 301
   },
   {
    "apartmentKey": "11530-171",
@@ -9616,8 +9874,8 @@
    "exactAreas": [
     78.665
    ],
-   "baselineMedianFloor": 6.5,
-   "currentMedianFloor": 4.0,
+   "baselineFloorMedian": 6.5,
+   "currentFloorMedian": 4.0,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -9625,7 +9883,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 78.7,
    "calculationVersion": "v1.1",
-   "rank": 294
+   "rank": 302
   },
   {
    "apartmentKey": "11710-110",
@@ -9649,8 +9907,8 @@
    "exactAreas": [
     84.95
    ],
-   "baselineMedianFloor": 10,
-   "currentMedianFloor": 7.5,
+   "baselineFloorMedian": 10,
+   "currentFloorMedian": 7.5,
    "baselineDirectTradeCount": 1,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -9658,7 +9916,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 295
+   "rank": 303
   },
   {
    "apartmentKey": "11500-477",
@@ -9680,8 +9938,8 @@
    "exactAreas": [
     84.98
    ],
-   "baselineMedianFloor": 9.0,
-   "currentMedianFloor": 14.0,
+   "baselineFloorMedian": 9.0,
+   "currentFloorMedian": 14.0,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -9689,7 +9947,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 296
+   "rank": 304
   },
   {
    "apartmentKey": "11620-11",
@@ -9713,8 +9971,8 @@
    "exactAreas": [
     84.87
    ],
-   "baselineMedianFloor": 12.0,
-   "currentMedianFloor": 11.5,
+   "baselineFloorMedian": 12.0,
+   "currentFloorMedian": 11.5,
    "baselineDirectTradeCount": 1,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -9722,7 +9980,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 297
+   "rank": 305
   },
   {
    "apartmentKey": "11710-6266",
@@ -9747,8 +10005,8 @@
    "exactAreas": [
     84.79
    ],
-   "baselineMedianFloor": 14.0,
-   "currentMedianFloor": 15.5,
+   "baselineFloorMedian": 14.0,
+   "currentFloorMedian": 15.5,
    "baselineDirectTradeCount": 1,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -9756,7 +10014,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.8,
    "calculationVersion": "v1.1",
-   "rank": 298
+   "rank": 306
   },
   {
    "apartmentKey": "11350-79",
@@ -9778,8 +10036,8 @@
    "exactAreas": [
     84.51
    ],
-   "baselineMedianFloor": 10.0,
-   "currentMedianFloor": 10.5,
+   "baselineFloorMedian": 10.0,
+   "currentFloorMedian": 10.5,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -9787,7 +10045,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 84.5,
    "calculationVersion": "v1.1",
-   "rank": 299
+   "rank": 307
   },
   {
    "apartmentKey": "11590-4948",
@@ -9812,8 +10070,8 @@
     59.9775,
     59.9908
    ],
-   "baselineMedianFloor": 8,
-   "currentMedianFloor": 8.5,
+   "baselineFloorMedian": 8,
+   "currentFloorMedian": 8.5,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -9821,7 +10079,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 60.0,
    "calculationVersion": "v1.1",
-   "rank": 300
+   "rank": 308
   },
   {
    "apartmentKey": "11200-32",
@@ -9843,8 +10101,8 @@
    "exactAreas": [
     84.82
    ],
-   "baselineMedianFloor": 7,
-   "currentMedianFloor": 8.5,
+   "baselineFloorMedian": 7,
+   "currentFloorMedian": 8.5,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -9852,7 +10110,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 84.8,
    "calculationVersion": "v1.1",
-   "rank": 301
+   "rank": 309
   },
   {
    "apartmentKey": "11410-4856",
@@ -9874,8 +10132,8 @@
    "exactAreas": [
     59.7501
    ],
-   "baselineMedianFloor": 13,
-   "currentMedianFloor": 8.0,
+   "baselineFloorMedian": 13,
+   "currentFloorMedian": 8.0,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -9883,7 +10141,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 59.8,
    "calculationVersion": "v1.1",
-   "rank": 302
+   "rank": 310
   },
   {
    "apartmentKey": "11470-182",
@@ -9907,8 +10165,8 @@
    "exactAreas": [
     84.985
    ],
-   "baselineMedianFloor": 7,
-   "currentMedianFloor": 12.5,
+   "baselineFloorMedian": 7,
+   "currentFloorMedian": 12.5,
    "baselineDirectTradeCount": 1,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -9916,7 +10174,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 303
+   "rank": 311
   },
   {
    "apartmentKey": "11410-63",
@@ -9938,8 +10196,8 @@
    "exactAreas": [
     84.78
    ],
-   "baselineMedianFloor": 11.0,
-   "currentMedianFloor": 11.5,
+   "baselineFloorMedian": 11.0,
+   "currentFloorMedian": 11.5,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -9947,7 +10205,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 84.8,
    "calculationVersion": "v1.1",
-   "rank": 304
+   "rank": 312
   },
   {
    "apartmentKey": "11560-2151",
@@ -9974,8 +10232,8 @@
     59.87,
     59.91
    ],
-   "baselineMedianFloor": 8.5,
-   "currentMedianFloor": 17,
+   "baselineFloorMedian": 8.5,
+   "currentFloorMedian": 17,
    "baselineDirectTradeCount": 1,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -9983,7 +10241,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 59.9,
    "calculationVersion": "v1.1",
-   "rank": 305
+   "rank": 313
   },
   {
    "apartmentKey": "11560-2141",
@@ -10009,8 +10267,8 @@
     59.9792,
     59.968
    ],
-   "baselineMedianFloor": 16,
-   "currentMedianFloor": 13.0,
+   "baselineFloorMedian": 16,
+   "currentFloorMedian": 13.0,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -10018,7 +10276,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 60.0,
    "calculationVersion": "v1.1",
-   "rank": 306
+   "rank": 314
   },
   {
    "apartmentKey": "11590-130",
@@ -10040,8 +10298,8 @@
    "exactAreas": [
     84.2261
    ],
-   "baselineMedianFloor": 7,
-   "currentMedianFloor": 6.0,
+   "baselineFloorMedian": 7,
+   "currentFloorMedian": 6.0,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -10049,7 +10307,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 84.2,
    "calculationVersion": "v1.1",
-   "rank": 307
+   "rank": 315
   },
   {
    "apartmentKey": "11590-1",
@@ -10071,8 +10329,8 @@
    "exactAreas": [
     84.94
    ],
-   "baselineMedianFloor": 9,
-   "currentMedianFloor": 13.5,
+   "baselineFloorMedian": 9,
+   "currentFloorMedian": 13.5,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -10080,7 +10338,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 308
+   "rank": 316
   },
   {
    "apartmentKey": "11500-147",
@@ -10102,8 +10360,8 @@
    "exactAreas": [
     131.4
    ],
-   "baselineMedianFloor": 9.0,
-   "currentMedianFloor": 11.5,
+   "baselineFloorMedian": 9.0,
+   "currentFloorMedian": 11.5,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -10111,7 +10369,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 131.4,
    "calculationVersion": "v1.1",
-   "rank": 309
+   "rank": 317
   },
   {
    "apartmentKey": "11140-1039",
@@ -10137,8 +10395,8 @@
     59.91,
     59.94
    ],
-   "baselineMedianFloor": 25,
-   "currentMedianFloor": 14,
+   "baselineFloorMedian": 25,
+   "currentFloorMedian": 14,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -10146,7 +10404,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 59.9,
    "calculationVersion": "v1.1",
-   "rank": 310
+   "rank": 318
   },
   {
    "apartmentKey": "11230-81",
@@ -10168,8 +10426,8 @@
    "exactAreas": [
     84.87
    ],
-   "baselineMedianFloor": 13.0,
-   "currentMedianFloor": 8,
+   "baselineFloorMedian": 13.0,
+   "currentFloorMedian": 8,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -10177,7 +10435,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 311
+   "rank": 319
   },
   {
    "apartmentKey": "11710-59",
@@ -10199,8 +10457,8 @@
    "exactAreas": [
     84.69
    ],
-   "baselineMedianFloor": 8,
-   "currentMedianFloor": 11,
+   "baselineFloorMedian": 8,
+   "currentFloorMedian": 11,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -10208,7 +10466,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 84.7,
    "calculationVersion": "v1.1",
-   "rank": 312
+   "rank": 320
   },
   {
    "apartmentKey": "11230-76",
@@ -10230,8 +10488,8 @@
    "exactAreas": [
     59.4
    ],
-   "baselineMedianFloor": 14,
-   "currentMedianFloor": 8.5,
+   "baselineFloorMedian": 14,
+   "currentFloorMedian": 8.5,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -10239,7 +10497,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 59.4,
    "calculationVersion": "v1.1",
-   "rank": 313
+   "rank": 321
   },
   {
    "apartmentKey": "11560-10",
@@ -10261,8 +10519,8 @@
    "exactAreas": [
     95.5
    ],
-   "baselineMedianFloor": 1,
-   "currentMedianFloor": 4.5,
+   "baselineFloorMedian": 1,
+   "currentFloorMedian": 4.5,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -10270,7 +10528,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 95.5,
    "calculationVersion": "v1.1",
-   "rank": 314
+   "rank": 322
   },
   {
    "apartmentKey": "11530-168",
@@ -10294,8 +10552,8 @@
    "exactAreas": [
     84.928
    ],
-   "baselineMedianFloor": 20,
-   "currentMedianFloor": 12.0,
+   "baselineFloorMedian": 20,
+   "currentFloorMedian": 12.0,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -10303,7 +10561,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 315
+   "rank": 323
   },
   {
    "apartmentKey": "11710-42",
@@ -10328,8 +10586,8 @@
    "exactAreas": [
     84.42
    ],
-   "baselineMedianFloor": 11.5,
-   "currentMedianFloor": 20.0,
+   "baselineFloorMedian": 11.5,
+   "currentFloorMedian": 20.0,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -10337,7 +10595,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.4,
    "calculationVersion": "v1.1",
-   "rank": 316
+   "rank": 324
   },
   {
    "apartmentKey": "11620-14",
@@ -10361,8 +10619,8 @@
    "exactAreas": [
     84.84
    ],
-   "baselineMedianFloor": 4.0,
-   "currentMedianFloor": 1.5,
+   "baselineFloorMedian": 4.0,
+   "currentFloorMedian": 1.5,
    "baselineDirectTradeCount": 1,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -10370,7 +10628,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.8,
    "calculationVersion": "v1.1",
-   "rank": 317
+   "rank": 325
   },
   {
    "apartmentKey": "11410-4085",
@@ -10392,8 +10650,8 @@
    "exactAreas": [
     59.97
    ],
-   "baselineMedianFloor": 9.0,
-   "currentMedianFloor": 13,
+   "baselineFloorMedian": 9.0,
+   "currentFloorMedian": 13,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -10401,7 +10659,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 60.0,
    "calculationVersion": "v1.1",
-   "rank": 318
+   "rank": 326
   },
   {
    "apartmentKey": "11350-133",
@@ -10425,8 +10683,8 @@
    "exactAreas": [
     84.97
    ],
-   "baselineMedianFloor": 9,
-   "currentMedianFloor": 16,
+   "baselineFloorMedian": 9,
+   "currentFloorMedian": 16,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -10434,7 +10692,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 319
+   "rank": 327
   },
   {
    "apartmentKey": "11200-3161",
@@ -10445,19 +10703,19 @@
    "areaGroup": 60.0,
    "referenceMonth": "202606",
    "baselineMedian": 2035000000.0,
-   "currentMedian": 2100000000.0,
+   "currentMedian": 2100000000,
    "riseAmount": 65000000,
    "riseRate": 3.19,
    "baselineTradeCount": 4,
-   "currentTradeCount": 4,
+   "currentTradeCount": 5,
    "confidence": "medium",
    "warnings": [],
    "region": "11200 금호동1가",
    "exactAreas": [
     59.983
    ],
-   "baselineMedianFloor": 10.5,
-   "currentMedianFloor": 14.0,
+   "baselineFloorMedian": 10.5,
+   "currentFloorMedian": 14,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -10465,40 +10723,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 60.0,
    "calculationVersion": "v1.1",
-   "rank": 320
-  },
-  {
-   "apartmentKey": "11500-149",
-   "aptSeq": "149",
-   "apartmentName": "가양6단지",
-   "sidoCode": "11",
-   "sggCode": "11500",
-   "areaGroup": 49.5,
-   "referenceMonth": "202606",
-   "baselineMedian": 1030000000,
-   "currentMedian": 1062500000.0,
-   "riseAmount": 32500000,
-   "riseRate": 3.16,
-   "baselineTradeCount": 17,
-   "currentTradeCount": 4,
-   "confidence": "low",
-   "warnings": [
-    "직거래 포함 이력 존재"
-   ],
-   "region": "11500 가양동",
-   "exactAreas": [
-    49.5
-   ],
-   "baselineMedianFloor": 6.0,
-   "currentMedianFloor": 11.5,
-   "baselineDirectTradeCount": 1,
-   "currentDirectTradeCount": 0,
-   "floorMixWarning": false,
-   "directTradeWarning": true,
-   "compositionWarning": true,
-   "exclusiveAreaGroup": 49.5,
-   "calculationVersion": "v1.1",
-   "rank": 321
+   "rank": 328
   },
   {
    "apartmentKey": "11590-4948",
@@ -10524,8 +10749,8 @@
     84.9824,
     84.9787
    ],
-   "baselineMedianFloor": 9,
-   "currentMedianFloor": 6,
+   "baselineFloorMedian": 9,
+   "currentFloorMedian": 6,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -10533,7 +10758,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 322
+   "rank": 329
   },
   {
    "apartmentKey": "11305-5141",
@@ -10555,8 +10780,8 @@
    "exactAreas": [
     84.98
    ],
-   "baselineMedianFloor": 9.0,
-   "currentMedianFloor": 7.0,
+   "baselineFloorMedian": 9.0,
+   "currentFloorMedian": 7.0,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -10564,7 +10789,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 323
+   "rank": 330
   },
   {
    "apartmentKey": "11230-129",
@@ -10588,8 +10813,8 @@
    "exactAreas": [
     64.85
    ],
-   "baselineMedianFloor": 14,
-   "currentMedianFloor": 15.5,
+   "baselineFloorMedian": 14,
+   "currentFloorMedian": 15.5,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -10597,7 +10822,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 64.8,
    "calculationVersion": "v1.1",
-   "rank": 324
+   "rank": 331
   },
   {
    "apartmentKey": "11710-158",
@@ -10622,8 +10847,8 @@
    "exactAreas": [
     99.385
    ],
-   "baselineMedianFloor": 3,
-   "currentMedianFloor": 6.5,
+   "baselineFloorMedian": 3,
+   "currentFloorMedian": 6.5,
    "baselineDirectTradeCount": 2,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -10631,7 +10856,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 99.4,
    "calculationVersion": "v1.1",
-   "rank": 325
+   "rank": 332
   },
   {
    "apartmentKey": "11290-74",
@@ -10653,8 +10878,8 @@
    "exactAreas": [
     84.9
    ],
-   "baselineMedianFloor": 12.0,
-   "currentMedianFloor": 11.0,
+   "baselineFloorMedian": 12.0,
+   "currentFloorMedian": 11.0,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -10662,7 +10887,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 326
+   "rank": 333
   },
   {
    "apartmentKey": "11500-55",
@@ -10686,8 +10911,8 @@
    "exactAreas": [
     58.14
    ],
-   "baselineMedianFloor": 8.5,
-   "currentMedianFloor": 7.0,
+   "baselineFloorMedian": 8.5,
+   "currentFloorMedian": 7.0,
    "baselineDirectTradeCount": 1,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -10695,7 +10920,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 58.1,
    "calculationVersion": "v1.1",
-   "rank": 327
+   "rank": 334
   },
   {
    "apartmentKey": "11560-1233",
@@ -10719,8 +10944,8 @@
    "exactAreas": [
     84.79
    ],
-   "baselineMedianFloor": 12.0,
-   "currentMedianFloor": 13,
+   "baselineFloorMedian": 12.0,
+   "currentFloorMedian": 13,
    "baselineDirectTradeCount": 1,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -10728,7 +10953,38 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.8,
    "calculationVersion": "v1.1",
-   "rank": 328
+   "rank": 335
+  },
+  {
+   "apartmentKey": "11680-314",
+   "aptSeq": "314",
+   "apartmentName": "까치마을",
+   "sidoCode": "11",
+   "sggCode": "11680",
+   "areaGroup": 39.6,
+   "referenceMonth": "202606",
+   "baselineMedian": 1567500000.0,
+   "currentMedian": 1615000000,
+   "riseAmount": 47500000,
+   "riseRate": 3.03,
+   "baselineTradeCount": 8,
+   "currentTradeCount": 3,
+   "confidence": "medium",
+   "warnings": [],
+   "region": "11680 수서동",
+   "exactAreas": [
+    39.6
+   ],
+   "baselineFloorMedian": 10.0,
+   "currentFloorMedian": 12,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": false,
+   "directTradeWarning": false,
+   "compositionWarning": false,
+   "exclusiveAreaGroup": 39.6,
+   "calculationVersion": "v1.1",
+   "rank": 336
   },
   {
    "apartmentKey": "11560-1971",
@@ -10753,8 +11009,8 @@
     84.75,
     84.81
    ],
-   "baselineMedianFloor": 11,
-   "currentMedianFloor": 11.5,
+   "baselineFloorMedian": 11,
+   "currentFloorMedian": 11.5,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -10762,7 +11018,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.8,
    "calculationVersion": "v1.1",
-   "rank": 329
+   "rank": 337
   }
  ]
 }

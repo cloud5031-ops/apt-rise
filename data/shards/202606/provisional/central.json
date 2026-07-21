@@ -3,7 +3,7 @@
  "referenceMonth": "202606",
  "status": "provisional",
  "validationStatus": "valid",
- "generatedAt": "2026-07-19T22:45:07.901267+09:00",
+ "generatedAt": "2026-07-21T23:28:43.818351+09:00",
  "calculationVersion": "v1.1",
  "schemaVersion": "v1.0",
  "includedSidoCodes": [
@@ -66,65 +66,65 @@
   "51830"
  ],
  "successfulSggCodes": [
-  "43150",
-  "44150",
-  "51720",
-  "43111",
-  "43110",
-  "43800",
-  "51170",
-  "44790",
-  "44200",
-  "51190",
-  "51780",
-  "44710",
-  "51230",
-  "43112",
   "43770",
-  "44800",
-  "51830",
-  "44130",
-  "43745",
-  "44770",
-  "44270",
-  "51800",
-  "44250",
-  "51820",
+  "51190",
   "43113",
   "51110",
-  "44230",
-  "51130",
-  "51810",
-  "44210",
-  "43114",
-  "44180",
-  "36110",
-  "43730",
-  "51210",
-  "43720",
+  "51720",
   "51730",
-  "44131",
-  "43130",
-  "44133",
-  "51150",
-  "51750",
-  "44810",
-  "43740",
-  "44760",
-  "51770",
-  "51790",
-  "44825",
-  "43750",
+  "43150",
+  "44200",
+  "51210",
+  "44130",
+  "43730",
   "51760",
-  "43760"
+  "44131",
+  "43760",
+  "43114",
+  "44770",
+  "44800",
+  "51170",
+  "51780",
+  "51830",
+  "43111",
+  "43130",
+  "44210",
+  "43720",
+  "43110",
+  "44810",
+  "51800",
+  "43112",
+  "51810",
+  "51750",
+  "44790",
+  "51790",
+  "44230",
+  "51820",
+  "44710",
+  "51770",
+  "36110",
+  "44250",
+  "43750",
+  "43740",
+  "44150",
+  "44825",
+  "51150",
+  "51130",
+  "44180",
+  "43800",
+  "51230",
+  "44760",
+  "43745",
+  "44133",
+  "44270"
  ],
  "failedSggCodes": [],
- "rawTradeCount": 4961,
- "validTradeCount": 4826,
- "cancelledTradeCount": 135,
- "directTradeCount": 559,
- "candidateGroupCount": 2836,
- "filteredOutGroupCount": 2796,
+ "rawTradeCount": 4987,
+ "validTradeCount": 4848,
+ "cancelledTradeCount": 139,
+ "directTradeCount": 563,
+ "candidateGroupCount": 2845,
+ "filteredOutGroupCount": 2805,
  "items": [
   {
    "apartmentKey": "51210-167",
@@ -148,8 +148,8 @@
    "exactAreas": [
     84.94
    ],
-   "baselineMedianFloor": 12,
-   "currentMedianFloor": 12,
+   "baselineFloorMedian": 12,
+   "currentFloorMedian": 12,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -182,8 +182,8 @@
    "exactAreas": [
     45.7798
    ],
-   "baselineMedianFloor": 4.5,
-   "currentMedianFloor": 4.0,
+   "baselineFloorMedian": 4.5,
+   "currentFloorMedian": 4.0,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -218,8 +218,8 @@
     84.9314,
     84.9251
    ],
-   "baselineMedianFloor": 8,
-   "currentMedianFloor": 14,
+   "baselineFloorMedian": 8,
+   "currentFloorMedian": 14,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -251,8 +251,8 @@
    "exactAreas": [
     59.71
    ],
-   "baselineMedianFloor": 9,
-   "currentMedianFloor": 6,
+   "baselineFloorMedian": 9,
+   "currentFloorMedian": 6,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -261,6 +261,39 @@
    "exclusiveAreaGroup": 59.7,
    "calculationVersion": "v1.1",
    "rank": 4
+  },
+  {
+   "apartmentKey": "43113-474",
+   "aptSeq": "474",
+   "apartmentName": "두산위브지웰시티2차",
+   "sidoCode": "43",
+   "sggCode": "43113",
+   "areaGroup": 80.5,
+   "referenceMonth": "202606",
+   "baselineMedian": 765000000.0,
+   "currentMedian": 945000000,
+   "riseAmount": 180000000,
+   "riseRate": 23.53,
+   "baselineTradeCount": 18,
+   "currentTradeCount": 5,
+   "confidence": "medium",
+   "warnings": [
+    "20% 이상 급변동"
+   ],
+   "region": "43113 복대동",
+   "exactAreas": [
+    80.499
+   ],
+   "baselineFloorMedian": 22.0,
+   "currentFloorMedian": 21,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": false,
+   "directTradeWarning": false,
+   "compositionWarning": true,
+   "exclusiveAreaGroup": 80.5,
+   "calculationVersion": "v1.1",
+   "rank": 5
   },
   {
    "apartmentKey": "44131-850",
@@ -287,47 +320,14 @@
     84.9681,
     84.966
    ],
-   "baselineMedianFloor": 7,
-   "currentMedianFloor": 11.5,
+   "baselineFloorMedian": 7,
+   "currentFloorMedian": 11.5,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
    "directTradeWarning": false,
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
-   "calculationVersion": "v1.1",
-   "rank": 5
-  },
-  {
-   "apartmentKey": "43113-474",
-   "aptSeq": "474",
-   "apartmentName": "두산위브지웰시티2차",
-   "sidoCode": "43",
-   "sggCode": "43113",
-   "areaGroup": 80.5,
-   "referenceMonth": "202606",
-   "baselineMedian": 765000000.0,
-   "currentMedian": 922500000.0,
-   "riseAmount": 157500000,
-   "riseRate": 20.59,
-   "baselineTradeCount": 18,
-   "currentTradeCount": 4,
-   "confidence": "low",
-   "warnings": [
-    "20% 이상 급변동"
-   ],
-   "region": "43113 복대동",
-   "exactAreas": [
-    80.499
-   ],
-   "baselineMedianFloor": 22.0,
-   "currentMedianFloor": 16.0,
-   "baselineDirectTradeCount": 0,
-   "currentDirectTradeCount": 0,
-   "floorMixWarning": false,
-   "directTradeWarning": false,
-   "compositionWarning": true,
-   "exclusiveAreaGroup": 80.5,
    "calculationVersion": "v1.1",
    "rank": 6
   },
@@ -354,8 +354,8 @@
    "exactAreas": [
     84.9779
    ],
-   "baselineMedianFloor": 5.0,
-   "currentMedianFloor": 18.0,
+   "baselineFloorMedian": 5.0,
+   "currentFloorMedian": 18.0,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -385,8 +385,8 @@
    "exactAreas": [
     84.9605
    ],
-   "baselineMedianFloor": 6,
-   "currentMedianFloor": 5.5,
+   "baselineFloorMedian": 6,
+   "currentFloorMedian": 5.5,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -419,8 +419,8 @@
     84.98,
     84.962
    ],
-   "baselineMedianFloor": 9,
-   "currentMedianFloor": 7.5,
+   "baselineFloorMedian": 9,
+   "currentFloorMedian": 7.5,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -453,8 +453,8 @@
    "exactAreas": [
     80.135
    ],
-   "baselineMedianFloor": 16,
-   "currentMedianFloor": 13.0,
+   "baselineFloorMedian": 16,
+   "currentFloorMedian": 13.0,
    "baselineDirectTradeCount": 1,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -487,8 +487,8 @@
    "exactAreas": [
     84.9129
    ],
-   "baselineMedianFloor": 1.5,
-   "currentMedianFloor": 14.0,
+   "baselineFloorMedian": 1.5,
+   "currentFloorMedian": 14.0,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -497,6 +497,39 @@
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
    "rank": 11
+  },
+  {
+   "apartmentKey": "43113-426",
+   "aptSeq": "426",
+   "apartmentName": "신영지웰시티1차",
+   "sidoCode": "43",
+   "sggCode": "43113",
+   "areaGroup": 99.1,
+   "referenceMonth": "202606",
+   "baselineMedian": 870000000.0,
+   "currentMedian": 980000000,
+   "riseAmount": 110000000,
+   "riseRate": 12.64,
+   "baselineTradeCount": 26,
+   "currentTradeCount": 7,
+   "confidence": "medium",
+   "warnings": [
+    "직거래 포함 이력 존재"
+   ],
+   "region": "43113 복대동",
+   "exactAreas": [
+    99.126
+   ],
+   "baselineFloorMedian": 26,
+   "currentFloorMedian": 26,
+   "baselineDirectTradeCount": 1,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": false,
+   "directTradeWarning": true,
+   "compositionWarning": true,
+   "exclusiveAreaGroup": 99.1,
+   "calculationVersion": "v1.1",
+   "rank": 12
   },
   {
    "apartmentKey": "43130-717",
@@ -518,8 +551,8 @@
    "exactAreas": [
     84.9571
    ],
-   "baselineMedianFloor": 12,
-   "currentMedianFloor": 10.0,
+   "baselineFloorMedian": 12,
+   "currentFloorMedian": 10.0,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -527,7 +560,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 12
+   "rank": 13
   },
   {
    "apartmentKey": "43113-426",
@@ -551,47 +584,14 @@
    "exactAreas": [
     124.816
    ],
-   "baselineMedianFloor": 21.5,
-   "currentMedianFloor": 28.5,
+   "baselineFloorMedian": 21.5,
+   "currentFloorMedian": 28.5,
    "baselineDirectTradeCount": 2,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
    "directTradeWarning": true,
    "compositionWarning": true,
    "exclusiveAreaGroup": 124.8,
-   "calculationVersion": "v1.1",
-   "rank": 13
-  },
-  {
-   "apartmentKey": "43113-426",
-   "aptSeq": "426",
-   "apartmentName": "신영지웰시티1차",
-   "sidoCode": "43",
-   "sggCode": "43113",
-   "areaGroup": 99.1,
-   "referenceMonth": "202606",
-   "baselineMedian": 870000000.0,
-   "currentMedian": 975000000.0,
-   "riseAmount": 105000000,
-   "riseRate": 12.07,
-   "baselineTradeCount": 26,
-   "currentTradeCount": 6,
-   "confidence": "medium",
-   "warnings": [
-    "직거래 포함 이력 존재"
-   ],
-   "region": "43113 복대동",
-   "exactAreas": [
-    99.126
-   ],
-   "baselineMedianFloor": 26,
-   "currentMedianFloor": 28.5,
-   "baselineDirectTradeCount": 1,
-   "currentDirectTradeCount": 0,
-   "floorMixWarning": false,
-   "directTradeWarning": true,
-   "compositionWarning": true,
-   "exclusiveAreaGroup": 99.1,
    "calculationVersion": "v1.1",
    "rank": 14
   },
@@ -619,8 +619,8 @@
     84.691,
     84.679
    ],
-   "baselineMedianFloor": 23,
-   "currentMedianFloor": 36.0,
+   "baselineFloorMedian": 23,
+   "currentFloorMedian": 36.0,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -652,8 +652,8 @@
    "exactAreas": [
     163.847
    ],
-   "baselineMedianFloor": 10.0,
-   "currentMedianFloor": 12,
+   "baselineFloorMedian": 10.0,
+   "currentFloorMedian": 12,
    "baselineDirectTradeCount": 1,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -683,8 +683,8 @@
    "exactAreas": [
     99.9702
    ],
-   "baselineMedianFloor": 10.0,
-   "currentMedianFloor": 15,
+   "baselineFloorMedian": 10.0,
+   "currentFloorMedian": 15,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -714,8 +714,8 @@
    "exactAreas": [
     80.002
    ],
-   "baselineMedianFloor": 22,
-   "currentMedianFloor": 23.0,
+   "baselineFloorMedian": 22,
+   "currentFloorMedian": 23.0,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -749,8 +749,8 @@
     84.9593,
     84.9589
    ],
-   "baselineMedianFloor": 28,
-   "currentMedianFloor": 20.5,
+   "baselineFloorMedian": 28,
+   "currentFloorMedian": 20.5,
    "baselineDirectTradeCount": 2,
    "currentDirectTradeCount": 1,
    "floorMixWarning": false,
@@ -786,8 +786,8 @@
     84.9837,
     84.9539
    ],
-   "baselineMedianFloor": 10.0,
-   "currentMedianFloor": 18.0,
+   "baselineFloorMedian": 10.0,
+   "currentFloorMedian": 18.0,
    "baselineDirectTradeCount": 1,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -820,8 +820,8 @@
    "exactAreas": [
     99.0725
    ],
-   "baselineMedianFloor": 7.5,
-   "currentMedianFloor": 17.5,
+   "baselineFloorMedian": 7.5,
+   "currentFloorMedian": 17.5,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -853,8 +853,8 @@
    "exactAreas": [
     73.924
    ],
-   "baselineMedianFloor": 13.5,
-   "currentMedianFloor": 12.0,
+   "baselineFloorMedian": 13.5,
+   "currentFloorMedian": 12.0,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -886,8 +886,8 @@
    "exactAreas": [
     152.652
    ],
-   "baselineMedianFloor": 21.0,
-   "currentMedianFloor": 19,
+   "baselineFloorMedian": 21.0,
+   "currentFloorMedian": 19,
    "baselineDirectTradeCount": 1,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -919,8 +919,8 @@
    "exactAreas": [
     74.97
    ],
-   "baselineMedianFloor": 20,
-   "currentMedianFloor": 16.0,
+   "baselineFloorMedian": 20,
+   "currentFloorMedian": 16.0,
    "baselineDirectTradeCount": 1,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -952,8 +952,8 @@
    "exactAreas": [
     84.69
    ],
-   "baselineMedianFloor": 8,
-   "currentMedianFloor": 15.5,
+   "baselineFloorMedian": 8,
+   "currentFloorMedian": 15.5,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -983,8 +983,8 @@
    "exactAreas": [
     105.64
    ],
-   "baselineMedianFloor": 14.0,
-   "currentMedianFloor": 14.0,
+   "baselineFloorMedian": 14.0,
+   "currentFloorMedian": 14.0,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -1016,8 +1016,8 @@
    "exactAreas": [
     73.3606
    ],
-   "baselineMedianFloor": 8.0,
-   "currentMedianFloor": 15.5,
+   "baselineFloorMedian": 8.0,
+   "currentFloorMedian": 15.5,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -1049,8 +1049,8 @@
    "exactAreas": [
     84.9709
    ],
-   "baselineMedianFloor": 6,
-   "currentMedianFloor": 27.5,
+   "baselineFloorMedian": 6,
+   "currentFloorMedian": 27.5,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -1080,8 +1080,8 @@
    "exactAreas": [
     59.916
    ],
-   "baselineMedianFloor": 6,
-   "currentMedianFloor": 9,
+   "baselineFloorMedian": 6,
+   "currentFloorMedian": 9,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -1111,8 +1111,8 @@
    "exactAreas": [
     91.4007
    ],
-   "baselineMedianFloor": 9.0,
-   "currentMedianFloor": 13,
+   "baselineFloorMedian": 9.0,
+   "currentFloorMedian": 13,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -1148,8 +1148,8 @@
     84.9674,
     84.9783
    ],
-   "baselineMedianFloor": 13.5,
-   "currentMedianFloor": 17,
+   "baselineFloorMedian": 13.5,
+   "currentFloorMedian": 17,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 1,
    "floorMixWarning": true,
@@ -1182,8 +1182,8 @@
     84.9941,
     84.9911
    ],
-   "baselineMedianFloor": 19,
-   "currentMedianFloor": 22.0,
+   "baselineFloorMedian": 19,
+   "currentFloorMedian": 22.0,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -1216,8 +1216,8 @@
     84.993,
     84.995
    ],
-   "baselineMedianFloor": 15,
-   "currentMedianFloor": 14.0,
+   "baselineFloorMedian": 15,
+   "currentFloorMedian": 14.0,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -1250,8 +1250,8 @@
    "exactAreas": [
     84.8743
    ],
-   "baselineMedianFloor": 10,
-   "currentMedianFloor": 16.5,
+   "baselineFloorMedian": 10,
+   "currentFloorMedian": 16.5,
    "baselineDirectTradeCount": 1,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -1283,8 +1283,8 @@
    "exactAreas": [
     84.7278
    ],
-   "baselineMedianFloor": 7,
-   "currentMedianFloor": 20,
+   "baselineFloorMedian": 7,
+   "currentFloorMedian": 20,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -1316,8 +1316,8 @@
    "exactAreas": [
     101.9208
    ],
-   "baselineMedianFloor": 12,
-   "currentMedianFloor": 23.0,
+   "baselineFloorMedian": 12,
+   "currentFloorMedian": 23.0,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -1350,8 +1350,8 @@
     84.99,
     84.97
    ],
-   "baselineMedianFloor": 10.0,
-   "currentMedianFloor": 15.0,
+   "baselineFloorMedian": 10.0,
+   "currentFloorMedian": 15.0,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -1383,8 +1383,8 @@
    "exactAreas": [
     84.9664
    ],
-   "baselineMedianFloor": 15.5,
-   "currentMedianFloor": 5,
+   "baselineFloorMedian": 15.5,
+   "currentFloorMedian": 5,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -1418,8 +1418,8 @@
     99.8966,
     99.9342
    ],
-   "baselineMedianFloor": 9,
-   "currentMedianFloor": 8,
+   "baselineFloorMedian": 9,
+   "currentFloorMedian": 8,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -1453,8 +1453,8 @@
     99.9033,
     99.9109
    ],
-   "baselineMedianFloor": 8,
-   "currentMedianFloor": 9.0,
+   "baselineFloorMedian": 8,
+   "currentFloorMedian": 9.0,
    "baselineDirectTradeCount": 1,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
