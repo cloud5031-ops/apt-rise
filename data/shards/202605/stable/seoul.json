@@ -3,7 +3,7 @@
  "referenceMonth": "202605",
  "status": "stable",
  "validationStatus": "valid",
- "generatedAt": "2026-07-21T23:04:27.263431+09:00",
+ "generatedAt": "2026-07-22T05:41:33.204948+09:00",
  "calculationVersion": "v1.1",
  "schemaVersion": "v1.0",
  "includedSidoCodes": [
@@ -37,39 +37,39 @@
   "11740"
  ],
  "successfulSggCodes": [
-  "11140",
   "11500",
-  "11650",
-  "11380",
   "11350",
-  "11560",
-  "11305",
-  "11620",
-  "11740",
-  "11170",
-  "11440",
-  "11545",
-  "11470",
-  "11110",
-  "11410",
-  "11530",
-  "11590",
+  "11320",
   "11230",
-  "11215",
-  "11200",
-  "11290",
-  "11260",
-  "11680",
+  "11170",
+  "11650",
+  "11560",
+  "11110",
+  "11590",
+  "11140",
+  "11470",
   "11710",
-  "11320"
+  "11740",
+  "11380",
+  "11620",
+  "11410",
+  "11545",
+  "11215",
+  "11680",
+  "11200",
+  "11530",
+  "11290",
+  "11305",
+  "11440",
+  "11260"
  ],
  "failedSggCodes": [],
- "rawTradeCount": 8668,
- "validTradeCount": 8509,
- "cancelledTradeCount": 159,
+ "rawTradeCount": 8679,
+ "validTradeCount": 8516,
+ "cancelledTradeCount": 163,
  "directTradeCount": 411,
- "candidateGroupCount": 4716,
- "filteredOutGroupCount": 4384,
+ "candidateGroupCount": 4720,
+ "filteredOutGroupCount": 4389,
  "items": [
   {
    "apartmentKey": "11410-95",
@@ -375,39 +375,6 @@
    "rank": 9
   },
   {
-   "apartmentKey": "11560-109",
-   "aptSeq": "109",
-   "apartmentName": "신기목련아파트",
-   "sidoCode": "11",
-   "sggCode": "11560",
-   "areaGroup": 59.4,
-   "referenceMonth": "202605",
-   "baselineMedian": 570000000.0,
-   "currentMedian": 652500000.0,
-   "riseAmount": 82500000,
-   "riseRate": 14.47,
-   "baselineTradeCount": 2,
-   "currentTradeCount": 2,
-   "confidence": "low",
-   "warnings": [
-    "비교/기준 기간 거래량 모두 최소 조건(2건)"
-   ],
-   "region": "11560 신길동",
-   "exactAreas": [
-    59.4
-   ],
-   "baselineFloorMedian": 10.0,
-   "currentFloorMedian": 14.0,
-   "baselineDirectTradeCount": 0,
-   "currentDirectTradeCount": 0,
-   "floorMixWarning": false,
-   "directTradeWarning": false,
-   "compositionWarning": true,
-   "exclusiveAreaGroup": 59.4,
-   "calculationVersion": "v1.1",
-   "rank": 10
-  },
-  {
    "apartmentKey": "11500-5140",
    "aptSeq": "5140",
    "apartmentName": "한솔솔파크",
@@ -436,7 +403,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 11
+   "rank": 10
   },
   {
    "apartmentKey": "11305-46",
@@ -467,7 +434,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 59.8,
    "calculationVersion": "v1.1",
-   "rank": 12
+   "rank": 11
   },
   {
    "apartmentKey": "11530-3775",
@@ -502,7 +469,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 13
+   "rank": 12
   },
   {
    "apartmentKey": "11290-65",
@@ -533,7 +500,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 114.8,
    "calculationVersion": "v1.1",
-   "rank": 14
+   "rank": 13
   },
   {
    "apartmentKey": "11305-3667",
@@ -566,6 +533,37 @@
    "directTradeWarning": false,
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.9,
+   "calculationVersion": "v1.1",
+   "rank": 14
+  },
+  {
+   "apartmentKey": "11560-109",
+   "aptSeq": "109",
+   "apartmentName": "신기목련아파트",
+   "sidoCode": "11",
+   "sggCode": "11560",
+   "areaGroup": 59.4,
+   "referenceMonth": "202605",
+   "baselineMedian": 575000000,
+   "currentMedian": 652500000.0,
+   "riseAmount": 77500000,
+   "riseRate": 13.48,
+   "baselineTradeCount": 3,
+   "currentTradeCount": 2,
+   "confidence": "medium",
+   "warnings": [],
+   "region": "11560 신길동",
+   "exactAreas": [
+    59.4
+   ],
+   "baselineFloorMedian": 9,
+   "currentFloorMedian": 14.0,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": false,
+   "directTradeWarning": false,
+   "compositionWarning": false,
+   "exclusiveAreaGroup": 59.4,
    "calculationVersion": "v1.1",
    "rank": 15
   },
@@ -10733,39 +10731,6 @@
    "rank": 328
   },
   {
-   "apartmentKey": "11740-91",
-   "aptSeq": "91",
-   "apartmentName": "선사현대아파트",
-   "sidoCode": "11",
-   "sggCode": "11740",
-   "areaGroup": 82.9,
-   "referenceMonth": "202605",
-   "baselineMedian": 1857500000.0,
-   "currentMedian": 1915000000.0,
-   "riseAmount": 57500000,
-   "riseRate": 3.1,
-   "baselineTradeCount": 2,
-   "currentTradeCount": 2,
-   "confidence": "low",
-   "warnings": [
-    "비교/기준 기간 거래량 모두 최소 조건(2건)"
-   ],
-   "region": "11740 암사동",
-   "exactAreas": [
-    82.94
-   ],
-   "baselineFloorMedian": 18.0,
-   "currentFloorMedian": 18.5,
-   "baselineDirectTradeCount": 0,
-   "currentDirectTradeCount": 0,
-   "floorMixWarning": false,
-   "directTradeWarning": false,
-   "compositionWarning": true,
-   "exclusiveAreaGroup": 82.9,
-   "calculationVersion": "v1.1",
-   "rank": 329
-  },
-  {
    "apartmentKey": "11590-47",
    "aptSeq": "47",
    "apartmentName": "신동아4",
@@ -10796,7 +10761,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 59.9,
    "calculationVersion": "v1.1",
-   "rank": 330
+   "rank": 329
   },
   {
    "apartmentKey": "11560-84",
@@ -10829,7 +10794,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 59.4,
    "calculationVersion": "v1.1",
-   "rank": 331
+   "rank": 330
   },
   {
    "apartmentKey": "11590-38",
@@ -10860,7 +10825,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 59.2,
    "calculationVersion": "v1.1",
-   "rank": 332
+   "rank": 331
   }
  ]
 }
