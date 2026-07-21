@@ -73,6 +73,17 @@ def validate_item(item: dict, index: int, included_sidos: list[str], path: str):
     # validate_shard.py에서 snake_case 필드가 있으면 경고 또는 실패 처리 (옵션)
     # user instruction: "validate_shard.py가 snake_case와 camelCase를 모두 조용히 허용하게 하지 마세요. 공식 camelCase 스키마만 사용하고 잘못된 생산 결과는 생성 단계에서 바로 실패시켜 주세요."
     # We will enforce ONLY camelCase, meaning any snake_case in required fields won't match REQUIRED_ITEM_FIELDS anyway, but let's make sure no extra snake_case exists.
+    import math
+    for field in ["baselineFloorMedian", "currentFloorMedian"]:
+        val = item.get(field)
+        if val is not None:
+            if not isinstance(val, (int, float)) or isinstance(val, bool):
+                print(f"오류: {path} 의 {index}번째 item(apartmentKey: {apt_key})의 {field} 값이 유효한 숫자가 아닙니다: {val}")
+                sys.exit(1)
+            if math.isnan(val) or math.isinf(val):
+                print(f"오류: {path} 의 {index}번째 item(apartmentKey: {apt_key})의 {field} 값이 NaN 또는 Infinity입니다: {val}")
+                sys.exit(1)
+
     snake_case_fields = [k for k in item.keys() if "_" in k]
     if snake_case_fields:
         print(f"오류: {path} 의 {index}번째 item(apartmentKey: {apt_key})에 허용되지 않는 snake_case 필드가 있습니다: {snake_case_fields}")
