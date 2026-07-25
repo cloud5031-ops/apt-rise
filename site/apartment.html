@@ -71,12 +71,27 @@
       <div id="no-trades" style="display:none; text-align:center; padding: 20px; color: var(--sub);">선택한 평형의 유효한 거래 내역이 없습니다.</div>
     </div>
     
+    
     <div id="tab-trends" class="tab-content">
-      <div style="padding: 20px; text-align:center; color: var(--sub); background: rgba(0,0,0,0.02); border-radius: 8px;">
-        가격 추이 그래프 영역 (2단계 구현 예정)
+      <div style="background:var(--card-bg); padding:16px; border-radius:12px; margin-bottom:20px;">
+        <h3 style="font-size:1.1rem; margin-bottom:4px;">실거래 가격 추이</h3>
+        <p style="font-size:0.75rem; color:var(--sub); margin-bottom:12px;">공식 시세가 아니라 실제 신고 거래 표본을 이용한 값입니다.</p>
+        <div id="chart-error-scatter" style="display:none; color:var(--sub); text-align:center; padding:20px;">그래프를 불러올 수 없습니다.</div>
+        <div class="chart-container" style="position: relative; height:250px; width:100%;">
+          <canvas id="scatterChart"></canvas>
+        </div>
+      </div>
+      
+      <div style="background:var(--card-bg); padding:16px; border-radius:12px;">
+        <h3 style="font-size:1.1rem; margin-bottom:4px;">월별 실거래 중위가격</h3>
+        <p style="font-size:0.75rem; color:var(--sub); margin-bottom:12px;">공식 시세가 아니라 실제 신고 거래 표본을 이용한 값입니다.</p>
+        <div id="chart-error-monthly" style="display:none; color:var(--sub); text-align:center; padding:20px;">그래프를 불러올 수 없습니다.</div>
+        <div class="chart-container" style="position: relative; height:250px; width:100%;">
+          <canvas id="monthlyChart"></canvas>
+        </div>
       </div>
     </div>
-    
+
     <div id="tab-location" class="tab-content">
       <div style="padding: 20px; text-align:center; color: var(--sub); background: rgba(0,0,0,0.02); border-radius: 8px;">
         위치 정보 준비 중
@@ -138,6 +153,7 @@
       renderHeader();
       renderAreaFilters();
       renderTrades();
+        renderCharts();
       
       document.getElementById('loading').style.display = 'none';
       document.getElementById('content-view').style.display = 'block';
@@ -184,6 +200,7 @@
         selectedArea = area;
         renderAreaFilters();
         renderTrades();
+        renderCharts();
       };
       container.appendChild(btn);
     });
@@ -233,6 +250,222 @@
     });
   });
   
+  
+  let chartJsLoaded = false;
+  let scatterChartInst = null;
+  let monthlyChartInst = null;
+  
+  function loadChartJs() {
+    return new Promise((resolve, reject) => {
+      if (window.Chart) return resolve();
+      const script = document.createElement('script');
+      script.src = 'https://cdn.jsdelivr.net/npm/chart.js';
+      script.onload = () => { chartJsLoaded = true; resolve(); };
+      script.onerror = () => reject(new Error('Chart.js CDN failed'));
+      document.head.appendChild(script);
+    });
+  }
+
+  async function renderCharts() {
+    try {
+      await loadChartJs();
+    } catch (e) {
+      document.getElementById('chart-error-scatter').style.display = 'block';
+      document.getElementById('chart-error-monthly').style.display = 'block';
+      document.querySelectorAll('.chart-container').forEach(c => c.style.display = 'none');
+      return;
+    }
+    
+    document.getElementById('chart-error-scatter').style.display = 'none';
+    document.getElementById('chart-error-monthly').style.display = 'none';
+    document.querySelectorAll('.chart-container').forEach(c => c.style.display = 'block');
+    
+    const validTrades = (aptData.transactions || []).filter(t => 
+      t.exclusiveArea === selectedArea && t.cancellationStatus !== 'CANCELLED'
+    );
+    
+    if (scatterChartInst) scatterChartInst.destroy();
+    if (monthlyChartInst) monthlyChartInst.destroy();
+    
+    if (validTrades.length === 0) {
+       document.getElementById('chart-error-scatter').innerText = "해당 평형의 유효한 거래가 없어 그래프를 표시할 수 없습니다.";
+       document.getElementById('chart-error-monthly').innerText = "해당 평형의 유효한 거래가 없어 그래프를 표시할 수 없습니다.";
+       document.getElementById('chart-error-scatter').style.display = 'block';
+       document.getElementById('chart-error-monthly').style.display = 'block';
+       document.querySelectorAll('.chart-container').forEach(c => c.style.display = 'none');
+       return;
+    }
+    
+    // 1. Scatter Chart Data
+    // We will use integer format YYYYMMDD for x-axis sorting, but for display we use index or parse date.
+    // Chart.js without date adapter: Use category x-axis or linear x-axis (timestamp).
+    // Let's use linear timestamp for X.
+    const parseDate = (dStr) => new Date(dStr.substring(0,4), parseInt(dStr.substring(4,6))-1, dStr.substring(6,8)).getTime();
+    
+    const scatterData = validTrades.map(t => ({
+      x: parseDate(t.contractDate),
+      y: t.price,
+      raw: t
+    }));
+    
+    const agencyTrades = scatterData.filter(d => d.raw.dealType !== '직거래');
+    const directTrades = scatterData.filter(d => d.raw.dealType === '직거래');
+    
+    const scatterCtx = document.getElementById('scatterChart').getContext('2d');
+    scatterChartInst = new Chart(scatterCtx, {
+      type: 'scatter',
+      data: {
+        datasets: [
+          {
+            label: '중개거래',
+            data: agencyTrades,
+            backgroundColor: '#2563c9',
+            pointRadius: 5,
+            pointHoverRadius: 7
+          },
+          {
+            label: '직거래',
+            data: directTrades,
+            backgroundColor: '#d6293e',
+            pointStyle: 'rectRot',
+            pointRadius: 6,
+            pointHoverRadius: 8
+          }
+        ]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+          tooltip: {
+            callbacks: {
+              label: (ctx) => {
+                const t = ctx.raw.raw;
+                return `${formatDate(t.contractDate)} | ${formatPrice(t.price)} | ${t.floor}층 | ${t.dealType}`;
+              }
+            }
+          }
+        },
+        scales: {
+          x: {
+            type: 'linear',
+            ticks: {
+              callback: function(val) {
+                const d = new Date(val);
+                return `${d.getFullYear()}.${(d.getMonth()+1).toString().padStart(2,'0')}`;
+              }
+            }
+          },
+          y: {
+            ticks: {
+              callback: function(val) {
+                if (val >= 10000) return Math.floor(val/10000) + '억';
+                return val.toLocaleString();
+              }
+            }
+          }
+        }
+      }
+    });
+    
+    // 2. Monthly Median Chart Data
+    // Group by YYYYMM
+    const monthlyGroups = {};
+    validTrades.forEach(t => {
+      const ym = t.contractDate.substring(0,6);
+      if(!monthlyGroups[ym]) monthlyGroups[ym] = [];
+      monthlyGroups[ym].push(t.price);
+    });
+    
+    const months = Object.keys(monthlyGroups).sort();
+    const medians = [];
+    const volumes = [];
+    
+    months.forEach(m => {
+      const prices = monthlyGroups[m].sort((a,b) => a - b);
+      let med = 0;
+      const len = prices.length;
+      if (len % 2 === 0) med = (prices[len/2 - 1] + prices[len/2]) / 2;
+      else med = prices[Math.floor(len/2)];
+      
+      medians.push(med);
+      volumes.push(len);
+    });
+    
+    const monthlyCtx = document.getElementById('monthlyChart').getContext('2d');
+    monthlyChartInst = new Chart(monthlyCtx, {
+      type: 'line',
+      data: {
+        labels: months.map(m => `${m.substring(0,4)}.${m.substring(4,6)}`),
+        datasets: [
+          {
+            type: 'line',
+            label: '실거래 중위가격',
+            data: medians,
+            borderColor: '#2563c9',
+            backgroundColor: '#2563c9',
+            yAxisID: 'y',
+            tension: 0.1,
+            pointRadius: 4
+          },
+          {
+            type: 'bar',
+            label: '거래 건수',
+            data: volumes,
+            backgroundColor: 'rgba(107, 118, 132, 0.3)',
+            yAxisID: 'y1'
+          }
+        ]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+          tooltip: {
+            callbacks: {
+              afterLabel: (ctx) => {
+                if (ctx.datasetIndex === 0) {
+                  // Median price tooltip
+                  const idx = ctx.dataIndex;
+                  if (idx > 0) {
+                    const prev = medians[idx-1];
+                    const cur = medians[idx];
+                    const rate = ((cur - prev) / prev * 100).toFixed(2);
+                    // Check sample size (if either month has < 2 trades, rate is unstable)
+                    // But requirement says: "월별 표본이 부족한 경우: 변화율은 '표본 부족'으로 표시"
+                    if (volumes[idx-1] < 2 || volumes[idx] < 2) {
+                      return `실거래 중위가격 변화율: 표본 부족`;
+                    }
+                    return `실거래 중위가격 변화율: ${rate > 0 ? '+' : ''}${rate}%`;
+                  }
+                  return '';
+                }
+              }
+            }
+          }
+        },
+        scales: {
+          y: {
+            type: 'linear',
+            position: 'left',
+            ticks: {
+              callback: function(val) {
+                if (val >= 10000) return Math.floor(val/10000) + '억';
+                return val.toLocaleString();
+              }
+            }
+          },
+          y1: {
+            type: 'linear',
+            position: 'right',
+            grid: { drawOnChartArea: false },
+            ticks: { stepSize: 1 }
+          }
+        }
+      }
+    });
+  }
+
   window.onload = loadData;
 </script>
 </body>
