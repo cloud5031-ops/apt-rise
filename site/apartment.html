@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>아파트 실거래가 상세</title>
+  <link rel="stylesheet" href="index.css">
+  <style>
+    body { padding-top: 20px; padding-bottom: 50px; }
+    .back-btn { font-size: 1rem; color: var(--sub); text-decoration: none; display: inline-block; margin-bottom: 20px; font-weight: 600; cursor: pointer; }
+    .back-btn:hover { color: var(--primary); }
+    .header-section { margin-bottom: 20px; }
+    .apt-title { font-size: 1.5rem; font-weight: 700; margin-bottom: 4px; }
+    .apt-region { font-size: 0.9rem; color: var(--sub); }
+    .collection-period { font-size: 0.8rem; color: var(--sub); margin-top: 4px; }
+    
+    .area-filters { display: flex; flex-wrap: wrap; gap: 8px; margin: 16px 0; }
+    
+    .nav-tabs { display: flex; gap: 16px; border-bottom: 1px solid var(--border); margin-bottom: 16px; overflow-x: auto; white-space: nowrap; }
+    .nav-tabs button { background: none; border: none; font-size: 1rem; font-weight: 600; color: var(--sub); padding: 8px 4px; border-bottom: 2px solid transparent; cursor: pointer; }
+    .nav-tabs button.active { color: var(--primary); border-bottom: 2px solid var(--primary); }
+    
+    .tab-content { display: none; }
+    .tab-content.active { display: block; }
+    
+    table.trades-table { width: 100%; border-collapse: collapse; font-size: 0.9rem; text-align: left; }
+    .trades-table th { color: var(--sub); padding: 8px; border-bottom: 1px solid var(--border); font-weight: 600; }
+    .trades-table td { padding: 12px 8px; border-bottom: 1px solid var(--border); }
+    .trades-table tr:hover { background: rgba(0,0,0,0.02); }
+    
+    .direct-deal { display: inline-block; background: var(--border); color: var(--sub); font-size: 0.7rem; padding: 2px 4px; border-radius: 4px; margin-left: 4px; }
+    
+    .error-box { padding: 40px 20px; text-align: center; color: var(--sub); background: var(--card-bg); border-radius: 12px; margin-top: 20px; }
+  </style>
+</head>
+<body>
+<div class="container">
+  <div onclick="goBack()" class="back-btn">&larr; 목록으로 돌아가기</div>
+  
+  <div id="loading" style="text-align:center; padding: 40px; color: var(--sub);">로딩 중...</div>
+  <div id="error-view" class="error-box" style="display:none;"></div>
+  
+  <div id="content-view" style="display:none;">
+    <div class="header-section">
+      <h1 class="apt-title" id="apt-name">단지명</h1>
+      <div class="apt-region" id="apt-address">지역 정보</div>
+      <div class="collection-period" id="apt-period">수집 기간: </div>
+    </div>
+    
+    <div style="font-weight:600; margin-bottom:8px;">평형 선택</div>
+    <div class="area-filters" id="area-filters"></div>
+    
+    <div class="nav-tabs">
+      <button class="tab-btn active" data-target="tab-trades">거래 내역</button>
+      <button class="tab-btn" data-target="tab-trends">가격 추이</button>
+      <button class="tab-btn" data-target="tab-location">위치</button>
+    </div>
+    
+    <div id="tab-trades" class="tab-content active">
+      <table class="trades-table">
+        <thead>
+          <tr>
+            <th>계약일</th>
+            <th>거래가격</th>
+            <th>층</th>
+            <th>전용면적</th>
+          </tr>
+        </thead>
+        <tbody id="trades-body"></tbody>
+      </table>
+      <div id="no-trades" style="display:none; text-align:center; padding: 20px; color: var(--sub);">선택한 평형의 유효한 거래 내역이 없습니다.</div>
+    </div>
+    
+    <div id="tab-trends" class="tab-content">
+      <div style="padding: 20px; text-align:center; color: var(--sub); background: rgba(0,0,0,0.02); border-radius: 8px;">
+        가격 추이 그래프 영역 (2단계 구현 예정)
+      </div>
+    </div>
+    
+    <div id="tab-location" class="tab-content">
+      <div style="padding: 20px; text-align:center; color: var(--sub); background: rgba(0,0,0,0.02); border-radius: 8px;">
+        위치 정보 준비 중
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  let aptData = null;
+  let selectedArea = null;
+  
+  const urlParams = new URLSearchParams(window.location.search);
+  const aptKey = urlParams.get('key');
+  
+  function goBack() {
+    window.location.href = 'index.html';
+  }
+  
+  function formatPrice(amount) {
+    if (!amount) return '-';
+    if (amount < 10000) return amount.toLocaleString();
+    const uk = Math.floor(amount / 10000);
+    const man = amount % 10000;
+    if (man === 0) return `${uk}억`;
+    return `${uk}억 ${man.toLocaleString()}만`;
+  }
+  
+  function formatDate(dStr) {
+    if (!dStr || dStr.length !== 8) return dStr;
+    return `${dStr.substring(0,4)}.${dStr.substring(4,6)}.${dStr.substring(6,8)}`;
+  }
+  
+  async function loadData() {
+    if (!aptKey) {
+      showError("아파트 식별자가 전달되지 않았습니다.");
+      return;
+    }
+    
+    const parts = aptKey.split('-');
+    if (parts.length < 2) {
+      showError("잘못된 아파트 식별자입니다.");
+      return;
+    }
+    const sgg = parts[0];
+    
+    try {
+      const res = await fetch(`data/details/${sgg}/${aptKey}.json`);
+      if (!res.ok) throw new Error("데이터 없음");
+      aptData = await res.json();
+      
+      if (!aptData.availableAreas || aptData.availableAreas.length === 0) {
+        showError("수집된 거래 면적 정보가 없습니다.");
+        return;
+      }
+      
+      // select first area by default
+      selectedArea = aptData.availableAreas[0];
+      renderHeader();
+      renderAreaFilters();
+      renderTrades();
+      
+      document.getElementById('loading').style.display = 'none';
+      document.getElementById('content-view').style.display = 'block';
+    } catch (e) {
+      console.error(e);
+      showError("해당 단지의 상세 데이터를 불러올 수 없습니다. (순위 밖이거나 오류 발생)");
+    }
+  }
+  
+  function showError(msg) {
+    document.getElementById('loading').style.display = 'none';
+    const ev = document.getElementById('error-view');
+    ev.style.display = 'block';
+    ev.innerHTML = `<h3>안내</h3><p>${msg}</p>`;
+  }
+  
+  function renderHeader() {
+    document.getElementById('apt-name').innerText = aptData.apartmentName;
+    
+    // Convert SGG code to readable name if possible
+    // Note: In real implementation we'd use SGG_CODE_MAP from index.html
+    const addr = `${aptData.sggCode} ${aptData.dongName}`; // simplified
+    document.getElementById('apt-address').innerText = addr;
+    
+    const periods = aptData.referenceMonths || [];
+    document.getElementById('apt-period').innerText = `수집 기준월: ${periods.join(', ')}`;
+  }
+  
+  function renderAreaFilters() {
+    const container = document.getElementById('area-filters');
+    container.innerHTML = '';
+    
+    aptData.availableAreas.forEach(area => {
+      const btn = document.createElement('button');
+      btn.className = `chip ${selectedArea === area ? 'active' : ''}`;
+      // In CSS .chip.active { background: var(--primary); color: white; border-color: var(--primary); }
+      btn.innerText = `${area}㎡`;
+      if (selectedArea === area) {
+        btn.style.background = 'var(--primary)';
+        btn.style.color = '#fff';
+      }
+      
+      btn.onclick = () => {
+        selectedArea = area;
+        renderAreaFilters();
+        renderTrades();
+      };
+      container.appendChild(btn);
+    });
+  }
+  
+  function renderTrades() {
+    const tbody = document.getElementById('trades-body');
+    tbody.innerHTML = '';
+    
+    // Filter transactions: area matches, and NOT cancelled
+    const validTrades = (aptData.transactions || []).filter(t => 
+      t.exclusiveArea === selectedArea && t.cancellationStatus !== 'CANCELLED'
+    );
+    
+    if (validTrades.length === 0) {
+      document.getElementById('no-trades').style.display = 'block';
+      document.querySelector('.trades-table').style.display = 'none';
+      return;
+    }
+    
+    document.getElementById('no-trades').style.display = 'none';
+    document.querySelector('.trades-table').style.display = 'table';
+    
+    validTrades.forEach(t => {
+      const tr = document.createElement('tr');
+      
+      const dealTypeBadge = t.dealType === '직거래' ? `<span class="direct-deal">직거래</span>` : '';
+      
+      tr.innerHTML = `
+        <td>${formatDate(t.contractDate)}</td>
+        <td style="font-weight:600; color:var(--ink);">${formatPrice(t.price)}${dealTypeBadge}</td>
+        <td>${t.floor}층</td>
+        <td>${t.exclusiveArea}㎡</td>
+      `;
+      tbody.appendChild(tr);
+    });
+  }
+  
+  // Tab handling
+  document.querySelectorAll('.tab-btn').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+      document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+      
+      e.target.classList.add('active');
+      document.getElementById(e.target.dataset.target).classList.add('active');
+    });
+  });
+  
+  window.onload = loadData;
+</script>
+</body>
+</html>

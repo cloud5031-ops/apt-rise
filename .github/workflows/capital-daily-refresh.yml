@@ -67,6 +67,8 @@ jobs:
 
       - name: Merge Shards
         run: python scripts/merge_shards.py --stable-month ${{ steps.parse_manifest.outputs.stable_month }} --provisional-month ${{ steps.parse_manifest.outputs.provisional_month }}
+      - name: Export Details
+        run: python scripts/export_details.py || true
 
       - name: Validate JSON
         run: python scripts/validate_json.py

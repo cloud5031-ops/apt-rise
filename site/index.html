@@ -881,8 +881,9 @@ function renderApt(d){
     }
 
     return `
-    <tr><td>${idx + 1}</td>
-    <td class="name">
+    <tr class="apt-row" onclick="goToApartment('${i.apartmentKey}')" style="cursor:pointer">
+    <td class="rank-col">${idx + 1}</td>
+    <td class="name-col">
       <div style="font-size:0.8rem;color:var(--sub)">${regionDisp}</div>
       <b>${i.apartmentName}</b> ${areaText}${exactHtml} ${warnHtml}
       ${dtInfo}
@@ -999,6 +1000,17 @@ document.querySelectorAll("#apt-sub-nav button").forEach(b=>b.addEventListener("
 
 
 function init() {
+  const savedState = sessionStorage.getItem('apt_state');
+  if (savedState) {
+    try {
+      const parsed = JSON.parse(savedState);
+      Object.assign(state, parsed);
+      setTimeout(() => {
+        window.scrollTo(0, parsed.scrollPos || 0);
+      }, 300);
+    } catch(e) {}
+    sessionStorage.removeItem('apt_state');
+  }
   // Main tabs are instantly responsive
   paint();
   
@@ -1034,6 +1046,11 @@ function init() {
 }
 init();
 
+function goToApartment(key) {
+  state.scrollPos = window.scrollY || document.documentElement.scrollTop;
+  sessionStorage.setItem('apt_state', JSON.stringify(state));
+  window.location.href = 'apartment.html?key=' + key;
+}
 </script>
 </body>
 </html>
