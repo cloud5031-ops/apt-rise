@@ -233,6 +233,26 @@ const state = {
 
 const SGG_NAMES = {"11110": "종로구", "11140": "중구", "11170": "용산구", "11200": "성동구", "11215": "광진구", "11230": "동대문구", "11260": "중랑구", "11290": "성북구", "11305": "강북구", "11320": "도봉구", "11350": "노원구", "11380": "은평구", "11410": "서대문구", "11440": "마포구", "11470": "양천구", "11500": "강서구", "11530": "구로구", "11545": "금천구", "11560": "영등포구", "11590": "동작구", "11620": "관악구", "11650": "서초구", "11680": "강남구", "11710": "송파구", "11740": "강동구", "26110": "중구", "26140": "서구", "26170": "동구", "26200": "영도구", "26230": "부산진구", "26260": "동래구", "26290": "남구", "26320": "북구", "26350": "해운대구", "26380": "사하구", "26410": "금정구", "26440": "강서구", "26470": "연제구", "26500": "수영구", "26530": "사상구", "26710": "기장군", "27110": "중구", "27140": "동구", "27170": "서구", "27200": "남구", "27230": "북구", "27260": "수성구", "27290": "달서구", "27710": "달성군", "27720": "군위군", "28110": "중구", "28140": "동구", "28177": "미추홀구", "28185": "연수구", "28200": "남동구", "28237": "부평구", "28245": "계양구", "28260": "서구", "28710": "강화군", "28720": "옹진군", "29110": "동구", "29140": "서구", "29155": "남구", "29170": "북구", "29200": "광산구", "30110": "동구", "30140": "중구", "30170": "서구", "30200": "유성구", "30230": "대덕구", "31110": "중구", "31140": "남구", "31170": "동구", "31200": "북구", "31710": "울주군", "41110": "수원시", "41111": "수원시 장안구", "41113": "수원시 권선구", "41115": "수원시 팔달구", "41117": "수원시 영통구", "41130": "성남시", "41131": "성남시 수정구", "41133": "성남시 중원구", "41135": "성남시 분당구", "41150": "의정부시", "41170": "안양시", "41171": "안양시 만안구", "41173": "안양시 동안구", "41190": "부천시", "41210": "광명시", "41220": "평택시", "41250": "동두천시", "41270": "안산시", "41271": "안산시 상록구", "41273": "안산시 단원구", "41280": "고양시", "41281": "고양시 덕양구", "41285": "고양시 일산동구", "41287": "고양시 일산서구", "41290": "과천시", "41310": "구리시", "41360": "남양주시", "41370": "오산시", "41390": "시흥시", "41410": "군포시", "41430": "의왕시", "41450": "하남시", "41460": "용인시", "41461": "용인시 처인구", "41463": "용인시 기흥구", "41465": "용인시 수지구", "41480": "파주시", "41500": "이천시", "41550": "안성시", "41570": "김포시", "41590": "화성시", "41610": "광주시", "41630": "양주시", "41650": "포천시", "41670": "여주시", "41800": "연천군", "41820": "가평군", "41830": "양평군", "43110": "청주시", "43111": "청주시 상당구", "43112": "청주시 서원구", "43113": "청주시 흥덕구", "43114": "청주시 청원구", "43130": "충주시", "43150": "제천시", "43720": "보은군", "43730": "옥천군", "43740": "영동군", "43745": "증평군", "43750": "진천군", "43760": "괴산군", "43770": "음성군", "43800": "단양군", "44130": "천안시", "44131": "천안시 동남구", "44133": "천안시 서북구", "44150": "공주시", "44180": "보령시", "44200": "아산시", "44210": "서산시", "44230": "논산시", "44250": "계룡시", "44270": "당진시", "44710": "금산군", "44760": "부여군", "44770": "서천군", "44790": "청양군", "44800": "홍성군", "44810": "예산군", "44825": "태안군", "45110": "전주시", "45111": "전주시 완산구", "45113": "전주시 덕진구", "45130": "군산시", "45140": "익산시", "45180": "정읍시", "45190": "남원시", "45210": "김제시", "45710": "완주군", "45720": "진안군", "45730": "무주군", "45740": "장수군", "45750": "임실군", "45770": "순창군", "45790": "고창군", "45800": "부안군", "46110": "목포시", "46130": "여수시", "46150": "순천시", "46170": "나주시", "46230": "광양시", "46710": "담양군", "46720": "곡성군", "46730": "구례군", "46770": "고흥군", "46780": "보성군", "46790": "화순군", "46800": "장흥군", "46810": "강진군", "46820": "해남군", "46830": "영암군", "46840": "무안군", "46860": "함평군", "46870": "영광군", "46880": "장성군", "46890": "완도군", "46900": "진도군", "46910": "신안군", "47110": "포항시", "47111": "포항시 남구", "47113": "포항시 북구", "47130": "경주시", "47150": "김천시", "47170": "안동시", "47190": "구미시", "47210": "영주시", "47230": "영천시", "47250": "상주시", "47280": "문경시", "47290": "경산시", "47720": "군위군", "47730": "의성군", "47750": "청송군", "47760": "영양군", "47770": "영덕군", "47820": "청도군", "47830": "고령군", "47840": "성주군", "47850": "칠곡군", "47900": "예천군", "47920": "봉화군", "47930": "울진군", "47940": "울릉군", "48120": "창원시", "48121": "창원시 의창구", "48123": "창원시 성산구", "48125": "창원시 마산합포구", "48127": "창원시 마산회원구", "48129": "창원시 진해구", "48170": "진주시", "48220": "통영시", "48240": "사천시", "48250": "김해시", "48270": "밀양시", "48310": "거제시", "48330": "양산시", "48720": "의령군", "48730": "함안군", "48740": "창녕군", "48820": "고성군", "48840": "남해군", "48850": "하동군", "48860": "산청군", "48870": "함양군", "48880": "거창군", "48890": "합천군", "50110": "제주시", "50130": "서귀포시", "51110": "춘천시", "51130": "원주시", "51150": "강릉시", "51170": "동해시", "51190": "태백시", "51210": "속초시", "51230": "삼척시", "51720": "홍천군", "51730": "횡성군", "51750": "영월군", "51760": "평창군", "51770": "정선군", "51780": "철원군", "51790": "화천군", "51800": "양구군", "51810": "인제군", "51820": "고성군", "51830": "양양군"};
 
+SGG_NAMES["41190"] = "부천시";
+SGG_NAMES["41192"] = "부천시 원미구";
+SGG_NAMES["41193"] = "부천시 소사구";
+SGG_NAMES["41194"] = "부천시 오정구";
+SGG_NAMES["41590"] = "화성시";
+SGG_NAMES["41595"] = "화성시 병점구";
+SGG_NAMES["41597"] = "화성시 동탄구";
+
+const GYEONGGI_CITY_DISTRICTS = {
+  "41110": ["41111", "41113", "41115", "41117"],
+  "41130": ["41131", "41133", "41135"],
+  "41170": ["41171", "41173"],
+  "41270": ["41271", "41273"],
+  "41280": ["41281", "41285", "41287"],
+  "41460": ["41461", "41463", "41465"],
+  "41190": ["41192", "41193", "41194"],
+  "41590": ["41595", "41597"]
+};
+
+
 const MACRO_GROUPS = [
   { id: "서울", match: ["서울"] },
   { id: "경기", match: ["경기"] },
@@ -262,27 +282,6 @@ const SIDO_NAMES = {
   '50': '제주', '51': '강원'
 };
 
-// 매핑 누락된 코드 직접 추가 (부천시, 화성시)
-SGG_NAMES["41190"] = "부천시";
-SGG_NAMES["41192"] = "부천시 원미구";
-SGG_NAMES["41193"] = "부천시 소사구";
-SGG_NAMES["41194"] = "부천시 오정구";
-SGG_NAMES["41590"] = "화성시";
-SGG_NAMES["41595"] = "화성시 병점구";
-SGG_NAMES["41597"] = "화성시 동탄구";
-
-// 경기도 명시적 시-구 매핑
-const GYEONGGI_CITY_DISTRICTS = {
-  "41110": ["41111", "41113", "41115", "41117"], // 수원시
-  "41130": ["41131", "41133", "41135"], // 성남시
-  "41170": ["41171", "41173"], // 안양시
-  "41270": ["41271", "41273"], // 안산시
-  "41280": ["41281", "41285", "41287"], // 고양시
-  "41460": ["41461", "41463", "41465"], // 용인시
-  "41190": ["41192", "41193", "41194"], // 부천시
-  "41590": ["41595", "41597"] // 화성시
-};
-
 function getAptSidoMatch(macroId, subMacroId) {
   if (macroId === '서울') return ['11'];
   if (macroId === '경기') return ['41'];
@@ -305,7 +304,6 @@ function getAptMicroRegions(macroId, subMacroId) {
     if (!microMap[i.sidoCode]) microMap[i.sidoCode] = new Set();
     microMap[i.sidoCode].add(i.sggCode);
     
-    // 명시적 시(parent) 추가 (해당 시의 구가 하나라도 존재하면 상위 시코드 활성화)
     if (i.sidoCode === '41') {
       for (const [parentCode, children] of Object.entries(GYEONGGI_CITY_DISTRICTS)) {
         if (children.includes(i.sggCode)) {
@@ -385,14 +383,12 @@ function renderAptMicroRegions() {
     if (microMap[sido]) {
       const sorted = Array.from(microMap[sido]).sort((a,b) => (SGG_NAMES[a]||'').localeCompare(SGG_NAMES[b]||''));
       sorted.forEach(code => {
-        if (!SGG_NAMES[code]) console.warn(`Unmapped sggCode: ${code}`);
-        addOption(code, SGG_NAMES[code] || '', state.aptMicroRegion === code);
+        if(!SGG_NAMES[code]) console.warn(`Unmapped sggCode: ${code}`); addOption(code, SGG_NAMES[code] || '', state.aptMicroRegion === code);
       });
     }
   } else if (macroName === '경기') {
     if (microMap['41']) {
       const sortedCodes = Array.from(microMap['41']);
-      
       const parentMap = {};
       const standalone = [];
       
@@ -430,7 +426,7 @@ function renderAptMicroRegions() {
                console.warn(`Unmapped sggCode: ${topCode}`);
                return;
             }
-            addOption(null, pName, false, true); // Header
+            addOption(null, pName, false, true);
             addOption(topCode, pName + ' 전체', state.aptMicroRegion === topCode);
             
             const children = parentMap[topCode].sort((a,b) => (SGG_NAMES[a]||'').localeCompare(SGG_NAMES[b]||''));
@@ -456,8 +452,7 @@ function renderAptMicroRegions() {
       
       const sorted = Array.from(microMap[sido]).sort((a,b) => (SGG_NAMES[a]||'').localeCompare(SGG_NAMES[b]||''));
       sorted.forEach(code => {
-        if (!SGG_NAMES[code]) console.warn(`Unmapped sggCode: ${code}`);
-        addOption(code, SGG_NAMES[code] || '', state.aptMicroRegion === code);
+        if(!SGG_NAMES[code]) console.warn(`Unmapped sggCode: ${code}`); addOption(code, SGG_NAMES[code] || '', state.aptMicroRegion === code);
       });
       closeOptgroup();
     });
@@ -482,49 +477,187 @@ document.querySelector('.apt-micro-select').addEventListener('change', (e) => {
 const won = v => {
   if (v == null || Number.isNaN(v)) return "–";
   const num = Number(v);
-  if (num === 0) return "0";
-  if (num < 10000) return num.toLocaleString();
-  const e = Math.floor(num / 10000);
-  const m = num % 10000;
-  if (m === 0) return `${e.toLocaleString()}억`;
-  return `${e.toLocaleString()}억 ${m.toLocaleString()}`;
+  if (!isFinite(num)) return "–";
+  const uk = Math.floor(num / 100000000);
+  const man = Math.round((num % 100000000) / 10000);
+  let res = "";
+  if (uk > 0) res += uk + "억 ";
+  if (man > 0 || uk === 0) res += man.toLocaleString() + "만원";
+  return res.trim();
 };
+const rate = v => v == null ? "–" :
+  `<span class="rate ${v>0?"up":v<0?"down":""}">${v>0?"+":""}${v.toFixed(2)}%</span>`;
+const confLabel = { high:"높음", medium:"보통", low:"낮음" };
 
-const rate = r => {
-  if (r == null || Number.isNaN(r)) return "–";
-  const num = Number(r);
-  if (num > 0) return `<span class="up">▲${num.toFixed(2)}%</span>`;
-  if (num < 0) return `<span class="down">▼${Math.abs(num).toFixed(2)}%</span>`;
-  return "0.00%";
-};
+document.querySelectorAll('input[name="confFilter"], input[name="dataMode"]').forEach(radio => {
+  radio.addEventListener('change', () => paint());
+});
 
-function normalizeAptRankingItem(item) {
+async function loadJson(url){
+  try{
+    const r = await fetch(url, {cache:"no-store"});
+    if(!r.ok) return { error: true };
+    return await r.json();
+  }catch{ return { error: true }; }
+}
+
+function renderRegion(d){
+  if (d === null) return `<p class="empty">불러오는 중…</p>`;
+  if(d && d.error) return `<p class="empty">시군구 데이터를 불러오지 못했습니다.</p>`;
+  if(!d || !d.items || d.items.length === 0) return `<p class="empty">현재 조건에 해당하는 지역 순위 결과가 없습니다.</p>`;
+  
+  let filtered = d.items;
+  
+  if (state.regionSubTab === "local") {
+     const group = MACRO_GROUPS.find(g => g.id === state.macroRegion);
+     if (state.microRegion === `${state.macroRegion} 전체`) {
+        filtered = filtered.filter(item => {
+           const parts = item.regionName.split('>');
+           return group.match.includes(parts[0]);
+        });
+     } else {
+        filtered = filtered.filter(item => {
+           const parts = item.regionName.split('>').filter(p => !p.endsWith('권') && !p.endsWith('지역'));
+           const micro = parts.slice(1).join(' ');
+           return micro === state.microRegion;
+        });
+     }
+  }
+  
+  if (filtered.length === 0) {
+     return `<p class="empty">선택한 지역의 순위 데이터가 없습니다.</p>`;
+  }
+  
+  const max = Math.max(...filtered.map(i=>Math.abs(i.momRate||0)), 0.01);
+  const rows = filtered.map((i, idx) => {
+    const parts = i.regionName.split('>').filter(p => !p.endsWith('권') && !p.endsWith('지역'));
+    const displayName = parts.join(' ');
+    return `
+    <tr><td>${idx + 1}</td><td class="name" title="${i.regionName}">${displayName}</td>
+    <td>${rate(i.momRate)}<span class="bar" style="width:${Math.abs(i.momRate||0)/max*48}px"></span></td>
+    <td class="hide-m">${rate(i.threeMonthRate)}</td>
+    <td class="hide-m">${rate(i.yoyRate)}</td></tr>`;
+  }).join("");
+  return `<table><thead><tr><th>순위</th><th>지역</th><th>전월 대비</th>
+    <th class="hide-m">3개월</th><th class="hide-m">전년 동월</th></tr></thead>
+    <tbody>${rows}</tbody></table>`;
+}
+
+function renderMacroRegions() {
+  const html = MACRO_GROUPS.map(g => {
+    const isSelected = g.id === state.macroRegion;
+    return `<button class="chip" aria-selected="${isSelected}" data-macro="${g.id}">${g.id}</button>`;
+  }).join("");
+  document.getElementById("macro-container").innerHTML = html;
+  
+  document.querySelectorAll('#macro-container .chip').forEach(b => {
+    b.addEventListener('click', () => {
+      state.macroRegion = b.dataset.macro;
+      state.microRegion = b.dataset.macro + " 전체";
+      paint();
+    });
+  });
+}
+
+function getMicroRegions(macroId) {
+  const group = MACRO_GROUPS.find(g => g.id === macroId);
+  const items = state.region.items.filter(item => {
+    return group.match.includes(item.regionName.split('>')[0]);
+  });
+  
+  const microMap = {};
+  items.forEach(item => {
+    const parts = item.regionName.split('>').filter(p => !p.endsWith('권') && !p.endsWith('지역'));
+    const sido = parts[0];
+    const micro = parts.slice(1).join(' ');
+    if (micro) {
+      if (!microMap[sido]) microMap[sido] = new Set();
+      microMap[sido].add(micro);
+    }
+  });
+  return microMap;
+}
+
+function renderMicroRegions() {
+  if (!state.region || !state.region.items) return;
+  const microMap = getMicroRegions(state.macroRegion);
+  const group = MACRO_GROUPS.find(g => g.id === state.macroRegion);
+  const isMultiSido = group.match.length > 1;
+  
+  const isAll = state.microRegion === state.macroRegion + ' 전체';
+  let htmlDesktop = `<button class="chip" aria-selected="${isAll}" data-micro="${state.macroRegion} 전체">${state.macroRegion} 전체</button>`;
+  let htmlMobile = `<option value="${state.macroRegion} 전체">${state.macroRegion} 전체</option>`;
+  
+  group.match.forEach(sido => {
+    if (!microMap[sido]) return;
+    const sortedMicros = Array.from(microMap[sido]).sort();
+    
+    if (isMultiSido) {
+       htmlDesktop += `<div style="width:100%; margin-top:8px; font-size:0.8rem; color:var(--sub); font-weight:600; padding-left:4px;">${sido}</div>`;
+       htmlMobile += `<optgroup label="${sido}">`;
+    }
+    
+    sortedMicros.forEach(micro => {
+      const isSelected = state.microRegion === micro;
+      htmlDesktop += `<button class="chip" aria-selected="${isSelected}" data-micro="${micro}">${micro}</button>`;
+      htmlMobile += `<option value="${micro}" ${isSelected ? 'selected' : ''}>${micro}</option>`;
+    });
+    
+    if (isMultiSido) htmlMobile += `</optgroup>`;
+  });
+  
+  const deskContainer = document.querySelector('.micro-desktop');
+  const mobSelect = document.querySelector('.micro-select');
+  
+  deskContainer.innerHTML = htmlDesktop;
+  mobSelect.innerHTML = htmlMobile;
+  
+  deskContainer.querySelectorAll('button').forEach(b => {
+     b.addEventListener('click', () => {
+        state.microRegion = b.dataset.micro;
+        paint();
+     });
+  });
+}
+
+document.querySelector('.micro-select').addEventListener('change', (e) => {
+  state.microRegion = e.target.value;
+  paint();
+});
+
+function formatPeriod(m) {
+  const y = +m.slice(0,4), mo = +m.slice(4);
+  let by = y, bmo = mo - 3;
+  if (bmo <= 0) { by -= 1; bmo += 12; }
+  let by2 = y, bmo2 = mo - 1;
+  if (bmo2 <= 0) { by2 -= 1; bmo2 += 12; }
+  
+  const baseStr = `${by}.${String(bmo).padStart(2,'0')}~${by2}.${String(bmo2).padStart(2,'0')}`;
+  const curStr = `${y}.${String(mo).padStart(2,'0')}`;
+  return { baseStr, curStr };
+}
+
+function normalizeAptRankingItem(raw) {
   return {
-    rank: item.rank || item.apt_rank,
-    sidoCode: item.sidoCode || item.sido_code,
-    sggCode: item.sggCode || item.sgg_code,
-    region: item.region,
-    apartmentKey: item.apartmentKey || item.apartment_key,
-    apartmentName: item.apartmentName || item.apartment_name,
-    areaGroup: item.areaGroup || item.area_group,
-    exactAreas: item.exactAreas || item.exact_areas || [],
-    baselineTradeCount: item.baselineTradeCount || item.baseline_trade_count,
-    currentTradeCount: item.currentTradeCount || item.current_trade_count,
-    baselineMedian: item.baselineMedian || item.baseline_median,
-    currentMedian: item.currentMedian || item.current_median,
-    baselineFloorMedian: item.baselineFloorMedian || item.baseline_floor_median,
-    currentFloorMedian: item.currentFloorMedian || item.current_floor_median,
-    baselineDirectTradeCount: item.baselineDirectTradeCount || item.baseline_direct_trade_count,
-    currentDirectTradeCount: item.currentDirectTradeCount || item.current_direct_trade_count,
-    riseRate: item.riseRate || item.rise_rate,
-    confidence: item.confidence,
-    warnings: item.warnings || [],
-    compositionWarning: item.compositionWarning || item.composition_warning
+    ...raw,
+    areaGroup: raw.areaGroup || raw.area_group,
+    baselineMedian: raw.baselineMedian || raw.baselineMedianPrice,
+    currentMedian: raw.currentMedian || raw.currentMedianPrice,
+    baselineFloorMedian: raw.baselineFloorMedian ?? raw.baselineMedianFloor ?? raw.baseline_median_floor,
+    currentFloorMedian: raw.currentFloorMedian ?? raw.currentMedianFloor ?? raw.current_median_floor,
+    baselineTradeCount: raw.baselineTradeCount || raw.baseline_trade_count,
+    currentTradeCount: raw.currentTradeCount || raw.current_trade_count,
+    warnings: raw.warnings || raw.warning_reasons || [],
+    compositionWarning: raw.compositionWarning || raw.composition_warning || false,
+    exactAreas: raw.exactAreas || raw.exact_areas || [],
+    baselineDirectTradeCount: raw.baselineDirectTradeCount || raw.baseline_direct_trade_count || 0,
+    currentDirectTradeCount: raw.currentDirectTradeCount || raw.current_direct_trade_count || 0,
   };
 }
 
 function renderApt(d){
-  if(d && d.error) return `<p class="empty">데이터 파일을 불러오지 못했습니다.</p>`;
+  if (d === null) return `<p class="empty">불러오는 중…</p>`;
+  if(d && d.error) return `<p class="empty">개별 아파트 데이터를 불러오지 못했습니다.</p>`;
   if(!d || !d.items || d.items.length === 0) return `<p class="empty">현재 조건에 해당하는 아파트 순위 결과가 없습니다.</p>`;
   
   const { baseStr, curStr } = formatPeriod(d.referenceMonth);
@@ -532,6 +665,7 @@ function renderApt(d){
   
   let filtered = d.items.map(normalizeAptRankingItem);
   
+  // 1. 지역 필터링
   if (state.aptSubTab === 'local') {
      const macroName = state.aptMacroRegion;
      const topName = macroName === '지방' ? state.aptSubMacroRegion : macroName;
@@ -540,7 +674,7 @@ function renderApt(d){
      if (micro === topName + ' 전체') {
         const allowedSidos = getAptSidoMatch(macroName, state.aptSubMacroRegion);
         filtered = filtered.filter(i => allowedSidos.includes(i.sidoCode));
-     } else if (micro.length === 2) { 
+     } else if (micro.length === 2) {
         filtered = filtered.filter(i => i.sidoCode === micro);
      } else if (micro.length === 5) {
         if (macroName === '경기' && GYEONGGI_CITY_DISTRICTS[micro]) {
@@ -552,11 +686,13 @@ function renderApt(d){
      }
   }
 
+  // 2. 등급 및 경고 필터링
   if(filterVal === 'nowarn') filtered = filtered.filter(i => !i.compositionWarning);
   if(filterVal === 'medup') filtered = filtered.filter(i => i.confidence === 'high' || i.confidence === 'medium');
 
   if(filtered.length === 0) return `<p class="empty">선택한 지역과 조건에 해당하는 아파트 순위가 없습니다.</p>`;
 
+  // 3. 지역 정보 텍스트 표시
   const infoTxtElem = document.getElementById("apt-selected-region-info");
   if (state.aptSubTab === "national") {
      infoTxtElem.style.display = "none";
@@ -595,6 +731,7 @@ function renderApt(d){
      infoTxtElem.innerHTML = fullText;
   }
 
+  // 4. 순위 재계산 (상승률 내림차순 정렬 후 순위 부여)
   filtered.sort((a,b) => b.riseRate - a.riseRate);
 
   const rows = filtered.slice(0,100).map((i, idx)=>{
@@ -613,6 +750,7 @@ function renderApt(d){
       ? `<br><span style="font-size:0.75rem;color:var(--sub)">거래층 중앙값 ${i.currentFloorMedian}층</span>` 
       : "";
 
+    // 화면에 보여줄 이름 조합 (fallback to original item.region if SGG_NAMES misses)
     let regionDisp = i.region || i.sggCode;
     if (SGG_NAMES[i.sggCode]) {
       const sidoDisp = SIDO_NAMES[i.sidoCode] || "";
@@ -646,6 +784,17 @@ function renderApt(d){
     <th>최근가<br><span style="font-weight:normal;font-size:0.75rem">${curStr}</span></th>
     <th>상승률</th></tr></thead>
     <tbody>${rows}</tbody></table>`;
+}
+
+function updateTabMeta(d, idPrefix, isProvisional=false) {
+  const metaSpan = document.getElementById(`tab-meta-${idPrefix}`);
+  if(d && !d.error && d.referenceMonth) {
+    const m = d.referenceMonth;
+    const suffix = isProvisional ? " 잠정" : " 기준";
+    metaSpan.innerHTML = `· ${m.slice(0,4)}년 ${+m.slice(4)}월${suffix}`;
+  } else {
+    metaSpan.innerHTML = ``;
+  }
 }
 
 function paint(){
@@ -710,6 +859,11 @@ function paint(){
   }
 }
 
+document.querySelectorAll("#main-nav button").forEach(b=>b.addEventListener("click",()=>{
+  document.querySelectorAll("#main-nav button").forEach(x=>x.setAttribute("aria-selected", x===b));
+  state.tab = b.dataset.tab; paint();
+}));
+
 document.querySelectorAll("#region-sub-nav button").forEach(b=>b.addEventListener("click",()=>{
   document.querySelectorAll("#region-sub-nav button").forEach(x=>x.setAttribute("aria-selected", x===b));
   state.regionSubTab = b.dataset.subtab; paint();
@@ -720,26 +874,43 @@ document.querySelectorAll("#apt-sub-nav button").forEach(b=>b.addEventListener("
   state.aptSubTab = b.dataset.subtab; paint();
 }));
 
-(async()=>{
-  // 지역 랭킹 로드
-  state.region = await loadJson("data/region_rankings_latest.json");
-  
-  // 아파트 매니페스트 로드
-  const manifest = await loadJson("data/apt_rankings_manifest.json");
-  
-  if (manifest && !manifest.error && manifest.stableFile) {
-    state.aptStable = await loadJson(`data/${manifest.stableFile}`);
-    if (manifest.provisionalFile) {
-      document.getElementById('provisionalOption').style.display = 'block';
-      state.aptProvisional = await loadJson(`data/${manifest.provisionalFile}`);
-    }
-  } else {
-    // 매니페스트가 없을 경우 하위 호환
-    state.aptStable = await loadJson("data/apt_rankings_latest.json");
-  }
-  
+
+function init() {
+  // Main tabs are instantly responsive
   paint();
-})();
+  
+  Promise.resolve().then(async () => {
+    try {
+      const res = await loadJson("data/region_rankings_latest.json");
+      state.region = res;
+    } catch (e) {
+      console.error("Failed to load region data:", e);
+      state.region = { error: true };
+    }
+    if (state.tab === "region") paint();
+  });
+
+  Promise.resolve().then(async () => {
+    try {
+      const manifest = await loadJson("data/apt_rankings_manifest.json");
+      if (manifest && !manifest.error && manifest.stableFile) {
+        state.aptStable = await loadJson(`data/${manifest.stableFile}`);
+        if (manifest.provisionalFile) {
+          document.getElementById('provisionalOption').style.display = 'block';
+          state.aptProvisional = await loadJson(`data/${manifest.provisionalFile}`);
+        }
+      } else {
+        state.aptStable = await loadJson("data/apt_rankings_latest.json");
+      }
+    } catch (e) {
+      console.error("Failed to load apt data:", e);
+      state.aptStable = { error: true };
+    }
+    if (state.tab === "apt") paint();
+  });
+}
+init();
+
 </script>
 </body>
 </html>
