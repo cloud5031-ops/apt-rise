@@ -1,7 +1,7 @@
 {
  "referenceMonth": "202606",
  "status": "provisional",
- "collectedAt": "2026-07-25T05:56:01.369028+09:00",
+ "collectedAt": "2026-07-25T23:42:28.023267+09:00",
  "items": [
   {
    "apartmentKey": "51210-167",
@@ -106,40 +106,6 @@
    "rank": 3
   },
   {
-   "apartmentKey": "26710-598",
-   "aptSeq": "598",
-   "apartmentName": "정관가화만사성더테라스1차",
-   "sidoCode": "26",
-   "sggCode": "26710",
-   "areaGroup": 60.2,
-   "referenceMonth": "202606",
-   "baselineMedian": 255000000.0,
-   "currentMedian": 337500000.0,
-   "riseAmount": 82500000,
-   "riseRate": 32.35,
-   "baselineTradeCount": 2,
-   "currentTradeCount": 4,
-   "confidence": "low",
-   "warnings": [
-    "층수 차이(8층 이상 또는 구간 차이)",
-    "20% 이상 급변동"
-   ],
-   "region": "26710 정관읍 방곡리",
-   "exactAreas": [
-    60.1758
-   ],
-   "baselineFloorMedian": 3.0,
-   "currentFloorMedian": 6.0,
-   "baselineDirectTradeCount": 0,
-   "currentDirectTradeCount": 0,
-   "floorMixWarning": true,
-   "directTradeWarning": false,
-   "compositionWarning": true,
-   "exclusiveAreaGroup": 60.2,
-   "calculationVersion": "v1.1",
-   "rank": 4
-  },
-  {
    "apartmentKey": "41597-41590-1522",
    "aptSeq": "41590-1522",
    "apartmentName": "동탄역신안인스빌리베라2차",
@@ -171,7 +137,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 73.0,
    "calculationVersion": "v1.1",
-   "rank": 5
+   "rank": 4
   },
   {
    "apartmentKey": "41310-15",
@@ -204,7 +170,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 37.7,
    "calculationVersion": "v1.1",
-   "rank": 6
+   "rank": 5
   },
   {
    "apartmentKey": "44133-858",
@@ -237,6 +203,40 @@
    "directTradeWarning": false,
    "compositionWarning": true,
    "exclusiveAreaGroup": 45.8,
+   "calculationVersion": "v1.1",
+   "rank": 6
+  },
+  {
+   "apartmentKey": "26710-598",
+   "aptSeq": "598",
+   "apartmentName": "정관가화만사성더테라스1차",
+   "sidoCode": "26",
+   "sggCode": "26710",
+   "areaGroup": 60.2,
+   "referenceMonth": "202606",
+   "baselineMedian": 255000000.0,
+   "currentMedian": 325000000,
+   "riseAmount": 70000000,
+   "riseRate": 27.45,
+   "baselineTradeCount": 2,
+   "currentTradeCount": 3,
+   "confidence": "low",
+   "warnings": [
+    "층수 차이(8층 이상 또는 구간 차이)",
+    "20% 이상 급변동"
+   ],
+   "region": "26710 정관읍 방곡리",
+   "exactAreas": [
+    60.1758
+   ],
+   "baselineFloorMedian": 3.0,
+   "currentFloorMedian": 6,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": true,
+   "directTradeWarning": false,
+   "compositionWarning": true,
+   "exclusiveAreaGroup": 60.2,
    "calculationVersion": "v1.1",
    "rank": 7
   },
@@ -929,6 +929,41 @@
    "rank": 27
   },
   {
+   "apartmentKey": "47290-29",
+   "aptSeq": "29",
+   "apartmentName": "현대타운",
+   "sidoCode": "47",
+   "sggCode": "47290",
+   "areaGroup": 59.8,
+   "referenceMonth": "202606",
+   "baselineMedian": 169000000.0,
+   "currentMedian": 207000000.0,
+   "riseAmount": 38000000,
+   "riseRate": 22.49,
+   "baselineTradeCount": 4,
+   "currentTradeCount": 2,
+   "confidence": "low",
+   "warnings": [
+    "층수 차이(8층 이상 또는 구간 차이)",
+    "직거래 포함 이력 존재",
+    "20% 이상 급변동"
+   ],
+   "region": "47290 정평동",
+   "exactAreas": [
+    59.82
+   ],
+   "baselineFloorMedian": 10,
+   "currentFloorMedian": 15.5,
+   "baselineDirectTradeCount": 1,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": true,
+   "directTradeWarning": true,
+   "compositionWarning": true,
+   "exclusiveAreaGroup": 59.8,
+   "calculationVersion": "v1.1",
+   "rank": 28
+  },
+  {
    "apartmentKey": "48129-559",
    "aptSeq": "559",
    "apartmentName": "진해석동푸르지오",
@@ -960,7 +995,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 28
+   "rank": 29
   },
   {
    "apartmentKey": "41597-41590-1837",
@@ -994,7 +1029,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 29
+   "rank": 30
   },
   {
    "apartmentKey": "41597-41590-1338",
@@ -1028,7 +1063,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 101.7,
    "calculationVersion": "v1.1",
-   "rank": 30
+   "rank": 31
   },
   {
    "apartmentKey": "26200-80",
@@ -1062,7 +1097,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 57.1,
    "calculationVersion": "v1.1",
-   "rank": 31
+   "rank": 32
   },
   {
    "apartmentKey": "11530-56",
@@ -1096,7 +1131,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 54.6,
    "calculationVersion": "v1.1",
-   "rank": 32
+   "rank": 33
   },
   {
    "apartmentKey": "41597-41590-1342",
@@ -1128,41 +1163,6 @@
    "directTradeWarning": false,
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
-   "calculationVersion": "v1.1",
-   "rank": 33
-  },
-  {
-   "apartmentKey": "47290-29",
-   "aptSeq": "29",
-   "apartmentName": "현대타운",
-   "sidoCode": "47",
-   "sggCode": "47290",
-   "areaGroup": 59.8,
-   "referenceMonth": "202606",
-   "baselineMedian": 170000000,
-   "currentMedian": 207000000.0,
-   "riseAmount": 37000000,
-   "riseRate": 21.76,
-   "baselineTradeCount": 5,
-   "currentTradeCount": 2,
-   "confidence": "low",
-   "warnings": [
-    "층수 차이(8층 이상 또는 구간 차이)",
-    "직거래 포함 이력 존재",
-    "20% 이상 급변동"
-   ],
-   "region": "47290 정평동",
-   "exactAreas": [
-    59.82
-   ],
-   "baselineFloorMedian": 9.0,
-   "currentFloorMedian": 15.5,
-   "baselineDirectTradeCount": 1,
-   "currentDirectTradeCount": 0,
-   "floorMixWarning": true,
-   "directTradeWarning": true,
-   "compositionWarning": true,
-   "exclusiveAreaGroup": 59.8,
    "calculationVersion": "v1.1",
    "rank": 34
   },
@@ -4118,40 +4118,6 @@
    "rank": 123
   },
   {
-   "apartmentKey": "43113-474",
-   "aptSeq": "474",
-   "apartmentName": "두산위브지웰시티2차",
-   "sidoCode": "43",
-   "sggCode": "43113",
-   "areaGroup": 80.1,
-   "referenceMonth": "202606",
-   "baselineMedian": 791500000.0,
-   "currentMedian": 915000000.0,
-   "riseAmount": 123500000,
-   "riseRate": 15.6,
-   "baselineTradeCount": 10,
-   "currentTradeCount": 6,
-   "confidence": "medium",
-   "warnings": [
-    "층수 차이(8층 이상 또는 구간 차이)",
-    "직거래 포함 이력 존재"
-   ],
-   "region": "43113 복대동",
-   "exactAreas": [
-    80.135
-   ],
-   "baselineFloorMedian": 16,
-   "currentFloorMedian": 13.0,
-   "baselineDirectTradeCount": 1,
-   "currentDirectTradeCount": 0,
-   "floorMixWarning": true,
-   "directTradeWarning": true,
-   "compositionWarning": true,
-   "exclusiveAreaGroup": 80.1,
-   "calculationVersion": "v1.1",
-   "rank": 124
-  },
-  {
    "apartmentKey": "11530-98",
    "aptSeq": "98",
    "apartmentName": "금강",
@@ -4180,7 +4146,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 125
+   "rank": 124
   },
   {
    "apartmentKey": "11410-67",
@@ -4213,7 +4179,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 60.1,
    "calculationVersion": "v1.1",
-   "rank": 126
+   "rank": 125
   },
   {
    "apartmentKey": "41463-33",
@@ -4244,7 +4210,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 60.0,
    "calculationVersion": "v1.1",
-   "rank": 127
+   "rank": 126
   },
   {
    "apartmentKey": "41597-41590-1018",
@@ -4275,7 +4241,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 101.2,
    "calculationVersion": "v1.1",
-   "rank": 128
+   "rank": 127
   },
   {
    "apartmentKey": "41597-41590-1837",
@@ -4308,6 +4274,39 @@
    "directTradeWarning": false,
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
+   "calculationVersion": "v1.1",
+   "rank": 128
+  },
+  {
+   "apartmentKey": "43113-474",
+   "aptSeq": "474",
+   "apartmentName": "두산위브지웰시티2차",
+   "sidoCode": "43",
+   "sggCode": "43113",
+   "areaGroup": 80.1,
+   "referenceMonth": "202606",
+   "baselineMedian": 793000000,
+   "currentMedian": 915000000.0,
+   "riseAmount": 122000000,
+   "riseRate": 15.38,
+   "baselineTradeCount": 9,
+   "currentTradeCount": 6,
+   "confidence": "medium",
+   "warnings": [
+    "직거래 포함 이력 존재"
+   ],
+   "region": "43113 복대동",
+   "exactAreas": [
+    80.135
+   ],
+   "baselineFloorMedian": 14.5,
+   "currentFloorMedian": 13.0,
+   "baselineDirectTradeCount": 1,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": false,
+   "directTradeWarning": true,
+   "compositionWarning": true,
+   "exclusiveAreaGroup": 80.1,
    "calculationVersion": "v1.1",
    "rank": 129
   },

@@ -3,7 +3,7 @@
  "referenceMonth": "202605",
  "status": "stable",
  "validationStatus": "valid",
- "generatedAt": "2026-07-21T23:22:43.416579+09:00",
+ "generatedAt": "2026-07-25T23:25:28.095575+09:00",
  "calculationVersion": "v1.1",
  "schemaVersion": "v1.0",
  "includedSidoCodes": [
@@ -51,49 +51,49 @@
   "31710"
  ],
  "successfulSggCodes": [
-  "26290",
-  "27110",
-  "26260",
-  "27140",
   "31710",
-  "26710",
-  "30170",
-  "27710",
-  "27720",
-  "26200",
-  "26470",
-  "30110",
   "26410",
   "31140",
-  "26170",
-  "27200",
-  "26230",
-  "26350",
-  "26140",
+  "26260",
   "27230",
-  "26440",
-  "26110",
-  "27260",
-  "30230",
   "26530",
-  "30140",
+  "26710",
+  "27260",
   "27290",
-  "26380",
-  "26320",
+  "31200",
   "30200",
-  "31110",
+  "27110",
+  "27720",
+  "26170",
+  "27710",
+  "30230",
+  "27140",
+  "26440",
+  "26140",
   "31170",
   "26500",
+  "27200",
+  "26380",
   "27170",
-  "31200"
+  "26320",
+  "26230",
+  "30170",
+  "26200",
+  "31110",
+  "26290",
+  "30140",
+  "26110",
+  "26470",
+  "30110",
+  "26350"
  ],
  "failedSggCodes": [],
- "rawTradeCount": 7128,
- "validTradeCount": 6853,
- "cancelledTradeCount": 275,
+ "rawTradeCount": 7132,
+ "validTradeCount": 6845,
+ "cancelledTradeCount": 287,
  "directTradeCount": 504,
- "candidateGroupCount": 4341,
- "filteredOutGroupCount": 4261,
+ "candidateGroupCount": 4336,
+ "filteredOutGroupCount": 4257,
  "items": [
   {
    "apartmentKey": "27290-165",
@@ -843,12 +843,12 @@
    "areaGroup": 59.8,
    "referenceMonth": "202605",
    "baselineMedian": 270000000.0,
-   "currentMedian": 300000000,
+   "currentMedian": 300000000.0,
    "riseAmount": 30000000,
    "riseRate": 11.11,
    "baselineTradeCount": 6,
-   "currentTradeCount": 5,
-   "confidence": "medium",
+   "currentTradeCount": 4,
+   "confidence": "low",
    "warnings": [
     "층수 차이(8층 이상 또는 구간 차이)",
     "직거래 포함 이력 존재"
@@ -858,7 +858,7 @@
     59.77
    ],
    "baselineFloorMedian": 17.0,
-   "currentFloorMedian": 8.5,
+   "currentFloorMedian": 8,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 1,
    "floorMixWarning": true,
@@ -1226,37 +1226,6 @@
    "rank": 34
   },
   {
-   "apartmentKey": "31170-694",
-   "aptSeq": "694",
-   "apartmentName": "서부성원상떼빌",
-   "sidoCode": "31",
-   "sggCode": "31170",
-   "areaGroup": 114.0,
-   "referenceMonth": "202605",
-   "baselineMedian": 359000000,
-   "currentMedian": 392000000.0,
-   "riseAmount": 33000000,
-   "riseRate": 9.19,
-   "baselineTradeCount": 9,
-   "currentTradeCount": 2,
-   "confidence": "medium",
-   "warnings": [],
-   "region": "31170 서부동",
-   "exactAreas": [
-    114.03
-   ],
-   "baselineFloorMedian": 10,
-   "currentFloorMedian": 15.0,
-   "baselineDirectTradeCount": 0,
-   "currentDirectTradeCount": 0,
-   "floorMixWarning": false,
-   "directTradeWarning": false,
-   "compositionWarning": false,
-   "exclusiveAreaGroup": 114.0,
-   "calculationVersion": "v1.1",
-   "rank": 35
-  },
-  {
    "apartmentKey": "27110-341",
    "aptSeq": "341",
    "apartmentName": "힐스테이트대구역",
@@ -1288,7 +1257,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 36
+   "rank": 35
   },
   {
    "apartmentKey": "31140-109",
@@ -1324,7 +1293,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 60.0,
    "calculationVersion": "v1.1",
-   "rank": 37
+   "rank": 36
   },
   {
    "apartmentKey": "27140-2538",
@@ -1356,6 +1325,37 @@
    "directTradeWarning": false,
    "compositionWarning": true,
    "exclusiveAreaGroup": 60.0,
+   "calculationVersion": "v1.1",
+   "rank": 37
+  },
+  {
+   "apartmentKey": "26290-2749",
+   "aptSeq": "2749",
+   "apartmentName": "대연양우내안애퍼스트",
+   "sidoCode": "26",
+   "sggCode": "26290",
+   "areaGroup": 59.8,
+   "referenceMonth": "202605",
+   "baselineMedian": 505000000,
+   "currentMedian": 550000000.0,
+   "riseAmount": 45000000,
+   "riseRate": 8.91,
+   "baselineTradeCount": 3,
+   "currentTradeCount": 2,
+   "confidence": "medium",
+   "warnings": [],
+   "region": "26290 문현동",
+   "exactAreas": [
+    59.8008
+   ],
+   "baselineFloorMedian": 8,
+   "currentFloorMedian": 10.0,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": false,
+   "directTradeWarning": false,
+   "compositionWarning": false,
+   "exclusiveAreaGroup": 59.8,
    "calculationVersion": "v1.1",
    "rank": 38
   },
@@ -2123,39 +2123,6 @@
    "rank": 61
   },
   {
-   "apartmentKey": "31710-621",
-   "aptSeq": "621",
-   "apartmentName": "문수산 더샵",
-   "sidoCode": "31",
-   "sggCode": "31710",
-   "areaGroup": 84.8,
-   "referenceMonth": "202605",
-   "baselineMedian": 545000000,
-   "currentMedian": 577000000,
-   "riseAmount": 32000000,
-   "riseRate": 5.87,
-   "baselineTradeCount": 13,
-   "currentTradeCount": 3,
-   "confidence": "low",
-   "warnings": [
-    "층수 차이(8층 이상 또는 구간 차이)"
-   ],
-   "region": "31710 범서읍 굴화리",
-   "exactAreas": [
-    84.79
-   ],
-   "baselineFloorMedian": 11,
-   "currentFloorMedian": 25,
-   "baselineDirectTradeCount": 0,
-   "currentDirectTradeCount": 0,
-   "floorMixWarning": true,
-   "directTradeWarning": false,
-   "compositionWarning": true,
-   "exclusiveAreaGroup": 84.8,
-   "calculationVersion": "v1.1",
-   "rank": 62
-  },
-  {
    "apartmentKey": "27290-1200",
    "aptSeq": "1200",
    "apartmentName": "월성푸르지오",
@@ -2184,7 +2151,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 101.9,
    "calculationVersion": "v1.1",
-   "rank": 63
+   "rank": 62
   },
   {
    "apartmentKey": "26230-2866",
@@ -2217,7 +2184,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 59.9,
    "calculationVersion": "v1.1",
-   "rank": 64
+   "rank": 63
   },
   {
    "apartmentKey": "27140-2537",
@@ -2253,7 +2220,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 65
+   "rank": 64
   },
   {
    "apartmentKey": "27110-308",
@@ -2286,38 +2253,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 66
-  },
-  {
-   "apartmentKey": "30170-87",
-   "aptSeq": "87",
-   "apartmentName": "한마루아파트",
-   "sidoCode": "30",
-   "sggCode": "30170",
-   "areaGroup": 101.9,
-   "referenceMonth": "202605",
-   "baselineMedian": 947500000.0,
-   "currentMedian": 997000000.0,
-   "riseAmount": 49500000,
-   "riseRate": 5.22,
-   "baselineTradeCount": 18,
-   "currentTradeCount": 4,
-   "confidence": "medium",
-   "warnings": [],
-   "region": "30170 둔산동",
-   "exactAreas": [
-    101.94
-   ],
-   "baselineFloorMedian": 7.0,
-   "currentFloorMedian": 9.0,
-   "baselineDirectTradeCount": 0,
-   "currentDirectTradeCount": 0,
-   "floorMixWarning": false,
-   "directTradeWarning": false,
-   "compositionWarning": false,
-   "exclusiveAreaGroup": 101.9,
-   "calculationVersion": "v1.1",
-   "rank": 67
+   "rank": 65
   },
   {
    "apartmentKey": "26290-2643",
@@ -2350,7 +2286,38 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 59.9,
    "calculationVersion": "v1.1",
-   "rank": 68
+   "rank": 66
+  },
+  {
+   "apartmentKey": "30170-87",
+   "aptSeq": "87",
+   "apartmentName": "한마루아파트",
+   "sidoCode": "30",
+   "sggCode": "30170",
+   "areaGroup": 101.9,
+   "referenceMonth": "202605",
+   "baselineMedian": 950000000,
+   "currentMedian": 997000000.0,
+   "riseAmount": 47000000,
+   "riseRate": 4.95,
+   "baselineTradeCount": 17,
+   "currentTradeCount": 4,
+   "confidence": "medium",
+   "warnings": [],
+   "region": "30170 둔산동",
+   "exactAreas": [
+    101.94
+   ],
+   "baselineFloorMedian": 6,
+   "currentFloorMedian": 9.0,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": false,
+   "directTradeWarning": false,
+   "compositionWarning": false,
+   "exclusiveAreaGroup": 101.9,
+   "calculationVersion": "v1.1",
+   "rank": 67
   },
   {
    "apartmentKey": "31140-1428",
@@ -2385,7 +2352,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 69
+   "rank": 68
   },
   {
    "apartmentKey": "31110-1257",
@@ -2418,7 +2385,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 110.5,
    "calculationVersion": "v1.1",
-   "rank": 70
+   "rank": 69
   },
   {
    "apartmentKey": "31140-1336",
@@ -2453,7 +2420,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 71
+   "rank": 70
   },
   {
    "apartmentKey": "30200-629",
@@ -2488,7 +2455,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 72
+   "rank": 71
   },
   {
    "apartmentKey": "26500-29",
@@ -2519,7 +2486,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 73.9,
    "calculationVersion": "v1.1",
-   "rank": 73
+   "rank": 72
   },
   {
    "apartmentKey": "26350-2259",
@@ -2553,7 +2520,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 74
+   "rank": 73
   },
   {
    "apartmentKey": "30200-719",
@@ -2587,7 +2554,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 75
+   "rank": 74
   },
   {
    "apartmentKey": "27260-1526",
@@ -2618,7 +2585,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 75.9,
    "calculationVersion": "v1.1",
-   "rank": 76
+   "rank": 75
   },
   {
    "apartmentKey": "27260-1526",
@@ -2655,7 +2622,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 77
+   "rank": 76
   },
   {
    "apartmentKey": "26290-2632",
@@ -2690,7 +2657,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 78
+   "rank": 77
   },
   {
    "apartmentKey": "27260-1616",
@@ -2727,7 +2694,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 79
+   "rank": 78
   },
   {
    "apartmentKey": "26500-2456",
@@ -2763,7 +2730,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 80
+   "rank": 79
   }
  ]
 }
