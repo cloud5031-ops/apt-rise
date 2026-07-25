@@ -231,26 +231,111 @@ const state = {
   microRegion: "서울 전체"
 };
 
-const SGG_NAMES = {"11110": "종로구", "11140": "중구", "11170": "용산구", "11200": "성동구", "11215": "광진구", "11230": "동대문구", "11260": "중랑구", "11290": "성북구", "11305": "강북구", "11320": "도봉구", "11350": "노원구", "11380": "은평구", "11410": "서대문구", "11440": "마포구", "11470": "양천구", "11500": "강서구", "11530": "구로구", "11545": "금천구", "11560": "영등포구", "11590": "동작구", "11620": "관악구", "11650": "서초구", "11680": "강남구", "11710": "송파구", "11740": "강동구", "26110": "중구", "26140": "서구", "26170": "동구", "26200": "영도구", "26230": "부산진구", "26260": "동래구", "26290": "남구", "26320": "북구", "26350": "해운대구", "26380": "사하구", "26410": "금정구", "26440": "강서구", "26470": "연제구", "26500": "수영구", "26530": "사상구", "26710": "기장군", "27110": "중구", "27140": "동구", "27170": "서구", "27200": "남구", "27230": "북구", "27260": "수성구", "27290": "달서구", "27710": "달성군", "27720": "군위군", "28110": "중구", "28140": "동구", "28177": "미추홀구", "28185": "연수구", "28200": "남동구", "28237": "부평구", "28245": "계양구", "28260": "서구", "28710": "강화군", "28720": "옹진군", "29110": "동구", "29140": "서구", "29155": "남구", "29170": "북구", "29200": "광산구", "30110": "동구", "30140": "중구", "30170": "서구", "30200": "유성구", "30230": "대덕구", "31110": "중구", "31140": "남구", "31170": "동구", "31200": "북구", "31710": "울주군", "41110": "수원시", "41111": "수원시 장안구", "41113": "수원시 권선구", "41115": "수원시 팔달구", "41117": "수원시 영통구", "41130": "성남시", "41131": "성남시 수정구", "41133": "성남시 중원구", "41135": "성남시 분당구", "41150": "의정부시", "41170": "안양시", "41171": "안양시 만안구", "41173": "안양시 동안구", "41190": "부천시", "41210": "광명시", "41220": "평택시", "41250": "동두천시", "41270": "안산시", "41271": "안산시 상록구", "41273": "안산시 단원구", "41280": "고양시", "41281": "고양시 덕양구", "41285": "고양시 일산동구", "41287": "고양시 일산서구", "41290": "과천시", "41310": "구리시", "41360": "남양주시", "41370": "오산시", "41390": "시흥시", "41410": "군포시", "41430": "의왕시", "41450": "하남시", "41460": "용인시", "41461": "용인시 처인구", "41463": "용인시 기흥구", "41465": "용인시 수지구", "41480": "파주시", "41500": "이천시", "41550": "안성시", "41570": "김포시", "41590": "화성시", "41610": "광주시", "41630": "양주시", "41650": "포천시", "41670": "여주시", "41800": "연천군", "41820": "가평군", "41830": "양평군", "43110": "청주시", "43111": "청주시 상당구", "43112": "청주시 서원구", "43113": "청주시 흥덕구", "43114": "청주시 청원구", "43130": "충주시", "43150": "제천시", "43720": "보은군", "43730": "옥천군", "43740": "영동군", "43745": "증평군", "43750": "진천군", "43760": "괴산군", "43770": "음성군", "43800": "단양군", "44130": "천안시", "44131": "천안시 동남구", "44133": "천안시 서북구", "44150": "공주시", "44180": "보령시", "44200": "아산시", "44210": "서산시", "44230": "논산시", "44250": "계룡시", "44270": "당진시", "44710": "금산군", "44760": "부여군", "44770": "서천군", "44790": "청양군", "44800": "홍성군", "44810": "예산군", "44825": "태안군", "45110": "전주시", "45111": "전주시 완산구", "45113": "전주시 덕진구", "45130": "군산시", "45140": "익산시", "45180": "정읍시", "45190": "남원시", "45210": "김제시", "45710": "완주군", "45720": "진안군", "45730": "무주군", "45740": "장수군", "45750": "임실군", "45770": "순창군", "45790": "고창군", "45800": "부안군", "46110": "목포시", "46130": "여수시", "46150": "순천시", "46170": "나주시", "46230": "광양시", "46710": "담양군", "46720": "곡성군", "46730": "구례군", "46770": "고흥군", "46780": "보성군", "46790": "화순군", "46800": "장흥군", "46810": "강진군", "46820": "해남군", "46830": "영암군", "46840": "무안군", "46860": "함평군", "46870": "영광군", "46880": "장성군", "46890": "완도군", "46900": "진도군", "46910": "신안군", "47110": "포항시", "47111": "포항시 남구", "47113": "포항시 북구", "47130": "경주시", "47150": "김천시", "47170": "안동시", "47190": "구미시", "47210": "영주시", "47230": "영천시", "47250": "상주시", "47280": "문경시", "47290": "경산시", "47720": "군위군", "47730": "의성군", "47750": "청송군", "47760": "영양군", "47770": "영덕군", "47820": "청도군", "47830": "고령군", "47840": "성주군", "47850": "칠곡군", "47900": "예천군", "47920": "봉화군", "47930": "울진군", "47940": "울릉군", "48120": "창원시", "48121": "창원시 의창구", "48123": "창원시 성산구", "48125": "창원시 마산합포구", "48127": "창원시 마산회원구", "48129": "창원시 진해구", "48170": "진주시", "48220": "통영시", "48240": "사천시", "48250": "김해시", "48270": "밀양시", "48310": "거제시", "48330": "양산시", "48720": "의령군", "48730": "함안군", "48740": "창녕군", "48820": "고성군", "48840": "남해군", "48850": "하동군", "48860": "산청군", "48870": "함양군", "48880": "거창군", "48890": "합천군", "50110": "제주시", "50130": "서귀포시", "51110": "춘천시", "51130": "원주시", "51150": "강릉시", "51170": "동해시", "51190": "태백시", "51210": "속초시", "51230": "삼척시", "51720": "홍천군", "51730": "횡성군", "51750": "영월군", "51760": "평창군", "51770": "정선군", "51780": "철원군", "51790": "화천군", "51800": "양구군", "51810": "인제군", "51820": "고성군", "51830": "양양군"};
-
-SGG_NAMES["41190"] = "부천시";
-SGG_NAMES["41192"] = "부천시 원미구";
-SGG_NAMES["41193"] = "부천시 소사구";
-SGG_NAMES["41194"] = "부천시 오정구";
-SGG_NAMES["41590"] = "화성시";
-SGG_NAMES["41595"] = "화성시 병점구";
-SGG_NAMES["41597"] = "화성시 동탄구";
-
-const GYEONGGI_CITY_DISTRICTS = {
-  "41110": ["41111", "41113", "41115", "41117"],
-  "41130": ["41131", "41133", "41135"],
-  "41170": ["41171", "41173"],
-  "41270": ["41271", "41273"],
-  "41280": ["41281", "41285", "41287"],
-  "41460": ["41461", "41463", "41465"],
-  "41190": ["41192", "41193", "41194"],
-  "41590": ["41595", "41597"]
+const SGG_CODE_MAP = {
+  // 서울
+  "11110": "종로구", "11140": "중구", "11170": "용산구", "11200": "성동구", "11215": "광진구", "11230": "동대문구", "11260": "중랑구", "11290": "성북구", "11305": "강북구", "11320": "도봉구", "11350": "노원구", "11380": "은평구", "11410": "서대문구", "11440": "마포구", "11470": "양천구", "11500": "강서구", "11530": "구로구", "11545": "금천구", "11560": "영등포구", "11590": "동작구", "11620": "관악구", "11650": "서초구", "11680": "강남구", "11710": "송파구", "11740": "강동구",
+  // 부산
+  "26110": "중구", "26140": "서구", "26170": "동구", "26200": "영도구", "26230": "부산진구", "26260": "동래구", "26290": "남구", "26320": "북구", "26350": "해운대구", "26380": "사하구", "26410": "금정구", "26440": "강서구", "26470": "연제구", "26500": "수영구", "26530": "사상구", "26710": "기장군",
+  // 대구
+  "27110": "중구", "27140": "동구", "27170": "서구", "27200": "남구", "27230": "북구", "27260": "수성구", "27290": "달서구", "27710": "달성군", "27720": "군위군",
+  // 인천 (구/신)
+  "28110": "중구", "28140": "동구", "28177": "미추홀구", "28185": "연수구", "28200": "남동구", "28237": "부평구", "28245": "계양구", "28260": "서구", "28710": "강화군", "28720": "옹진군",
+  "28730": "제물포구", "28740": "영종구", "28750": "검단구",
+  // 광주
+  "29110": "동구", "29140": "서구", "29155": "남구", "29170": "북구", "29200": "광산구",
+  // 대전
+  "30110": "동구", "30140": "중구", "30170": "서구", "30200": "유성구", "30230": "대덕구",
+  // 울산
+  "31110": "중구", "31140": "남구", "31170": "동구", "31200": "북구", "31710": "울주군",
+  // 세종
+  "36110": "세종시", // Placeholder if needed
+  // 경기 - 부모시
+  "41110": "수원시", "41130": "성남시", "41170": "안양시", "41190": "부천시", "41270": "안산시", "41280": "고양시", "41460": "용인시", "41590": "화성시",
+  // 경기 - 구
+  "41111": "수원시 장안구", "41113": "수원시 권선구", "41115": "수원시 팔달구", "41117": "수원시 영통구", 
+  "41131": "성남시 수정구", "41133": "성남시 중원구", "41135": "성남시 분당구", 
+  "41171": "안양시 만안구", "41173": "안양시 동안구",
+  "41192": "부천시 원미구", "41193": "부천시 소사구", "41194": "부천시 오정구",
+  "41271": "안산시 상록구", "41273": "안산시 단원구",
+  "41281": "고양시 덕양구", "41285": "고양시 일산동구", "41287": "고양시 일산서구",
+  "41461": "용인시 처인구", "41463": "용인시 기흥구", "41465": "용인시 수지구",
+  "41595": "화성시 병점구", "41597": "화성시 동탄구", "41591": "화성시 만세구", "41593": "화성시 효행구", // placeholder codes for new hwaseong gus
+  // 경기 - 독립
+  "41150": "의정부시", "41210": "광명시", "41220": "평택시", "41250": "동두천시", "41290": "과천시", "41310": "구리시", "41360": "남양주시", "41370": "오산시", "41390": "시흥시", "41410": "군포시", "41430": "의왕시", "41450": "하남시", "41480": "파주시", "41500": "이천시", "41550": "안성시", "41570": "김포시", "41610": "광주시", "41630": "양주시", "41650": "포천시", "41670": "여주시", "41800": "연천군", "41820": "가평군", "41830": "양평군",
+  // 충북
+  "43110": "청주시", "43111": "청주시 상당구", "43112": "청주시 서원구", "43113": "청주시 흥덕구", "43114": "청주시 청원구", "43130": "충주시", "43150": "제천시", "43720": "보은군", "43730": "옥천군", "43740": "영동군", "43745": "증평군", "43750": "진천군", "43760": "괴산군", "43770": "음성군", "43800": "단양군",
+  // 충남
+  "44130": "천안시", "44131": "천안시 동남구", "44133": "천안시 서북구", "44150": "공주시", "44180": "보령시", "44200": "아산시", "44210": "서산시", "44230": "논산시", "44250": "계룡시", "44270": "당진시", "44710": "금산군", "44760": "부여군", "44770": "서천군", "44790": "청양군", "44800": "홍성군", "44810": "예산군", "44825": "태안군",
+  // 전북
+  "45110": "전주시", "45111": "전주시 완산구", "45113": "전주시 덕진구", "45130": "군산시", "45140": "익산시", "45180": "정읍시", "45190": "남원시", "45210": "김제시", "45710": "완주군", "45720": "진안군", "45730": "무주군", "45740": "장수군", "45750": "임실군", "45770": "순창군", "45790": "고창군", "45800": "부안군",
+  // 전남
+  "46110": "목포시", "46130": "여수시", "46150": "순천시", "46170": "나주시", "46230": "광양시", "46710": "담양군", "46720": "곡성군", "46730": "구례군", "46770": "고흥군", "46780": "보성군", "46790": "화순군", "46800": "장흥군", "46810": "강진군", "46820": "해남군", "46830": "영암군", "46840": "무안군", "46860": "함평군", "46870": "영광군", "46880": "장성군", "46890": "완도군", "46900": "진도군", "46910": "신안군",
+  // 경북
+  "47110": "포항시", "47111": "포항시 남구", "47113": "포항시 북구", "47130": "경주시", "47150": "김천시", "47170": "안동시", "47190": "구미시", "47210": "영주시", "47230": "영천시", "47250": "상주시", "47280": "문경시", "47290": "경산시", "47720": "군위군", "47730": "의성군", "47750": "청송군", "47760": "영양군", "47770": "영덕군", "47820": "청도군", "47830": "고령군", "47840": "성주군", "47850": "칠곡군", "47900": "예천군", "47920": "봉화군", "47930": "울진군", "47940": "울릉군",
+  // 경남
+  "48120": "창원시", "48121": "창원시 의창구", "48123": "창원시 성산구", "48125": "창원시 마산합포구", "48127": "창원시 마산회원구", "48129": "창원시 진해구", "48170": "진주시", "48220": "통영시", "48240": "사천시", "48250": "김해시", "48270": "밀양시", "48310": "거제시", "48330": "양산시", "48720": "의령군", "48730": "함안군", "48740": "창녕군", "48820": "고성군", "48840": "남해군", "48850": "하동군", "48860": "산청군", "48870": "함양군", "48880": "거창군", "48890": "합천군",
+  // 제주
+  "50110": "제주시", "50130": "서귀포시",
+  // 강원
+  "51110": "춘천시", "51130": "원주시", "51150": "강릉시", "51170": "동해시", "51190": "태백시", "51210": "속초시", "51230": "삼척시", "51720": "홍천군", "51730": "횡성군", "51750": "영월군", "51760": "평창군", "51770": "정선군", "51780": "철원군", "51790": "화천군", "51800": "양구군", "51810": "인제군", "51820": "고성군", "51830": "양양군"
 };
+
+const OFFICIAL_REGION_TREE = {
+  "11": ["11110", "11140", "11170", "11200", "11215", "11230", "11260", "11290", "11305", "11320", "11350", "11380", "11410", "11440", "11470", "11500", "11530", "11545", "11560", "11590", "11620", "11650", "11680", "11710", "11740"],
+  "26": ["26110", "26140", "26170", "26200", "26230", "26260", "26290", "26320", "26350", "26380", "26410", "26440", "26470", "26500", "26530", "26710"],
+  "27": ["27110", "27140", "27170", "27200", "27230", "27260", "27290", "27710", "27720"],
+  "28_old": ["28110", "28140", "28177", "28185", "28200", "28237", "28245", "28260", "28710", "28720"],
+  "28_new": ["28730", "28740", "28177", "28185", "28200", "28237", "28245", "28750", "28710", "28720"],
+  "29": ["29110", "29140", "29155", "29170", "29200"],
+  "30": ["30110", "30140", "30170", "30200", "30230"],
+  "31": ["31110", "31140", "31170", "31200", "31710"],
+  "36": ["36110"],
+  "41": [
+    { type: "parent", parentCode: "41280", children: ["41281", "41285", "41287"] },
+    { type: "parent", parentCode: "41190", children: ["41192", "41193", "41194"] },
+    { type: "parent", parentCode: "41130", children: ["41131", "41133", "41135"] },
+    { type: "parent", parentCode: "41110", children: ["41111", "41113", "41115", "41117"] },
+    { type: "parent", parentCode: "41270", children: ["41271", "41273"] },
+    { type: "parent", parentCode: "41170", children: ["41171", "41173"] },
+    { type: "parent", parentCode: "41460", children: ["41461", "41463", "41465"] },
+    { type: "parent", parentCode: "41590", children: ["41591", "41593", "41595", "41597"] },
+    { type: "standalone", codes: ["41820", "41290", "41210", "41610", "41310", "41410", "41570", "41360", "41250", "41390", "41550", "41630", "41830", "41670", "41800", "41370", "41430", "41150", "41500", "41480", "41220", "41650", "41450"] }
+  ],
+  "43": [
+    { type: "parent", parentCode: "43110", children: ["43111", "43112", "43113", "43114"] },
+    { type: "standalone", codes: ["43130", "43150", "43720", "43730", "43740", "43745", "43750", "43760", "43770", "43800"] }
+  ],
+  "44": [
+    { type: "parent", parentCode: "44130", children: ["44131", "44133"] },
+    { type: "standalone", codes: ["44150", "44180", "44200", "44210", "44230", "44250", "44270", "44710", "44760", "44770", "44790", "44800", "44810", "44825"] }
+  ],
+  "45": [
+    { type: "parent", parentCode: "45110", children: ["45111", "45113"] },
+    { type: "standalone", codes: ["45130", "45140", "45180", "45190", "45210", "45710", "45720", "45730", "45740", "45750", "45770", "45790", "45800"] }
+  ],
+  "46": ["46110", "46130", "46150", "46170", "46230", "46710", "46720", "46730", "46770", "46780", "46790", "46800", "46810", "46820", "46830", "46840", "46860", "46870", "46880", "46890", "46900", "46910"],
+  "47": [
+    { type: "parent", parentCode: "47110", children: ["47111", "47113"] },
+    { type: "standalone", codes: ["47130", "47150", "47170", "47190", "47210", "47230", "47250", "47280", "47290", "47720", "47730", "47750", "47760", "47770", "47820", "47830", "47840", "47850", "47900", "47920", "47930", "47940"] }
+  ],
+  "48": [
+    { type: "parent", parentCode: "48120", children: ["48121", "48123", "48125", "48127", "48129"] },
+    { type: "standalone", codes: ["48170", "48220", "48240", "48250", "48270", "48310", "48330", "48720", "48730", "48740", "48820", "48840", "48850", "48860", "48870", "48880", "48890"] }
+  ],
+  "50": ["50110", "50130"],
+  "51": ["51110", "51130", "51150", "51170", "51190", "51210", "51230", "51720", "51730", "51750", "51760", "51770", "51780", "51790", "51800", "51810", "51820", "51830"]
+};
+
+
+SGG_CODE_MAP["41190"] = "부천시";
+SGG_CODE_MAP["41192"] = "부천시 원미구";
+SGG_CODE_MAP["41193"] = "부천시 소사구";
+SGG_CODE_MAP["41194"] = "부천시 오정구";
+SGG_CODE_MAP["41590"] = "화성시";
+SGG_CODE_MAP["41595"] = "화성시 병점구";
+SGG_CODE_MAP["41597"] = "화성시 동탄구";
+
+
 
 
 const MACRO_GROUPS = [
@@ -293,26 +378,42 @@ function getAptSidoMatch(macroId, subMacroId) {
   return [];
 }
 
-function getAptMicroRegions(macroId, subMacroId) {
-  const sidos = getAptSidoMatch(macroId, subMacroId);
+function getAptFilteredItems() {
   const mode = document.querySelector('input[name="dataMode"]:checked').value;
-  const items = (mode === 'provisional' ? state.aptProvisional : state.aptStable)?.items || [];
+  const filterVal = document.querySelector('input[name="confFilter"]:checked').value;
+  const d = (mode === 'provisional' ? state.aptProvisional : state.aptStable);
+  if (!d || !d.items) return [];
   
-  const microMap = {};
+  let items = d.items.map(normalizeAptRankingItem);
+  if(filterVal === 'nowarn') items = items.filter(i => !i.compositionWarning);
+  if(filterVal === 'medup') items = items.filter(i => i.confidence === 'high' || i.confidence === 'medium');
+  return items;
+}
+
+function getAptCountsBySgg(items) {
+  const counts = {};
+  const seen = new Set(); // To deduplicate by apartmentKey + areaGroup
+  
   items.forEach(i => {
-    if (!sidos.includes(i.sidoCode)) return;
-    if (!microMap[i.sidoCode]) microMap[i.sidoCode] = new Set();
-    microMap[i.sidoCode].add(i.sggCode);
+    const dedupKey = i.apartmentKey + '|' + i.areaGroup;
+    if (seen.has(dedupKey)) return;
+    seen.add(dedupKey);
     
-    if (i.sidoCode === '41') {
-      for (const [parentCode, children] of Object.entries(GYEONGGI_CITY_DISTRICTS)) {
-        if (children.includes(i.sggCode)) {
-          microMap[i.sidoCode].add(parentCode);
-        }
-      }
+    counts[i.sggCode] = (counts[i.sggCode] || 0) + 1;
+    
+    // Also count for parent cities if applicable
+    for (const sidoKey of Object.keys(OFFICIAL_REGION_TREE)) {
+       const tree = OFFICIAL_REGION_TREE[sidoKey];
+       if (Array.isArray(tree)) {
+          for (const node of tree) {
+             if (node.type === 'parent' && node.children.includes(i.sggCode)) {
+                counts[node.parentCode] = (counts[node.parentCode] || 0) + 1;
+             }
+          }
+       }
     }
   });
-  return microMap;
+  return counts;
 }
 
 function renderAptMacroRegions() {
@@ -352,116 +453,126 @@ function renderAptMacroRegions() {
 }
 
 function renderAptMicroRegions() {
-  const microMap = getAptMicroRegions(state.aptMacroRegion, state.aptSubMacroRegion);
+  const macroName = state.aptMacroRegion;
+  const sidos = getAptSidoMatch(macroName, state.aptSubMacroRegion);
   
-  let htmlDesktop = '';
-  let htmlMobile = '';
+  const items = getAptFilteredItems();
+  const counts = getAptCountsBySgg(items);
+  const getCount = (code) => counts[code] || 0;
   
-  const addOption = (val, label, isSelected, isHeader=false) => {
+  // Calculate total count for "전체" buttons
+  const getTotalCountForSido = (sidoCode) => {
+    return items.reduce((acc, i) => {
+      const k = i.apartmentKey + '|' + i.areaGroup;
+      if (i.sidoCode === sidoCode && !acc.seen.has(k)) { acc.seen.add(k); acc.c++; }
+      return acc;
+    }, {c:0, seen:new Set()}).c;
+  };
+  
+  // Calculate total for Macro/SubMacro "전체"
+  const macroTotal = items.reduce((acc, i) => {
+      const k = i.apartmentKey + '|' + i.areaGroup;
+      if (sidos.includes(i.sidoCode) && !acc.seen.has(k)) { acc.seen.add(k); acc.c++; }
+      return acc;
+  }, {c:0, seen:new Set()}).c;
+  
+  let htmlDesktop = `<div style="font-size:0.75rem; color:var(--sub); margin-bottom:8px; width:100%;">지역별 숫자는 현재 집계 및 필터 조건에 해당하는 단지·면적 그룹 수입니다.</div>`;
+  let htmlMobile = ``;
+  
+  const addOption = (val, label, count, isSelected, isHeader=false) => {
     if (!label || label.trim() === '') {
-       console.warn(`Unmapped sggCode or empty label: ${val}`);
+       if (val) console.warn(`Unmapped sggCode or empty label: ${val}`);
        return;
     }
+    const disabled = count === 0 && !isHeader;
+    const txt = isHeader ? label : `${label} ${count > 0 ? count : '0건'}`;
+    
     if (isHeader) {
-      htmlDesktop += `<div style="width:100%; margin-top:12px; font-size:0.8rem; color:var(--sub); font-weight:600; padding-left:4px;">${label}</div>`;
-      htmlMobile += `<optgroup label="${label}">`;
+      htmlDesktop += `<div style="width:100%; margin-top:16px; font-size:0.85rem; color:var(--ink); font-weight:700; padding:4px 4px 4px 8px; border-left:3px solid var(--sub); background:rgba(0,0,0,0.03); border-radius:4px;">${txt}</div>`;
+      htmlMobile += `<optgroup label="${txt}">`;
     } else {
+      const cls = disabled ? 'chip disabled' : 'chip';
       const selectedAttrDesk = isSelected ? 'aria-selected="true"' : 'aria-selected="false"';
+      const disabledAttr = disabled ? 'disabled style="opacity:0.5; pointer-events:none;"' : '';
+      
       const selectedAttrMob = isSelected ? 'selected' : '';
-      htmlDesktop += `<button class="chip" ${selectedAttrDesk} data-micro="${val}">${label}</button>`;
-      htmlMobile += `<option value="${val}" ${selectedAttrMob}>${label}</option>`;
+      const disabledAttrMob = disabled ? 'disabled' : '';
+      
+      htmlDesktop += `<button class="${cls}" ${selectedAttrDesk} ${disabledAttr} data-micro="${val}">${txt}</button>`;
+      htmlMobile += `<option value="${val}" ${selectedAttrMob} ${disabledAttrMob}>${txt}</option>`;
     }
   };
   const closeOptgroup = () => { htmlMobile += `</optgroup>`; };
   
-  const macroName = state.aptMacroRegion;
   const topName = macroName === '지방' ? state.aptSubMacroRegion : macroName;
-  addOption(topName + ' 전체', topName + ' 전체', state.aptMicroRegion === topName + ' 전체');
-
-  if (macroName === '서울' || macroName === '인천') {
-    const sido = macroName === '서울' ? '11' : '28';
-    if (microMap[sido]) {
-      const sorted = Array.from(microMap[sido]).sort((a,b) => (SGG_NAMES[a]||'').localeCompare(SGG_NAMES[b]||''));
-      sorted.forEach(code => {
-        if(!SGG_NAMES[code]) console.warn(`Unmapped sggCode: ${code}`); addOption(code, SGG_NAMES[code] || '', state.aptMicroRegion === code);
-      });
+  const isTopAllSelected = state.aptMicroRegion === topName + ' 전체';
+  addOption(topName + ' 전체', topName + ' 전체', macroTotal, isTopAllSelected);
+  
+  // Choose correct Incheon version based on referenceMonth
+  const mode = document.querySelector('input[name="dataMode"]:checked').value;
+  const d = (mode === 'provisional' ? state.aptProvisional : state.aptStable);
+  const refMonth = (d && d.referenceMonth) || "202606";
+  
+  sidos.forEach(sido => {
+    let treeKey = sido;
+    if (sido === '28') treeKey = parseInt(refMonth) >= 202607 ? '28_new' : '28_old';
+    
+    const tree = OFFICIAL_REGION_TREE[treeKey] || [];
+    if (tree.length === 0) return;
+    
+    const isMultiSido = sidos.length > 1;
+    if (isMultiSido) {
+      addOption(null, SIDO_NAMES[sido] || sido, null, false, true);
+      addOption(sido, (SIDO_NAMES[sido] || sido) + ' 전체', getTotalCountForSido(sido), state.aptMicroRegion === sido);
     }
-  } else if (macroName === '경기') {
-    if (microMap['41']) {
-      const sortedCodes = Array.from(microMap['41']);
-      const parentMap = {};
-      const standalone = [];
+    
+    const processFlatNodes = (nodes) => {
+       const sorted = [...nodes].sort((a,b) => (SGG_CODE_MAP[a]||'').localeCompare(SGG_CODE_MAP[b]||''));
+       sorted.forEach(code => {
+         if (!SGG_CODE_MAP[code]) console.warn(`Unmapped sggCode: ${code}`);
+         addOption(code, SGG_CODE_MAP[code] || '', getCount(code), state.aptMicroRegion === code);
+       });
+    };
+    
+    if (treeKey === '41' || treeKey === '43' || treeKey === '44' || treeKey === '45' || treeKey === '47' || treeKey === '48') {
+      // Tree with parents and standalones
+      const parents = tree.filter(n => n.type === 'parent').sort((a,b) => (SGG_CODE_MAP[a.parentCode]||'').localeCompare(SGG_CODE_MAP[b.parentCode]||''));
+      const standalones = tree.find(n => n.type === 'standalone')?.codes || [];
       
-      sortedCodes.forEach(code => {
-        let isChild = false;
-        let isParent = false;
-        for (const [pCode, children] of Object.entries(GYEONGGI_CITY_DISTRICTS)) {
-          if (code === pCode) {
-            isParent = true;
-            if (!parentMap[pCode]) parentMap[pCode] = [];
-            break;
-          }
-          if (children.includes(code)) {
-            isChild = true;
-            if (!parentMap[pCode]) parentMap[pCode] = [];
-            parentMap[pCode].push(code);
-            break;
-          }
-        }
-        if (!isChild && !isParent) {
-          standalone.push(code);
-        }
+      parents.forEach(p => {
+        const pName = SGG_CODE_MAP[p.parentCode];
+        if (!pName) { console.warn(`Unmapped parentCode: ${p.parentCode}`); return; }
+        
+        addOption(null, pName, null, false, true); // Create Header
+        addOption(p.parentCode, pName + ' 전체', getCount(p.parentCode), state.aptMicroRegion === p.parentCode);
+        
+        const children = [...p.children].sort((a,b) => (SGG_CODE_MAP[a]||'').localeCompare(SGG_CODE_MAP[b]||''));
+        children.forEach(cCode => {
+          const cName = SGG_CODE_MAP[cCode];
+          if (!cName) { console.warn(`Unmapped sggCode: ${cCode}`); return; }
+          const shortName = cName.replace(pName + ' ', '');
+          addOption(cCode, shortName, getCount(cCode), state.aptMicroRegion === cCode);
+        });
+        closeOptgroup();
       });
       
-      const allTops = [...standalone, ...Object.keys(parentMap)];
-      allTops.sort((a,b) => (SGG_NAMES[a]||'').localeCompare(SGG_NAMES[b]||''));
-      
-      allTops.forEach(topCode => {
-         if (standalone.includes(topCode)) {
-            if (!SGG_NAMES[topCode]) console.warn(`Unmapped sggCode: ${topCode}`);
-            addOption(topCode, SGG_NAMES[topCode] || '', state.aptMicroRegion === topCode);
-         } else {
-            const pName = SGG_NAMES[topCode];
-            if (!pName) {
-               console.warn(`Unmapped sggCode: ${topCode}`);
-               return;
-            }
-            addOption(null, pName, false, true);
-            addOption(topCode, pName + ' 전체', state.aptMicroRegion === topCode);
-            
-            const children = parentMap[topCode].sort((a,b) => (SGG_NAMES[a]||'').localeCompare(SGG_NAMES[b]||''));
-            children.forEach(cCode => {
-               const cName = SGG_NAMES[cCode];
-               if (!cName) {
-                  console.warn(`Unmapped sggCode: ${cCode}`);
-                  return;
-               }
-               const shortName = cName.replace(pName + ' ', '');
-               addOption(cCode, shortName, state.aptMicroRegion === cCode);
-            });
-            closeOptgroup();
-         }
-      });
+      if (standalones.length > 0) {
+        addOption(null, '일반 시·군', null, false, true);
+        processFlatNodes(standalones);
+        closeOptgroup();
+      }
+    } else {
+      // Flat tree
+      processFlatNodes(tree);
     }
-  } else if (macroName === '지방') {
-    const sidos = getAptSidoMatch(macroName, state.aptSubMacroRegion);
-    sidos.forEach(sido => {
-      if (!microMap[sido]) return;
-      addOption(null, SIDO_NAMES[sido], false, true);
-      addOption(sido, SIDO_NAMES[sido] + ' 전체', state.aptMicroRegion === sido);
-      
-      const sorted = Array.from(microMap[sido]).sort((a,b) => (SGG_NAMES[a]||'').localeCompare(SGG_NAMES[b]||''));
-      sorted.forEach(code => {
-        if(!SGG_NAMES[code]) console.warn(`Unmapped sggCode: ${code}`); addOption(code, SGG_NAMES[code] || '', state.aptMicroRegion === code);
-      });
-      closeOptgroup();
-    });
-  }
+    
+    if (isMultiSido) closeOptgroup();
+  });
   
   document.querySelector('.apt-micro-desktop').innerHTML = htmlDesktop;
   document.querySelector('.apt-micro-select').innerHTML = htmlMobile;
   
-  document.querySelectorAll('.apt-micro-desktop button').forEach(b => {
+  document.querySelectorAll('.apt-micro-desktop button:not(.disabled)').forEach(b => {
     b.addEventListener('click', () => {
       state.aptMicroRegion = b.dataset.micro;
       paint();
@@ -677,8 +788,23 @@ function renderApt(d){
      } else if (micro.length === 2) {
         filtered = filtered.filter(i => i.sidoCode === micro);
      } else if (micro.length === 5) {
-        if (macroName === '경기' && GYEONGGI_CITY_DISTRICTS[micro]) {
-           const allowedChildren = GYEONGGI_CITY_DISTRICTS[micro];
+        let isParent = false;
+        let allowedChildren = [];
+        
+        for (const sidoKey of Object.keys(OFFICIAL_REGION_TREE)) {
+           const tree = OFFICIAL_REGION_TREE[sidoKey];
+           if (Array.isArray(tree)) {
+              for (const node of tree) {
+                 if (node.type === 'parent' && node.parentCode === micro) {
+                    isParent = true;
+                    allowedChildren = node.children;
+                    break;
+                 }
+              }
+           }
+        }
+        
+        if (isParent) {
            filtered = filtered.filter(i => i.sggCode === micro || allowedChildren.includes(i.sggCode));
         } else {
            filtered = filtered.filter(i => i.sggCode === micro);
@@ -703,14 +829,11 @@ function renderApt(d){
        microName = state.aptMicroRegion;
      } else {
        const code = state.aptMicroRegion;
-       if (SGG_NAMES[code]) {
-         microName = SGG_NAMES[code];
-         if (state.aptMacroRegion === "경기" && !GYEONGGI_CITY_DISTRICTS[code]) {
-           microName = SGG_NAMES[code];
-         }
+       if (SGG_CODE_MAP[code]) {
+         microName = SGG_CODE_MAP[code];
          if (state.aptMacroRegion === "지방") {
            const sido = code.slice(0,2);
-           microName = (SIDO_NAMES[sido]||"") + " " + SGG_NAMES[code];
+           microName = (SIDO_NAMES[sido]||"") + " " + SGG_CODE_MAP[code];
          }
        }
      }
@@ -750,11 +873,11 @@ function renderApt(d){
       ? `<br><span style="font-size:0.75rem;color:var(--sub)">거래층 중앙값 ${i.currentFloorMedian}층</span>` 
       : "";
 
-    // 화면에 보여줄 이름 조합 (fallback to original item.region if SGG_NAMES misses)
+    // 화면에 보여줄 이름 조합 (fallback to original item.region if SGG_CODE_MAP misses)
     let regionDisp = i.region || i.sggCode;
-    if (SGG_NAMES[i.sggCode]) {
+    if (SGG_CODE_MAP[i.sggCode]) {
       const sidoDisp = SIDO_NAMES[i.sidoCode] || "";
-      regionDisp = (sidoDisp + " " + SGG_NAMES[i.sggCode]).trim();
+      regionDisp = (sidoDisp + " " + SGG_CODE_MAP[i.sggCode]).trim();
     }
 
     return `
