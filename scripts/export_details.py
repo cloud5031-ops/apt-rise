@@ -196,7 +196,7 @@ def export_details():
                 available_areas.add(r['exclusive_area'])
                 transactions.append({
                     "contractDate": r['deal_date'],
-                    "price": r['deal_amount'],
+                    "priceWon": r['deal_amount'],
                     "floor": r['floor'],
                     "exclusiveArea": r['exclusive_area'],
                     "areaGroup": r['area_group'],
@@ -214,6 +214,8 @@ def export_details():
                 geocode_updated = True
                 
             out_data = {
+                "schemaVersion": 2,
+                "priceUnit": "KRW",
                 "apartmentKey": apt_key,
                 "apartmentName": info["apartmentName"],
                 "sidoCode": info["sidoCode"],
@@ -223,9 +225,22 @@ def export_details():
                 "availableAreas": sorted(list(available_areas)),
                 "transactions": transactions
             }
-            if geo and geo.get("geocodeStatus") in ("valid", "ambiguous"):
-                out_data["lat"] = geo.get("latitude")
-                out_data["lng"] = geo.get("longitude")
+            if geo:
+                out_data["location"] = {
+                    "latitude": float(geo.get("latitude")) if geo.get("latitude") is not None else None,
+                    "longitude": float(geo.get("longitude")) if geo.get("longitude") is not None else None,
+                    "roadAddress": geo.get("roadAddress"),
+                    "jibunAddress": geo.get("jibunAddress"),
+                    "geocodeStatus": geo.get("geocodeStatus")
+                }
+            else:
+                out_data["location"] = {
+                    "latitude": None,
+                    "longitude": None,
+                    "roadAddress": None,
+                    "jibunAddress": None,
+                    "geocodeStatus": "missing"
+                }
 
             with open(out_path, 'w', encoding='utf-8') as f:
                 json.dump(out_data, f, ensure_ascii=False, indent=1)

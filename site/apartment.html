@@ -115,18 +115,39 @@
     window.location.href = 'index.html';
   }
   
-  function formatPrice(amount) {
-    if (!amount) return '-';
-    if (amount < 10000) return amount.toLocaleString();
-    const uk = Math.floor(amount / 10000);
-    const man = amount % 10000;
-    if (man === 0) return `${uk}억`;
-    return `${uk}억 ${man.toLocaleString()}만`;
+  function parseToValidDate(dStr) {
+    if (!dStr) return null;
+    let s = String(dStr).trim();
+    if (s.length === 8 && !s.includes('-') && !s.includes('.')) {
+      s = s.substring(0,4) + '-' + s.substring(4,6) + '-' + s.substring(6,8);
+    } else if (s.includes('.')) {
+      s = s.replace(/\./g, '-');
+    }
+    const d = new Date(s);
+    if (isNaN(d.getTime())) return null;
+    return d;
+  }
+
+  function formatDate(dStr) {
+    const d = parseToValidDate(dStr);
+    if (!d) return String(dStr);
+    return `${d.getFullYear()}.${(d.getMonth()+1).toString().padStart(2,'0')}.${d.getDate().toString().padStart(2,'0')}`;
   }
   
-  function formatDate(dStr) {
-    if (!dStr || dStr.length !== 8) return dStr;
-    return `${dStr.substring(0,4)}.${dStr.substring(4,6)}.${dStr.substring(6,8)}`;
+  function getPriceWon(t) {
+    if (t.priceWon !== undefined) return Number(t.priceWon);
+    if (t.price !== undefined && aptData.priceUnit === "KRW") return Number(t.price);
+    if (t.price !== undefined) return Number(t.price) * 10000;
+    return 0;
+  }
+
+  function formatPrice(priceWon) {
+    if (!priceWon || isNaN(priceWon) || priceWon <= 0) return "-";
+    let eok = Math.floor(priceWon / 100000000);
+    let man = Math.floor((priceWon % 100000000) / 10000);
+    if (eok > 0 && man > 0) return `${eok}억 ${man.toLocaleString()}만`;
+    if (eok > 0) return `${eok}억`;
+    return `${man.toLocaleString()}만`;
   }
   
   async function loadData() {
@@ -143,7 +164,7 @@
     const sgg = parts[0];
     
     try {
-      const res = await fetch(`/data/details/${sgg}/${aptKey}.json`);
+      const res = await fetch(`/data/details/${sgg}/${aptKey}.json?v=${new Date().getTime()}`);
       if (!res.ok) throw new Error("데이터 없음");
       aptData = await res.json();
       
@@ -243,8 +264,8 @@
       const dealTypeBadge = t.dealType === '직거래' ? `<span class="direct-deal">직거래</span>` : '';
       
       tr.innerHTML = `
-        <td>${formatDate(t.contractDate)}</td>
-        <td style="font-weight:600; color:var(--ink);">${formatPrice(t.price)}${dealTypeBadge}</td>
+        <td>${formatDate(t.contractDate || t.dealDate)}</td>
+        <td style="font-weight:600; color:var(--ink);">${formatPrice(getPriceWon(t))}${dealTypeBadge}</td>
         <td>${t.floor}층</td>
         <td>${t.exclusiveArea}㎡</td>
       `;
@@ -264,8 +285,14 @@
       if (e.target.dataset.target === 'tab-location') {
         loadKakaoMap();
         if (mapInst) {
-           setTimeout(() => mapInst.relayout(), 100);
-           mapInst.setCenter(new kakao.maps.LatLng(aptData.lat, aptData.lng));
+           setTimeout(() => {
+               mapInst.relayout();
+               let l1 = null, l2 = null;
+               if (aptData.location && Number.isFinite(Number(aptData.location.latitude))) {
+                   l1 = Number(aptData.location.latitude); l2 = Number(aptData.location.longitude);
+               } else { l1 = Number(aptData.lat); l2 = Number(aptData.lng); }
+               mapInst.setCenter(new kakao.maps.LatLng(l1, l2));
+           }, 100);
         }
       }
     });
@@ -317,17 +344,36 @@
        return;
     }
     
-    // 1. Scatter Chart Data
-    // We will use integer format YYYYMMDD for x-axis sorting, but for display we use index or parse date.
-    // Chart.js without date adapter: Use category x-axis or linear x-axis (timestamp).
-    // Let's use linear timestamp for X.
-    const parseDate = (dStr) => new Date(dStr.substring(0,4), parseInt(dStr.substring(4,6))-1, dStr.substring(6,8)).getTime();
+    // 1. Chart Data Prep
+    let minPrice = Infinity, maxPrice = -Infinity;
+    const scatterData = [];
+    const monthlyGroups = {};
     
-    const scatterData = validTrades.map(t => ({
-      x: parseDate(t.contractDate),
-      y: t.price,
-      raw: t
-    }));
+    validTrades.forEach(t => {
+      const p = getPriceWon(t);
+      const d = parseToValidDate(t.contractDate || t.dealDate);
+      
+      if (!d || isNaN(p) || p <= 0 || t.cancellationStatus === 'CANCELLED') {
+         if (!d) console.warn("Invalid date:", t.contractDate);
+         return;
+      }
+      
+      scatterData.push({ x: d.getTime(), y: p, raw: t });
+      if (p < minPrice) minPrice = p;
+      if (p > maxPrice) maxPrice = p;
+      
+      const mKey = `${d.getFullYear()}-${(d.getMonth()+1).toString().padStart(2,'0')}`;
+      if(!monthlyGroups[mKey]) monthlyGroups[mKey] = [];
+      monthlyGroups[mKey].push(p);
+    });
+    
+    if (scatterData.length === 0) {
+      document.getElementById('chart-container').innerHTML = '<div style="text-align:center; padding:40px; color:var(--sub);">선택한 평형의 유효한 거래 데이터가 없습니다.</div>';
+      return;
+    }
+    
+    const yMax = maxPrice * 1.05;
+    const yMin = minPrice * 0.95;
     
     const agencyTrades = scatterData.filter(d => d.raw.dealType !== '직거래');
     const directTrades = scatterData.filter(d => d.raw.dealType === '직거래');
@@ -360,9 +406,9 @@
         plugins: {
           tooltip: {
             callbacks: {
-              label: (ctx) => {
+              label: function(ctx) {
                 const t = ctx.raw.raw;
-                return `${formatDate(t.contractDate)} | ${formatPrice(t.price)} | ${t.floor}층 | ${t.dealType}`;
+                return `${formatDate(t.contractDate || t.dealDate)} | ${formatPrice(getPriceWon(t))} | ${t.floor}층 | ${t.dealType}`;
               }
             }
           }
@@ -378,10 +424,11 @@
             }
           },
           y: {
+            max: yMax,
+            min: yMin,
             ticks: {
               callback: function(val) {
-                if (val >= 10000) return Math.floor(val/10000) + '억';
-                return val.toLocaleString();
+                return formatPrice(val);
               }
             }
           }
@@ -390,14 +437,6 @@
     });
     
     // 2. Monthly Median Chart Data
-    // Group by YYYYMM
-    const monthlyGroups = {};
-    validTrades.forEach(t => {
-      const ym = t.contractDate.substring(0,6);
-      if(!monthlyGroups[ym]) monthlyGroups[ym] = [];
-      monthlyGroups[ym].push(t.price);
-    });
-    
     const months = Object.keys(monthlyGroups).sort();
     const medians = [];
     const volumes = [];
@@ -444,6 +483,12 @@
         plugins: {
           tooltip: {
             callbacks: {
+              label: (ctx) => {
+                if (ctx.datasetIndex === 0) {
+                    return `실거래 중위가격: ${formatPrice(ctx.raw)}`;
+                }
+                return `거래 건수: ${ctx.raw}건`;
+              },
               afterLabel: (ctx) => {
                 if (ctx.datasetIndex === 0) {
                   // Median price tooltip
@@ -468,22 +513,27 @@
         scales: {
           y: {
             type: 'linear',
+            display: true,
             position: 'left',
+            max: yMax,
+            min: yMin,
             ticks: {
               callback: function(val) {
-                if (val >= 10000) return Math.floor(val/10000) + '억';
-                return val.toLocaleString();
+                return formatPrice(val);
               }
             }
           },
           y1: {
             type: 'linear',
+            display: true,
             position: 'right',
             grid: { drawOnChartArea: false },
-            ticks: { stepSize: 1 }
+            min: 0,
+            ticks: {
+              stepSize: 1
+            }
           }
         }
-      }
     });
   }
 
@@ -514,7 +564,16 @@
        return;
     }
 
-    if (!aptData.lat || !aptData.lng) {
+    let lat = null, lng = null;
+    if (aptData.location && Number.isFinite(Number(aptData.location.latitude))) {
+        lat = Number(aptData.location.latitude);
+        lng = Number(aptData.location.longitude);
+    } else if (Number.isFinite(Number(aptData.lat))) {
+        lat = Number(aptData.lat);
+        lng = Number(aptData.lng);
+    }
+
+    if (!lat || !lng) {
       showMapError('coordinates_missing', '지도에 표시할 단지 좌표 정보가 없습니다.');
       return;
     }
@@ -528,7 +587,7 @@
       kakao.maps.load(() => {
         try {
             const container = document.getElementById('map-container');
-            const pos = new kakao.maps.LatLng(aptData.lat, aptData.lng);
+            const pos = new kakao.maps.LatLng(lat, lng);
             const options = { center: pos, level: 3 };
             mapInst = new kakao.maps.Map(container, options);
             
