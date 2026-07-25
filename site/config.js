@@ -1,3 +1,3 @@
 window.APP_CONFIG = {
-  kakaoMapJavaScriptKey: "__KAKAO_JAVASCRIPT_KEY__"
+  kakaoMapJavaScriptKey: "0260e8d9341558b69fa60b424271ce48"
 };
