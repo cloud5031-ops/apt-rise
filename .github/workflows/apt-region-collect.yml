@@ -52,6 +52,7 @@ jobs:
 
       - name: Compute Apt Rankings (Shard mode)
         run: python scripts/compute_apt_rankings.py --region-group ${{ inputs.region_group }}
+          python scripts/export_details.py --region-group ${{ inputs.region_group }} || true
 
       - name: Push Shard JSON
         run: |

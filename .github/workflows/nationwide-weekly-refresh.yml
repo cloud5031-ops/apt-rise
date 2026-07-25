@@ -44,6 +44,7 @@ jobs:
           python scripts/db.py
           python scripts/collect_trades.py --region-group seoul
           python scripts/compute_apt_rankings.py --region-group seoul
+          python scripts/export_details.py --region-group seoul || true
 
       - name: Collect and Compute (Gyeonggi Incheon)
         env:
@@ -53,6 +54,7 @@ jobs:
           python scripts/db.py
           python scripts/collect_trades.py --region-group gyeonggi_incheon
           python scripts/compute_apt_rankings.py --region-group gyeonggi_incheon
+          python scripts/export_details.py --region-group gyeonggi_incheon || true
 
       - name: Collect and Compute (Metro)
         env:
@@ -62,6 +64,7 @@ jobs:
           python scripts/db.py
           python scripts/collect_trades.py --region-group metro
           python scripts/compute_apt_rankings.py --region-group metro
+          python scripts/export_details.py --region-group metro || true
 
       - name: Collect and Compute (Central)
         env:
@@ -71,6 +74,7 @@ jobs:
           python scripts/db.py
           python scripts/collect_trades.py --region-group central
           python scripts/compute_apt_rankings.py --region-group central
+          python scripts/export_details.py --region-group central || true
 
       - name: Collect and Compute (South)
         env:
@@ -80,14 +84,13 @@ jobs:
           python scripts/db.py
           python scripts/collect_trades.py --region-group south
           python scripts/compute_apt_rankings.py --region-group south
+          python scripts/export_details.py --region-group south || true
 
       - name: Validate Shards
         run: python scripts/validate_shard.py
 
       - name: Merge Shards
         run: python scripts/merge_shards.py
-      - name: Export Details
-        run: python scripts/export_details.py || true
 
       - name: Validate JSON
         run: python scripts/validate_json.py
@@ -98,6 +101,7 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data/shards/
           git add site/data/apt_rankings_*.json
+          git add site/data/details/*/*.json
           git commit -m "Update nationwide apt rankings (Weekly Rollover)" || echo "No changes to commit"
           
           # 재시도 루프 (최대 3회)

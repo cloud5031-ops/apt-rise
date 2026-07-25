@@ -50,6 +50,7 @@ jobs:
 
       - name: Compute Apt Rankings (Seoul)
         run: python scripts/compute_apt_rankings.py --region-group seoul --stable-month ${{ steps.parse_manifest.outputs.stable_month }} --provisional-month ${{ steps.parse_manifest.outputs.provisional_month }}
+          python scripts/export_details.py --region-group seoul --stable-month ${{ steps.parse_manifest.outputs.stable_month }} --provisional-month ${{ steps.parse_manifest.outputs.provisional_month }} || true
 
       - name: Collect Trades (Gyeonggi Incheon)
         env:
@@ -61,14 +62,13 @@ jobs:
 
       - name: Compute Apt Rankings (Gyeonggi Incheon)
         run: python scripts/compute_apt_rankings.py --region-group gyeonggi_incheon --stable-month ${{ steps.parse_manifest.outputs.stable_month }} --provisional-month ${{ steps.parse_manifest.outputs.provisional_month }}
+          python scripts/export_details.py --region-group gyeonggi_incheon --stable-month ${{ steps.parse_manifest.outputs.stable_month }} --provisional-month ${{ steps.parse_manifest.outputs.provisional_month }} || true
 
       - name: Validate Shards
         run: python scripts/validate_shard.py
 
       - name: Merge Shards
         run: python scripts/merge_shards.py --stable-month ${{ steps.parse_manifest.outputs.stable_month }} --provisional-month ${{ steps.parse_manifest.outputs.provisional_month }}
-      - name: Export Details
-        run: python scripts/export_details.py || true
 
       - name: Validate JSON
         run: python scripts/validate_json.py
@@ -80,6 +80,7 @@ jobs:
           git add data/shards/*/seoul.json
           git add data/shards/*/gyeonggi_incheon.json
           git add site/data/apt_rankings_*.json
+          git add site/data/details/*/*.json
           git commit -m "Update capital apt rankings" || echo "No changes to commit"
           
           # 재시도 루프 (최대 3회)

@@ -1005,9 +1005,40 @@ function init() {
     try {
       const parsed = JSON.parse(savedState);
       Object.assign(state, parsed);
+      
       setTimeout(() => {
-        window.scrollTo(0, parsed.scrollPos || 0);
+         window.scrollTo(0, parsed.scrollPos || 0);
       }, 300);
+      
+      const radioMode = document.querySelector(`input[name="dataMode"][value="${state.dataMode}"]`);
+      if (radioMode) radioMode.checked = true;
+      
+      const radioFilter = document.querySelector(`input[name="confFilter"][value="${state.confFilter}"]`);
+      if (radioFilter) radioFilter.checked = true;
+      
+      document.querySelectorAll('#main-tabs button').forEach(b => {
+         if (b.dataset.tab === state.tab) b.classList.add('active');
+         else b.classList.remove('active');
+      });
+      document.querySelectorAll('#region-sub-nav button').forEach(b => {
+         if (b.dataset.subtab === state.regionSubTab) {
+             b.classList.add('active');
+             b.setAttribute('aria-selected', 'true');
+         } else {
+             b.classList.remove('active');
+             b.setAttribute('aria-selected', 'false');
+         }
+      });
+      document.querySelectorAll('#apt-sub-nav button').forEach(b => {
+         if (b.dataset.subtab === state.aptSubTab) {
+             b.classList.add('active');
+             b.setAttribute('aria-selected', 'true');
+         } else {
+             b.classList.remove('active');
+             b.setAttribute('aria-selected', 'false');
+         }
+      });
+      
     } catch(e) {}
     sessionStorage.removeItem('apt_state');
   }

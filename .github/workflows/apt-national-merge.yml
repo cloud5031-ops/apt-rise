@@ -35,8 +35,6 @@ jobs:
 
       - name: Merge Shards
         run: python scripts/merge_shards.py
-      - name: Export Details
-        run: python scripts/export_details.py || true
 
       - name: Validate JSON
         run: python scripts/validate_json.py
@@ -46,6 +44,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add site/data/apt_rankings_*.json
+          git add site/data/details/*/*.json
           git commit -m "Update national apt rankings" || echo "No changes to commit"
           
           # 재시도 루프 (최대 3회)
