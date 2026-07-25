@@ -114,6 +114,23 @@
 
   <div id="selected-region-info" class="selected-info" style="display:none;"></div>
 
+  <nav role="tablist" id="apt-sub-nav" class="sub-nav" style="display:none;">
+    <button role="tab" aria-selected="true" data-subtab="national">전국 상승순위</button>
+    <button role="tab" aria-selected="false" data-subtab="local">지역별 보기</button>
+  </nav>
+
+  <div id="apt-macro-container" class="chip-container" style="display:none;"></div>
+  <div id="apt-submacro-container" class="chip-container" style="display:none;"></div>
+  
+  <div id="apt-micro-container" class="micro-container" style="display:none;">
+    <div class="apt-micro-desktop hide-m"></div>
+    <div class="apt-micro-mobile hide-d">
+      <select class="apt-micro-select micro-select"></select>
+    </div>
+  </div>
+
+  <div id="apt-selected-region-info" class="selected-info" style="display:none;"></div>
+
   <div id="aptMode" class="mode-switch" style="display:none;">
     <label>
       <input type="radio" name="dataMode" value="stable" checked> 
@@ -214,6 +231,8 @@ const state = {
   microRegion: "서울 전체"
 };
 
+const SGG_NAMES = {"11110": "종로구", "11140": "중구", "11170": "용산구", "11200": "성동구", "11215": "광진구", "11230": "동대문구", "11260": "중랑구", "11290": "성북구", "11305": "강북구", "11320": "도봉구", "11350": "노원구", "11380": "은평구", "11410": "서대문구", "11440": "마포구", "11470": "양천구", "11500": "강서구", "11530": "구로구", "11545": "금천구", "11560": "영등포구", "11590": "동작구", "11620": "관악구", "11650": "서초구", "11680": "강남구", "11710": "송파구", "11740": "강동구", "26110": "중구", "26140": "서구", "26170": "동구", "26200": "영도구", "26230": "부산진구", "26260": "동래구", "26290": "남구", "26320": "북구", "26350": "해운대구", "26380": "사하구", "26410": "금정구", "26440": "강서구", "26470": "연제구", "26500": "수영구", "26530": "사상구", "26710": "기장군", "27110": "중구", "27140": "동구", "27170": "서구", "27200": "남구", "27230": "북구", "27260": "수성구", "27290": "달서구", "27710": "달성군", "27720": "군위군", "28110": "중구", "28140": "동구", "28177": "미추홀구", "28185": "연수구", "28200": "남동구", "28237": "부평구", "28245": "계양구", "28260": "서구", "28710": "강화군", "28720": "옹진군", "29110": "동구", "29140": "서구", "29155": "남구", "29170": "북구", "29200": "광산구", "30110": "동구", "30140": "중구", "30170": "서구", "30200": "유성구", "30230": "대덕구", "31110": "중구", "31140": "남구", "31170": "동구", "31200": "북구", "31710": "울주군", "41110": "수원시", "41111": "수원시 장안구", "41113": "수원시 권선구", "41115": "수원시 팔달구", "41117": "수원시 영통구", "41130": "성남시", "41131": "성남시 수정구", "41133": "성남시 중원구", "41135": "성남시 분당구", "41150": "의정부시", "41170": "안양시", "41171": "안양시 만안구", "41173": "안양시 동안구", "41190": "부천시", "41210": "광명시", "41220": "평택시", "41250": "동두천시", "41270": "안산시", "41271": "안산시 상록구", "41273": "안산시 단원구", "41280": "고양시", "41281": "고양시 덕양구", "41285": "고양시 일산동구", "41287": "고양시 일산서구", "41290": "과천시", "41310": "구리시", "41360": "남양주시", "41370": "오산시", "41390": "시흥시", "41410": "군포시", "41430": "의왕시", "41450": "하남시", "41460": "용인시", "41461": "용인시 처인구", "41463": "용인시 기흥구", "41465": "용인시 수지구", "41480": "파주시", "41500": "이천시", "41550": "안성시", "41570": "김포시", "41590": "화성시", "41610": "광주시", "41630": "양주시", "41650": "포천시", "41670": "여주시", "41800": "연천군", "41820": "가평군", "41830": "양평군", "43110": "청주시", "43111": "청주시 상당구", "43112": "청주시 서원구", "43113": "청주시 흥덕구", "43114": "청주시 청원구", "43130": "충주시", "43150": "제천시", "43720": "보은군", "43730": "옥천군", "43740": "영동군", "43745": "증평군", "43750": "진천군", "43760": "괴산군", "43770": "음성군", "43800": "단양군", "44130": "천안시", "44131": "천안시 동남구", "44133": "천안시 서북구", "44150": "공주시", "44180": "보령시", "44200": "아산시", "44210": "서산시", "44230": "논산시", "44250": "계룡시", "44270": "당진시", "44710": "금산군", "44760": "부여군", "44770": "서천군", "44790": "청양군", "44800": "홍성군", "44810": "예산군", "44825": "태안군", "45110": "전주시", "45111": "전주시 완산구", "45113": "전주시 덕진구", "45130": "군산시", "45140": "익산시", "45180": "정읍시", "45190": "남원시", "45210": "김제시", "45710": "완주군", "45720": "진안군", "45730": "무주군", "45740": "장수군", "45750": "임실군", "45770": "순창군", "45790": "고창군", "45800": "부안군", "46110": "목포시", "46130": "여수시", "46150": "순천시", "46170": "나주시", "46230": "광양시", "46710": "담양군", "46720": "곡성군", "46730": "구례군", "46770": "고흥군", "46780": "보성군", "46790": "화순군", "46800": "장흥군", "46810": "강진군", "46820": "해남군", "46830": "영암군", "46840": "무안군", "46860": "함평군", "46870": "영광군", "46880": "장성군", "46890": "완도군", "46900": "진도군", "46910": "신안군", "47110": "포항시", "47111": "포항시 남구", "47113": "포항시 북구", "47130": "경주시", "47150": "김천시", "47170": "안동시", "47190": "구미시", "47210": "영주시", "47230": "영천시", "47250": "상주시", "47280": "문경시", "47290": "경산시", "47720": "군위군", "47730": "의성군", "47750": "청송군", "47760": "영양군", "47770": "영덕군", "47820": "청도군", "47830": "고령군", "47840": "성주군", "47850": "칠곡군", "47900": "예천군", "47920": "봉화군", "47930": "울진군", "47940": "울릉군", "48120": "창원시", "48121": "창원시 의창구", "48123": "창원시 성산구", "48125": "창원시 마산합포구", "48127": "창원시 마산회원구", "48129": "창원시 진해구", "48170": "진주시", "48220": "통영시", "48240": "사천시", "48250": "김해시", "48270": "밀양시", "48310": "거제시", "48330": "양산시", "48720": "의령군", "48730": "함안군", "48740": "창녕군", "48820": "고성군", "48840": "남해군", "48850": "하동군", "48860": "산청군", "48870": "함양군", "48880": "거창군", "48890": "합천군", "50110": "제주시", "50130": "서귀포시", "51110": "춘천시", "51130": "원주시", "51150": "강릉시", "51170": "동해시", "51190": "태백시", "51210": "속초시", "51230": "삼척시", "51720": "홍천군", "51730": "횡성군", "51750": "영월군", "51760": "평창군", "51770": "정선군", "51780": "철원군", "51790": "화천군", "51800": "양구군", "51810": "인제군", "51820": "고성군", "51830": "양양군"};
+
 const MACRO_GROUPS = [
   { id: "서울", match: ["서울"] },
   { id: "경기", match: ["경기"] },
@@ -224,6 +243,179 @@ const MACRO_GROUPS = [
   { id: "경상", match: ["부산", "대구", "울산", "경북", "경남"] },
   { id: "제주", match: ["제주"] }
 ];
+
+
+const APT_MACRO = ['서울', '경기', '인천', '지방'];
+const APT_SUBMACRO = {
+  '지방': [
+    { id: '강원', match: ['51'] },
+    { id: '충청', match: ['30', '36', '43', '44'] },
+    { id: '전라', match: ['29', '45', '46'] },
+    { id: '경상', match: ['26', '27', '31', '47', '48'] },
+    { id: '제주', match: ['50'] }
+  ]
+};
+const SIDO_NAMES = {
+  '11': '서울', '26': '부산', '27': '대구', '28': '인천', '29': '광주',
+  '30': '대전', '31': '울산', '36': '세종', '41': '경기', '43': '충북',
+  '44': '충남', '45': '전북', '46': '전남', '47': '경북', '48': '경남',
+  '50': '제주', '51': '강원'
+};
+
+function getAptSidoMatch(macroId, subMacroId) {
+  if (macroId === '서울') return ['11'];
+  if (macroId === '경기') return ['41'];
+  if (macroId === '인천') return ['28'];
+  if (macroId === '지방') {
+    const sub = APT_SUBMACRO['지방'].find(s => s.id === subMacroId);
+    return sub ? sub.match : [];
+  }
+  return [];
+}
+
+function getAptMicroRegions(macroId, subMacroId) {
+  const sidos = getAptSidoMatch(macroId, subMacroId);
+  const mode = document.querySelector('input[name="dataMode"]:checked').value;
+  const items = (mode === 'provisional' ? state.aptProvisional : state.aptStable)?.items || [];
+  
+  const microMap = {};
+  items.forEach(i => {
+    if (!sidos.includes(i.sidoCode)) return;
+    if (!microMap[i.sidoCode]) microMap[i.sidoCode] = new Set();
+    microMap[i.sidoCode].add(i.sggCode);
+    
+    if (i.sidoCode === '41') {
+       const parentCode = i.sggCode.slice(0,4) + '0';
+       if (parentCode !== i.sggCode && SGG_NAMES[parentCode]) {
+         microMap[i.sidoCode].add(parentCode);
+       }
+    }
+  });
+  return microMap;
+}
+
+function renderAptMacroRegions() {
+  document.getElementById('apt-macro-container').innerHTML = APT_MACRO.map(m => 
+    `<button class="chip" aria-selected="${m === state.aptMacroRegion}" data-macro="${m}">${m}</button>`
+  ).join('');
+  
+  document.querySelectorAll('#apt-macro-container .chip').forEach(b => {
+    b.addEventListener('click', () => {
+      state.aptMacroRegion = b.dataset.macro;
+      if (state.aptMacroRegion === '지방') {
+        state.aptSubMacroRegion = '경상';
+        state.aptMicroRegion = '경상 전체';
+      } else {
+        state.aptMicroRegion = state.aptMacroRegion + ' 전체';
+      }
+      paint();
+    });
+  });
+
+  if (state.aptMacroRegion === '지방') {
+    document.getElementById('apt-submacro-container').style.display = 'flex';
+    document.getElementById('apt-submacro-container').innerHTML = APT_SUBMACRO['지방'].map(m => 
+      `<button class="chip" aria-selected="${m.id === state.aptSubMacroRegion}" data-submacro="${m.id}">${m.id}</button>`
+    ).join('');
+    
+    document.querySelectorAll('#apt-submacro-container .chip').forEach(b => {
+      b.addEventListener('click', () => {
+        state.aptSubMacroRegion = b.dataset.submacro;
+        state.aptMicroRegion = state.aptSubMacroRegion + ' 전체';
+        paint();
+      });
+    });
+  } else {
+    document.getElementById('apt-submacro-container').style.display = 'none';
+  }
+}
+
+function renderAptMicroRegions() {
+  const microMap = getAptMicroRegions(state.aptMacroRegion, state.aptSubMacroRegion);
+  
+  let htmlDesktop = '';
+  let htmlMobile = '';
+  
+  const addOption = (val, label, isSelected, isHeader=false) => {
+    if (isHeader) {
+      htmlDesktop += `<div style="width:100%; margin-top:12px; font-size:0.8rem; color:var(--sub); font-weight:600; padding-left:4px;">${label}</div>`;
+      htmlMobile += `<optgroup label="${label}">`;
+    } else {
+      const selectedAttrDesk = isSelected ? 'aria-selected="true"' : 'aria-selected="false"';
+      const selectedAttrMob = isSelected ? 'selected' : '';
+      htmlDesktop += `<button class="chip" ${selectedAttrDesk} data-micro="${val}">${label}</button>`;
+      htmlMobile += `<option value="${val}" ${selectedAttrMob}>${label}</option>`;
+    }
+  };
+  const closeOptgroup = () => { htmlMobile += `</optgroup>`; };
+  
+  const macroName = state.aptMacroRegion;
+  const topName = macroName === '지방' ? state.aptSubMacroRegion : macroName;
+  addOption(topName + ' 전체', topName + ' 전체', state.aptMicroRegion === topName + ' 전체');
+
+  if (macroName === '서울' || macroName === '인천') {
+    const sido = macroName === '서울' ? '11' : '28';
+    if (microMap[sido]) {
+      const sorted = Array.from(microMap[sido]).sort((a,b) => (SGG_NAMES[a]||'').localeCompare(SGG_NAMES[b]||''));
+      sorted.forEach(code => {
+        addOption(code, SGG_NAMES[code] || code, state.aptMicroRegion === code);
+      });
+    }
+  } else if (macroName === '경기') {
+    if (microMap['41']) {
+      const groups = {};
+      Array.from(microMap['41']).forEach(code => {
+        const pCode = code.slice(0,4) + '0';
+        if (!groups[pCode]) groups[pCode] = [];
+        groups[pCode].push(code);
+      });
+      const sortedParents = Object.keys(groups).sort((a,b) => (SGG_NAMES[a]||'').localeCompare(SGG_NAMES[b]||''));
+      sortedParents.forEach(pCode => {
+        const children = groups[pCode].sort((a,b) => (SGG_NAMES[a]||'').localeCompare(SGG_NAMES[b]||''));
+        if (children.length === 1 && children[0] === pCode) {
+           addOption(pCode, SGG_NAMES[pCode], state.aptMicroRegion === pCode);
+        } else {
+           addOption(null, SGG_NAMES[pCode], false, true);
+           addOption(pCode, SGG_NAMES[pCode] + ' 전체', state.aptMicroRegion === pCode);
+           children.forEach(cCode => {
+             if (cCode === pCode) return;
+             const shortName = (SGG_NAMES[cCode]||'').replace((SGG_NAMES[pCode]||'') + ' ', '');
+             addOption(cCode, shortName, state.aptMicroRegion === cCode);
+           });
+           closeOptgroup();
+        }
+      });
+    }
+  } else if (macroName === '지방') {
+    const sidos = getAptSidoMatch(macroName, state.aptSubMacroRegion);
+    sidos.forEach(sido => {
+      if (!microMap[sido]) return;
+      addOption(null, SIDO_NAMES[sido], false, true);
+      addOption(sido, SIDO_NAMES[sido] + ' 전체', state.aptMicroRegion === sido);
+      
+      const sorted = Array.from(microMap[sido]).sort((a,b) => (SGG_NAMES[a]||'').localeCompare(SGG_NAMES[b]||''));
+      sorted.forEach(code => {
+        addOption(code, SGG_NAMES[code] || code, state.aptMicroRegion === code);
+      });
+      closeOptgroup();
+    });
+  }
+  
+  document.querySelector('.apt-micro-desktop').innerHTML = htmlDesktop;
+  document.querySelector('.apt-micro-select').innerHTML = htmlMobile;
+  
+  document.querySelectorAll('.apt-micro-desktop button').forEach(b => {
+    b.addEventListener('click', () => {
+      state.aptMicroRegion = b.dataset.micro;
+      paint();
+    });
+  });
+}
+
+document.querySelector('.apt-micro-select').addEventListener('change', (e) => {
+  state.aptMicroRegion = e.target.value;
+  paint();
+});
 
 const won = v => {
   if (v == null || Number.isNaN(v)) return "–";
@@ -412,12 +604,77 @@ function renderApt(d){
   const { baseStr, curStr } = formatPeriod(d.referenceMonth);
   const filterVal = document.querySelector('input[name="confFilter"]:checked').value;
   
-  let normalizedItems = d.items.map(normalizeAptRankingItem);
+  let filtered = d.items.map(normalizeAptRankingItem);
   
-  if(filterVal === 'nowarn') normalizedItems = normalizedItems.filter(i => !i.compositionWarning);
-  if(filterVal === 'medup') normalizedItems = normalizedItems.filter(i => i.confidence === 'high' || i.confidence === 'medium');
+  // 1. 지역 필터링
+  if (state.aptSubTab === 'local') {
+     const macroName = state.aptMacroRegion;
+     const topName = macroName === '지방' ? state.aptSubMacroRegion : macroName;
+     const micro = state.aptMicroRegion;
+     
+     if (micro === topName + ' 전체') {
+        const allowedSidos = getAptSidoMatch(macroName, state.aptSubMacroRegion);
+        filtered = filtered.filter(i => allowedSidos.includes(i.sidoCode));
+     } else if (micro.length === 2) {
+        filtered = filtered.filter(i => i.sidoCode === micro);
+     } else if (micro.length === 5) {
+        if (macroName === '경기' && micro.endsWith('0')) {
+           filtered = filtered.filter(i => i.sggCode.startsWith(micro.slice(0,4)));
+        } else {
+           filtered = filtered.filter(i => i.sggCode === micro);
+        }
+     }
+  }
 
-  const rows = normalizedItems.slice(0,100).map(i=>{
+  // 2. 등급 및 경고 필터링
+  if(filterVal === 'nowarn') filtered = filtered.filter(i => !i.compositionWarning);
+  if(filterVal === 'medup') filtered = filtered.filter(i => i.confidence === 'high' || i.confidence === 'medium');
+
+  if(filtered.length === 0) return `<p class="empty">선택한 지역과 조건에 해당하는 아파트 순위가 없습니다.</p>`;
+
+  // 3. 지역 정보 텍스트 표시
+  const infoTxtElem = document.getElementById("apt-selected-region-info");
+  if (state.aptSubTab === "national") {
+     infoTxtElem.style.display = "none";
+  } else {
+     infoTxtElem.style.display = "block";
+     let microName = "";
+     if (state.aptMicroRegion.endsWith(" 전체")) {
+       microName = state.aptMicroRegion;
+     } else {
+       const code = state.aptMicroRegion;
+       if (SGG_NAMES[code]) {
+         microName = SGG_NAMES[code];
+         if (state.aptMacroRegion === "경기" && !code.endsWith("0")) {
+           microName = SGG_NAMES[code];
+         }
+         if (state.aptMacroRegion === "지방") {
+           const sido = code.slice(0,2);
+           microName = (SIDO_NAMES[sido]||"") + " " + SGG_NAMES[code];
+         }
+       }
+     }
+     
+     let fullText = `선택 지역: `;
+     if (microName === state.aptMacroRegion + " 전체") {
+        fullText += microName;
+     } else if (state.aptMacroRegion === "지방") {
+        if (microName === state.aptSubMacroRegion + " 전체") {
+            fullText += `지방 · ${microName}`;
+        } else {
+            fullText += `지방 · ${state.aptSubMacroRegion} · ${microName}`;
+        }
+     } else {
+        fullText += `${state.aptMacroRegion} · ${microName}`;
+     }
+     fullText += ` <span style="color:var(--sub); font-weight:normal; margin-left:8px;">(검색 결과 ${filtered.length}개 단지·면적 그룹)</span>`;
+     infoTxtElem.innerHTML = fullText;
+  }
+
+  // 4. 순위 재계산 (상승률 내림차순 정렬 후 순위 부여)
+  filtered.sort((a,b) => b.riseRate - a.riseRate);
+
+  const rows = filtered.slice(0,100).map((i, idx)=>{
     const exact = i.exactAreas && i.exactAreas.length > 0 ? i.exactAreas.join(', ') : "";
     const warnHtml = i.compositionWarning ? `<span class="warn-icon" tabindex="0" data-reasons="${(i.warnings||[]).join('<br>')}">⚠️</span>` : "";
     const dtInfo = (i.baselineDirectTradeCount || i.currentDirectTradeCount) ? 
@@ -433,10 +690,17 @@ function renderApt(d){
       ? `<br><span style="font-size:0.75rem;color:var(--sub)">거래층 중앙값 ${i.currentFloorMedian}층</span>` 
       : "";
 
+    // 화면에 보여줄 이름 조합 (fallback to original item.region if SGG_NAMES misses)
+    let regionDisp = i.region || i.sggCode;
+    if (SGG_NAMES[i.sggCode]) {
+      const sidoDisp = SIDO_NAMES[i.sidoCode] || "";
+      regionDisp = (sidoDisp + " " + SGG_NAMES[i.sggCode]).trim();
+    }
+
     return `
-    <tr><td>${i.rank}</td>
+    <tr><td>${idx + 1}</td>
     <td class="name">
-      <div style="font-size:0.8rem;color:var(--sub)">${i.region || i.sggCode}</div>
+      <div style="font-size:0.8rem;color:var(--sub)">${regionDisp}</div>
       <b>${i.apartmentName}</b> ${areaText}${exactHtml} ${warnHtml}
       ${dtInfo}
     </td>
@@ -453,7 +717,7 @@ function renderApt(d){
     </tr>`;
   }).join("");
   
-  if(!rows) return `<p class="empty">현재 조건에 해당하는 아파트 순위 결과가 없습니다.</p>`;
+  if(!rows) return `<p class="empty">선택한 지역과 조건에 해당하는 아파트 순위가 없습니다.</p>`;
 
   return `<table><thead><tr><th>순위</th><th>단지</th>
     <th class="hide-m">기준가<br><span style="font-weight:normal;font-size:0.75rem">${baseStr}</span></th>
@@ -477,6 +741,12 @@ function paint(){
   if (state.tab === "region") {
     document.getElementById("aptMode").style.display = "none";
     document.getElementById("aptFilters").style.display = "none";
+    document.getElementById("apt-sub-nav").style.display = "none";
+    document.getElementById("apt-macro-container").style.display = "none";
+    document.getElementById("apt-submacro-container").style.display = "none";
+    document.getElementById("apt-micro-container").style.display = "none";
+    document.getElementById("apt-selected-region-info").style.display = "none";
+    
     document.getElementById("region-sub-nav").style.display = "flex";
     
     if (state.regionSubTab === "national") {
@@ -505,6 +775,22 @@ function paint(){
     document.getElementById("micro-container").style.display = "none";
     document.getElementById("selected-region-info").style.display = "none";
     
+    document.getElementById("apt-sub-nav").style.display = "flex";
+    
+    if (state.aptSubTab === "national") {
+       document.getElementById("apt-macro-container").style.display = "none";
+       document.getElementById("apt-submacro-container").style.display = "none";
+       document.getElementById("apt-micro-container").style.display = "none";
+       document.getElementById("apt-selected-region-info").style.display = "none";
+    } else {
+       document.getElementById("apt-macro-container").style.display = "flex";
+       document.getElementById("apt-micro-container").style.display = "block";
+       document.getElementById("apt-selected-region-info").style.display = "block";
+       
+       renderAptMacroRegions();
+       renderAptMicroRegions();
+    }
+    
     const mode = document.querySelector('input[name="dataMode"]:checked').value;
     const isProvisional = mode === "provisional";
     const d = isProvisional ? state.aptProvisional : state.aptStable;
@@ -522,6 +808,12 @@ document.querySelectorAll("#region-sub-nav button").forEach(b=>b.addEventListene
   document.querySelectorAll("#region-sub-nav button").forEach(x=>x.setAttribute("aria-selected", x===b));
   state.regionSubTab = b.dataset.subtab; paint();
 }));
+
+document.querySelectorAll("#apt-sub-nav button").forEach(b=>b.addEventListener("click",()=>{
+  document.querySelectorAll("#apt-sub-nav button").forEach(x=>x.setAttribute("aria-selected", x===b));
+  state.aptSubTab = b.dataset.subtab; paint();
+}));
+
 
 (async()=>{
   // 지역 랭킹 로드
