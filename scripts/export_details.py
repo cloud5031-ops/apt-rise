@@ -2,6 +2,7 @@ import os
 import json
 import sqlite3
 import argparse
+import requests
 import config
 from utils import get_dynamic_months
 
@@ -17,6 +18,79 @@ def get_target_months(ref_month_str):
             ty -= 1
         months.append(f"{ty:04d}{tm:02d}")
     return sorted(months)
+
+
+import time
+from datetime import datetime
+
+GEOCODE_CACHE_PATH = os.path.join(config.DATA_DIR, "geocoding", "apartment_coordinates.json")
+
+def load_geocode_cache():
+    if os.path.exists(GEOCODE_CACHE_PATH):
+        with open(GEOCODE_CACHE_PATH, 'r', encoding='utf-8') as f:
+            return json.load(f)
+    return {}
+
+def save_geocode_cache(cache):
+    os.makedirs(os.path.dirname(GEOCODE_CACHE_PATH), exist_ok=True)
+    with open(GEOCODE_CACHE_PATH, 'w', encoding='utf-8') as f:
+        json.dump(cache, f, ensure_ascii=False, indent=2)
+
+def geocode_apartment(apt_key, sido_name, sgg_name, dong_name, jibun, cache):
+    if apt_key in cache:
+        status = cache[apt_key].get("geocodeStatus")
+        # Do not recall if valid. Re-call if api_error, or we could also skip if ambiguous/not_found
+        if status in ("valid", "ambiguous", "not_found"):
+            return cache[apt_key]
+
+    api_key = getattr(config, "KAKAO_REST_API_KEY", os.environ.get("KAKAO_REST_API_KEY", ""))
+    if not api_key:
+        return None
+
+    query = f"{dong_name} {jibun}"
+    url = "https://dapi.kakao.com/v2/local/search/address.json"
+    headers = {"Authorization": f"KakaoAK {api_key}"}
+    
+    try:
+        time.sleep(0.05) # Rate limit protection (20 req/s max safely)
+        res = requests.get(url, headers=headers, params={"query": query}, timeout=5)
+        if res.status_code == 200:
+            data = res.json()
+            docs = data.get("documents", [])
+            if len(docs) > 0:
+                doc = docs[0]
+                status = "valid"
+                if len(docs) > 1: status = "ambiguous"
+                
+                cache[apt_key] = {
+                    "apartmentKey": apt_key,
+                    "latitude": doc.get("y"),
+                    "longitude": doc.get("x"),
+                    "roadAddress": doc.get("road_address", {}).get("address_name") if doc.get("road_address") else "",
+                    "jibunAddress": doc.get("address", {}).get("address_name") if doc.get("address") else "",
+                    "geocodeStatus": status,
+                    "queryUsed": query,
+                    "geocodedAt": datetime.now().isoformat()
+                }
+            else:
+                cache[apt_key] = {
+                    "apartmentKey": apt_key,
+                    "geocodeStatus": "not_found",
+                    "queryUsed": query,
+                    "geocodedAt": datetime.now().isoformat()
+                }
+        else:
+            cache[apt_key] = {
+                "apartmentKey": apt_key,
+                "geocodeStatus": "api_error",
+                "queryUsed": query,
+                "geocodedAt": datetime.now().isoformat()
+            }
+    except Exception as e:
+        print(f"Geocoding error for {apt_key}: {e}")
+        return None
+
+    return cache[apt_key]
 
 def export_details():
     parser = argparse.ArgumentParser()
@@ -85,6 +159,9 @@ def export_details():
     months_placeholder = ",".join("?" for _ in target_months)
     target_months_list = list(target_months)
 
+    geocode_cache = load_geocode_cache()
+    geocode_updated = False
+
     for apt_key, info in keys_to_export.items():
         sgg = info["sggCode"]
         sgg_dir = os.path.join(out_dir_base, sgg)
@@ -93,7 +170,7 @@ def export_details():
 
         try:
             c.execute(f"""
-                SELECT umd_name, exclusive_area, area_group, deal_amount, deal_date, floor, is_cancelled, dealing_type
+                SELECT umd_name, jibun, exclusive_area, area_group, deal_amount, deal_date, floor, is_cancelled, dealing_type
                 FROM apartment_trades
                 WHERE apartment_key = ? AND deal_month IN ({months_placeholder})
                 ORDER BY deal_date DESC
@@ -112,8 +189,10 @@ def export_details():
             available_areas = set()
             dong_name = ""
 
+            jibun = ""
             for r in rows:
                 if not dong_name: dong_name = r['umd_name']
+                if not jibun: jibun = r['jibun']
                 available_areas.add(r['exclusive_area'])
                 transactions.append({
                     "contractDate": r['deal_date'],
@@ -130,6 +209,10 @@ def export_details():
                 # keep old file
                 continue
 
+            geo = geocode_apartment(apt_key, info["sidoCode"], sgg, dong_name, jibun, geocode_cache)
+            if geo and not geocode_updated:
+                geocode_updated = True
+                
             out_data = {
                 "apartmentKey": apt_key,
                 "apartmentName": info["apartmentName"],
@@ -140,6 +223,9 @@ def export_details():
                 "availableAreas": sorted(list(available_areas)),
                 "transactions": transactions
             }
+            if geo and geo.get("geocodeStatus") in ("valid", "ambiguous"):
+                out_data["lat"] = geo.get("latitude")
+                out_data["lng"] = geo.get("longitude")
 
             with open(out_path, 'w', encoding='utf-8') as f:
                 json.dump(out_data, f, ensure_ascii=False, indent=1)
@@ -153,6 +239,8 @@ def export_details():
             failed_keys.append(apt_key)
 
     con.close()
+    if geocode_updated:
+        save_geocode_cache(geocode_cache)
     print(f"Export completed for {args.region_group}. Success: {success_count}, Zero: {zero_count}, Fail: {fail_count}")
     write_summary(args.region_group, success_count, zero_count, fail_count, failed_keys)
 

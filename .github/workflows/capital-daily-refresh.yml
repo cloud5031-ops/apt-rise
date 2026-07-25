@@ -43,25 +43,33 @@ jobs:
       - name: Collect Trades (Seoul)
         env:
           DATA_GO_KR_API_KEY: ${{ secrets.DATA_GO_KR_API_KEY }}
+          KAKAO_REST_API_KEY: ${{ secrets.KAKAO_REST_API_KEY }}
         run: |
           rm -f data/apt.sqlite run_meta.json
           python scripts/db.py
           python scripts/collect_trades.py --region-group seoul --stable-month ${{ steps.parse_manifest.outputs.stable_month }} --provisional-month ${{ steps.parse_manifest.outputs.provisional_month }}
 
       - name: Compute Apt Rankings (Seoul)
-        run: python scripts/compute_apt_rankings.py --region-group seoul --stable-month ${{ steps.parse_manifest.outputs.stable_month }} --provisional-month ${{ steps.parse_manifest.outputs.provisional_month }}
+        env:
+          KAKAO_REST_API_KEY: ${{ secrets.KAKAO_REST_API_KEY }}
+        run: |
+          python scripts/compute_apt_rankings.py --region-group seoul --stable-month ${{ steps.parse_manifest.outputs.stable_month }} --provisional-month ${{ steps.parse_manifest.outputs.provisional_month }}
           python scripts/export_details.py --region-group seoul --stable-month ${{ steps.parse_manifest.outputs.stable_month }} --provisional-month ${{ steps.parse_manifest.outputs.provisional_month }} || true
 
       - name: Collect Trades (Gyeonggi Incheon)
         env:
           DATA_GO_KR_API_KEY: ${{ secrets.DATA_GO_KR_API_KEY }}
+          KAKAO_REST_API_KEY: ${{ secrets.KAKAO_REST_API_KEY }}
         run: |
           rm -f data/apt.sqlite run_meta.json
           python scripts/db.py
           python scripts/collect_trades.py --region-group gyeonggi_incheon --stable-month ${{ steps.parse_manifest.outputs.stable_month }} --provisional-month ${{ steps.parse_manifest.outputs.provisional_month }}
 
       - name: Compute Apt Rankings (Gyeonggi Incheon)
-        run: python scripts/compute_apt_rankings.py --region-group gyeonggi_incheon --stable-month ${{ steps.parse_manifest.outputs.stable_month }} --provisional-month ${{ steps.parse_manifest.outputs.provisional_month }}
+        env:
+          KAKAO_REST_API_KEY: ${{ secrets.KAKAO_REST_API_KEY }}
+        run: |
+          python scripts/compute_apt_rankings.py --region-group gyeonggi_incheon --stable-month ${{ steps.parse_manifest.outputs.stable_month }} --provisional-month ${{ steps.parse_manifest.outputs.provisional_month }}
           python scripts/export_details.py --region-group gyeonggi_incheon --stable-month ${{ steps.parse_manifest.outputs.stable_month }} --provisional-month ${{ steps.parse_manifest.outputs.provisional_month }} || true
 
       - name: Validate Shards
@@ -80,6 +88,7 @@ jobs:
           git add data/shards/*/seoul.json
           git add data/shards/*/gyeonggi_incheon.json
           git add site/data/apt_rankings_*.json
+          git add data/geocoding/apartment_coordinates.json || true
           git add site/data/details/*/*.json
           git commit -m "Update capital apt rankings" || echo "No changes to commit"
           

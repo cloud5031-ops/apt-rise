@@ -48,10 +48,14 @@ jobs:
       - name: Collect Trades
         env:
           DATA_GO_KR_API_KEY: ${{ secrets.DATA_GO_KR_API_KEY }}
+          KAKAO_REST_API_KEY: ${{ secrets.KAKAO_REST_API_KEY }}
         run: python scripts/collect_trades.py --region-group ${{ inputs.region_group }}
 
       - name: Compute Apt Rankings (Shard mode)
-        run: python scripts/compute_apt_rankings.py --region-group ${{ inputs.region_group }}
+        env:
+          KAKAO_REST_API_KEY: ${{ secrets.KAKAO_REST_API_KEY }}
+        run: |
+          python scripts/compute_apt_rankings.py --region-group ${{ inputs.region_group }}
           python scripts/export_details.py --region-group ${{ inputs.region_group }} || true
 
       - name: Push Shard JSON
