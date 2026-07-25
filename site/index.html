@@ -1016,7 +1016,7 @@ function init() {
       const radioFilter = document.querySelector(`input[name="confFilter"][value="${state.confFilter}"]`);
       if (radioFilter) radioFilter.checked = true;
       
-      document.querySelectorAll('#main-tabs button').forEach(b => {
+      document.querySelectorAll('nav:not(#region-sub-nav):not(#apt-sub-nav) button').forEach(b => {
          if (b.dataset.tab === state.tab) b.classList.add('active');
          else b.classList.remove('active');
       });
