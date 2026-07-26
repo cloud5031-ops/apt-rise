@@ -474,20 +474,33 @@ function showMapError(reason, msg) {
   if (containerEl) {
     containerEl.style.display = 'none';
   }
-  mapLoaded = true;
+}
+
+function clearMapError() {
+  const errEl = document.getElementById('map-error');
+  const containerEl = document.getElementById('map-container');
+  if (errEl) {
+    errEl.innerText = '';
+    errEl.style.display = 'none';
+  }
+  if (containerEl) {
+    containerEl.style.display = 'block';
+  }
 }
 
 function loadKakaoMap() {
-  if (mapLoaded || mapLoading) return;
+  if (mapLoaded) return;
+  
+  clearMapError();
   
   if (!window.APP_CONFIG) {
-     showMapError('config_missing', '설정 파일을 불러올 수 없습니다.');
+     showMapError('config_missing', '지도 서비스를 불러오지 못했습니다.');
      return;
   }
   
   const key = window.APP_CONFIG.kakaoMapJavaScriptKey;
   if (!key || key.trim() === '' || key === '__KAKAO_JAVASCRIPT_KEY__') {
-     showMapError('javascript_key_missing', '지도 API 키가 설정되지 않았습니다.');
+     showMapError('javascript_key_missing', '지도 서비스를 불러오지 못했습니다.');
      return;
   }
 
@@ -505,48 +518,74 @@ function loadKakaoMap() {
     return;
   }
   
+  function initMap() {
+    try {
+        const container = document.getElementById('map-container');
+        const pos = new window.kakao.maps.LatLng(lat, lng);
+        const options = { center: pos, level: 3 };
+        mapInst = new window.kakao.maps.Map(container, options);
+        
+        const marker = new window.kakao.maps.Marker({ position: pos });
+        marker.setMap(mapInst);
+        
+        const overlayContent = `<div style="padding:4px 8px; background:var(--ink); color:#fff; border-radius:4px; font-size:0.75rem; font-weight:bold; white-space:nowrap; transform:translateY(-150%);">${aptData.apartmentName}</div>`;
+        const customOverlay = new window.kakao.maps.CustomOverlay({
+            position: pos,
+            content: overlayContent,
+            yAnchor: 1
+        });
+        customOverlay.setMap(mapInst);
+        
+        mapLoaded = true;
+        mapLoading = false;
+    } catch (e) {
+        mapLoading = false;
+        showMapError('map_init_failed', '지도 서비스를 불러오지 못했습니다.');
+    }
+  }
+
+  if (window.kakao && window.kakao.maps && window.kakao.maps.load) {
+    window.kakao.maps.load(() => {
+      initMap();
+    });
+    return;
+  }
+
+  if (mapLoading) return;
   mapLoading = true;
   
+  const existingScript = document.querySelector('script[src*="dapi.kakao.com/v2/maps/sdk.js"]');
+  if (existingScript) {
+      // If script exists but kakao.maps isn't ready yet, it's currently loading.
+      // We will let the existing onload handle it.
+      // However, to be robust, we'll just check again shortly.
+      setTimeout(loadKakaoMap, 500);
+      return;
+  }
+
   const script = document.createElement('script');
-  script.src = `//dapi.kakao.com/v2/maps/sdk.js?appkey=${key}&autoload=false`;
+  script.src = `https://dapi.kakao.com/v2/maps/sdk.js?appkey=${encodeURIComponent(key)}&autoload=false`;
   
   const timeout = setTimeout(() => {
      mapLoading = false;
-     showMapError('kakao_sdk_timeout', '지도 SDK 응답이 지연되고 있습니다.');
-  }, 5000);
+     showMapError('kakao_sdk_timeout', '지도 서비스를 불러오지 못했습니다.');
+  }, 15000);
   
   script.onload = () => {
     clearTimeout(timeout);
+    if (!window.kakao || !window.kakao.maps) {
+      mapLoading = false;
+      showMapError('kakao_namespace_missing', '지도 서비스를 불러오지 못했습니다.');
+      return;
+    }
     window.kakao.maps.load(() => {
-      try {
-          const container = document.getElementById('map-container');
-          const pos = new window.kakao.maps.LatLng(lat, lng);
-          const options = { center: pos, level: 3 };
-          mapInst = new window.kakao.maps.Map(container, options);
-          
-          const marker = new window.kakao.maps.Marker({ position: pos });
-          marker.setMap(mapInst);
-          
-          const overlayContent = `<div style="padding:4px 8px; background:var(--ink); color:#fff; border-radius:4px; font-size:0.75rem; font-weight:bold; white-space:nowrap; transform:translateY(-150%);">${aptData.apartmentName}</div>`;
-          const customOverlay = new window.kakao.maps.CustomOverlay({
-              position: pos,
-              content: overlayContent,
-              yAnchor: 1
-          });
-          customOverlay.setMap(mapInst);
-          
-          mapLoaded = true;
-          mapLoading = false;
-      } catch (e) {
-          mapLoading = false;
-          showMapError('map_init_failed', '지도 초기화 중 오류가 발생했습니다.');
-      }
+      initMap();
     });
   };
   script.onerror = () => {
     clearTimeout(timeout);
     mapLoading = false;
-    showMapError('kakao_sdk_failed', '지도 SDK를 불러올 수 없습니다.');
+    showMapError('kakao_sdk_network_error', '지도 서비스를 불러오지 못했습니다.');
   };
   document.head.appendChild(script);
 }
