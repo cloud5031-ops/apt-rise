@@ -12,6 +12,7 @@
 
   var PYEONG_PER_M2 = 3.305785;
   var PAGE_SIZE = 10;
+  var HISTORY_MONTHS = 36;
 
   // 상세 JSON 캐시. 값은 Promise이므로 같은 단지를 연타해도 fetch는 1회다.
   var apartmentDetailCache = new Map();
@@ -57,6 +58,47 @@
       String(d.getDate()).padStart(2, "0");
   }
 
+  /* Y축 전용 짧은 가격 라벨. "7억", "7억 2천", "9천만" 형태로만 만든다.
+   * 정확한 금액은 툴팁과 거래표(formatPriceWon)가 담당한다. */
+  function formatAxisPrice(won) {
+    var man = Math.round(Number(won) / 10000); // 만원 단위
+    if (!Number.isFinite(man)) return "";
+    if (man === 0) return "0";
+    var eok = Math.floor(man / 10000);
+    var rest = man % 10000;
+    if (eok > 0) {
+      if (rest === 0) return eok + "억";
+      if (rest % 1000 === 0) return eok + "억 " + (rest / 1000) + "천";
+      return eok + "억 " + rest.toLocaleString("ko-KR");
+    }
+    if (rest % 1000 === 0) return (rest / 1000) + "천만";
+    return rest.toLocaleString("ko-KR") + "만";
+  }
+
+  // 사람이 읽기 좋은 눈금 간격(만원 단위 사다리)을 골라 축 경계를 맞춘다.
+  var TICK_LADDER_MAN = [
+    500, 1000, 2000, 2500, 5000,
+    10000, 20000, 25000, 50000,
+    100000, 200000, 250000, 500000, 1000000
+  ];
+
+  function niceAxis(minWon, maxWon, targetTicks) {
+    var minMan = Number(minWon) / 10000;
+    var maxMan = Number(maxWon) / 10000;
+    if (!Number.isFinite(minMan) || !Number.isFinite(maxMan)) return null;
+    if (maxMan === minMan) { minMan -= 1000; maxMan += 1000; }
+
+    var raw = (maxMan - minMan) / (targetTicks || 5);
+    var step = TICK_LADDER_MAN[TICK_LADDER_MAN.length - 1];
+    for (var i = 0; i < TICK_LADDER_MAN.length; i++) {
+      if (TICK_LADDER_MAN[i] >= raw) { step = TICK_LADDER_MAN[i]; break; }
+    }
+    var lo = Math.floor(minMan / step) * step;
+    var hi = Math.ceil(maxMan / step) * step;
+    if (lo === hi) hi = lo + step;
+    return { min: lo * 10000, max: hi * 10000, stepSize: step * 10000 };
+  }
+
   // 표시 전용 면적 라벨. 반올림 없이 소수점만 버린다. 원본 값은 그대로 둔다.
   function areaLabel(areaM2) {
     var a = Number(areaM2);
@@ -86,26 +128,35 @@
     return "";
   }
 
-  function axisMonths(data, trades) {
+  /* 최근 36개월 창을 확정한다.
+   * 끝 기준월(anchor) 우선순위:
+   *   1) historyCoverage.endMonth  — 백필/병합이 남긴 공식 anchor
+   *   2) referenceMonths의 최대값  — 순위 산출에 쓰인 잠정 집계월
+   *   3) 가장 최근 거래월          — 위 둘이 없을 때의 최후 수단
+   * 거래 내역과 두 그래프가 모두 이 창 하나를 공유한다. */
+  function historyWindow(data) {
     var hc = data.historyCoverage;
-    var start, end;
-    if (hc && hc.startMonth && hc.endMonth) {
-      start = hc.startMonth;
+    var end = null;
+
+    if (hc && hc.endMonth) {
       end = hc.endMonth;
+    } else if (Array.isArray(data.referenceMonths) && data.referenceMonths.length) {
+      end = data.referenceMonths.slice().sort()[data.referenceMonths.length - 1];
     } else {
-      var ms = trades.map(monthOf).filter(Boolean).sort();
-      if (!ms.length) return [];
-      start = ms[0];
-      end = ms[ms.length - 1];
+      var ms = (data.transactions || []).map(monthOf).filter(Boolean).sort();
+      end = ms.length ? ms[ms.length - 1] : null;
     }
-    var out = [];
+    if (!end) return null;
+
+    var start = (hc && hc.startMonth) ? hc.startMonth : shiftMonth(end, -(HISTORY_MONTHS - 1));
+    var months = [];
     var m = start;
-    // 거래가 없는 달도 X축 흐름을 유지한다 (최대 36칸)
-    for (var i = 0; i < 36 && m <= end; i++) {
-      out.push(m);
+    // 거래가 없는 달도 X축 흐름을 유지한다
+    for (var i = 0; i < HISTORY_MONTHS && m <= end; i++) {
+      months.push(m);
       m = shiftMonth(m, 1);
     }
-    return out;
+    return { start: start, end: end, months: months };
   }
 
   // ── 데이터 로딩 ────────────────────────────────────────────────
@@ -169,20 +220,36 @@
 
   // ── 렌더링 ─────────────────────────────────────────────────────
 
+  /* 선택 평형의 유효 거래를 최근 36개월 창으로 제한해 최신순으로 돌려준다.
+   * 면적 비교는 반드시 원본 exclusiveArea 값으로 한다 — 59.96과 59.97처럼
+   * 화면에는 똑같이 "59㎡"로 보이는 평형이 합쳐지면 안 되기 때문이다. */
   function validTrades(data, area) {
+    var win = active && active.window ? active.window : historyWindow(data);
     return data.transactions.filter(function (t) {
-      return t.cancellationStatus !== "CANCELLED" && Number(t.exclusiveArea) === Number(area);
+      if (t.cancellationStatus === "CANCELLED") return false;
+      if (Number(t.exclusiveArea) !== Number(area)) return false;
+      if (win) {
+        var m = monthOf(t);
+        if (!m || m < win.start || m > win.end) return false;
+      }
+      return true;
     }).sort(function (a, b) {
       return String(b.contractDate || "").localeCompare(String(a.contractDate || ""));
     });
   }
 
+  // 36개월이 실제로 수집되지 않았으면 '최근 3년'이라고 말하지 않는다.
   function coverageNotice(data) {
     var hc = data.historyCoverage;
+    var win = active && active.window ? active.window : historyWindow(data);
+    var range = win ? (win.start.slice(0, 4) + "." + win.start.slice(4) + " ~ " +
+      win.end.slice(0, 4) + "." + win.end.slice(4)) : "";
     if (hc && hc.complete === true) {
-      return '<p class="apt-inline-note">최근 3년(36개월) 실거래 내역입니다.</p>';
+      return '<p class="apt-inline-note">최근 3년(36개월) 실거래 내역입니다. <span class="apt-inline-range">' +
+        escapeHtml(range) + '</span></p>';
     }
-    return '<p class="apt-inline-note">현재 수집된 기간의 거래만 표시됩니다.</p>';
+    return '<p class="apt-inline-note">최근 3년(36개월) 기준으로 표시하며, 현재 수집이 완료된 기간의 거래만 담겨 있습니다.' +
+      (range ? ' <span class="apt-inline-range">' + escapeHtml(range) + '</span>' : '') + '</p>';
   }
 
   function renderTrades(body) {
@@ -201,7 +268,7 @@
         '<td class="apt-inline-price">' + escapeHtml(formatPriceWon(getPriceWon(t))) +
         (direct ? ' <span class="apt-inline-badge">직거래</span>' : '') + '</td>' +
         '<td>' + (t.floor != null ? escapeHtml(t.floor) + '층' : '-') + '</td>' +
-        '<td>' + escapeHtml(t.exclusiveArea) + '㎡</td>' +
+        '<td>' + escapeHtml(areaLabel(t.exclusiveArea) || '-') + '</td>' +
         '<td>' + escapeHtml(t.dealType || '-') + '</td>' +
         '</tr>';
     }).join("");
@@ -245,8 +312,14 @@
     body.innerHTML = coverageNotice(data) +
       '<p class="apt-inline-note">공식 시세가 아니라 신고된 실거래 표본의 중위가격입니다.</p>' +
       '<div class="apt-inline-chart-msg" data-chart-msg hidden></div>' +
-      '<div class="apt-inline-chart"><canvas data-chart="scatter"></canvas></div>' +
-      '<div class="apt-inline-chart"><canvas data-chart="monthly"></canvas></div>';
+      '<div class="apt-inline-chart-block">' +
+        '<h4 class="apt-inline-chart-title">실거래 가격</h4>' +
+        '<div class="apt-inline-chart"><canvas data-chart="scatter"></canvas></div>' +
+      '</div>' +
+      '<div class="apt-inline-chart-block">' +
+        '<h4 class="apt-inline-chart-title">월별 중위가격 · 거래 건수</h4>' +
+        '<div class="apt-inline-chart"><canvas data-chart="monthly"></canvas></div>' +
+      '</div>';
 
     var msg = body.querySelector("[data-chart-msg]");
     function showMsg(text) {
@@ -275,6 +348,7 @@
   function drawCharts(body, trades) {
     destroyCharts();
 
+    var win = active.window;
     var scatterData = [];
     var monthlyGroups = {};
     var minPrice = Infinity, maxPrice = -Infinity;
@@ -290,9 +364,26 @@
       monthlyGroups[mk].push(p);
     });
 
-    var yMax = maxPrice * 1.05;
-    var yMin = minPrice * 0.95;
+    // 두 그래프가 같은 가격 축을 쓰도록 눈금을 한 번만 계산한다
+    var axis = niceAxis(minPrice, maxPrice, 5) || { min: undefined, max: undefined, stepSize: undefined };
 
+    var months = (win && win.months.length) ? win.months : Object.keys(monthlyGroups).sort();
+    var monthStartMs = months.length
+      ? new Date(Number(months[0].slice(0, 4)), Number(months[0].slice(4)) - 1, 1).getTime()
+      : undefined;
+    var lastM = months[months.length - 1];
+    var monthEndMs = months.length
+      ? new Date(Number(lastM.slice(0, 4)), Number(lastM.slice(4)), 0, 23, 59, 59).getTime()
+      : undefined;
+
+    var gridColor = "rgba(0,0,0,0.06)";
+    var legendCommon = {
+      position: "top",
+      align: "end",
+      labels: { boxWidth: 10, boxHeight: 10, usePointStyle: true, padding: 12, font: { size: 11 } }
+    };
+
+    // ── 산점도: 36개월 프레임 위에 개별 거래를 찍는다 ──────────────
     var scatterCanvas = body.querySelector('canvas[data-chart="scatter"]');
     active.charts.scatter = new window.Chart(scatterCanvas.getContext("2d"), {
       type: "scatter",
@@ -301,24 +392,40 @@
           {
             label: "중개거래",
             data: scatterData.filter(function (d) { return d.raw.dealType !== "직거래"; }),
-            backgroundColor: "#2563c9", pointRadius: 5, pointHoverRadius: 7
+            backgroundColor: "rgba(37, 99, 201, 0.75)",
+            borderColor: "#1b4b99",
+            borderWidth: 1,
+            pointRadius: 6,
+            pointHoverRadius: 9
           },
           {
             label: "직거래",
             data: scatterData.filter(function (d) { return d.raw.dealType === "직거래"; }),
-            backgroundColor: "#d6293e", pointStyle: "rectRot", pointRadius: 6, pointHoverRadius: 8
+            backgroundColor: "rgba(240, 138, 20, 0.9)",
+            borderColor: "#a85c00",
+            borderWidth: 1,
+            pointStyle: "triangle",
+            pointRadius: 8,
+            pointHoverRadius: 11
           }
         ]
       },
       options: {
-        responsive: true, maintainAspectRatio: false,
+        responsive: true,
+        maintainAspectRatio: false,
+        layout: { padding: { top: 4, right: 6 } },
         plugins: {
+          legend: legendCommon,
           tooltip: {
+            displayColors: false,
             callbacks: {
+              title: function (items) { return formatDate(items[0].raw.raw.contractDate); },
               label: function (ctx) {
                 var t = ctx.raw.raw;
-                return formatDate(t.contractDate) + " | " + formatPriceWon(getPriceWon(t)) +
-                  " | " + t.floor + "층 | " + t.dealType;
+                return [
+                  formatPriceWon(getPriceWon(t)),
+                  (t.floor != null ? t.floor + "층" : "") + " · " + (t.dealType || "")
+                ];
               }
             }
           }
@@ -326,21 +433,39 @@
         scales: {
           x: {
             type: "linear",
+            min: monthStartMs,
+            max: monthEndMs,
+            grid: { color: gridColor, drawTicks: false },
+            border: { color: gridColor },
             ticks: {
+              // 36개월을 6칸 정도로 끊어 라벨이 겹치지 않게 한다
+              maxTicksLimit: 6,
+              autoSkip: true,
+              maxRotation: 0,
+              font: { size: 11 },
               callback: function (val) {
                 var d = new Date(val);
                 return String(d.getFullYear()).slice(2) + "." +
                   String(d.getMonth() + 1).padStart(2, "0");
-              },
-              maxTicksLimit: 6
+              }
             }
           },
-          y: { max: yMax, min: yMin, ticks: { callback: function (v) { return formatPriceWon(v); } } }
+          y: {
+            min: axis.min,
+            max: axis.max,
+            grid: { color: gridColor, drawTicks: false },
+            border: { display: false },
+            ticks: {
+              stepSize: axis.stepSize,
+              font: { size: 11 },
+              callback: function (v) { return formatAxisPrice(v); }
+            }
+          }
         }
       }
     });
 
-    var months = axisMonths(active.data, trades);
+    // ── 월별 중위가격(선) + 거래 건수(막대) ───────────────────────
     var medians = [];
     var volumes = [];
     months.forEach(function (m) {
@@ -351,55 +476,126 @@
       volumes.push(len);
     });
 
+    // 막대가 가격선을 가리지 않도록 거래량 축 상한을 최대치의 3배로 잡아
+    // 막대를 아래쪽 1/3 안에 가둔다
+    var maxVol = Math.max.apply(null, volumes.concat([1]));
+    var volAxisMax = Math.max(3, maxVol * 3);
+
     var monthlyCanvas = body.querySelector('canvas[data-chart="monthly"]');
     active.charts.monthly = new window.Chart(monthlyCanvas.getContext("2d"), {
-      type: "line",
       data: {
         labels: months.map(function (m) { return m.slice(0, 4) + "." + m.slice(4); }),
         datasets: [
           {
-            type: "line", label: "실거래 중위가격", data: medians,
-            borderColor: "#2563c9", backgroundColor: "#2563c9",
-            yAxisID: "y", tension: 0.1, pointRadius: 3, spanGaps: true
+            type: "bar",
+            label: "거래 건수",
+            data: volumes,
+            backgroundColor: "rgba(107, 118, 132, 0.25)",
+            hoverBackgroundColor: "rgba(107, 118, 132, 0.45)",
+            borderWidth: 0,
+            yAxisID: "y1",
+            order: 2,
+            barPercentage: 0.9,
+            categoryPercentage: 0.9
           },
           {
-            type: "bar", label: "거래 건수", data: volumes,
-            backgroundColor: "rgba(107, 118, 132, 0.3)", yAxisID: "y1"
+            type: "line",
+            label: "중위가격",
+            data: medians,
+            borderColor: "#2563c9",
+            backgroundColor: "#2563c9",
+            borderWidth: 2,
+            yAxisID: "y",
+            tension: 0.25,
+            pointRadius: 3,
+            pointHoverRadius: 6,
+            spanGaps: true,
+            order: 1
           }
         ]
       },
       options: {
-        responsive: true, maintainAspectRatio: false,
+        responsive: true,
+        maintainAspectRatio: false,
+        layout: { padding: { top: 4, right: 6 } },
+        interaction: { mode: "index", intersect: false },
         plugins: {
+          legend: legendCommon,
           tooltip: {
+            displayColors: true,
             callbacks: {
               label: function (ctx) {
-                if (ctx.datasetIndex === 0) return "실거래 중위가격: " + formatPriceWon(ctx.raw);
-                return "거래 건수: " + ctx.raw + "건";
+                if (ctx.dataset.type === "bar") {
+                  return "거래 건수: " + ctx.raw + "건";
+                }
+                if (ctx.raw == null) return "중위가격: 거래 없음";
+                return "중위가격: " + formatPriceWon(ctx.raw);
               },
-              afterLabel: function (ctx) {
-                if (ctx.datasetIndex !== 0) return "";
-                var i = ctx.dataIndex;
+              afterBody: function (items) {
+                var line = items.find(function (i) { return i.dataset.type === "line"; });
+                if (!line) return "";
+                var i = line.dataIndex;
                 if (i <= 0 || medians[i] == null || medians[i - 1] == null) return "";
-                if (volumes[i - 1] < 2 || volumes[i] < 2) return "실거래 중위가격 변화율: 표본 부족";
-                var rate = ((medians[i] - medians[i - 1]) / medians[i - 1] * 100).toFixed(2);
-                return "실거래 중위가격 변화율: " + (rate > 0 ? "+" : "") + rate + "%";
+                if (volumes[i - 1] < 2 || volumes[i] < 2) return "전월 대비: 표본 부족";
+                var rate = ((medians[i] - medians[i - 1]) / medians[i - 1] * 100).toFixed(1);
+                return "전월 대비: " + (rate > 0 ? "+" : "") + rate + "%";
               }
             }
           }
         },
         scales: {
+          x: {
+            grid: { display: false },
+            border: { color: gridColor },
+            ticks: {
+              // 36칸을 전부 쓰지 않고 자동으로 솎아낸다
+              maxTicksLimit: 7,
+              autoSkip: true,
+              maxRotation: 0,
+              font: { size: 11 }
+            }
+          },
           y: {
-            type: "linear", position: "left", max: yMax, min: yMin,
-            ticks: { callback: function (v) { return formatPriceWon(v); } }
+            type: "linear",
+            position: "left",
+            min: axis.min,
+            max: axis.max,
+            grid: { color: gridColor, drawTicks: false },
+            border: { display: false },
+            ticks: {
+              stepSize: axis.stepSize,
+              font: { size: 11 },
+              callback: function (v) { return formatAxisPrice(v); }
+            }
           },
           y1: {
-            type: "linear", position: "right", min: 0,
-            grid: { drawOnChartArea: false }, ticks: { stepSize: 1 }
+            type: "linear",
+            position: "right",
+            min: 0,
+            max: volAxisMax,
+            grid: { drawOnChartArea: false },
+            border: { display: false },
+            ticks: {
+              precision: 0,
+              font: { size: 11 },
+              // 막대 영역(아래 1/3) 밖의 눈금은 숨겨 축이 어수선해지지 않게 한다
+              callback: function (v) { return v <= maxVol ? v + "건" : ""; }
+            }
           }
         }
       }
     });
+  }
+
+  /* 운영 도메인 외의 Cloudflare Pages 주소(해시 프리뷰, *.pages.dev 서브도메인)에서는
+   * 카카오 JS 키의 허용 도메인에 등록돼 있지 않아 SDK가 거부될 수 있다. */
+  var PRODUCTION_HOSTS = ["apt-rise.pages.dev"];
+
+  function isPreviewHost() {
+    var h = location.hostname;
+    if (PRODUCTION_HOSTS.indexOf(h) !== -1) return false;
+    if (h === "localhost" || h === "127.0.0.1") return false;
+    return /\.pages\.dev$/.test(h);
   }
 
   function renderLocation(body) {
@@ -415,84 +611,128 @@
 
     var msgEl = body.querySelector("[data-map-msg]");
     var mapEl = body.querySelector("[data-map]");
-    function showMapError(reason, text) {
-      console.error("Inline map failed: " + reason);
-      msgEl.textContent = text;
+    var settled = false;
+
+    function fail(reason, text) {
+      if (settled) return;
+      settled = true;
+      // console.error는 페이지 오류로 잡히므로, 예상 가능한 실패는 warn으로 남긴다
+      console.warn("[inline_map] " + reason);
+      msgEl.innerHTML = text;
       msgEl.hidden = false;
-      mapEl.style.display = "none";
+      mapEl.style.display = "none";   // 빈 회색 상자를 남기지 않는다
     }
 
-    if (loc.geocodeStatus !== "valid" || !Number.isFinite(lat) || !Number.isFinite(lng) || !lat || !lng) {
-      showMapError("coordinates_missing", "지도에 표시할 단지 좌표 정보가 없습니다.");
+    function succeeded() {
+      settled = true;
+      msgEl.hidden = true;
+      mapEl.style.display = "";
+    }
+
+    // ① 좌표 자체가 없을 때만 '좌표 없음'을 말한다.
+    //    geocodeStatus가 ambiguous여도 좌표가 유효하면 지도를 띄운다
+    //    (기존 상세 페이지 apartment.js와 동일한 판정 기준).
+    if (!Number.isFinite(lat) || !Number.isFinite(lng) || (lat === 0 && lng === 0)) {
+      fail("coordinates_missing", "지도에 표시할 단지 좌표 정보가 없습니다.");
       return;
     }
-    if (!window.APP_CONFIG || !window.APP_CONFIG.kakaoMapJavaScriptKey) {
-      showMapError("config_missing", "지도 서비스를 불러오지 못했습니다.");
+
+    // ② 키 설정 문제
+    var key = window.APP_CONFIG && window.APP_CONFIG.kakaoMapJavaScriptKey;
+    if (!key || !String(key).trim() || key === "__KAKAO_JAVASCRIPT_KEY__") {
+      fail("javascript_key_missing", "지도 설정을 불러오지 못했습니다.");
       return;
     }
-    var key = window.APP_CONFIG.kakaoMapJavaScriptKey;
-    if (!key.trim() || key === "__KAKAO_JAVASCRIPT_KEY__") {
-      showMapError("javascript_key_missing", "지도 서비스를 불러오지 못했습니다.");
-      return;
+
+    var previewNotice =
+      "Preview 도메인에서는 지도 SDK 도메인 제한으로 지도가 표시되지 않을 수 있습니다.<br>" +
+      '운영 주소(<a href="https://apt-rise.pages.dev" target="_blank" rel="noopener">apt-rise.pages.dev</a>)에서는 정상 표시됩니다.';
+
+    function sdkFailureText() {
+      return isPreviewHost() ? previewNotice : "지도 서비스를 불러오지 못했습니다.";
     }
 
     var token = active.key;
+    function stillCurrent() {
+      return active && active.key === token && mapEl.isConnected;
+    }
+
     function initMap() {
-      if (!active || active.key !== token || !mapEl.isConnected) return;
+      if (!stillCurrent()) return;
       try {
         var pos = new window.kakao.maps.LatLng(lat, lng);
         var map = new window.kakao.maps.Map(mapEl, { center: pos, level: 3 });
         active.map = map;
+
         new window.kakao.maps.Marker({ position: pos }).setMap(map);
         new window.kakao.maps.CustomOverlay({
           position: pos, yAnchor: 1,
           content: '<div class="apt-inline-map-label">' + escapeHtml(data.apartmentName) + '</div>'
         }).setMap(map);
-        // 패널이 숨겨진 상태로 생성됐을 수 있으므로 표시 후 다시 배치한다
+
+        succeeded();
+
+        // 패널이 방금 표시됐으므로 크기를 다시 잡아준다
         setTimeout(function () {
           if (!active || active.map !== map) return;
           map.relayout();
           map.setCenter(pos);
         }, 100);
+
+        // 도메인이 거부되면 SDK는 로드되지만 타일이 그려지지 않는다.
+        // 컨테이너가 비어 있는지로 사후 확인한다.
+        setTimeout(function () {
+          if (!active || active.map !== map || !mapEl.isConnected) return;
+          if (mapEl.childElementCount === 0 || mapEl.clientHeight === 0) {
+            settled = false;
+            fail("map_not_rendered", sdkFailureText());
+          }
+        }, 2500);
       } catch (e) {
-        showMapError("map_init_failed", "지도 서비스를 불러오지 못했습니다.");
+        fail("map_init_failed", sdkFailureText());
       }
     }
 
+    // ③ 이미 SDK가 준비된 경우
     if (window.kakao && window.kakao.maps && window.kakao.maps.load) {
       window.kakao.maps.load(initMap);
       return;
     }
 
-    var existing = document.querySelector('script[data-inline-kakao]');
+    // ④ 다른 패널이 이미 SDK를 받아오는 중인 경우
+    var existing = document.querySelector("script[data-inline-kakao]");
     if (existing) {
       existing.addEventListener("load", function () {
         if (window.kakao && window.kakao.maps) window.kakao.maps.load(initMap);
+        else fail("kakao_namespace_missing", sdkFailureText());
       });
       existing.addEventListener("error", function () {
-        showMapError("kakao_sdk_network_error", "지도 서비스를 불러오지 못했습니다.");
+        fail("kakao_sdk_network_error", sdkFailureText());
       });
       return;
     }
 
+    // ⑤ SDK 최초 로드
     var script = document.createElement("script");
     script.src = "https://dapi.kakao.com/v2/maps/sdk.js?appkey=" +
       encodeURIComponent(key) + "&autoload=false";
     script.setAttribute("data-inline-kakao", "1");
     var timeout = setTimeout(function () {
-      showMapError("kakao_sdk_timeout", "지도 서비스를 불러오지 못했습니다.");
-    }, 15000);
+      fail("kakao_sdk_timeout", sdkFailureText());
+    }, 10000);
     script.onload = function () {
       clearTimeout(timeout);
       if (!window.kakao || !window.kakao.maps) {
-        showMapError("kakao_namespace_missing", "지도 서비스를 불러오지 못했습니다.");
+        fail("kakao_namespace_missing", sdkFailureText());
         return;
       }
       window.kakao.maps.load(initMap);
     };
     script.onerror = function () {
       clearTimeout(timeout);
-      showMapError("kakao_sdk_network_error", "지도 서비스를 불러오지 못했습니다.");
+      // 스크립트를 남겨두면 다음 시도에서 ④ 분기로 빠져 영영 재시도하지 못한다
+      if (script.parentNode) script.parentNode.removeChild(script);
+      fail("kakao_sdk_network_error", sdkFailureText());
     };
     document.head.appendChild(script);
   }
@@ -569,7 +809,7 @@
     row.classList.add("apt-row-open");
 
     active = {
-      key: key, row: row, panelRow: panelRow, data: null,
+      key: key, row: row, panelRow: panelRow, data: null, window: null,
       selectedArea: null, tab: "trades", shown: PAGE_SIZE,
       charts: { scatter: null, monthly: null }, map: null
     };
@@ -584,6 +824,7 @@
         return;
       }
       active.data = data;
+      active.window = historyWindow(data);
       active.selectedArea = data.availableAreas[0];
       renderPanel();
     }).catch(function (err) {

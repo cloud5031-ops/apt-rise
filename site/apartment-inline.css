@@ -163,18 +163,43 @@ tr.apt-row-open {
 }
 
 /* 차트 */
+.apt-inline-chart-block {
+  margin-top: 14px;
+  padding-top: 12px;
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
+}
+.apt-inline-chart-block:first-of-type {
+  border-top: none;
+  padding-top: 0;
+}
+.apt-inline-chart-title {
+  margin: 0 0 6px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--ink);
+}
 .apt-inline-chart {
   position: relative;
-  height: 250px;
+  height: 260px;
   width: 100%;
-  margin-bottom: 16px;
 }
 .apt-inline-chart-msg,
 .apt-inline-map-msg {
-  padding: 20px;
+  padding: 18px;
   text-align: center;
   font-size: 0.82rem;
+  line-height: 1.6;
   color: var(--sub);
+  background: rgba(0, 0, 0, 0.03);
+  border-radius: 8px;
+}
+.apt-inline-map-msg a {
+  color: #2563c9;
+}
+.apt-inline-range {
+  color: var(--sub);
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
 }
 
 /* 지도 */
