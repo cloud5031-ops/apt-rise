@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "28237-168",
  "apartmentName": "상우신명보람",
  "sidoCode": "28",
@@ -14,7 +16,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-16",
-   "price": 615000000,
+   "priceWon": 615000000,
    "floor": 12,
    "exclusiveArea": 111.41,
    "areaGroup": 111,
@@ -23,7 +25,7 @@
   },
   {
    "contractDate": "2026-06-05",
-   "price": 660000000,
+   "priceWon": 660000000,
    "floor": 19,
    "exclusiveArea": 111.41,
    "areaGroup": 111,
@@ -32,7 +34,7 @@
   },
   {
    "contractDate": "2026-05-12",
-   "price": 705000000,
+   "priceWon": 705000000,
    "floor": 13,
    "exclusiveArea": 111.41,
    "areaGroup": 111,
@@ -41,7 +43,7 @@
   },
   {
    "contractDate": "2026-05-09",
-   "price": 615000000,
+   "priceWon": 615000000,
    "floor": 18,
    "exclusiveArea": 111.41,
    "areaGroup": 111,
@@ -50,7 +52,7 @@
   },
   {
    "contractDate": "2026-03-05",
-   "price": 625000000,
+   "priceWon": 625000000,
    "floor": 12,
    "exclusiveArea": 111.41,
    "areaGroup": 111,
@@ -59,12 +61,19 @@
   },
   {
    "contractDate": "2026-02-11",
-   "price": 610000000,
+   "priceWon": 610000000,
    "floor": 10,
    "exclusiveArea": 111.41,
    "areaGroup": 111,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.5048660129753,
+  "longitude": 126.741046529744,
+  "roadAddress": "인천 부평구 길주남로 175",
+  "jibunAddress": "인천 부평구 부개동 497-1",
+  "geocodeStatus": "valid"
+ }
 }

@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "41117-274",
  "apartmentName": "자연앤자이3단지",
  "sidoCode": "41",
@@ -16,7 +18,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-18",
-   "price": 1980000000,
+   "priceWon": 1980000000,
    "floor": 12,
    "exclusiveArea": 125.6,
    "areaGroup": 126,
@@ -25,7 +27,7 @@
   },
   {
    "contractDate": "2026-06-03",
-   "price": 1940000000,
+   "priceWon": 1940000000,
    "floor": 12,
    "exclusiveArea": 125.6,
    "areaGroup": 126,
@@ -34,7 +36,7 @@
   },
   {
    "contractDate": "2026-05-23",
-   "price": 1950000000,
+   "priceWon": 1950000000,
    "floor": 20,
    "exclusiveArea": 125.6,
    "areaGroup": 126,
@@ -43,7 +45,7 @@
   },
   {
    "contractDate": "2026-05-16",
-   "price": 1840000000,
+   "priceWon": 1840000000,
    "floor": 9,
    "exclusiveArea": 125.6,
    "areaGroup": 126,
@@ -52,7 +54,7 @@
   },
   {
    "contractDate": "2026-05-12",
-   "price": 1730000000,
+   "priceWon": 1730000000,
    "floor": 23,
    "exclusiveArea": 101.93,
    "areaGroup": 102,
@@ -61,7 +63,7 @@
   },
   {
    "contractDate": "2026-05-07",
-   "price": 1850000000,
+   "priceWon": 1850000000,
    "floor": 26,
    "exclusiveArea": 125.6,
    "areaGroup": 126,
@@ -70,7 +72,7 @@
   },
   {
    "contractDate": "2026-04-11",
-   "price": 1780000000,
+   "priceWon": 1780000000,
    "floor": 31,
    "exclusiveArea": 101.67,
    "areaGroup": 102,
@@ -79,12 +81,19 @@
   },
   {
    "contractDate": "2026-02-21",
-   "price": 1768000000,
+   "priceWon": 1768000000,
    "floor": 3,
    "exclusiveArea": 125.6,
    "areaGroup": 126,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.284868163044,
+  "longitude": 127.054374954669,
+  "roadAddress": "경기 수원시 영통구 도청로17번길 23",
+  "jibunAddress": "경기 수원시 영통구 이의동 1339",
+  "geocodeStatus": "valid"
+ }
 }

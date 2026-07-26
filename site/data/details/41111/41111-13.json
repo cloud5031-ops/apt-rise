@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "41111-13",
  "apartmentName": "삼성1",
  "sidoCode": "41",
@@ -15,7 +17,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-29",
-   "price": 523000000,
+   "priceWon": 523000000,
    "floor": 17,
    "exclusiveArea": 84.99,
    "areaGroup": 85,
@@ -24,7 +26,7 @@
   },
   {
    "contractDate": "2026-05-23",
-   "price": 525000000,
+   "priceWon": 525000000,
    "floor": 11,
    "exclusiveArea": 84.99,
    "areaGroup": 85,
@@ -33,7 +35,7 @@
   },
   {
    "contractDate": "2026-05-12",
-   "price": 460000000,
+   "priceWon": 460000000,
    "floor": 17,
    "exclusiveArea": 59.98,
    "areaGroup": 60,
@@ -42,7 +44,7 @@
   },
   {
    "contractDate": "2026-05-08",
-   "price": 400000000,
+   "priceWon": 400000000,
    "floor": 11,
    "exclusiveArea": 59.98,
    "areaGroup": 60,
@@ -51,7 +53,7 @@
   },
   {
    "contractDate": "2026-05-07",
-   "price": 500000000,
+   "priceWon": 500000000,
    "floor": 4,
    "exclusiveArea": 84.99,
    "areaGroup": 85,
@@ -60,7 +62,7 @@
   },
   {
    "contractDate": "2026-04-20",
-   "price": 397000000,
+   "priceWon": 397000000,
    "floor": 13,
    "exclusiveArea": 59.98,
    "areaGroup": 60,
@@ -69,7 +71,7 @@
   },
   {
    "contractDate": "2026-04-04",
-   "price": 398000000,
+   "priceWon": 398000000,
    "floor": 6,
    "exclusiveArea": 59.98,
    "areaGroup": 60,
@@ -78,12 +80,19 @@
   },
   {
    "contractDate": "2026-02-28",
-   "price": 515000000,
+   "priceWon": 515000000,
    "floor": 8,
    "exclusiveArea": 84.99,
    "areaGroup": 85,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.2920001300635,
+  "longitude": 126.969068504535,
+  "roadAddress": "경기 수원시 장안구 서부로 2065",
+  "jibunAddress": "경기 수원시 장안구 율전동 468",
+  "geocodeStatus": "valid"
+ }
 }

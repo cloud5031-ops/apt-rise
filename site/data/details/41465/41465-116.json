@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "41465-116",
  "apartmentName": "만현마을5단지아이파크",
  "sidoCode": "41",
@@ -15,7 +17,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-19",
-   "price": 985000000,
+   "priceWon": 985000000,
    "floor": 18,
    "exclusiveArea": 99.9125,
    "areaGroup": 100,
@@ -24,7 +26,7 @@
   },
   {
    "contractDate": "2026-06-18",
-   "price": 1040000000,
+   "priceWon": 1040000000,
    "floor": 15,
    "exclusiveArea": 99.9125,
    "areaGroup": 100,
@@ -33,7 +35,7 @@
   },
   {
    "contractDate": "2026-06-04",
-   "price": 960000000,
+   "priceWon": 960000000,
    "floor": 17,
    "exclusiveArea": 134.7584,
    "areaGroup": 135,
@@ -42,7 +44,7 @@
   },
   {
    "contractDate": "2026-05-21",
-   "price": 1020000000,
+   "priceWon": 1020000000,
    "floor": 11,
    "exclusiveArea": 99.9125,
    "areaGroup": 100,
@@ -51,7 +53,7 @@
   },
   {
    "contractDate": "2026-05-09",
-   "price": 1025000000,
+   "priceWon": 1025000000,
    "floor": 9,
    "exclusiveArea": 99.9125,
    "areaGroup": 100,
@@ -60,7 +62,7 @@
   },
   {
    "contractDate": "2026-04-29",
-   "price": 875000000,
+   "priceWon": 875000000,
    "floor": 8,
    "exclusiveArea": 99.9125,
    "areaGroup": 100,
@@ -69,7 +71,7 @@
   },
   {
    "contractDate": "2026-04-19",
-   "price": 1030000000,
+   "priceWon": 1030000000,
    "floor": 14,
    "exclusiveArea": 134.7584,
    "areaGroup": 135,
@@ -78,7 +80,7 @@
   },
   {
    "contractDate": "2026-04-15",
-   "price": 890000000,
+   "priceWon": 890000000,
    "floor": 5,
    "exclusiveArea": 134.7584,
    "areaGroup": 135,
@@ -87,7 +89,7 @@
   },
   {
    "contractDate": "2026-04-11",
-   "price": 945000000,
+   "priceWon": 945000000,
    "floor": 10,
    "exclusiveArea": 134.7584,
    "areaGroup": 135,
@@ -96,7 +98,7 @@
   },
   {
    "contractDate": "2026-03-20",
-   "price": 950000000,
+   "priceWon": 950000000,
    "floor": 12,
    "exclusiveArea": 134.7584,
    "areaGroup": 135,
@@ -105,7 +107,7 @@
   },
   {
    "contractDate": "2026-03-19",
-   "price": 895000000,
+   "priceWon": 895000000,
    "floor": 18,
    "exclusiveArea": 134.7584,
    "areaGroup": 135,
@@ -114,7 +116,7 @@
   },
   {
    "contractDate": "2026-02-24",
-   "price": 1010000000,
+   "priceWon": 1010000000,
    "floor": 18,
    "exclusiveArea": 99.9125,
    "areaGroup": 100,
@@ -123,7 +125,7 @@
   },
   {
    "contractDate": "2026-02-05",
-   "price": 925000000,
+   "priceWon": 925000000,
    "floor": 12,
    "exclusiveArea": 134.7584,
    "areaGroup": 135,
@@ -132,12 +134,19 @@
   },
   {
    "contractDate": "2026-02-04",
-   "price": 937000000,
+   "priceWon": 937000000,
    "floor": 18,
    "exclusiveArea": 99.9125,
    "areaGroup": 100,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.3087628139178,
+  "longitude": 127.087022098815,
+  "roadAddress": "경기 용인시 수지구 만현로 69",
+  "jibunAddress": "경기 용인시 수지구 상현동 858",
+  "geocodeStatus": "valid"
+ }
 }

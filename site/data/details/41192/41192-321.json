@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "41192-321",
  "apartmentName": "다정한마을 경남아너스빌",
  "sidoCode": "41",
@@ -14,7 +16,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-30",
-   "price": 650000000,
+   "priceWon": 650000000,
    "floor": 15,
    "exclusiveArea": 84.8,
    "areaGroup": 85,
@@ -23,7 +25,7 @@
   },
   {
    "contractDate": "2026-06-26",
-   "price": 718000000,
+   "priceWon": 718000000,
    "floor": 8,
    "exclusiveArea": 84.8,
    "areaGroup": 85,
@@ -32,7 +34,7 @@
   },
   {
    "contractDate": "2026-06-17",
-   "price": 685000000,
+   "priceWon": 685000000,
    "floor": 9,
    "exclusiveArea": 84.8,
    "areaGroup": 85,
@@ -41,7 +43,7 @@
   },
   {
    "contractDate": "2026-05-15",
-   "price": 622000000,
+   "priceWon": 622000000,
    "floor": 7,
    "exclusiveArea": 84.8,
    "areaGroup": 85,
@@ -50,7 +52,7 @@
   },
   {
    "contractDate": "2026-05-12",
-   "price": 645000000,
+   "priceWon": 645000000,
    "floor": 10,
    "exclusiveArea": 84.8,
    "areaGroup": 85,
@@ -59,7 +61,7 @@
   },
   {
    "contractDate": "2026-05-09",
-   "price": 660000000,
+   "priceWon": 660000000,
    "floor": 22,
    "exclusiveArea": 84.8,
    "areaGroup": 85,
@@ -68,7 +70,7 @@
   },
   {
    "contractDate": "2026-04-20",
-   "price": 628000000,
+   "priceWon": 628000000,
    "floor": 15,
    "exclusiveArea": 84.8,
    "areaGroup": 85,
@@ -77,7 +79,7 @@
   },
   {
    "contractDate": "2026-04-18",
-   "price": 700000000,
+   "priceWon": 700000000,
    "floor": 8,
    "exclusiveArea": 84.8,
    "areaGroup": 85,
@@ -86,12 +88,19 @@
   },
   {
    "contractDate": "2026-04-08",
-   "price": 560000000,
+   "priceWon": 560000000,
    "floor": 12,
    "exclusiveArea": 84.8,
    "areaGroup": 85,
    "dealType": "직거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.514891092874,
+  "longitude": 126.756328363938,
+  "roadAddress": "경기 부천시 원미구 상동로 196",
+  "jibunAddress": "경기 부천시 원미구 상동 500-1",
+  "geocodeStatus": "ambiguous"
+ }
 }

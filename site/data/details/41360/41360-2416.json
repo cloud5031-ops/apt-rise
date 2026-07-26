@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "41360-2416",
  "apartmentName": "호평마을동원로얄듀크",
  "sidoCode": "41",
@@ -14,7 +16,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-24",
-   "price": 465000000,
+   "priceWon": 465000000,
    "floor": 15,
    "exclusiveArea": 84.9949,
    "areaGroup": 85,
@@ -23,7 +25,7 @@
   },
   {
    "contractDate": "2026-06-24",
-   "price": 445000000,
+   "priceWon": 445000000,
    "floor": 12,
    "exclusiveArea": 84.9949,
    "areaGroup": 85,
@@ -32,7 +34,7 @@
   },
   {
    "contractDate": "2026-06-23",
-   "price": 425000000,
+   "priceWon": 425000000,
    "floor": 14,
    "exclusiveArea": 84.9949,
    "areaGroup": 85,
@@ -41,7 +43,7 @@
   },
   {
    "contractDate": "2026-06-21",
-   "price": 530000000,
+   "priceWon": 530000000,
    "floor": 17,
    "exclusiveArea": 84.9949,
    "areaGroup": 85,
@@ -50,7 +52,7 @@
   },
   {
    "contractDate": "2026-06-19",
-   "price": 442000000,
+   "priceWon": 442000000,
    "floor": 9,
    "exclusiveArea": 84.9949,
    "areaGroup": 85,
@@ -59,7 +61,7 @@
   },
   {
    "contractDate": "2026-06-10",
-   "price": 440000000,
+   "priceWon": 440000000,
    "floor": 11,
    "exclusiveArea": 84.9949,
    "areaGroup": 85,
@@ -68,7 +70,7 @@
   },
   {
    "contractDate": "2026-06-02",
-   "price": 420000000,
+   "priceWon": 420000000,
    "floor": 9,
    "exclusiveArea": 84.9949,
    "areaGroup": 85,
@@ -77,7 +79,7 @@
   },
   {
    "contractDate": "2026-06-01",
-   "price": 435000000,
+   "priceWon": 435000000,
    "floor": 16,
    "exclusiveArea": 84.9949,
    "areaGroup": 85,
@@ -86,7 +88,7 @@
   },
   {
    "contractDate": "2026-06-01",
-   "price": 525000000,
+   "priceWon": 525000000,
    "floor": 20,
    "exclusiveArea": 84.9949,
    "areaGroup": 85,
@@ -95,7 +97,7 @@
   },
   {
    "contractDate": "2026-05-13",
-   "price": 375000000,
+   "priceWon": 375000000,
    "floor": 11,
    "exclusiveArea": 84.9949,
    "areaGroup": 85,
@@ -104,7 +106,7 @@
   },
   {
    "contractDate": "2026-05-12",
-   "price": 403000000,
+   "priceWon": 403000000,
    "floor": 6,
    "exclusiveArea": 84.9949,
    "areaGroup": 85,
@@ -113,7 +115,7 @@
   },
   {
    "contractDate": "2026-05-08",
-   "price": 398000000,
+   "priceWon": 398000000,
    "floor": 13,
    "exclusiveArea": 84.9949,
    "areaGroup": 85,
@@ -122,7 +124,7 @@
   },
   {
    "contractDate": "2026-05-08",
-   "price": 379000000,
+   "priceWon": 379000000,
    "floor": 15,
    "exclusiveArea": 84.9949,
    "areaGroup": 85,
@@ -131,7 +133,7 @@
   },
   {
    "contractDate": "2026-05-01",
-   "price": 375000000,
+   "priceWon": 375000000,
    "floor": 11,
    "exclusiveArea": 84.9949,
    "areaGroup": 85,
@@ -140,7 +142,7 @@
   },
   {
    "contractDate": "2026-04-11",
-   "price": 392000000,
+   "priceWon": 392000000,
    "floor": 12,
    "exclusiveArea": 84.9949,
    "areaGroup": 85,
@@ -149,7 +151,7 @@
   },
   {
    "contractDate": "2026-03-21",
-   "price": 365000000,
+   "priceWon": 365000000,
    "floor": 15,
    "exclusiveArea": 84.9949,
    "areaGroup": 85,
@@ -158,12 +160,19 @@
   },
   {
    "contractDate": "2026-02-26",
-   "price": 390000000,
+   "priceWon": 390000000,
    "floor": 8,
    "exclusiveArea": 84.9949,
    "areaGroup": 85,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.6572106649518,
+  "longitude": 127.250912185051,
+  "roadAddress": "경기 남양주시 호평로 89",
+  "jibunAddress": "경기 남양주시 호평동 676",
+  "geocodeStatus": "valid"
+ }
 }

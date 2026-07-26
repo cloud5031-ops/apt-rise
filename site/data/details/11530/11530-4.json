@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "11530-4",
  "apartmentName": "다솜금호",
  "sidoCode": "11",
@@ -16,7 +18,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-21",
-   "price": 538000000,
+   "priceWon": 538000000,
    "floor": 2,
    "exclusiveArea": 59.95,
    "areaGroup": 60,
@@ -25,7 +27,7 @@
   },
   {
    "contractDate": "2026-06-20",
-   "price": 597000000,
+   "priceWon": 597000000,
    "floor": 7,
    "exclusiveArea": 59.95,
    "areaGroup": 60,
@@ -34,7 +36,7 @@
   },
   {
    "contractDate": "2026-05-09",
-   "price": 590000000,
+   "priceWon": 590000000,
    "floor": 16,
    "exclusiveArea": 59.95,
    "areaGroup": 60,
@@ -43,7 +45,7 @@
   },
   {
    "contractDate": "2026-05-09",
-   "price": 572500000,
+   "priceWon": 572500000,
    "floor": 17,
    "exclusiveArea": 59.95,
    "areaGroup": 60,
@@ -52,7 +54,7 @@
   },
   {
    "contractDate": "2026-05-08",
-   "price": 740000000,
+   "priceWon": 740000000,
    "floor": 23,
    "exclusiveArea": 84.35,
    "areaGroup": 84,
@@ -61,7 +63,7 @@
   },
   {
    "contractDate": "2026-04-22",
-   "price": 530000000,
+   "priceWon": 530000000,
    "floor": 9,
    "exclusiveArea": 59.95,
    "areaGroup": 60,
@@ -70,7 +72,7 @@
   },
   {
    "contractDate": "2026-04-11",
-   "price": 677000000,
+   "priceWon": 677000000,
    "floor": 17,
    "exclusiveArea": 84.35,
    "areaGroup": 84,
@@ -79,7 +81,7 @@
   },
   {
    "contractDate": "2026-04-05",
-   "price": 722000000,
+   "priceWon": 722000000,
    "floor": 16,
    "exclusiveArea": 84.95,
    "areaGroup": 85,
@@ -88,7 +90,7 @@
   },
   {
    "contractDate": "2026-03-07",
-   "price": 520000000,
+   "priceWon": 520000000,
    "floor": 4,
    "exclusiveArea": 59.95,
    "areaGroup": 60,
@@ -97,7 +99,7 @@
   },
   {
    "contractDate": "2026-02-27",
-   "price": 680000000,
+   "priceWon": 680000000,
    "floor": 22,
    "exclusiveArea": 84.95,
    "areaGroup": 85,
@@ -106,7 +108,7 @@
   },
   {
    "contractDate": "2026-02-19",
-   "price": 660000000,
+   "priceWon": 660000000,
    "floor": 20,
    "exclusiveArea": 84.95,
    "areaGroup": 85,
@@ -115,12 +117,19 @@
   },
   {
    "contractDate": "2026-02-12",
-   "price": 717000000,
+   "priceWon": 717000000,
    "floor": 19,
    "exclusiveArea": 84.35,
    "areaGroup": 84,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.5025599589788,
+  "longitude": 126.891952426223,
+  "roadAddress": "서울 구로구 새말로16길 70",
+  "jibunAddress": "서울 구로구 구로동 43-4",
+  "geocodeStatus": "valid"
+ }
 }

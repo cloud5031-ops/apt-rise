@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "41465-107",
  "apartmentName": "풍산아파트",
  "sidoCode": "41",
@@ -15,7 +17,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-20",
-   "price": 850000000,
+   "priceWon": 850000000,
    "floor": 13,
    "exclusiveArea": 84.87,
    "areaGroup": 85,
@@ -24,7 +26,7 @@
   },
   {
    "contractDate": "2026-06-16",
-   "price": 777000000,
+   "priceWon": 777000000,
    "floor": 7,
    "exclusiveArea": 59.58,
    "areaGroup": 60,
@@ -33,7 +35,7 @@
   },
   {
    "contractDate": "2026-06-14",
-   "price": 780000000,
+   "priceWon": 780000000,
    "floor": 12,
    "exclusiveArea": 59.58,
    "areaGroup": 60,
@@ -42,7 +44,7 @@
   },
   {
    "contractDate": "2026-06-05",
-   "price": 720000000,
+   "priceWon": 720000000,
    "floor": 1,
    "exclusiveArea": 84.87,
    "areaGroup": 85,
@@ -51,7 +53,7 @@
   },
   {
    "contractDate": "2026-06-04",
-   "price": 770000000,
+   "priceWon": 770000000,
    "floor": 16,
    "exclusiveArea": 59.58,
    "areaGroup": 60,
@@ -60,7 +62,7 @@
   },
   {
    "contractDate": "2026-06-03",
-   "price": 720000000,
+   "priceWon": 720000000,
    "floor": 4,
    "exclusiveArea": 59.58,
    "areaGroup": 60,
@@ -69,7 +71,7 @@
   },
   {
    "contractDate": "2026-05-21",
-   "price": 740000000,
+   "priceWon": 740000000,
    "floor": 16,
    "exclusiveArea": 59.58,
    "areaGroup": 60,
@@ -78,7 +80,7 @@
   },
   {
    "contractDate": "2026-05-09",
-   "price": 710000000,
+   "priceWon": 710000000,
    "floor": 10,
    "exclusiveArea": 59.58,
    "areaGroup": 60,
@@ -87,7 +89,7 @@
   },
   {
    "contractDate": "2026-05-07",
-   "price": 745000000,
+   "priceWon": 745000000,
    "floor": 8,
    "exclusiveArea": 59.58,
    "areaGroup": 60,
@@ -96,7 +98,7 @@
   },
   {
    "contractDate": "2026-05-06",
-   "price": 835000000,
+   "priceWon": 835000000,
    "floor": 13,
    "exclusiveArea": 84.87,
    "areaGroup": 85,
@@ -105,7 +107,7 @@
   },
   {
    "contractDate": "2026-04-28",
-   "price": 735000000,
+   "priceWon": 735000000,
    "floor": 4,
    "exclusiveArea": 59.58,
    "areaGroup": 60,
@@ -114,7 +116,7 @@
   },
   {
    "contractDate": "2026-04-24",
-   "price": 760000000,
+   "priceWon": 760000000,
    "floor": 14,
    "exclusiveArea": 59.58,
    "areaGroup": 60,
@@ -123,7 +125,7 @@
   },
   {
    "contractDate": "2026-04-14",
-   "price": 725000000,
+   "priceWon": 725000000,
    "floor": 5,
    "exclusiveArea": 59.58,
    "areaGroup": 60,
@@ -132,7 +134,7 @@
   },
   {
    "contractDate": "2026-04-04",
-   "price": 750000000,
+   "priceWon": 750000000,
    "floor": 9,
    "exclusiveArea": 59.58,
    "areaGroup": 60,
@@ -141,7 +143,7 @@
   },
   {
    "contractDate": "2026-03-31",
-   "price": 750000000,
+   "priceWon": 750000000,
    "floor": 7,
    "exclusiveArea": 59.58,
    "areaGroup": 60,
@@ -150,7 +152,7 @@
   },
   {
    "contractDate": "2026-03-31",
-   "price": 800000000,
+   "priceWon": 800000000,
    "floor": 6,
    "exclusiveArea": 84.87,
    "areaGroup": 85,
@@ -159,7 +161,7 @@
   },
   {
    "contractDate": "2026-03-07",
-   "price": 600000000,
+   "priceWon": 600000000,
    "floor": 7,
    "exclusiveArea": 59.58,
    "areaGroup": 60,
@@ -168,7 +170,7 @@
   },
   {
    "contractDate": "2026-02-27",
-   "price": 800000000,
+   "priceWon": 800000000,
    "floor": 14,
    "exclusiveArea": 59.58,
    "areaGroup": 60,
@@ -177,7 +179,7 @@
   },
   {
    "contractDate": "2026-02-21",
-   "price": 770000000,
+   "priceWon": 770000000,
    "floor": 1,
    "exclusiveArea": 84.87,
    "areaGroup": 85,
@@ -186,7 +188,7 @@
   },
   {
    "contractDate": "2026-02-12",
-   "price": 773000000,
+   "priceWon": 773000000,
    "floor": 11,
    "exclusiveArea": 84.87,
    "areaGroup": 85,
@@ -195,12 +197,19 @@
   },
   {
    "contractDate": "2026-02-08",
-   "price": 745000000,
+   "priceWon": 745000000,
    "floor": 17,
    "exclusiveArea": 59.58,
    "areaGroup": 60,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.309701210201,
+  "longitude": 127.079377329174,
+  "roadAddress": "경기 용인시 수지구 수지로78번길 18",
+  "jibunAddress": "경기 용인시 수지구 상현동 96-1",
+  "geocodeStatus": "valid"
+ }
 }

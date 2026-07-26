@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "41310-1120",
  "apartmentName": "구리갈매푸르지오",
  "sidoCode": "41",
@@ -19,7 +21,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-30",
-   "price": 927000000,
+   "priceWon": 927000000,
    "floor": 10,
    "exclusiveArea": 99.5986,
    "areaGroup": 100,
@@ -28,7 +30,7 @@
   },
   {
    "contractDate": "2026-06-30",
-   "price": 660000000,
+   "priceWon": 660000000,
    "floor": 10,
    "exclusiveArea": 99.6111,
    "areaGroup": 100,
@@ -37,7 +39,7 @@
   },
   {
    "contractDate": "2026-06-26",
-   "price": 805000000,
+   "priceWon": 805000000,
    "floor": 17,
    "exclusiveArea": 84.5889,
    "areaGroup": 85,
@@ -46,7 +48,7 @@
   },
   {
    "contractDate": "2026-06-25",
-   "price": 815000000,
+   "priceWon": 815000000,
    "floor": 16,
    "exclusiveArea": 84.5889,
    "areaGroup": 85,
@@ -55,7 +57,7 @@
   },
   {
    "contractDate": "2026-06-22",
-   "price": 815000000,
+   "priceWon": 815000000,
    "floor": 24,
    "exclusiveArea": 84.5889,
    "areaGroup": 85,
@@ -64,7 +66,7 @@
   },
   {
    "contractDate": "2026-06-20",
-   "price": 818000000,
+   "priceWon": 818000000,
    "floor": 19,
    "exclusiveArea": 84.9658,
    "areaGroup": 85,
@@ -73,7 +75,7 @@
   },
   {
    "contractDate": "2026-06-15",
-   "price": 813000000,
+   "priceWon": 813000000,
    "floor": 25,
    "exclusiveArea": 84.5889,
    "areaGroup": 85,
@@ -82,7 +84,7 @@
   },
   {
    "contractDate": "2026-05-29",
-   "price": 810000000,
+   "priceWon": 810000000,
    "floor": 21,
    "exclusiveArea": 84.5889,
    "areaGroup": 85,
@@ -91,7 +93,7 @@
   },
   {
    "contractDate": "2026-05-25",
-   "price": 930000000,
+   "priceWon": 930000000,
    "floor": 12,
    "exclusiveArea": 99.6111,
    "areaGroup": 100,
@@ -100,7 +102,7 @@
   },
   {
    "contractDate": "2026-05-17",
-   "price": 910000000,
+   "priceWon": 910000000,
    "floor": 8,
    "exclusiveArea": 99.6111,
    "areaGroup": 100,
@@ -109,7 +111,7 @@
   },
   {
    "contractDate": "2026-04-29",
-   "price": 765000000,
+   "priceWon": 765000000,
    "floor": 24,
    "exclusiveArea": 84.5889,
    "areaGroup": 85,
@@ -118,7 +120,7 @@
   },
   {
    "contractDate": "2026-04-24",
-   "price": 870000000,
+   "priceWon": 870000000,
    "floor": 24,
    "exclusiveArea": 99.6111,
    "areaGroup": 100,
@@ -127,7 +129,7 @@
   },
   {
    "contractDate": "2026-04-22",
-   "price": 860000000,
+   "priceWon": 860000000,
    "floor": 13,
    "exclusiveArea": 84.7671,
    "areaGroup": 85,
@@ -136,7 +138,7 @@
   },
   {
    "contractDate": "2026-04-21",
-   "price": 873000000,
+   "priceWon": 873000000,
    "floor": 11,
    "exclusiveArea": 99.5986,
    "areaGroup": 100,
@@ -145,7 +147,7 @@
   },
   {
    "contractDate": "2026-04-19",
-   "price": 730000000,
+   "priceWon": 730000000,
    "floor": 4,
    "exclusiveArea": 84.9658,
    "areaGroup": 85,
@@ -154,7 +156,7 @@
   },
   {
    "contractDate": "2026-04-06",
-   "price": 825000000,
+   "priceWon": 825000000,
    "floor": 6,
    "exclusiveArea": 84.4752,
    "areaGroup": 84,
@@ -163,7 +165,7 @@
   },
   {
    "contractDate": "2026-04-04",
-   "price": 792000000,
+   "priceWon": 792000000,
    "floor": 20,
    "exclusiveArea": 84.7671,
    "areaGroup": 85,
@@ -172,7 +174,7 @@
   },
   {
    "contractDate": "2026-04-04",
-   "price": 796000000,
+   "priceWon": 796000000,
    "floor": 16,
    "exclusiveArea": 84.5889,
    "areaGroup": 85,
@@ -181,12 +183,19 @@
   },
   {
    "contractDate": "2026-03-14",
-   "price": 795000000,
+   "priceWon": 795000000,
    "floor": 10,
    "exclusiveArea": 84.5889,
    "areaGroup": 85,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.6264155755823,
+  "longitude": 127.115332029661,
+  "roadAddress": "경기 구리시 갈매중앙로 16",
+  "jibunAddress": "경기 구리시 갈매동 640",
+  "geocodeStatus": "valid"
+ }
 }

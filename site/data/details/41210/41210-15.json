@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "41210-15",
  "apartmentName": "주공11",
  "sidoCode": "41",
@@ -15,7 +17,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-20",
-   "price": 540000000,
+   "priceWon": 540000000,
    "floor": 6,
    "exclusiveArea": 36.16,
    "areaGroup": 36,
@@ -24,7 +26,7 @@
   },
   {
    "contractDate": "2026-06-01",
-   "price": 550000000,
+   "priceWon": 550000000,
    "floor": 10,
    "exclusiveArea": 36.16,
    "areaGroup": 36,
@@ -33,7 +35,7 @@
   },
   {
    "contractDate": "2026-05-21",
-   "price": 730000000,
+   "priceWon": 730000000,
    "floor": 12,
    "exclusiveArea": 49.94,
    "areaGroup": 50,
@@ -42,7 +44,7 @@
   },
   {
    "contractDate": "2026-05-20",
-   "price": 733000000,
+   "priceWon": 733000000,
    "floor": 8,
    "exclusiveArea": 49.94,
    "areaGroup": 50,
@@ -51,7 +53,7 @@
   },
   {
    "contractDate": "2026-05-19",
-   "price": 740000000,
+   "priceWon": 740000000,
    "floor": 15,
    "exclusiveArea": 49.94,
    "areaGroup": 50,
@@ -60,7 +62,7 @@
   },
   {
    "contractDate": "2026-05-09",
-   "price": 720000000,
+   "priceWon": 720000000,
    "floor": 8,
    "exclusiveArea": 49.94,
    "areaGroup": 50,
@@ -69,7 +71,7 @@
   },
   {
    "contractDate": "2026-04-02",
-   "price": 647000000,
+   "priceWon": 647000000,
    "floor": 1,
    "exclusiveArea": 49.94,
    "areaGroup": 50,
@@ -78,7 +80,7 @@
   },
   {
    "contractDate": "2026-03-20",
-   "price": 635000000,
+   "priceWon": 635000000,
    "floor": 2,
    "exclusiveArea": 49.94,
    "areaGroup": 50,
@@ -87,7 +89,7 @@
   },
   {
    "contractDate": "2026-02-25",
-   "price": 670000000,
+   "priceWon": 670000000,
    "floor": 6,
    "exclusiveArea": 49.94,
    "areaGroup": 50,
@@ -96,12 +98,19 @@
   },
   {
    "contractDate": "2026-02-10",
-   "price": 645000000,
+   "priceWon": 645000000,
    "floor": 1,
    "exclusiveArea": 49.94,
    "areaGroup": 50,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.4647263567014,
+  "longitude": 126.881700460763,
+  "roadAddress": "경기 광명시 하안로 318",
+  "jibunAddress": "경기 광명시 하안동 27",
+  "geocodeStatus": "valid"
+ }
 }

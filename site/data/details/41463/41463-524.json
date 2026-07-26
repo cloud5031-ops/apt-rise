@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "41463-524",
  "apartmentName": "호수마을자연앤데시앙",
  "sidoCode": "41",
@@ -15,7 +17,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-18",
-   "price": 497000000,
+   "priceWon": 497000000,
    "floor": 20,
    "exclusiveArea": 84.976,
    "areaGroup": 85,
@@ -24,7 +26,7 @@
   },
   {
    "contractDate": "2026-06-17",
-   "price": 485000000,
+   "priceWon": 485000000,
    "floor": 8,
    "exclusiveArea": 84.9791,
    "areaGroup": 85,
@@ -33,7 +35,7 @@
   },
   {
    "contractDate": "2026-06-02",
-   "price": 495000000,
+   "priceWon": 495000000,
    "floor": 8,
    "exclusiveArea": 84.976,
    "areaGroup": 85,
@@ -42,7 +44,7 @@
   },
   {
    "contractDate": "2026-05-19",
-   "price": 495000000,
+   "priceWon": 495000000,
    "floor": 6,
    "exclusiveArea": 84.976,
    "areaGroup": 85,
@@ -51,7 +53,7 @@
   },
   {
    "contractDate": "2026-05-13",
-   "price": 560000000,
+   "priceWon": 560000000,
    "floor": 9,
    "exclusiveArea": 84.9791,
    "areaGroup": 85,
@@ -60,7 +62,7 @@
   },
   {
    "contractDate": "2026-04-06",
-   "price": 440000000,
+   "priceWon": 440000000,
    "floor": 20,
    "exclusiveArea": 84.976,
    "areaGroup": 85,
@@ -69,7 +71,7 @@
   },
   {
    "contractDate": "2026-04-01",
-   "price": 495000000,
+   "priceWon": 495000000,
    "floor": 10,
    "exclusiveArea": 84.9791,
    "areaGroup": 85,
@@ -78,7 +80,7 @@
   },
   {
    "contractDate": "2026-02-23",
-   "price": 465000000,
+   "priceWon": 465000000,
    "floor": 4,
    "exclusiveArea": 84.976,
    "areaGroup": 85,
@@ -87,12 +89,19 @@
   },
   {
    "contractDate": "2026-02-19",
-   "price": 440000000,
+   "priceWon": 440000000,
    "floor": 4,
    "exclusiveArea": 84.976,
    "areaGroup": 85,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.2869152650769,
+  "longitude": 127.15158768855,
+  "roadAddress": "경기 용인시 기흥구 동백8로 11",
+  "jibunAddress": "경기 용인시 기흥구 동백동 572",
+  "geocodeStatus": "valid"
+ }
 }

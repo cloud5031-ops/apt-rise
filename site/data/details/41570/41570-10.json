@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "41570-10",
  "apartmentName": "풍년마을(청구)",
  "sidoCode": "41",
@@ -15,7 +17,7 @@
  "transactions": [
   {
    "contractDate": "2026-05-23",
-   "price": 395000000,
+   "priceWon": 395000000,
    "floor": 11,
    "exclusiveArea": 59.97,
    "areaGroup": 60,
@@ -24,7 +26,7 @@
   },
   {
    "contractDate": "2026-05-23",
-   "price": 358000000,
+   "priceWon": 358000000,
    "floor": 4,
    "exclusiveArea": 59.97,
    "areaGroup": 60,
@@ -33,7 +35,7 @@
   },
   {
    "contractDate": "2026-04-25",
-   "price": 310000000,
+   "priceWon": 310000000,
    "floor": 12,
    "exclusiveArea": 59.99,
    "areaGroup": 60,
@@ -42,7 +44,7 @@
   },
   {
    "contractDate": "2026-03-07",
-   "price": 365000000,
+   "priceWon": 365000000,
    "floor": 12,
    "exclusiveArea": 59.97,
    "areaGroup": 60,
@@ -51,12 +53,19 @@
   },
   {
    "contractDate": "2026-03-04",
-   "price": 305000000,
+   "priceWon": 305000000,
    "floor": 1,
    "exclusiveArea": 59.97,
    "areaGroup": 60,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.6218058989454,
+  "longitude": 126.71909002094,
+  "roadAddress": "경기 김포시 사우중로73번길 11",
+  "jibunAddress": "경기 김포시 북변동 815",
+  "geocodeStatus": "valid"
+ }
 }

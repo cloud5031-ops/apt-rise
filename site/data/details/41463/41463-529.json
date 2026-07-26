@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "41463-529",
  "apartmentName": "한보라에듀포레",
  "sidoCode": "41",
@@ -17,7 +19,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-30",
-   "price": 420000000,
+   "priceWon": 420000000,
    "floor": 11,
    "exclusiveArea": 84.98,
    "areaGroup": 85,
@@ -26,7 +28,7 @@
   },
   {
    "contractDate": "2026-06-30",
-   "price": 445000000,
+   "priceWon": 445000000,
    "floor": 6,
    "exclusiveArea": 84.99,
    "areaGroup": 85,
@@ -35,7 +37,7 @@
   },
   {
    "contractDate": "2026-06-30",
-   "price": 393000000,
+   "priceWon": 393000000,
    "floor": 1,
    "exclusiveArea": 84.91,
    "areaGroup": 85,
@@ -44,7 +46,7 @@
   },
   {
    "contractDate": "2026-06-30",
-   "price": 445000000,
+   "priceWon": 445000000,
    "floor": 10,
    "exclusiveArea": 84.99,
    "areaGroup": 85,
@@ -53,7 +55,7 @@
   },
   {
    "contractDate": "2026-05-29",
-   "price": 420000000,
+   "priceWon": 420000000,
    "floor": 4,
    "exclusiveArea": 84.99,
    "areaGroup": 85,
@@ -62,7 +64,7 @@
   },
   {
    "contractDate": "2026-05-29",
-   "price": 438000000,
+   "priceWon": 438000000,
    "floor": 5,
    "exclusiveArea": 84.99,
    "areaGroup": 85,
@@ -71,7 +73,7 @@
   },
   {
    "contractDate": "2026-05-14",
-   "price": 430000000,
+   "priceWon": 430000000,
    "floor": 14,
    "exclusiveArea": 84.91,
    "areaGroup": 85,
@@ -80,7 +82,7 @@
   },
   {
    "contractDate": "2026-05-09",
-   "price": 405000000,
+   "priceWon": 405000000,
    "floor": 5,
    "exclusiveArea": 84.91,
    "areaGroup": 85,
@@ -89,7 +91,7 @@
   },
   {
    "contractDate": "2026-04-29",
-   "price": 420000000,
+   "priceWon": 420000000,
    "floor": 21,
    "exclusiveArea": 84.91,
    "areaGroup": 85,
@@ -98,7 +100,7 @@
   },
   {
    "contractDate": "2026-04-25",
-   "price": 438000000,
+   "priceWon": 438000000,
    "floor": 12,
    "exclusiveArea": 84.91,
    "areaGroup": 85,
@@ -107,7 +109,7 @@
   },
   {
    "contractDate": "2026-03-28",
-   "price": 415000000,
+   "priceWon": 415000000,
    "floor": 8,
    "exclusiveArea": 84.98,
    "areaGroup": 85,
@@ -116,7 +118,7 @@
   },
   {
    "contractDate": "2026-03-09",
-   "price": 400000000,
+   "priceWon": 400000000,
    "floor": 25,
    "exclusiveArea": 84.74,
    "areaGroup": 85,
@@ -125,7 +127,7 @@
   },
   {
    "contractDate": "2026-03-07",
-   "price": 415000000,
+   "priceWon": 415000000,
    "floor": 7,
    "exclusiveArea": 84.98,
    "areaGroup": 85,
@@ -134,7 +136,7 @@
   },
   {
    "contractDate": "2026-02-09",
-   "price": 330000000,
+   "priceWon": 330000000,
    "floor": 10,
    "exclusiveArea": 84.74,
    "areaGroup": 85,
@@ -143,12 +145,19 @@
   },
   {
    "contractDate": "2026-02-03",
-   "price": 450000000,
+   "priceWon": 450000000,
    "floor": 7,
    "exclusiveArea": 84.99,
    "areaGroup": 85,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.2491205699919,
+  "longitude": 127.109886952842,
+  "roadAddress": "경기 용인시 기흥구 한보라1로43번길 22",
+  "jibunAddress": "경기 용인시 기흥구 보라동 617",
+  "geocodeStatus": "ambiguous"
+ }
 }

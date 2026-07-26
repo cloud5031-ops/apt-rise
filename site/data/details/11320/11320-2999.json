@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "11320-2999",
  "apartmentName": "북한산코오롱하늘채",
  "sidoCode": "11",
@@ -15,7 +17,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-20",
-   "price": 783000000,
+   "priceWon": 783000000,
    "floor": 10,
    "exclusiveArea": 84.98,
    "areaGroup": 85,
@@ -24,7 +26,7 @@
   },
   {
    "contractDate": "2026-06-05",
-   "price": 770000000,
+   "priceWon": 770000000,
    "floor": 9,
    "exclusiveArea": 84.98,
    "areaGroup": 85,
@@ -33,7 +35,7 @@
   },
   {
    "contractDate": "2026-05-11",
-   "price": 755000000,
+   "priceWon": 755000000,
    "floor": 15,
    "exclusiveArea": 84.98,
    "areaGroup": 85,
@@ -42,7 +44,7 @@
   },
   {
    "contractDate": "2026-04-30",
-   "price": 730000000,
+   "priceWon": 730000000,
    "floor": 13,
    "exclusiveArea": 84.98,
    "areaGroup": 85,
@@ -51,7 +53,7 @@
   },
   {
    "contractDate": "2026-04-18",
-   "price": 750000000,
+   "priceWon": 750000000,
    "floor": 14,
    "exclusiveArea": 84.98,
    "areaGroup": 85,
@@ -60,7 +62,7 @@
   },
   {
    "contractDate": "2026-04-16",
-   "price": 713000000,
+   "priceWon": 713000000,
    "floor": 16,
    "exclusiveArea": 84.98,
    "areaGroup": 85,
@@ -69,7 +71,7 @@
   },
   {
    "contractDate": "2026-04-01",
-   "price": 740000000,
+   "priceWon": 740000000,
    "floor": 15,
    "exclusiveArea": 84.98,
    "areaGroup": 85,
@@ -78,7 +80,7 @@
   },
   {
    "contractDate": "2026-03-14",
-   "price": 645000000,
+   "priceWon": 645000000,
    "floor": 9,
    "exclusiveArea": 59.98,
    "areaGroup": 60,
@@ -87,12 +89,19 @@
   },
   {
    "contractDate": "2026-02-11",
-   "price": 748000000,
+   "priceWon": 748000000,
    "floor": 9,
    "exclusiveArea": 84.98,
    "areaGroup": 85,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.6482484515853,
+  "longitude": 127.023195607393,
+  "roadAddress": "서울 도봉구 우이천로 367",
+  "jibunAddress": "서울 도봉구 쌍문동 732",
+  "geocodeStatus": "valid"
+ }
 }

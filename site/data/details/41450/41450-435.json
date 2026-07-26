@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "41450-435",
  "apartmentName": "힐스테이트포웰시티",
  "sidoCode": "41",
@@ -15,7 +17,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-30",
-   "price": 1540000000,
+   "priceWon": 1540000000,
    "floor": 7,
    "exclusiveArea": 73.811,
    "areaGroup": 74,
@@ -24,7 +26,7 @@
   },
   {
    "contractDate": "2026-06-20",
-   "price": 1690000000,
+   "priceWon": 1690000000,
    "floor": 13,
    "exclusiveArea": 84.4259,
    "areaGroup": 84,
@@ -33,7 +35,7 @@
   },
   {
    "contractDate": "2026-06-05",
-   "price": 1635000000,
+   "priceWon": 1635000000,
    "floor": 24,
    "exclusiveArea": 84.4259,
    "areaGroup": 84,
@@ -42,7 +44,7 @@
   },
   {
    "contractDate": "2026-05-28",
-   "price": 1530000000,
+   "priceWon": 1530000000,
    "floor": 26,
    "exclusiveArea": 73.811,
    "areaGroup": 74,
@@ -51,7 +53,7 @@
   },
   {
    "contractDate": "2026-05-22",
-   "price": 1547000000,
+   "priceWon": 1547000000,
    "floor": 20,
    "exclusiveArea": 73.811,
    "areaGroup": 74,
@@ -60,7 +62,7 @@
   },
   {
    "contractDate": "2026-05-16",
-   "price": 1615000000,
+   "priceWon": 1615000000,
    "floor": 6,
    "exclusiveArea": 84.4259,
    "areaGroup": 84,
@@ -69,7 +71,7 @@
   },
   {
    "contractDate": "2026-05-06",
-   "price": 1545000000,
+   "priceWon": 1545000000,
    "floor": 10,
    "exclusiveArea": 73.811,
    "areaGroup": 74,
@@ -78,7 +80,7 @@
   },
   {
    "contractDate": "2026-05-04",
-   "price": 1300000000,
+   "priceWon": 1300000000,
    "floor": 4,
    "exclusiveArea": 73.811,
    "areaGroup": 74,
@@ -87,7 +89,7 @@
   },
   {
    "contractDate": "2026-04-21",
-   "price": 1550000000,
+   "priceWon": 1550000000,
    "floor": 9,
    "exclusiveArea": 84.4259,
    "areaGroup": 84,
@@ -96,7 +98,7 @@
   },
   {
    "contractDate": "2026-04-11",
-   "price": 1430000000,
+   "priceWon": 1430000000,
    "floor": 4,
    "exclusiveArea": 73.811,
    "areaGroup": 74,
@@ -105,7 +107,7 @@
   },
   {
    "contractDate": "2026-03-28",
-   "price": 1640000000,
+   "priceWon": 1640000000,
    "floor": 7,
    "exclusiveArea": 84.4259,
    "areaGroup": 84,
@@ -114,7 +116,7 @@
   },
   {
    "contractDate": "2026-02-28",
-   "price": 1500000000,
+   "priceWon": 1500000000,
    "floor": 13,
    "exclusiveArea": 73.811,
    "areaGroup": 74,
@@ -123,7 +125,7 @@
   },
   {
    "contractDate": "2026-02-21",
-   "price": 1490000000,
+   "priceWon": 1490000000,
    "floor": 18,
    "exclusiveArea": 73.811,
    "areaGroup": 74,
@@ -132,7 +134,7 @@
   },
   {
    "contractDate": "2026-02-19",
-   "price": 1480000000,
+   "priceWon": 1480000000,
    "floor": 26,
    "exclusiveArea": 73.811,
    "areaGroup": 74,
@@ -141,7 +143,7 @@
   },
   {
    "contractDate": "2026-02-13",
-   "price": 1470000000,
+   "priceWon": 1470000000,
    "floor": 17,
    "exclusiveArea": 73.811,
    "areaGroup": 74,
@@ -150,12 +152,19 @@
   },
   {
    "contractDate": "2026-02-09",
-   "price": 1520000000,
+   "priceWon": 1520000000,
    "floor": 9,
    "exclusiveArea": 84.4259,
    "areaGroup": 84,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.5067607838982,
+  "longitude": 127.16073130076,
+  "roadAddress": "경기 하남시 감일백제로 120",
+  "jibunAddress": "경기 하남시 감이동 458",
+  "geocodeStatus": "valid"
+ }
 }

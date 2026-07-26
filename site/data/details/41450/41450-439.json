@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "41450-439",
  "apartmentName": "더샵포웰시티",
  "sidoCode": "41",
@@ -16,7 +18,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-19",
-   "price": 1560000000,
+   "priceWon": 1560000000,
    "floor": 23,
    "exclusiveArea": 90.8184,
    "areaGroup": 91,
@@ -25,7 +27,7 @@
   },
   {
    "contractDate": "2026-06-19",
-   "price": 1580000000,
+   "priceWon": 1580000000,
    "floor": 19,
    "exclusiveArea": 99.6429,
    "areaGroup": 100,
@@ -34,7 +36,7 @@
   },
   {
    "contractDate": "2026-06-05",
-   "price": 1510000000,
+   "priceWon": 1510000000,
    "floor": 19,
    "exclusiveArea": 90.8184,
    "areaGroup": 91,
@@ -43,7 +45,7 @@
   },
   {
    "contractDate": "2026-05-22",
-   "price": 1470000000,
+   "priceWon": 1470000000,
    "floor": 15,
    "exclusiveArea": 90.8184,
    "areaGroup": 91,
@@ -52,7 +54,7 @@
   },
   {
    "contractDate": "2026-05-22",
-   "price": 1585000000,
+   "priceWon": 1585000000,
    "floor": 19,
    "exclusiveArea": 99.6429,
    "areaGroup": 100,
@@ -61,7 +63,7 @@
   },
   {
    "contractDate": "2026-05-21",
-   "price": 1515000000,
+   "priceWon": 1515000000,
    "floor": 15,
    "exclusiveArea": 99.6429,
    "areaGroup": 100,
@@ -70,7 +72,7 @@
   },
   {
    "contractDate": "2026-05-16",
-   "price": 1570000000,
+   "priceWon": 1570000000,
    "floor": 20,
    "exclusiveArea": 99.4327,
    "areaGroup": 99,
@@ -79,7 +81,7 @@
   },
   {
    "contractDate": "2026-05-08",
-   "price": 1500000000,
+   "priceWon": 1500000000,
    "floor": 8,
    "exclusiveArea": 99.6429,
    "areaGroup": 100,
@@ -88,7 +90,7 @@
   },
   {
    "contractDate": "2026-04-23",
-   "price": 1395000000,
+   "priceWon": 1395000000,
    "floor": 2,
    "exclusiveArea": 99.6429,
    "areaGroup": 100,
@@ -97,7 +99,7 @@
   },
   {
    "contractDate": "2026-04-17",
-   "price": 1470000000,
+   "priceWon": 1470000000,
    "floor": 15,
    "exclusiveArea": 90.8184,
    "areaGroup": 91,
@@ -106,12 +108,19 @@
   },
   {
    "contractDate": "2026-04-04",
-   "price": 1470000000,
+   "priceWon": 1470000000,
    "floor": 8,
    "exclusiveArea": 99.6429,
    "areaGroup": 100,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.5026404065148,
+  "longitude": 127.164522747883,
+  "roadAddress": "경기 하남시 감일백제로 70",
+  "jibunAddress": "경기 하남시 감이동 491",
+  "geocodeStatus": "valid"
+ }
 }

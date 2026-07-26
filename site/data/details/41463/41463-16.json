@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "41463-16",
  "apartmentName": "하마비마을동일하이빌2",
  "sidoCode": "41",
@@ -16,7 +18,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-30",
-   "price": 635000000,
+   "priceWon": 635000000,
    "floor": 4,
    "exclusiveArea": 109.838,
    "areaGroup": 110,
@@ -25,7 +27,7 @@
   },
   {
    "contractDate": "2026-06-30",
-   "price": 610000000,
+   "priceWon": 610000000,
    "floor": 15,
    "exclusiveArea": 139.251,
    "areaGroup": 139,
@@ -34,7 +36,7 @@
   },
   {
    "contractDate": "2026-06-28",
-   "price": 580000000,
+   "priceWon": 580000000,
    "floor": 2,
    "exclusiveArea": 161.549,
    "areaGroup": 162,
@@ -43,7 +45,7 @@
   },
   {
    "contractDate": "2026-06-13",
-   "price": 555000000,
+   "priceWon": 555000000,
    "floor": 1,
    "exclusiveArea": 109.838,
    "areaGroup": 110,
@@ -52,7 +54,7 @@
   },
   {
    "contractDate": "2026-06-09",
-   "price": 660000000,
+   "priceWon": 660000000,
    "floor": 7,
    "exclusiveArea": 161.549,
    "areaGroup": 162,
@@ -61,7 +63,7 @@
   },
   {
    "contractDate": "2026-06-06",
-   "price": 564000000,
+   "priceWon": 564000000,
    "floor": 1,
    "exclusiveArea": 109.838,
    "areaGroup": 110,
@@ -70,7 +72,7 @@
   },
   {
    "contractDate": "2026-05-26",
-   "price": 560000000,
+   "priceWon": 560000000,
    "floor": 20,
    "exclusiveArea": 109.838,
    "areaGroup": 110,
@@ -79,7 +81,7 @@
   },
   {
    "contractDate": "2026-05-18",
-   "price": 626000000,
+   "priceWon": 626000000,
    "floor": 12,
    "exclusiveArea": 109.838,
    "areaGroup": 110,
@@ -88,7 +90,7 @@
   },
   {
    "contractDate": "2026-05-14",
-   "price": 657000000,
+   "priceWon": 657000000,
    "floor": 10,
    "exclusiveArea": 109.838,
    "areaGroup": 110,
@@ -97,7 +99,7 @@
   },
   {
    "contractDate": "2026-05-12",
-   "price": 450000000,
+   "priceWon": 450000000,
    "floor": 9,
    "exclusiveArea": 139.251,
    "areaGroup": 139,
@@ -106,7 +108,7 @@
   },
   {
    "contractDate": "2026-05-07",
-   "price": 630000000,
+   "priceWon": 630000000,
    "floor": 17,
    "exclusiveArea": 139.251,
    "areaGroup": 139,
@@ -115,7 +117,7 @@
   },
   {
    "contractDate": "2026-05-05",
-   "price": 647000000,
+   "priceWon": 647000000,
    "floor": 10,
    "exclusiveArea": 109.838,
    "areaGroup": 110,
@@ -124,7 +126,7 @@
   },
   {
    "contractDate": "2026-05-05",
-   "price": 610000000,
+   "priceWon": 610000000,
    "floor": 4,
    "exclusiveArea": 139.251,
    "areaGroup": 139,
@@ -133,7 +135,7 @@
   },
   {
    "contractDate": "2026-04-03",
-   "price": 580000000,
+   "priceWon": 580000000,
    "floor": 12,
    "exclusiveArea": 139.251,
    "areaGroup": 139,
@@ -142,7 +144,7 @@
   },
   {
    "contractDate": "2026-03-19",
-   "price": 550000000,
+   "priceWon": 550000000,
    "floor": 2,
    "exclusiveArea": 139.251,
    "areaGroup": 139,
@@ -151,7 +153,7 @@
   },
   {
    "contractDate": "2026-03-17",
-   "price": 633000000,
+   "priceWon": 633000000,
    "floor": 9,
    "exclusiveArea": 109.838,
    "areaGroup": 110,
@@ -160,7 +162,7 @@
   },
   {
    "contractDate": "2026-03-11",
-   "price": 580000000,
+   "priceWon": 580000000,
    "floor": 1,
    "exclusiveArea": 139.251,
    "areaGroup": 139,
@@ -169,7 +171,7 @@
   },
   {
    "contractDate": "2026-03-07",
-   "price": 605000000,
+   "priceWon": 605000000,
    "floor": 14,
    "exclusiveArea": 139.251,
    "areaGroup": 139,
@@ -178,12 +180,19 @@
   },
   {
    "contractDate": "2026-02-12",
-   "price": 610000000,
+   "priceWon": 610000000,
    "floor": 19,
    "exclusiveArea": 139.251,
    "areaGroup": 139,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.294690918449,
+  "longitude": 127.126953997498,
+  "roadAddress": "경기 용인시 기흥구 언남로 15",
+  "jibunAddress": "경기 용인시 기흥구 언남동 496",
+  "geocodeStatus": "valid"
+ }
 }

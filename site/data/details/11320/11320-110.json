@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "11320-110",
  "apartmentName": "금호어울림",
  "sidoCode": "11",
@@ -16,7 +18,7 @@
  "transactions": [
   {
    "contractDate": "2026-05-22",
-   "price": 890000000,
+   "priceWon": 890000000,
    "floor": 1,
    "exclusiveArea": 84.99,
    "areaGroup": 85,
@@ -25,7 +27,7 @@
   },
   {
    "contractDate": "2026-05-12",
-   "price": 883000000,
+   "priceWon": 883000000,
    "floor": 9,
    "exclusiveArea": 84.99,
    "areaGroup": 85,
@@ -34,7 +36,7 @@
   },
   {
    "contractDate": "2026-04-08",
-   "price": 800000000,
+   "priceWon": 800000000,
    "floor": 2,
    "exclusiveArea": 84.99,
    "areaGroup": 85,
@@ -43,7 +45,7 @@
   },
   {
    "contractDate": "2026-03-25",
-   "price": 890000000,
+   "priceWon": 890000000,
    "floor": 2,
    "exclusiveArea": 152.09,
    "areaGroup": 152,
@@ -52,7 +54,7 @@
   },
   {
    "contractDate": "2026-03-03",
-   "price": 812000000,
+   "priceWon": 812000000,
    "floor": 7,
    "exclusiveArea": 84.99,
    "areaGroup": 85,
@@ -61,7 +63,7 @@
   },
   {
    "contractDate": "2026-02-28",
-   "price": 930000000,
+   "priceWon": 930000000,
    "floor": 12,
    "exclusiveArea": 122.63,
    "areaGroup": 123,
@@ -70,12 +72,19 @@
   },
   {
    "contractDate": "2026-02-19",
-   "price": 870000000,
+   "priceWon": 870000000,
    "floor": 13,
    "exclusiveArea": 84.99,
    "areaGroup": 85,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.656473916567,
+  "longitude": 127.041736798042,
+  "roadAddress": "서울 도봉구 도봉로136가길 68",
+  "jibunAddress": "서울 도봉구 창동 823",
+  "geocodeStatus": "valid"
+ }
 }

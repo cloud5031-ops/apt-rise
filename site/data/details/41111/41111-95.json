@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "41111-95",
  "apartmentName": "한일타운태영",
  "sidoCode": "41",
@@ -17,7 +19,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-27",
-   "price": 580000000,
+   "priceWon": 580000000,
    "floor": 20,
    "exclusiveArea": 84.772,
    "areaGroup": 85,
@@ -26,7 +28,7 @@
   },
   {
    "contractDate": "2026-06-27",
-   "price": 660000000,
+   "priceWon": 660000000,
    "floor": 15,
    "exclusiveArea": 99.98,
    "areaGroup": 100,
@@ -35,7 +37,7 @@
   },
   {
    "contractDate": "2026-06-25",
-   "price": 640000000,
+   "priceWon": 640000000,
    "floor": 16,
    "exclusiveArea": 99.98,
    "areaGroup": 100,
@@ -44,7 +46,7 @@
   },
   {
    "contractDate": "2026-06-19",
-   "price": 680000000,
+   "priceWon": 680000000,
    "floor": 7,
    "exclusiveArea": 134.958,
    "areaGroup": 135,
@@ -53,7 +55,7 @@
   },
   {
    "contractDate": "2026-06-08",
-   "price": 576000000,
+   "priceWon": 576000000,
    "floor": 10,
    "exclusiveArea": 84.772,
    "areaGroup": 85,
@@ -62,7 +64,7 @@
   },
   {
    "contractDate": "2026-05-09",
-   "price": 620000000,
+   "priceWon": 620000000,
    "floor": 16,
    "exclusiveArea": 99.98,
    "areaGroup": 100,
@@ -71,7 +73,7 @@
   },
   {
    "contractDate": "2026-05-07",
-   "price": 570000000,
+   "priceWon": 570000000,
    "floor": 23,
    "exclusiveArea": 84.772,
    "areaGroup": 85,
@@ -80,7 +82,7 @@
   },
   {
    "contractDate": "2026-05-04",
-   "price": 490000000,
+   "priceWon": 490000000,
    "floor": 1,
    "exclusiveArea": 84.772,
    "areaGroup": 85,
@@ -89,7 +91,7 @@
   },
   {
    "contractDate": "2026-04-21",
-   "price": 548000000,
+   "priceWon": 548000000,
    "floor": 22,
    "exclusiveArea": 84.772,
    "areaGroup": 85,
@@ -98,7 +100,7 @@
   },
   {
    "contractDate": "2026-04-19",
-   "price": 720000000,
+   "priceWon": 720000000,
    "floor": 15,
    "exclusiveArea": 121.48,
    "areaGroup": 121,
@@ -107,12 +109,19 @@
   },
   {
    "contractDate": "2026-04-07",
-   "price": 595000000,
+   "priceWon": 595000000,
    "floor": 20,
    "exclusiveArea": 99.98,
    "areaGroup": 100,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.3054928279648,
+  "longitude": 127.007314929984,
+  "roadAddress": "경기 수원시 장안구 경수대로976번길 22",
+  "jibunAddress": "경기 수원시 장안구 조원동 881",
+  "geocodeStatus": "valid"
+ }
 }

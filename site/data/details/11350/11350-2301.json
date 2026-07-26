@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "11350-2301",
  "apartmentName": "화랑대디오베이션",
  "sidoCode": "11",
@@ -14,7 +16,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-30",
-   "price": 720000000,
+   "priceWon": 720000000,
    "floor": 13,
    "exclusiveArea": 59.9883,
    "areaGroup": 60,
@@ -23,7 +25,7 @@
   },
   {
    "contractDate": "2026-06-27",
-   "price": 700000000,
+   "priceWon": 700000000,
    "floor": 12,
    "exclusiveArea": 59.9883,
    "areaGroup": 60,
@@ -32,7 +34,7 @@
   },
   {
    "contractDate": "2026-06-15",
-   "price": 695000000,
+   "priceWon": 695000000,
    "floor": 9,
    "exclusiveArea": 59.9883,
    "areaGroup": 60,
@@ -41,7 +43,7 @@
   },
   {
    "contractDate": "2026-04-24",
-   "price": 668000000,
+   "priceWon": 668000000,
    "floor": 16,
    "exclusiveArea": 59.9883,
    "areaGroup": 60,
@@ -50,7 +52,7 @@
   },
   {
    "contractDate": "2026-04-01",
-   "price": 629000000,
+   "priceWon": 629000000,
    "floor": 2,
    "exclusiveArea": 59.9883,
    "areaGroup": 60,
@@ -59,7 +61,7 @@
   },
   {
    "contractDate": "2026-03-27",
-   "price": 660000000,
+   "priceWon": 660000000,
    "floor": 4,
    "exclusiveArea": 59.9883,
    "areaGroup": 60,
@@ -68,7 +70,7 @@
   },
   {
    "contractDate": "2026-03-04",
-   "price": 690000000,
+   "priceWon": 690000000,
    "floor": 9,
    "exclusiveArea": 59.9883,
    "areaGroup": 60,
@@ -77,7 +79,7 @@
   },
   {
    "contractDate": "2026-02-24",
-   "price": 665000000,
+   "priceWon": 665000000,
    "floor": 4,
    "exclusiveArea": 59.9883,
    "areaGroup": 60,
@@ -86,12 +88,19 @@
   },
   {
    "contractDate": "2026-02-23",
-   "price": 669000000,
+   "priceWon": 669000000,
    "floor": 17,
    "exclusiveArea": 59.9883,
    "areaGroup": 60,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.6204210068712,
+  "longitude": 127.082220010972,
+  "roadAddress": "서울 노원구 노원로1길 95",
+  "jibunAddress": "서울 노원구 공릉동 760",
+  "geocodeStatus": "valid"
+ }
 }

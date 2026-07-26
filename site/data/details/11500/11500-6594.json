@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "11500-6594",
  "apartmentName": "마곡일성트루엘아파트",
  "sidoCode": "11",
@@ -16,7 +18,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-29",
-   "price": 900000000,
+   "priceWon": 900000000,
    "floor": 8,
    "exclusiveArea": 59.978,
    "areaGroup": 60,
@@ -25,7 +27,7 @@
   },
   {
    "contractDate": "2026-06-12",
-   "price": 825000000,
+   "priceWon": 825000000,
    "floor": 4,
    "exclusiveArea": 59.978,
    "areaGroup": 60,
@@ -34,7 +36,7 @@
   },
   {
    "contractDate": "2026-05-26",
-   "price": 830000000,
+   "priceWon": 830000000,
    "floor": 3,
    "exclusiveArea": 59.978,
    "areaGroup": 60,
@@ -43,7 +45,7 @@
   },
   {
    "contractDate": "2026-05-19",
-   "price": 800000000,
+   "priceWon": 800000000,
    "floor": 2,
    "exclusiveArea": 59.978,
    "areaGroup": 60,
@@ -52,7 +54,7 @@
   },
   {
    "contractDate": "2026-05-15",
-   "price": 970000000,
+   "priceWon": 970000000,
    "floor": 6,
    "exclusiveArea": 84.958,
    "areaGroup": 85,
@@ -61,7 +63,7 @@
   },
   {
    "contractDate": "2026-05-13",
-   "price": 870000000,
+   "priceWon": 870000000,
    "floor": 4,
    "exclusiveArea": 59.978,
    "areaGroup": 60,
@@ -70,12 +72,19 @@
   },
   {
    "contractDate": "2026-04-17",
-   "price": 867000000,
+   "priceWon": 867000000,
    "floor": 8,
    "exclusiveArea": 72.034,
    "areaGroup": 72,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.5710512329627,
+  "longitude": 126.822062820522,
+  "roadAddress": "서울 강서구 방화대로34길 110",
+  "jibunAddress": "서울 강서구 마곡동 1535",
+  "geocodeStatus": "valid"
+ }
 }

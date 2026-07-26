@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "11380-10944",
  "apartmentName": "응암역효성해링턴플레이스",
  "sidoCode": "11",
@@ -19,7 +21,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-18",
-   "price": 890000000,
+   "priceWon": 890000000,
    "floor": 2,
    "exclusiveArea": 71.93,
    "areaGroup": 72,
@@ -28,7 +30,7 @@
   },
   {
    "contractDate": "2026-05-29",
-   "price": 835000000,
+   "priceWon": 835000000,
    "floor": 4,
    "exclusiveArea": 71.99,
    "areaGroup": 72,
@@ -37,7 +39,7 @@
   },
   {
    "contractDate": "2026-05-29",
-   "price": 880000000,
+   "priceWon": 880000000,
    "floor": 10,
    "exclusiveArea": 71.99,
    "areaGroup": 72,
@@ -46,7 +48,7 @@
   },
   {
    "contractDate": "2026-05-20",
-   "price": 890000000,
+   "priceWon": 890000000,
    "floor": 9,
    "exclusiveArea": 75.72,
    "areaGroup": 76,
@@ -55,7 +57,7 @@
   },
   {
    "contractDate": "2026-05-07",
-   "price": 690000000,
+   "priceWon": 690000000,
    "floor": 10,
    "exclusiveArea": 59.94,
    "areaGroup": 60,
@@ -64,7 +66,7 @@
   },
   {
    "contractDate": "2026-04-30",
-   "price": 834000000,
+   "priceWon": 834000000,
    "floor": 2,
    "exclusiveArea": 75.72,
    "areaGroup": 76,
@@ -73,7 +75,7 @@
   },
   {
    "contractDate": "2026-04-19",
-   "price": 760000000,
+   "priceWon": 760000000,
    "floor": 6,
    "exclusiveArea": 59.94,
    "areaGroup": 60,
@@ -82,7 +84,7 @@
   },
   {
    "contractDate": "2026-04-06",
-   "price": 755000000,
+   "priceWon": 755000000,
    "floor": 5,
    "exclusiveArea": 59.99,
    "areaGroup": 60,
@@ -91,7 +93,7 @@
   },
   {
    "contractDate": "2026-04-04",
-   "price": 760000000,
+   "priceWon": 760000000,
    "floor": 9,
    "exclusiveArea": 59.94,
    "areaGroup": 60,
@@ -100,7 +102,7 @@
   },
   {
    "contractDate": "2026-04-04",
-   "price": 850000000,
+   "priceWon": 850000000,
    "floor": 13,
    "exclusiveArea": 71.99,
    "areaGroup": 72,
@@ -109,7 +111,7 @@
   },
   {
    "contractDate": "2026-03-28",
-   "price": 775000000,
+   "priceWon": 775000000,
    "floor": 7,
    "exclusiveArea": 59.94,
    "areaGroup": 60,
@@ -118,7 +120,7 @@
   },
   {
    "contractDate": "2026-03-16",
-   "price": 825000000,
+   "priceWon": 825000000,
    "floor": 13,
    "exclusiveArea": 71.99,
    "areaGroup": 72,
@@ -127,7 +129,7 @@
   },
   {
    "contractDate": "2026-03-05",
-   "price": 795000000,
+   "priceWon": 795000000,
    "floor": 2,
    "exclusiveArea": 71.99,
    "areaGroup": 72,
@@ -136,7 +138,7 @@
   },
   {
    "contractDate": "2026-02-10",
-   "price": 810000000,
+   "priceWon": 810000000,
    "floor": 5,
    "exclusiveArea": 71.93,
    "areaGroup": 72,
@@ -145,7 +147,7 @@
   },
   {
    "contractDate": "2026-02-10",
-   "price": 940000000,
+   "priceWon": 940000000,
    "floor": 4,
    "exclusiveArea": 84.99,
    "areaGroup": 85,
@@ -154,12 +156,19 @@
   },
   {
    "contractDate": "2026-02-06",
-   "price": 800000000,
+   "priceWon": 800000000,
    "floor": 5,
    "exclusiveArea": 71.93,
    "areaGroup": 72,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.5977171428802,
+  "longitude": 126.908803517148,
+  "roadAddress": "서울 은평구 가좌로 334",
+  "jibunAddress": "서울 은평구 신사동 372",
+  "geocodeStatus": "valid"
+ }
 }

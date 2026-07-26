@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "11740-2894",
  "apartmentName": "고덕 아이파크",
  "sidoCode": "11",
@@ -17,7 +19,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-25",
-   "price": 2155000000,
+   "priceWon": 2155000000,
    "floor": 10,
    "exclusiveArea": 84.98,
    "areaGroup": 85,
@@ -26,7 +28,7 @@
   },
   {
    "contractDate": "2026-06-10",
-   "price": 2110000000,
+   "priceWon": 2110000000,
    "floor": 16,
    "exclusiveArea": 84.98,
    "areaGroup": 85,
@@ -35,7 +37,7 @@
   },
   {
    "contractDate": "2026-05-14",
-   "price": 1930000000,
+   "priceWon": 1930000000,
    "floor": 15,
    "exclusiveArea": 84.98,
    "areaGroup": 85,
@@ -44,7 +46,7 @@
   },
   {
    "contractDate": "2026-05-07",
-   "price": 1960000000,
+   "priceWon": 1960000000,
    "floor": 6,
    "exclusiveArea": 84.98,
    "areaGroup": 85,
@@ -53,7 +55,7 @@
   },
   {
    "contractDate": "2026-05-06",
-   "price": 2850000000,
+   "priceWon": 2850000000,
    "floor": 15,
    "exclusiveArea": 177.99,
    "areaGroup": 178,
@@ -62,7 +64,7 @@
   },
   {
    "contractDate": "2026-05-02",
-   "price": 1960000000,
+   "priceWon": 1960000000,
    "floor": 4,
    "exclusiveArea": 84.98,
    "areaGroup": 85,
@@ -71,7 +73,7 @@
   },
   {
    "contractDate": "2026-05-01",
-   "price": 2368000000,
+   "priceWon": 2368000000,
    "floor": 7,
    "exclusiveArea": 145.22,
    "areaGroup": 145,
@@ -80,7 +82,7 @@
   },
   {
    "contractDate": "2026-04-25",
-   "price": 2450000000,
+   "priceWon": 2450000000,
    "floor": 11,
    "exclusiveArea": 114.98,
    "areaGroup": 115,
@@ -89,12 +91,19 @@
   },
   {
    "contractDate": "2026-03-30",
-   "price": 2160000000,
+   "priceWon": 2160000000,
    "floor": 10,
    "exclusiveArea": 177.99,
    "areaGroup": 178,
    "dealType": "직거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.5589302752302,
+  "longitude": 127.155240395295,
+  "roadAddress": "서울 강동구 동남로79길 26",
+  "jibunAddress": "서울 강동구 고덕동 499",
+  "geocodeStatus": "valid"
+ }
 }

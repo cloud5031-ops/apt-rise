@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "41430-31",
  "apartmentName": "성원2차이화",
  "sidoCode": "41",
@@ -16,7 +18,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-27",
-   "price": 490000000,
+   "priceWon": 490000000,
    "floor": 9,
    "exclusiveArea": 84.73,
    "areaGroup": 85,
@@ -25,7 +27,7 @@
   },
   {
    "contractDate": "2026-06-13",
-   "price": 490000000,
+   "priceWon": 490000000,
    "floor": 14,
    "exclusiveArea": 84.73,
    "areaGroup": 85,
@@ -34,7 +36,7 @@
   },
   {
    "contractDate": "2026-06-03",
-   "price": 645000000,
+   "priceWon": 645000000,
    "floor": 7,
    "exclusiveArea": 141.46,
    "areaGroup": 141,
@@ -43,7 +45,7 @@
   },
   {
    "contractDate": "2026-05-23",
-   "price": 400000000,
+   "priceWon": 400000000,
    "floor": 1,
    "exclusiveArea": 59.83,
    "areaGroup": 60,
@@ -52,7 +54,7 @@
   },
   {
    "contractDate": "2026-05-23",
-   "price": 420000000,
+   "priceWon": 420000000,
    "floor": 1,
    "exclusiveArea": 84.73,
    "areaGroup": 85,
@@ -61,7 +63,7 @@
   },
   {
    "contractDate": "2026-04-20",
-   "price": 470000000,
+   "priceWon": 470000000,
    "floor": 12,
    "exclusiveArea": 84.73,
    "areaGroup": 85,
@@ -70,7 +72,7 @@
   },
   {
    "contractDate": "2026-04-18",
-   "price": 409500000,
+   "priceWon": 409500000,
    "floor": 1,
    "exclusiveArea": 84.73,
    "areaGroup": 85,
@@ -79,7 +81,7 @@
   },
   {
    "contractDate": "2026-04-14",
-   "price": 410000000,
+   "priceWon": 410000000,
    "floor": 16,
    "exclusiveArea": 59.83,
    "areaGroup": 60,
@@ -88,7 +90,7 @@
   },
   {
    "contractDate": "2026-03-25",
-   "price": 395000000,
+   "priceWon": 395000000,
    "floor": 13,
    "exclusiveArea": 59.83,
    "areaGroup": 60,
@@ -97,12 +99,19 @@
   },
   {
    "contractDate": "2026-03-14",
-   "price": 610000000,
+   "priceWon": 610000000,
    "floor": 9,
    "exclusiveArea": 141.46,
    "areaGroup": 141,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.3593643111591,
+  "longitude": 126.969420037946,
+  "roadAddress": "경기 의왕시 보식골로 11",
+  "jibunAddress": "경기 의왕시 오전동 104-20",
+  "geocodeStatus": "valid"
+ }
 }

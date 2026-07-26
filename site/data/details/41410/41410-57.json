@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "41410-57",
  "apartmentName": "산본이편한세상센트럴파크",
  "sidoCode": "41",
@@ -15,7 +17,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-29",
-   "price": 755000000,
+   "priceWon": 755000000,
    "floor": 5,
    "exclusiveArea": 59.817,
    "areaGroup": 60,
@@ -24,7 +26,7 @@
   },
   {
    "contractDate": "2026-06-29",
-   "price": 850000000,
+   "priceWon": 850000000,
    "floor": 6,
    "exclusiveArea": 84.241,
    "areaGroup": 84,
@@ -33,7 +35,7 @@
   },
   {
    "contractDate": "2026-06-26",
-   "price": 735000000,
+   "priceWon": 735000000,
    "floor": 1,
    "exclusiveArea": 84.241,
    "areaGroup": 84,
@@ -42,7 +44,7 @@
   },
   {
    "contractDate": "2026-06-06",
-   "price": 850000000,
+   "priceWon": 850000000,
    "floor": 11,
    "exclusiveArea": 84.241,
    "areaGroup": 84,
@@ -51,7 +53,7 @@
   },
   {
    "contractDate": "2026-06-03",
-   "price": 830000000,
+   "priceWon": 830000000,
    "floor": 6,
    "exclusiveArea": 84.241,
    "areaGroup": 84,
@@ -60,7 +62,7 @@
   },
   {
    "contractDate": "2026-05-30",
-   "price": 830000000,
+   "priceWon": 830000000,
    "floor": 3,
    "exclusiveArea": 84.241,
    "areaGroup": 84,
@@ -69,7 +71,7 @@
   },
   {
    "contractDate": "2026-04-30",
-   "price": 755000000,
+   "priceWon": 755000000,
    "floor": 2,
    "exclusiveArea": 84.241,
    "areaGroup": 84,
@@ -78,7 +80,7 @@
   },
   {
    "contractDate": "2026-04-18",
-   "price": 825000000,
+   "priceWon": 825000000,
    "floor": 5,
    "exclusiveArea": 84.241,
    "areaGroup": 84,
@@ -87,7 +89,7 @@
   },
   {
    "contractDate": "2026-04-18",
-   "price": 860000000,
+   "priceWon": 860000000,
    "floor": 9,
    "exclusiveArea": 84.241,
    "areaGroup": 84,
@@ -96,7 +98,7 @@
   },
   {
    "contractDate": "2026-04-10",
-   "price": 770000000,
+   "priceWon": 770000000,
    "floor": 15,
    "exclusiveArea": 84.241,
    "areaGroup": 84,
@@ -105,7 +107,7 @@
   },
   {
    "contractDate": "2026-04-10",
-   "price": 830000000,
+   "priceWon": 830000000,
    "floor": 10,
    "exclusiveArea": 84.241,
    "areaGroup": 84,
@@ -114,7 +116,7 @@
   },
   {
    "contractDate": "2026-03-23",
-   "price": 750000000,
+   "priceWon": 750000000,
    "floor": 3,
    "exclusiveArea": 84.241,
    "areaGroup": 84,
@@ -123,7 +125,7 @@
   },
   {
    "contractDate": "2026-02-09",
-   "price": 770000000,
+   "priceWon": 770000000,
    "floor": 6,
    "exclusiveArea": 84.241,
    "areaGroup": 84,
@@ -132,7 +134,7 @@
   },
   {
    "contractDate": "2026-02-07",
-   "price": 670000000,
+   "priceWon": 670000000,
    "floor": 4,
    "exclusiveArea": 59.817,
    "areaGroup": 60,
@@ -141,12 +143,19 @@
   },
   {
    "contractDate": "2026-02-07",
-   "price": 770000000,
+   "priceWon": 770000000,
    "floor": 6,
    "exclusiveArea": 84.241,
    "areaGroup": 84,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.3642148317361,
+  "longitude": 126.929279367654,
+  "roadAddress": "경기 군포시 고산로 596-15",
+  "jibunAddress": "경기 군포시 산본동 1121",
+  "geocodeStatus": "valid"
+ }
 }

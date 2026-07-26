@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "41173-84",
  "apartmentName": "초원성원",
  "sidoCode": "41",
@@ -14,7 +16,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-22",
-   "price": 1115000000,
+   "priceWon": 1115000000,
    "floor": 10,
    "exclusiveArea": 84.99,
    "areaGroup": 85,
@@ -23,7 +25,7 @@
   },
   {
    "contractDate": "2026-06-14",
-   "price": 1030000000,
+   "priceWon": 1030000000,
    "floor": 9,
    "exclusiveArea": 84.99,
    "areaGroup": 85,
@@ -32,7 +34,7 @@
   },
   {
    "contractDate": "2026-06-10",
-   "price": 1125000000,
+   "priceWon": 1125000000,
    "floor": 11,
    "exclusiveArea": 84.99,
    "areaGroup": 85,
@@ -41,7 +43,7 @@
   },
   {
    "contractDate": "2026-05-23",
-   "price": 1100000000,
+   "priceWon": 1100000000,
    "floor": 18,
    "exclusiveArea": 84.99,
    "areaGroup": 85,
@@ -50,7 +52,7 @@
   },
   {
    "contractDate": "2026-05-07",
-   "price": 1035000000,
+   "priceWon": 1035000000,
    "floor": 3,
    "exclusiveArea": 84.99,
    "areaGroup": 85,
@@ -59,7 +61,7 @@
   },
   {
    "contractDate": "2026-04-21",
-   "price": 1050000000,
+   "priceWon": 1050000000,
    "floor": 13,
    "exclusiveArea": 84.99,
    "areaGroup": 85,
@@ -68,12 +70,19 @@
   },
   {
    "contractDate": "2026-04-10",
-   "price": 988000000,
+   "priceWon": 988000000,
    "floor": 21,
    "exclusiveArea": 84.99,
    "areaGroup": 85,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.3890960699739,
+  "longitude": 126.963380371789,
+  "roadAddress": "경기 안양시 동안구 관평로138번길 12",
+  "jibunAddress": "경기 안양시 동안구 평촌동 898",
+  "geocodeStatus": "ambiguous"
+ }
 }

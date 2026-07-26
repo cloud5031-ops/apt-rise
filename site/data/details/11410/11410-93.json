@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "11410-93",
  "apartmentName": "풍림2",
  "sidoCode": "11",
@@ -17,7 +19,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-26",
-   "price": 695000000,
+   "priceWon": 695000000,
    "floor": 2,
    "exclusiveArea": 58.5,
    "areaGroup": 58,
@@ -26,7 +28,7 @@
   },
   {
    "contractDate": "2026-06-02",
-   "price": 715000000,
+   "priceWon": 715000000,
    "floor": 4,
    "exclusiveArea": 58.5,
    "areaGroup": 58,
@@ -35,7 +37,7 @@
   },
   {
    "contractDate": "2026-05-29",
-   "price": 657000000,
+   "priceWon": 657000000,
    "floor": 7,
    "exclusiveArea": 66.69,
    "areaGroup": 67,
@@ -44,7 +46,7 @@
   },
   {
    "contractDate": "2026-05-04",
-   "price": 775000000,
+   "priceWon": 775000000,
    "floor": 8,
    "exclusiveArea": 107.2,
    "areaGroup": 107,
@@ -53,7 +55,7 @@
   },
   {
    "contractDate": "2026-05-01",
-   "price": 670000000,
+   "priceWon": 670000000,
    "floor": 10,
    "exclusiveArea": 58.5,
    "areaGroup": 58,
@@ -62,7 +64,7 @@
   },
   {
    "contractDate": "2026-04-18",
-   "price": 630000000,
+   "priceWon": 630000000,
    "floor": 1,
    "exclusiveArea": 58.5,
    "areaGroup": 58,
@@ -71,7 +73,7 @@
   },
   {
    "contractDate": "2026-04-18",
-   "price": 750000000,
+   "priceWon": 750000000,
    "floor": 5,
    "exclusiveArea": 84.93,
    "areaGroup": 85,
@@ -80,7 +82,7 @@
   },
   {
    "contractDate": "2026-04-14",
-   "price": 680000000,
+   "priceWon": 680000000,
    "floor": 15,
    "exclusiveArea": 58.5,
    "areaGroup": 58,
@@ -89,7 +91,7 @@
   },
   {
    "contractDate": "2026-03-17",
-   "price": 650000000,
+   "priceWon": 650000000,
    "floor": 9,
    "exclusiveArea": 58.5,
    "areaGroup": 58,
@@ -98,7 +100,7 @@
   },
   {
    "contractDate": "2026-03-10",
-   "price": 680000000,
+   "priceWon": 680000000,
    "floor": 12,
    "exclusiveArea": 66.69,
    "areaGroup": 67,
@@ -107,7 +109,7 @@
   },
   {
    "contractDate": "2026-03-09",
-   "price": 657000000,
+   "priceWon": 657000000,
    "floor": 10,
    "exclusiveArea": 66.69,
    "areaGroup": 67,
@@ -116,7 +118,7 @@
   },
   {
    "contractDate": "2026-02-28",
-   "price": 600000000,
+   "priceWon": 600000000,
    "floor": 9,
    "exclusiveArea": 58.5,
    "areaGroup": 58,
@@ -125,7 +127,7 @@
   },
   {
    "contractDate": "2026-02-21",
-   "price": 600000000,
+   "priceWon": 600000000,
    "floor": 2,
    "exclusiveArea": 58.5,
    "areaGroup": 58,
@@ -134,7 +136,7 @@
   },
   {
    "contractDate": "2026-02-09",
-   "price": 600000000,
+   "priceWon": 600000000,
    "floor": 15,
    "exclusiveArea": 58.5,
    "areaGroup": 58,
@@ -143,12 +145,19 @@
   },
   {
    "contractDate": "2026-02-07",
-   "price": 650000000,
+   "priceWon": 650000000,
    "floor": 7,
    "exclusiveArea": 58.5,
    "areaGroup": 58,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.593375689781,
+  "longitude": 126.943080365457,
+  "roadAddress": "서울 서대문구 세검정로1길 35",
+  "jibunAddress": "서울 서대문구 홍은동 453-2",
+  "geocodeStatus": "valid"
+ }
 }

@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "41410-7",
  "apartmentName": "쌍용(873)",
  "sidoCode": "41",
@@ -16,7 +18,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-25",
-   "price": 650000000,
+   "priceWon": 650000000,
    "floor": 10,
    "exclusiveArea": 99.825,
    "areaGroup": 100,
@@ -25,7 +27,7 @@
   },
   {
    "contractDate": "2026-06-23",
-   "price": 705000000,
+   "priceWon": 705000000,
    "floor": 21,
    "exclusiveArea": 99.825,
    "areaGroup": 100,
@@ -34,7 +36,7 @@
   },
   {
    "contractDate": "2026-06-03",
-   "price": 612000000,
+   "priceWon": 612000000,
    "floor": 2,
    "exclusiveArea": 99.825,
    "areaGroup": 100,
@@ -43,7 +45,7 @@
   },
   {
    "contractDate": "2026-06-03",
-   "price": 675000000,
+   "priceWon": 675000000,
    "floor": 16,
    "exclusiveArea": 99.825,
    "areaGroup": 100,
@@ -52,7 +54,7 @@
   },
   {
    "contractDate": "2026-05-19",
-   "price": 660000000,
+   "priceWon": 660000000,
    "floor": 2,
    "exclusiveArea": 99.825,
    "areaGroup": 100,
@@ -61,7 +63,7 @@
   },
   {
    "contractDate": "2026-05-14",
-   "price": 570000000,
+   "priceWon": 570000000,
    "floor": 1,
    "exclusiveArea": 99.825,
    "areaGroup": 100,
@@ -70,7 +72,7 @@
   },
   {
    "contractDate": "2026-04-18",
-   "price": 870000000,
+   "priceWon": 870000000,
    "floor": 16,
    "exclusiveArea": 134.88,
    "areaGroup": 135,
@@ -79,7 +81,7 @@
   },
   {
    "contractDate": "2026-04-16",
-   "price": 630000000,
+   "priceWon": 630000000,
    "floor": 22,
    "exclusiveArea": 99.825,
    "areaGroup": 100,
@@ -88,7 +90,7 @@
   },
   {
    "contractDate": "2026-04-10",
-   "price": 605000000,
+   "priceWon": 605000000,
    "floor": 3,
    "exclusiveArea": 99.825,
    "areaGroup": 100,
@@ -97,7 +99,7 @@
   },
   {
    "contractDate": "2026-04-06",
-   "price": 755000000,
+   "priceWon": 755000000,
    "floor": 18,
    "exclusiveArea": 125.0,
    "areaGroup": 125,
@@ -106,7 +108,7 @@
   },
   {
    "contractDate": "2026-03-19",
-   "price": 640000000,
+   "priceWon": 640000000,
    "floor": 5,
    "exclusiveArea": 99.825,
    "areaGroup": 100,
@@ -115,7 +117,7 @@
   },
   {
    "contractDate": "2026-03-03",
-   "price": 630000000,
+   "priceWon": 630000000,
    "floor": 2,
    "exclusiveArea": 99.825,
    "areaGroup": 100,
@@ -124,7 +126,7 @@
   },
   {
    "contractDate": "2026-02-26",
-   "price": 580000000,
+   "priceWon": 580000000,
    "floor": 2,
    "exclusiveArea": 99.825,
    "areaGroup": 100,
@@ -133,7 +135,7 @@
   },
   {
    "contractDate": "2026-02-25",
-   "price": 777000000,
+   "priceWon": 777000000,
    "floor": 16,
    "exclusiveArea": 125.0,
    "areaGroup": 125,
@@ -142,7 +144,7 @@
   },
   {
    "contractDate": "2026-02-13",
-   "price": 650000000,
+   "priceWon": 650000000,
    "floor": 10,
    "exclusiveArea": 99.825,
    "areaGroup": 100,
@@ -151,12 +153,19 @@
   },
   {
    "contractDate": "2026-02-07",
-   "price": 648000000,
+   "priceWon": 648000000,
    "floor": 19,
    "exclusiveArea": 99.825,
    "areaGroup": 100,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.3449180199121,
+  "longitude": 126.942338727586,
+  "roadAddress": "경기 군포시 용호2로 47",
+  "jibunAddress": "경기 군포시 당동 873",
+  "geocodeStatus": "valid"
+ }
 }

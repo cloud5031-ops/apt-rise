@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "41630-492",
  "apartmentName": "양주자이1단지",
  "sidoCode": "41",
@@ -17,7 +19,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-29",
-   "price": 216000000,
+   "priceWon": 216000000,
    "floor": 9,
    "exclusiveArea": 74.8844,
    "areaGroup": 75,
@@ -26,7 +28,7 @@
   },
   {
    "contractDate": "2026-06-17",
-   "price": 210000000,
+   "priceWon": 210000000,
    "floor": 11,
    "exclusiveArea": 59.8903,
    "areaGroup": 60,
@@ -35,7 +37,7 @@
   },
   {
    "contractDate": "2026-06-01",
-   "price": 250000000,
+   "priceWon": 250000000,
    "floor": 10,
    "exclusiveArea": 74.8844,
    "areaGroup": 75,
@@ -44,7 +46,7 @@
   },
   {
    "contractDate": "2026-05-26",
-   "price": 180000000,
+   "priceWon": 180000000,
    "floor": 4,
    "exclusiveArea": 59.8903,
    "areaGroup": 60,
@@ -53,7 +55,7 @@
   },
   {
    "contractDate": "2026-05-25",
-   "price": 218000000,
+   "priceWon": 218000000,
    "floor": 8,
    "exclusiveArea": 74.8844,
    "areaGroup": 75,
@@ -62,7 +64,7 @@
   },
   {
    "contractDate": "2026-05-18",
-   "price": 180000000,
+   "priceWon": 180000000,
    "floor": 15,
    "exclusiveArea": 59.8903,
    "areaGroup": 60,
@@ -71,7 +73,7 @@
   },
   {
    "contractDate": "2026-05-16",
-   "price": 183000000,
+   "priceWon": 183000000,
    "floor": 12,
    "exclusiveArea": 59.8903,
    "areaGroup": 60,
@@ -80,7 +82,7 @@
   },
   {
    "contractDate": "2026-04-24",
-   "price": 185000000,
+   "priceWon": 185000000,
    "floor": 6,
    "exclusiveArea": 59.8903,
    "areaGroup": 60,
@@ -89,7 +91,7 @@
   },
   {
    "contractDate": "2026-04-11",
-   "price": 225000000,
+   "priceWon": 225000000,
    "floor": 10,
    "exclusiveArea": 84.9218,
    "areaGroup": 85,
@@ -98,7 +100,7 @@
   },
   {
    "contractDate": "2026-04-10",
-   "price": 183500000,
+   "priceWon": 183500000,
    "floor": 6,
    "exclusiveArea": 59.8903,
    "areaGroup": 60,
@@ -107,7 +109,7 @@
   },
   {
    "contractDate": "2026-03-31",
-   "price": 200000000,
+   "priceWon": 200000000,
    "floor": 15,
    "exclusiveArea": 74.8844,
    "areaGroup": 75,
@@ -116,7 +118,7 @@
   },
   {
    "contractDate": "2026-03-09",
-   "price": 310000000,
+   "priceWon": 310000000,
    "floor": 8,
    "exclusiveArea": 123.0401,
    "areaGroup": 123,
@@ -125,7 +127,7 @@
   },
   {
    "contractDate": "2026-03-06",
-   "price": 186000000,
+   "priceWon": 186000000,
    "floor": 14,
    "exclusiveArea": 59.8903,
    "areaGroup": 60,
@@ -134,7 +136,7 @@
   },
   {
    "contractDate": "2026-03-06",
-   "price": 170000000,
+   "priceWon": 170000000,
    "floor": 9,
    "exclusiveArea": 59.8903,
    "areaGroup": 60,
@@ -143,7 +145,7 @@
   },
   {
    "contractDate": "2026-03-06",
-   "price": 178000000,
+   "priceWon": 178000000,
    "floor": 1,
    "exclusiveArea": 74.8844,
    "areaGroup": 75,
@@ -152,7 +154,7 @@
   },
   {
    "contractDate": "2026-02-28",
-   "price": 218000000,
+   "priceWon": 218000000,
    "floor": 4,
    "exclusiveArea": 74.8844,
    "areaGroup": 75,
@@ -161,7 +163,7 @@
   },
   {
    "contractDate": "2026-02-22",
-   "price": 310000000,
+   "priceWon": 310000000,
    "floor": 4,
    "exclusiveArea": 123.0401,
    "areaGroup": 123,
@@ -170,7 +172,7 @@
   },
   {
    "contractDate": "2026-02-20",
-   "price": 218000000,
+   "priceWon": 218000000,
    "floor": 5,
    "exclusiveArea": 84.9218,
    "areaGroup": 85,
@@ -179,7 +181,7 @@
   },
   {
    "contractDate": "2026-02-19",
-   "price": 168000000,
+   "priceWon": 168000000,
    "floor": 1,
    "exclusiveArea": 59.8903,
    "areaGroup": 60,
@@ -188,7 +190,7 @@
   },
   {
    "contractDate": "2026-02-08",
-   "price": 230000000,
+   "priceWon": 230000000,
    "floor": 8,
    "exclusiveArea": 84.9218,
    "areaGroup": 85,
@@ -197,12 +199,19 @@
   },
   {
    "contractDate": "2026-02-02",
-   "price": 220000000,
+   "priceWon": 220000000,
    "floor": 13,
    "exclusiveArea": 59.8903,
    "areaGroup": 60,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.7949051176006,
+  "longitude": 127.105789824764,
+  "roadAddress": "경기 양주시 삼숭로38번길 78-30",
+  "jibunAddress": "경기 양주시 삼숭동 686-1",
+  "geocodeStatus": "valid"
+ }
 }

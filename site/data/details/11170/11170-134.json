@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "11170-134",
  "apartmentName": "신동아1",
  "sidoCode": "11",
@@ -14,7 +16,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-13",
-   "price": 4350000000,
+   "priceWon": 4350000000,
    "floor": 7,
    "exclusiveArea": 84.93,
    "areaGroup": 85,
@@ -23,7 +25,7 @@
   },
   {
    "contractDate": "2026-05-20",
-   "price": 4420000000,
+   "priceWon": 4420000000,
    "floor": 8,
    "exclusiveArea": 84.93,
    "areaGroup": 85,
@@ -32,7 +34,7 @@
   },
   {
    "contractDate": "2026-05-05",
-   "price": 4200000000,
+   "priceWon": 4200000000,
    "floor": 2,
    "exclusiveArea": 84.93,
    "areaGroup": 85,
@@ -41,7 +43,7 @@
   },
   {
    "contractDate": "2026-04-12",
-   "price": 4000000000,
+   "priceWon": 4000000000,
    "floor": 5,
    "exclusiveArea": 84.93,
    "areaGroup": 85,
@@ -50,7 +52,7 @@
   },
   {
    "contractDate": "2026-02-13",
-   "price": 3800000000,
+   "priceWon": 3800000000,
    "floor": 8,
    "exclusiveArea": 84.93,
    "areaGroup": 85,
@@ -59,12 +61,19 @@
   },
   {
    "contractDate": "2026-02-07",
-   "price": 4200000000,
+   "priceWon": 4200000000,
    "floor": 7,
    "exclusiveArea": 84.93,
    "areaGroup": 85,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.5258603048593,
+  "longitude": 127.001851124058,
+  "roadAddress": "서울 용산구 보광로 14",
+  "jibunAddress": "서울 용산구 보광동 448",
+  "geocodeStatus": "valid"
+ }
 }

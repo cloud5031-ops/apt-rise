@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "11650-3300",
  "apartmentName": "롯데캐슬클래식",
  "sidoCode": "11",
@@ -17,7 +19,7 @@
  "transactions": [
   {
    "contractDate": "2026-05-26",
-   "price": 3400000000,
+   "priceWon": 3400000000,
    "floor": 12,
    "exclusiveArea": 120.18,
    "areaGroup": 120,
@@ -26,7 +28,7 @@
   },
   {
    "contractDate": "2026-05-25",
-   "price": 3000000000,
+   "priceWon": 3000000000,
    "floor": 7,
    "exclusiveArea": 84.98,
    "areaGroup": 85,
@@ -35,7 +37,7 @@
   },
   {
    "contractDate": "2026-05-21",
-   "price": 2750000000,
+   "priceWon": 2750000000,
    "floor": 15,
    "exclusiveArea": 74.3,
    "areaGroup": 74,
@@ -44,7 +46,7 @@
   },
   {
    "contractDate": "2026-05-21",
-   "price": 3020000000,
+   "priceWon": 3020000000,
    "floor": 10,
    "exclusiveArea": 84.98,
    "areaGroup": 85,
@@ -53,7 +55,7 @@
   },
   {
    "contractDate": "2026-05-20",
-   "price": 3880000000,
+   "priceWon": 3880000000,
    "floor": 9,
    "exclusiveArea": 133.45,
    "areaGroup": 133,
@@ -62,7 +64,7 @@
   },
   {
    "contractDate": "2026-05-18",
-   "price": 3600000000,
+   "priceWon": 3600000000,
    "floor": 13,
    "exclusiveArea": 120.18,
    "areaGroup": 120,
@@ -71,7 +73,7 @@
   },
   {
    "contractDate": "2026-05-15",
-   "price": 3000000000,
+   "priceWon": 3000000000,
    "floor": 15,
    "exclusiveArea": 84.98,
    "areaGroup": 85,
@@ -80,7 +82,7 @@
   },
   {
    "contractDate": "2026-05-12",
-   "price": 2650000000,
+   "priceWon": 2650000000,
    "floor": 19,
    "exclusiveArea": 74.3,
    "areaGroup": 74,
@@ -89,7 +91,7 @@
   },
   {
    "contractDate": "2026-05-09",
-   "price": 2795000000,
+   "priceWon": 2795000000,
    "floor": 7,
    "exclusiveArea": 74.3,
    "areaGroup": 74,
@@ -98,7 +100,7 @@
   },
   {
    "contractDate": "2026-05-08",
-   "price": 3700000000,
+   "priceWon": 3700000000,
    "floor": 9,
    "exclusiveArea": 120.18,
    "areaGroup": 120,
@@ -107,7 +109,7 @@
   },
   {
    "contractDate": "2026-04-29",
-   "price": 2900000000,
+   "priceWon": 2900000000,
    "floor": 16,
    "exclusiveArea": 84.98,
    "areaGroup": 85,
@@ -116,7 +118,7 @@
   },
   {
    "contractDate": "2026-04-25",
-   "price": 3480000000,
+   "priceWon": 3480000000,
    "floor": 17,
    "exclusiveArea": 120.18,
    "areaGroup": 120,
@@ -125,7 +127,7 @@
   },
   {
    "contractDate": "2026-04-17",
-   "price": 3200000000,
+   "priceWon": 3200000000,
    "floor": 6,
    "exclusiveArea": 84.98,
    "areaGroup": 85,
@@ -134,7 +136,7 @@
   },
   {
    "contractDate": "2026-04-17",
-   "price": 3400000000,
+   "priceWon": 3400000000,
    "floor": 6,
    "exclusiveArea": 120.18,
    "areaGroup": 120,
@@ -143,12 +145,19 @@
   },
   {
    "contractDate": "2026-03-03",
-   "price": 3850000000,
+   "priceWon": 3850000000,
    "floor": 11,
    "exclusiveArea": 133.45,
    "areaGroup": 133,
    "dealType": "중개거래",
    "cancellationStatus": "CANCELLED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.5000127993534,
+  "longitude": 127.021440891029,
+  "roadAddress": "서울 서초구 서운로 197",
+  "jibunAddress": "서울 서초구 서초동 1312-3",
+  "geocodeStatus": "valid"
+ }
 }

@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "41465-57",
  "apartmentName": "도담마을7단지뜨리에체",
  "sidoCode": "41",
@@ -16,7 +18,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-25",
-   "price": 670000000,
+   "priceWon": 670000000,
    "floor": 7,
    "exclusiveArea": 59.99,
    "areaGroup": 60,
@@ -25,7 +27,7 @@
   },
   {
    "contractDate": "2026-06-24",
-   "price": 797000000,
+   "priceWon": 797000000,
    "floor": 11,
    "exclusiveArea": 84.97,
    "areaGroup": 85,
@@ -34,7 +36,7 @@
   },
   {
    "contractDate": "2026-06-15",
-   "price": 749000000,
+   "priceWon": 749000000,
    "floor": 14,
    "exclusiveArea": 84.97,
    "areaGroup": 85,
@@ -43,7 +45,7 @@
   },
   {
    "contractDate": "2026-05-08",
-   "price": 705000000,
+   "priceWon": 705000000,
    "floor": 16,
    "exclusiveArea": 84.97,
    "areaGroup": 85,
@@ -52,7 +54,7 @@
   },
   {
    "contractDate": "2026-04-19",
-   "price": 620000000,
+   "priceWon": 620000000,
    "floor": 12,
    "exclusiveArea": 59.99,
    "areaGroup": 60,
@@ -61,7 +63,7 @@
   },
   {
    "contractDate": "2026-04-16",
-   "price": 720000000,
+   "priceWon": 720000000,
    "floor": 4,
    "exclusiveArea": 84.97,
    "areaGroup": 85,
@@ -70,7 +72,7 @@
   },
   {
    "contractDate": "2026-04-15",
-   "price": 645000000,
+   "priceWon": 645000000,
    "floor": 2,
    "exclusiveArea": 84.97,
    "areaGroup": 85,
@@ -79,7 +81,7 @@
   },
   {
    "contractDate": "2026-04-10",
-   "price": 555000000,
+   "priceWon": 555000000,
    "floor": 18,
    "exclusiveArea": 114.88,
    "areaGroup": 115,
@@ -88,7 +90,7 @@
   },
   {
    "contractDate": "2026-03-17",
-   "price": 650000000,
+   "priceWon": 650000000,
    "floor": 1,
    "exclusiveArea": 84.97,
    "areaGroup": 85,
@@ -97,7 +99,7 @@
   },
   {
    "contractDate": "2026-03-10",
-   "price": 695000000,
+   "priceWon": 695000000,
    "floor": 19,
    "exclusiveArea": 84.97,
    "areaGroup": 85,
@@ -106,7 +108,7 @@
   },
   {
    "contractDate": "2026-02-28",
-   "price": 730000000,
+   "priceWon": 730000000,
    "floor": 15,
    "exclusiveArea": 84.97,
    "areaGroup": 85,
@@ -115,7 +117,7 @@
   },
   {
    "contractDate": "2026-02-23",
-   "price": 600000000,
+   "priceWon": 600000000,
    "floor": 6,
    "exclusiveArea": 59.99,
    "areaGroup": 60,
@@ -124,7 +126,7 @@
   },
   {
    "contractDate": "2026-02-10",
-   "price": 600000000,
+   "priceWon": 600000000,
    "floor": 19,
    "exclusiveArea": 59.99,
    "areaGroup": 60,
@@ -133,12 +135,19 @@
   },
   {
    "contractDate": "2026-02-05",
-   "price": 580000000,
+   "priceWon": 580000000,
    "floor": 15,
    "exclusiveArea": 59.99,
    "areaGroup": 60,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.324779896983,
+  "longitude": 127.114399403128,
+  "roadAddress": "경기 용인시 수지구 푸른솔로 47",
+  "jibunAddress": "경기 용인시 수지구 죽전동 414",
+  "geocodeStatus": "valid"
+ }
 }

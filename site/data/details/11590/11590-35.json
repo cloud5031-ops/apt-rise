@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "11590-35",
  "apartmentName": "청호",
  "sidoCode": "11",
@@ -14,7 +16,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-06",
-   "price": 1049000000,
+   "priceWon": 1049000000,
    "floor": 9,
    "exclusiveArea": 59.85,
    "areaGroup": 60,
@@ -23,7 +25,7 @@
   },
   {
    "contractDate": "2026-05-28",
-   "price": 1120000000,
+   "priceWon": 1120000000,
    "floor": 5,
    "exclusiveArea": 59.85,
    "areaGroup": 60,
@@ -32,7 +34,7 @@
   },
   {
    "contractDate": "2026-05-28",
-   "price": 1100000000,
+   "priceWon": 1100000000,
    "floor": 6,
    "exclusiveArea": 59.85,
    "areaGroup": 60,
@@ -41,7 +43,7 @@
   },
   {
    "contractDate": "2026-05-23",
-   "price": 1100000000,
+   "priceWon": 1100000000,
    "floor": 9,
    "exclusiveArea": 59.85,
    "areaGroup": 60,
@@ -50,7 +52,7 @@
   },
   {
    "contractDate": "2026-05-22",
-   "price": 1070000000,
+   "priceWon": 1070000000,
    "floor": 7,
    "exclusiveArea": 59.85,
    "areaGroup": 60,
@@ -59,7 +61,7 @@
   },
   {
    "contractDate": "2026-05-08",
-   "price": 1170000000,
+   "priceWon": 1170000000,
    "floor": 8,
    "exclusiveArea": 59.85,
    "areaGroup": 60,
@@ -68,7 +70,7 @@
   },
   {
    "contractDate": "2026-04-16",
-   "price": 900000000,
+   "priceWon": 900000000,
    "floor": 5,
    "exclusiveArea": 59.85,
    "areaGroup": 60,
@@ -77,12 +79,19 @@
   },
   {
    "contractDate": "2026-02-27",
-   "price": 1000000000,
+   "priceWon": 1000000000,
    "floor": 1,
    "exclusiveArea": 59.85,
    "areaGroup": 60,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.501322376271,
+  "longitude": 126.96309300422,
+  "roadAddress": "서울 동작구 서달로2길 29",
+  "jibunAddress": "서울 동작구 흑석동 327",
+  "geocodeStatus": "valid"
+ }
 }

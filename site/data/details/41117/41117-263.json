@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "41117-263",
  "apartmentName": "광교대광로제비앙",
  "sidoCode": "41",
@@ -15,7 +17,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-11",
-   "price": 810000000,
+   "priceWon": 810000000,
    "floor": 1,
    "exclusiveArea": 84.5282,
    "areaGroup": 85,
@@ -24,7 +26,7 @@
   },
   {
    "contractDate": "2026-06-11",
-   "price": 775000000,
+   "priceWon": 775000000,
    "floor": 4,
    "exclusiveArea": 84.5282,
    "areaGroup": 85,
@@ -33,7 +35,7 @@
   },
   {
    "contractDate": "2026-06-10",
-   "price": 710000000,
+   "priceWon": 710000000,
    "floor": 1,
    "exclusiveArea": 84.6489,
    "areaGroup": 85,
@@ -42,7 +44,7 @@
   },
   {
    "contractDate": "2026-05-29",
-   "price": 670000000,
+   "priceWon": 670000000,
    "floor": 1,
    "exclusiveArea": 84.6489,
    "areaGroup": 85,
@@ -51,7 +53,7 @@
   },
   {
    "contractDate": "2026-05-01",
-   "price": 750000000,
+   "priceWon": 750000000,
    "floor": 1,
    "exclusiveArea": 84.5282,
    "areaGroup": 85,
@@ -60,7 +62,7 @@
   },
   {
    "contractDate": "2026-04-25",
-   "price": 707000000,
+   "priceWon": 707000000,
    "floor": 2,
    "exclusiveArea": 84.5282,
    "areaGroup": 85,
@@ -69,7 +71,7 @@
   },
   {
    "contractDate": "2026-04-18",
-   "price": 710000000,
+   "priceWon": 710000000,
    "floor": 2,
    "exclusiveArea": 84.5282,
    "areaGroup": 85,
@@ -78,7 +80,7 @@
   },
   {
    "contractDate": "2026-04-12",
-   "price": 725000000,
+   "priceWon": 725000000,
    "floor": 5,
    "exclusiveArea": 84.6489,
    "areaGroup": 85,
@@ -87,7 +89,7 @@
   },
   {
    "contractDate": "2026-03-21",
-   "price": 685000000,
+   "priceWon": 685000000,
    "floor": 5,
    "exclusiveArea": 84.6489,
    "areaGroup": 85,
@@ -96,7 +98,7 @@
   },
   {
    "contractDate": "2026-02-28",
-   "price": 730000000,
+   "priceWon": 730000000,
    "floor": 3,
    "exclusiveArea": 84.5282,
    "areaGroup": 85,
@@ -105,12 +107,19 @@
   },
   {
    "contractDate": "2026-02-20",
-   "price": 730000000,
+   "priceWon": 730000000,
    "floor": 5,
    "exclusiveArea": 84.6489,
    "areaGroup": 85,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.3073679313515,
+  "longitude": 127.040779405796,
+  "roadAddress": "경기 수원시 영통구 웰빙타운로 106",
+  "jibunAddress": "경기 수원시 영통구 이의동 1182",
+  "geocodeStatus": "valid"
+ }
 }

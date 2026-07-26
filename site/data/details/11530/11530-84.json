@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "11530-84",
  "apartmentName": "영화",
  "sidoCode": "11",
@@ -16,7 +18,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-16",
-   "price": 895000000,
+   "priceWon": 895000000,
    "floor": 24,
    "exclusiveArea": 84.96,
    "areaGroup": 85,
@@ -25,7 +27,7 @@
   },
   {
    "contractDate": "2026-06-15",
-   "price": 870000000,
+   "priceWon": 870000000,
    "floor": 13,
    "exclusiveArea": 84.96,
    "areaGroup": 85,
@@ -34,7 +36,7 @@
   },
   {
    "contractDate": "2026-05-09",
-   "price": 760000000,
+   "priceWon": 760000000,
    "floor": 13,
    "exclusiveArea": 143.09,
    "areaGroup": 143,
@@ -43,7 +45,7 @@
   },
   {
    "contractDate": "2026-04-29",
-   "price": 775000000,
+   "priceWon": 775000000,
    "floor": 21,
    "exclusiveArea": 59.78,
    "areaGroup": 60,
@@ -52,7 +54,7 @@
   },
   {
    "contractDate": "2026-04-28",
-   "price": 830000000,
+   "priceWon": 830000000,
    "floor": 25,
    "exclusiveArea": 143.09,
    "areaGroup": 143,
@@ -61,7 +63,7 @@
   },
   {
    "contractDate": "2026-04-24",
-   "price": 830000000,
+   "priceWon": 830000000,
    "floor": 5,
    "exclusiveArea": 84.96,
    "areaGroup": 85,
@@ -70,7 +72,7 @@
   },
   {
    "contractDate": "2026-04-21",
-   "price": 775000000,
+   "priceWon": 775000000,
    "floor": 24,
    "exclusiveArea": 84.96,
    "areaGroup": 85,
@@ -79,7 +81,7 @@
   },
   {
    "contractDate": "2026-04-11",
-   "price": 650000000,
+   "priceWon": 650000000,
    "floor": 19,
    "exclusiveArea": 59.78,
    "areaGroup": 60,
@@ -88,7 +90,7 @@
   },
   {
    "contractDate": "2026-03-11",
-   "price": 640000000,
+   "priceWon": 640000000,
    "floor": 19,
    "exclusiveArea": 59.78,
    "areaGroup": 60,
@@ -97,7 +99,7 @@
   },
   {
    "contractDate": "2026-03-07",
-   "price": 765000000,
+   "priceWon": 765000000,
    "floor": 5,
    "exclusiveArea": 84.96,
    "areaGroup": 85,
@@ -106,7 +108,7 @@
   },
   {
    "contractDate": "2026-02-24",
-   "price": 778000000,
+   "priceWon": 778000000,
    "floor": 13,
    "exclusiveArea": 84.96,
    "areaGroup": 85,
@@ -115,7 +117,7 @@
   },
   {
    "contractDate": "2026-02-21",
-   "price": 750000000,
+   "priceWon": 750000000,
    "floor": 19,
    "exclusiveArea": 84.96,
    "areaGroup": 85,
@@ -124,7 +126,7 @@
   },
   {
    "contractDate": "2026-02-12",
-   "price": 650000000,
+   "priceWon": 650000000,
    "floor": 21,
    "exclusiveArea": 59.78,
    "areaGroup": 60,
@@ -133,7 +135,7 @@
   },
   {
    "contractDate": "2026-02-12",
-   "price": 750000000,
+   "priceWon": 750000000,
    "floor": 13,
    "exclusiveArea": 84.96,
    "areaGroup": 85,
@@ -142,12 +144,19 @@
   },
   {
    "contractDate": "2026-02-11",
-   "price": 755000000,
+   "priceWon": 755000000,
    "floor": 1,
    "exclusiveArea": 84.96,
    "areaGroup": 85,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.4961874853839,
+  "longitude": 126.860006160686,
+  "roadAddress": "서울 구로구 경인로40길 11",
+  "jibunAddress": "서울 구로구 개봉동 475",
+  "geocodeStatus": "valid"
+ }
 }

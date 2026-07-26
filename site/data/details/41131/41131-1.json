@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "41131-1",
  "apartmentName": "두산",
  "sidoCode": "41",
@@ -15,7 +17,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-08",
-   "price": 900000000,
+   "priceWon": 900000000,
    "floor": 15,
    "exclusiveArea": 84.47,
    "areaGroup": 84,
@@ -24,7 +26,7 @@
   },
   {
    "contractDate": "2026-05-15",
-   "price": 830000000,
+   "priceWon": 830000000,
    "floor": 5,
    "exclusiveArea": 84.47,
    "areaGroup": 84,
@@ -33,7 +35,7 @@
   },
   {
    "contractDate": "2026-05-08",
-   "price": 895000000,
+   "priceWon": 895000000,
    "floor": 10,
    "exclusiveArea": 84.47,
    "areaGroup": 84,
@@ -42,7 +44,7 @@
   },
   {
    "contractDate": "2026-04-11",
-   "price": 823000000,
+   "priceWon": 823000000,
    "floor": 14,
    "exclusiveArea": 84.47,
    "areaGroup": 84,
@@ -51,7 +53,7 @@
   },
   {
    "contractDate": "2026-04-10",
-   "price": 774700000,
+   "priceWon": 774700000,
    "floor": 13,
    "exclusiveArea": 71.36,
    "areaGroup": 71,
@@ -60,7 +62,7 @@
   },
   {
    "contractDate": "2026-04-05",
-   "price": 880000000,
+   "priceWon": 880000000,
    "floor": 15,
    "exclusiveArea": 84.47,
    "areaGroup": 84,
@@ -69,7 +71,7 @@
   },
   {
    "contractDate": "2026-03-25",
-   "price": 880000000,
+   "priceWon": 880000000,
    "floor": 10,
    "exclusiveArea": 84.47,
    "areaGroup": 84,
@@ -78,7 +80,7 @@
   },
   {
    "contractDate": "2026-03-12",
-   "price": 600000000,
+   "priceWon": 600000000,
    "floor": 14,
    "exclusiveArea": 84.47,
    "areaGroup": 84,
@@ -87,12 +89,19 @@
   },
   {
    "contractDate": "2026-02-27",
-   "price": 790000000,
+   "priceWon": 790000000,
    "floor": 1,
    "exclusiveArea": 84.47,
    "areaGroup": 84,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.44500303873,
+  "longitude": 127.149529072267,
+  "roadAddress": "경기 성남시 수정구 공원로 360",
+  "jibunAddress": "경기 성남시 수정구 신흥동 2024",
+  "geocodeStatus": "valid"
+ }
 }

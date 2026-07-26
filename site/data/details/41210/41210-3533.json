@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "41210-3533",
  "apartmentName": "철산센트럴푸르지오",
  "sidoCode": "41",
@@ -18,7 +20,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-24",
-   "price": 1370000000,
+   "priceWon": 1370000000,
    "floor": 14,
    "exclusiveArea": 59.9981,
    "areaGroup": 60,
@@ -27,7 +29,7 @@
   },
   {
    "contractDate": "2026-06-08",
-   "price": 1600000000,
+   "priceWon": 1600000000,
    "floor": 29,
    "exclusiveArea": 84.9818,
    "areaGroup": 85,
@@ -36,7 +38,7 @@
   },
   {
    "contractDate": "2026-06-02",
-   "price": 1360000000,
+   "priceWon": 1360000000,
    "floor": 23,
    "exclusiveArea": 59.9981,
    "areaGroup": 60,
@@ -45,7 +47,7 @@
   },
   {
    "contractDate": "2026-06-02",
-   "price": 1570000000,
+   "priceWon": 1570000000,
    "floor": 23,
    "exclusiveArea": 84.9818,
    "areaGroup": 85,
@@ -54,7 +56,7 @@
   },
   {
    "contractDate": "2026-05-26",
-   "price": 1467000000,
+   "priceWon": 1467000000,
    "floor": 5,
    "exclusiveArea": 84.9818,
    "areaGroup": 85,
@@ -63,7 +65,7 @@
   },
   {
    "contractDate": "2026-05-25",
-   "price": 1748000000,
+   "priceWon": 1748000000,
    "floor": 23,
    "exclusiveArea": 105.8246,
    "areaGroup": 106,
@@ -72,7 +74,7 @@
   },
   {
    "contractDate": "2026-05-23",
-   "price": 1498000000,
+   "priceWon": 1498000000,
    "floor": 7,
    "exclusiveArea": 84.9924,
    "areaGroup": 85,
@@ -81,7 +83,7 @@
   },
   {
    "contractDate": "2026-05-08",
-   "price": 1530000000,
+   "priceWon": 1530000000,
    "floor": 6,
    "exclusiveArea": 84.9924,
    "areaGroup": 85,
@@ -90,7 +92,7 @@
   },
   {
    "contractDate": "2026-04-20",
-   "price": 1325000000,
+   "priceWon": 1325000000,
    "floor": 20,
    "exclusiveArea": 59.9981,
    "areaGroup": 60,
@@ -99,7 +101,7 @@
   },
   {
    "contractDate": "2026-03-19",
-   "price": 1170000000,
+   "priceWon": 1170000000,
    "floor": 2,
    "exclusiveArea": 59.9897,
    "areaGroup": 60,
@@ -108,7 +110,7 @@
   },
   {
    "contractDate": "2026-03-01",
-   "price": 1335000000,
+   "priceWon": 1335000000,
    "floor": 16,
    "exclusiveArea": 59.9981,
    "areaGroup": 60,
@@ -117,7 +119,7 @@
   },
   {
    "contractDate": "2026-03-01",
-   "price": 1270000000,
+   "priceWon": 1270000000,
    "floor": 2,
    "exclusiveArea": 59.9981,
    "areaGroup": 60,
@@ -126,12 +128,19 @@
   },
   {
    "contractDate": "2026-02-20",
-   "price": 1480000000,
+   "priceWon": 1480000000,
    "floor": 10,
    "exclusiveArea": 84.9924,
    "areaGroup": 85,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.4722708868885,
+  "longitude": 126.866648019177,
+  "roadAddress": "경기 광명시 오리로 835",
+  "jibunAddress": "경기 광명시 철산동 638",
+  "geocodeStatus": "valid"
+ }
 }

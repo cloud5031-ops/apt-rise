@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "11530-3469",
  "apartmentName": "천왕이펜하우스6단지",
  "sidoCode": "11",
@@ -14,7 +16,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-13",
-   "price": 777000000,
+   "priceWon": 777000000,
    "floor": 11,
    "exclusiveArea": 84.97,
    "areaGroup": 85,
@@ -23,7 +25,7 @@
   },
   {
    "contractDate": "2026-06-03",
-   "price": 740000000,
+   "priceWon": 740000000,
    "floor": 4,
    "exclusiveArea": 84.97,
    "areaGroup": 85,
@@ -32,7 +34,7 @@
   },
   {
    "contractDate": "2026-05-31",
-   "price": 695000000,
+   "priceWon": 695000000,
    "floor": 1,
    "exclusiveArea": 84.97,
    "areaGroup": 85,
@@ -41,7 +43,7 @@
   },
   {
    "contractDate": "2026-05-26",
-   "price": 757000000,
+   "priceWon": 757000000,
    "floor": 8,
    "exclusiveArea": 84.97,
    "areaGroup": 85,
@@ -50,12 +52,19 @@
   },
   {
    "contractDate": "2026-03-31",
-   "price": 700000000,
+   "priceWon": 700000000,
    "floor": 9,
    "exclusiveArea": 84.97,
    "areaGroup": 85,
    "dealType": "직거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.4783811147794,
+  "longitude": 126.841304041942,
+  "roadAddress": "서울 구로구 천왕로 9",
+  "jibunAddress": "서울 구로구 천왕동 275",
+  "geocodeStatus": "valid"
+ }
 }

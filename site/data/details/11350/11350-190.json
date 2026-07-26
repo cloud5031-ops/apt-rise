@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "11350-190",
  "apartmentName": "공릉해링턴플레이스",
  "sidoCode": "11",
@@ -15,7 +17,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-27",
-   "price": 955000000,
+   "priceWon": 955000000,
    "floor": 4,
    "exclusiveArea": 99.917,
    "areaGroup": 100,
@@ -24,7 +26,7 @@
   },
   {
    "contractDate": "2026-06-25",
-   "price": 930000000,
+   "priceWon": 930000000,
    "floor": 8,
    "exclusiveArea": 99.917,
    "areaGroup": 100,
@@ -33,7 +35,7 @@
   },
   {
    "contractDate": "2026-06-18",
-   "price": 895000000,
+   "priceWon": 895000000,
    "floor": 7,
    "exclusiveArea": 99.917,
    "areaGroup": 100,
@@ -42,7 +44,7 @@
   },
   {
    "contractDate": "2026-05-19",
-   "price": 910000000,
+   "priceWon": 910000000,
    "floor": 2,
    "exclusiveArea": 99.917,
    "areaGroup": 100,
@@ -51,7 +53,7 @@
   },
   {
    "contractDate": "2026-04-23",
-   "price": 600000000,
+   "priceWon": 600000000,
    "floor": 2,
    "exclusiveArea": 99.917,
    "areaGroup": 100,
@@ -60,7 +62,7 @@
   },
   {
    "contractDate": "2026-04-16",
-   "price": 885000000,
+   "priceWon": 885000000,
    "floor": 5,
    "exclusiveArea": 99.917,
    "areaGroup": 100,
@@ -69,7 +71,7 @@
   },
   {
    "contractDate": "2026-04-16",
-   "price": 1100000000,
+   "priceWon": 1100000000,
    "floor": 8,
    "exclusiveArea": 134.914,
    "areaGroup": 135,
@@ -78,7 +80,7 @@
   },
   {
    "contractDate": "2026-04-03",
-   "price": 870000000,
+   "priceWon": 870000000,
    "floor": 14,
    "exclusiveArea": 99.917,
    "areaGroup": 100,
@@ -87,7 +89,7 @@
   },
   {
    "contractDate": "2026-03-31",
-   "price": 1130000000,
+   "priceWon": 1130000000,
    "floor": 15,
    "exclusiveArea": 134.914,
    "areaGroup": 135,
@@ -96,7 +98,7 @@
   },
   {
    "contractDate": "2026-03-21",
-   "price": 850000000,
+   "priceWon": 850000000,
    "floor": 5,
    "exclusiveArea": 99.917,
    "areaGroup": 100,
@@ -105,7 +107,7 @@
   },
   {
    "contractDate": "2026-03-13",
-   "price": 850000000,
+   "priceWon": 850000000,
    "floor": 1,
    "exclusiveArea": 99.917,
    "areaGroup": 100,
@@ -114,7 +116,7 @@
   },
   {
    "contractDate": "2026-03-11",
-   "price": 880000000,
+   "priceWon": 880000000,
    "floor": 2,
    "exclusiveArea": 99.917,
    "areaGroup": 100,
@@ -123,7 +125,7 @@
   },
   {
    "contractDate": "2026-02-19",
-   "price": 1130000000,
+   "priceWon": 1130000000,
    "floor": 9,
    "exclusiveArea": 134.914,
    "areaGroup": 135,
@@ -132,7 +134,7 @@
   },
   {
    "contractDate": "2026-02-04",
-   "price": 815000000,
+   "priceWon": 815000000,
    "floor": 1,
    "exclusiveArea": 99.917,
    "areaGroup": 100,
@@ -141,12 +143,19 @@
   },
   {
    "contractDate": "2026-02-03",
-   "price": 930000000,
+   "priceWon": 930000000,
    "floor": 5,
    "exclusiveArea": 99.917,
    "areaGroup": 100,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.627737624921,
+  "longitude": 127.086908237543,
+  "roadAddress": "서울 노원구 화랑로 621",
+  "jibunAddress": "서울 노원구 공릉동 106",
+  "geocodeStatus": "valid"
+ }
 }

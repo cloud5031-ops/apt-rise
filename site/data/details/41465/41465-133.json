@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "41465-133",
  "apartmentName": "벽산블루밍",
  "sidoCode": "41",
@@ -15,7 +17,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-30",
-   "price": 750000000,
+   "priceWon": 750000000,
    "floor": 5,
    "exclusiveArea": 84.988,
    "areaGroup": 85,
@@ -24,7 +26,7 @@
   },
   {
    "contractDate": "2026-06-27",
-   "price": 740000000,
+   "priceWon": 740000000,
    "floor": 3,
    "exclusiveArea": 84.981,
    "areaGroup": 85,
@@ -33,7 +35,7 @@
   },
   {
    "contractDate": "2026-06-13",
-   "price": 795000000,
+   "priceWon": 795000000,
    "floor": 10,
    "exclusiveArea": 84.981,
    "areaGroup": 85,
@@ -42,7 +44,7 @@
   },
   {
    "contractDate": "2026-05-23",
-   "price": 720000000,
+   "priceWon": 720000000,
    "floor": 8,
    "exclusiveArea": 84.981,
    "areaGroup": 85,
@@ -51,7 +53,7 @@
   },
   {
    "contractDate": "2026-05-09",
-   "price": 700000000,
+   "priceWon": 700000000,
    "floor": 18,
    "exclusiveArea": 84.981,
    "areaGroup": 85,
@@ -60,7 +62,7 @@
   },
   {
    "contractDate": "2026-03-06",
-   "price": 755000000,
+   "priceWon": 755000000,
    "floor": 8,
    "exclusiveArea": 84.981,
    "areaGroup": 85,
@@ -69,7 +71,7 @@
   },
   {
    "contractDate": "2026-02-20",
-   "price": 680000000,
+   "priceWon": 680000000,
    "floor": 2,
    "exclusiveArea": 84.981,
    "areaGroup": 85,
@@ -78,12 +80,19 @@
   },
   {
    "contractDate": "2026-02-13",
-   "price": 700000000,
+   "priceWon": 700000000,
    "floor": 3,
    "exclusiveArea": 84.988,
    "areaGroup": 85,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.3241128898127,
+  "longitude": 127.082919861125,
+  "roadAddress": "경기 용인시 수지구 신봉1로48번길 45",
+  "jibunAddress": "경기 용인시 수지구 신봉동 876",
+  "geocodeStatus": "ambiguous"
+ }
 }

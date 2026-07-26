@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "41281-3222",
  "apartmentName": "삼송2차원흥역동원로얄듀크비스타",
  "sidoCode": "41",
@@ -14,7 +16,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-27",
-   "price": 780000000,
+   "priceWon": 780000000,
    "floor": 30,
    "exclusiveArea": 84.9867,
    "areaGroup": 85,
@@ -23,7 +25,7 @@
   },
   {
    "contractDate": "2026-06-13",
-   "price": 710000000,
+   "priceWon": 710000000,
    "floor": 13,
    "exclusiveArea": 84.9867,
    "areaGroup": 85,
@@ -32,7 +34,7 @@
   },
   {
    "contractDate": "2026-06-03",
-   "price": 779000000,
+   "priceWon": 779000000,
    "floor": 26,
    "exclusiveArea": 84.9867,
    "areaGroup": 85,
@@ -41,7 +43,7 @@
   },
   {
    "contractDate": "2026-05-31",
-   "price": 730000000,
+   "priceWon": 730000000,
    "floor": 32,
    "exclusiveArea": 84.9867,
    "areaGroup": 85,
@@ -50,7 +52,7 @@
   },
   {
    "contractDate": "2026-05-30",
-   "price": 720000000,
+   "priceWon": 720000000,
    "floor": 7,
    "exclusiveArea": 84.9867,
    "areaGroup": 85,
@@ -59,7 +61,7 @@
   },
   {
    "contractDate": "2026-05-12",
-   "price": 730000000,
+   "priceWon": 730000000,
    "floor": 14,
    "exclusiveArea": 84.9867,
    "areaGroup": 85,
@@ -68,7 +70,7 @@
   },
   {
    "contractDate": "2026-05-09",
-   "price": 739000000,
+   "priceWon": 739000000,
    "floor": 16,
    "exclusiveArea": 84.9867,
    "areaGroup": 85,
@@ -77,7 +79,7 @@
   },
   {
    "contractDate": "2026-05-04",
-   "price": 715000000,
+   "priceWon": 715000000,
    "floor": 4,
    "exclusiveArea": 84.9867,
    "areaGroup": 85,
@@ -86,7 +88,7 @@
   },
   {
    "contractDate": "2026-04-29",
-   "price": 745000000,
+   "priceWon": 745000000,
    "floor": 17,
    "exclusiveArea": 84.9867,
    "areaGroup": 85,
@@ -95,7 +97,7 @@
   },
   {
    "contractDate": "2026-04-08",
-   "price": 710000000,
+   "priceWon": 710000000,
    "floor": 9,
    "exclusiveArea": 84.9867,
    "areaGroup": 85,
@@ -104,7 +106,7 @@
   },
   {
    "contractDate": "2026-03-21",
-   "price": 742500000,
+   "priceWon": 742500000,
    "floor": 30,
    "exclusiveArea": 84.9867,
    "areaGroup": 85,
@@ -113,7 +115,7 @@
   },
   {
    "contractDate": "2026-03-13",
-   "price": 728000000,
+   "priceWon": 728000000,
    "floor": 13,
    "exclusiveArea": 84.9867,
    "areaGroup": 85,
@@ -122,7 +124,7 @@
   },
   {
    "contractDate": "2026-03-04",
-   "price": 748000000,
+   "priceWon": 748000000,
    "floor": 25,
    "exclusiveArea": 84.9867,
    "areaGroup": 85,
@@ -131,7 +133,7 @@
   },
   {
    "contractDate": "2026-03-03",
-   "price": 755000000,
+   "priceWon": 755000000,
    "floor": 28,
    "exclusiveArea": 84.9867,
    "areaGroup": 85,
@@ -140,7 +142,7 @@
   },
   {
    "contractDate": "2026-02-23",
-   "price": 725000000,
+   "priceWon": 725000000,
    "floor": 11,
    "exclusiveArea": 84.9867,
    "areaGroup": 85,
@@ -149,7 +151,7 @@
   },
   {
    "contractDate": "2026-02-20",
-   "price": 730000000,
+   "priceWon": 730000000,
    "floor": 10,
    "exclusiveArea": 84.9867,
    "areaGroup": 85,
@@ -158,12 +160,19 @@
   },
   {
    "contractDate": "2026-02-13",
-   "price": 730000000,
+   "priceWon": 730000000,
    "floor": 14,
    "exclusiveArea": 84.9867,
    "areaGroup": 85,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.6508128457296,
+  "longitude": 126.875160731003,
+  "roadAddress": "경기 고양시 덕양구 권율대로 690",
+  "jibunAddress": "경기 고양시 덕양구 원흥동 635",
+  "geocodeStatus": "valid"
+ }
 }

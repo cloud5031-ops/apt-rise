@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "41287-632",
  "apartmentName": "e편한세상일산어반스카이",
  "sidoCode": "41",
@@ -16,7 +18,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-29",
-   "price": 600000000,
+   "priceWon": 600000000,
    "floor": 10,
    "exclusiveArea": 70.6602,
    "areaGroup": 71,
@@ -25,7 +27,7 @@
   },
   {
    "contractDate": "2026-06-24",
-   "price": 662000000,
+   "priceWon": 662000000,
    "floor": 43,
    "exclusiveArea": 70.665,
    "areaGroup": 71,
@@ -34,7 +36,7 @@
   },
   {
    "contractDate": "2026-06-24",
-   "price": 740000000,
+   "priceWon": 740000000,
    "floor": 47,
    "exclusiveArea": 84.8222,
    "areaGroup": 85,
@@ -43,7 +45,7 @@
   },
   {
    "contractDate": "2026-06-09",
-   "price": 660000000,
+   "priceWon": 660000000,
    "floor": 37,
    "exclusiveArea": 70.665,
    "areaGroup": 71,
@@ -52,7 +54,7 @@
   },
   {
    "contractDate": "2026-05-28",
-   "price": 620000000,
+   "priceWon": 620000000,
    "floor": 13,
    "exclusiveArea": 70.6602,
    "areaGroup": 71,
@@ -61,7 +63,7 @@
   },
   {
    "contractDate": "2026-05-21",
-   "price": 662000000,
+   "priceWon": 662000000,
    "floor": 43,
    "exclusiveArea": 70.665,
    "areaGroup": 71,
@@ -70,7 +72,7 @@
   },
   {
    "contractDate": "2026-05-17",
-   "price": 740000000,
+   "priceWon": 740000000,
    "floor": 48,
    "exclusiveArea": 84.8222,
    "areaGroup": 85,
@@ -79,7 +81,7 @@
   },
   {
    "contractDate": "2026-04-30",
-   "price": 600000000,
+   "priceWon": 600000000,
    "floor": 32,
    "exclusiveArea": 70.665,
    "areaGroup": 71,
@@ -88,7 +90,7 @@
   },
   {
    "contractDate": "2026-04-13",
-   "price": 685000000,
+   "priceWon": 685000000,
    "floor": 10,
    "exclusiveArea": 84.8222,
    "areaGroup": 85,
@@ -97,7 +99,7 @@
   },
   {
    "contractDate": "2026-04-11",
-   "price": 642500000,
+   "priceWon": 642500000,
    "floor": 42,
    "exclusiveArea": 70.6602,
    "areaGroup": 71,
@@ -106,7 +108,7 @@
   },
   {
    "contractDate": "2026-03-07",
-   "price": 617500000,
+   "priceWon": 617500000,
    "floor": 25,
    "exclusiveArea": 70.6602,
    "areaGroup": 71,
@@ -115,7 +117,7 @@
   },
   {
    "contractDate": "2026-03-03",
-   "price": 740000000,
+   "priceWon": 740000000,
    "floor": 34,
    "exclusiveArea": 84.8222,
    "areaGroup": 85,
@@ -124,12 +126,19 @@
   },
   {
    "contractDate": "2026-02-08",
-   "price": 720000000,
+   "priceWon": 720000000,
    "floor": 16,
    "exclusiveArea": 84.8222,
    "areaGroup": 85,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.6837055692813,
+  "longitude": 126.769773109462,
+  "roadAddress": "경기 고양시 일산서구 고양대로 666",
+  "jibunAddress": "경기 고양시 일산서구 일산동 2148",
+  "geocodeStatus": "valid"
+ }
 }

@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "11560-10",
  "apartmentName": "대교",
  "sidoCode": "11",
@@ -16,7 +18,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-08",
-   "price": 3050000000,
+   "priceWon": 3050000000,
    "floor": 4,
    "exclusiveArea": 95.5,
    "areaGroup": 96,
@@ -25,7 +27,7 @@
   },
   {
    "contractDate": "2026-06-05",
-   "price": 3400000000,
+   "priceWon": 3400000000,
    "floor": 1,
    "exclusiveArea": 133.65,
    "areaGroup": 134,
@@ -34,7 +36,7 @@
   },
   {
    "contractDate": "2026-06-04",
-   "price": 3010000000,
+   "priceWon": 3010000000,
    "floor": 5,
    "exclusiveArea": 95.5,
    "areaGroup": 96,
@@ -43,7 +45,7 @@
   },
   {
    "contractDate": "2026-05-30",
-   "price": 2930000000,
+   "priceWon": 2930000000,
    "floor": 1,
    "exclusiveArea": 95.5,
    "areaGroup": 96,
@@ -52,7 +54,7 @@
   },
   {
    "contractDate": "2026-04-30",
-   "price": 4188500000,
+   "priceWon": 4188500000,
    "floor": 9,
    "exclusiveArea": 151.74,
    "areaGroup": 152,
@@ -61,7 +63,7 @@
   },
   {
    "contractDate": "2026-04-28",
-   "price": 2908000000,
+   "priceWon": 2908000000,
    "floor": 1,
    "exclusiveArea": 95.5,
    "areaGroup": 96,
@@ -70,7 +72,7 @@
   },
   {
    "contractDate": "2026-03-03",
-   "price": 3230000000,
+   "priceWon": 3230000000,
    "floor": 7,
    "exclusiveArea": 95.5,
    "areaGroup": 96,
@@ -79,12 +81,19 @@
   },
   {
    "contractDate": "2026-02-05",
-   "price": 3230000000,
+   "priceWon": 3230000000,
    "floor": 9,
    "exclusiveArea": 95.5,
    "areaGroup": 96,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.5221520969759,
+  "longitude": 126.933684558017,
+  "roadAddress": "서울 영등포구 국제금융로7길 20",
+  "jibunAddress": "서울 영등포구 여의도동 41",
+  "geocodeStatus": "valid"
+ }
 }

@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "41173-1906",
  "apartmentName": "동편마을(3단지)",
  "sidoCode": "41",
@@ -19,7 +21,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-27",
-   "price": 1145000000,
+   "priceWon": 1145000000,
    "floor": 10,
    "exclusiveArea": 84.89,
    "areaGroup": 85,
@@ -28,7 +30,7 @@
   },
   {
    "contractDate": "2026-06-27",
-   "price": 1140000000,
+   "priceWon": 1140000000,
    "floor": 14,
    "exclusiveArea": 84.97,
    "areaGroup": 85,
@@ -37,7 +39,7 @@
   },
   {
    "contractDate": "2026-06-12",
-   "price": 1150000000,
+   "priceWon": 1150000000,
    "floor": 9,
    "exclusiveArea": 84.96,
    "areaGroup": 85,
@@ -46,7 +48,7 @@
   },
   {
    "contractDate": "2026-06-03",
-   "price": 1085000000,
+   "priceWon": 1085000000,
    "floor": 11,
    "exclusiveArea": 74.96,
    "areaGroup": 75,
@@ -55,7 +57,7 @@
   },
   {
    "contractDate": "2026-05-23",
-   "price": 1090000000,
+   "priceWon": 1090000000,
    "floor": 11,
    "exclusiveArea": 84.97,
    "areaGroup": 85,
@@ -64,7 +66,7 @@
   },
   {
    "contractDate": "2026-04-30",
-   "price": 1100000000,
+   "priceWon": 1100000000,
    "floor": 5,
    "exclusiveArea": 84.96,
    "areaGroup": 85,
@@ -73,7 +75,7 @@
   },
   {
    "contractDate": "2026-04-30",
-   "price": 1100000000,
+   "priceWon": 1100000000,
    "floor": 5,
    "exclusiveArea": 84.95,
    "areaGroup": 85,
@@ -82,7 +84,7 @@
   },
   {
    "contractDate": "2026-04-29",
-   "price": 1080000000,
+   "priceWon": 1080000000,
    "floor": 11,
    "exclusiveArea": 84.97,
    "areaGroup": 85,
@@ -91,7 +93,7 @@
   },
   {
    "contractDate": "2026-04-25",
-   "price": 1020000000,
+   "priceWon": 1020000000,
    "floor": 14,
    "exclusiveArea": 74.34,
    "areaGroup": 74,
@@ -100,12 +102,19 @@
   },
   {
    "contractDate": "2026-03-07",
-   "price": 929000000,
+   "priceWon": 929000000,
    "floor": 1,
    "exclusiveArea": 74.96,
    "areaGroup": 75,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.4130828524314,
+  "longitude": 126.970371353688,
+  "roadAddress": "경기 안양시 동안구 동편로 110",
+  "jibunAddress": "경기 안양시 동안구 관양동 1651",
+  "geocodeStatus": "valid"
+ }
 }

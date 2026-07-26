@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "11500-5251",
  "apartmentName": "우장산에스케이뷰",
  "sidoCode": "11",
@@ -16,7 +18,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-03",
-   "price": 980000000,
+   "priceWon": 980000000,
    "floor": 6,
    "exclusiveArea": 84.98,
    "areaGroup": 85,
@@ -25,7 +27,7 @@
   },
   {
    "contractDate": "2026-05-29",
-   "price": 985000000,
+   "priceWon": 985000000,
    "floor": 4,
    "exclusiveArea": 116.92,
    "areaGroup": 117,
@@ -34,7 +36,7 @@
   },
   {
    "contractDate": "2026-05-22",
-   "price": 1050000000,
+   "priceWon": 1050000000,
    "floor": 11,
    "exclusiveArea": 84.97,
    "areaGroup": 85,
@@ -43,7 +45,7 @@
   },
   {
    "contractDate": "2026-05-04",
-   "price": 950000000,
+   "priceWon": 950000000,
    "floor": 7,
    "exclusiveArea": 84.97,
    "areaGroup": 85,
@@ -52,7 +54,7 @@
   },
   {
    "contractDate": "2026-05-01",
-   "price": 1020000000,
+   "priceWon": 1020000000,
    "floor": 13,
    "exclusiveArea": 116.92,
    "areaGroup": 117,
@@ -61,7 +63,7 @@
   },
   {
    "contractDate": "2026-04-20",
-   "price": 952000000,
+   "priceWon": 952000000,
    "floor": 13,
    "exclusiveArea": 84.97,
    "areaGroup": 85,
@@ -70,7 +72,7 @@
   },
   {
    "contractDate": "2026-04-15",
-   "price": 890000000,
+   "priceWon": 890000000,
    "floor": 8,
    "exclusiveArea": 84.97,
    "areaGroup": 85,
@@ -79,7 +81,7 @@
   },
   {
    "contractDate": "2026-04-14",
-   "price": 945000000,
+   "priceWon": 945000000,
    "floor": 10,
    "exclusiveArea": 84.97,
    "areaGroup": 85,
@@ -88,7 +90,7 @@
   },
   {
    "contractDate": "2026-03-31",
-   "price": 967000000,
+   "priceWon": 967000000,
    "floor": 3,
    "exclusiveArea": 84.97,
    "areaGroup": 85,
@@ -97,7 +99,7 @@
   },
   {
    "contractDate": "2026-03-14",
-   "price": 990000000,
+   "priceWon": 990000000,
    "floor": 13,
    "exclusiveArea": 84.97,
    "areaGroup": 85,
@@ -106,7 +108,7 @@
   },
   {
    "contractDate": "2026-03-13",
-   "price": 940000000,
+   "priceWon": 940000000,
    "floor": 6,
    "exclusiveArea": 84.97,
    "areaGroup": 85,
@@ -115,7 +117,7 @@
   },
   {
    "contractDate": "2026-02-25",
-   "price": 970000000,
+   "priceWon": 970000000,
    "floor": 14,
    "exclusiveArea": 84.97,
    "areaGroup": 85,
@@ -124,12 +126,19 @@
   },
   {
    "contractDate": "2026-02-10",
-   "price": 905000000,
+   "priceWon": 905000000,
    "floor": 3,
    "exclusiveArea": 84.97,
    "areaGroup": 85,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.5481776604121,
+  "longitude": 126.843036379253,
+  "roadAddress": "서울 강서구 우현로 26",
+  "jibunAddress": "서울 강서구 화곡동 1158",
+  "geocodeStatus": "valid"
+ }
 }

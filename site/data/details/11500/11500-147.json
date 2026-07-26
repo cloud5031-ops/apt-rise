@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "11500-147",
  "apartmentName": "대림경동아파트",
  "sidoCode": "11",
@@ -14,7 +16,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-17",
-   "price": 1460000000,
+   "priceWon": 1460000000,
    "floor": 10,
    "exclusiveArea": 131.4,
    "areaGroup": 131,
@@ -23,7 +25,7 @@
   },
   {
    "contractDate": "2026-06-13",
-   "price": 1470000000,
+   "priceWon": 1470000000,
    "floor": 13,
    "exclusiveArea": 131.4,
    "areaGroup": 131,
@@ -32,7 +34,7 @@
   },
   {
    "contractDate": "2026-05-20",
-   "price": 1530000000,
+   "priceWon": 1530000000,
    "floor": 9,
    "exclusiveArea": 131.4,
    "areaGroup": 131,
@@ -41,7 +43,7 @@
   },
   {
    "contractDate": "2026-04-25",
-   "price": 1230000000,
+   "priceWon": 1230000000,
    "floor": 10,
    "exclusiveArea": 131.4,
    "areaGroup": 131,
@@ -50,7 +52,7 @@
   },
   {
    "contractDate": "2026-04-17",
-   "price": 1410000000,
+   "priceWon": 1410000000,
    "floor": 9,
    "exclusiveArea": 131.4,
    "areaGroup": 131,
@@ -59,7 +61,7 @@
   },
   {
    "contractDate": "2026-04-14",
-   "price": 1470000000,
+   "priceWon": 1470000000,
    "floor": 8,
    "exclusiveArea": 131.4,
    "areaGroup": 131,
@@ -68,7 +70,7 @@
   },
   {
    "contractDate": "2026-04-13",
-   "price": 1420000000,
+   "priceWon": 1420000000,
    "floor": 13,
    "exclusiveArea": 131.4,
    "areaGroup": 131,
@@ -77,7 +79,7 @@
   },
   {
    "contractDate": "2026-03-25",
-   "price": 1400000000,
+   "priceWon": 1400000000,
    "floor": 6,
    "exclusiveArea": 131.4,
    "areaGroup": 131,
@@ -86,12 +88,19 @@
   },
   {
    "contractDate": "2026-02-04",
-   "price": 1380000000,
+   "priceWon": 1380000000,
    "floor": 1,
    "exclusiveArea": 131.4,
    "areaGroup": 131,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.5663473856091,
+  "longitude": 126.854030753209,
+  "roadAddress": "서울 강서구 허준로 121",
+  "jibunAddress": "서울 강서구 가양동 1474",
+  "geocodeStatus": "valid"
+ }
 }

@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "41570-1125",
  "apartmentName": "메트로타워예미지",
  "sidoCode": "41",
@@ -17,7 +19,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-20",
-   "price": 535000000,
+   "priceWon": 535000000,
    "floor": 30,
    "exclusiveArea": 78.9118,
    "areaGroup": 79,
@@ -26,7 +28,7 @@
   },
   {
    "contractDate": "2026-06-13",
-   "price": 529000000,
+   "priceWon": 529000000,
    "floor": 13,
    "exclusiveArea": 78.9118,
    "areaGroup": 79,
@@ -35,7 +37,7 @@
   },
   {
    "contractDate": "2026-06-10",
-   "price": 522000000,
+   "priceWon": 522000000,
    "floor": 16,
    "exclusiveArea": 78.9118,
    "areaGroup": 79,
@@ -44,7 +46,7 @@
   },
   {
    "contractDate": "2026-05-15",
-   "price": 540000000,
+   "priceWon": 540000000,
    "floor": 35,
    "exclusiveArea": 78.9809,
    "areaGroup": 79,
@@ -53,7 +55,7 @@
   },
   {
    "contractDate": "2026-05-12",
-   "price": 498000000,
+   "priceWon": 498000000,
    "floor": 7,
    "exclusiveArea": 78.9118,
    "areaGroup": 79,
@@ -62,7 +64,7 @@
   },
   {
    "contractDate": "2026-05-02",
-   "price": 528000000,
+   "priceWon": 528000000,
    "floor": 37,
    "exclusiveArea": 78.9809,
    "areaGroup": 79,
@@ -71,7 +73,7 @@
   },
   {
    "contractDate": "2026-04-28",
-   "price": 480000000,
+   "priceWon": 480000000,
    "floor": 4,
    "exclusiveArea": 78.9118,
    "areaGroup": 79,
@@ -80,7 +82,7 @@
   },
   {
    "contractDate": "2026-04-26",
-   "price": 645000000,
+   "priceWon": 645000000,
    "floor": 46,
    "exclusiveArea": 90.8797,
    "areaGroup": 91,
@@ -89,7 +91,7 @@
   },
   {
    "contractDate": "2026-04-06",
-   "price": 517000000,
+   "priceWon": 517000000,
    "floor": 24,
    "exclusiveArea": 78.9809,
    "areaGroup": 79,
@@ -98,7 +100,7 @@
   },
   {
    "contractDate": "2026-03-24",
-   "price": 620000000,
+   "priceWon": 620000000,
    "floor": 38,
    "exclusiveArea": 90.8747,
    "areaGroup": 91,
@@ -107,7 +109,7 @@
   },
   {
    "contractDate": "2026-03-14",
-   "price": 650000000,
+   "priceWon": 650000000,
    "floor": 42,
    "exclusiveArea": 90.8797,
    "areaGroup": 91,
@@ -116,7 +118,7 @@
   },
   {
    "contractDate": "2026-03-10",
-   "price": 500000000,
+   "priceWon": 500000000,
    "floor": 8,
    "exclusiveArea": 78.9809,
    "areaGroup": 79,
@@ -125,7 +127,7 @@
   },
   {
    "contractDate": "2026-03-10",
-   "price": 484000000,
+   "priceWon": 484000000,
    "floor": 8,
    "exclusiveArea": 78.9118,
    "areaGroup": 79,
@@ -134,7 +136,7 @@
   },
   {
    "contractDate": "2026-02-28",
-   "price": 558000000,
+   "priceWon": 558000000,
    "floor": 45,
    "exclusiveArea": 78.9809,
    "areaGroup": 79,
@@ -143,7 +145,7 @@
   },
   {
    "contractDate": "2026-02-28",
-   "price": 515000000,
+   "priceWon": 515000000,
    "floor": 9,
    "exclusiveArea": 78.9118,
    "areaGroup": 79,
@@ -152,7 +154,7 @@
   },
   {
    "contractDate": "2026-02-23",
-   "price": 493000000,
+   "priceWon": 493000000,
    "floor": 6,
    "exclusiveArea": 78.9118,
    "areaGroup": 79,
@@ -161,12 +163,19 @@
   },
   {
    "contractDate": "2026-02-10",
-   "price": 532000000,
+   "priceWon": 532000000,
    "floor": 35,
    "exclusiveArea": 78.9809,
    "areaGroup": 79,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.6449174970318,
+  "longitude": 126.630551791411,
+  "roadAddress": "경기 김포시 솔터로 22",
+  "jibunAddress": "경기 김포시 구래동 6886-4",
+  "geocodeStatus": "valid"
+ }
 }

@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "11290-3875",
  "apartmentName": "동일하이빌뉴시티",
  "sidoCode": "11",
@@ -17,7 +19,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-03",
-   "price": 1320000000,
+   "priceWon": 1320000000,
    "floor": 24,
    "exclusiveArea": 133.74,
    "areaGroup": 134,
@@ -26,7 +28,7 @@
   },
   {
    "contractDate": "2026-05-21",
-   "price": 1345000000,
+   "priceWon": 1345000000,
    "floor": 23,
    "exclusiveArea": 126.6,
    "areaGroup": 127,
@@ -35,7 +37,7 @@
   },
   {
    "contractDate": "2026-05-15",
-   "price": 1290000000,
+   "priceWon": 1290000000,
    "floor": 13,
    "exclusiveArea": 126.6,
    "areaGroup": 127,
@@ -44,7 +46,7 @@
   },
   {
    "contractDate": "2026-05-11",
-   "price": 1360000000,
+   "priceWon": 1360000000,
    "floor": 28,
    "exclusiveArea": 126.6,
    "areaGroup": 127,
@@ -53,7 +55,7 @@
   },
   {
    "contractDate": "2026-05-06",
-   "price": 1650000000,
+   "priceWon": 1650000000,
    "floor": 21,
    "exclusiveArea": 178.84,
    "areaGroup": 179,
@@ -62,7 +64,7 @@
   },
   {
    "contractDate": "2026-05-04",
-   "price": 1290000000,
+   "priceWon": 1290000000,
    "floor": 30,
    "exclusiveArea": 126.6,
    "areaGroup": 127,
@@ -71,7 +73,7 @@
   },
   {
    "contractDate": "2026-05-01",
-   "price": 1380000000,
+   "priceWon": 1380000000,
    "floor": 31,
    "exclusiveArea": 133.74,
    "areaGroup": 134,
@@ -80,7 +82,7 @@
   },
   {
    "contractDate": "2026-04-30",
-   "price": 1700000000,
+   "priceWon": 1700000000,
    "floor": 16,
    "exclusiveArea": 188.22,
    "areaGroup": 188,
@@ -89,7 +91,7 @@
   },
   {
    "contractDate": "2026-04-25",
-   "price": 1700000000,
+   "priceWon": 1700000000,
    "floor": 30,
    "exclusiveArea": 178.84,
    "areaGroup": 179,
@@ -98,7 +100,7 @@
   },
   {
    "contractDate": "2026-04-24",
-   "price": 1240000000,
+   "priceWon": 1240000000,
    "floor": 15,
    "exclusiveArea": 126.6,
    "areaGroup": 127,
@@ -107,7 +109,7 @@
   },
   {
    "contractDate": "2026-03-10",
-   "price": 755000000,
+   "priceWon": 755000000,
    "floor": 28,
    "exclusiveArea": 133.74,
    "areaGroup": 134,
@@ -116,7 +118,7 @@
   },
   {
    "contractDate": "2026-03-01",
-   "price": 1300000000,
+   "priceWon": 1300000000,
    "floor": 26,
    "exclusiveArea": 126.6,
    "areaGroup": 127,
@@ -125,12 +127,19 @@
   },
   {
    "contractDate": "2026-02-11",
-   "price": 1220000000,
+   "priceWon": 1220000000,
    "floor": 10,
    "exclusiveArea": 126.6,
    "areaGroup": 127,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.605051194495,
+  "longitude": 127.030996105009,
+  "roadAddress": "서울 성북구 종암로 167",
+  "jibunAddress": "서울 성북구 하월곡동 230",
+  "geocodeStatus": "valid"
+ }
 }

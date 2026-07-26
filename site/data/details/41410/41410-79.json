@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "41410-79",
  "apartmentName": "신환",
  "sidoCode": "41",
@@ -16,7 +18,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-25",
-   "price": 550000000,
+   "priceWon": 550000000,
    "floor": 11,
    "exclusiveArea": 84.98,
    "areaGroup": 85,
@@ -25,7 +27,7 @@
   },
   {
    "contractDate": "2026-06-17",
-   "price": 285000000,
+   "priceWon": 285000000,
    "floor": 5,
    "exclusiveArea": 54.27,
    "areaGroup": 54,
@@ -34,7 +36,7 @@
   },
   {
    "contractDate": "2026-06-14",
-   "price": 410000000,
+   "priceWon": 410000000,
    "floor": 7,
    "exclusiveArea": 78.95,
    "areaGroup": 79,
@@ -43,7 +45,7 @@
   },
   {
    "contractDate": "2026-05-16",
-   "price": 275000000,
+   "priceWon": 275000000,
    "floor": 7,
    "exclusiveArea": 54.27,
    "areaGroup": 54,
@@ -52,7 +54,7 @@
   },
   {
    "contractDate": "2026-05-15",
-   "price": 325000000,
+   "priceWon": 325000000,
    "floor": 5,
    "exclusiveArea": 54.27,
    "areaGroup": 54,
@@ -61,7 +63,7 @@
   },
   {
    "contractDate": "2026-05-08",
-   "price": 350000000,
+   "priceWon": 350000000,
    "floor": 13,
    "exclusiveArea": 84.98,
    "areaGroup": 85,
@@ -70,7 +72,7 @@
   },
   {
    "contractDate": "2026-04-30",
-   "price": 400000000,
+   "priceWon": 400000000,
    "floor": 13,
    "exclusiveArea": 78.95,
    "areaGroup": 79,
@@ -79,7 +81,7 @@
   },
   {
    "contractDate": "2026-04-13",
-   "price": 410000000,
+   "priceWon": 410000000,
    "floor": 12,
    "exclusiveArea": 84.98,
    "areaGroup": 85,
@@ -88,7 +90,7 @@
   },
   {
    "contractDate": "2026-04-09",
-   "price": 257000000,
+   "priceWon": 257000000,
    "floor": 2,
    "exclusiveArea": 54.27,
    "areaGroup": 54,
@@ -97,12 +99,19 @@
   },
   {
    "contractDate": "2026-03-09",
-   "price": 278000000,
+   "priceWon": 278000000,
    "floor": 2,
    "exclusiveArea": 54.27,
    "areaGroup": 54,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.3614471683572,
+  "longitude": 126.941163631164,
+  "roadAddress": "경기 군포시 금재로 4",
+  "jibunAddress": "경기 군포시 금정동 744-1",
+  "geocodeStatus": "valid"
+ }
 }

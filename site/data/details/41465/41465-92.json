@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "41465-92",
  "apartmentName": "성동마을엘지빌리지2차",
  "sidoCode": "41",
@@ -15,7 +17,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-23",
-   "price": 1415000000,
+   "priceWon": 1415000000,
    "floor": 2,
    "exclusiveArea": 134.387,
    "areaGroup": 134,
@@ -24,7 +26,7 @@
   },
   {
    "contractDate": "2026-06-23",
-   "price": 1395000000,
+   "priceWon": 1395000000,
    "floor": 16,
    "exclusiveArea": 134.387,
    "areaGroup": 134,
@@ -33,7 +35,7 @@
   },
   {
    "contractDate": "2026-06-22",
-   "price": 1490000000,
+   "priceWon": 1490000000,
    "floor": 15,
    "exclusiveArea": 134.387,
    "areaGroup": 134,
@@ -42,7 +44,7 @@
   },
   {
    "contractDate": "2026-06-16",
-   "price": 1390000000,
+   "priceWon": 1390000000,
    "floor": 5,
    "exclusiveArea": 134.387,
    "areaGroup": 134,
@@ -51,7 +53,7 @@
   },
   {
    "contractDate": "2026-05-27",
-   "price": 1350000000,
+   "priceWon": 1350000000,
    "floor": 5,
    "exclusiveArea": 134.387,
    "areaGroup": 134,
@@ -60,7 +62,7 @@
   },
   {
    "contractDate": "2026-05-07",
-   "price": 1280000000,
+   "priceWon": 1280000000,
    "floor": 6,
    "exclusiveArea": 134.387,
    "areaGroup": 134,
@@ -69,7 +71,7 @@
   },
   {
    "contractDate": "2026-04-21",
-   "price": 1360000000,
+   "priceWon": 1360000000,
    "floor": 15,
    "exclusiveArea": 134.387,
    "areaGroup": 134,
@@ -78,7 +80,7 @@
   },
   {
    "contractDate": "2026-04-21",
-   "price": 1340000000,
+   "priceWon": 1340000000,
    "floor": 11,
    "exclusiveArea": 134.387,
    "areaGroup": 134,
@@ -87,7 +89,7 @@
   },
   {
    "contractDate": "2026-04-18",
-   "price": 1290000000,
+   "priceWon": 1290000000,
    "floor": 16,
    "exclusiveArea": 134.387,
    "areaGroup": 134,
@@ -96,7 +98,7 @@
   },
   {
    "contractDate": "2026-04-03",
-   "price": 1310000000,
+   "priceWon": 1310000000,
    "floor": 9,
    "exclusiveArea": 134.387,
    "areaGroup": 134,
@@ -105,7 +107,7 @@
   },
   {
    "contractDate": "2026-04-03",
-   "price": 1370000000,
+   "priceWon": 1370000000,
    "floor": 7,
    "exclusiveArea": 134.387,
    "areaGroup": 134,
@@ -114,7 +116,7 @@
   },
   {
    "contractDate": "2026-03-31",
-   "price": 1280000000,
+   "priceWon": 1280000000,
    "floor": 13,
    "exclusiveArea": 164.965,
    "areaGroup": 165,
@@ -123,7 +125,7 @@
   },
   {
    "contractDate": "2026-03-28",
-   "price": 1420000000,
+   "priceWon": 1420000000,
    "floor": 12,
    "exclusiveArea": 134.387,
    "areaGroup": 134,
@@ -132,7 +134,7 @@
   },
   {
    "contractDate": "2026-03-11",
-   "price": 1300000000,
+   "priceWon": 1300000000,
    "floor": 16,
    "exclusiveArea": 134.387,
    "areaGroup": 134,
@@ -141,7 +143,7 @@
   },
   {
    "contractDate": "2026-02-21",
-   "price": 1280000000,
+   "priceWon": 1280000000,
    "floor": 13,
    "exclusiveArea": 164.965,
    "areaGroup": 165,
@@ -150,7 +152,7 @@
   },
   {
    "contractDate": "2026-02-14",
-   "price": 1450000000,
+   "priceWon": 1450000000,
    "floor": 17,
    "exclusiveArea": 134.387,
    "areaGroup": 134,
@@ -159,7 +161,7 @@
   },
   {
    "contractDate": "2026-02-10",
-   "price": 1360000000,
+   "priceWon": 1360000000,
    "floor": 17,
    "exclusiveArea": 164.965,
    "areaGroup": 165,
@@ -168,7 +170,7 @@
   },
   {
    "contractDate": "2026-02-08",
-   "price": 1295000000,
+   "priceWon": 1295000000,
    "floor": 2,
    "exclusiveArea": 134.387,
    "areaGroup": 134,
@@ -177,7 +179,7 @@
   },
   {
    "contractDate": "2026-02-07",
-   "price": 1200000000,
+   "priceWon": 1200000000,
    "floor": 2,
    "exclusiveArea": 164.965,
    "areaGroup": 165,
@@ -186,12 +188,19 @@
   },
   {
    "contractDate": "2026-02-02",
-   "price": 1280000000,
+   "priceWon": 1280000000,
    "floor": 13,
    "exclusiveArea": 134.387,
    "areaGroup": 134,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.3128441205447,
+  "longitude": 127.076347660374,
+  "roadAddress": "경기 용인시 수지구 수지로113번길 15",
+  "jibunAddress": "경기 용인시 수지구 성복동 90",
+  "geocodeStatus": "valid"
+ }
 }

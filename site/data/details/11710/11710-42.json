@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "11710-42",
  "apartmentName": "가락쌍용(2차)",
  "sidoCode": "11",
@@ -15,7 +17,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-04",
-   "price": 1970000000,
+   "priceWon": 1970000000,
    "floor": 23,
    "exclusiveArea": 84.42,
    "areaGroup": 84,
@@ -24,7 +26,7 @@
   },
   {
    "contractDate": "2026-06-03",
-   "price": 1967000000,
+   "priceWon": 1967000000,
    "floor": 17,
    "exclusiveArea": 84.42,
    "areaGroup": 84,
@@ -33,7 +35,7 @@
   },
   {
    "contractDate": "2026-04-21",
-   "price": 1550000000,
+   "priceWon": 1550000000,
    "floor": 4,
    "exclusiveArea": 59.88,
    "areaGroup": 60,
@@ -42,7 +44,7 @@
   },
   {
    "contractDate": "2026-03-07",
-   "price": 1880000000,
+   "priceWon": 1880000000,
    "floor": 8,
    "exclusiveArea": 84.42,
    "areaGroup": 84,
@@ -51,12 +53,19 @@
   },
   {
    "contractDate": "2026-03-03",
-   "price": 1930000000,
+   "priceWon": 1930000000,
    "floor": 15,
    "exclusiveArea": 84.42,
    "areaGroup": 84,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.5015357756159,
+  "longitude": 127.122290698494,
+  "roadAddress": "서울 송파구 송이로15길 31",
+  "jibunAddress": "서울 송파구 가락동 21-6",
+  "geocodeStatus": "valid"
+ }
 }

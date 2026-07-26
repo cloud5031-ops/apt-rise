@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "41360-2418",
  "apartmentName": "평내마을금호어울림",
  "sidoCode": "41",
@@ -16,7 +18,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-30",
-   "price": 533000000,
+   "priceWon": 533000000,
    "floor": 14,
    "exclusiveArea": 124.403,
    "areaGroup": 124,
@@ -25,7 +27,7 @@
   },
   {
    "contractDate": "2026-06-24",
-   "price": 523000000,
+   "priceWon": 523000000,
    "floor": 16,
    "exclusiveArea": 124.403,
    "areaGroup": 124,
@@ -34,7 +36,7 @@
   },
   {
    "contractDate": "2026-06-08",
-   "price": 449000000,
+   "priceWon": 449000000,
    "floor": 15,
    "exclusiveArea": 84.9785,
    "areaGroup": 85,
@@ -43,7 +45,7 @@
   },
   {
    "contractDate": "2026-05-20",
-   "price": 500000000,
+   "priceWon": 500000000,
    "floor": 1,
    "exclusiveArea": 124.403,
    "areaGroup": 124,
@@ -52,7 +54,7 @@
   },
   {
    "contractDate": "2026-05-19",
-   "price": 370000000,
+   "priceWon": 370000000,
    "floor": 15,
    "exclusiveArea": 84.9305,
    "areaGroup": 85,
@@ -61,7 +63,7 @@
   },
   {
    "contractDate": "2026-05-15",
-   "price": 410000000,
+   "priceWon": 410000000,
    "floor": 3,
    "exclusiveArea": 84.9785,
    "areaGroup": 85,
@@ -70,7 +72,7 @@
   },
   {
    "contractDate": "2026-05-04",
-   "price": 407000000,
+   "priceWon": 407000000,
    "floor": 17,
    "exclusiveArea": 84.9305,
    "areaGroup": 85,
@@ -79,7 +81,7 @@
   },
   {
    "contractDate": "2026-04-23",
-   "price": 445000000,
+   "priceWon": 445000000,
    "floor": 15,
    "exclusiveArea": 84.9305,
    "areaGroup": 85,
@@ -88,7 +90,7 @@
   },
   {
    "contractDate": "2026-04-10",
-   "price": 400000000,
+   "priceWon": 400000000,
    "floor": 13,
    "exclusiveArea": 84.9785,
    "areaGroup": 85,
@@ -97,7 +99,7 @@
   },
   {
    "contractDate": "2026-04-10",
-   "price": 470000000,
+   "priceWon": 470000000,
    "floor": 5,
    "exclusiveArea": 124.403,
    "areaGroup": 124,
@@ -106,7 +108,7 @@
   },
   {
    "contractDate": "2026-03-30",
-   "price": 415000000,
+   "priceWon": 415000000,
    "floor": 20,
    "exclusiveArea": 84.9305,
    "areaGroup": 85,
@@ -115,7 +117,7 @@
   },
   {
    "contractDate": "2026-02-27",
-   "price": 525000000,
+   "priceWon": 525000000,
    "floor": 8,
    "exclusiveArea": 124.403,
    "areaGroup": 124,
@@ -124,7 +126,7 @@
   },
   {
    "contractDate": "2026-02-26",
-   "price": 420000000,
+   "priceWon": 420000000,
    "floor": 7,
    "exclusiveArea": 84.9305,
    "areaGroup": 85,
@@ -133,12 +135,19 @@
   },
   {
    "contractDate": "2026-02-24",
-   "price": 403000000,
+   "priceWon": 403000000,
    "floor": 16,
    "exclusiveArea": 84.9305,
    "areaGroup": 85,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.6444239914298,
+  "longitude": 127.235866288923,
+  "roadAddress": "경기 남양주시 경춘로1256번길 20",
+  "jibunAddress": "경기 남양주시 평내동 550",
+  "geocodeStatus": "valid"
+ }
 }

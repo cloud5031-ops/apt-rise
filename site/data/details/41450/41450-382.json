@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "41450-382",
  "apartmentName": "하남힐즈파크푸르지오2단지",
  "sidoCode": "41",
@@ -16,7 +18,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-17",
-   "price": 832000000,
+   "priceWon": 832000000,
    "floor": 17,
    "exclusiveArea": 59.7161,
    "areaGroup": 60,
@@ -25,7 +27,7 @@
   },
   {
    "contractDate": "2026-05-15",
-   "price": 945000000,
+   "priceWon": 945000000,
    "floor": 12,
    "exclusiveArea": 84.8254,
    "areaGroup": 85,
@@ -34,7 +36,7 @@
   },
   {
    "contractDate": "2026-05-07",
-   "price": 945000000,
+   "priceWon": 945000000,
    "floor": 8,
    "exclusiveArea": 84.8254,
    "areaGroup": 85,
@@ -43,7 +45,7 @@
   },
   {
    "contractDate": "2026-04-20",
-   "price": 905000000,
+   "priceWon": 905000000,
    "floor": 12,
    "exclusiveArea": 84.8254,
    "areaGroup": 85,
@@ -52,7 +54,7 @@
   },
   {
    "contractDate": "2026-04-05",
-   "price": 910000000,
+   "priceWon": 910000000,
    "floor": 16,
    "exclusiveArea": 84.1277,
    "areaGroup": 84,
@@ -61,7 +63,7 @@
   },
   {
    "contractDate": "2026-03-31",
-   "price": 915000000,
+   "priceWon": 915000000,
    "floor": 17,
    "exclusiveArea": 84.8254,
    "areaGroup": 85,
@@ -70,12 +72,19 @@
   },
   {
    "contractDate": "2026-02-06",
-   "price": 895000000,
+   "priceWon": 895000000,
    "floor": 5,
    "exclusiveArea": 84.8254,
    "areaGroup": 85,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.5436582821737,
+  "longitude": 127.195029351791,
+  "roadAddress": "경기 하남시 세미로1길 11",
+  "jibunAddress": "경기 하남시 풍산동 626",
+  "geocodeStatus": "ambiguous"
+ }
 }

@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "41465-459",
  "apartmentName": "수지파크푸르지오",
  "sidoCode": "41",
@@ -17,7 +19,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-27",
-   "price": 1250000000,
+   "priceWon": 1250000000,
    "floor": 13,
    "exclusiveArea": 59.6524,
    "areaGroup": 60,
@@ -26,7 +28,7 @@
   },
   {
    "contractDate": "2026-06-27",
-   "price": 1450000000,
+   "priceWon": 1450000000,
    "floor": 20,
    "exclusiveArea": 84.9023,
    "areaGroup": 85,
@@ -35,7 +37,7 @@
   },
   {
    "contractDate": "2026-06-13",
-   "price": 1220000000,
+   "priceWon": 1220000000,
    "floor": 13,
    "exclusiveArea": 59.7939,
    "areaGroup": 60,
@@ -44,7 +46,7 @@
   },
   {
    "contractDate": "2026-06-13",
-   "price": 1235000000,
+   "priceWon": 1235000000,
    "floor": 19,
    "exclusiveArea": 59.7939,
    "areaGroup": 60,
@@ -53,7 +55,7 @@
   },
   {
    "contractDate": "2026-05-25",
-   "price": 1190000000,
+   "priceWon": 1190000000,
    "floor": 4,
    "exclusiveArea": 59.7939,
    "areaGroup": 60,
@@ -62,7 +64,7 @@
   },
   {
    "contractDate": "2026-05-22",
-   "price": 1130000000,
+   "priceWon": 1130000000,
    "floor": 10,
    "exclusiveArea": 59.7939,
    "areaGroup": 60,
@@ -71,7 +73,7 @@
   },
   {
    "contractDate": "2026-05-09",
-   "price": 1150000000,
+   "priceWon": 1150000000,
    "floor": 9,
    "exclusiveArea": 59.7939,
    "areaGroup": 60,
@@ -80,7 +82,7 @@
   },
   {
    "contractDate": "2026-04-20",
-   "price": 1380000000,
+   "priceWon": 1380000000,
    "floor": 15,
    "exclusiveArea": 84.9023,
    "areaGroup": 85,
@@ -89,12 +91,19 @@
   },
   {
    "contractDate": "2026-03-24",
-   "price": 1165000000,
+   "priceWon": 1165000000,
    "floor": 11,
    "exclusiveArea": 59.8875,
    "areaGroup": 60,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.327145740351,
+  "longitude": 127.098360934053,
+  "roadAddress": "경기 용인시 수지구 풍덕천로171번길 9",
+  "jibunAddress": "경기 용인시 수지구 풍덕천동 1223",
+  "geocodeStatus": "valid"
+ }
 }

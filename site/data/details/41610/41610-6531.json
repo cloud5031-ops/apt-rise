@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "41610-6531",
  "apartmentName": "e편한세상테라스오포2단지",
  "sidoCode": "41",
@@ -16,7 +18,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-25",
-   "price": 680000000,
+   "priceWon": 680000000,
    "floor": 10,
    "exclusiveArea": 116.865,
    "areaGroup": 117,
@@ -25,7 +27,7 @@
   },
   {
    "contractDate": "2026-06-20",
-   "price": 560000000,
+   "priceWon": 560000000,
    "floor": 13,
    "exclusiveArea": 84.836,
    "areaGroup": 85,
@@ -34,7 +36,7 @@
   },
   {
    "contractDate": "2026-06-13",
-   "price": 615000000,
+   "priceWon": 615000000,
    "floor": 6,
    "exclusiveArea": 116.865,
    "areaGroup": 117,
@@ -43,7 +45,7 @@
   },
   {
    "contractDate": "2026-06-03",
-   "price": 670000000,
+   "priceWon": 670000000,
    "floor": 11,
    "exclusiveArea": 116.865,
    "areaGroup": 117,
@@ -52,7 +54,7 @@
   },
   {
    "contractDate": "2026-06-02",
-   "price": 650000000,
+   "priceWon": 650000000,
    "floor": 12,
    "exclusiveArea": 116.865,
    "areaGroup": 117,
@@ -61,7 +63,7 @@
   },
   {
    "contractDate": "2026-04-30",
-   "price": 475000000,
+   "priceWon": 475000000,
    "floor": 2,
    "exclusiveArea": 84.836,
    "areaGroup": 85,
@@ -70,7 +72,7 @@
   },
   {
    "contractDate": "2026-04-29",
-   "price": 571000000,
+   "priceWon": 571000000,
    "floor": 7,
    "exclusiveArea": 116.865,
    "areaGroup": 117,
@@ -79,7 +81,7 @@
   },
   {
    "contractDate": "2026-04-16",
-   "price": 650000000,
+   "priceWon": 650000000,
    "floor": 10,
    "exclusiveArea": 116.865,
    "areaGroup": 117,
@@ -88,7 +90,7 @@
   },
   {
    "contractDate": "2026-04-11",
-   "price": 620000000,
+   "priceWon": 620000000,
    "floor": 4,
    "exclusiveArea": 116.865,
    "areaGroup": 117,
@@ -97,7 +99,7 @@
   },
   {
    "contractDate": "2026-04-09",
-   "price": 540000000,
+   "priceWon": 540000000,
    "floor": 18,
    "exclusiveArea": 84.836,
    "areaGroup": 85,
@@ -106,7 +108,7 @@
   },
   {
    "contractDate": "2026-03-23",
-   "price": 625000000,
+   "priceWon": 625000000,
    "floor": 4,
    "exclusiveArea": 116.865,
    "areaGroup": 117,
@@ -115,7 +117,7 @@
   },
   {
    "contractDate": "2026-03-16",
-   "price": 650000000,
+   "priceWon": 650000000,
    "floor": 11,
    "exclusiveArea": 116.865,
    "areaGroup": 117,
@@ -124,7 +126,7 @@
   },
   {
    "contractDate": "2026-03-05",
-   "price": 529000000,
+   "priceWon": 529000000,
    "floor": 17,
    "exclusiveArea": 84.836,
    "areaGroup": 85,
@@ -133,7 +135,7 @@
   },
   {
    "contractDate": "2026-02-28",
-   "price": 513000000,
+   "priceWon": 513000000,
    "floor": 9,
    "exclusiveArea": 76.69,
    "areaGroup": 77,
@@ -142,12 +144,19 @@
   },
   {
    "contractDate": "2026-02-27",
-   "price": 520000000,
+   "priceWon": 520000000,
    "floor": 2,
    "exclusiveArea": 84.836,
    "areaGroup": 85,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.3677023749831,
+  "longitude": 127.167818246134,
+  "roadAddress": "경기 광주시 문형산길 131",
+  "jibunAddress": "경기 광주시 신현동 1241",
+  "geocodeStatus": "valid"
+ }
 }

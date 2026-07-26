@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "41610-2512",
  "apartmentName": "경남아너스빌1단지",
  "sidoCode": "41",
@@ -16,7 +18,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-29",
-   "price": 435000000,
+   "priceWon": 435000000,
    "floor": 16,
    "exclusiveArea": 84.937,
    "areaGroup": 85,
@@ -25,7 +27,7 @@
   },
   {
    "contractDate": "2026-06-19",
-   "price": 440000000,
+   "priceWon": 440000000,
    "floor": 9,
    "exclusiveArea": 109.547,
    "areaGroup": 110,
@@ -34,7 +36,7 @@
   },
   {
    "contractDate": "2026-06-07",
-   "price": 395000000,
+   "priceWon": 395000000,
    "floor": 11,
    "exclusiveArea": 84.937,
    "areaGroup": 85,
@@ -43,7 +45,7 @@
   },
   {
    "contractDate": "2026-06-06",
-   "price": 415000000,
+   "priceWon": 415000000,
    "floor": 20,
    "exclusiveArea": 84.937,
    "areaGroup": 85,
@@ -52,7 +54,7 @@
   },
   {
    "contractDate": "2026-05-18",
-   "price": 380000000,
+   "priceWon": 380000000,
    "floor": 10,
    "exclusiveArea": 84.937,
    "areaGroup": 85,
@@ -61,7 +63,7 @@
   },
   {
    "contractDate": "2026-05-07",
-   "price": 530000000,
+   "priceWon": 530000000,
    "floor": 10,
    "exclusiveArea": 132.066,
    "areaGroup": 132,
@@ -70,7 +72,7 @@
   },
   {
    "contractDate": "2026-05-01",
-   "price": 420000000,
+   "priceWon": 420000000,
    "floor": 7,
    "exclusiveArea": 84.937,
    "areaGroup": 85,
@@ -79,7 +81,7 @@
   },
   {
    "contractDate": "2026-04-08",
-   "price": 364000000,
+   "priceWon": 364000000,
    "floor": 16,
    "exclusiveArea": 84.937,
    "areaGroup": 85,
@@ -88,7 +90,7 @@
   },
   {
    "contractDate": "2026-04-05",
-   "price": 370000000,
+   "priceWon": 370000000,
    "floor": 7,
    "exclusiveArea": 84.937,
    "areaGroup": 85,
@@ -97,7 +99,7 @@
   },
   {
    "contractDate": "2026-04-04",
-   "price": 374000000,
+   "priceWon": 374000000,
    "floor": 6,
    "exclusiveArea": 84.937,
    "areaGroup": 85,
@@ -106,7 +108,7 @@
   },
   {
    "contractDate": "2026-03-19",
-   "price": 375000000,
+   "priceWon": 375000000,
    "floor": 10,
    "exclusiveArea": 84.937,
    "areaGroup": 85,
@@ -115,7 +117,7 @@
   },
   {
    "contractDate": "2026-03-07",
-   "price": 392000000,
+   "priceWon": 392000000,
    "floor": 15,
    "exclusiveArea": 84.937,
    "areaGroup": 85,
@@ -124,7 +126,7 @@
   },
   {
    "contractDate": "2026-03-06",
-   "price": 505000000,
+   "priceWon": 505000000,
    "floor": 11,
    "exclusiveArea": 109.547,
    "areaGroup": 110,
@@ -133,12 +135,19 @@
   },
   {
    "contractDate": "2026-02-20",
-   "price": 490000000,
+   "priceWon": 490000000,
    "floor": 5,
    "exclusiveArea": 109.547,
    "areaGroup": 110,
    "dealType": "직거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.4107535012041,
+  "longitude": 127.235387421118,
+  "roadAddress": "경기 광주시 회안대로 637-35",
+  "jibunAddress": "경기 광주시 탄벌동 765",
+  "geocodeStatus": "ambiguous"
+ }
 }

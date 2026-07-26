@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "11590-52",
  "apartmentName": "현대",
  "sidoCode": "11",
@@ -15,7 +17,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-30",
-   "price": 1078000000,
+   "priceWon": 1078000000,
    "floor": 6,
    "exclusiveArea": 59.96,
    "areaGroup": 60,
@@ -24,7 +26,7 @@
   },
   {
    "contractDate": "2026-06-20",
-   "price": 1075000000,
+   "priceWon": 1075000000,
    "floor": 12,
    "exclusiveArea": 59.96,
    "areaGroup": 60,
@@ -33,7 +35,7 @@
   },
   {
    "contractDate": "2026-06-18",
-   "price": 1050000000,
+   "priceWon": 1050000000,
    "floor": 4,
    "exclusiveArea": 59.96,
    "areaGroup": 60,
@@ -42,7 +44,7 @@
   },
   {
    "contractDate": "2026-06-06",
-   "price": 1030000000,
+   "priceWon": 1030000000,
    "floor": 1,
    "exclusiveArea": 59.96,
    "areaGroup": 60,
@@ -51,7 +53,7 @@
   },
   {
    "contractDate": "2026-06-06",
-   "price": 1030000000,
+   "priceWon": 1030000000,
    "floor": 2,
    "exclusiveArea": 59.96,
    "areaGroup": 60,
@@ -60,7 +62,7 @@
   },
   {
    "contractDate": "2026-06-01",
-   "price": 1290000000,
+   "priceWon": 1290000000,
    "floor": 9,
    "exclusiveArea": 120.03,
    "areaGroup": 120,
@@ -69,7 +71,7 @@
   },
   {
    "contractDate": "2026-04-03",
-   "price": 970000000,
+   "priceWon": 970000000,
    "floor": 6,
    "exclusiveArea": 59.96,
    "areaGroup": 60,
@@ -78,7 +80,7 @@
   },
   {
    "contractDate": "2026-04-03",
-   "price": 1010000000,
+   "priceWon": 1010000000,
    "floor": 4,
    "exclusiveArea": 59.96,
    "areaGroup": 60,
@@ -87,7 +89,7 @@
   },
   {
    "contractDate": "2026-04-03",
-   "price": 1300000000,
+   "priceWon": 1300000000,
    "floor": 11,
    "exclusiveArea": 120.03,
    "areaGroup": 120,
@@ -96,12 +98,19 @@
   },
   {
    "contractDate": "2026-02-03",
-   "price": 1200000000,
+   "priceWon": 1200000000,
    "floor": 2,
    "exclusiveArea": 120.03,
    "areaGroup": 120,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.4881257625269,
+  "longitude": 126.970397032906,
+  "roadAddress": "서울 동작구 사당로13길 86",
+  "jibunAddress": "서울 동작구 사당동 169-32",
+  "geocodeStatus": "valid"
+ }
 }

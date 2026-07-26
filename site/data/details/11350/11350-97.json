@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "11350-97",
  "apartmentName": "삼성",
  "sidoCode": "11",
@@ -16,7 +18,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-19",
-   "price": 915000000,
+   "priceWon": 915000000,
    "floor": 4,
    "exclusiveArea": 114.49,
    "areaGroup": 114,
@@ -25,7 +27,7 @@
   },
   {
    "contractDate": "2026-06-15",
-   "price": 563000000,
+   "priceWon": 563000000,
    "floor": 5,
    "exclusiveArea": 59.9,
    "areaGroup": 60,
@@ -34,7 +36,7 @@
   },
   {
    "contractDate": "2026-06-01",
-   "price": 840000000,
+   "priceWon": 840000000,
    "floor": 6,
    "exclusiveArea": 84.75,
    "areaGroup": 85,
@@ -43,7 +45,7 @@
   },
   {
    "contractDate": "2026-05-29",
-   "price": 870000000,
+   "priceWon": 870000000,
    "floor": 9,
    "exclusiveArea": 84.75,
    "areaGroup": 85,
@@ -52,7 +54,7 @@
   },
   {
    "contractDate": "2026-05-27",
-   "price": 557000000,
+   "priceWon": 557000000,
    "floor": 9,
    "exclusiveArea": 59.9,
    "areaGroup": 60,
@@ -61,7 +63,7 @@
   },
   {
    "contractDate": "2026-05-27",
-   "price": 565000000,
+   "priceWon": 565000000,
    "floor": 4,
    "exclusiveArea": 59.9,
    "areaGroup": 60,
@@ -70,7 +72,7 @@
   },
   {
    "contractDate": "2026-05-26",
-   "price": 880000000,
+   "priceWon": 880000000,
    "floor": 1,
    "exclusiveArea": 114.49,
    "areaGroup": 114,
@@ -79,7 +81,7 @@
   },
   {
    "contractDate": "2026-05-19",
-   "price": 500000000,
+   "priceWon": 500000000,
    "floor": 12,
    "exclusiveArea": 59.9,
    "areaGroup": 60,
@@ -88,7 +90,7 @@
   },
   {
    "contractDate": "2026-05-15",
-   "price": 835000000,
+   "priceWon": 835000000,
    "floor": 7,
    "exclusiveArea": 84.75,
    "areaGroup": 85,
@@ -97,7 +99,7 @@
   },
   {
    "contractDate": "2026-05-14",
-   "price": 900000000,
+   "priceWon": 900000000,
    "floor": 11,
    "exclusiveArea": 114.49,
    "areaGroup": 114,
@@ -106,7 +108,7 @@
   },
   {
    "contractDate": "2026-05-11",
-   "price": 523000000,
+   "priceWon": 523000000,
    "floor": 7,
    "exclusiveArea": 59.9,
    "areaGroup": 60,
@@ -115,7 +117,7 @@
   },
   {
    "contractDate": "2026-05-06",
-   "price": 970000000,
+   "priceWon": 970000000,
    "floor": 17,
    "exclusiveArea": 114.49,
    "areaGroup": 114,
@@ -124,7 +126,7 @@
   },
   {
    "contractDate": "2026-04-29",
-   "price": 738000000,
+   "priceWon": 738000000,
    "floor": 1,
    "exclusiveArea": 84.75,
    "areaGroup": 85,
@@ -133,7 +135,7 @@
   },
   {
    "contractDate": "2026-04-06",
-   "price": 820000000,
+   "priceWon": 820000000,
    "floor": 3,
    "exclusiveArea": 84.75,
    "areaGroup": 85,
@@ -142,7 +144,7 @@
   },
   {
    "contractDate": "2026-03-28",
-   "price": 510000000,
+   "priceWon": 510000000,
    "floor": 9,
    "exclusiveArea": 59.9,
    "areaGroup": 60,
@@ -151,7 +153,7 @@
   },
   {
    "contractDate": "2026-03-26",
-   "price": 600000000,
+   "priceWon": 600000000,
    "floor": 15,
    "exclusiveArea": 84.75,
    "areaGroup": 85,
@@ -160,7 +162,7 @@
   },
   {
    "contractDate": "2026-03-21",
-   "price": 900000000,
+   "priceWon": 900000000,
    "floor": 6,
    "exclusiveArea": 114.49,
    "areaGroup": 114,
@@ -169,7 +171,7 @@
   },
   {
    "contractDate": "2026-02-25",
-   "price": 552000000,
+   "priceWon": 552000000,
    "floor": 5,
    "exclusiveArea": 59.9,
    "areaGroup": 60,
@@ -178,7 +180,7 @@
   },
   {
    "contractDate": "2026-02-13",
-   "price": 940000000,
+   "priceWon": 940000000,
    "floor": 12,
    "exclusiveArea": 114.49,
    "areaGroup": 114,
@@ -187,7 +189,7 @@
   },
   {
    "contractDate": "2026-02-12",
-   "price": 790000000,
+   "priceWon": 790000000,
    "floor": 8,
    "exclusiveArea": 84.75,
    "areaGroup": 85,
@@ -196,12 +198,19 @@
   },
   {
    "contractDate": "2026-02-07",
-   "price": 540000000,
+   "priceWon": 540000000,
    "floor": 10,
    "exclusiveArea": 59.9,
    "areaGroup": 60,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.6489530022198,
+  "longitude": 127.083313103375,
+  "roadAddress": "서울 노원구 중계로14나길 25",
+  "jibunAddress": "서울 노원구 중계동 593",
+  "geocodeStatus": "valid"
+ }
 }

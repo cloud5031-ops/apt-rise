@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "11140-1147",
  "apartmentName": "LIG서울역리가",
  "sidoCode": "11",
@@ -16,7 +18,7 @@
  "transactions": [
   {
    "contractDate": "2026-05-15",
-   "price": 1790000000,
+   "priceWon": 1790000000,
    "floor": 15,
    "exclusiveArea": 84.9566,
    "areaGroup": 85,
@@ -25,7 +27,7 @@
   },
   {
    "contractDate": "2026-05-14",
-   "price": 1750000000,
+   "priceWon": 1750000000,
    "floor": 9,
    "exclusiveArea": 84.9866,
    "areaGroup": 85,
@@ -34,7 +36,7 @@
   },
   {
    "contractDate": "2026-04-23",
-   "price": 1720000000,
+   "priceWon": 1720000000,
    "floor": 11,
    "exclusiveArea": 84.9866,
    "areaGroup": 85,
@@ -43,7 +45,7 @@
   },
   {
    "contractDate": "2026-04-23",
-   "price": 1700000000,
+   "priceWon": 1700000000,
    "floor": 4,
    "exclusiveArea": 84.9566,
    "areaGroup": 85,
@@ -52,7 +54,7 @@
   },
   {
    "contractDate": "2026-04-15",
-   "price": 1650000000,
+   "priceWon": 1650000000,
    "floor": 5,
    "exclusiveArea": 84.9866,
    "areaGroup": 85,
@@ -61,7 +63,7 @@
   },
   {
    "contractDate": "2026-03-20",
-   "price": 1630000000,
+   "priceWon": 1630000000,
    "floor": 6,
    "exclusiveArea": 84.9581,
    "areaGroup": 85,
@@ -70,7 +72,7 @@
   },
   {
    "contractDate": "2026-02-27",
-   "price": 1790000000,
+   "priceWon": 1790000000,
    "floor": 8,
    "exclusiveArea": 84.9866,
    "areaGroup": 85,
@@ -79,12 +81,19 @@
   },
   {
    "contractDate": "2026-02-25",
-   "price": 1700000000,
+   "priceWon": 1700000000,
    "floor": 14,
    "exclusiveArea": 84.9566,
    "areaGroup": 85,
    "dealType": "중개거래",
    "cancellationStatus": "CANCELLED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.555868464626,
+  "longitude": 126.967001745344,
+  "roadAddress": "서울 중구 만리재로33길 21",
+  "jibunAddress": "서울 중구 만리동1가 231",
+  "geocodeStatus": "valid"
+ }
 }

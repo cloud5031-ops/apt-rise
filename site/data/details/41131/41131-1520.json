@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "41131-1520",
  "apartmentName": "위례 래미안이편한세상",
  "sidoCode": "41",
@@ -17,7 +19,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-24",
-   "price": 1795000000,
+   "priceWon": 1795000000,
    "floor": 2,
    "exclusiveArea": 84.95,
    "areaGroup": 85,
@@ -26,7 +28,7 @@
   },
   {
    "contractDate": "2026-06-19",
-   "price": 1895000000,
+   "priceWon": 1895000000,
    "floor": 9,
    "exclusiveArea": 84.96,
    "areaGroup": 85,
@@ -35,7 +37,7 @@
   },
   {
    "contractDate": "2026-06-06",
-   "price": 1950000000,
+   "priceWon": 1950000000,
    "floor": 10,
    "exclusiveArea": 84.98,
    "areaGroup": 85,
@@ -44,7 +46,7 @@
   },
   {
    "contractDate": "2026-06-06",
-   "price": 1840000000,
+   "priceWon": 1840000000,
    "floor": 3,
    "exclusiveArea": 84.98,
    "areaGroup": 85,
@@ -53,7 +55,7 @@
   },
   {
    "contractDate": "2026-06-04",
-   "price": 1900000000,
+   "priceWon": 1900000000,
    "floor": 6,
    "exclusiveArea": 84.98,
    "areaGroup": 85,
@@ -62,7 +64,7 @@
   },
   {
    "contractDate": "2026-06-03",
-   "price": 1900000000,
+   "priceWon": 1900000000,
    "floor": 4,
    "exclusiveArea": 84.98,
    "areaGroup": 85,
@@ -71,7 +73,7 @@
   },
   {
    "contractDate": "2026-04-29",
-   "price": 1850000000,
+   "priceWon": 1850000000,
    "floor": 4,
    "exclusiveArea": 84.98,
    "areaGroup": 85,
@@ -80,7 +82,7 @@
   },
   {
    "contractDate": "2026-04-18",
-   "price": 1800000000,
+   "priceWon": 1800000000,
    "floor": 14,
    "exclusiveArea": 75.99,
    "areaGroup": 76,
@@ -89,7 +91,7 @@
   },
   {
    "contractDate": "2026-04-07",
-   "price": 1758000000,
+   "priceWon": 1758000000,
    "floor": 15,
    "exclusiveArea": 84.95,
    "areaGroup": 85,
@@ -98,7 +100,7 @@
   },
   {
    "contractDate": "2026-03-05",
-   "price": 1760000000,
+   "priceWon": 1760000000,
    "floor": 18,
    "exclusiveArea": 75.99,
    "areaGroup": 76,
@@ -107,7 +109,7 @@
   },
   {
    "contractDate": "2026-02-07",
-   "price": 1670000000,
+   "priceWon": 1670000000,
    "floor": 8,
    "exclusiveArea": 75.99,
    "areaGroup": 76,
@@ -116,12 +118,19 @@
   },
   {
    "contractDate": "2026-02-06",
-   "price": 1695000000,
+   "priceWon": 1695000000,
    "floor": 8,
    "exclusiveArea": 75.99,
    "areaGroup": 76,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.4669485549892,
+  "longitude": 127.146567496415,
+  "roadAddress": "경기 성남시 수정구 위례동로 61",
+  "jibunAddress": "경기 성남시 수정구 창곡동 567",
+  "geocodeStatus": "valid"
+ }
 }

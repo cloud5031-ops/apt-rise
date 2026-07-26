@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "11500-39",
  "apartmentName": "등촌라인(조합)",
  "sidoCode": "11",
@@ -15,7 +17,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-16",
-   "price": 970000000,
+   "priceWon": 970000000,
    "floor": 14,
    "exclusiveArea": 59.91,
    "areaGroup": 60,
@@ -24,7 +26,7 @@
   },
   {
    "contractDate": "2026-06-01",
-   "price": 950000000,
+   "priceWon": 950000000,
    "floor": 14,
    "exclusiveArea": 59.91,
    "areaGroup": 60,
@@ -33,7 +35,7 @@
   },
   {
    "contractDate": "2026-04-15",
-   "price": 932500000,
+   "priceWon": 932500000,
    "floor": 9,
    "exclusiveArea": 59.91,
    "areaGroup": 60,
@@ -42,7 +44,7 @@
   },
   {
    "contractDate": "2026-04-14",
-   "price": 1085000000,
+   "priceWon": 1085000000,
    "floor": 4,
    "exclusiveArea": 84.78,
    "areaGroup": 85,
@@ -51,7 +53,7 @@
   },
   {
    "contractDate": "2026-04-11",
-   "price": 900000000,
+   "priceWon": 900000000,
    "floor": 13,
    "exclusiveArea": 59.91,
    "areaGroup": 60,
@@ -60,7 +62,7 @@
   },
   {
    "contractDate": "2026-03-17",
-   "price": 900000000,
+   "priceWon": 900000000,
    "floor": 9,
    "exclusiveArea": 59.91,
    "areaGroup": 60,
@@ -69,12 +71,19 @@
   },
   {
    "contractDate": "2026-02-28",
-   "price": 900000000,
+   "priceWon": 900000000,
    "floor": 13,
    "exclusiveArea": 59.91,
    "areaGroup": 60,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.5591969717505,
+  "longitude": 126.856290173496,
+  "roadAddress": "서울 강서구 화곡로68길 33",
+  "jibunAddress": "서울 강서구 등촌동 628-15",
+  "geocodeStatus": "valid"
+ }
 }

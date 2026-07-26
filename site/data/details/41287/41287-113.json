@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "41287-113",
  "apartmentName": "성저마을(풍림)",
  "sidoCode": "41",
@@ -14,7 +16,7 @@
  "transactions": [
   {
    "contractDate": "2026-05-11",
-   "price": 315000000,
+   "priceWon": 315000000,
    "floor": 7,
    "exclusiveArea": 45.36,
    "areaGroup": 45,
@@ -23,7 +25,7 @@
   },
   {
    "contractDate": "2026-05-08",
-   "price": 309000000,
+   "priceWon": 309000000,
    "floor": 6,
    "exclusiveArea": 45.36,
    "areaGroup": 45,
@@ -32,7 +34,7 @@
   },
   {
    "contractDate": "2026-05-04",
-   "price": 300000000,
+   "priceWon": 300000000,
    "floor": 14,
    "exclusiveArea": 45.36,
    "areaGroup": 45,
@@ -41,7 +43,7 @@
   },
   {
    "contractDate": "2026-04-24",
-   "price": 309000000,
+   "priceWon": 309000000,
    "floor": 13,
    "exclusiveArea": 45.36,
    "areaGroup": 45,
@@ -50,7 +52,7 @@
   },
   {
    "contractDate": "2026-04-20",
-   "price": 280000000,
+   "priceWon": 280000000,
    "floor": 7,
    "exclusiveArea": 45.36,
    "areaGroup": 45,
@@ -59,7 +61,7 @@
   },
   {
    "contractDate": "2026-03-29",
-   "price": 260000000,
+   "priceWon": 260000000,
    "floor": 8,
    "exclusiveArea": 45.36,
    "areaGroup": 45,
@@ -68,12 +70,19 @@
   },
   {
    "contractDate": "2026-03-11",
-   "price": 260000000,
+   "priceWon": 260000000,
    "floor": 1,
    "exclusiveArea": 45.36,
    "areaGroup": 45,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.6782904618205,
+  "longitude": 126.748016895594,
+  "roadAddress": "경기 고양시 일산서구 강성로 268",
+  "jibunAddress": "경기 고양시 일산서구 대화동 2215",
+  "geocodeStatus": "valid"
+ }
 }

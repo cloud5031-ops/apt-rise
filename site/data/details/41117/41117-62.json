@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "41117-62",
  "apartmentName": "현대",
  "sidoCode": "41",
@@ -16,7 +18,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-29",
-   "price": 1190000000,
+   "priceWon": 1190000000,
    "floor": 10,
    "exclusiveArea": 134.76,
    "areaGroup": 135,
@@ -25,7 +27,7 @@
   },
   {
    "contractDate": "2026-06-27",
-   "price": 1195000000,
+   "priceWon": 1195000000,
    "floor": 15,
    "exclusiveArea": 134.76,
    "areaGroup": 135,
@@ -34,7 +36,7 @@
   },
   {
    "contractDate": "2026-06-20",
-   "price": 1020000000,
+   "priceWon": 1020000000,
    "floor": 1,
    "exclusiveArea": 134.76,
    "areaGroup": 135,
@@ -43,7 +45,7 @@
   },
   {
    "contractDate": "2026-06-09",
-   "price": 950000000,
+   "priceWon": 950000000,
    "floor": 18,
    "exclusiveArea": 99.58,
    "areaGroup": 100,
@@ -52,7 +54,7 @@
   },
   {
    "contractDate": "2026-05-20",
-   "price": 945000000,
+   "priceWon": 945000000,
    "floor": 17,
    "exclusiveArea": 99.58,
    "areaGroup": 100,
@@ -61,7 +63,7 @@
   },
   {
    "contractDate": "2026-05-15",
-   "price": 1140000000,
+   "priceWon": 1140000000,
    "floor": 9,
    "exclusiveArea": 134.76,
    "areaGroup": 135,
@@ -70,7 +72,7 @@
   },
   {
    "contractDate": "2026-05-12",
-   "price": 978000000,
+   "priceWon": 978000000,
    "floor": 11,
    "exclusiveArea": 99.58,
    "areaGroup": 100,
@@ -79,7 +81,7 @@
   },
   {
    "contractDate": "2026-04-22",
-   "price": 970000000,
+   "priceWon": 970000000,
    "floor": 16,
    "exclusiveArea": 99.58,
    "areaGroup": 100,
@@ -88,7 +90,7 @@
   },
   {
    "contractDate": "2026-04-17",
-   "price": 890000000,
+   "priceWon": 890000000,
    "floor": 18,
    "exclusiveArea": 99.58,
    "areaGroup": 100,
@@ -97,7 +99,7 @@
   },
   {
    "contractDate": "2026-04-17",
-   "price": 1050000000,
+   "priceWon": 1050000000,
    "floor": 14,
    "exclusiveArea": 164.89,
    "areaGroup": 165,
@@ -106,7 +108,7 @@
   },
   {
    "contractDate": "2026-04-10",
-   "price": 800000000,
+   "priceWon": 800000000,
    "floor": 8,
    "exclusiveArea": 99.58,
    "areaGroup": 100,
@@ -115,7 +117,7 @@
   },
   {
    "contractDate": "2026-04-02",
-   "price": 899500000,
+   "priceWon": 899500000,
    "floor": 6,
    "exclusiveArea": 99.58,
    "areaGroup": 100,
@@ -124,7 +126,7 @@
   },
   {
    "contractDate": "2026-03-12",
-   "price": 1150000000,
+   "priceWon": 1150000000,
    "floor": 11,
    "exclusiveArea": 164.89,
    "areaGroup": 165,
@@ -133,7 +135,7 @@
   },
   {
    "contractDate": "2026-03-07",
-   "price": 1150000000,
+   "priceWon": 1150000000,
    "floor": 9,
    "exclusiveArea": 134.76,
    "areaGroup": 135,
@@ -142,7 +144,7 @@
   },
   {
    "contractDate": "2026-03-03",
-   "price": 1030000000,
+   "priceWon": 1030000000,
    "floor": 2,
    "exclusiveArea": 164.89,
    "areaGroup": 165,
@@ -151,7 +153,7 @@
   },
   {
    "contractDate": "2026-02-27",
-   "price": 1110000000,
+   "priceWon": 1110000000,
    "floor": 12,
    "exclusiveArea": 134.76,
    "areaGroup": 135,
@@ -160,12 +162,19 @@
   },
   {
    "contractDate": "2026-02-02",
-   "price": 1000000000,
+   "priceWon": 1000000000,
    "floor": 9,
    "exclusiveArea": 99.58,
    "areaGroup": 100,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.2498792129315,
+  "longitude": 127.071604959551,
+  "roadAddress": "경기 수원시 영통구 매영로 366",
+  "jibunAddress": "경기 수원시 영통구 영통동 989-2",
+  "geocodeStatus": "valid"
+ }
 }

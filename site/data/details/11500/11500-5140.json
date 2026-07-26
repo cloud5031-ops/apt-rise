@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "11500-5140",
  "apartmentName": "한솔솔파크",
  "sidoCode": "11",
@@ -15,7 +17,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-29",
-   "price": 1335000000,
+   "priceWon": 1335000000,
    "floor": 11,
    "exclusiveArea": 84.87,
    "areaGroup": 85,
@@ -24,7 +26,7 @@
   },
   {
    "contractDate": "2026-06-19",
-   "price": 1280000000,
+   "priceWon": 1280000000,
    "floor": 9,
    "exclusiveArea": 84.87,
    "areaGroup": 85,
@@ -33,7 +35,7 @@
   },
   {
    "contractDate": "2026-05-08",
-   "price": 1300000000,
+   "priceWon": 1300000000,
    "floor": 3,
    "exclusiveArea": 84.87,
    "areaGroup": 85,
@@ -42,7 +44,7 @@
   },
   {
    "contractDate": "2026-05-02",
-   "price": 1355000000,
+   "priceWon": 1355000000,
    "floor": 11,
    "exclusiveArea": 84.87,
    "areaGroup": 85,
@@ -51,7 +53,7 @@
   },
   {
    "contractDate": "2026-04-04",
-   "price": 1100000000,
+   "priceWon": 1100000000,
    "floor": 10,
    "exclusiveArea": 59.81,
    "areaGroup": 60,
@@ -60,7 +62,7 @@
   },
   {
    "contractDate": "2026-03-30",
-   "price": 1180000000,
+   "priceWon": 1180000000,
    "floor": 8,
    "exclusiveArea": 59.81,
    "areaGroup": 60,
@@ -69,7 +71,7 @@
   },
   {
    "contractDate": "2026-02-20",
-   "price": 1230000000,
+   "priceWon": 1230000000,
    "floor": 6,
    "exclusiveArea": 84.87,
    "areaGroup": 85,
@@ -78,7 +80,7 @@
   },
   {
    "contractDate": "2026-02-19",
-   "price": 1160000000,
+   "priceWon": 1160000000,
    "floor": 2,
    "exclusiveArea": 84.87,
    "areaGroup": 85,
@@ -87,12 +89,19 @@
   },
   {
    "contractDate": "2026-02-11",
-   "price": 1135000000,
+   "priceWon": 1135000000,
    "floor": 12,
    "exclusiveArea": 84.87,
    "areaGroup": 85,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.569719911244,
+  "longitude": 126.82331418689,
+  "roadAddress": "서울 강서구 양천로30길 77",
+  "jibunAddress": "서울 강서구 마곡동 716",
+  "geocodeStatus": "valid"
+ }
 }

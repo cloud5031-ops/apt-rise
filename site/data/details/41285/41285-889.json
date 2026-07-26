@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "41285-889",
  "apartmentName": "킨텍스원시티3블럭",
  "sidoCode": "41",
@@ -19,7 +21,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-29",
-   "price": 1375000000,
+   "priceWon": 1375000000,
    "floor": 14,
    "exclusiveArea": 84.4423,
    "areaGroup": 84,
@@ -28,7 +30,7 @@
   },
   {
    "contractDate": "2026-06-20",
-   "price": 1285000000,
+   "priceWon": 1285000000,
    "floor": 11,
    "exclusiveArea": 84.5043,
    "areaGroup": 85,
@@ -37,7 +39,7 @@
   },
   {
    "contractDate": "2026-06-14",
-   "price": 1245000000,
+   "priceWon": 1245000000,
    "floor": 5,
    "exclusiveArea": 84.5043,
    "areaGroup": 85,
@@ -46,7 +48,7 @@
   },
   {
    "contractDate": "2026-06-11",
-   "price": 2150000000,
+   "priceWon": 2150000000,
    "floor": 36,
    "exclusiveArea": 120.8997,
    "areaGroup": 121,
@@ -55,7 +57,7 @@
   },
   {
    "contractDate": "2026-06-08",
-   "price": 1245000000,
+   "priceWon": 1245000000,
    "floor": 18,
    "exclusiveArea": 84.5043,
    "areaGroup": 85,
@@ -64,7 +66,7 @@
   },
   {
    "contractDate": "2026-06-06",
-   "price": 1380000000,
+   "priceWon": 1380000000,
    "floor": 46,
    "exclusiveArea": 84.5043,
    "areaGroup": 85,
@@ -73,7 +75,7 @@
   },
   {
    "contractDate": "2026-05-27",
-   "price": 1280000000,
+   "priceWon": 1280000000,
    "floor": 12,
    "exclusiveArea": 84.4423,
    "areaGroup": 84,
@@ -82,7 +84,7 @@
   },
   {
    "contractDate": "2026-05-23",
-   "price": 1400000000,
+   "priceWon": 1400000000,
    "floor": 26,
    "exclusiveArea": 84.4423,
    "areaGroup": 84,
@@ -91,7 +93,7 @@
   },
   {
    "contractDate": "2026-05-21",
-   "price": 1370000000,
+   "priceWon": 1370000000,
    "floor": 33,
    "exclusiveArea": 84.4588,
    "areaGroup": 84,
@@ -100,7 +102,7 @@
   },
   {
    "contractDate": "2026-05-18",
-   "price": 1320000000,
+   "priceWon": 1320000000,
    "floor": 20,
    "exclusiveArea": 84.5043,
    "areaGroup": 85,
@@ -109,7 +111,7 @@
   },
   {
    "contractDate": "2026-05-15",
-   "price": 1215000000,
+   "priceWon": 1215000000,
    "floor": 27,
    "exclusiveArea": 84.5043,
    "areaGroup": 85,
@@ -118,7 +120,7 @@
   },
   {
    "contractDate": "2026-05-08",
-   "price": 1260000000,
+   "priceWon": 1260000000,
    "floor": 27,
    "exclusiveArea": 84.654,
    "areaGroup": 85,
@@ -127,7 +129,7 @@
   },
   {
    "contractDate": "2026-04-18",
-   "price": 1210000000,
+   "priceWon": 1210000000,
    "floor": 2,
    "exclusiveArea": 84.5043,
    "areaGroup": 85,
@@ -136,7 +138,7 @@
   },
   {
    "contractDate": "2026-04-17",
-   "price": 1265000000,
+   "priceWon": 1265000000,
    "floor": 26,
    "exclusiveArea": 84.4423,
    "areaGroup": 84,
@@ -145,7 +147,7 @@
   },
   {
    "contractDate": "2026-04-06",
-   "price": 1270000000,
+   "priceWon": 1270000000,
    "floor": 4,
    "exclusiveArea": 84.4423,
    "areaGroup": 84,
@@ -154,7 +156,7 @@
   },
   {
    "contractDate": "2026-03-28",
-   "price": 1350000000,
+   "priceWon": 1350000000,
    "floor": 33,
    "exclusiveArea": 84.5043,
    "areaGroup": 85,
@@ -163,7 +165,7 @@
   },
   {
    "contractDate": "2026-03-14",
-   "price": 1300000000,
+   "priceWon": 1300000000,
    "floor": 46,
    "exclusiveArea": 84.5043,
    "areaGroup": 85,
@@ -172,7 +174,7 @@
   },
   {
    "contractDate": "2026-02-27",
-   "price": 1625000000,
+   "priceWon": 1625000000,
    "floor": 26,
    "exclusiveArea": 104.9074,
    "areaGroup": 105,
@@ -181,12 +183,19 @@
   },
   {
    "contractDate": "2026-02-13",
-   "price": 1210000000,
+   "priceWon": 1210000000,
    "floor": 8,
    "exclusiveArea": 84.4423,
    "areaGroup": 84,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.6615617749107,
+  "longitude": 126.749473806417,
+  "roadAddress": "경기 고양시 일산동구 월드고양로 21",
+  "jibunAddress": "경기 고양시 일산동구 장항동 1762",
+  "geocodeStatus": "valid"
+ }
 }

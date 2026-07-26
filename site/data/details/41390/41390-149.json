@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "41390-149",
  "apartmentName": "세종2",
  "sidoCode": "41",
@@ -15,7 +17,7 @@
  "transactions": [
   {
    "contractDate": "2026-05-18",
-   "price": 378000000,
+   "priceWon": 378000000,
    "floor": 5,
    "exclusiveArea": 84.84,
    "areaGroup": 85,
@@ -24,7 +26,7 @@
   },
   {
    "contractDate": "2026-05-08",
-   "price": 280000000,
+   "priceWon": 280000000,
    "floor": 8,
    "exclusiveArea": 59.88,
    "areaGroup": 60,
@@ -33,7 +35,7 @@
   },
   {
    "contractDate": "2026-05-07",
-   "price": 270000000,
+   "priceWon": 270000000,
    "floor": 9,
    "exclusiveArea": 59.88,
    "areaGroup": 60,
@@ -42,7 +44,7 @@
   },
   {
    "contractDate": "2026-04-06",
-   "price": 353000000,
+   "priceWon": 353000000,
    "floor": 5,
    "exclusiveArea": 84.84,
    "areaGroup": 85,
@@ -51,7 +53,7 @@
   },
   {
    "contractDate": "2026-03-27",
-   "price": 215000000,
+   "priceWon": 215000000,
    "floor": 4,
    "exclusiveArea": 59.88,
    "areaGroup": 60,
@@ -60,7 +62,7 @@
   },
   {
    "contractDate": "2026-03-24",
-   "price": 368000000,
+   "priceWon": 368000000,
    "floor": 9,
    "exclusiveArea": 84.84,
    "areaGroup": 85,
@@ -69,12 +71,19 @@
   },
   {
    "contractDate": "2026-02-26",
-   "price": 263000000,
+   "priceWon": 263000000,
    "floor": 2,
    "exclusiveArea": 59.88,
    "areaGroup": 60,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.3640916298394,
+  "longitude": 126.73378128699,
+  "roadAddress": "경기 시흥시 함송로29번길 36",
+  "jibunAddress": "경기 시흥시 정왕동 1877-2",
+  "geocodeStatus": "valid"
+ }
 }

@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "11560-1233",
  "apartmentName": "보라매경남아너스빌",
  "sidoCode": "11",
@@ -16,7 +18,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-26",
-   "price": 1350000000,
+   "priceWon": 1350000000,
    "floor": 16,
    "exclusiveArea": 84.79,
    "areaGroup": 85,
@@ -25,7 +27,7 @@
   },
   {
    "contractDate": "2026-06-25",
-   "price": 1375000000,
+   "priceWon": 1375000000,
    "floor": 13,
    "exclusiveArea": 84.79,
    "areaGroup": 85,
@@ -34,7 +36,7 @@
   },
   {
    "contractDate": "2026-06-24",
-   "price": 1270000000,
+   "priceWon": 1270000000,
    "floor": 5,
    "exclusiveArea": 59.78,
    "areaGroup": 60,
@@ -43,7 +45,7 @@
   },
   {
    "contractDate": "2026-06-03",
-   "price": 1310000000,
+   "priceWon": 1310000000,
    "floor": 7,
    "exclusiveArea": 84.79,
    "areaGroup": 85,
@@ -52,7 +54,7 @@
   },
   {
    "contractDate": "2026-05-25",
-   "price": 1280000000,
+   "priceWon": 1280000000,
    "floor": 17,
    "exclusiveArea": 84.79,
    "areaGroup": 85,
@@ -61,7 +63,7 @@
   },
   {
    "contractDate": "2026-04-23",
-   "price": 1340000000,
+   "priceWon": 1340000000,
    "floor": 18,
    "exclusiveArea": 84.79,
    "areaGroup": 85,
@@ -70,7 +72,7 @@
   },
   {
    "contractDate": "2026-04-23",
-   "price": 1310000000,
+   "priceWon": 1310000000,
    "floor": 5,
    "exclusiveArea": 84.79,
    "areaGroup": 85,
@@ -79,7 +81,7 @@
   },
   {
    "contractDate": "2026-04-21",
-   "price": 805000000,
+   "priceWon": 805000000,
    "floor": 13,
    "exclusiveArea": 84.79,
    "areaGroup": 85,
@@ -88,7 +90,7 @@
   },
   {
    "contractDate": "2026-04-21",
-   "price": 1330000000,
+   "priceWon": 1330000000,
    "floor": 13,
    "exclusiveArea": 84.79,
    "areaGroup": 85,
@@ -97,7 +99,7 @@
   },
   {
    "contractDate": "2026-04-18",
-   "price": 1230000000,
+   "priceWon": 1230000000,
    "floor": 2,
    "exclusiveArea": 84.79,
    "areaGroup": 85,
@@ -106,7 +108,7 @@
   },
   {
    "contractDate": "2026-04-11",
-   "price": 1200000000,
+   "priceWon": 1200000000,
    "floor": 8,
    "exclusiveArea": 84.79,
    "areaGroup": 85,
@@ -115,7 +117,7 @@
   },
   {
    "contractDate": "2026-04-09",
-   "price": 1330000000,
+   "priceWon": 1330000000,
    "floor": 11,
    "exclusiveArea": 84.79,
    "areaGroup": 85,
@@ -124,7 +126,7 @@
   },
   {
    "contractDate": "2026-03-31",
-   "price": 1300000000,
+   "priceWon": 1300000000,
    "floor": 1,
    "exclusiveArea": 114.19,
    "areaGroup": 114,
@@ -133,7 +135,7 @@
   },
   {
    "contractDate": "2026-02-21",
-   "price": 1270000000,
+   "priceWon": 1270000000,
    "floor": 5,
    "exclusiveArea": 84.79,
    "areaGroup": 85,
@@ -142,7 +144,7 @@
   },
   {
    "contractDate": "2026-02-20",
-   "price": 1215000000,
+   "priceWon": 1215000000,
    "floor": 7,
    "exclusiveArea": 84.79,
    "areaGroup": 85,
@@ -151,7 +153,7 @@
   },
   {
    "contractDate": "2026-02-19",
-   "price": 1280000000,
+   "priceWon": 1280000000,
    "floor": 20,
    "exclusiveArea": 84.79,
    "areaGroup": 85,
@@ -160,12 +162,19 @@
   },
   {
    "contractDate": "2026-02-07",
-   "price": 1250000000,
+   "priceWon": 1250000000,
    "floor": 21,
    "exclusiveArea": 84.79,
    "areaGroup": 85,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.4948797805032,
+  "longitude": 126.909888661947,
+  "roadAddress": "서울 영등포구 여의대방로 25",
+  "jibunAddress": "서울 영등포구 신길동 4780",
+  "geocodeStatus": "valid"
+ }
 }

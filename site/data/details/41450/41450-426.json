@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "41450-426",
  "apartmentName": "하남힐즈파크푸르지오1단지",
  "sidoCode": "41",
@@ -16,7 +18,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-26",
-   "price": 755000000,
+   "priceWon": 755000000,
    "floor": 2,
    "exclusiveArea": 52.349,
    "areaGroup": 52,
@@ -25,7 +27,7 @@
   },
   {
    "contractDate": "2026-06-18",
-   "price": 835000000,
+   "priceWon": 835000000,
    "floor": 19,
    "exclusiveArea": 59.8444,
    "areaGroup": 60,
@@ -34,7 +36,7 @@
   },
   {
    "contractDate": "2026-06-16",
-   "price": 830000000,
+   "priceWon": 830000000,
    "floor": 11,
    "exclusiveArea": 59.6707,
    "areaGroup": 60,
@@ -43,7 +45,7 @@
   },
   {
    "contractDate": "2026-06-06",
-   "price": 750000000,
+   "priceWon": 750000000,
    "floor": 16,
    "exclusiveArea": 52.349,
    "areaGroup": 52,
@@ -52,7 +54,7 @@
   },
   {
    "contractDate": "2026-05-23",
-   "price": 850000000,
+   "priceWon": 850000000,
    "floor": 7,
    "exclusiveArea": 59.8444,
    "areaGroup": 60,
@@ -61,7 +63,7 @@
   },
   {
    "contractDate": "2026-05-19",
-   "price": 770000000,
+   "priceWon": 770000000,
    "floor": 17,
    "exclusiveArea": 59.6707,
    "areaGroup": 60,
@@ -70,7 +72,7 @@
   },
   {
    "contractDate": "2026-05-19",
-   "price": 830000000,
+   "priceWon": 830000000,
    "floor": 12,
    "exclusiveArea": 59.8444,
    "areaGroup": 60,
@@ -79,7 +81,7 @@
   },
   {
    "contractDate": "2026-05-12",
-   "price": 680000000,
+   "priceWon": 680000000,
    "floor": 16,
    "exclusiveArea": 52.349,
    "areaGroup": 52,
@@ -88,7 +90,7 @@
   },
   {
    "contractDate": "2026-05-06",
-   "price": 740000000,
+   "priceWon": 740000000,
    "floor": 10,
    "exclusiveArea": 52.349,
    "areaGroup": 52,
@@ -97,7 +99,7 @@
   },
   {
    "contractDate": "2026-05-04",
-   "price": 708000000,
+   "priceWon": 708000000,
    "floor": 5,
    "exclusiveArea": 52.349,
    "areaGroup": 52,
@@ -106,7 +108,7 @@
   },
   {
    "contractDate": "2026-05-01",
-   "price": 743000000,
+   "priceWon": 743000000,
    "floor": 18,
    "exclusiveArea": 52.349,
    "areaGroup": 52,
@@ -115,7 +117,7 @@
   },
   {
    "contractDate": "2026-05-01",
-   "price": 830000000,
+   "priceWon": 830000000,
    "floor": 10,
    "exclusiveArea": 59.8444,
    "areaGroup": 60,
@@ -124,7 +126,7 @@
   },
   {
    "contractDate": "2026-04-15",
-   "price": 722000000,
+   "priceWon": 722000000,
    "floor": 14,
    "exclusiveArea": 52.349,
    "areaGroup": 52,
@@ -133,7 +135,7 @@
   },
   {
    "contractDate": "2026-04-13",
-   "price": 600000000,
+   "priceWon": 600000000,
    "floor": 14,
    "exclusiveArea": 59.8444,
    "areaGroup": 60,
@@ -142,7 +144,7 @@
   },
   {
    "contractDate": "2026-04-08",
-   "price": 710000000,
+   "priceWon": 710000000,
    "floor": 8,
    "exclusiveArea": 52.349,
    "areaGroup": 52,
@@ -151,7 +153,7 @@
   },
   {
    "contractDate": "2026-03-31",
-   "price": 830000000,
+   "priceWon": 830000000,
    "floor": 16,
    "exclusiveArea": 59.8444,
    "areaGroup": 60,
@@ -160,7 +162,7 @@
   },
   {
    "contractDate": "2026-03-13",
-   "price": 826000000,
+   "priceWon": 826000000,
    "floor": 12,
    "exclusiveArea": 59.8444,
    "areaGroup": 60,
@@ -169,7 +171,7 @@
   },
   {
    "contractDate": "2026-02-28",
-   "price": 805000000,
+   "priceWon": 805000000,
    "floor": 8,
    "exclusiveArea": 59.6707,
    "areaGroup": 60,
@@ -178,12 +180,19 @@
   },
   {
    "contractDate": "2026-02-18",
-   "price": 800000000,
+   "priceWon": 800000000,
    "floor": 18,
    "exclusiveArea": 59.6707,
    "areaGroup": 60,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.5438179794625,
+  "longitude": 127.193251074802,
+  "roadAddress": "경기 하남시 세미로1길 10",
+  "jibunAddress": "경기 하남시 풍산동 630",
+  "geocodeStatus": "ambiguous"
+ }
 }

@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "28275-28260-56",
  "apartmentName": "효성",
  "sidoCode": "28",
@@ -15,7 +17,7 @@
  "transactions": [
   {
    "contractDate": "2026-05-08",
-   "price": 235000000,
+   "priceWon": 235000000,
    "floor": 9,
    "exclusiveArea": 77.09,
    "areaGroup": 77,
@@ -24,7 +26,7 @@
   },
   {
    "contractDate": "2026-05-07",
-   "price": 223000000,
+   "priceWon": 223000000,
    "floor": 9,
    "exclusiveArea": 70.82,
    "areaGroup": 71,
@@ -33,7 +35,7 @@
   },
   {
    "contractDate": "2026-05-04",
-   "price": 210000000,
+   "priceWon": 210000000,
    "floor": 10,
    "exclusiveArea": 70.82,
    "areaGroup": 71,
@@ -42,7 +44,7 @@
   },
   {
    "contractDate": "2026-04-16",
-   "price": 227000000,
+   "priceWon": 227000000,
    "floor": 12,
    "exclusiveArea": 70.82,
    "areaGroup": 71,
@@ -51,7 +53,7 @@
   },
   {
    "contractDate": "2026-03-07",
-   "price": 175000000,
+   "priceWon": 175000000,
    "floor": 3,
    "exclusiveArea": 70.82,
    "areaGroup": 71,
@@ -60,7 +62,7 @@
   },
   {
    "contractDate": "2026-02-24",
-   "price": 189000000,
+   "priceWon": 189000000,
    "floor": 13,
    "exclusiveArea": 70.82,
    "areaGroup": 71,
@@ -69,12 +71,19 @@
   },
   {
    "contractDate": "2026-02-19",
-   "price": 172000000,
+   "priceWon": 172000000,
    "floor": 1,
    "exclusiveArea": 70.82,
    "areaGroup": 71,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.4260548704464,
+  "longitude": 126.790233190303,
+  "roadAddress": "경기 시흥시 시흥대로 1001-8",
+  "jibunAddress": "경기 시흥시 미산동 151-3",
+  "geocodeStatus": "ambiguous"
+ }
 }

@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "41285-41",
  "apartmentName": "백송마을(삼부)",
  "sidoCode": "41",
@@ -14,7 +16,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-30",
-   "price": 490000000,
+   "priceWon": 490000000,
    "floor": 9,
    "exclusiveArea": 84.99,
    "areaGroup": 85,
@@ -23,7 +25,7 @@
   },
   {
    "contractDate": "2026-06-04",
-   "price": 469000000,
+   "priceWon": 469000000,
    "floor": 1,
    "exclusiveArea": 84.99,
    "areaGroup": 85,
@@ -32,7 +34,7 @@
   },
   {
    "contractDate": "2026-05-31",
-   "price": 420000000,
+   "priceWon": 420000000,
    "floor": 18,
    "exclusiveArea": 84.99,
    "areaGroup": 85,
@@ -41,7 +43,7 @@
   },
   {
    "contractDate": "2026-05-05",
-   "price": 469000000,
+   "priceWon": 469000000,
    "floor": 7,
    "exclusiveArea": 84.99,
    "areaGroup": 85,
@@ -50,7 +52,7 @@
   },
   {
    "contractDate": "2026-03-12",
-   "price": 459000000,
+   "priceWon": 459000000,
    "floor": 4,
    "exclusiveArea": 84.99,
    "areaGroup": 85,
@@ -59,12 +61,19 @@
   },
   {
    "contractDate": "2026-02-09",
-   "price": 430000000,
+   "priceWon": 430000000,
    "floor": 13,
    "exclusiveArea": 84.99,
    "areaGroup": 85,
    "dealType": "중개거래",
    "cancellationStatus": "CANCELLED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.6523226027952,
+  "longitude": 126.790365200502,
+  "roadAddress": "경기 고양시 일산동구 강촌로 144",
+  "jibunAddress": "경기 고양시 일산동구 백석동 1187",
+  "geocodeStatus": "ambiguous"
+ }
 }

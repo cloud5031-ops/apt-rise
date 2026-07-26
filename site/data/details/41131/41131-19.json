@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "41131-19",
  "apartmentName": "진로",
  "sidoCode": "41",
@@ -15,7 +17,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-08",
-   "price": 820000000,
+   "priceWon": 820000000,
    "floor": 7,
    "exclusiveArea": 84.9,
    "areaGroup": 85,
@@ -24,7 +26,7 @@
   },
   {
    "contractDate": "2026-06-06",
-   "price": 700000000,
+   "priceWon": 700000000,
    "floor": 12,
    "exclusiveArea": 59.97,
    "areaGroup": 60,
@@ -33,7 +35,7 @@
   },
   {
    "contractDate": "2026-05-29",
-   "price": 690000000,
+   "priceWon": 690000000,
    "floor": 6,
    "exclusiveArea": 59.97,
    "areaGroup": 60,
@@ -42,7 +44,7 @@
   },
   {
    "contractDate": "2026-05-22",
-   "price": 680000000,
+   "priceWon": 680000000,
    "floor": 5,
    "exclusiveArea": 59.97,
    "areaGroup": 60,
@@ -51,7 +53,7 @@
   },
   {
    "contractDate": "2026-05-02",
-   "price": 625000000,
+   "priceWon": 625000000,
    "floor": 1,
    "exclusiveArea": 84.9,
    "areaGroup": 85,
@@ -60,7 +62,7 @@
   },
   {
    "contractDate": "2026-05-01",
-   "price": 650000000,
+   "priceWon": 650000000,
    "floor": 2,
    "exclusiveArea": 59.97,
    "areaGroup": 60,
@@ -69,7 +71,7 @@
   },
   {
    "contractDate": "2026-04-25",
-   "price": 600000000,
+   "priceWon": 600000000,
    "floor": 2,
    "exclusiveArea": 59.97,
    "areaGroup": 60,
@@ -78,7 +80,7 @@
   },
   {
    "contractDate": "2026-04-12",
-   "price": 770000000,
+   "priceWon": 770000000,
    "floor": 7,
    "exclusiveArea": 84.9,
    "areaGroup": 85,
@@ -87,7 +89,7 @@
   },
   {
    "contractDate": "2026-03-27",
-   "price": 637000000,
+   "priceWon": 637000000,
    "floor": 3,
    "exclusiveArea": 59.97,
    "areaGroup": 60,
@@ -96,12 +98,19 @@
   },
   {
    "contractDate": "2026-03-20",
-   "price": 758000000,
+   "priceWon": 758000000,
    "floor": 5,
    "exclusiveArea": 84.9,
    "areaGroup": 85,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.4508941729962,
+  "longitude": 127.156186564294,
+  "roadAddress": "경기 성남시 수정구 단대로23번길 32",
+  "jibunAddress": "경기 성남시 수정구 단대동 124",
+  "geocodeStatus": "valid"
+ }
 }

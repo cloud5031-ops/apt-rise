@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "41111-37",
  "apartmentName": "노을마을대동",
  "sidoCode": "41",
@@ -15,7 +17,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-20",
-   "price": 460000000,
+   "priceWon": 460000000,
    "floor": 20,
    "exclusiveArea": 59.99,
    "areaGroup": 60,
@@ -24,7 +26,7 @@
   },
   {
    "contractDate": "2026-06-20",
-   "price": 510000000,
+   "priceWon": 510000000,
    "floor": 10,
    "exclusiveArea": 59.97,
    "areaGroup": 60,
@@ -33,7 +35,7 @@
   },
   {
    "contractDate": "2026-05-18",
-   "price": 448500000,
+   "priceWon": 448500000,
    "floor": 12,
    "exclusiveArea": 59.97,
    "areaGroup": 60,
@@ -42,7 +44,7 @@
   },
   {
    "contractDate": "2026-05-08",
-   "price": 418000000,
+   "priceWon": 418000000,
    "floor": 19,
    "exclusiveArea": 59.99,
    "areaGroup": 60,
@@ -51,7 +53,7 @@
   },
   {
    "contractDate": "2026-04-30",
-   "price": 415000000,
+   "priceWon": 415000000,
    "floor": 2,
    "exclusiveArea": 59.97,
    "areaGroup": 60,
@@ -60,7 +62,7 @@
   },
   {
    "contractDate": "2026-04-16",
-   "price": 405000000,
+   "priceWon": 405000000,
    "floor": 8,
    "exclusiveArea": 59.99,
    "areaGroup": 60,
@@ -69,7 +71,7 @@
   },
   {
    "contractDate": "2026-04-15",
-   "price": 378000000,
+   "priceWon": 378000000,
    "floor": 2,
    "exclusiveArea": 59.97,
    "areaGroup": 60,
@@ -78,7 +80,7 @@
   },
   {
    "contractDate": "2026-04-02",
-   "price": 390000000,
+   "priceWon": 390000000,
    "floor": 1,
    "exclusiveArea": 59.99,
    "areaGroup": 60,
@@ -87,7 +89,7 @@
   },
   {
    "contractDate": "2026-03-20",
-   "price": 430000000,
+   "priceWon": 430000000,
    "floor": 5,
    "exclusiveArea": 59.97,
    "areaGroup": 60,
@@ -96,12 +98,19 @@
   },
   {
    "contractDate": "2026-03-06",
-   "price": 419000000,
+   "priceWon": 419000000,
    "floor": 12,
    "exclusiveArea": 59.97,
    "areaGroup": 60,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.2924092194834,
+  "longitude": 126.994062568711,
+  "roadAddress": "경기 수원시 장안구 대평로39번길 8",
+  "jibunAddress": "경기 수원시 장안구 정자동 888-2",
+  "geocodeStatus": "valid"
+ }
 }

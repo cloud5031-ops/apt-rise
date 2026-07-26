@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "41192-241",
  "apartmentName": "연화마을(쌍용)",
  "sidoCode": "41",
@@ -17,7 +19,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-06",
-   "price": 684000000,
+   "priceWon": 684000000,
    "floor": 15,
    "exclusiveArea": 134.07,
    "areaGroup": 134,
@@ -26,7 +28,7 @@
   },
   {
    "contractDate": "2026-06-05",
-   "price": 515000000,
+   "priceWon": 515000000,
    "floor": 12,
    "exclusiveArea": 60.0,
    "areaGroup": 60,
@@ -35,7 +37,7 @@
   },
   {
    "contractDate": "2026-06-04",
-   "price": 478000000,
+   "priceWon": 478000000,
    "floor": 13,
    "exclusiveArea": 60.0,
    "areaGroup": 60,
@@ -44,7 +46,7 @@
   },
   {
    "contractDate": "2026-05-30",
-   "price": 685000000,
+   "priceWon": 685000000,
    "floor": 4,
    "exclusiveArea": 101.88,
    "areaGroup": 102,
@@ -53,7 +55,7 @@
   },
   {
    "contractDate": "2026-05-15",
-   "price": 613000000,
+   "priceWon": 613000000,
    "floor": 19,
    "exclusiveArea": 84.86,
    "areaGroup": 85,
@@ -62,7 +64,7 @@
   },
   {
    "contractDate": "2026-05-14",
-   "price": 598000000,
+   "priceWon": 598000000,
    "floor": 6,
    "exclusiveArea": 84.86,
    "areaGroup": 85,
@@ -71,7 +73,7 @@
   },
   {
    "contractDate": "2026-05-12",
-   "price": 600000000,
+   "priceWon": 600000000,
    "floor": 9,
    "exclusiveArea": 134.07,
    "areaGroup": 134,
@@ -80,7 +82,7 @@
   },
   {
    "contractDate": "2026-04-22",
-   "price": 450000000,
+   "priceWon": 450000000,
    "floor": 8,
    "exclusiveArea": 60.0,
    "areaGroup": 60,
@@ -89,7 +91,7 @@
   },
   {
    "contractDate": "2026-04-21",
-   "price": 568000000,
+   "priceWon": 568000000,
    "floor": 2,
    "exclusiveArea": 84.86,
    "areaGroup": 85,
@@ -98,7 +100,7 @@
   },
   {
    "contractDate": "2026-04-11",
-   "price": 440000000,
+   "priceWon": 440000000,
    "floor": 10,
    "exclusiveArea": 60.0,
    "areaGroup": 60,
@@ -107,7 +109,7 @@
   },
   {
    "contractDate": "2026-03-26",
-   "price": 550000000,
+   "priceWon": 550000000,
    "floor": 6,
    "exclusiveArea": 84.86,
    "areaGroup": 85,
@@ -116,7 +118,7 @@
   },
   {
    "contractDate": "2026-03-20",
-   "price": 442500000,
+   "priceWon": 442500000,
    "floor": 12,
    "exclusiveArea": 60.0,
    "areaGroup": 60,
@@ -125,12 +127,19 @@
   },
   {
    "contractDate": "2026-03-08",
-   "price": 440000000,
+   "priceWon": 440000000,
    "floor": 10,
    "exclusiveArea": 60.0,
    "areaGroup": 60,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.4976938275217,
+  "longitude": 126.780358465298,
+  "roadAddress": "경기 부천시 원미구 옥산로 45",
+  "jibunAddress": "경기 부천시 원미구 중동 1101",
+  "geocodeStatus": "ambiguous"
+ }
 }

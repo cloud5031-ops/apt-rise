@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "41463-88",
  "apartmentName": "보라마을현대모닝사이드",
  "sidoCode": "41",
@@ -17,7 +19,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-30",
-   "price": 460000000,
+   "priceWon": 460000000,
    "floor": 10,
    "exclusiveArea": 84.8107,
    "areaGroup": 85,
@@ -26,7 +28,7 @@
   },
   {
    "contractDate": "2026-06-27",
-   "price": 530000000,
+   "priceWon": 530000000,
    "floor": 5,
    "exclusiveArea": 116.6164,
    "areaGroup": 117,
@@ -35,7 +37,7 @@
   },
   {
    "contractDate": "2026-06-23",
-   "price": 468000000,
+   "priceWon": 468000000,
    "floor": 17,
    "exclusiveArea": 84.8107,
    "areaGroup": 85,
@@ -44,7 +46,7 @@
   },
   {
    "contractDate": "2026-06-23",
-   "price": 550000000,
+   "priceWon": 550000000,
    "floor": 3,
    "exclusiveArea": 137.117,
    "areaGroup": 137,
@@ -53,7 +55,7 @@
   },
   {
    "contractDate": "2026-06-17",
-   "price": 630000000,
+   "priceWon": 630000000,
    "floor": 11,
    "exclusiveArea": 177.0893,
    "areaGroup": 177,
@@ -62,7 +64,7 @@
   },
   {
    "contractDate": "2026-06-10",
-   "price": 510000000,
+   "priceWon": 510000000,
    "floor": 17,
    "exclusiveArea": 116.6164,
    "areaGroup": 117,
@@ -71,7 +73,7 @@
   },
   {
    "contractDate": "2026-06-03",
-   "price": 505000000,
+   "priceWon": 505000000,
    "floor": 17,
    "exclusiveArea": 116.6164,
    "areaGroup": 117,
@@ -80,7 +82,7 @@
   },
   {
    "contractDate": "2026-06-01",
-   "price": 488000000,
+   "priceWon": 488000000,
    "floor": 3,
    "exclusiveArea": 116.6164,
    "areaGroup": 117,
@@ -89,7 +91,7 @@
   },
   {
    "contractDate": "2026-05-22",
-   "price": 560000000,
+   "priceWon": 560000000,
    "floor": 17,
    "exclusiveArea": 137.117,
    "areaGroup": 137,
@@ -98,7 +100,7 @@
   },
   {
    "contractDate": "2026-05-14",
-   "price": 570000000,
+   "priceWon": 570000000,
    "floor": 6,
    "exclusiveArea": 137.117,
    "areaGroup": 137,
@@ -107,7 +109,7 @@
   },
   {
    "contractDate": "2026-05-12",
-   "price": 530000000,
+   "priceWon": 530000000,
    "floor": 2,
    "exclusiveArea": 137.117,
    "areaGroup": 137,
@@ -116,7 +118,7 @@
   },
   {
    "contractDate": "2026-04-29",
-   "price": 515000000,
+   "priceWon": 515000000,
    "floor": 9,
    "exclusiveArea": 137.117,
    "areaGroup": 137,
@@ -125,7 +127,7 @@
   },
   {
    "contractDate": "2026-04-22",
-   "price": 455000000,
+   "priceWon": 455000000,
    "floor": 9,
    "exclusiveArea": 84.8107,
    "areaGroup": 85,
@@ -134,7 +136,7 @@
   },
   {
    "contractDate": "2026-04-22",
-   "price": 370000000,
+   "priceWon": 370000000,
    "floor": 6,
    "exclusiveArea": 137.117,
    "areaGroup": 137,
@@ -143,7 +145,7 @@
   },
   {
    "contractDate": "2026-04-07",
-   "price": 520000000,
+   "priceWon": 520000000,
    "floor": 9,
    "exclusiveArea": 137.117,
    "areaGroup": 137,
@@ -152,7 +154,7 @@
   },
   {
    "contractDate": "2026-03-29",
-   "price": 425000000,
+   "priceWon": 425000000,
    "floor": 10,
    "exclusiveArea": 84.8107,
    "areaGroup": 85,
@@ -161,7 +163,7 @@
   },
   {
    "contractDate": "2026-03-28",
-   "price": 625000000,
+   "priceWon": 625000000,
    "floor": 16,
    "exclusiveArea": 177.0893,
    "areaGroup": 177,
@@ -170,7 +172,7 @@
   },
   {
    "contractDate": "2026-03-11",
-   "price": 505000000,
+   "priceWon": 505000000,
    "floor": 13,
    "exclusiveArea": 116.6164,
    "areaGroup": 117,
@@ -179,7 +181,7 @@
   },
   {
    "contractDate": "2026-03-10",
-   "price": 415000000,
+   "priceWon": 415000000,
    "floor": 2,
    "exclusiveArea": 84.8107,
    "areaGroup": 85,
@@ -188,7 +190,7 @@
   },
   {
    "contractDate": "2026-03-04",
-   "price": 445000000,
+   "priceWon": 445000000,
    "floor": 15,
    "exclusiveArea": 84.8107,
    "areaGroup": 85,
@@ -197,12 +199,19 @@
   },
   {
    "contractDate": "2026-02-04",
-   "price": 590000000,
+   "priceWon": 590000000,
    "floor": 1,
    "exclusiveArea": 177.0893,
    "areaGroup": 177,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.2528747601873,
+  "longitude": 127.10654408292,
+  "roadAddress": "경기 용인시 기흥구 용구대로 1842",
+  "jibunAddress": "경기 용인시 기흥구 보라동 564",
+  "geocodeStatus": "valid"
+ }
 }

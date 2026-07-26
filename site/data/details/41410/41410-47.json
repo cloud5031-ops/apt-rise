@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "41410-47",
  "apartmentName": "삼익가든을지",
  "sidoCode": "41",
@@ -16,7 +18,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-19",
-   "price": 830000000,
+   "priceWon": 830000000,
    "floor": 7,
    "exclusiveArea": 118.77,
    "areaGroup": 119,
@@ -25,7 +27,7 @@
   },
   {
    "contractDate": "2026-06-18",
-   "price": 850000000,
+   "priceWon": 850000000,
    "floor": 17,
    "exclusiveArea": 134.77,
    "areaGroup": 135,
@@ -34,7 +36,7 @@
   },
   {
    "contractDate": "2026-06-02",
-   "price": 720000000,
+   "priceWon": 720000000,
    "floor": 12,
    "exclusiveArea": 99.28,
    "areaGroup": 99,
@@ -43,7 +45,7 @@
   },
   {
    "contractDate": "2026-05-26",
-   "price": 738000000,
+   "priceWon": 738000000,
    "floor": 5,
    "exclusiveArea": 99.28,
    "areaGroup": 99,
@@ -52,7 +54,7 @@
   },
   {
    "contractDate": "2026-05-13",
-   "price": 685000000,
+   "priceWon": 685000000,
    "floor": 2,
    "exclusiveArea": 99.28,
    "areaGroup": 99,
@@ -61,7 +63,7 @@
   },
   {
    "contractDate": "2026-05-09",
-   "price": 740000000,
+   "priceWon": 740000000,
    "floor": 4,
    "exclusiveArea": 99.28,
    "areaGroup": 99,
@@ -70,7 +72,7 @@
   },
   {
    "contractDate": "2026-05-09",
-   "price": 845000000,
+   "priceWon": 845000000,
    "floor": 15,
    "exclusiveArea": 118.77,
    "areaGroup": 119,
@@ -79,7 +81,7 @@
   },
   {
    "contractDate": "2026-05-06",
-   "price": 720000000,
+   "priceWon": 720000000,
    "floor": 12,
    "exclusiveArea": 99.28,
    "areaGroup": 99,
@@ -88,7 +90,7 @@
   },
   {
    "contractDate": "2026-04-28",
-   "price": 680000000,
+   "priceWon": 680000000,
    "floor": 3,
    "exclusiveArea": 99.28,
    "areaGroup": 99,
@@ -97,7 +99,7 @@
   },
   {
    "contractDate": "2026-04-23",
-   "price": 688000000,
+   "priceWon": 688000000,
    "floor": 23,
    "exclusiveArea": 99.28,
    "areaGroup": 99,
@@ -106,7 +108,7 @@
   },
   {
    "contractDate": "2026-03-28",
-   "price": 710000000,
+   "priceWon": 710000000,
    "floor": 9,
    "exclusiveArea": 99.28,
    "areaGroup": 99,
@@ -115,12 +117,19 @@
   },
   {
    "contractDate": "2026-03-19",
-   "price": 740000000,
+   "priceWon": 740000000,
    "floor": 9,
    "exclusiveArea": 99.28,
    "areaGroup": 99,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.3576187364554,
+  "longitude": 126.926559384933,
+  "roadAddress": "경기 군포시 산본천로 12",
+  "jibunAddress": "경기 군포시 산본동 1145-14",
+  "geocodeStatus": "valid"
+ }
 }

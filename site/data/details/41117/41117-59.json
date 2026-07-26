@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "41117-59",
  "apartmentName": "청명마을동신",
  "sidoCode": "41",
@@ -15,7 +17,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-20",
-   "price": 1030000000,
+   "priceWon": 1030000000,
    "floor": 18,
    "exclusiveArea": 134.64,
    "areaGroup": 135,
@@ -24,7 +26,7 @@
   },
   {
    "contractDate": "2026-06-19",
-   "price": 995000000,
+   "priceWon": 995000000,
    "floor": 14,
    "exclusiveArea": 99.87,
    "areaGroup": 100,
@@ -33,7 +35,7 @@
   },
   {
    "contractDate": "2026-06-19",
-   "price": 1010000000,
+   "priceWon": 1010000000,
    "floor": 17,
    "exclusiveArea": 134.64,
    "areaGroup": 135,
@@ -42,7 +44,7 @@
   },
   {
    "contractDate": "2026-04-15",
-   "price": 870000000,
+   "priceWon": 870000000,
    "floor": 1,
    "exclusiveArea": 99.87,
    "areaGroup": 100,
@@ -51,7 +53,7 @@
   },
   {
    "contractDate": "2026-04-14",
-   "price": 950000000,
+   "priceWon": 950000000,
    "floor": 4,
    "exclusiveArea": 134.64,
    "areaGroup": 135,
@@ -60,7 +62,7 @@
   },
   {
    "contractDate": "2026-04-10",
-   "price": 950000000,
+   "priceWon": 950000000,
    "floor": 13,
    "exclusiveArea": 134.64,
    "areaGroup": 135,
@@ -69,7 +71,7 @@
   },
   {
    "contractDate": "2026-04-01",
-   "price": 960000000,
+   "priceWon": 960000000,
    "floor": 13,
    "exclusiveArea": 99.87,
    "areaGroup": 100,
@@ -78,7 +80,7 @@
   },
   {
    "contractDate": "2026-03-20",
-   "price": 950000000,
+   "priceWon": 950000000,
    "floor": 19,
    "exclusiveArea": 134.64,
    "areaGroup": 135,
@@ -87,7 +89,7 @@
   },
   {
    "contractDate": "2026-03-09",
-   "price": 930000000,
+   "priceWon": 930000000,
    "floor": 11,
    "exclusiveArea": 99.87,
    "areaGroup": 100,
@@ -96,7 +98,7 @@
   },
   {
    "contractDate": "2026-02-13",
-   "price": 980000000,
+   "priceWon": 980000000,
    "floor": 9,
    "exclusiveArea": 134.64,
    "areaGroup": 135,
@@ -105,12 +107,19 @@
   },
   {
    "contractDate": "2026-02-05",
-   "price": 990000000,
+   "priceWon": 990000000,
    "floor": 18,
    "exclusiveArea": 134.64,
    "areaGroup": 135,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.2595535281107,
+  "longitude": 127.076514789462,
+  "roadAddress": "경기 수원시 영통구 영통로 460",
+  "jibunAddress": "경기 수원시 영통구 영통동 956-2",
+  "geocodeStatus": "valid"
+ }
 }

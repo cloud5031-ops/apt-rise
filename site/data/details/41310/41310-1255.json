@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "41310-1255",
  "apartmentName": "인창칸타빌더헤리티지",
  "sidoCode": "41",
@@ -16,7 +18,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-30",
-   "price": 734000000,
+   "priceWon": 734000000,
    "floor": 2,
    "exclusiveArea": 59.4251,
    "areaGroup": 59,
@@ -25,7 +27,7 @@
   },
   {
    "contractDate": "2026-06-27",
-   "price": 890000000,
+   "priceWon": 890000000,
    "floor": 11,
    "exclusiveArea": 84.9707,
    "areaGroup": 85,
@@ -34,7 +36,7 @@
   },
   {
    "contractDate": "2026-06-26",
-   "price": 750000000,
+   "priceWon": 750000000,
    "floor": 8,
    "exclusiveArea": 59.9327,
    "areaGroup": 60,
@@ -43,7 +45,7 @@
   },
   {
    "contractDate": "2026-06-24",
-   "price": 750000000,
+   "priceWon": 750000000,
    "floor": 9,
    "exclusiveArea": 59.9327,
    "areaGroup": 60,
@@ -52,7 +54,7 @@
   },
   {
    "contractDate": "2026-06-21",
-   "price": 870000000,
+   "priceWon": 870000000,
    "floor": 18,
    "exclusiveArea": 84.9707,
    "areaGroup": 85,
@@ -61,7 +63,7 @@
   },
   {
    "contractDate": "2026-06-17",
-   "price": 700000000,
+   "priceWon": 700000000,
    "floor": 7,
    "exclusiveArea": 59.4251,
    "areaGroup": 59,
@@ -70,7 +72,7 @@
   },
   {
    "contractDate": "2026-06-06",
-   "price": 870000000,
+   "priceWon": 870000000,
    "floor": 10,
    "exclusiveArea": 84.9707,
    "areaGroup": 85,
@@ -79,7 +81,7 @@
   },
   {
    "contractDate": "2026-05-23",
-   "price": 730000000,
+   "priceWon": 730000000,
    "floor": 6,
    "exclusiveArea": 59.9327,
    "areaGroup": 60,
@@ -88,7 +90,7 @@
   },
   {
    "contractDate": "2026-05-10",
-   "price": 737000000,
+   "priceWon": 737000000,
    "floor": 12,
    "exclusiveArea": 59.9327,
    "areaGroup": 60,
@@ -97,7 +99,7 @@
   },
   {
    "contractDate": "2026-05-08",
-   "price": 830000000,
+   "priceWon": 830000000,
    "floor": 4,
    "exclusiveArea": 84.9707,
    "areaGroup": 85,
@@ -106,7 +108,7 @@
   },
   {
    "contractDate": "2026-04-24",
-   "price": 730000000,
+   "priceWon": 730000000,
    "floor": 17,
    "exclusiveArea": 59.9327,
    "areaGroup": 60,
@@ -115,7 +117,7 @@
   },
   {
    "contractDate": "2026-04-17",
-   "price": 830000000,
+   "priceWon": 830000000,
    "floor": 6,
    "exclusiveArea": 84.9707,
    "areaGroup": 85,
@@ -124,7 +126,7 @@
   },
   {
    "contractDate": "2026-04-13",
-   "price": 730000000,
+   "priceWon": 730000000,
    "floor": 25,
    "exclusiveArea": 59.9327,
    "areaGroup": 60,
@@ -133,7 +135,7 @@
   },
   {
    "contractDate": "2026-03-07",
-   "price": 855000000,
+   "priceWon": 855000000,
    "floor": 15,
    "exclusiveArea": 84.9707,
    "areaGroup": 85,
@@ -142,7 +144,7 @@
   },
   {
    "contractDate": "2026-03-05",
-   "price": 840000000,
+   "priceWon": 840000000,
    "floor": 13,
    "exclusiveArea": 84.9707,
    "areaGroup": 85,
@@ -151,12 +153,19 @@
   },
   {
    "contractDate": "2026-02-04",
-   "price": 829000000,
+   "priceWon": 829000000,
    "floor": 8,
    "exclusiveArea": 84.9707,
    "areaGroup": 85,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.6064512840022,
+  "longitude": 127.131062386319,
+  "roadAddress": "경기 구리시 인창1로 37",
+  "jibunAddress": "경기 구리시 인창동 636",
+  "geocodeStatus": "valid"
+ }
 }

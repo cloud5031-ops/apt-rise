@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "41597-41590-1499",
  "apartmentName": "동탄역경남아너스빌",
  "sidoCode": "41",
@@ -15,7 +17,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-26",
-   "price": 1020000000,
+   "priceWon": 1020000000,
    "floor": 16,
    "exclusiveArea": 84.0086,
    "areaGroup": 84,
@@ -24,7 +26,7 @@
   },
   {
    "contractDate": "2026-06-06",
-   "price": 870000000,
+   "priceWon": 870000000,
    "floor": 32,
    "exclusiveArea": 84.0086,
    "areaGroup": 84,
@@ -33,7 +35,7 @@
   },
   {
    "contractDate": "2026-06-04",
-   "price": 890000000,
+   "priceWon": 890000000,
    "floor": 4,
    "exclusiveArea": 84.0086,
    "areaGroup": 84,
@@ -42,7 +44,7 @@
   },
   {
    "contractDate": "2026-06-02",
-   "price": 900000000,
+   "priceWon": 900000000,
    "floor": 27,
    "exclusiveArea": 84.0254,
    "areaGroup": 84,
@@ -51,7 +53,7 @@
   },
   {
    "contractDate": "2026-06-01",
-   "price": 860000000,
+   "priceWon": 860000000,
    "floor": 12,
    "exclusiveArea": 84.0086,
    "areaGroup": 84,
@@ -60,7 +62,7 @@
   },
   {
    "contractDate": "2026-06-01",
-   "price": 900000000,
+   "priceWon": 900000000,
    "floor": 25,
    "exclusiveArea": 84.0086,
    "areaGroup": 84,
@@ -69,7 +71,7 @@
   },
   {
    "contractDate": "2026-05-30",
-   "price": 865000000,
+   "priceWon": 865000000,
    "floor": 29,
    "exclusiveArea": 84.0086,
    "areaGroup": 84,
@@ -78,7 +80,7 @@
   },
   {
    "contractDate": "2026-05-20",
-   "price": 850000000,
+   "priceWon": 850000000,
    "floor": 10,
    "exclusiveArea": 84.0086,
    "areaGroup": 84,
@@ -87,7 +89,7 @@
   },
   {
    "contractDate": "2026-05-16",
-   "price": 823000000,
+   "priceWon": 823000000,
    "floor": 6,
    "exclusiveArea": 84.0086,
    "areaGroup": 84,
@@ -96,7 +98,7 @@
   },
   {
    "contractDate": "2026-04-17",
-   "price": 820000000,
+   "priceWon": 820000000,
    "floor": 21,
    "exclusiveArea": 84.0086,
    "areaGroup": 84,
@@ -105,7 +107,7 @@
   },
   {
    "contractDate": "2026-04-04",
-   "price": 850000000,
+   "priceWon": 850000000,
    "floor": 12,
    "exclusiveArea": 84.0086,
    "areaGroup": 84,
@@ -114,7 +116,7 @@
   },
   {
    "contractDate": "2026-04-01",
-   "price": 830000000,
+   "priceWon": 830000000,
    "floor": 7,
    "exclusiveArea": 84.0086,
    "areaGroup": 84,
@@ -123,7 +125,7 @@
   },
   {
    "contractDate": "2026-03-28",
-   "price": 810000000,
+   "priceWon": 810000000,
    "floor": 9,
    "exclusiveArea": 84.0086,
    "areaGroup": 84,
@@ -132,7 +134,7 @@
   },
   {
    "contractDate": "2026-03-27",
-   "price": 790000000,
+   "priceWon": 790000000,
    "floor": 19,
    "exclusiveArea": 84.0254,
    "areaGroup": 84,
@@ -141,7 +143,7 @@
   },
   {
    "contractDate": "2026-03-21",
-   "price": 810000000,
+   "priceWon": 810000000,
    "floor": 17,
    "exclusiveArea": 84.0086,
    "areaGroup": 84,
@@ -150,7 +152,7 @@
   },
   {
    "contractDate": "2026-03-19",
-   "price": 785000000,
+   "priceWon": 785000000,
    "floor": 10,
    "exclusiveArea": 84.0254,
    "areaGroup": 84,
@@ -159,7 +161,7 @@
   },
   {
    "contractDate": "2026-03-14",
-   "price": 785000000,
+   "priceWon": 785000000,
    "floor": 29,
    "exclusiveArea": 84.0086,
    "areaGroup": 84,
@@ -168,7 +170,7 @@
   },
   {
    "contractDate": "2026-03-14",
-   "price": 800000000,
+   "priceWon": 800000000,
    "floor": 12,
    "exclusiveArea": 84.0254,
    "areaGroup": 84,
@@ -177,7 +179,7 @@
   },
   {
    "contractDate": "2026-03-14",
-   "price": 808000000,
+   "priceWon": 808000000,
    "floor": 22,
    "exclusiveArea": 84.0086,
    "areaGroup": 84,
@@ -186,7 +188,7 @@
   },
   {
    "contractDate": "2026-02-21",
-   "price": 763000000,
+   "priceWon": 763000000,
    "floor": 27,
    "exclusiveArea": 84.0254,
    "areaGroup": 84,
@@ -195,12 +197,19 @@
   },
   {
    "contractDate": "2026-02-14",
-   "price": 780000000,
+   "priceWon": 780000000,
    "floor": 17,
    "exclusiveArea": 84.0086,
    "areaGroup": 84,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.2048649411507,
+  "longitude": 127.110914538905,
+  "roadAddress": "경기 화성시 동탄구 동탄순환대로25길 21",
+  "jibunAddress": "경기 화성시 동탄구 영천동 677",
+  "geocodeStatus": "ambiguous"
+ }
 }

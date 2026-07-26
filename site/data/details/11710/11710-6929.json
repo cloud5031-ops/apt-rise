@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "11710-6929",
  "apartmentName": "래미안송파파인탑",
  "sidoCode": "11",
@@ -18,7 +20,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-16",
-   "price": 2160000000,
+   "priceWon": 2160000000,
    "floor": 12,
    "exclusiveArea": 53.36,
    "areaGroup": 53,
@@ -27,7 +29,7 @@
   },
   {
    "contractDate": "2026-05-27",
-   "price": 2150000000,
+   "priceWon": 2150000000,
    "floor": 17,
    "exclusiveArea": 64.66,
    "areaGroup": 65,
@@ -36,7 +38,7 @@
   },
   {
    "contractDate": "2026-05-26",
-   "price": 2470000000,
+   "priceWon": 2470000000,
    "floor": 12,
    "exclusiveArea": 87.05,
    "areaGroup": 87,
@@ -45,7 +47,7 @@
   },
   {
    "contractDate": "2026-05-23",
-   "price": 2200000000,
+   "priceWon": 2200000000,
    "floor": 9,
    "exclusiveArea": 64.66,
    "areaGroup": 65,
@@ -54,7 +56,7 @@
   },
   {
    "contractDate": "2026-05-05",
-   "price": 2310000000,
+   "priceWon": 2310000000,
    "floor": 11,
    "exclusiveArea": 71.73,
    "areaGroup": 72,
@@ -63,7 +65,7 @@
   },
   {
    "contractDate": "2026-04-29",
-   "price": 2140000000,
+   "priceWon": 2140000000,
    "floor": 28,
    "exclusiveArea": 64.99,
    "areaGroup": 65,
@@ -72,7 +74,7 @@
   },
   {
    "contractDate": "2026-04-24",
-   "price": 2070000000,
+   "priceWon": 2070000000,
    "floor": 22,
    "exclusiveArea": 64.66,
    "areaGroup": 65,
@@ -81,7 +83,7 @@
   },
   {
    "contractDate": "2026-04-18",
-   "price": 2370000000,
+   "priceWon": 2370000000,
    "floor": 19,
    "exclusiveArea": 71.73,
    "areaGroup": 72,
@@ -90,7 +92,7 @@
   },
   {
    "contractDate": "2026-04-15",
-   "price": 2000000000,
+   "priceWon": 2000000000,
    "floor": 8,
    "exclusiveArea": 53.36,
    "areaGroup": 53,
@@ -99,7 +101,7 @@
   },
   {
    "contractDate": "2026-04-11",
-   "price": 2150000000,
+   "priceWon": 2150000000,
    "floor": 19,
    "exclusiveArea": 64.66,
    "areaGroup": 65,
@@ -108,7 +110,7 @@
   },
   {
    "contractDate": "2026-04-06",
-   "price": 2010000000,
+   "priceWon": 2010000000,
    "floor": 20,
    "exclusiveArea": 64.66,
    "areaGroup": 65,
@@ -117,7 +119,7 @@
   },
   {
    "contractDate": "2026-04-04",
-   "price": 2030000000,
+   "priceWon": 2030000000,
    "floor": 17,
    "exclusiveArea": 64.66,
    "areaGroup": 65,
@@ -126,7 +128,7 @@
   },
   {
    "contractDate": "2026-04-03",
-   "price": 2100000000,
+   "priceWon": 2100000000,
    "floor": 23,
    "exclusiveArea": 64.66,
    "areaGroup": 65,
@@ -135,12 +137,19 @@
   },
   {
    "contractDate": "2026-03-06",
-   "price": 2100000000,
+   "priceWon": 2100000000,
    "floor": 14,
    "exclusiveArea": 53.36,
    "areaGroup": 53,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.5026771694066,
+  "longitude": 127.120006146918,
+  "roadAddress": "서울 송파구 오금로32길 31",
+  "jibunAddress": "서울 송파구 송파동 243",
+  "geocodeStatus": "valid"
+ }
 }

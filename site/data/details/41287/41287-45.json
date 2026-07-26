@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "41287-45",
  "apartmentName": "강선마을14단지두산",
  "sidoCode": "41",
@@ -16,7 +18,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-23",
-   "price": 415000000,
+   "priceWon": 415000000,
    "floor": 11,
    "exclusiveArea": 59.76,
    "areaGroup": 60,
@@ -25,7 +27,7 @@
   },
   {
    "contractDate": "2026-06-16",
-   "price": 483000000,
+   "priceWon": 483000000,
    "floor": 14,
    "exclusiveArea": 69.08,
    "areaGroup": 69,
@@ -34,7 +36,7 @@
   },
   {
    "contractDate": "2026-06-13",
-   "price": 676000000,
+   "priceWon": 676000000,
    "floor": 15,
    "exclusiveArea": 84.71,
    "areaGroup": 85,
@@ -43,7 +45,7 @@
   },
   {
    "contractDate": "2026-06-10",
-   "price": 533000000,
+   "priceWon": 533000000,
    "floor": 10,
    "exclusiveArea": 69.08,
    "areaGroup": 69,
@@ -52,7 +54,7 @@
   },
   {
    "contractDate": "2026-06-06",
-   "price": 352000000,
+   "priceWon": 352000000,
    "floor": 2,
    "exclusiveArea": 59.76,
    "areaGroup": 60,
@@ -61,7 +63,7 @@
   },
   {
    "contractDate": "2026-05-30",
-   "price": 650000000,
+   "priceWon": 650000000,
    "floor": 12,
    "exclusiveArea": 84.71,
    "areaGroup": 85,
@@ -70,7 +72,7 @@
   },
   {
    "contractDate": "2026-05-29",
-   "price": 330000000,
+   "priceWon": 330000000,
    "floor": 12,
    "exclusiveArea": 59.76,
    "areaGroup": 60,
@@ -79,7 +81,7 @@
   },
   {
    "contractDate": "2026-05-27",
-   "price": 470000000,
+   "priceWon": 470000000,
    "floor": 4,
    "exclusiveArea": 69.08,
    "areaGroup": 69,
@@ -88,7 +90,7 @@
   },
   {
    "contractDate": "2026-05-08",
-   "price": 465000000,
+   "priceWon": 465000000,
    "floor": 12,
    "exclusiveArea": 69.08,
    "areaGroup": 69,
@@ -97,7 +99,7 @@
   },
   {
    "contractDate": "2026-05-01",
-   "price": 360000000,
+   "priceWon": 360000000,
    "floor": 7,
    "exclusiveArea": 59.76,
    "areaGroup": 60,
@@ -106,7 +108,7 @@
   },
   {
    "contractDate": "2026-04-18",
-   "price": 350000000,
+   "priceWon": 350000000,
    "floor": 8,
    "exclusiveArea": 59.76,
    "areaGroup": 60,
@@ -115,7 +117,7 @@
   },
   {
    "contractDate": "2026-04-08",
-   "price": 493000000,
+   "priceWon": 493000000,
    "floor": 18,
    "exclusiveArea": 69.08,
    "areaGroup": 69,
@@ -124,7 +126,7 @@
   },
   {
    "contractDate": "2026-03-22",
-   "price": 508000000,
+   "priceWon": 508000000,
    "floor": 11,
    "exclusiveArea": 69.08,
    "areaGroup": 69,
@@ -133,7 +135,7 @@
   },
   {
    "contractDate": "2026-03-08",
-   "price": 528000000,
+   "priceWon": 528000000,
    "floor": 12,
    "exclusiveArea": 69.08,
    "areaGroup": 69,
@@ -142,7 +144,7 @@
   },
   {
    "contractDate": "2026-03-07",
-   "price": 353000000,
+   "priceWon": 353000000,
    "floor": 13,
    "exclusiveArea": 59.76,
    "areaGroup": 60,
@@ -151,7 +153,7 @@
   },
   {
    "contractDate": "2026-02-25",
-   "price": 365000000,
+   "priceWon": 365000000,
    "floor": 2,
    "exclusiveArea": 59.76,
    "areaGroup": 60,
@@ -160,12 +162,19 @@
   },
   {
    "contractDate": "2026-02-07",
-   "price": 505000000,
+   "priceWon": 505000000,
    "floor": 18,
    "exclusiveArea": 69.08,
    "areaGroup": 69,
    "dealType": "중개거래",
    "cancellationStatus": "CANCELLED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.6679956830468,
+  "longitude": 126.761300006156,
+  "roadAddress": "경기 고양시 일산서구 강선로 33",
+  "jibunAddress": "경기 고양시 일산서구 주엽동 101",
+  "geocodeStatus": "valid"
+ }
 }

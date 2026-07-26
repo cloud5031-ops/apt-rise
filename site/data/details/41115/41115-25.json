@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "41115-25",
  "apartmentName": "꽃뫼양지마을대우",
  "sidoCode": "41",
@@ -14,7 +16,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-29",
-   "price": 810000000,
+   "priceWon": 810000000,
    "floor": 7,
    "exclusiveArea": 117.5163,
    "areaGroup": 118,
@@ -23,7 +25,7 @@
   },
   {
    "contractDate": "2026-06-05",
-   "price": 780000000,
+   "priceWon": 780000000,
    "floor": 12,
    "exclusiveArea": 117.5163,
    "areaGroup": 118,
@@ -32,7 +34,7 @@
   },
   {
    "contractDate": "2026-05-08",
-   "price": 600000000,
+   "priceWon": 600000000,
    "floor": 14,
    "exclusiveArea": 117.5163,
    "areaGroup": 118,
@@ -41,12 +43,19 @@
   },
   {
    "contractDate": "2026-03-13",
-   "price": 810000000,
+   "priceWon": 810000000,
    "floor": 14,
    "exclusiveArea": 117.5163,
    "areaGroup": 118,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.285373485111,
+  "longitude": 126.985113429785,
+  "roadAddress": "경기 수원시 팔달구 수성로101번길 20",
+  "jibunAddress": "경기 수원시 팔달구 화서동 703",
+  "geocodeStatus": "valid"
+ }
 }

@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "41450-423",
  "apartmentName": "감일센트레빌",
  "sidoCode": "41",
@@ -18,7 +20,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-26",
-   "price": 1060000000,
+   "priceWon": 1060000000,
    "floor": 17,
    "exclusiveArea": 51.76,
    "areaGroup": 52,
@@ -27,7 +29,7 @@
   },
   {
    "contractDate": "2026-06-26",
-   "price": 1160000000,
+   "priceWon": 1160000000,
    "floor": 8,
    "exclusiveArea": 59.92,
    "areaGroup": 60,
@@ -36,7 +38,7 @@
   },
   {
    "contractDate": "2026-06-24",
-   "price": 1300000000,
+   "priceWon": 1300000000,
    "floor": 10,
    "exclusiveArea": 84.75,
    "areaGroup": 85,
@@ -45,7 +47,7 @@
   },
   {
    "contractDate": "2026-06-16",
-   "price": 1185000000,
+   "priceWon": 1185000000,
    "floor": 17,
    "exclusiveArea": 59.92,
    "areaGroup": 60,
@@ -54,7 +56,7 @@
   },
   {
    "contractDate": "2026-06-04",
-   "price": 1313000000,
+   "priceWon": 1313000000,
    "floor": 25,
    "exclusiveArea": 84.75,
    "areaGroup": 85,
@@ -63,7 +65,7 @@
   },
   {
    "contractDate": "2026-05-26",
-   "price": 1250000000,
+   "priceWon": 1250000000,
    "floor": 2,
    "exclusiveArea": 84.75,
    "areaGroup": 85,
@@ -72,7 +74,7 @@
   },
   {
    "contractDate": "2026-05-22",
-   "price": 1170000000,
+   "priceWon": 1170000000,
    "floor": 22,
    "exclusiveArea": 59.92,
    "areaGroup": 60,
@@ -81,7 +83,7 @@
   },
   {
    "contractDate": "2026-05-16",
-   "price": 980000000,
+   "priceWon": 980000000,
    "floor": 24,
    "exclusiveArea": 51.76,
    "areaGroup": 52,
@@ -90,7 +92,7 @@
   },
   {
    "contractDate": "2026-05-16",
-   "price": 1320000000,
+   "priceWon": 1320000000,
    "floor": 17,
    "exclusiveArea": 84.75,
    "areaGroup": 85,
@@ -99,7 +101,7 @@
   },
   {
    "contractDate": "2026-05-09",
-   "price": 975000000,
+   "priceWon": 975000000,
    "floor": 7,
    "exclusiveArea": 51.76,
    "areaGroup": 52,
@@ -108,7 +110,7 @@
   },
   {
    "contractDate": "2026-05-09",
-   "price": 1170000000,
+   "priceWon": 1170000000,
    "floor": 12,
    "exclusiveArea": 59.89,
    "areaGroup": 60,
@@ -117,7 +119,7 @@
   },
   {
    "contractDate": "2026-05-09",
-   "price": 1295000000,
+   "priceWon": 1295000000,
    "floor": 19,
    "exclusiveArea": 84.75,
    "areaGroup": 85,
@@ -126,7 +128,7 @@
   },
   {
    "contractDate": "2026-04-18",
-   "price": 950000000,
+   "priceWon": 950000000,
    "floor": 12,
    "exclusiveArea": 51.76,
    "areaGroup": 52,
@@ -135,7 +137,7 @@
   },
   {
    "contractDate": "2026-04-18",
-   "price": 1245000000,
+   "priceWon": 1245000000,
    "floor": 11,
    "exclusiveArea": 74.82,
    "areaGroup": 75,
@@ -144,7 +146,7 @@
   },
   {
    "contractDate": "2026-04-06",
-   "price": 1100000000,
+   "priceWon": 1100000000,
    "floor": 9,
    "exclusiveArea": 59.92,
    "areaGroup": 60,
@@ -153,7 +155,7 @@
   },
   {
    "contractDate": "2026-04-04",
-   "price": 1270000000,
+   "priceWon": 1270000000,
    "floor": 18,
    "exclusiveArea": 84.75,
    "areaGroup": 85,
@@ -162,7 +164,7 @@
   },
   {
    "contractDate": "2026-03-28",
-   "price": 1200000000,
+   "priceWon": 1200000000,
    "floor": 16,
    "exclusiveArea": 74.82,
    "areaGroup": 75,
@@ -171,7 +173,7 @@
   },
   {
    "contractDate": "2026-03-17",
-   "price": 1230000000,
+   "priceWon": 1230000000,
    "floor": 13,
    "exclusiveArea": 84.75,
    "areaGroup": 85,
@@ -180,7 +182,7 @@
   },
   {
    "contractDate": "2026-02-13",
-   "price": 1085000000,
+   "priceWon": 1085000000,
    "floor": 4,
    "exclusiveArea": 74.82,
    "areaGroup": 75,
@@ -189,7 +191,7 @@
   },
   {
    "contractDate": "2026-02-13",
-   "price": 1165000000,
+   "priceWon": 1165000000,
    "floor": 10,
    "exclusiveArea": 84.75,
    "areaGroup": 85,
@@ -198,12 +200,19 @@
   },
   {
    "contractDate": "2026-02-07",
-   "price": 850000000,
+   "priceWon": 850000000,
    "floor": 4,
    "exclusiveArea": 51.76,
    "areaGroup": 52,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.4986070398606,
+  "longitude": 127.162189726255,
+  "roadAddress": "경기 하남시 감일백제로 35",
+  "jibunAddress": "경기 하남시 감이동 535",
+  "geocodeStatus": "valid"
+ }
 }

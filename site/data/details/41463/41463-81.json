@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "41463-81",
  "apartmentName": "용화마을태영데시앙1",
  "sidoCode": "41",
@@ -14,7 +16,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-30",
-   "price": 783000000,
+   "priceWon": 783000000,
    "floor": 1,
    "exclusiveArea": 84.817,
    "areaGroup": 85,
@@ -23,7 +25,7 @@
   },
   {
    "contractDate": "2026-06-25",
-   "price": 870000000,
+   "priceWon": 870000000,
    "floor": 7,
    "exclusiveArea": 84.817,
    "areaGroup": 85,
@@ -32,7 +34,7 @@
   },
   {
    "contractDate": "2026-06-23",
-   "price": 850000000,
+   "priceWon": 850000000,
    "floor": 9,
    "exclusiveArea": 84.817,
    "areaGroup": 85,
@@ -41,7 +43,7 @@
   },
   {
    "contractDate": "2026-06-15",
-   "price": 690000000,
+   "priceWon": 690000000,
    "floor": 1,
    "exclusiveArea": 84.817,
    "areaGroup": 85,
@@ -50,7 +52,7 @@
   },
   {
    "contractDate": "2026-05-29",
-   "price": 750000000,
+   "priceWon": 750000000,
    "floor": 9,
    "exclusiveArea": 84.817,
    "areaGroup": 85,
@@ -59,7 +61,7 @@
   },
   {
    "contractDate": "2026-05-16",
-   "price": 770000000,
+   "priceWon": 770000000,
    "floor": 12,
    "exclusiveArea": 84.817,
    "areaGroup": 85,
@@ -68,7 +70,7 @@
   },
   {
    "contractDate": "2026-05-07",
-   "price": 770000000,
+   "priceWon": 770000000,
    "floor": 14,
    "exclusiveArea": 84.817,
    "areaGroup": 85,
@@ -77,7 +79,7 @@
   },
   {
    "contractDate": "2026-03-23",
-   "price": 780000000,
+   "priceWon": 780000000,
    "floor": 10,
    "exclusiveArea": 84.817,
    "areaGroup": 85,
@@ -86,7 +88,7 @@
   },
   {
    "contractDate": "2026-03-05",
-   "price": 743000000,
+   "priceWon": 743000000,
    "floor": 7,
    "exclusiveArea": 84.817,
    "areaGroup": 85,
@@ -95,12 +97,19 @@
   },
   {
    "contractDate": "2026-02-04",
-   "price": 750000000,
+   "priceWon": 750000000,
    "floor": 13,
    "exclusiveArea": 84.817,
    "areaGroup": 85,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.2939964442792,
+  "longitude": 127.113327936697,
+  "roadAddress": "경기 용인시 기흥구 구성로 28",
+  "jibunAddress": "경기 용인시 기흥구 마북동 619",
+  "geocodeStatus": "valid"
+ }
 }

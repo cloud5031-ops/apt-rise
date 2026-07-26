@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "41360-4165",
  "apartmentName": "다산유보라마크뷰",
  "sidoCode": "41",
@@ -17,7 +19,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-23",
-   "price": 692000000,
+   "priceWon": 692000000,
    "floor": 32,
    "exclusiveArea": 59.75,
    "areaGroup": 60,
@@ -26,7 +28,7 @@
   },
   {
    "contractDate": "2026-06-12",
-   "price": 690000000,
+   "priceWon": 690000000,
    "floor": 18,
    "exclusiveArea": 59.75,
    "areaGroup": 60,
@@ -35,7 +37,7 @@
   },
   {
    "contractDate": "2026-06-06",
-   "price": 490000000,
+   "priceWon": 490000000,
    "floor": 3,
    "exclusiveArea": 47.99,
    "areaGroup": 48,
@@ -44,7 +46,7 @@
   },
   {
    "contractDate": "2026-06-06",
-   "price": 705000000,
+   "priceWon": 705000000,
    "floor": 17,
    "exclusiveArea": 59.75,
    "areaGroup": 60,
@@ -53,7 +55,7 @@
   },
   {
    "contractDate": "2026-06-05",
-   "price": 690000000,
+   "priceWon": 690000000,
    "floor": 7,
    "exclusiveArea": 59.98,
    "areaGroup": 60,
@@ -62,7 +64,7 @@
   },
   {
    "contractDate": "2026-05-18",
-   "price": 670000000,
+   "priceWon": 670000000,
    "floor": 17,
    "exclusiveArea": 59.98,
    "areaGroup": 60,
@@ -71,7 +73,7 @@
   },
   {
    "contractDate": "2026-05-15",
-   "price": 696000000,
+   "priceWon": 696000000,
    "floor": 13,
    "exclusiveArea": 67.99,
    "areaGroup": 68,
@@ -80,7 +82,7 @@
   },
   {
    "contractDate": "2026-05-07",
-   "price": 695000000,
+   "priceWon": 695000000,
    "floor": 12,
    "exclusiveArea": 67.99,
    "areaGroup": 68,
@@ -89,7 +91,7 @@
   },
   {
    "contractDate": "2026-04-24",
-   "price": 650000000,
+   "priceWon": 650000000,
    "floor": 25,
    "exclusiveArea": 59.98,
    "areaGroup": 60,
@@ -98,7 +100,7 @@
   },
   {
    "contractDate": "2026-04-09",
-   "price": 630000000,
+   "priceWon": 630000000,
    "floor": 5,
    "exclusiveArea": 59.75,
    "areaGroup": 60,
@@ -107,7 +109,7 @@
   },
   {
    "contractDate": "2026-03-11",
-   "price": 635000000,
+   "priceWon": 635000000,
    "floor": 11,
    "exclusiveArea": 59.75,
    "areaGroup": 60,
@@ -116,7 +118,7 @@
   },
   {
    "contractDate": "2026-02-25",
-   "price": 665000000,
+   "priceWon": 665000000,
    "floor": 23,
    "exclusiveArea": 59.75,
    "areaGroup": 60,
@@ -125,12 +127,19 @@
   },
   {
    "contractDate": "2026-02-25",
-   "price": 690000000,
+   "priceWon": 690000000,
    "floor": 15,
    "exclusiveArea": 67.99,
    "areaGroup": 68,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.6054415832639,
+  "longitude": 127.154146190412,
+  "roadAddress": "경기 남양주시 경춘로 355",
+  "jibunAddress": "경기 남양주시 다산동 4438",
+  "geocodeStatus": "valid"
+ }
 }

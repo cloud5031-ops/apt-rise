@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "41173-2114",
  "apartmentName": "힐스테이트비산파크뷰",
  "sidoCode": "41",
@@ -15,7 +17,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-29",
-   "price": 760000000,
+   "priceWon": 760000000,
    "floor": 8,
    "exclusiveArea": 59.9085,
    "areaGroup": 60,
@@ -24,7 +26,7 @@
   },
   {
    "contractDate": "2026-06-27",
-   "price": 790000000,
+   "priceWon": 790000000,
    "floor": 25,
    "exclusiveArea": 59.9085,
    "areaGroup": 60,
@@ -33,7 +35,7 @@
   },
   {
    "contractDate": "2026-06-11",
-   "price": 865000000,
+   "priceWon": 865000000,
    "floor": 6,
    "exclusiveArea": 76.7856,
    "areaGroup": 77,
@@ -42,7 +44,7 @@
   },
   {
    "contractDate": "2026-06-01",
-   "price": 850000000,
+   "priceWon": 850000000,
    "floor": 16,
    "exclusiveArea": 76.7856,
    "areaGroup": 77,
@@ -51,7 +53,7 @@
   },
   {
    "contractDate": "2026-05-30",
-   "price": 776000000,
+   "priceWon": 776000000,
    "floor": 13,
    "exclusiveArea": 59.9085,
    "areaGroup": 60,
@@ -60,7 +62,7 @@
   },
   {
    "contractDate": "2026-05-30",
-   "price": 760000000,
+   "priceWon": 760000000,
    "floor": 23,
    "exclusiveArea": 59.9085,
    "areaGroup": 60,
@@ -69,7 +71,7 @@
   },
   {
    "contractDate": "2026-05-30",
-   "price": 810000000,
+   "priceWon": 810000000,
    "floor": 15,
    "exclusiveArea": 76.7856,
    "areaGroup": 77,
@@ -78,7 +80,7 @@
   },
   {
    "contractDate": "2026-05-26",
-   "price": 870000000,
+   "priceWon": 870000000,
    "floor": 13,
    "exclusiveArea": 76.7856,
    "areaGroup": 77,
@@ -87,7 +89,7 @@
   },
   {
    "contractDate": "2026-04-27",
-   "price": 710000000,
+   "priceWon": 710000000,
    "floor": 2,
    "exclusiveArea": 59.9085,
    "areaGroup": 60,
@@ -96,7 +98,7 @@
   },
   {
    "contractDate": "2026-04-03",
-   "price": 830000000,
+   "priceWon": 830000000,
    "floor": 6,
    "exclusiveArea": 76.7856,
    "areaGroup": 77,
@@ -105,7 +107,7 @@
   },
   {
    "contractDate": "2026-03-28",
-   "price": 810000000,
+   "priceWon": 810000000,
    "floor": 3,
    "exclusiveArea": 76.7856,
    "areaGroup": 77,
@@ -114,7 +116,7 @@
   },
   {
    "contractDate": "2026-03-24",
-   "price": 813000000,
+   "priceWon": 813000000,
    "floor": 6,
    "exclusiveArea": 76.7856,
    "areaGroup": 77,
@@ -123,7 +125,7 @@
   },
   {
    "contractDate": "2026-02-26",
-   "price": 735000000,
+   "priceWon": 735000000,
    "floor": 13,
    "exclusiveArea": 59.9085,
    "areaGroup": 60,
@@ -132,7 +134,7 @@
   },
   {
    "contractDate": "2026-02-23",
-   "price": 795000000,
+   "priceWon": 795000000,
    "floor": 2,
    "exclusiveArea": 76.7856,
    "areaGroup": 77,
@@ -141,7 +143,7 @@
   },
   {
    "contractDate": "2026-02-20",
-   "price": 730000000,
+   "priceWon": 730000000,
    "floor": 11,
    "exclusiveArea": 59.9085,
    "areaGroup": 60,
@@ -150,7 +152,7 @@
   },
   {
    "contractDate": "2026-02-20",
-   "price": 740000000,
+   "priceWon": 740000000,
    "floor": 9,
    "exclusiveArea": 59.9085,
    "areaGroup": 60,
@@ -159,12 +161,19 @@
   },
   {
    "contractDate": "2026-02-20",
-   "price": 860000000,
+   "priceWon": 860000000,
    "floor": 5,
    "exclusiveArea": 76.7856,
    "areaGroup": 77,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.405395652942,
+  "longitude": 126.934421458406,
+  "roadAddress": "경기 안양시 동안구 임곡로 70",
+  "jibunAddress": "경기 안양시 동안구 비산동 1198",
+  "geocodeStatus": "valid"
+ }
 }

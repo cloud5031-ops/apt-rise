@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "41111-28",
  "apartmentName": "비단마을영풍",
  "sidoCode": "41",
@@ -14,7 +16,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-26",
-   "price": 678000000,
+   "priceWon": 678000000,
    "floor": 2,
    "exclusiveArea": 122.8433,
    "areaGroup": 123,
@@ -23,7 +25,7 @@
   },
   {
    "contractDate": "2026-06-24",
-   "price": 770000000,
+   "priceWon": 770000000,
    "floor": 8,
    "exclusiveArea": 122.8433,
    "areaGroup": 123,
@@ -32,7 +34,7 @@
   },
   {
    "contractDate": "2026-05-06",
-   "price": 500000000,
+   "priceWon": 500000000,
    "floor": 12,
    "exclusiveArea": 122.8433,
    "areaGroup": 123,
@@ -41,7 +43,7 @@
   },
   {
    "contractDate": "2026-04-03",
-   "price": 680000000,
+   "priceWon": 680000000,
    "floor": 14,
    "exclusiveArea": 122.8433,
    "areaGroup": 123,
@@ -50,7 +52,7 @@
   },
   {
    "contractDate": "2026-03-10",
-   "price": 678000000,
+   "priceWon": 678000000,
    "floor": 2,
    "exclusiveArea": 122.8433,
    "areaGroup": 123,
@@ -59,7 +61,7 @@
   },
   {
    "contractDate": "2026-03-05",
-   "price": 665000000,
+   "priceWon": 665000000,
    "floor": 1,
    "exclusiveArea": 122.8433,
    "areaGroup": 123,
@@ -68,12 +70,19 @@
   },
   {
    "contractDate": "2026-02-10",
-   "price": 750000000,
+   "priceWon": 750000000,
    "floor": 4,
    "exclusiveArea": 122.8433,
    "areaGroup": 123,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.2984868862975,
+  "longitude": 126.983497086225,
+  "roadAddress": "경기 수원시 장안구 덕영대로535번길 67",
+  "jibunAddress": "경기 수원시 장안구 천천동 514",
+  "geocodeStatus": "valid"
+ }
 }

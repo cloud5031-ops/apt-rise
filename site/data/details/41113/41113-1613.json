@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "41113-1613",
  "apartmentName": "수원아이파크시티3단지",
  "sidoCode": "41",
@@ -19,7 +21,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-23",
-   "price": 685000000,
+   "priceWon": 685000000,
    "floor": 6,
    "exclusiveArea": 84.866,
    "areaGroup": 85,
@@ -28,7 +30,7 @@
   },
   {
    "contractDate": "2026-06-22",
-   "price": 780000000,
+   "priceWon": 780000000,
    "floor": 4,
    "exclusiveArea": 148.651,
    "areaGroup": 149,
@@ -37,7 +39,7 @@
   },
   {
    "contractDate": "2026-06-11",
-   "price": 695000000,
+   "priceWon": 695000000,
    "floor": 11,
    "exclusiveArea": 84.764,
    "areaGroup": 85,
@@ -46,7 +48,7 @@
   },
   {
    "contractDate": "2026-06-05",
-   "price": 605000000,
+   "priceWon": 605000000,
    "floor": 10,
    "exclusiveArea": 84.913,
    "areaGroup": 85,
@@ -55,7 +57,7 @@
   },
   {
    "contractDate": "2026-06-04",
-   "price": 810000000,
+   "priceWon": 810000000,
    "floor": 2,
    "exclusiveArea": 134.911,
    "areaGroup": 135,
@@ -64,7 +66,7 @@
   },
   {
    "contractDate": "2026-05-27",
-   "price": 645000000,
+   "priceWon": 645000000,
    "floor": 7,
    "exclusiveArea": 84.764,
    "areaGroup": 85,
@@ -73,7 +75,7 @@
   },
   {
    "contractDate": "2026-05-16",
-   "price": 640000000,
+   "priceWon": 640000000,
    "floor": 10,
    "exclusiveArea": 84.866,
    "areaGroup": 85,
@@ -82,7 +84,7 @@
   },
   {
    "contractDate": "2026-05-16",
-   "price": 652000000,
+   "priceWon": 652000000,
    "floor": 13,
    "exclusiveArea": 84.866,
    "areaGroup": 85,
@@ -91,7 +93,7 @@
   },
   {
    "contractDate": "2026-04-28",
-   "price": 818000000,
+   "priceWon": 818000000,
    "floor": 4,
    "exclusiveArea": 148.651,
    "areaGroup": 149,
@@ -100,7 +102,7 @@
   },
   {
    "contractDate": "2026-04-12",
-   "price": 640000000,
+   "priceWon": 640000000,
    "floor": 10,
    "exclusiveArea": 84.764,
    "areaGroup": 85,
@@ -109,7 +111,7 @@
   },
   {
    "contractDate": "2026-04-04",
-   "price": 820000000,
+   "priceWon": 820000000,
    "floor": 6,
    "exclusiveArea": 123.609,
    "areaGroup": 124,
@@ -118,7 +120,7 @@
   },
   {
    "contractDate": "2026-03-29",
-   "price": 600000000,
+   "priceWon": 600000000,
    "floor": 10,
    "exclusiveArea": 84.866,
    "areaGroup": 85,
@@ -127,7 +129,7 @@
   },
   {
    "contractDate": "2026-03-10",
-   "price": 810000000,
+   "priceWon": 810000000,
    "floor": 13,
    "exclusiveArea": 123.609,
    "areaGroup": 124,
@@ -136,7 +138,7 @@
   },
   {
    "contractDate": "2026-03-09",
-   "price": 625000000,
+   "priceWon": 625000000,
    "floor": 10,
    "exclusiveArea": 84.866,
    "areaGroup": 85,
@@ -145,7 +147,7 @@
   },
   {
    "contractDate": "2026-03-09",
-   "price": 620000000,
+   "priceWon": 620000000,
    "floor": 7,
    "exclusiveArea": 84.764,
    "areaGroup": 85,
@@ -154,7 +156,7 @@
   },
   {
    "contractDate": "2026-02-12",
-   "price": 630000000,
+   "priceWon": 630000000,
    "floor": 12,
    "exclusiveArea": 84.764,
    "areaGroup": 85,
@@ -163,7 +165,7 @@
   },
   {
    "contractDate": "2026-02-11",
-   "price": 597000000,
+   "priceWon": 597000000,
    "floor": 1,
    "exclusiveArea": 84.866,
    "areaGroup": 85,
@@ -172,12 +174,19 @@
   },
   {
    "contractDate": "2026-02-06",
-   "price": 705000000,
+   "priceWon": 705000000,
    "floor": 4,
    "exclusiveArea": 84.764,
    "areaGroup": 85,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.2426423520904,
+  "longitude": 127.025968230731,
+  "roadAddress": "경기 수원시 권선구 동수원로145번길 73",
+  "jibunAddress": "경기 수원시 권선구 권선동 1359",
+  "geocodeStatus": "valid"
+ }
 }

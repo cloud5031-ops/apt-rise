@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "41310-25",
  "apartmentName": "구리(우성)",
  "sidoCode": "41",
@@ -17,7 +19,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-17",
-   "price": 1040000000,
+   "priceWon": 1040000000,
    "floor": 1,
    "exclusiveArea": 133.93,
    "areaGroup": 134,
@@ -26,7 +28,7 @@
   },
   {
    "contractDate": "2026-06-16",
-   "price": 1032000000,
+   "priceWon": 1032000000,
    "floor": 12,
    "exclusiveArea": 84.9,
    "areaGroup": 85,
@@ -35,7 +37,7 @@
   },
   {
    "contractDate": "2026-05-31",
-   "price": 828000000,
+   "priceWon": 828000000,
    "floor": 13,
    "exclusiveArea": 60.56,
    "areaGroup": 61,
@@ -44,7 +46,7 @@
   },
   {
    "contractDate": "2026-05-22",
-   "price": 850000000,
+   "priceWon": 850000000,
    "floor": 7,
    "exclusiveArea": 60.56,
    "areaGroup": 61,
@@ -53,7 +55,7 @@
   },
   {
    "contractDate": "2026-05-16",
-   "price": 1000000000,
+   "priceWon": 1000000000,
    "floor": 13,
    "exclusiveArea": 84.9,
    "areaGroup": 85,
@@ -62,7 +64,7 @@
   },
   {
    "contractDate": "2026-05-11",
-   "price": 840000000,
+   "priceWon": 840000000,
    "floor": 1,
    "exclusiveArea": 84.9,
    "areaGroup": 85,
@@ -71,7 +73,7 @@
   },
   {
    "contractDate": "2026-05-04",
-   "price": 845000000,
+   "priceWon": 845000000,
    "floor": 7,
    "exclusiveArea": 60.56,
    "areaGroup": 61,
@@ -80,7 +82,7 @@
   },
   {
    "contractDate": "2026-04-26",
-   "price": 798000000,
+   "priceWon": 798000000,
    "floor": 2,
    "exclusiveArea": 60.56,
    "areaGroup": 61,
@@ -89,7 +91,7 @@
   },
   {
    "contractDate": "2026-04-18",
-   "price": 800000000,
+   "priceWon": 800000000,
    "floor": 9,
    "exclusiveArea": 60.56,
    "areaGroup": 61,
@@ -98,7 +100,7 @@
   },
   {
    "contractDate": "2026-04-15",
-   "price": 1090000000,
+   "priceWon": 1090000000,
    "floor": 9,
    "exclusiveArea": 101.37,
    "areaGroup": 101,
@@ -107,7 +109,7 @@
   },
   {
    "contractDate": "2026-04-13",
-   "price": 1065000000,
+   "priceWon": 1065000000,
    "floor": 7,
    "exclusiveArea": 101.37,
    "areaGroup": 101,
@@ -116,7 +118,7 @@
   },
   {
    "contractDate": "2026-04-06",
-   "price": 790000000,
+   "priceWon": 790000000,
    "floor": 10,
    "exclusiveArea": 60.56,
    "areaGroup": 61,
@@ -125,7 +127,7 @@
   },
   {
    "contractDate": "2026-03-28",
-   "price": 940000000,
+   "priceWon": 940000000,
    "floor": 18,
    "exclusiveArea": 84.9,
    "areaGroup": 85,
@@ -134,7 +136,7 @@
   },
   {
    "contractDate": "2026-03-26",
-   "price": 980000000,
+   "priceWon": 980000000,
    "floor": 13,
    "exclusiveArea": 84.9,
    "areaGroup": 85,
@@ -143,7 +145,7 @@
   },
   {
    "contractDate": "2026-03-08",
-   "price": 850000000,
+   "priceWon": 850000000,
    "floor": 1,
    "exclusiveArea": 84.9,
    "areaGroup": 85,
@@ -152,7 +154,7 @@
   },
   {
    "contractDate": "2026-02-14",
-   "price": 730000000,
+   "priceWon": 730000000,
    "floor": 14,
    "exclusiveArea": 60.56,
    "areaGroup": 61,
@@ -161,7 +163,7 @@
   },
   {
    "contractDate": "2026-02-09",
-   "price": 695000000,
+   "priceWon": 695000000,
    "floor": 9,
    "exclusiveArea": 60.56,
    "areaGroup": 61,
@@ -170,12 +172,19 @@
   },
   {
    "contractDate": "2026-02-05",
-   "price": 1100000000,
+   "priceWon": 1100000000,
    "floor": 13,
    "exclusiveArea": 101.37,
    "areaGroup": 101,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.5889118422907,
+  "longitude": 127.137046193663,
+  "roadAddress": "경기 구리시 체육관로 45",
+  "jibunAddress": "경기 구리시 교문동 809-2",
+  "geocodeStatus": "valid"
+ }
 }

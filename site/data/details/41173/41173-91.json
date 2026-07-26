@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "41173-91",
  "apartmentName": "꿈마을한신",
  "sidoCode": "41",
@@ -14,7 +16,7 @@
  "transactions": [
   {
    "contractDate": "2026-05-30",
-   "price": 1690000000,
+   "priceWon": 1690000000,
    "floor": 8,
    "exclusiveArea": 96.66,
    "areaGroup": 97,
@@ -23,7 +25,7 @@
   },
   {
    "contractDate": "2026-05-13",
-   "price": 1650000000,
+   "priceWon": 1650000000,
    "floor": 10,
    "exclusiveArea": 96.66,
    "areaGroup": 97,
@@ -32,7 +34,7 @@
   },
   {
    "contractDate": "2026-03-16",
-   "price": 1435000000,
+   "priceWon": 1435000000,
    "floor": 1,
    "exclusiveArea": 96.66,
    "areaGroup": 97,
@@ -41,7 +43,7 @@
   },
   {
    "contractDate": "2026-02-13",
-   "price": 1600000000,
+   "priceWon": 1600000000,
    "floor": 2,
    "exclusiveArea": 96.66,
    "areaGroup": 97,
@@ -50,12 +52,19 @@
   },
   {
    "contractDate": "2026-02-04",
-   "price": 1585000000,
+   "priceWon": 1585000000,
    "floor": 14,
    "exclusiveArea": 96.66,
    "areaGroup": 97,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.3841236555686,
+  "longitude": 126.966322315571,
+  "roadAddress": "경기 안양시 동안구 관평로 68",
+  "jibunAddress": "경기 안양시 동안구 평촌동 932-4",
+  "geocodeStatus": "valid"
+ }
 }

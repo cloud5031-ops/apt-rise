@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "41465-311",
  "apartmentName": "성복아이파크",
  "sidoCode": "41",
@@ -19,7 +21,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-20",
-   "price": 770000000,
+   "priceWon": 770000000,
    "floor": 4,
    "exclusiveArea": 84.731,
    "areaGroup": 85,
@@ -28,7 +30,7 @@
   },
   {
    "contractDate": "2026-06-17",
-   "price": 870000000,
+   "priceWon": 870000000,
    "floor": 13,
    "exclusiveArea": 124.824,
    "areaGroup": 125,
@@ -37,7 +39,7 @@
   },
   {
    "contractDate": "2026-06-12",
-   "price": 798000000,
+   "priceWon": 798000000,
    "floor": 12,
    "exclusiveArea": 105.548,
    "areaGroup": 106,
@@ -46,7 +48,7 @@
   },
   {
    "contractDate": "2026-06-06",
-   "price": 810000000,
+   "priceWon": 810000000,
    "floor": 8,
    "exclusiveArea": 105.548,
    "areaGroup": 106,
@@ -55,7 +57,7 @@
   },
   {
    "contractDate": "2026-06-03",
-   "price": 815000000,
+   "priceWon": 815000000,
    "floor": 16,
    "exclusiveArea": 105.548,
    "areaGroup": 106,
@@ -64,7 +66,7 @@
   },
   {
    "contractDate": "2026-05-30",
-   "price": 840000000,
+   "priceWon": 840000000,
    "floor": 17,
    "exclusiveArea": 105.548,
    "areaGroup": 106,
@@ -73,7 +75,7 @@
   },
   {
    "contractDate": "2026-05-23",
-   "price": 790000000,
+   "priceWon": 790000000,
    "floor": 13,
    "exclusiveArea": 105.548,
    "areaGroup": 106,
@@ -82,7 +84,7 @@
   },
   {
    "contractDate": "2026-05-21",
-   "price": 770000000,
+   "priceWon": 770000000,
    "floor": 5,
    "exclusiveArea": 84.948,
    "areaGroup": 85,
@@ -91,7 +93,7 @@
   },
   {
    "contractDate": "2026-05-05",
-   "price": 780000000,
+   "priceWon": 780000000,
    "floor": 10,
    "exclusiveArea": 84.914,
    "areaGroup": 85,
@@ -100,7 +102,7 @@
   },
   {
    "contractDate": "2026-04-22",
-   "price": 770000000,
+   "priceWon": 770000000,
    "floor": 13,
    "exclusiveArea": 84.731,
    "areaGroup": 85,
@@ -109,7 +111,7 @@
   },
   {
    "contractDate": "2026-04-18",
-   "price": 780000000,
+   "priceWon": 780000000,
    "floor": 3,
    "exclusiveArea": 84.914,
    "areaGroup": 85,
@@ -118,7 +120,7 @@
   },
   {
    "contractDate": "2026-04-03",
-   "price": 760000000,
+   "priceWon": 760000000,
    "floor": 7,
    "exclusiveArea": 84.914,
    "areaGroup": 85,
@@ -127,7 +129,7 @@
   },
   {
    "contractDate": "2026-03-26",
-   "price": 810000000,
+   "priceWon": 810000000,
    "floor": 10,
    "exclusiveArea": 105.548,
    "areaGroup": 106,
@@ -136,7 +138,7 @@
   },
   {
    "contractDate": "2026-03-17",
-   "price": 787000000,
+   "priceWon": 787000000,
    "floor": 15,
    "exclusiveArea": 84.891,
    "areaGroup": 85,
@@ -145,7 +147,7 @@
   },
   {
    "contractDate": "2026-02-14",
-   "price": 678000000,
+   "priceWon": 678000000,
    "floor": 1,
    "exclusiveArea": 84.731,
    "areaGroup": 85,
@@ -154,7 +156,7 @@
   },
   {
    "contractDate": "2026-02-12",
-   "price": 730000000,
+   "priceWon": 730000000,
    "floor": 2,
    "exclusiveArea": 105.548,
    "areaGroup": 106,
@@ -163,12 +165,19 @@
   },
   {
    "contractDate": "2026-02-09",
-   "price": 760000000,
+   "priceWon": 760000000,
    "floor": 15,
    "exclusiveArea": 105.548,
    "areaGroup": 106,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.3224748418518,
+  "longitude": 127.06162824111,
+  "roadAddress": "경기 용인시 수지구 성복1로 222",
+  "jibunAddress": "경기 용인시 수지구 성복동 780",
+  "geocodeStatus": "valid"
+ }
 }

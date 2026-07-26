@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "11500-156",
  "apartmentName": "한보구암마을",
  "sidoCode": "11",
@@ -17,7 +19,7 @@
  "transactions": [
   {
    "contractDate": "2026-05-29",
-   "price": 780000000,
+   "priceWon": 780000000,
    "floor": 1,
    "exclusiveArea": 59.58,
    "areaGroup": 60,
@@ -26,7 +28,7 @@
   },
   {
    "contractDate": "2026-05-15",
-   "price": 705000000,
+   "priceWon": 705000000,
    "floor": 1,
    "exclusiveArea": 59.22,
    "areaGroup": 59,
@@ -35,7 +37,7 @@
   },
   {
    "contractDate": "2026-05-13",
-   "price": 1090000000,
+   "priceWon": 1090000000,
    "floor": 17,
    "exclusiveArea": 84.39,
    "areaGroup": 84,
@@ -44,7 +46,7 @@
   },
   {
    "contractDate": "2026-05-05",
-   "price": 1027000000,
+   "priceWon": 1027000000,
    "floor": 11,
    "exclusiveArea": 84.39,
    "areaGroup": 84,
@@ -53,7 +55,7 @@
   },
   {
    "contractDate": "2026-04-29",
-   "price": 865000000,
+   "priceWon": 865000000,
    "floor": 6,
    "exclusiveArea": 59.58,
    "areaGroup": 60,
@@ -62,7 +64,7 @@
   },
   {
    "contractDate": "2026-04-23",
-   "price": 1072000000,
+   "priceWon": 1072000000,
    "floor": 5,
    "exclusiveArea": 84.39,
    "areaGroup": 84,
@@ -71,7 +73,7 @@
   },
   {
    "contractDate": "2026-04-22",
-   "price": 1125000000,
+   "priceWon": 1125000000,
    "floor": 14,
    "exclusiveArea": 84.39,
    "areaGroup": 84,
@@ -80,7 +82,7 @@
   },
   {
    "contractDate": "2026-04-21",
-   "price": 965000000,
+   "priceWon": 965000000,
    "floor": 14,
    "exclusiveArea": 84.39,
    "areaGroup": 84,
@@ -89,7 +91,7 @@
   },
   {
    "contractDate": "2026-04-18",
-   "price": 855000000,
+   "priceWon": 855000000,
    "floor": 2,
    "exclusiveArea": 59.58,
    "areaGroup": 60,
@@ -98,7 +100,7 @@
   },
   {
    "contractDate": "2026-04-17",
-   "price": 810000000,
+   "priceWon": 810000000,
    "floor": 8,
    "exclusiveArea": 59.58,
    "areaGroup": 60,
@@ -107,7 +109,7 @@
   },
   {
    "contractDate": "2026-04-15",
-   "price": 750000000,
+   "priceWon": 750000000,
    "floor": 2,
    "exclusiveArea": 59.58,
    "areaGroup": 60,
@@ -116,7 +118,7 @@
   },
   {
    "contractDate": "2026-03-30",
-   "price": 900000000,
+   "priceWon": 900000000,
    "floor": 1,
    "exclusiveArea": 84.39,
    "areaGroup": 84,
@@ -125,7 +127,7 @@
   },
   {
    "contractDate": "2026-03-03",
-   "price": 1000000000,
+   "priceWon": 1000000000,
    "floor": 9,
    "exclusiveArea": 84.39,
    "areaGroup": 84,
@@ -134,12 +136,19 @@
   },
   {
    "contractDate": "2026-02-04",
-   "price": 770000000,
+   "priceWon": 770000000,
    "floor": 5,
    "exclusiveArea": 59.85,
    "areaGroup": 60,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.5680830400427,
+  "longitude": 126.849068747878,
+  "roadAddress": "서울 강서구 허준로 76",
+  "jibunAddress": "서울 강서구 가양동 1495",
+  "geocodeStatus": "valid"
+ }
 }

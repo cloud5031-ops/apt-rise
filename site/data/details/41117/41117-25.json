@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "41117-25",
  "apartmentName": "주공그린빌4",
  "sidoCode": "41",
@@ -17,7 +19,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-27",
-   "price": 530000000,
+   "priceWon": 530000000,
    "floor": 11,
    "exclusiveArea": 75.95,
    "areaGroup": 76,
@@ -26,7 +28,7 @@
   },
   {
    "contractDate": "2026-06-12",
-   "price": 530000000,
+   "priceWon": 530000000,
    "floor": 3,
    "exclusiveArea": 84.45,
    "areaGroup": 84,
@@ -35,7 +37,7 @@
   },
   {
    "contractDate": "2026-06-04",
-   "price": 520000000,
+   "priceWon": 520000000,
    "floor": 15,
    "exclusiveArea": 75.95,
    "areaGroup": 76,
@@ -44,7 +46,7 @@
   },
   {
    "contractDate": "2026-05-21",
-   "price": 470000000,
+   "priceWon": 470000000,
    "floor": 3,
    "exclusiveArea": 75.95,
    "areaGroup": 76,
@@ -53,7 +55,7 @@
   },
   {
    "contractDate": "2026-05-18",
-   "price": 518000000,
+   "priceWon": 518000000,
    "floor": 7,
    "exclusiveArea": 84.51,
    "areaGroup": 85,
@@ -62,7 +64,7 @@
   },
   {
    "contractDate": "2026-05-09",
-   "price": 550000000,
+   "priceWon": 550000000,
    "floor": 10,
    "exclusiveArea": 75.95,
    "areaGroup": 76,
@@ -71,7 +73,7 @@
   },
   {
    "contractDate": "2026-05-08",
-   "price": 478000000,
+   "priceWon": 478000000,
    "floor": 7,
    "exclusiveArea": 84.45,
    "areaGroup": 84,
@@ -80,7 +82,7 @@
   },
   {
    "contractDate": "2026-05-07",
-   "price": 505000000,
+   "priceWon": 505000000,
    "floor": 12,
    "exclusiveArea": 84.45,
    "areaGroup": 84,
@@ -89,7 +91,7 @@
   },
   {
    "contractDate": "2026-05-04",
-   "price": 490000000,
+   "priceWon": 490000000,
    "floor": 3,
    "exclusiveArea": 84.45,
    "areaGroup": 84,
@@ -98,7 +100,7 @@
   },
   {
    "contractDate": "2026-05-01",
-   "price": 540000000,
+   "priceWon": 540000000,
    "floor": 6,
    "exclusiveArea": 84.45,
    "areaGroup": 84,
@@ -107,7 +109,7 @@
   },
   {
    "contractDate": "2026-04-21",
-   "price": 510000000,
+   "priceWon": 510000000,
    "floor": 15,
    "exclusiveArea": 84.51,
    "areaGroup": 85,
@@ -116,7 +118,7 @@
   },
   {
    "contractDate": "2026-04-20",
-   "price": 482000000,
+   "priceWon": 482000000,
    "floor": 8,
    "exclusiveArea": 75.95,
    "areaGroup": 76,
@@ -125,7 +127,7 @@
   },
   {
    "contractDate": "2026-04-18",
-   "price": 500000000,
+   "priceWon": 500000000,
    "floor": 11,
    "exclusiveArea": 75.95,
    "areaGroup": 76,
@@ -134,7 +136,7 @@
   },
   {
    "contractDate": "2026-04-17",
-   "price": 475000000,
+   "priceWon": 475000000,
    "floor": 9,
    "exclusiveArea": 75.95,
    "areaGroup": 76,
@@ -143,7 +145,7 @@
   },
   {
    "contractDate": "2026-04-14",
-   "price": 490000000,
+   "priceWon": 490000000,
    "floor": 14,
    "exclusiveArea": 75.95,
    "areaGroup": 76,
@@ -152,7 +154,7 @@
   },
   {
    "contractDate": "2026-04-04",
-   "price": 510000000,
+   "priceWon": 510000000,
    "floor": 4,
    "exclusiveArea": 75.95,
    "areaGroup": 76,
@@ -161,7 +163,7 @@
   },
   {
    "contractDate": "2026-03-21",
-   "price": 515000000,
+   "priceWon": 515000000,
    "floor": 10,
    "exclusiveArea": 84.45,
    "areaGroup": 84,
@@ -170,7 +172,7 @@
   },
   {
    "contractDate": "2026-03-13",
-   "price": 493000000,
+   "priceWon": 493000000,
    "floor": 2,
    "exclusiveArea": 84.45,
    "areaGroup": 84,
@@ -179,7 +181,7 @@
   },
   {
    "contractDate": "2026-02-27",
-   "price": 545000000,
+   "priceWon": 545000000,
    "floor": 11,
    "exclusiveArea": 84.45,
    "areaGroup": 84,
@@ -188,7 +190,7 @@
   },
   {
    "contractDate": "2026-02-09",
-   "price": 520000000,
+   "priceWon": 520000000,
    "floor": 5,
    "exclusiveArea": 84.45,
    "areaGroup": 84,
@@ -197,12 +199,19 @@
   },
   {
    "contractDate": "2026-02-04",
-   "price": 536000000,
+   "priceWon": 536000000,
    "floor": 13,
    "exclusiveArea": 84.71,
    "areaGroup": 85,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.2555948625064,
+  "longitude": 127.043733913637,
+  "roadAddress": "경기 수원시 영통구 동탄원천로915번길 33",
+  "jibunAddress": "경기 수원시 영통구 매탄동 1280",
+  "geocodeStatus": "valid"
+ }
 }

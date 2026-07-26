@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "11530-98",
  "apartmentName": "금강",
  "sidoCode": "11",
@@ -17,7 +19,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-20",
-   "price": 550000000,
+   "priceWon": 550000000,
    "floor": 10,
    "exclusiveArea": 84.96,
    "areaGroup": 85,
@@ -26,7 +28,7 @@
   },
   {
    "contractDate": "2026-06-13",
-   "price": 490000000,
+   "priceWon": 490000000,
    "floor": 11,
    "exclusiveArea": 84.96,
    "areaGroup": 85,
@@ -35,7 +37,7 @@
   },
   {
    "contractDate": "2026-05-25",
-   "price": 370000000,
+   "priceWon": 370000000,
    "floor": 13,
    "exclusiveArea": 59.83,
    "areaGroup": 60,
@@ -44,7 +46,7 @@
   },
   {
    "contractDate": "2026-05-23",
-   "price": 383000000,
+   "priceWon": 383000000,
    "floor": 5,
    "exclusiveArea": 59.28,
    "areaGroup": 59,
@@ -53,7 +55,7 @@
   },
   {
    "contractDate": "2026-05-19",
-   "price": 450000000,
+   "priceWon": 450000000,
    "floor": 8,
    "exclusiveArea": 84.96,
    "areaGroup": 85,
@@ -62,7 +64,7 @@
   },
   {
    "contractDate": "2026-04-23",
-   "price": 350000000,
+   "priceWon": 350000000,
    "floor": 8,
    "exclusiveArea": 84.96,
    "areaGroup": 85,
@@ -71,7 +73,7 @@
   },
   {
    "contractDate": "2026-04-04",
-   "price": 495000000,
+   "priceWon": 495000000,
    "floor": 10,
    "exclusiveArea": 84.96,
    "areaGroup": 85,
@@ -80,7 +82,7 @@
   },
   {
    "contractDate": "2026-03-16",
-   "price": 380000000,
+   "priceWon": 380000000,
    "floor": 13,
    "exclusiveArea": 54.92,
    "areaGroup": 55,
@@ -89,12 +91,19 @@
   },
   {
    "contractDate": "2026-02-07",
-   "price": 370000000,
+   "priceWon": 370000000,
    "floor": 15,
    "exclusiveArea": 59.28,
    "areaGroup": 59,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.4929926320806,
+  "longitude": 126.847646600597,
+  "roadAddress": "서울 구로구 서해안로34가길 18",
+  "jibunAddress": "서울 구로구 오류동 335",
+  "geocodeStatus": "valid"
+ }
 }

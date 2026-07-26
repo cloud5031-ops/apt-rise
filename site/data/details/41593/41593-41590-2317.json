@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "41593-41590-2317",
  "apartmentName": "힐스테이트봉담프라이드시티",
  "sidoCode": "41",
@@ -18,7 +20,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-28",
-   "price": 520000000,
+   "priceWon": 520000000,
    "floor": 7,
    "exclusiveArea": 72.6719,
    "areaGroup": 73,
@@ -27,7 +29,7 @@
   },
   {
    "contractDate": "2026-06-16",
-   "price": 475000000,
+   "priceWon": 475000000,
    "floor": 31,
    "exclusiveArea": 72.6572,
    "areaGroup": 73,
@@ -36,7 +38,7 @@
   },
   {
    "contractDate": "2026-06-09",
-   "price": 450000000,
+   "priceWon": 450000000,
    "floor": 16,
    "exclusiveArea": 59.6481,
    "areaGroup": 60,
@@ -45,7 +47,7 @@
   },
   {
    "contractDate": "2026-06-02",
-   "price": 455000000,
+   "priceWon": 455000000,
    "floor": 23,
    "exclusiveArea": 59.6481,
    "areaGroup": 60,
@@ -54,7 +56,7 @@
   },
   {
    "contractDate": "2026-05-25",
-   "price": 415000000,
+   "priceWon": 415000000,
    "floor": 30,
    "exclusiveArea": 59.6481,
    "areaGroup": 60,
@@ -63,7 +65,7 @@
   },
   {
    "contractDate": "2026-05-22",
-   "price": 450000000,
+   "priceWon": 450000000,
    "floor": 6,
    "exclusiveArea": 72.0506,
    "areaGroup": 72,
@@ -72,7 +74,7 @@
   },
   {
    "contractDate": "2026-05-19",
-   "price": 540000000,
+   "priceWon": 540000000,
    "floor": 16,
    "exclusiveArea": 72.0506,
    "areaGroup": 72,
@@ -81,7 +83,7 @@
   },
   {
    "contractDate": "2026-04-27",
-   "price": 465000000,
+   "priceWon": 465000000,
    "floor": 5,
    "exclusiveArea": 59.6538,
    "areaGroup": 60,
@@ -90,7 +92,7 @@
   },
   {
    "contractDate": "2026-03-13",
-   "price": 505000000,
+   "priceWon": 505000000,
    "floor": 33,
    "exclusiveArea": 72.6719,
    "areaGroup": 73,
@@ -99,12 +101,19 @@
   },
   {
    "contractDate": "2026-03-05",
-   "price": 400000000,
+   "priceWon": 400000000,
    "floor": 21,
    "exclusiveArea": 59.6481,
    "areaGroup": 60,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.223715037003,
+  "longitude": 126.923979118722,
+  "roadAddress": "경기 화성시 효행구 봉담읍 삼봉안길 76",
+  "jibunAddress": "경기 화성시 효행구 봉담읍 내리 882",
+  "geocodeStatus": "valid"
+ }
 }

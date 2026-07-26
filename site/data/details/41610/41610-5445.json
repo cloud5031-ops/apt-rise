@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "41610-5445",
  "apartmentName": "이편한세상광주역4단지",
  "sidoCode": "41",
@@ -18,7 +20,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-21",
-   "price": 669000000,
+   "priceWon": 669000000,
    "floor": 11,
    "exclusiveArea": 73.1383,
    "areaGroup": 73,
@@ -27,7 +29,7 @@
   },
   {
    "contractDate": "2026-05-28",
-   "price": 725000000,
+   "priceWon": 725000000,
    "floor": 15,
    "exclusiveArea": 84.9099,
    "areaGroup": 85,
@@ -36,7 +38,7 @@
   },
   {
    "contractDate": "2026-05-27",
-   "price": 710000000,
+   "priceWon": 710000000,
    "floor": 6,
    "exclusiveArea": 84.9099,
    "areaGroup": 85,
@@ -45,7 +47,7 @@
   },
   {
    "contractDate": "2026-05-27",
-   "price": 727000000,
+   "priceWon": 727000000,
    "floor": 14,
    "exclusiveArea": 84.9099,
    "areaGroup": 85,
@@ -54,7 +56,7 @@
   },
   {
    "contractDate": "2026-05-16",
-   "price": 655000000,
+   "priceWon": 655000000,
    "floor": 2,
    "exclusiveArea": 73.2292,
    "areaGroup": 73,
@@ -63,7 +65,7 @@
   },
   {
    "contractDate": "2026-04-26",
-   "price": 690000000,
+   "priceWon": 690000000,
    "floor": 6,
    "exclusiveArea": 84.9099,
    "areaGroup": 85,
@@ -72,7 +74,7 @@
   },
   {
    "contractDate": "2026-04-21",
-   "price": 600000000,
+   "priceWon": 600000000,
    "floor": 6,
    "exclusiveArea": 59.7449,
    "areaGroup": 60,
@@ -81,7 +83,7 @@
   },
   {
    "contractDate": "2026-04-20",
-   "price": 695000000,
+   "priceWon": 695000000,
    "floor": 18,
    "exclusiveArea": 84.9099,
    "areaGroup": 85,
@@ -90,7 +92,7 @@
   },
   {
    "contractDate": "2026-04-18",
-   "price": 635000000,
+   "priceWon": 635000000,
    "floor": 7,
    "exclusiveArea": 73.1383,
    "areaGroup": 73,
@@ -99,7 +101,7 @@
   },
   {
    "contractDate": "2026-04-05",
-   "price": 620000000,
+   "priceWon": 620000000,
    "floor": 14,
    "exclusiveArea": 73.1383,
    "areaGroup": 73,
@@ -108,7 +110,7 @@
   },
   {
    "contractDate": "2026-04-01",
-   "price": 655000000,
+   "priceWon": 655000000,
    "floor": 4,
    "exclusiveArea": 84.9099,
    "areaGroup": 85,
@@ -117,7 +119,7 @@
   },
   {
    "contractDate": "2026-03-21",
-   "price": 600000000,
+   "priceWon": 600000000,
    "floor": 15,
    "exclusiveArea": 59.7449,
    "areaGroup": 60,
@@ -126,7 +128,7 @@
   },
   {
    "contractDate": "2026-03-20",
-   "price": 585000000,
+   "priceWon": 585000000,
    "floor": 14,
    "exclusiveArea": 59.7449,
    "areaGroup": 60,
@@ -135,7 +137,7 @@
   },
   {
    "contractDate": "2026-03-07",
-   "price": 677000000,
+   "priceWon": 677000000,
    "floor": 13,
    "exclusiveArea": 84.9099,
    "areaGroup": 85,
@@ -144,7 +146,7 @@
   },
   {
    "contractDate": "2026-03-03",
-   "price": 650000000,
+   "priceWon": 650000000,
    "floor": 11,
    "exclusiveArea": 73.2808,
    "areaGroup": 73,
@@ -153,7 +155,7 @@
   },
   {
    "contractDate": "2026-02-28",
-   "price": 665000000,
+   "priceWon": 665000000,
    "floor": 4,
    "exclusiveArea": 84.9099,
    "areaGroup": 85,
@@ -162,12 +164,19 @@
   },
   {
    "contractDate": "2026-02-21",
-   "price": 600000000,
+   "priceWon": 600000000,
    "floor": 7,
    "exclusiveArea": 59.7449,
    "areaGroup": 60,
    "dealType": "중개거래",
    "cancellationStatus": "CANCELLED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.398840488762,
+  "longitude": 127.247097430042,
+  "roadAddress": "경기 광주시 순암로36번길 61",
+  "jibunAddress": "경기 광주시 역동 246",
+  "geocodeStatus": "valid"
+ }
 }

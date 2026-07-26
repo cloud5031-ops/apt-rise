@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "11200-42",
  "apartmentName": "옥수삼성",
  "sidoCode": "11",
@@ -16,7 +18,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-18",
-   "price": 2140000000,
+   "priceWon": 2140000000,
    "floor": 2,
    "exclusiveArea": 84.822,
    "areaGroup": 85,
@@ -25,7 +27,7 @@
   },
   {
    "contractDate": "2026-06-04",
-   "price": 1870000000,
+   "priceWon": 1870000000,
    "floor": 14,
    "exclusiveArea": 59.7,
    "areaGroup": 60,
@@ -34,7 +36,7 @@
   },
   {
    "contractDate": "2026-06-01",
-   "price": 2180000000,
+   "priceWon": 2180000000,
    "floor": 9,
    "exclusiveArea": 114.666,
    "areaGroup": 115,
@@ -43,7 +45,7 @@
   },
   {
    "contractDate": "2026-05-29",
-   "price": 1950000000,
+   "priceWon": 1950000000,
    "floor": 9,
    "exclusiveArea": 59.7,
    "areaGroup": 60,
@@ -52,7 +54,7 @@
   },
   {
    "contractDate": "2026-05-29",
-   "price": 1960000000,
+   "priceWon": 1960000000,
    "floor": 18,
    "exclusiveArea": 59.7,
    "areaGroup": 60,
@@ -61,7 +63,7 @@
   },
   {
    "contractDate": "2026-05-27",
-   "price": 2350000000,
+   "priceWon": 2350000000,
    "floor": 3,
    "exclusiveArea": 114.666,
    "areaGroup": 115,
@@ -70,7 +72,7 @@
   },
   {
    "contractDate": "2026-05-16",
-   "price": 1945000000,
+   "priceWon": 1945000000,
    "floor": 4,
    "exclusiveArea": 59.7,
    "areaGroup": 60,
@@ -79,7 +81,7 @@
   },
   {
    "contractDate": "2026-05-16",
-   "price": 1800000000,
+   "priceWon": 1800000000,
    "floor": 2,
    "exclusiveArea": 59.7,
    "areaGroup": 60,
@@ -88,7 +90,7 @@
   },
   {
    "contractDate": "2026-05-15",
-   "price": 1950000000,
+   "priceWon": 1950000000,
    "floor": 4,
    "exclusiveArea": 59.7,
    "areaGroup": 60,
@@ -97,7 +99,7 @@
   },
   {
    "contractDate": "2026-05-08",
-   "price": 1750000000,
+   "priceWon": 1750000000,
    "floor": 2,
    "exclusiveArea": 59.7,
    "areaGroup": 60,
@@ -106,7 +108,7 @@
   },
   {
    "contractDate": "2026-04-25",
-   "price": 2320000000,
+   "priceWon": 2320000000,
    "floor": 8,
    "exclusiveArea": 84.822,
    "areaGroup": 85,
@@ -115,7 +117,7 @@
   },
   {
    "contractDate": "2026-04-24",
-   "price": 1880000000,
+   "priceWon": 1880000000,
    "floor": 5,
    "exclusiveArea": 59.7,
    "areaGroup": 60,
@@ -124,7 +126,7 @@
   },
   {
    "contractDate": "2026-03-26",
-   "price": 1840000000,
+   "priceWon": 1840000000,
    "floor": 1,
    "exclusiveArea": 59.7,
    "areaGroup": 60,
@@ -133,7 +135,7 @@
   },
   {
    "contractDate": "2026-03-25",
-   "price": 2000000000,
+   "priceWon": 2000000000,
    "floor": 12,
    "exclusiveArea": 59.7,
    "areaGroup": 60,
@@ -142,7 +144,7 @@
   },
   {
    "contractDate": "2026-03-04",
-   "price": 2050000000,
+   "priceWon": 2050000000,
    "floor": 12,
    "exclusiveArea": 59.7,
    "areaGroup": 60,
@@ -151,7 +153,7 @@
   },
   {
    "contractDate": "2026-02-21",
-   "price": 1860000000,
+   "priceWon": 1860000000,
    "floor": 1,
    "exclusiveArea": 59.7,
    "areaGroup": 60,
@@ -160,12 +162,19 @@
   },
   {
    "contractDate": "2026-02-21",
-   "price": 2300000000,
+   "priceWon": 2300000000,
    "floor": 10,
    "exclusiveArea": 84.822,
    "areaGroup": 85,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.5424312325016,
+  "longitude": 127.014052103004,
+  "roadAddress": "서울 성동구 독서당로 218",
+  "jibunAddress": "서울 성동구 옥수동 250",
+  "geocodeStatus": "valid"
+ }
 }

@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "41111-63",
  "apartmentName": "화서역 위너스 파크",
  "sidoCode": "41",
@@ -16,7 +18,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-25",
-   "price": 657000000,
+   "priceWon": 657000000,
    "floor": 10,
    "exclusiveArea": 84.45,
    "areaGroup": 84,
@@ -25,7 +27,7 @@
   },
   {
    "contractDate": "2026-06-22",
-   "price": 687000000,
+   "priceWon": 687000000,
    "floor": 10,
    "exclusiveArea": 84.51,
    "areaGroup": 85,
@@ -34,7 +36,7 @@
   },
   {
    "contractDate": "2026-06-10",
-   "price": 710000000,
+   "priceWon": 710000000,
    "floor": 22,
    "exclusiveArea": 84.45,
    "areaGroup": 84,
@@ -43,7 +45,7 @@
   },
   {
    "contractDate": "2026-06-03",
-   "price": 720000000,
+   "priceWon": 720000000,
    "floor": 12,
    "exclusiveArea": 84.45,
    "areaGroup": 84,
@@ -52,7 +54,7 @@
   },
   {
    "contractDate": "2026-05-15",
-   "price": 665000000,
+   "priceWon": 665000000,
    "floor": 16,
    "exclusiveArea": 84.51,
    "areaGroup": 85,
@@ -61,7 +63,7 @@
   },
   {
    "contractDate": "2026-05-12",
-   "price": 660000000,
+   "priceWon": 660000000,
    "floor": 8,
    "exclusiveArea": 84.71,
    "areaGroup": 85,
@@ -70,7 +72,7 @@
   },
   {
    "contractDate": "2026-05-02",
-   "price": 628000000,
+   "priceWon": 628000000,
    "floor": 5,
    "exclusiveArea": 84.45,
    "areaGroup": 84,
@@ -79,7 +81,7 @@
   },
   {
    "contractDate": "2026-04-16",
-   "price": 640000000,
+   "priceWon": 640000000,
    "floor": 20,
    "exclusiveArea": 84.51,
    "areaGroup": 85,
@@ -88,7 +90,7 @@
   },
   {
    "contractDate": "2026-04-14",
-   "price": 622000000,
+   "priceWon": 622000000,
    "floor": 24,
    "exclusiveArea": 84.45,
    "areaGroup": 84,
@@ -97,7 +99,7 @@
   },
   {
    "contractDate": "2026-04-10",
-   "price": 620000000,
+   "priceWon": 620000000,
    "floor": 12,
    "exclusiveArea": 84.45,
    "areaGroup": 84,
@@ -106,7 +108,7 @@
   },
   {
    "contractDate": "2026-04-04",
-   "price": 600000000,
+   "priceWon": 600000000,
    "floor": 8,
    "exclusiveArea": 84.45,
    "areaGroup": 84,
@@ -115,7 +117,7 @@
   },
   {
    "contractDate": "2026-03-27",
-   "price": 600000000,
+   "priceWon": 600000000,
    "floor": 15,
    "exclusiveArea": 84.45,
    "areaGroup": 84,
@@ -124,7 +126,7 @@
   },
   {
    "contractDate": "2026-03-11",
-   "price": 640000000,
+   "priceWon": 640000000,
    "floor": 14,
    "exclusiveArea": 84.51,
    "areaGroup": 85,
@@ -133,7 +135,7 @@
   },
   {
    "contractDate": "2026-03-10",
-   "price": 595000000,
+   "priceWon": 595000000,
    "floor": 5,
    "exclusiveArea": 84.45,
    "areaGroup": 84,
@@ -142,7 +144,7 @@
   },
   {
    "contractDate": "2026-02-04",
-   "price": 597000000,
+   "priceWon": 597000000,
    "floor": 14,
    "exclusiveArea": 84.45,
    "areaGroup": 84,
@@ -151,12 +153,19 @@
   },
   {
    "contractDate": "2026-02-02",
-   "price": 590000000,
+   "priceWon": 590000000,
    "floor": 16,
    "exclusiveArea": 84.45,
    "areaGroup": 84,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.2924483051762,
+  "longitude": 126.985492324029,
+  "roadAddress": "경기 수원시 장안구 천천로21번길 33",
+  "jibunAddress": "경기 수원시 장안구 정자동 922",
+  "geocodeStatus": "valid"
+ }
 }

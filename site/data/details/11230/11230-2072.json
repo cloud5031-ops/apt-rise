@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "11230-2072",
  "apartmentName": "동일스위트리버",
  "sidoCode": "11",
@@ -15,7 +17,7 @@
  "transactions": [
   {
    "contractDate": "2026-05-30",
-   "price": 842000000,
+   "priceWon": 842000000,
    "floor": 2,
    "exclusiveArea": 59.732,
    "areaGroup": 60,
@@ -24,7 +26,7 @@
   },
   {
    "contractDate": "2026-05-28",
-   "price": 950000000,
+   "priceWon": 950000000,
    "floor": 15,
    "exclusiveArea": 84.973,
    "areaGroup": 85,
@@ -33,7 +35,7 @@
   },
   {
    "contractDate": "2026-05-08",
-   "price": 990000000,
+   "priceWon": 990000000,
    "floor": 12,
    "exclusiveArea": 84.973,
    "areaGroup": 85,
@@ -42,7 +44,7 @@
   },
   {
    "contractDate": "2026-05-05",
-   "price": 850000000,
+   "priceWon": 850000000,
    "floor": 1,
    "exclusiveArea": 84.973,
    "areaGroup": 85,
@@ -51,7 +53,7 @@
   },
   {
    "contractDate": "2026-04-28",
-   "price": 900000000,
+   "priceWon": 900000000,
    "floor": 1,
    "exclusiveArea": 84.973,
    "areaGroup": 85,
@@ -60,7 +62,7 @@
   },
   {
    "contractDate": "2026-03-17",
-   "price": 800000000,
+   "priceWon": 800000000,
    "floor": 4,
    "exclusiveArea": 59.732,
    "areaGroup": 60,
@@ -69,7 +71,7 @@
   },
   {
    "contractDate": "2026-02-21",
-   "price": 898000000,
+   "priceWon": 898000000,
    "floor": 18,
    "exclusiveArea": 84.973,
    "areaGroup": 85,
@@ -78,7 +80,7 @@
   },
   {
    "contractDate": "2026-02-14",
-   "price": 880000000,
+   "priceWon": 880000000,
    "floor": 2,
    "exclusiveArea": 84.973,
    "areaGroup": 85,
@@ -87,12 +89,19 @@
   },
   {
    "contractDate": "2026-02-10",
-   "price": 883000000,
+   "priceWon": 883000000,
    "floor": 13,
    "exclusiveArea": 84.973,
    "areaGroup": 85,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.5874102629887,
+  "longitude": 127.068693094024,
+  "roadAddress": "서울 동대문구 한천로 300",
+  "jibunAddress": "서울 동대문구 휘경동 366",
+  "geocodeStatus": "valid"
+ }
 }

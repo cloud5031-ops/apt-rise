@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "11560-2141",
  "apartmentName": "e편한세상영등포아델포레",
  "sidoCode": "11",
@@ -18,7 +20,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-19",
-   "price": 1560000000,
+   "priceWon": 1560000000,
    "floor": 5,
    "exclusiveArea": 84.9948,
    "areaGroup": 85,
@@ -27,7 +29,7 @@
   },
   {
    "contractDate": "2026-06-16",
-   "price": 1450000000,
+   "priceWon": 1450000000,
    "floor": 10,
    "exclusiveArea": 59.968,
    "areaGroup": 60,
@@ -36,7 +38,7 @@
   },
   {
    "contractDate": "2026-06-15",
-   "price": 1570000000,
+   "priceWon": 1570000000,
    "floor": 6,
    "exclusiveArea": 84.9948,
    "areaGroup": 85,
@@ -45,7 +47,7 @@
   },
   {
    "contractDate": "2026-06-13",
-   "price": 1450000000,
+   "priceWon": 1450000000,
    "floor": 16,
    "exclusiveArea": 59.968,
    "areaGroup": 60,
@@ -54,7 +56,7 @@
   },
   {
    "contractDate": "2026-06-09",
-   "price": 1630000000,
+   "priceWon": 1630000000,
    "floor": 11,
    "exclusiveArea": 84.995,
    "areaGroup": 85,
@@ -63,7 +65,7 @@
   },
   {
    "contractDate": "2026-06-03",
-   "price": 1550000000,
+   "priceWon": 1550000000,
    "floor": 2,
    "exclusiveArea": 84.9948,
    "areaGroup": 85,
@@ -72,7 +74,7 @@
   },
   {
    "contractDate": "2026-05-25",
-   "price": 1400000000,
+   "priceWon": 1400000000,
    "floor": 17,
    "exclusiveArea": 59.968,
    "areaGroup": 60,
@@ -81,7 +83,7 @@
   },
   {
    "contractDate": "2026-05-22",
-   "price": 1515000000,
+   "priceWon": 1515000000,
    "floor": 3,
    "exclusiveArea": 84.9948,
    "areaGroup": 85,
@@ -90,7 +92,7 @@
   },
   {
    "contractDate": "2026-05-19",
-   "price": 1530000000,
+   "priceWon": 1530000000,
    "floor": 8,
    "exclusiveArea": 84.9948,
    "areaGroup": 85,
@@ -99,7 +101,7 @@
   },
   {
    "contractDate": "2026-05-10",
-   "price": 1500000000,
+   "priceWon": 1500000000,
    "floor": 11,
    "exclusiveArea": 84.9948,
    "areaGroup": 85,
@@ -108,7 +110,7 @@
   },
   {
    "contractDate": "2026-05-04",
-   "price": 1430000000,
+   "priceWon": 1430000000,
    "floor": 16,
    "exclusiveArea": 59.9792,
    "areaGroup": 60,
@@ -117,7 +119,7 @@
   },
   {
    "contractDate": "2026-04-30",
-   "price": 1480000000,
+   "priceWon": 1480000000,
    "floor": 2,
    "exclusiveArea": 84.9571,
    "areaGroup": 85,
@@ -126,7 +128,7 @@
   },
   {
    "contractDate": "2026-04-09",
-   "price": 1560000000,
+   "priceWon": 1560000000,
    "floor": 17,
    "exclusiveArea": 84.9571,
    "areaGroup": 85,
@@ -135,7 +137,7 @@
   },
   {
    "contractDate": "2026-04-04",
-   "price": 1360000000,
+   "priceWon": 1360000000,
    "floor": 7,
    "exclusiveArea": 59.968,
    "areaGroup": 60,
@@ -144,7 +146,7 @@
   },
   {
    "contractDate": "2026-04-04",
-   "price": 1590000000,
+   "priceWon": 1590000000,
    "floor": 10,
    "exclusiveArea": 84.9571,
    "areaGroup": 85,
@@ -153,7 +155,7 @@
   },
   {
    "contractDate": "2026-04-01",
-   "price": 1590000000,
+   "priceWon": 1590000000,
    "floor": 18,
    "exclusiveArea": 84.9948,
    "areaGroup": 85,
@@ -162,7 +164,7 @@
   },
   {
    "contractDate": "2026-02-27",
-   "price": 1560000000,
+   "priceWon": 1560000000,
    "floor": 14,
    "exclusiveArea": 84.995,
    "areaGroup": 85,
@@ -171,12 +173,19 @@
   },
   {
    "contractDate": "2026-02-06",
-   "price": 1370000000,
+   "priceWon": 1370000000,
    "floor": 6,
    "exclusiveArea": 59.968,
    "areaGroup": 60,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.4943934373007,
+  "longitude": 126.90677940214,
+  "roadAddress": "서울 영등포구 신길로 29",
+  "jibunAddress": "서울 영등포구 대림동 1127",
+  "geocodeStatus": "valid"
+ }
 }

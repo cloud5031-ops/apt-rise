@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "41390-1973",
  "apartmentName": "상록힐스테이트",
  "sidoCode": "41",
@@ -14,7 +16,7 @@
  "transactions": [
   {
    "contractDate": "2026-05-09",
-   "price": 557000000,
+   "priceWon": 557000000,
    "floor": 13,
    "exclusiveArea": 85.0,
    "areaGroup": 85,
@@ -23,7 +25,7 @@
   },
   {
    "contractDate": "2026-05-02",
-   "price": 520000000,
+   "priceWon": 520000000,
    "floor": 8,
    "exclusiveArea": 85.0,
    "areaGroup": 85,
@@ -32,7 +34,7 @@
   },
   {
    "contractDate": "2026-05-02",
-   "price": 550000000,
+   "priceWon": 550000000,
    "floor": 12,
    "exclusiveArea": 85.0,
    "areaGroup": 85,
@@ -41,7 +43,7 @@
   },
   {
    "contractDate": "2026-04-18",
-   "price": 465000000,
+   "priceWon": 465000000,
    "floor": 1,
    "exclusiveArea": 85.0,
    "areaGroup": 85,
@@ -50,7 +52,7 @@
   },
   {
    "contractDate": "2026-03-31",
-   "price": 540000000,
+   "priceWon": 540000000,
    "floor": 11,
    "exclusiveArea": 85.0,
    "areaGroup": 85,
@@ -59,7 +61,7 @@
   },
   {
    "contractDate": "2026-03-26",
-   "price": 500000000,
+   "priceWon": 500000000,
    "floor": 4,
    "exclusiveArea": 85.0,
    "areaGroup": 85,
@@ -68,7 +70,7 @@
   },
   {
    "contractDate": "2026-02-06",
-   "price": 540000000,
+   "priceWon": 540000000,
    "floor": 11,
    "exclusiveArea": 85.0,
    "areaGroup": 85,
@@ -77,12 +79,19 @@
   },
   {
    "contractDate": "2026-02-05",
-   "price": 513000000,
+   "priceWon": 513000000,
    "floor": 5,
    "exclusiveArea": 85.0,
    "areaGroup": 85,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.366680338034,
+  "longitude": 126.811256879427,
+  "roadAddress": "경기 시흥시 능곡중앙로 33",
+  "jibunAddress": "경기 시흥시 능곡동 775",
+  "geocodeStatus": "valid"
+ }
 }

@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "11260-103",
  "apartmentName": "동성7",
  "sidoCode": "11",
@@ -15,7 +17,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-29",
-   "price": 595000000,
+   "priceWon": 595000000,
    "floor": 17,
    "exclusiveArea": 59.34,
    "areaGroup": 59,
@@ -24,7 +26,7 @@
   },
   {
    "contractDate": "2026-06-24",
-   "price": 580000000,
+   "priceWon": 580000000,
    "floor": 13,
    "exclusiveArea": 59.34,
    "areaGroup": 59,
@@ -33,7 +35,7 @@
   },
   {
    "contractDate": "2026-06-16",
-   "price": 550000000,
+   "priceWon": 550000000,
    "floor": 6,
    "exclusiveArea": 59.34,
    "areaGroup": 59,
@@ -42,7 +44,7 @@
   },
   {
    "contractDate": "2026-05-28",
-   "price": 540000000,
+   "priceWon": 540000000,
    "floor": 5,
    "exclusiveArea": 59.34,
    "areaGroup": 59,
@@ -51,7 +53,7 @@
   },
   {
    "contractDate": "2026-05-18",
-   "price": 485000000,
+   "priceWon": 485000000,
    "floor": 2,
    "exclusiveArea": 59.34,
    "areaGroup": 59,
@@ -60,7 +62,7 @@
   },
   {
    "contractDate": "2026-05-18",
-   "price": 737000000,
+   "priceWon": 737000000,
    "floor": 4,
    "exclusiveArea": 114.98,
    "areaGroup": 115,
@@ -69,7 +71,7 @@
   },
   {
    "contractDate": "2026-05-13",
-   "price": 530000000,
+   "priceWon": 530000000,
    "floor": 10,
    "exclusiveArea": 59.34,
    "areaGroup": 59,
@@ -78,7 +80,7 @@
   },
   {
    "contractDate": "2026-05-09",
-   "price": 500000000,
+   "priceWon": 500000000,
    "floor": 7,
    "exclusiveArea": 59.34,
    "areaGroup": 59,
@@ -87,7 +89,7 @@
   },
   {
    "contractDate": "2026-03-31",
-   "price": 520000000,
+   "priceWon": 520000000,
    "floor": 9,
    "exclusiveArea": 59.34,
    "areaGroup": 59,
@@ -96,12 +98,19 @@
   },
   {
    "contractDate": "2026-03-14",
-   "price": 528000000,
+   "priceWon": 528000000,
    "floor": 11,
    "exclusiveArea": 59.34,
    "areaGroup": 59,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.6060544878653,
+  "longitude": 127.097141297689,
+  "roadAddress": "서울 중랑구 신내로14길 21",
+  "jibunAddress": "서울 중랑구 신내동 797",
+  "geocodeStatus": "valid"
+ }
 }

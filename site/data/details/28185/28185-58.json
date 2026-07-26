@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "28185-58",
  "apartmentName": "효정",
  "sidoCode": "28",
@@ -14,7 +16,7 @@
  "transactions": [
   {
    "contractDate": "2026-05-30",
-   "price": 420000000,
+   "priceWon": 420000000,
    "floor": 9,
    "exclusiveArea": 84.95,
    "areaGroup": 85,
@@ -23,7 +25,7 @@
   },
   {
    "contractDate": "2026-05-10",
-   "price": 405000000,
+   "priceWon": 405000000,
    "floor": 4,
    "exclusiveArea": 84.95,
    "areaGroup": 85,
@@ -32,7 +34,7 @@
   },
   {
    "contractDate": "2026-03-15",
-   "price": 395000000,
+   "priceWon": 395000000,
    "floor": 2,
    "exclusiveArea": 84.95,
    "areaGroup": 85,
@@ -41,12 +43,19 @@
   },
   {
    "contractDate": "2026-02-06",
-   "price": 360000000,
+   "priceWon": 360000000,
    "floor": 1,
    "exclusiveArea": 84.95,
    "areaGroup": 85,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.4242079553218,
+  "longitude": 126.672017707457,
+  "roadAddress": "인천 연수구 새말로 6",
+  "jibunAddress": "인천 연수구 연수동 537",
+  "geocodeStatus": "valid"
+ }
 }

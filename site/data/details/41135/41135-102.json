@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "41135-102",
  "apartmentName": "시범한신",
  "sidoCode": "41",
@@ -16,7 +18,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-19",
-   "price": 2260000000,
+   "priceWon": 2260000000,
    "floor": 5,
    "exclusiveArea": 84.69,
    "areaGroup": 85,
@@ -25,7 +27,7 @@
   },
   {
    "contractDate": "2026-06-19",
-   "price": 2300000000,
+   "priceWon": 2300000000,
    "floor": 22,
    "exclusiveArea": 84.69,
    "areaGroup": 85,
@@ -34,7 +36,7 @@
   },
   {
    "contractDate": "2026-06-09",
-   "price": 2275000000,
+   "priceWon": 2275000000,
    "floor": 4,
    "exclusiveArea": 84.69,
    "areaGroup": 85,
@@ -43,7 +45,7 @@
   },
   {
    "contractDate": "2026-06-09",
-   "price": 2840000000,
+   "priceWon": 2840000000,
    "floor": 10,
    "exclusiveArea": 133.295,
    "areaGroup": 133,
@@ -52,7 +54,7 @@
   },
   {
    "contractDate": "2026-06-06",
-   "price": 2200000000,
+   "priceWon": 2200000000,
    "floor": 4,
    "exclusiveArea": 84.69,
    "areaGroup": 85,
@@ -61,7 +63,7 @@
   },
   {
    "contractDate": "2026-06-03",
-   "price": 2120000000,
+   "priceWon": 2120000000,
    "floor": 23,
    "exclusiveArea": 84.69,
    "areaGroup": 85,
@@ -70,7 +72,7 @@
   },
   {
    "contractDate": "2026-06-01",
-   "price": 2160000000,
+   "priceWon": 2160000000,
    "floor": 3,
    "exclusiveArea": 84.69,
    "areaGroup": 85,
@@ -79,7 +81,7 @@
   },
   {
    "contractDate": "2026-05-26",
-   "price": 1567000000,
+   "priceWon": 1567000000,
    "floor": 10,
    "exclusiveArea": 133.295,
    "areaGroup": 133,
@@ -88,7 +90,7 @@
   },
   {
    "contractDate": "2026-05-15",
-   "price": 2140000000,
+   "priceWon": 2140000000,
    "floor": 10,
    "exclusiveArea": 84.69,
    "areaGroup": 85,
@@ -97,7 +99,7 @@
   },
   {
    "contractDate": "2026-05-06",
-   "price": 2000000000,
+   "priceWon": 2000000000,
    "floor": 3,
    "exclusiveArea": 84.69,
    "areaGroup": 85,
@@ -106,7 +108,7 @@
   },
   {
    "contractDate": "2026-04-22",
-   "price": 2180000000,
+   "priceWon": 2180000000,
    "floor": 6,
    "exclusiveArea": 84.69,
    "areaGroup": 85,
@@ -115,7 +117,7 @@
   },
   {
    "contractDate": "2026-04-17",
-   "price": 2500000000,
+   "priceWon": 2500000000,
    "floor": 12,
    "exclusiveArea": 133.295,
    "areaGroup": 133,
@@ -124,7 +126,7 @@
   },
   {
    "contractDate": "2026-04-13",
-   "price": 2220000000,
+   "priceWon": 2220000000,
    "floor": 20,
    "exclusiveArea": 84.69,
    "areaGroup": 85,
@@ -133,7 +135,7 @@
   },
   {
    "contractDate": "2026-04-13",
-   "price": 2200000000,
+   "priceWon": 2200000000,
    "floor": 3,
    "exclusiveArea": 84.69,
    "areaGroup": 85,
@@ -142,7 +144,7 @@
   },
   {
    "contractDate": "2026-04-06",
-   "price": 2030000000,
+   "priceWon": 2030000000,
    "floor": 23,
    "exclusiveArea": 84.69,
    "areaGroup": 85,
@@ -151,7 +153,7 @@
   },
   {
    "contractDate": "2026-03-18",
-   "price": 2230000000,
+   "priceWon": 2230000000,
    "floor": 9,
    "exclusiveArea": 84.69,
    "areaGroup": 85,
@@ -160,7 +162,7 @@
   },
   {
    "contractDate": "2026-02-08",
-   "price": 2130000000,
+   "priceWon": 2130000000,
    "floor": 3,
    "exclusiveArea": 84.69,
    "areaGroup": 85,
@@ -169,12 +171,19 @@
   },
   {
    "contractDate": "2026-02-02",
-   "price": 1850000000,
+   "priceWon": 1850000000,
    "floor": 2,
    "exclusiveArea": 59.995,
    "areaGroup": 60,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.3834138569681,
+  "longitude": 127.128341865393,
+  "roadAddress": "경기 성남시 분당구 중앙공원로 53",
+  "jibunAddress": "경기 성남시 분당구 서현동 87",
+  "geocodeStatus": "valid"
+ }
 }

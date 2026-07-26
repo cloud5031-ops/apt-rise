@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "11650-232",
  "apartmentName": "한신서래",
  "sidoCode": "11",
@@ -14,7 +16,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-17",
-   "price": 2990000000,
+   "priceWon": 2990000000,
    "floor": 10,
    "exclusiveArea": 64.53,
    "areaGroup": 65,
@@ -23,7 +25,7 @@
   },
   {
    "contractDate": "2026-06-01",
-   "price": 2900000000,
+   "priceWon": 2900000000,
    "floor": 7,
    "exclusiveArea": 64.53,
    "areaGroup": 65,
@@ -32,7 +34,7 @@
   },
   {
    "contractDate": "2026-04-22",
-   "price": 2680000000,
+   "priceWon": 2680000000,
    "floor": 1,
    "exclusiveArea": 64.53,
    "areaGroup": 65,
@@ -41,12 +43,19 @@
   },
   {
    "contractDate": "2026-03-30",
-   "price": 2770000000,
+   "priceWon": 2770000000,
    "floor": 9,
    "exclusiveArea": 64.53,
    "areaGroup": 65,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.4991035542235,
+  "longitude": 127.000884124091,
+  "roadAddress": "서울 서초구 사평대로28길 31",
+  "jibunAddress": "서울 서초구 반포동 70-1",
+  "geocodeStatus": "valid"
+ }
 }

@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "28185-837",
  "apartmentName": "송도SK뷰센트럴",
  "sidoCode": "28",
@@ -15,7 +17,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-21",
-   "price": 810000000,
+   "priceWon": 810000000,
    "floor": 24,
    "exclusiveArea": 84.7854,
    "areaGroup": 85,
@@ -24,7 +26,7 @@
   },
   {
    "contractDate": "2026-06-20",
-   "price": 815000000,
+   "priceWon": 815000000,
    "floor": 13,
    "exclusiveArea": 84.7854,
    "areaGroup": 85,
@@ -33,7 +35,7 @@
   },
   {
    "contractDate": "2026-06-19",
-   "price": 810000000,
+   "priceWon": 810000000,
    "floor": 2,
    "exclusiveArea": 84.6566,
    "areaGroup": 85,
@@ -42,7 +44,7 @@
   },
   {
    "contractDate": "2026-06-15",
-   "price": 822000000,
+   "priceWon": 822000000,
    "floor": 23,
    "exclusiveArea": 84.6566,
    "areaGroup": 85,
@@ -51,7 +53,7 @@
   },
   {
    "contractDate": "2026-06-12",
-   "price": 850000000,
+   "priceWon": 850000000,
    "floor": 31,
    "exclusiveArea": 84.6566,
    "areaGroup": 85,
@@ -60,7 +62,7 @@
   },
   {
    "contractDate": "2026-06-11",
-   "price": 809000000,
+   "priceWon": 809000000,
    "floor": 33,
    "exclusiveArea": 84.6566,
    "areaGroup": 85,
@@ -69,7 +71,7 @@
   },
   {
    "contractDate": "2026-05-27",
-   "price": 805000000,
+   "priceWon": 805000000,
    "floor": 22,
    "exclusiveArea": 84.7854,
    "areaGroup": 85,
@@ -78,7 +80,7 @@
   },
   {
    "contractDate": "2026-05-24",
-   "price": 825000000,
+   "priceWon": 825000000,
    "floor": 28,
    "exclusiveArea": 84.6566,
    "areaGroup": 85,
@@ -87,7 +89,7 @@
   },
   {
    "contractDate": "2026-05-24",
-   "price": 820000000,
+   "priceWon": 820000000,
    "floor": 13,
    "exclusiveArea": 84.7854,
    "areaGroup": 85,
@@ -96,7 +98,7 @@
   },
   {
    "contractDate": "2026-05-13",
-   "price": 835000000,
+   "priceWon": 835000000,
    "floor": 9,
    "exclusiveArea": 84.6566,
    "areaGroup": 85,
@@ -105,7 +107,7 @@
   },
   {
    "contractDate": "2026-05-07",
-   "price": 835000000,
+   "priceWon": 835000000,
    "floor": 26,
    "exclusiveArea": 84.7854,
    "areaGroup": 85,
@@ -114,7 +116,7 @@
   },
   {
    "contractDate": "2026-05-01",
-   "price": 830000000,
+   "priceWon": 830000000,
    "floor": 35,
    "exclusiveArea": 84.6566,
    "areaGroup": 85,
@@ -123,7 +125,7 @@
   },
   {
    "contractDate": "2026-04-30",
-   "price": 800000000,
+   "priceWon": 800000000,
    "floor": 17,
    "exclusiveArea": 84.6566,
    "areaGroup": 85,
@@ -132,7 +134,7 @@
   },
   {
    "contractDate": "2026-04-01",
-   "price": 810000000,
+   "priceWon": 810000000,
    "floor": 29,
    "exclusiveArea": 84.7854,
    "areaGroup": 85,
@@ -141,7 +143,7 @@
   },
   {
    "contractDate": "2026-03-30",
-   "price": 803000000,
+   "priceWon": 803000000,
    "floor": 14,
    "exclusiveArea": 84.7854,
    "areaGroup": 85,
@@ -150,7 +152,7 @@
   },
   {
    "contractDate": "2026-03-18",
-   "price": 800000000,
+   "priceWon": 800000000,
    "floor": 31,
    "exclusiveArea": 84.6566,
    "areaGroup": 85,
@@ -159,12 +161,19 @@
   },
   {
    "contractDate": "2026-02-13",
-   "price": 750000000,
+   "priceWon": 750000000,
    "floor": 11,
    "exclusiveArea": 84.6566,
    "areaGroup": 85,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.3817478865151,
+  "longitude": 126.639455971775,
+  "roadAddress": "인천 연수구 하모니로188번길 17",
+  "jibunAddress": "인천 연수구 송도동 10-30",
+  "geocodeStatus": "valid"
+ }
 }

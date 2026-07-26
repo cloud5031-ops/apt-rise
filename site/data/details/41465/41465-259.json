@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "41465-259",
  "apartmentName": "현인마을이-편한세상2차",
  "sidoCode": "41",
@@ -14,7 +16,7 @@
  "transactions": [
   {
    "contractDate": "2026-05-25",
-   "price": 1090000000,
+   "priceWon": 1090000000,
    "floor": 11,
    "exclusiveArea": 84.96,
    "areaGroup": 85,
@@ -23,7 +25,7 @@
   },
   {
    "contractDate": "2026-05-23",
-   "price": 1140000000,
+   "priceWon": 1140000000,
    "floor": 10,
    "exclusiveArea": 84.96,
    "areaGroup": 85,
@@ -32,7 +34,7 @@
   },
   {
    "contractDate": "2026-04-29",
-   "price": 1145000000,
+   "priceWon": 1145000000,
    "floor": 7,
    "exclusiveArea": 84.96,
    "areaGroup": 85,
@@ -41,12 +43,19 @@
   },
   {
    "contractDate": "2026-02-27",
-   "price": 700000000,
+   "priceWon": 700000000,
    "floor": 14,
    "exclusiveArea": 84.96,
    "areaGroup": 85,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.3344136987919,
+  "longitude": 127.111216665213,
+  "roadAddress": "경기 용인시 수지구 탄천상로 29",
+  "jibunAddress": "경기 용인시 수지구 죽전동 1153",
+  "geocodeStatus": "valid"
+ }
 }

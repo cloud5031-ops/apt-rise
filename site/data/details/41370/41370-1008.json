@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "41370-1008",
  "apartmentName": "중흥S-클래스에듀파크",
  "sidoCode": "41",
@@ -17,7 +19,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-27",
-   "price": 420000000,
+   "priceWon": 420000000,
    "floor": 6,
    "exclusiveArea": 59.9854,
    "areaGroup": 60,
@@ -26,7 +28,7 @@
   },
   {
    "contractDate": "2026-06-19",
-   "price": 420000000,
+   "priceWon": 420000000,
    "floor": 21,
    "exclusiveArea": 59.9854,
    "areaGroup": 60,
@@ -35,7 +37,7 @@
   },
   {
    "contractDate": "2026-06-17",
-   "price": 457000000,
+   "priceWon": 457000000,
    "floor": 22,
    "exclusiveArea": 59.9784,
    "areaGroup": 60,
@@ -44,7 +46,7 @@
   },
   {
    "contractDate": "2026-06-06",
-   "price": 455000000,
+   "priceWon": 455000000,
    "floor": 12,
    "exclusiveArea": 59.9784,
    "areaGroup": 60,
@@ -53,7 +55,7 @@
   },
   {
    "contractDate": "2026-05-24",
-   "price": 420000000,
+   "priceWon": 420000000,
    "floor": 11,
    "exclusiveArea": 59.9854,
    "areaGroup": 60,
@@ -62,7 +64,7 @@
   },
   {
    "contractDate": "2026-05-12",
-   "price": 455000000,
+   "priceWon": 455000000,
    "floor": 21,
    "exclusiveArea": 59.9784,
    "areaGroup": 60,
@@ -71,7 +73,7 @@
   },
   {
    "contractDate": "2026-04-29",
-   "price": 555000000,
+   "priceWon": 555000000,
    "floor": 16,
    "exclusiveArea": 84.9865,
    "areaGroup": 85,
@@ -80,7 +82,7 @@
   },
   {
    "contractDate": "2026-04-25",
-   "price": 494000000,
+   "priceWon": 494000000,
    "floor": 22,
    "exclusiveArea": 72.961,
    "areaGroup": 73,
@@ -89,7 +91,7 @@
   },
   {
    "contractDate": "2026-03-15",
-   "price": 395000000,
+   "priceWon": 395000000,
    "floor": 13,
    "exclusiveArea": 59.9854,
    "areaGroup": 60,
@@ -98,7 +100,7 @@
   },
   {
    "contractDate": "2026-02-22",
-   "price": 404400000,
+   "priceWon": 404400000,
    "floor": 11,
    "exclusiveArea": 59.9784,
    "areaGroup": 60,
@@ -107,12 +109,19 @@
   },
   {
    "contractDate": "2026-02-11",
-   "price": 425000000,
+   "priceWon": 425000000,
    "floor": 12,
    "exclusiveArea": 59.9784,
    "areaGroup": 60,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.1585335183741,
+  "longitude": 127.047862274408,
+  "roadAddress": "경기 오산시 죽담로 11",
+  "jibunAddress": "경기 오산시 궐동 824",
+  "geocodeStatus": "valid"
+ }
 }

@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "41430-56",
  "apartmentName": "인덕원삼호",
  "sidoCode": "41",
@@ -15,7 +17,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-30",
-   "price": 1210000000,
+   "priceWon": 1210000000,
    "floor": 10,
    "exclusiveArea": 84.99,
    "areaGroup": 85,
@@ -24,7 +26,7 @@
   },
   {
    "contractDate": "2026-06-30",
-   "price": 900000000,
+   "priceWon": 900000000,
    "floor": 3,
    "exclusiveArea": 84.99,
    "areaGroup": 85,
@@ -33,7 +35,7 @@
   },
   {
    "contractDate": "2026-06-12",
-   "price": 1150000000,
+   "priceWon": 1150000000,
    "floor": 4,
    "exclusiveArea": 84.99,
    "areaGroup": 85,
@@ -42,7 +44,7 @@
   },
   {
    "contractDate": "2026-05-15",
-   "price": 1135000000,
+   "priceWon": 1135000000,
    "floor": 3,
    "exclusiveArea": 84.99,
    "areaGroup": 85,
@@ -51,7 +53,7 @@
   },
   {
    "contractDate": "2026-05-09",
-   "price": 1090000000,
+   "priceWon": 1090000000,
    "floor": 12,
    "exclusiveArea": 84.99,
    "areaGroup": 85,
@@ -60,7 +62,7 @@
   },
   {
    "contractDate": "2026-05-04",
-   "price": 1045000000,
+   "priceWon": 1045000000,
    "floor": 14,
    "exclusiveArea": 84.99,
    "areaGroup": 85,
@@ -69,7 +71,7 @@
   },
   {
    "contractDate": "2026-04-28",
-   "price": 1398000000,
+   "priceWon": 1398000000,
    "floor": 3,
    "exclusiveArea": 127.21,
    "areaGroup": 127,
@@ -78,7 +80,7 @@
   },
   {
    "contractDate": "2026-04-27",
-   "price": 1080000000,
+   "priceWon": 1080000000,
    "floor": 6,
    "exclusiveArea": 84.99,
    "areaGroup": 85,
@@ -87,7 +89,7 @@
   },
   {
    "contractDate": "2026-04-27",
-   "price": 1140000000,
+   "priceWon": 1140000000,
    "floor": 15,
    "exclusiveArea": 84.99,
    "areaGroup": 85,
@@ -96,7 +98,7 @@
   },
   {
    "contractDate": "2026-04-16",
-   "price": 1073000000,
+   "priceWon": 1073000000,
    "floor": 5,
    "exclusiveArea": 84.99,
    "areaGroup": 85,
@@ -105,12 +107,19 @@
   },
   {
    "contractDate": "2026-04-11",
-   "price": 1100000000,
+   "priceWon": 1100000000,
    "floor": 5,
    "exclusiveArea": 84.99,
    "areaGroup": 85,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.3970350856075,
+  "longitude": 126.981111101593,
+  "roadAddress": "경기 의왕시 안양판교로 62",
+  "jibunAddress": "경기 의왕시 포일동 441-2",
+  "geocodeStatus": "valid"
+ }
 }

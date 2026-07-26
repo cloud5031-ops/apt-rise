@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "41450-391",
  "apartmentName": "신안인스빌",
  "sidoCode": "41",
@@ -16,7 +18,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-29",
-   "price": 1330000000,
+   "priceWon": 1330000000,
    "floor": 9,
    "exclusiveArea": 84.3282,
    "areaGroup": 84,
@@ -25,7 +27,7 @@
   },
   {
    "contractDate": "2026-06-29",
-   "price": 1270000000,
+   "priceWon": 1270000000,
    "floor": 2,
    "exclusiveArea": 84.3282,
    "areaGroup": 84,
@@ -34,7 +36,7 @@
   },
   {
    "contractDate": "2026-06-08",
-   "price": 1200000000,
+   "priceWon": 1200000000,
    "floor": 26,
    "exclusiveArea": 93.0118,
    "areaGroup": 93,
@@ -43,7 +45,7 @@
   },
   {
    "contractDate": "2026-06-03",
-   "price": 1315000000,
+   "priceWon": 1315000000,
    "floor": 27,
    "exclusiveArea": 84.3282,
    "areaGroup": 84,
@@ -52,7 +54,7 @@
   },
   {
    "contractDate": "2026-06-02",
-   "price": 1335000000,
+   "priceWon": 1335000000,
    "floor": 22,
    "exclusiveArea": 84.3282,
    "areaGroup": 84,
@@ -61,7 +63,7 @@
   },
   {
    "contractDate": "2026-05-31",
-   "price": 1250000000,
+   "priceWon": 1250000000,
    "floor": 7,
    "exclusiveArea": 84.3282,
    "areaGroup": 84,
@@ -70,7 +72,7 @@
   },
   {
    "contractDate": "2026-05-29",
-   "price": 1390000000,
+   "priceWon": 1390000000,
    "floor": 24,
    "exclusiveArea": 93.0118,
    "areaGroup": 93,
@@ -79,7 +81,7 @@
   },
   {
    "contractDate": "2026-05-23",
-   "price": 1000000000,
+   "priceWon": 1000000000,
    "floor": 11,
    "exclusiveArea": 93.0067,
    "areaGroup": 93,
@@ -88,7 +90,7 @@
   },
   {
    "contractDate": "2026-05-01",
-   "price": 1250000000,
+   "priceWon": 1250000000,
    "floor": 8,
    "exclusiveArea": 93.0118,
    "areaGroup": 93,
@@ -97,7 +99,7 @@
   },
   {
    "contractDate": "2026-04-27",
-   "price": 1275000000,
+   "priceWon": 1275000000,
    "floor": 9,
    "exclusiveArea": 84.3282,
    "areaGroup": 84,
@@ -106,7 +108,7 @@
   },
   {
    "contractDate": "2026-04-19",
-   "price": 1330000000,
+   "priceWon": 1330000000,
    "floor": 8,
    "exclusiveArea": 93.0118,
    "areaGroup": 93,
@@ -115,7 +117,7 @@
   },
   {
    "contractDate": "2026-04-09",
-   "price": 1380000000,
+   "priceWon": 1380000000,
    "floor": 22,
    "exclusiveArea": 93.0118,
    "areaGroup": 93,
@@ -124,7 +126,7 @@
   },
   {
    "contractDate": "2026-03-24",
-   "price": 1295000000,
+   "priceWon": 1295000000,
    "floor": 22,
    "exclusiveArea": 84.3282,
    "areaGroup": 84,
@@ -133,7 +135,7 @@
   },
   {
    "contractDate": "2026-03-05",
-   "price": 1150000000,
+   "priceWon": 1150000000,
    "floor": 13,
    "exclusiveArea": 84.3282,
    "areaGroup": 84,
@@ -142,7 +144,7 @@
   },
   {
    "contractDate": "2026-03-04",
-   "price": 1295000000,
+   "priceWon": 1295000000,
    "floor": 19,
    "exclusiveArea": 84.3282,
    "areaGroup": 84,
@@ -151,7 +153,7 @@
   },
   {
    "contractDate": "2026-02-27",
-   "price": 1265000000,
+   "priceWon": 1265000000,
    "floor": 17,
    "exclusiveArea": 84.3282,
    "areaGroup": 84,
@@ -160,12 +162,19 @@
   },
   {
    "contractDate": "2026-02-24",
-   "price": 1300000000,
+   "priceWon": 1300000000,
    "floor": 28,
    "exclusiveArea": 84.3282,
    "areaGroup": 84,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.5566645806132,
+  "longitude": 127.195492517064,
+  "roadAddress": "경기 하남시 미사강변동로 19",
+  "jibunAddress": "경기 하남시 풍산동 573",
+  "geocodeStatus": "valid"
+ }
 }

@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "41117-388",
  "apartmentName": "영통롯데캐슬엘클래스1단지",
  "sidoCode": "41",
@@ -19,7 +21,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-17",
-   "price": 965000000,
+   "priceWon": 965000000,
    "floor": 10,
    "exclusiveArea": 84.9836,
    "areaGroup": 85,
@@ -28,7 +30,7 @@
   },
   {
    "contractDate": "2026-06-11",
-   "price": 950000000,
+   "priceWon": 950000000,
    "floor": 9,
    "exclusiveArea": 84.9835,
    "areaGroup": 85,
@@ -37,7 +39,7 @@
   },
   {
    "contractDate": "2026-06-10",
-   "price": 1190000000,
+   "priceWon": 1190000000,
    "floor": 8,
    "exclusiveArea": 107.426,
    "areaGroup": 107,
@@ -46,7 +48,7 @@
   },
   {
    "contractDate": "2026-06-06",
-   "price": 925000000,
+   "priceWon": 925000000,
    "floor": 14,
    "exclusiveArea": 84.9835,
    "areaGroup": 85,
@@ -55,7 +57,7 @@
   },
   {
    "contractDate": "2026-05-19",
-   "price": 880000000,
+   "priceWon": 880000000,
    "floor": 6,
    "exclusiveArea": 84.9835,
    "areaGroup": 85,
@@ -64,7 +66,7 @@
   },
   {
    "contractDate": "2026-05-02",
-   "price": 890000000,
+   "priceWon": 890000000,
    "floor": 14,
    "exclusiveArea": 84.9882,
    "areaGroup": 85,
@@ -73,7 +75,7 @@
   },
   {
    "contractDate": "2026-04-30",
-   "price": 910000000,
+   "priceWon": 910000000,
    "floor": 7,
    "exclusiveArea": 84.9836,
    "areaGroup": 85,
@@ -82,7 +84,7 @@
   },
   {
    "contractDate": "2026-04-18",
-   "price": 878000000,
+   "priceWon": 878000000,
    "floor": 6,
    "exclusiveArea": 84.9835,
    "areaGroup": 85,
@@ -91,7 +93,7 @@
   },
   {
    "contractDate": "2026-04-10",
-   "price": 900000000,
+   "priceWon": 900000000,
    "floor": 8,
    "exclusiveArea": 84.9835,
    "areaGroup": 85,
@@ -100,7 +102,7 @@
   },
   {
    "contractDate": "2026-04-07",
-   "price": 935000000,
+   "priceWon": 935000000,
    "floor": 6,
    "exclusiveArea": 84.8531,
    "areaGroup": 85,
@@ -109,7 +111,7 @@
   },
   {
    "contractDate": "2026-04-06",
-   "price": 857000000,
+   "priceWon": 857000000,
    "floor": 5,
    "exclusiveArea": 84.9835,
    "areaGroup": 85,
@@ -118,7 +120,7 @@
   },
   {
    "contractDate": "2026-04-04",
-   "price": 900000000,
+   "priceWon": 900000000,
    "floor": 12,
    "exclusiveArea": 84.9835,
    "areaGroup": 85,
@@ -127,7 +129,7 @@
   },
   {
    "contractDate": "2026-03-25",
-   "price": 890000000,
+   "priceWon": 890000000,
    "floor": 6,
    "exclusiveArea": 84.9882,
    "areaGroup": 85,
@@ -136,7 +138,7 @@
   },
   {
    "contractDate": "2026-02-26",
-   "price": 875000000,
+   "priceWon": 875000000,
    "floor": 15,
    "exclusiveArea": 84.9835,
    "areaGroup": 85,
@@ -145,7 +147,7 @@
   },
   {
    "contractDate": "2026-02-21",
-   "price": 848000000,
+   "priceWon": 848000000,
    "floor": 2,
    "exclusiveArea": 84.9836,
    "areaGroup": 85,
@@ -154,7 +156,7 @@
   },
   {
    "contractDate": "2026-02-21",
-   "price": 885000000,
+   "priceWon": 885000000,
    "floor": 13,
    "exclusiveArea": 84.9882,
    "areaGroup": 85,
@@ -163,7 +165,7 @@
   },
   {
    "contractDate": "2026-02-11",
-   "price": 835000000,
+   "priceWon": 835000000,
    "floor": 2,
    "exclusiveArea": 84.9836,
    "areaGroup": 85,
@@ -172,12 +174,19 @@
   },
   {
    "contractDate": "2026-02-06",
-   "price": 1085000000,
+   "priceWon": 1085000000,
    "floor": 11,
    "exclusiveArea": 107.1115,
    "areaGroup": 107,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.2429162699613,
+  "longitude": 127.040430660589,
+  "roadAddress": "경기 수원시 영통구 망포로47번길 30",
+  "jibunAddress": "경기 수원시 영통구 망포동 805",
+  "geocodeStatus": "valid"
+ }
 }

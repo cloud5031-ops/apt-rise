@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "41131-1682",
  "apartmentName": "판교밸리자이3단지",
  "sidoCode": "41",
@@ -14,7 +16,7 @@
  "transactions": [
   {
    "contractDate": "2026-05-26",
-   "price": 1100000000,
+   "priceWon": 1100000000,
    "floor": 14,
    "exclusiveArea": 60.9892,
    "areaGroup": 61,
@@ -23,7 +25,7 @@
   },
   {
    "contractDate": "2026-05-22",
-   "price": 1090000000,
+   "priceWon": 1090000000,
    "floor": 12,
    "exclusiveArea": 60.9892,
    "areaGroup": 61,
@@ -32,7 +34,7 @@
   },
   {
    "contractDate": "2026-04-18",
-   "price": 1080000000,
+   "priceWon": 1080000000,
    "floor": 12,
    "exclusiveArea": 60.9892,
    "areaGroup": 61,
@@ -41,12 +43,19 @@
   },
   {
    "contractDate": "2026-03-07",
-   "price": 990000000,
+   "priceWon": 990000000,
    "floor": 9,
    "exclusiveArea": 60.9892,
    "areaGroup": 61,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.426139879943,
+  "longitude": 127.101445920009,
+  "roadAddress": "경기 성남시 수정구 대왕판교로 961",
+  "jibunAddress": "경기 성남시 수정구 고등동 601",
+  "geocodeStatus": "valid"
+ }
 }

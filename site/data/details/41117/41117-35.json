@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "41117-35",
  "apartmentName": "신나무실미주",
  "sidoCode": "41",
@@ -14,7 +16,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-20",
-   "price": 930000000,
+   "priceWon": 930000000,
    "floor": 7,
    "exclusiveArea": 101.99,
    "areaGroup": 102,
@@ -23,7 +25,7 @@
   },
   {
    "contractDate": "2026-06-06",
-   "price": 900000000,
+   "priceWon": 900000000,
    "floor": 6,
    "exclusiveArea": 101.99,
    "areaGroup": 102,
@@ -32,7 +34,7 @@
   },
   {
    "contractDate": "2026-05-28",
-   "price": 930000000,
+   "priceWon": 930000000,
    "floor": 17,
    "exclusiveArea": 101.99,
    "areaGroup": 102,
@@ -41,7 +43,7 @@
   },
   {
    "contractDate": "2026-05-22",
-   "price": 770000000,
+   "priceWon": 770000000,
    "floor": 18,
    "exclusiveArea": 101.99,
    "areaGroup": 102,
@@ -50,7 +52,7 @@
   },
   {
    "contractDate": "2026-05-14",
-   "price": 705000000,
+   "priceWon": 705000000,
    "floor": 1,
    "exclusiveArea": 101.99,
    "areaGroup": 102,
@@ -59,7 +61,7 @@
   },
   {
    "contractDate": "2026-04-22",
-   "price": 861500000,
+   "priceWon": 861500000,
    "floor": 11,
    "exclusiveArea": 101.99,
    "areaGroup": 102,
@@ -68,12 +70,19 @@
   },
   {
    "contractDate": "2026-04-10",
-   "price": 845000000,
+   "priceWon": 845000000,
    "floor": 12,
    "exclusiveArea": 101.99,
    "areaGroup": 102,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.2521290874116,
+  "longitude": 127.066724029515,
+  "roadAddress": "경기 수원시 영통구 매영로310번길 27",
+  "jibunAddress": "경기 수원시 영통구 영통동 965-2",
+  "geocodeStatus": "valid"
+ }
 }

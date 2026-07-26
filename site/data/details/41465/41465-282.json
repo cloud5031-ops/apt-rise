@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "41465-282",
  "apartmentName": "버들치마을성복자이1차",
  "sidoCode": "41",
@@ -18,7 +20,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-20",
-   "price": 970000000,
+   "priceWon": 970000000,
    "floor": 13,
    "exclusiveArea": 101.954,
    "areaGroup": 102,
@@ -27,7 +29,7 @@
   },
   {
    "contractDate": "2026-06-20",
-   "price": 1080000000,
+   "priceWon": 1080000000,
    "floor": 4,
    "exclusiveArea": 134.859,
    "areaGroup": 135,
@@ -36,7 +38,7 @@
   },
   {
    "contractDate": "2026-06-14",
-   "price": 1120000000,
+   "priceWon": 1120000000,
    "floor": 20,
    "exclusiveArea": 134.859,
    "areaGroup": 135,
@@ -45,7 +47,7 @@
   },
   {
    "contractDate": "2026-05-12",
-   "price": 970000000,
+   "priceWon": 970000000,
    "floor": 2,
    "exclusiveArea": 134.859,
    "areaGroup": 135,
@@ -54,7 +56,7 @@
   },
   {
    "contractDate": "2026-05-09",
-   "price": 835000000,
+   "priceWon": 835000000,
    "floor": 1,
    "exclusiveArea": 84.196,
    "areaGroup": 84,
@@ -63,7 +65,7 @@
   },
   {
    "contractDate": "2026-05-09",
-   "price": 979000000,
+   "priceWon": 979000000,
    "floor": 2,
    "exclusiveArea": 124.858,
    "areaGroup": 125,
@@ -72,7 +74,7 @@
   },
   {
    "contractDate": "2026-05-08",
-   "price": 965000000,
+   "priceWon": 965000000,
    "floor": 20,
    "exclusiveArea": 134.859,
    "areaGroup": 135,
@@ -81,7 +83,7 @@
   },
   {
    "contractDate": "2026-05-07",
-   "price": 995000000,
+   "priceWon": 995000000,
    "floor": 16,
    "exclusiveArea": 124.858,
    "areaGroup": 125,
@@ -90,7 +92,7 @@
   },
   {
    "contractDate": "2026-05-01",
-   "price": 1090000000,
+   "priceWon": 1090000000,
    "floor": 16,
    "exclusiveArea": 157.115,
    "areaGroup": 157,
@@ -99,7 +101,7 @@
   },
   {
    "contractDate": "2026-04-24",
-   "price": 840000000,
+   "priceWon": 840000000,
    "floor": 19,
    "exclusiveArea": 84.196,
    "areaGroup": 84,
@@ -108,7 +110,7 @@
   },
   {
    "contractDate": "2026-04-10",
-   "price": 1080000000,
+   "priceWon": 1080000000,
    "floor": 19,
    "exclusiveArea": 157.115,
    "areaGroup": 157,
@@ -117,7 +119,7 @@
   },
   {
    "contractDate": "2026-03-06",
-   "price": 870000000,
+   "priceWon": 870000000,
    "floor": 13,
    "exclusiveArea": 84.196,
    "areaGroup": 84,
@@ -126,12 +128,19 @@
   },
   {
    "contractDate": "2026-02-07",
-   "price": 1075000000,
+   "priceWon": 1075000000,
    "floor": 13,
    "exclusiveArea": 134.859,
    "areaGroup": 135,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.3172584302406,
+  "longitude": 127.065266109454,
+  "roadAddress": "경기 용인시 수지구 성복1로164번길 20",
+  "jibunAddress": "경기 용인시 수지구 성복동 758",
+  "geocodeStatus": "valid"
+ }
 }

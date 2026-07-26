@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "11620-5987",
  "apartmentName": "e편한세상서울대입구2차",
  "sidoCode": "11",
@@ -17,7 +19,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-22",
-   "price": 1550000000,
+   "priceWon": 1550000000,
    "floor": 6,
    "exclusiveArea": 84.31,
    "areaGroup": 84,
@@ -26,7 +28,7 @@
   },
   {
    "contractDate": "2026-06-13",
-   "price": 1345000000,
+   "priceWon": 1345000000,
    "floor": 14,
    "exclusiveArea": 59.85,
    "areaGroup": 60,
@@ -35,7 +37,7 @@
   },
   {
    "contractDate": "2026-06-10",
-   "price": 1530000000,
+   "priceWon": 1530000000,
    "floor": 11,
    "exclusiveArea": 84.31,
    "areaGroup": 84,
@@ -44,7 +46,7 @@
   },
   {
    "contractDate": "2026-06-09",
-   "price": 1545000000,
+   "priceWon": 1545000000,
    "floor": 14,
    "exclusiveArea": 116.72,
    "areaGroup": 117,
@@ -53,7 +55,7 @@
   },
   {
    "contractDate": "2026-05-18",
-   "price": 1340000000,
+   "priceWon": 1340000000,
    "floor": 6,
    "exclusiveArea": 59.72,
    "areaGroup": 60,
@@ -62,7 +64,7 @@
   },
   {
    "contractDate": "2026-05-12",
-   "price": 1435000000,
+   "priceWon": 1435000000,
    "floor": 2,
    "exclusiveArea": 116.72,
    "areaGroup": 117,
@@ -71,7 +73,7 @@
   },
   {
    "contractDate": "2026-04-30",
-   "price": 1460000000,
+   "priceWon": 1460000000,
    "floor": 10,
    "exclusiveArea": 84.31,
    "areaGroup": 84,
@@ -80,7 +82,7 @@
   },
   {
    "contractDate": "2026-04-22",
-   "price": 1370000000,
+   "priceWon": 1370000000,
    "floor": 2,
    "exclusiveArea": 84.31,
    "areaGroup": 84,
@@ -89,7 +91,7 @@
   },
   {
    "contractDate": "2026-04-21",
-   "price": 1440000000,
+   "priceWon": 1440000000,
    "floor": 14,
    "exclusiveArea": 84.31,
    "areaGroup": 84,
@@ -98,7 +100,7 @@
   },
   {
    "contractDate": "2026-04-17",
-   "price": 1320000000,
+   "priceWon": 1320000000,
    "floor": 10,
    "exclusiveArea": 59.85,
    "areaGroup": 60,
@@ -107,7 +109,7 @@
   },
   {
    "contractDate": "2026-04-15",
-   "price": 1430000000,
+   "priceWon": 1430000000,
    "floor": 6,
    "exclusiveArea": 84.31,
    "areaGroup": 84,
@@ -116,7 +118,7 @@
   },
   {
    "contractDate": "2026-04-11",
-   "price": 1440000000,
+   "priceWon": 1440000000,
    "floor": 11,
    "exclusiveArea": 84.31,
    "areaGroup": 84,
@@ -125,7 +127,7 @@
   },
   {
    "contractDate": "2026-03-27",
-   "price": 1370000000,
+   "priceWon": 1370000000,
    "floor": 9,
    "exclusiveArea": 84.31,
    "areaGroup": 84,
@@ -134,7 +136,7 @@
   },
   {
    "contractDate": "2026-03-17",
-   "price": 1280000000,
+   "priceWon": 1280000000,
    "floor": 10,
    "exclusiveArea": 59.85,
    "areaGroup": 60,
@@ -143,12 +145,19 @@
   },
   {
    "contractDate": "2026-02-05",
-   "price": 1445000000,
+   "priceWon": 1445000000,
    "floor": 14,
    "exclusiveArea": 84.31,
    "areaGroup": 84,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.4783897162813,
+  "longitude": 126.941752107316,
+  "roadAddress": "서울 관악구 참숯1길 19",
+  "jibunAddress": "서울 관악구 봉천동 1733",
+  "geocodeStatus": "valid"
+ }
 }

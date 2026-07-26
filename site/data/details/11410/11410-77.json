@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "11410-77",
  "apartmentName": "극동",
  "sidoCode": "11",
@@ -15,7 +17,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-25",
-   "price": 560000000,
+   "priceWon": 560000000,
    "floor": 9,
    "exclusiveArea": 84.92,
    "areaGroup": 85,
@@ -24,7 +26,7 @@
   },
   {
    "contractDate": "2026-06-20",
-   "price": 560000000,
+   "priceWon": 560000000,
    "floor": 8,
    "exclusiveArea": 84.92,
    "areaGroup": 85,
@@ -33,7 +35,7 @@
   },
   {
    "contractDate": "2026-06-13",
-   "price": 530000000,
+   "priceWon": 530000000,
    "floor": 10,
    "exclusiveArea": 84.92,
    "areaGroup": 85,
@@ -42,7 +44,7 @@
   },
   {
    "contractDate": "2026-06-05",
-   "price": 490000000,
+   "priceWon": 490000000,
    "floor": 8,
    "exclusiveArea": 84.92,
    "areaGroup": 85,
@@ -51,7 +53,7 @@
   },
   {
    "contractDate": "2026-05-29",
-   "price": 540000000,
+   "priceWon": 540000000,
    "floor": 5,
    "exclusiveArea": 84.92,
    "areaGroup": 85,
@@ -60,7 +62,7 @@
   },
   {
    "contractDate": "2026-05-21",
-   "price": 500000000,
+   "priceWon": 500000000,
    "floor": 12,
    "exclusiveArea": 84.92,
    "areaGroup": 85,
@@ -69,7 +71,7 @@
   },
   {
    "contractDate": "2026-04-30",
-   "price": 500000000,
+   "priceWon": 500000000,
    "floor": 10,
    "exclusiveArea": 84.92,
    "areaGroup": 85,
@@ -78,7 +80,7 @@
   },
   {
    "contractDate": "2026-04-11",
-   "price": 530000000,
+   "priceWon": 530000000,
    "floor": 12,
    "exclusiveArea": 84.92,
    "areaGroup": 85,
@@ -87,7 +89,7 @@
   },
   {
    "contractDate": "2026-03-25",
-   "price": 500000000,
+   "priceWon": 500000000,
    "floor": 6,
    "exclusiveArea": 84.92,
    "areaGroup": 85,
@@ -96,12 +98,19 @@
   },
   {
    "contractDate": "2026-02-07",
-   "price": 577000000,
+   "priceWon": 577000000,
    "floor": 13,
    "exclusiveArea": 84.98,
    "areaGroup": 85,
    "dealType": "중개거래",
    "cancellationStatus": "CANCELLED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.6026153795328,
+  "longitude": 126.950968524813,
+  "roadAddress": "서울 서대문구 포방터10길 23",
+  "jibunAddress": "서울 서대문구 홍은동 454",
+  "geocodeStatus": "valid"
+ }
 }

@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "41173-118",
  "apartmentName": "무궁화진흥",
  "sidoCode": "41",
@@ -15,7 +17,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-27",
-   "price": 900000000,
+   "priceWon": 900000000,
    "floor": 9,
    "exclusiveArea": 84.63,
    "areaGroup": 85,
@@ -24,7 +26,7 @@
   },
   {
    "contractDate": "2026-06-10",
-   "price": 650000000,
+   "priceWon": 650000000,
    "floor": 10,
    "exclusiveArea": 56.76,
    "areaGroup": 57,
@@ -33,7 +35,7 @@
   },
   {
    "contractDate": "2026-06-07",
-   "price": 895000000,
+   "priceWon": 895000000,
    "floor": 4,
    "exclusiveArea": 84.63,
    "areaGroup": 85,
@@ -42,7 +44,7 @@
   },
   {
    "contractDate": "2026-05-28",
-   "price": 825000000,
+   "priceWon": 825000000,
    "floor": 14,
    "exclusiveArea": 84.63,
    "areaGroup": 85,
@@ -51,7 +53,7 @@
   },
   {
    "contractDate": "2026-04-23",
-   "price": 900000000,
+   "priceWon": 900000000,
    "floor": 10,
    "exclusiveArea": 84.63,
    "areaGroup": 85,
@@ -60,7 +62,7 @@
   },
   {
    "contractDate": "2026-04-15",
-   "price": 877000000,
+   "priceWon": 877000000,
    "floor": 2,
    "exclusiveArea": 84.63,
    "areaGroup": 85,
@@ -69,7 +71,7 @@
   },
   {
    "contractDate": "2026-04-03",
-   "price": 660000000,
+   "priceWon": 660000000,
    "floor": 11,
    "exclusiveArea": 56.76,
    "areaGroup": 57,
@@ -78,7 +80,7 @@
   },
   {
    "contractDate": "2026-03-25",
-   "price": 650000000,
+   "priceWon": 650000000,
    "floor": 12,
    "exclusiveArea": 56.76,
    "areaGroup": 57,
@@ -87,7 +89,7 @@
   },
   {
    "contractDate": "2026-03-07",
-   "price": 840000000,
+   "priceWon": 840000000,
    "floor": 7,
    "exclusiveArea": 84.63,
    "areaGroup": 85,
@@ -96,12 +98,19 @@
   },
   {
    "contractDate": "2026-03-06",
-   "price": 849000000,
+   "priceWon": 849000000,
    "floor": 6,
    "exclusiveArea": 84.63,
    "areaGroup": 85,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.3804188983738,
+  "longitude": 126.957588253767,
+  "roadAddress": "경기 안양시 동안구 동안로 2",
+  "jibunAddress": "경기 안양시 동안구 호계동 1056-6",
+  "geocodeStatus": "valid"
+ }
 }

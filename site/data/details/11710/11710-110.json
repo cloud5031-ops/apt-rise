@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "11710-110",
  "apartmentName": "코오롱아파트",
  "sidoCode": "11",
@@ -14,7 +16,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-18",
-   "price": 2100000000,
+   "priceWon": 2100000000,
    "floor": 9,
    "exclusiveArea": 84.95,
    "areaGroup": 85,
@@ -23,7 +25,7 @@
   },
   {
    "contractDate": "2026-06-14",
-   "price": 2050000000,
+   "priceWon": 2050000000,
    "floor": 6,
    "exclusiveArea": 84.95,
    "areaGroup": 85,
@@ -32,7 +34,7 @@
   },
   {
    "contractDate": "2026-05-27",
-   "price": 2000000000,
+   "priceWon": 2000000000,
    "floor": 4,
    "exclusiveArea": 84.95,
    "areaGroup": 85,
@@ -41,7 +43,7 @@
   },
   {
    "contractDate": "2026-05-22",
-   "price": 1875000000,
+   "priceWon": 1875000000,
    "floor": 1,
    "exclusiveArea": 84.95,
    "areaGroup": 85,
@@ -50,7 +52,7 @@
   },
   {
    "contractDate": "2026-05-06",
-   "price": 2030000000,
+   "priceWon": 2030000000,
    "floor": 4,
    "exclusiveArea": 84.95,
    "areaGroup": 85,
@@ -59,7 +61,7 @@
   },
   {
    "contractDate": "2026-05-04",
-   "price": 1900000000,
+   "priceWon": 1900000000,
    "floor": 12,
    "exclusiveArea": 84.95,
    "areaGroup": 85,
@@ -68,7 +70,7 @@
   },
   {
    "contractDate": "2026-04-30",
-   "price": 2100000000,
+   "priceWon": 2100000000,
    "floor": 13,
    "exclusiveArea": 84.95,
    "areaGroup": 85,
@@ -77,7 +79,7 @@
   },
   {
    "contractDate": "2026-04-28",
-   "price": 1930000000,
+   "priceWon": 1930000000,
    "floor": 14,
    "exclusiveArea": 84.95,
    "areaGroup": 85,
@@ -86,7 +88,7 @@
   },
   {
    "contractDate": "2026-04-20",
-   "price": 1685000000,
+   "priceWon": 1685000000,
    "floor": 2,
    "exclusiveArea": 84.95,
    "areaGroup": 85,
@@ -95,7 +97,7 @@
   },
   {
    "contractDate": "2026-04-01",
-   "price": 2000000000,
+   "priceWon": 2000000000,
    "floor": 10,
    "exclusiveArea": 84.95,
    "areaGroup": 85,
@@ -104,7 +106,7 @@
   },
   {
    "contractDate": "2026-03-08",
-   "price": 2230000000,
+   "priceWon": 2230000000,
    "floor": 13,
    "exclusiveArea": 84.95,
    "areaGroup": 85,
@@ -113,12 +115,19 @@
   },
   {
    "contractDate": "2026-02-21",
-   "price": 2160000000,
+   "priceWon": 2160000000,
    "floor": 8,
    "exclusiveArea": 84.95,
    "areaGroup": 85,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.5086093984081,
+  "longitude": 127.122363991153,
+  "roadAddress": "서울 송파구 오금로31길 27",
+  "jibunAddress": "서울 송파구 방이동 212-8",
+  "geocodeStatus": "valid"
+ }
 }

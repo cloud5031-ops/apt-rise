@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "11530-141",
  "apartmentName": "우성3",
  "sidoCode": "11",
@@ -14,7 +16,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-20",
-   "price": 1260000000,
+   "priceWon": 1260000000,
    "floor": 15,
    "exclusiveArea": 84.75,
    "areaGroup": 85,
@@ -23,7 +25,7 @@
   },
   {
    "contractDate": "2026-06-16",
-   "price": 1250000000,
+   "priceWon": 1250000000,
    "floor": 14,
    "exclusiveArea": 84.75,
    "areaGroup": 85,
@@ -32,7 +34,7 @@
   },
   {
    "contractDate": "2026-06-12",
-   "price": 1355000000,
+   "priceWon": 1355000000,
    "floor": 14,
    "exclusiveArea": 84.75,
    "areaGroup": 85,
@@ -41,7 +43,7 @@
   },
   {
    "contractDate": "2026-06-03",
-   "price": 1200000000,
+   "priceWon": 1200000000,
    "floor": 12,
    "exclusiveArea": 84.75,
    "areaGroup": 85,
@@ -50,7 +52,7 @@
   },
   {
    "contractDate": "2026-05-09",
-   "price": 1150000000,
+   "priceWon": 1150000000,
    "floor": 1,
    "exclusiveArea": 84.75,
    "areaGroup": 85,
@@ -59,7 +61,7 @@
   },
   {
    "contractDate": "2026-05-04",
-   "price": 1270000000,
+   "priceWon": 1270000000,
    "floor": 10,
    "exclusiveArea": 84.75,
    "areaGroup": 85,
@@ -68,7 +70,7 @@
   },
   {
    "contractDate": "2026-03-05",
-   "price": 1150000000,
+   "priceWon": 1150000000,
    "floor": 10,
    "exclusiveArea": 84.75,
    "areaGroup": 85,
@@ -77,12 +79,19 @@
   },
   {
    "contractDate": "2026-02-06",
-   "price": 1255000000,
+   "priceWon": 1255000000,
    "floor": 15,
    "exclusiveArea": 84.75,
    "areaGroup": 85,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.5130191866004,
+  "longitude": 126.884347609326,
+  "roadAddress": "서울 구로구 신도림로21길 25",
+  "jibunAddress": "서울 구로구 신도림동 637",
+  "geocodeStatus": "valid"
+ }
 }

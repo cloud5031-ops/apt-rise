@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "11590-4078",
  "apartmentName": "힐스테이트 상도 프레스티지",
  "sidoCode": "11",
@@ -16,7 +18,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-27",
-   "price": 2200000000,
+   "priceWon": 2200000000,
    "floor": 11,
    "exclusiveArea": 120.004,
    "areaGroup": 120,
@@ -25,7 +27,7 @@
   },
   {
    "contractDate": "2026-06-12",
-   "price": 1530000000,
+   "priceWon": 1530000000,
    "floor": 15,
    "exclusiveArea": 84.884,
    "areaGroup": 85,
@@ -34,7 +36,7 @@
   },
   {
    "contractDate": "2026-06-03",
-   "price": 1555000000,
+   "priceWon": 1555000000,
    "floor": 1,
    "exclusiveArea": 84.884,
    "areaGroup": 85,
@@ -43,7 +45,7 @@
   },
   {
    "contractDate": "2026-06-03",
-   "price": 2085000000,
+   "priceWon": 2085000000,
    "floor": 9,
    "exclusiveArea": 120.004,
    "areaGroup": 120,
@@ -52,7 +54,7 @@
   },
   {
    "contractDate": "2026-05-30",
-   "price": 1900000000,
+   "priceWon": 1900000000,
    "floor": 6,
    "exclusiveArea": 84.951,
    "areaGroup": 85,
@@ -61,7 +63,7 @@
   },
   {
    "contractDate": "2026-05-21",
-   "price": 1790000000,
+   "priceWon": 1790000000,
    "floor": 14,
    "exclusiveArea": 84.951,
    "areaGroup": 85,
@@ -70,7 +72,7 @@
   },
   {
    "contractDate": "2026-03-31",
-   "price": 1800000000,
+   "priceWon": 1800000000,
    "floor": 11,
    "exclusiveArea": 84.884,
    "areaGroup": 85,
@@ -79,7 +81,7 @@
   },
   {
    "contractDate": "2026-03-22",
-   "price": 1775000000,
+   "priceWon": 1775000000,
    "floor": 10,
    "exclusiveArea": 84.884,
    "areaGroup": 85,
@@ -88,7 +90,7 @@
   },
   {
    "contractDate": "2026-03-14",
-   "price": 1810000000,
+   "priceWon": 1810000000,
    "floor": 17,
    "exclusiveArea": 84.884,
    "areaGroup": 85,
@@ -97,7 +99,7 @@
   },
   {
    "contractDate": "2026-02-12",
-   "price": 1680000000,
+   "priceWon": 1680000000,
    "floor": 2,
    "exclusiveArea": 84.951,
    "areaGroup": 85,
@@ -106,7 +108,7 @@
   },
   {
    "contractDate": "2026-02-11",
-   "price": 1895000000,
+   "priceWon": 1895000000,
    "floor": 17,
    "exclusiveArea": 84.951,
    "areaGroup": 85,
@@ -115,12 +117,19 @@
   },
   {
    "contractDate": "2026-02-05",
-   "price": 1730000000,
+   "priceWon": 1730000000,
    "floor": 13,
    "exclusiveArea": 84.884,
    "areaGroup": 85,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.4965353794851,
+  "longitude": 126.948946354609,
+  "roadAddress": "서울 동작구 상도로 346-2",
+  "jibunAddress": "서울 동작구 상도동 533",
+  "geocodeStatus": "valid"
+ }
 }

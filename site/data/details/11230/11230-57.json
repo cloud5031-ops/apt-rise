@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "11230-57",
  "apartmentName": "동양1차",
  "sidoCode": "11",
@@ -15,7 +17,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-18",
-   "price": 780000000,
+   "priceWon": 780000000,
    "floor": 19,
    "exclusiveArea": 59.85,
    "areaGroup": 60,
@@ -24,7 +26,7 @@
   },
   {
    "contractDate": "2026-06-05",
-   "price": 760000000,
+   "priceWon": 760000000,
    "floor": 5,
    "exclusiveArea": 59.85,
    "areaGroup": 60,
@@ -33,7 +35,7 @@
   },
   {
    "contractDate": "2026-05-26",
-   "price": 765000000,
+   "priceWon": 765000000,
    "floor": 6,
    "exclusiveArea": 59.85,
    "areaGroup": 60,
@@ -42,7 +44,7 @@
   },
   {
    "contractDate": "2026-05-26",
-   "price": 770000000,
+   "priceWon": 770000000,
    "floor": 19,
    "exclusiveArea": 59.85,
    "areaGroup": 60,
@@ -51,7 +53,7 @@
   },
   {
    "contractDate": "2026-05-08",
-   "price": 845000000,
+   "priceWon": 845000000,
    "floor": 8,
    "exclusiveArea": 84.94,
    "areaGroup": 85,
@@ -60,7 +62,7 @@
   },
   {
    "contractDate": "2026-05-07",
-   "price": 828000000,
+   "priceWon": 828000000,
    "floor": 13,
    "exclusiveArea": 84.94,
    "areaGroup": 85,
@@ -69,7 +71,7 @@
   },
   {
    "contractDate": "2026-05-06",
-   "price": 840000000,
+   "priceWon": 840000000,
    "floor": 8,
    "exclusiveArea": 84.94,
    "areaGroup": 85,
@@ -78,7 +80,7 @@
   },
   {
    "contractDate": "2026-03-06",
-   "price": 720000000,
+   "priceWon": 720000000,
    "floor": 16,
    "exclusiveArea": 59.85,
    "areaGroup": 60,
@@ -87,12 +89,19 @@
   },
   {
    "contractDate": "2026-02-19",
-   "price": 580000000,
+   "priceWon": 580000000,
    "floor": 14,
    "exclusiveArea": 59.85,
    "areaGroup": 60,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.592585958542,
+  "longitude": 127.067695090086,
+  "roadAddress": "서울 동대문구 망우로 135",
+  "jibunAddress": "서울 동대문구 휘경동 115",
+  "geocodeStatus": "valid"
+ }
 }

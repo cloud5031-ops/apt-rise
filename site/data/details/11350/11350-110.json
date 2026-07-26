@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "11350-110",
  "apartmentName": "롯데우성",
  "sidoCode": "11",
@@ -15,7 +17,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-27",
-   "price": 1465000000,
+   "priceWon": 1465000000,
    "floor": 12,
    "exclusiveArea": 115.26,
    "areaGroup": 115,
@@ -24,7 +26,7 @@
   },
   {
    "contractDate": "2026-06-10",
-   "price": 1450000000,
+   "priceWon": 1450000000,
    "floor": 13,
    "exclusiveArea": 115.26,
    "areaGroup": 115,
@@ -33,7 +35,7 @@
   },
   {
    "contractDate": "2026-05-19",
-   "price": 1300000000,
+   "priceWon": 1300000000,
    "floor": 10,
    "exclusiveArea": 101.88,
    "areaGroup": 102,
@@ -42,7 +44,7 @@
   },
   {
    "contractDate": "2026-05-16",
-   "price": 1290000000,
+   "priceWon": 1290000000,
    "floor": 6,
    "exclusiveArea": 101.88,
    "areaGroup": 102,
@@ -51,7 +53,7 @@
   },
   {
    "contractDate": "2026-05-14",
-   "price": 1260000000,
+   "priceWon": 1260000000,
    "floor": 10,
    "exclusiveArea": 101.88,
    "areaGroup": 102,
@@ -60,7 +62,7 @@
   },
   {
    "contractDate": "2026-05-12",
-   "price": 1365000000,
+   "priceWon": 1365000000,
    "floor": 9,
    "exclusiveArea": 115.26,
    "areaGroup": 115,
@@ -69,7 +71,7 @@
   },
   {
    "contractDate": "2026-05-04",
-   "price": 1210000000,
+   "priceWon": 1210000000,
    "floor": 7,
    "exclusiveArea": 101.88,
    "areaGroup": 102,
@@ -78,7 +80,7 @@
   },
   {
    "contractDate": "2026-03-25",
-   "price": 1360000000,
+   "priceWon": 1360000000,
    "floor": 9,
    "exclusiveArea": 101.88,
    "areaGroup": 102,
@@ -87,7 +89,7 @@
   },
   {
    "contractDate": "2026-03-25",
-   "price": 1260000000,
+   "priceWon": 1260000000,
    "floor": 2,
    "exclusiveArea": 115.26,
    "areaGroup": 115,
@@ -96,7 +98,7 @@
   },
   {
    "contractDate": "2026-03-11",
-   "price": 1360000000,
+   "priceWon": 1360000000,
    "floor": 8,
    "exclusiveArea": 101.88,
    "areaGroup": 102,
@@ -105,7 +107,7 @@
   },
   {
    "contractDate": "2026-03-03",
-   "price": 1320000000,
+   "priceWon": 1320000000,
    "floor": 12,
    "exclusiveArea": 101.88,
    "areaGroup": 102,
@@ -114,12 +116,19 @@
   },
   {
    "contractDate": "2026-02-06",
-   "price": 1350000000,
+   "priceWon": 1350000000,
    "floor": 14,
    "exclusiveArea": 101.88,
    "areaGroup": 102,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.6468291149362,
+  "longitude": 127.072828819069,
+  "roadAddress": "서울 노원구 노원로22길 34",
+  "jibunAddress": "서울 노원구 중계동 361-1",
+  "geocodeStatus": "valid"
+ }
 }

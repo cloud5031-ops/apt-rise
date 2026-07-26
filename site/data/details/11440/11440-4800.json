@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "11440-4800",
  "apartmentName": "상암월드컵파크9단지",
  "sidoCode": "11",
@@ -16,7 +18,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-23",
-   "price": 1090000000,
+   "priceWon": 1090000000,
    "floor": 2,
    "exclusiveArea": 84.89,
    "areaGroup": 85,
@@ -25,7 +27,7 @@
   },
   {
    "contractDate": "2026-06-07",
-   "price": 1140000000,
+   "priceWon": 1140000000,
    "floor": 8,
    "exclusiveArea": 84.89,
    "areaGroup": 85,
@@ -34,7 +36,7 @@
   },
   {
    "contractDate": "2026-06-04",
-   "price": 1170000000,
+   "priceWon": 1170000000,
    "floor": 6,
    "exclusiveArea": 84.98,
    "areaGroup": 85,
@@ -43,7 +45,7 @@
   },
   {
    "contractDate": "2026-05-28",
-   "price": 930000000,
+   "priceWon": 930000000,
    "floor": 1,
    "exclusiveArea": 84.98,
    "areaGroup": 85,
@@ -52,7 +54,7 @@
   },
   {
    "contractDate": "2026-05-27",
-   "price": 1150000000,
+   "priceWon": 1150000000,
    "floor": 15,
    "exclusiveArea": 84.98,
    "areaGroup": 85,
@@ -61,7 +63,7 @@
   },
   {
    "contractDate": "2026-05-21",
-   "price": 1100000000,
+   "priceWon": 1100000000,
    "floor": 11,
    "exclusiveArea": 84.94,
    "areaGroup": 85,
@@ -70,7 +72,7 @@
   },
   {
    "contractDate": "2026-05-17",
-   "price": 1065000000,
+   "priceWon": 1065000000,
    "floor": 13,
    "exclusiveArea": 84.98,
    "areaGroup": 85,
@@ -79,7 +81,7 @@
   },
   {
    "contractDate": "2026-05-16",
-   "price": 1070000000,
+   "priceWon": 1070000000,
    "floor": 5,
    "exclusiveArea": 84.98,
    "areaGroup": 85,
@@ -88,7 +90,7 @@
   },
   {
    "contractDate": "2026-05-15",
-   "price": 1090000000,
+   "priceWon": 1090000000,
    "floor": 2,
    "exclusiveArea": 84.98,
    "areaGroup": 85,
@@ -97,7 +99,7 @@
   },
   {
    "contractDate": "2026-04-04",
-   "price": 1070000000,
+   "priceWon": 1070000000,
    "floor": 15,
    "exclusiveArea": 84.98,
    "areaGroup": 85,
@@ -106,7 +108,7 @@
   },
   {
    "contractDate": "2026-04-01",
-   "price": 1038000000,
+   "priceWon": 1038000000,
    "floor": 7,
    "exclusiveArea": 84.94,
    "areaGroup": 85,
@@ -115,7 +117,7 @@
   },
   {
    "contractDate": "2026-03-25",
-   "price": 1070000000,
+   "priceWon": 1070000000,
    "floor": 6,
    "exclusiveArea": 84.94,
    "areaGroup": 85,
@@ -124,7 +126,7 @@
   },
   {
    "contractDate": "2026-02-11",
-   "price": 1070000000,
+   "priceWon": 1070000000,
    "floor": 12,
    "exclusiveArea": 84.98,
    "areaGroup": 85,
@@ -133,12 +135,19 @@
   },
   {
    "contractDate": "2026-02-01",
-   "price": 1020000000,
+   "priceWon": 1020000000,
    "floor": 5,
    "exclusiveArea": 84.89,
    "areaGroup": 85,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.5835469334073,
+  "longitude": 126.879166069383,
+  "roadAddress": "서울 마포구 월드컵북로 501",
+  "jibunAddress": "서울 마포구 상암동 1752",
+  "geocodeStatus": "valid"
+ }
 }

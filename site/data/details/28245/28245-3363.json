@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "28245-3363",
  "apartmentName": "계양센트레빌3단지",
  "sidoCode": "28",
@@ -16,7 +18,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-19",
-   "price": 625000000,
+   "priceWon": 625000000,
    "floor": 5,
    "exclusiveArea": 145.7753,
    "areaGroup": 146,
@@ -25,7 +27,7 @@
   },
   {
    "contractDate": "2026-05-23",
-   "price": 550000000,
+   "priceWon": 550000000,
    "floor": 8,
    "exclusiveArea": 101.8626,
    "areaGroup": 102,
@@ -34,7 +36,7 @@
   },
   {
    "contractDate": "2026-05-22",
-   "price": 497000000,
+   "priceWon": 497000000,
    "floor": 4,
    "exclusiveArea": 84.986,
    "areaGroup": 85,
@@ -43,7 +45,7 @@
   },
   {
    "contractDate": "2026-05-16",
-   "price": 497500000,
+   "priceWon": 497500000,
    "floor": 14,
    "exclusiveArea": 84.986,
    "areaGroup": 85,
@@ -52,7 +54,7 @@
   },
   {
    "contractDate": "2026-04-28",
-   "price": 473000000,
+   "priceWon": 473000000,
    "floor": 3,
    "exclusiveArea": 84.986,
    "areaGroup": 85,
@@ -61,7 +63,7 @@
   },
   {
    "contractDate": "2026-04-11",
-   "price": 530000000,
+   "priceWon": 530000000,
    "floor": 10,
    "exclusiveArea": 101.8626,
    "areaGroup": 102,
@@ -70,7 +72,7 @@
   },
   {
    "contractDate": "2026-04-10",
-   "price": 535000000,
+   "priceWon": 535000000,
    "floor": 9,
    "exclusiveArea": 101.8626,
    "areaGroup": 102,
@@ -79,12 +81,19 @@
   },
   {
    "contractDate": "2026-03-18",
-   "price": 450000000,
+   "priceWon": 450000000,
    "floor": 1,
    "exclusiveArea": 84.986,
    "areaGroup": 85,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.5660325913726,
+  "longitude": 126.746552686622,
+  "roadAddress": "인천 계양구 형제봉길 1",
+  "jibunAddress": "인천 계양구 귤현동 533",
+  "geocodeStatus": "valid"
+ }
 }

@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "28200-4349",
  "apartmentName": "어진마을한화꿈에그린(6단지)",
  "sidoCode": "28",
@@ -18,7 +20,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-18",
-   "price": 505000000,
+   "priceWon": 505000000,
    "floor": 14,
    "exclusiveArea": 119.877,
    "areaGroup": 120,
@@ -27,7 +29,7 @@
   },
   {
    "contractDate": "2026-06-13",
-   "price": 553000000,
+   "priceWon": 553000000,
    "floor": 24,
    "exclusiveArea": 119.951,
    "areaGroup": 120,
@@ -36,7 +38,7 @@
   },
   {
    "contractDate": "2026-06-12",
-   "price": 500000000,
+   "priceWon": 500000000,
    "floor": 12,
    "exclusiveArea": 119.951,
    "areaGroup": 120,
@@ -45,7 +47,7 @@
   },
   {
    "contractDate": "2026-06-08",
-   "price": 510000000,
+   "priceWon": 510000000,
    "floor": 15,
    "exclusiveArea": 101.31,
    "areaGroup": 101,
@@ -54,7 +56,7 @@
   },
   {
    "contractDate": "2026-06-06",
-   "price": 499000000,
+   "priceWon": 499000000,
    "floor": 5,
    "exclusiveArea": 119.877,
    "areaGroup": 120,
@@ -63,7 +65,7 @@
   },
   {
    "contractDate": "2026-06-06",
-   "price": 530000000,
+   "priceWon": 530000000,
    "floor": 22,
    "exclusiveArea": 119.951,
    "areaGroup": 120,
@@ -72,7 +74,7 @@
   },
   {
    "contractDate": "2026-05-13",
-   "price": 430000000,
+   "priceWon": 430000000,
    "floor": 23,
    "exclusiveArea": 119.951,
    "areaGroup": 120,
@@ -81,7 +83,7 @@
   },
   {
    "contractDate": "2026-05-08",
-   "price": 470000000,
+   "priceWon": 470000000,
    "floor": 2,
    "exclusiveArea": 101.31,
    "areaGroup": 101,
@@ -90,7 +92,7 @@
   },
   {
    "contractDate": "2026-04-30",
-   "price": 525000000,
+   "priceWon": 525000000,
    "floor": 29,
    "exclusiveArea": 119.951,
    "areaGroup": 120,
@@ -99,7 +101,7 @@
   },
   {
    "contractDate": "2026-04-03",
-   "price": 599000000,
+   "priceWon": 599000000,
    "floor": 18,
    "exclusiveArea": 149.618,
    "areaGroup": 150,
@@ -108,7 +110,7 @@
   },
   {
    "contractDate": "2026-03-25",
-   "price": 505000000,
+   "priceWon": 505000000,
    "floor": 13,
    "exclusiveArea": 101.31,
    "areaGroup": 101,
@@ -117,7 +119,7 @@
   },
   {
    "contractDate": "2026-02-11",
-   "price": 505000000,
+   "priceWon": 505000000,
    "floor": 23,
    "exclusiveArea": 119.877,
    "areaGroup": 120,
@@ -126,12 +128,19 @@
   },
   {
    "contractDate": "2026-02-03",
-   "price": 530000000,
+   "priceWon": 530000000,
    "floor": 29,
    "exclusiveArea": 126.926,
    "areaGroup": 127,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.4013371860643,
+  "longitude": 126.718695651351,
+  "roadAddress": "인천 남동구 논현고잔로 208-1",
+  "jibunAddress": "인천 남동구 논현동 634-1",
+  "geocodeStatus": "valid"
+ }
 }

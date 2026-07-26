@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "11440-169",
  "apartmentName": "성산시영(대우)",
  "sidoCode": "11",
@@ -14,7 +16,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-29",
-   "price": 1500000000,
+   "priceWon": 1500000000,
    "floor": 8,
    "exclusiveArea": 50.03,
    "areaGroup": 50,
@@ -23,7 +25,7 @@
   },
   {
    "contractDate": "2026-06-26",
-   "price": 1460000000,
+   "priceWon": 1460000000,
    "floor": 12,
    "exclusiveArea": 50.03,
    "areaGroup": 50,
@@ -32,7 +34,7 @@
   },
   {
    "contractDate": "2026-06-14",
-   "price": 912000000,
+   "priceWon": 912000000,
    "floor": 1,
    "exclusiveArea": 50.03,
    "areaGroup": 50,
@@ -41,7 +43,7 @@
   },
   {
    "contractDate": "2026-06-08",
-   "price": 1480000000,
+   "priceWon": 1480000000,
    "floor": 10,
    "exclusiveArea": 50.03,
    "areaGroup": 50,
@@ -50,7 +52,7 @@
   },
   {
    "contractDate": "2026-04-29",
-   "price": 1489000000,
+   "priceWon": 1489000000,
    "floor": 8,
    "exclusiveArea": 50.03,
    "areaGroup": 50,
@@ -59,7 +61,7 @@
   },
   {
    "contractDate": "2026-04-21",
-   "price": 1415000000,
+   "priceWon": 1415000000,
    "floor": 14,
    "exclusiveArea": 50.03,
    "areaGroup": 50,
@@ -68,12 +70,19 @@
   },
   {
    "contractDate": "2026-03-20",
-   "price": 1340000000,
+   "priceWon": 1340000000,
    "floor": 1,
    "exclusiveArea": 50.03,
    "areaGroup": 50,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.5721152959697,
+  "longitude": 126.901892164797,
+  "roadAddress": "서울 마포구 월드컵북로 233",
+  "jibunAddress": "서울 마포구 성산동 446",
+  "geocodeStatus": "valid"
+ }
 }

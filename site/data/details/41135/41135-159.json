@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "41135-159",
  "apartmentName": "청솔마을(한라)",
  "sidoCode": "41",
@@ -16,7 +18,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-27",
-   "price": 1615000000,
+   "priceWon": 1615000000,
    "floor": 7,
    "exclusiveArea": 58.8,
    "areaGroup": 59,
@@ -25,7 +27,7 @@
   },
   {
    "contractDate": "2026-06-27",
-   "price": 1590000000,
+   "priceWon": 1590000000,
    "floor": 4,
    "exclusiveArea": 58.8,
    "areaGroup": 59,
@@ -34,7 +36,7 @@
   },
   {
    "contractDate": "2026-06-26",
-   "price": 1748000000,
+   "priceWon": 1748000000,
    "floor": 10,
    "exclusiveArea": 69.12,
    "areaGroup": 69,
@@ -43,7 +45,7 @@
   },
   {
    "contractDate": "2026-06-24",
-   "price": 1647000000,
+   "priceWon": 1647000000,
    "floor": 15,
    "exclusiveArea": 58.8,
    "areaGroup": 59,
@@ -52,7 +54,7 @@
   },
   {
    "contractDate": "2026-06-06",
-   "price": 1850000000,
+   "priceWon": 1850000000,
    "floor": 11,
    "exclusiveArea": 84.39,
    "areaGroup": 84,
@@ -61,7 +63,7 @@
   },
   {
    "contractDate": "2026-05-16",
-   "price": 1520000000,
+   "priceWon": 1520000000,
    "floor": 6,
    "exclusiveArea": 58.8,
    "areaGroup": 59,
@@ -70,7 +72,7 @@
   },
   {
    "contractDate": "2026-05-07",
-   "price": 1540000000,
+   "priceWon": 1540000000,
    "floor": 13,
    "exclusiveArea": 58.8,
    "areaGroup": 59,
@@ -79,7 +81,7 @@
   },
   {
    "contractDate": "2026-04-22",
-   "price": 1550000000,
+   "priceWon": 1550000000,
    "floor": 3,
    "exclusiveArea": 58.8,
    "areaGroup": 59,
@@ -88,7 +90,7 @@
   },
   {
    "contractDate": "2026-04-21",
-   "price": 1550000000,
+   "priceWon": 1550000000,
    "floor": 13,
    "exclusiveArea": 58.8,
    "areaGroup": 59,
@@ -97,7 +99,7 @@
   },
   {
    "contractDate": "2026-04-18",
-   "price": 1520000000,
+   "priceWon": 1520000000,
    "floor": 4,
    "exclusiveArea": 58.8,
    "areaGroup": 59,
@@ -106,7 +108,7 @@
   },
   {
    "contractDate": "2026-04-18",
-   "price": 1590000000,
+   "priceWon": 1590000000,
    "floor": 17,
    "exclusiveArea": 58.8,
    "areaGroup": 59,
@@ -115,7 +117,7 @@
   },
   {
    "contractDate": "2026-04-16",
-   "price": 1500000000,
+   "priceWon": 1500000000,
    "floor": 12,
    "exclusiveArea": 58.8,
    "areaGroup": 59,
@@ -124,7 +126,7 @@
   },
   {
    "contractDate": "2026-04-10",
-   "price": 1141000000,
+   "priceWon": 1141000000,
    "floor": 12,
    "exclusiveArea": 58.8,
    "areaGroup": 59,
@@ -133,7 +135,7 @@
   },
   {
    "contractDate": "2026-03-19",
-   "price": 1550000000,
+   "priceWon": 1550000000,
    "floor": 9,
    "exclusiveArea": 58.8,
    "areaGroup": 59,
@@ -142,7 +144,7 @@
   },
   {
    "contractDate": "2026-02-20",
-   "price": 1559000000,
+   "priceWon": 1559000000,
    "floor": 2,
    "exclusiveArea": 58.8,
    "areaGroup": 59,
@@ -151,7 +153,7 @@
   },
   {
    "contractDate": "2026-02-19",
-   "price": 1570000000,
+   "priceWon": 1570000000,
    "floor": 9,
    "exclusiveArea": 58.8,
    "areaGroup": 59,
@@ -160,12 +162,19 @@
   },
   {
    "contractDate": "2026-02-06",
-   "price": 1530000000,
+   "priceWon": 1530000000,
    "floor": 10,
    "exclusiveArea": 69.12,
    "areaGroup": 69,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.355776187205,
+  "longitude": 127.107233402473,
+  "roadAddress": "경기 성남시 분당구 정자일로 72",
+  "jibunAddress": "경기 성남시 분당구 금곡동 181",
+  "geocodeStatus": "ambiguous"
+ }
 }

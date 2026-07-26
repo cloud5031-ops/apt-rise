@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "41135-147",
  "apartmentName": "탑마을(주공)",
  "sidoCode": "41",
@@ -15,7 +17,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-24",
-   "price": 810000000,
+   "priceWon": 810000000,
    "floor": 10,
    "exclusiveArea": 35.28,
    "areaGroup": 35,
@@ -24,7 +26,7 @@
   },
   {
    "contractDate": "2026-06-16",
-   "price": 800000000,
+   "priceWon": 800000000,
    "floor": 11,
    "exclusiveArea": 41.85,
    "areaGroup": 42,
@@ -33,7 +35,7 @@
   },
   {
    "contractDate": "2026-06-06",
-   "price": 744000000,
+   "priceWon": 744000000,
    "floor": 1,
    "exclusiveArea": 35.28,
    "areaGroup": 35,
@@ -42,7 +44,7 @@
   },
   {
    "contractDate": "2026-06-03",
-   "price": 750000000,
+   "priceWon": 750000000,
    "floor": 4,
    "exclusiveArea": 35.28,
    "areaGroup": 35,
@@ -51,7 +53,7 @@
   },
   {
    "contractDate": "2026-06-01",
-   "price": 748000000,
+   "priceWon": 748000000,
    "floor": 5,
    "exclusiveArea": 35.28,
    "areaGroup": 35,
@@ -60,7 +62,7 @@
   },
   {
    "contractDate": "2026-05-29",
-   "price": 705000000,
+   "priceWon": 705000000,
    "floor": 2,
    "exclusiveArea": 35.28,
    "areaGroup": 35,
@@ -69,7 +71,7 @@
   },
   {
    "contractDate": "2026-05-15",
-   "price": 540000000,
+   "priceWon": 540000000,
    "floor": 2,
    "exclusiveArea": 35.28,
    "areaGroup": 35,
@@ -78,7 +80,7 @@
   },
   {
    "contractDate": "2026-05-12",
-   "price": 785000000,
+   "priceWon": 785000000,
    "floor": 2,
    "exclusiveArea": 41.85,
    "areaGroup": 42,
@@ -87,7 +89,7 @@
   },
   {
    "contractDate": "2026-05-11",
-   "price": 800000000,
+   "priceWon": 800000000,
    "floor": 14,
    "exclusiveArea": 41.85,
    "areaGroup": 42,
@@ -96,7 +98,7 @@
   },
   {
    "contractDate": "2026-05-07",
-   "price": 720000000,
+   "priceWon": 720000000,
    "floor": 6,
    "exclusiveArea": 35.28,
    "areaGroup": 35,
@@ -105,7 +107,7 @@
   },
   {
    "contractDate": "2026-05-07",
-   "price": 715000000,
+   "priceWon": 715000000,
    "floor": 8,
    "exclusiveArea": 35.28,
    "areaGroup": 35,
@@ -114,7 +116,7 @@
   },
   {
    "contractDate": "2026-04-30",
-   "price": 720000000,
+   "priceWon": 720000000,
    "floor": 7,
    "exclusiveArea": 35.28,
    "areaGroup": 35,
@@ -123,7 +125,7 @@
   },
   {
    "contractDate": "2026-04-11",
-   "price": 745000000,
+   "priceWon": 745000000,
    "floor": 1,
    "exclusiveArea": 41.85,
    "areaGroup": 42,
@@ -132,7 +134,7 @@
   },
   {
    "contractDate": "2026-04-09",
-   "price": 835000000,
+   "priceWon": 835000000,
    "floor": 14,
    "exclusiveArea": 41.85,
    "areaGroup": 42,
@@ -141,12 +143,19 @@
   },
   {
    "contractDate": "2026-02-21",
-   "price": 845000000,
+   "priceWon": 845000000,
    "floor": 15,
    "exclusiveArea": 41.85,
    "areaGroup": 42,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.4087342980652,
+  "longitude": 127.13495265307,
+  "roadAddress": "경기 성남시 분당구 매화로 12",
+  "jibunAddress": "경기 성남시 분당구 야탑동 518",
+  "geocodeStatus": "valid"
+ }
 }

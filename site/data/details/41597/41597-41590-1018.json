@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "41597-41590-1018",
  "apartmentName": "동탄숲속마을모아미래도2단지",
  "sidoCode": "41",
@@ -15,7 +17,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-30",
-   "price": 565000000,
+   "priceWon": 565000000,
    "floor": 4,
    "exclusiveArea": 100.92,
    "areaGroup": 101,
@@ -24,7 +26,7 @@
   },
   {
    "contractDate": "2026-06-30",
-   "price": 600000000,
+   "priceWon": 600000000,
    "floor": 7,
    "exclusiveArea": 100.92,
    "areaGroup": 101,
@@ -33,7 +35,7 @@
   },
   {
    "contractDate": "2026-06-21",
-   "price": 595000000,
+   "priceWon": 595000000,
    "floor": 15,
    "exclusiveArea": 100.92,
    "areaGroup": 101,
@@ -42,7 +44,7 @@
   },
   {
    "contractDate": "2026-06-21",
-   "price": 610000000,
+   "priceWon": 610000000,
    "floor": 15,
    "exclusiveArea": 101.23,
    "areaGroup": 101,
@@ -51,7 +53,7 @@
   },
   {
    "contractDate": "2026-06-17",
-   "price": 625000000,
+   "priceWon": 625000000,
    "floor": 10,
    "exclusiveArea": 101.23,
    "areaGroup": 101,
@@ -60,7 +62,7 @@
   },
   {
    "contractDate": "2026-06-16",
-   "price": 645000000,
+   "priceWon": 645000000,
    "floor": 19,
    "exclusiveArea": 101.23,
    "areaGroup": 101,
@@ -69,7 +71,7 @@
   },
   {
    "contractDate": "2026-06-08",
-   "price": 590000000,
+   "priceWon": 590000000,
    "floor": 4,
    "exclusiveArea": 100.92,
    "areaGroup": 101,
@@ -78,7 +80,7 @@
   },
   {
    "contractDate": "2026-06-06",
-   "price": 595000000,
+   "priceWon": 595000000,
    "floor": 4,
    "exclusiveArea": 101.23,
    "areaGroup": 101,
@@ -87,7 +89,7 @@
   },
   {
    "contractDate": "2026-06-05",
-   "price": 650000000,
+   "priceWon": 650000000,
    "floor": 7,
    "exclusiveArea": 100.92,
    "areaGroup": 101,
@@ -96,7 +98,7 @@
   },
   {
    "contractDate": "2026-06-02",
-   "price": 575000000,
+   "priceWon": 575000000,
    "floor": 6,
    "exclusiveArea": 100.92,
    "areaGroup": 101,
@@ -105,7 +107,7 @@
   },
   {
    "contractDate": "2026-05-25",
-   "price": 580000000,
+   "priceWon": 580000000,
    "floor": 8,
    "exclusiveArea": 100.92,
    "areaGroup": 101,
@@ -114,7 +116,7 @@
   },
   {
    "contractDate": "2026-05-06",
-   "price": 550000000,
+   "priceWon": 550000000,
    "floor": 17,
    "exclusiveArea": 101.23,
    "areaGroup": 101,
@@ -123,7 +125,7 @@
   },
   {
    "contractDate": "2026-04-05",
-   "price": 540000000,
+   "priceWon": 540000000,
    "floor": 2,
    "exclusiveArea": 100.92,
    "areaGroup": 101,
@@ -132,7 +134,7 @@
   },
   {
    "contractDate": "2026-04-03",
-   "price": 520000000,
+   "priceWon": 520000000,
    "floor": 1,
    "exclusiveArea": 101.23,
    "areaGroup": 101,
@@ -141,7 +143,7 @@
   },
   {
    "contractDate": "2026-03-09",
-   "price": 580000000,
+   "priceWon": 580000000,
    "floor": 22,
    "exclusiveArea": 100.92,
    "areaGroup": 101,
@@ -150,12 +152,19 @@
   },
   {
    "contractDate": "2026-02-14",
-   "price": 598000000,
+   "priceWon": 598000000,
    "floor": 2,
    "exclusiveArea": 100.92,
    "areaGroup": 101,
    "dealType": "중개거래",
    "cancellationStatus": "CANCELLED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.2075266100239,
+  "longitude": 127.051585920778,
+  "roadAddress": "경기 화성시 동탄구 동탄숲속로 36",
+  "jibunAddress": "경기 화성시 동탄구 능동 1129",
+  "geocodeStatus": "valid"
+ }
 }

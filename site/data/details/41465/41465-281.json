@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "41465-281",
  "apartmentName": "래미안이스트팰리스2단지",
  "sidoCode": "41",
@@ -17,7 +19,7 @@
  "transactions": [
   {
    "contractDate": "2026-05-30",
-   "price": 1200000000,
+   "priceWon": 1200000000,
    "floor": 12,
    "exclusiveArea": 84.99,
    "areaGroup": 85,
@@ -26,7 +28,7 @@
   },
   {
    "contractDate": "2026-05-29",
-   "price": 1170000000,
+   "priceWon": 1170000000,
    "floor": 6,
    "exclusiveArea": 84.99,
    "areaGroup": 85,
@@ -35,7 +37,7 @@
   },
   {
    "contractDate": "2026-05-19",
-   "price": 1250000000,
+   "priceWon": 1250000000,
    "floor": 13,
    "exclusiveArea": 172.98,
    "areaGroup": 173,
@@ -44,7 +46,7 @@
   },
   {
    "contractDate": "2026-05-07",
-   "price": 1190000000,
+   "priceWon": 1190000000,
    "floor": 2,
    "exclusiveArea": 148.66,
    "areaGroup": 149,
@@ -53,7 +55,7 @@
   },
   {
    "contractDate": "2026-04-15",
-   "price": 1250000000,
+   "priceWon": 1250000000,
    "floor": 23,
    "exclusiveArea": 148.66,
    "areaGroup": 149,
@@ -62,7 +64,7 @@
   },
   {
    "contractDate": "2026-04-14",
-   "price": 1300000000,
+   "priceWon": 1300000000,
    "floor": 9,
    "exclusiveArea": 172.98,
    "areaGroup": 173,
@@ -71,7 +73,7 @@
   },
   {
    "contractDate": "2026-04-11",
-   "price": 1250000000,
+   "priceWon": 1250000000,
    "floor": 2,
    "exclusiveArea": 172.98,
    "areaGroup": 173,
@@ -80,7 +82,7 @@
   },
   {
    "contractDate": "2026-03-14",
-   "price": 1300000000,
+   "priceWon": 1300000000,
    "floor": 19,
    "exclusiveArea": 172.98,
    "areaGroup": 173,
@@ -89,7 +91,7 @@
   },
   {
    "contractDate": "2026-03-13",
-   "price": 1285000000,
+   "priceWon": 1285000000,
    "floor": 24,
    "exclusiveArea": 172.98,
    "areaGroup": 173,
@@ -98,7 +100,7 @@
   },
   {
    "contractDate": "2026-03-11",
-   "price": 1194000000,
+   "priceWon": 1194000000,
    "floor": 11,
    "exclusiveArea": 84.99,
    "areaGroup": 85,
@@ -107,7 +109,7 @@
   },
   {
    "contractDate": "2026-03-07",
-   "price": 1150000000,
+   "priceWon": 1150000000,
    "floor": 3,
    "exclusiveArea": 84.99,
    "areaGroup": 85,
@@ -116,7 +118,7 @@
   },
   {
    "contractDate": "2026-02-10",
-   "price": 1270000000,
+   "priceWon": 1270000000,
    "floor": 3,
    "exclusiveArea": 172.98,
    "areaGroup": 173,
@@ -125,7 +127,7 @@
   },
   {
    "contractDate": "2026-02-08",
-   "price": 1190000000,
+   "priceWon": 1190000000,
    "floor": 4,
    "exclusiveArea": 148.66,
    "areaGroup": 149,
@@ -134,12 +136,19 @@
   },
   {
    "contractDate": "2026-02-02",
-   "price": 1147000000,
+   "priceWon": 1147000000,
    "floor": 7,
    "exclusiveArea": 84.97,
    "areaGroup": 85,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.3365409145398,
+  "longitude": 127.090064362954,
+  "roadAddress": "경기 용인시 수지구 동천로113번길 10",
+  "jibunAddress": "경기 용인시 수지구 동천동 938",
+  "geocodeStatus": "ambiguous"
+ }
 }

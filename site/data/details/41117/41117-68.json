@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "41117-68",
  "apartmentName": "영통3풍림아이원",
  "sidoCode": "41",
@@ -15,7 +17,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-29",
-   "price": 630000000,
+   "priceWon": 630000000,
    "floor": 12,
    "exclusiveArea": 84.877,
    "areaGroup": 85,
@@ -24,7 +26,7 @@
   },
   {
    "contractDate": "2026-06-12",
-   "price": 535000000,
+   "priceWon": 535000000,
    "floor": 1,
    "exclusiveArea": 84.877,
    "areaGroup": 85,
@@ -33,7 +35,7 @@
   },
   {
    "contractDate": "2026-05-11",
-   "price": 544000000,
+   "priceWon": 544000000,
    "floor": 6,
    "exclusiveArea": 84.877,
    "areaGroup": 85,
@@ -42,7 +44,7 @@
   },
   {
    "contractDate": "2026-05-05",
-   "price": 528000000,
+   "priceWon": 528000000,
    "floor": 16,
    "exclusiveArea": 84.877,
    "areaGroup": 85,
@@ -51,7 +53,7 @@
   },
   {
    "contractDate": "2026-05-01",
-   "price": 595000000,
+   "priceWon": 595000000,
    "floor": 7,
    "exclusiveArea": 124.251,
    "areaGroup": 124,
@@ -60,7 +62,7 @@
   },
   {
    "contractDate": "2026-04-23",
-   "price": 500000000,
+   "priceWon": 500000000,
    "floor": 21,
    "exclusiveArea": 84.877,
    "areaGroup": 85,
@@ -69,7 +71,7 @@
   },
   {
    "contractDate": "2026-04-20",
-   "price": 553000000,
+   "priceWon": 553000000,
    "floor": 4,
    "exclusiveArea": 84.877,
    "areaGroup": 85,
@@ -78,7 +80,7 @@
   },
   {
    "contractDate": "2026-04-14",
-   "price": 550000000,
+   "priceWon": 550000000,
    "floor": 14,
    "exclusiveArea": 84.877,
    "areaGroup": 85,
@@ -87,7 +89,7 @@
   },
   {
    "contractDate": "2026-03-05",
-   "price": 625000000,
+   "priceWon": 625000000,
    "floor": 14,
    "exclusiveArea": 124.251,
    "areaGroup": 124,
@@ -96,7 +98,7 @@
   },
   {
    "contractDate": "2026-03-03",
-   "price": 518000000,
+   "priceWon": 518000000,
    "floor": 5,
    "exclusiveArea": 84.877,
    "areaGroup": 85,
@@ -105,7 +107,7 @@
   },
   {
    "contractDate": "2026-02-27",
-   "price": 590000000,
+   "priceWon": 590000000,
    "floor": 16,
    "exclusiveArea": 84.877,
    "areaGroup": 85,
@@ -114,12 +116,19 @@
   },
   {
    "contractDate": "2026-02-11",
-   "price": 585000000,
+   "priceWon": 585000000,
    "floor": 6,
    "exclusiveArea": 84.877,
    "areaGroup": 85,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.2445011390792,
+  "longitude": 127.066200994672,
+  "roadAddress": "경기 수원시 영통구 봉영로1482번길 18",
+  "jibunAddress": "경기 수원시 영통구 영통동 1093",
+  "geocodeStatus": "valid"
+ }
 }

@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "11290-67",
  "apartmentName": "동신",
  "sidoCode": "11",
@@ -16,7 +18,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-18",
-   "price": 785000000,
+   "priceWon": 785000000,
    "floor": 16,
    "exclusiveArea": 59.88,
    "areaGroup": 60,
@@ -25,7 +27,7 @@
   },
   {
    "contractDate": "2026-06-14",
-   "price": 900000000,
+   "priceWon": 900000000,
    "floor": 18,
    "exclusiveArea": 84.78,
    "areaGroup": 85,
@@ -34,7 +36,7 @@
   },
   {
    "contractDate": "2026-06-11",
-   "price": 800000000,
+   "priceWon": 800000000,
    "floor": 11,
    "exclusiveArea": 59.88,
    "areaGroup": 60,
@@ -43,7 +45,7 @@
   },
   {
    "contractDate": "2026-06-10",
-   "price": 750000000,
+   "priceWon": 750000000,
    "floor": 15,
    "exclusiveArea": 59.88,
    "areaGroup": 60,
@@ -52,7 +54,7 @@
   },
   {
    "contractDate": "2026-05-30",
-   "price": 797000000,
+   "priceWon": 797000000,
    "floor": 17,
    "exclusiveArea": 59.88,
    "areaGroup": 60,
@@ -61,7 +63,7 @@
   },
   {
    "contractDate": "2026-05-26",
-   "price": 770000000,
+   "priceWon": 770000000,
    "floor": 6,
    "exclusiveArea": 59.88,
    "areaGroup": 60,
@@ -70,7 +72,7 @@
   },
   {
    "contractDate": "2026-05-19",
-   "price": 796000000,
+   "priceWon": 796000000,
    "floor": 8,
    "exclusiveArea": 59.88,
    "areaGroup": 60,
@@ -79,7 +81,7 @@
   },
   {
    "contractDate": "2026-05-09",
-   "price": 790000000,
+   "priceWon": 790000000,
    "floor": 5,
    "exclusiveArea": 59.88,
    "areaGroup": 60,
@@ -88,7 +90,7 @@
   },
   {
    "contractDate": "2026-05-09",
-   "price": 880000000,
+   "priceWon": 880000000,
    "floor": 2,
    "exclusiveArea": 114.88,
    "areaGroup": 115,
@@ -97,7 +99,7 @@
   },
   {
    "contractDate": "2026-04-17",
-   "price": 850000000,
+   "priceWon": 850000000,
    "floor": 15,
    "exclusiveArea": 84.78,
    "areaGroup": 85,
@@ -106,7 +108,7 @@
   },
   {
    "contractDate": "2026-03-28",
-   "price": 730000000,
+   "priceWon": 730000000,
    "floor": 15,
    "exclusiveArea": 59.88,
    "areaGroup": 60,
@@ -115,7 +117,7 @@
   },
   {
    "contractDate": "2026-03-23",
-   "price": 710000000,
+   "priceWon": 710000000,
    "floor": 19,
    "exclusiveArea": 59.88,
    "areaGroup": 60,
@@ -124,7 +126,7 @@
   },
   {
    "contractDate": "2026-03-21",
-   "price": 780000000,
+   "priceWon": 780000000,
    "floor": 18,
    "exclusiveArea": 59.88,
    "areaGroup": 60,
@@ -133,7 +135,7 @@
   },
   {
    "contractDate": "2026-03-16",
-   "price": 770000000,
+   "priceWon": 770000000,
    "floor": 17,
    "exclusiveArea": 59.88,
    "areaGroup": 60,
@@ -142,7 +144,7 @@
   },
   {
    "contractDate": "2026-03-15",
-   "price": 830000000,
+   "priceWon": 830000000,
    "floor": 23,
    "exclusiveArea": 84.78,
    "areaGroup": 85,
@@ -151,7 +153,7 @@
   },
   {
    "contractDate": "2026-03-14",
-   "price": 730000000,
+   "priceWon": 730000000,
    "floor": 4,
    "exclusiveArea": 59.88,
    "areaGroup": 60,
@@ -160,7 +162,7 @@
   },
   {
    "contractDate": "2026-03-13",
-   "price": 738500000,
+   "priceWon": 738500000,
    "floor": 8,
    "exclusiveArea": 59.88,
    "areaGroup": 60,
@@ -169,7 +171,7 @@
   },
   {
    "contractDate": "2026-03-02",
-   "price": 770000000,
+   "priceWon": 770000000,
    "floor": 20,
    "exclusiveArea": 59.88,
    "areaGroup": 60,
@@ -178,7 +180,7 @@
   },
   {
    "contractDate": "2026-02-21",
-   "price": 744000000,
+   "priceWon": 744000000,
    "floor": 5,
    "exclusiveArea": 59.88,
    "areaGroup": 60,
@@ -187,7 +189,7 @@
   },
   {
    "contractDate": "2026-02-09",
-   "price": 700000000,
+   "priceWon": 700000000,
    "floor": 7,
    "exclusiveArea": 59.88,
    "areaGroup": 60,
@@ -196,12 +198,19 @@
   },
   {
    "contractDate": "2026-02-07",
-   "price": 795000000,
+   "priceWon": 795000000,
    "floor": 24,
    "exclusiveArea": 84.78,
    "areaGroup": 85,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.6044079465985,
+  "longitude": 127.035278405071,
+  "roadAddress": "서울 성북구 오패산로3길 17",
+  "jibunAddress": "서울 성북구 하월곡동 219",
+  "geocodeStatus": "valid"
+ }
 }

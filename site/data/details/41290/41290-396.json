@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "41290-396",
  "apartmentName": "과천푸르지오써밋",
  "sidoCode": "41",
@@ -20,7 +22,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-30",
-   "price": 2270000000,
+   "priceWon": 2270000000,
    "floor": 11,
    "exclusiveArea": 59.934,
    "areaGroup": 60,
@@ -29,7 +31,7 @@
   },
   {
    "contractDate": "2026-06-27",
-   "price": 2250000000,
+   "priceWon": 2250000000,
    "floor": 12,
    "exclusiveArea": 59.934,
    "areaGroup": 60,
@@ -38,7 +40,7 @@
   },
   {
    "contractDate": "2026-06-16",
-   "price": 2590000000,
+   "priceWon": 2590000000,
    "floor": 5,
    "exclusiveArea": 84.9364,
    "areaGroup": 85,
@@ -47,7 +49,7 @@
   },
   {
    "contractDate": "2026-06-16",
-   "price": 2780000000,
+   "priceWon": 2780000000,
    "floor": 24,
    "exclusiveArea": 84.9499,
    "areaGroup": 85,
@@ -56,7 +58,7 @@
   },
   {
    "contractDate": "2026-06-11",
-   "price": 2700000000,
+   "priceWon": 2700000000,
    "floor": 3,
    "exclusiveArea": 84.9998,
    "areaGroup": 85,
@@ -65,7 +67,7 @@
   },
   {
    "contractDate": "2026-06-05",
-   "price": 3210000000,
+   "priceWon": 3210000000,
    "floor": 11,
    "exclusiveArea": 120.9552,
    "areaGroup": 121,
@@ -74,7 +76,7 @@
   },
   {
    "contractDate": "2026-05-29",
-   "price": 2215000000,
+   "priceWon": 2215000000,
    "floor": 5,
    "exclusiveArea": 59.934,
    "areaGroup": 60,
@@ -83,7 +85,7 @@
   },
   {
    "contractDate": "2026-05-23",
-   "price": 2130000000,
+   "priceWon": 2130000000,
    "floor": 2,
    "exclusiveArea": 59.934,
    "areaGroup": 60,
@@ -92,7 +94,7 @@
   },
   {
    "contractDate": "2026-05-08",
-   "price": 2570000000,
+   "priceWon": 2570000000,
    "floor": 25,
    "exclusiveArea": 84.9998,
    "areaGroup": 85,
@@ -101,7 +103,7 @@
   },
   {
    "contractDate": "2026-05-05",
-   "price": 2100000000,
+   "priceWon": 2100000000,
    "floor": 10,
    "exclusiveArea": 59.934,
    "areaGroup": 60,
@@ -110,7 +112,7 @@
   },
   {
    "contractDate": "2026-04-23",
-   "price": 2420000000,
+   "priceWon": 2420000000,
    "floor": 9,
    "exclusiveArea": 84.9364,
    "areaGroup": 85,
@@ -119,7 +121,7 @@
   },
   {
    "contractDate": "2026-04-22",
-   "price": 2030000000,
+   "priceWon": 2030000000,
    "floor": 13,
    "exclusiveArea": 59.9646,
    "areaGroup": 60,
@@ -128,7 +130,7 @@
   },
   {
    "contractDate": "2026-04-04",
-   "price": 2100000000,
+   "priceWon": 2100000000,
    "floor": 21,
    "exclusiveArea": 59.934,
    "areaGroup": 60,
@@ -137,7 +139,7 @@
   },
   {
    "contractDate": "2026-04-01",
-   "price": 2670000000,
+   "priceWon": 2670000000,
    "floor": 12,
    "exclusiveArea": 84.9998,
    "areaGroup": 85,
@@ -146,7 +148,7 @@
   },
   {
    "contractDate": "2026-04-01",
-   "price": 2650000000,
+   "priceWon": 2650000000,
    "floor": 19,
    "exclusiveArea": 84.9499,
    "areaGroup": 85,
@@ -155,7 +157,7 @@
   },
   {
    "contractDate": "2026-03-13",
-   "price": 2120000000,
+   "priceWon": 2120000000,
    "floor": 8,
    "exclusiveArea": 59.934,
    "areaGroup": 60,
@@ -164,12 +166,19 @@
   },
   {
    "contractDate": "2026-03-11",
-   "price": 2680000000,
+   "priceWon": 2680000000,
    "floor": 17,
    "exclusiveArea": 84.9836,
    "areaGroup": 85,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.4313342084401,
+  "longitude": 126.992724251099,
+  "roadAddress": "경기 과천시 관문로 106",
+  "jibunAddress": "경기 과천시 중앙동 101",
+  "geocodeStatus": "ambiguous"
+ }
 }

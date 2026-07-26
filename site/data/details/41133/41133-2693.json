@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "41133-2693",
  "apartmentName": "성남자이",
  "sidoCode": "41",
@@ -15,7 +17,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-27",
-   "price": 835000000,
+   "priceWon": 835000000,
    "floor": 15,
    "exclusiveArea": 84.99,
    "areaGroup": 85,
@@ -24,7 +26,7 @@
   },
   {
    "contractDate": "2026-06-27",
-   "price": 850000000,
+   "priceWon": 850000000,
    "floor": 8,
    "exclusiveArea": 84.99,
    "areaGroup": 85,
@@ -33,7 +35,7 @@
   },
   {
    "contractDate": "2026-06-20",
-   "price": 770000000,
+   "priceWon": 770000000,
    "floor": 1,
    "exclusiveArea": 84.99,
    "areaGroup": 85,
@@ -42,7 +44,7 @@
   },
   {
    "contractDate": "2026-06-19",
-   "price": 900000000,
+   "priceWon": 900000000,
    "floor": 7,
    "exclusiveArea": 84.99,
    "areaGroup": 85,
@@ -51,7 +53,7 @@
   },
   {
    "contractDate": "2026-06-09",
-   "price": 780000000,
+   "priceWon": 780000000,
    "floor": 9,
    "exclusiveArea": 59.99,
    "areaGroup": 60,
@@ -60,7 +62,7 @@
   },
   {
    "contractDate": "2026-05-27",
-   "price": 845000000,
+   "priceWon": 845000000,
    "floor": 21,
    "exclusiveArea": 84.99,
    "areaGroup": 85,
@@ -69,7 +71,7 @@
   },
   {
    "contractDate": "2026-05-26",
-   "price": 710000000,
+   "priceWon": 710000000,
    "floor": 11,
    "exclusiveArea": 59.99,
    "areaGroup": 60,
@@ -78,7 +80,7 @@
   },
   {
    "contractDate": "2026-05-08",
-   "price": 720000000,
+   "priceWon": 720000000,
    "floor": 6,
    "exclusiveArea": 59.99,
    "areaGroup": 60,
@@ -87,7 +89,7 @@
   },
   {
    "contractDate": "2026-05-05",
-   "price": 860000000,
+   "priceWon": 860000000,
    "floor": 13,
    "exclusiveArea": 84.99,
    "areaGroup": 85,
@@ -96,7 +98,7 @@
   },
   {
    "contractDate": "2026-04-11",
-   "price": 800000000,
+   "priceWon": 800000000,
    "floor": 11,
    "exclusiveArea": 84.99,
    "areaGroup": 85,
@@ -105,7 +107,7 @@
   },
   {
    "contractDate": "2026-03-26",
-   "price": 775000000,
+   "priceWon": 775000000,
    "floor": 1,
    "exclusiveArea": 84.99,
    "areaGroup": 85,
@@ -114,7 +116,7 @@
   },
   {
    "contractDate": "2026-03-21",
-   "price": 720000000,
+   "priceWon": 720000000,
    "floor": 1,
    "exclusiveArea": 84.99,
    "areaGroup": 85,
@@ -123,7 +125,7 @@
   },
   {
    "contractDate": "2026-03-18",
-   "price": 880000000,
+   "priceWon": 880000000,
    "floor": 17,
    "exclusiveArea": 84.99,
    "areaGroup": 85,
@@ -132,7 +134,7 @@
   },
   {
    "contractDate": "2026-02-13",
-   "price": 700000000,
+   "priceWon": 700000000,
    "floor": 2,
    "exclusiveArea": 59.99,
    "areaGroup": 60,
@@ -141,12 +143,19 @@
   },
   {
    "contractDate": "2026-02-03",
-   "price": 720000000,
+   "priceWon": 720000000,
    "floor": 3,
    "exclusiveArea": 84.99,
    "areaGroup": 85,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.4333662373471,
+  "longitude": 127.156434869226,
+  "roadAddress": "경기 성남시 중원구 둔촌대로 363",
+  "jibunAddress": "경기 성남시 중원구 하대원동 539",
+  "geocodeStatus": "valid"
+ }
 }

@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "11530-168",
  "apartmentName": "대림e-편한세상7",
  "sidoCode": "11",
@@ -15,7 +17,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-14",
-   "price": 1560000000,
+   "priceWon": 1560000000,
    "floor": 12,
    "exclusiveArea": 84.928,
    "areaGroup": 85,
@@ -24,7 +26,7 @@
   },
   {
    "contractDate": "2026-06-13",
-   "price": 1645000000,
+   "priceWon": 1645000000,
    "floor": 12,
    "exclusiveArea": 84.928,
    "areaGroup": 85,
@@ -33,7 +35,7 @@
   },
   {
    "contractDate": "2026-05-24",
-   "price": 1600000000,
+   "priceWon": 1600000000,
    "floor": 21,
    "exclusiveArea": 84.928,
    "areaGroup": 85,
@@ -42,7 +44,7 @@
   },
   {
    "contractDate": "2026-03-27",
-   "price": 1530000000,
+   "priceWon": 1530000000,
    "floor": 11,
    "exclusiveArea": 116.308,
    "areaGroup": 116,
@@ -51,7 +53,7 @@
   },
   {
    "contractDate": "2026-03-21",
-   "price": 1550000000,
+   "priceWon": 1550000000,
    "floor": 20,
    "exclusiveArea": 84.928,
    "areaGroup": 85,
@@ -60,12 +62,19 @@
   },
   {
    "contractDate": "2026-03-14",
-   "price": 1550000000,
+   "priceWon": 1550000000,
    "floor": 3,
    "exclusiveArea": 84.928,
    "areaGroup": 85,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.5084845025198,
+  "longitude": 126.882772416879,
+  "roadAddress": "서울 구로구 신도림로 56-13",
+  "jibunAddress": "서울 구로구 신도림동 649",
+  "geocodeStatus": "valid"
+ }
 }

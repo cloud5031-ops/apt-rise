@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "41135-440",
  "apartmentName": "봇들마을1단지(판교신미주)",
  "sidoCode": "41",
@@ -15,7 +17,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-27",
-   "price": 1980000000,
+   "priceWon": 1980000000,
    "floor": 11,
    "exclusiveArea": 82.794,
    "areaGroup": 83,
@@ -24,7 +26,7 @@
   },
   {
    "contractDate": "2026-06-07",
-   "price": 2065000000,
+   "priceWon": 2065000000,
    "floor": 6,
    "exclusiveArea": 82.794,
    "areaGroup": 83,
@@ -33,7 +35,7 @@
   },
   {
    "contractDate": "2026-06-03",
-   "price": 2070000000,
+   "priceWon": 2070000000,
    "floor": 7,
    "exclusiveArea": 83.235,
    "areaGroup": 83,
@@ -42,7 +44,7 @@
   },
   {
    "contractDate": "2026-06-01",
-   "price": 1850000000,
+   "priceWon": 1850000000,
    "floor": 2,
    "exclusiveArea": 83.235,
    "areaGroup": 83,
@@ -51,7 +53,7 @@
   },
   {
    "contractDate": "2026-05-20",
-   "price": 2000000000,
+   "priceWon": 2000000000,
    "floor": 4,
    "exclusiveArea": 82.794,
    "areaGroup": 83,
@@ -60,7 +62,7 @@
   },
   {
    "contractDate": "2026-05-15",
-   "price": 1890000000,
+   "priceWon": 1890000000,
    "floor": 4,
    "exclusiveArea": 82.794,
    "areaGroup": 83,
@@ -69,7 +71,7 @@
   },
   {
    "contractDate": "2026-05-07",
-   "price": 1850000000,
+   "priceWon": 1850000000,
    "floor": 6,
    "exclusiveArea": 82.794,
    "areaGroup": 83,
@@ -78,7 +80,7 @@
   },
   {
    "contractDate": "2026-03-03",
-   "price": 1930000000,
+   "priceWon": 1930000000,
    "floor": 8,
    "exclusiveArea": 82.794,
    "areaGroup": 83,
@@ -87,7 +89,7 @@
   },
   {
    "contractDate": "2026-02-27",
-   "price": 2070000000,
+   "priceWon": 2070000000,
    "floor": 9,
    "exclusiveArea": 83.235,
    "areaGroup": 83,
@@ -96,12 +98,19 @@
   },
   {
    "contractDate": "2026-02-27",
-   "price": 1900000000,
+   "priceWon": 1900000000,
    "floor": 2,
    "exclusiveArea": 82.794,
    "areaGroup": 83,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.40602104513,
+  "longitude": 127.113715229073,
+  "roadAddress": "경기 성남시 분당구 동판교로 275",
+  "jibunAddress": "경기 성남시 분당구 삼평동 705",
+  "geocodeStatus": "valid"
+ }
 }

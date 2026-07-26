@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "11740-74",
  "apartmentName": "신성둔촌미소지움1",
  "sidoCode": "11",
@@ -16,7 +18,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-04",
-   "price": 1350000000,
+   "priceWon": 1350000000,
    "floor": 4,
    "exclusiveArea": 59.78,
    "areaGroup": 60,
@@ -25,7 +27,7 @@
   },
   {
    "contractDate": "2026-05-30",
-   "price": 1350000000,
+   "priceWon": 1350000000,
    "floor": 16,
    "exclusiveArea": 59.78,
    "areaGroup": 60,
@@ -34,7 +36,7 @@
   },
   {
    "contractDate": "2026-05-30",
-   "price": 1650000000,
+   "priceWon": 1650000000,
    "floor": 11,
    "exclusiveArea": 109.73,
    "areaGroup": 110,
@@ -43,7 +45,7 @@
   },
   {
    "contractDate": "2026-05-09",
-   "price": 1250000000,
+   "priceWon": 1250000000,
    "floor": 1,
    "exclusiveArea": 59.78,
    "areaGroup": 60,
@@ -52,7 +54,7 @@
   },
   {
    "contractDate": "2026-05-04",
-   "price": 1380000000,
+   "priceWon": 1380000000,
    "floor": 20,
    "exclusiveArea": 59.78,
    "areaGroup": 60,
@@ -61,7 +63,7 @@
   },
   {
    "contractDate": "2026-04-17",
-   "price": 1350000000,
+   "priceWon": 1350000000,
    "floor": 18,
    "exclusiveArea": 59.78,
    "areaGroup": 60,
@@ -70,7 +72,7 @@
   },
   {
    "contractDate": "2026-04-06",
-   "price": 1232500000,
+   "priceWon": 1232500000,
    "floor": 9,
    "exclusiveArea": 59.78,
    "areaGroup": 60,
@@ -79,7 +81,7 @@
   },
   {
    "contractDate": "2026-04-03",
-   "price": 1300000000,
+   "priceWon": 1300000000,
    "floor": 11,
    "exclusiveArea": 59.78,
    "areaGroup": 60,
@@ -88,12 +90,19 @@
   },
   {
    "contractDate": "2026-03-18",
-   "price": 1010000000,
+   "priceWon": 1010000000,
    "floor": 15,
    "exclusiveArea": 84.86,
    "areaGroup": 85,
    "dealType": "직거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.5278537369158,
+  "longitude": 127.142828226919,
+  "roadAddress": "서울 강동구 명일로 102",
+  "jibunAddress": "서울 강동구 둔촌동 546",
+  "geocodeStatus": "valid"
+ }
 }

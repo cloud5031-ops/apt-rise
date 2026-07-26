@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "11110-37",
  "apartmentName": "창신쌍용1",
  "sidoCode": "11",
@@ -16,7 +18,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-04",
-   "price": 620000000,
+   "priceWon": 620000000,
    "floor": 13,
    "exclusiveArea": 79.87,
    "areaGroup": 80,
@@ -25,7 +27,7 @@
   },
   {
    "contractDate": "2026-05-30",
-   "price": 800000000,
+   "priceWon": 800000000,
    "floor": 11,
    "exclusiveArea": 54.7,
    "areaGroup": 55,
@@ -34,7 +36,7 @@
   },
   {
    "contractDate": "2026-05-25",
-   "price": 880000000,
+   "priceWon": 880000000,
    "floor": 2,
    "exclusiveArea": 79.87,
    "areaGroup": 80,
@@ -43,7 +45,7 @@
   },
   {
    "contractDate": "2026-05-25",
-   "price": 935000000,
+   "priceWon": 935000000,
    "floor": 12,
    "exclusiveArea": 79.87,
    "areaGroup": 80,
@@ -52,7 +54,7 @@
   },
   {
    "contractDate": "2026-05-23",
-   "price": 775000000,
+   "priceWon": 775000000,
    "floor": 9,
    "exclusiveArea": 54.7,
    "areaGroup": 55,
@@ -61,7 +63,7 @@
   },
   {
    "contractDate": "2026-05-18",
-   "price": 650000000,
+   "priceWon": 650000000,
    "floor": 6,
    "exclusiveArea": 79.87,
    "areaGroup": 80,
@@ -70,7 +72,7 @@
   },
   {
    "contractDate": "2026-05-12",
-   "price": 925000000,
+   "priceWon": 925000000,
    "floor": 3,
    "exclusiveArea": 79.87,
    "areaGroup": 80,
@@ -79,7 +81,7 @@
   },
   {
    "contractDate": "2026-04-22",
-   "price": 750000000,
+   "priceWon": 750000000,
    "floor": 6,
    "exclusiveArea": 79.87,
    "areaGroup": 80,
@@ -88,7 +90,7 @@
   },
   {
    "contractDate": "2026-04-21",
-   "price": 775000000,
+   "priceWon": 775000000,
    "floor": 6,
    "exclusiveArea": 54.7,
    "areaGroup": 55,
@@ -97,7 +99,7 @@
   },
   {
    "contractDate": "2026-04-18",
-   "price": 890000000,
+   "priceWon": 890000000,
    "floor": 8,
    "exclusiveArea": 79.87,
    "areaGroup": 80,
@@ -106,7 +108,7 @@
   },
   {
    "contractDate": "2026-04-16",
-   "price": 850000000,
+   "priceWon": 850000000,
    "floor": 11,
    "exclusiveArea": 79.87,
    "areaGroup": 80,
@@ -115,7 +117,7 @@
   },
   {
    "contractDate": "2026-03-23",
-   "price": 785000000,
+   "priceWon": 785000000,
    "floor": 14,
    "exclusiveArea": 79.87,
    "areaGroup": 80,
@@ -124,7 +126,7 @@
   },
   {
    "contractDate": "2026-03-13",
-   "price": 1005000000,
+   "priceWon": 1005000000,
    "floor": 4,
    "exclusiveArea": 106.62,
    "areaGroup": 107,
@@ -133,7 +135,7 @@
   },
   {
    "contractDate": "2026-03-04",
-   "price": 840000000,
+   "priceWon": 840000000,
    "floor": 9,
    "exclusiveArea": 79.87,
    "areaGroup": 80,
@@ -142,7 +144,7 @@
   },
   {
    "contractDate": "2026-02-27",
-   "price": 735000000,
+   "priceWon": 735000000,
    "floor": 9,
    "exclusiveArea": 54.7,
    "areaGroup": 55,
@@ -151,7 +153,7 @@
   },
   {
    "contractDate": "2026-02-26",
-   "price": 750000000,
+   "priceWon": 750000000,
    "floor": 13,
    "exclusiveArea": 54.7,
    "areaGroup": 55,
@@ -160,12 +162,19 @@
   },
   {
    "contractDate": "2026-02-13",
-   "price": 890000000,
+   "priceWon": 890000000,
    "floor": 12,
    "exclusiveArea": 79.87,
    "areaGroup": 80,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.5805125839757,
+  "longitude": 127.014014651795,
+  "roadAddress": "서울 종로구 동망산길 19",
+  "jibunAddress": "서울 종로구 창신동 702",
+  "geocodeStatus": "valid"
+ }
 }

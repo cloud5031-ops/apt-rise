@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "11410-4856",
  "apartmentName": "북한산두산위브2차",
  "sidoCode": "11",
@@ -14,7 +16,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-23",
-   "price": 860000000,
+   "priceWon": 860000000,
    "floor": 10,
    "exclusiveArea": 59.7501,
    "areaGroup": 60,
@@ -23,7 +25,7 @@
   },
   {
    "contractDate": "2026-06-18",
-   "price": 850000000,
+   "priceWon": 850000000,
    "floor": 6,
    "exclusiveArea": 59.7501,
    "areaGroup": 60,
@@ -32,7 +34,7 @@
   },
   {
    "contractDate": "2026-05-22",
-   "price": 805000000,
+   "priceWon": 805000000,
    "floor": 9,
    "exclusiveArea": 59.7501,
    "areaGroup": 60,
@@ -41,7 +43,7 @@
   },
   {
    "contractDate": "2026-05-09",
-   "price": 850000000,
+   "priceWon": 850000000,
    "floor": 10,
    "exclusiveArea": 59.7501,
    "areaGroup": 60,
@@ -50,7 +52,7 @@
   },
   {
    "contractDate": "2026-04-25",
-   "price": 835000000,
+   "priceWon": 835000000,
    "floor": 13,
    "exclusiveArea": 59.7501,
    "areaGroup": 60,
@@ -59,7 +61,7 @@
   },
   {
    "contractDate": "2026-04-22",
-   "price": 825000000,
+   "priceWon": 825000000,
    "floor": 14,
    "exclusiveArea": 59.7501,
    "areaGroup": 60,
@@ -68,7 +70,7 @@
   },
   {
    "contractDate": "2026-03-28",
-   "price": 800000000,
+   "priceWon": 800000000,
    "floor": 14,
    "exclusiveArea": 59.7501,
    "areaGroup": 60,
@@ -77,7 +79,7 @@
   },
   {
    "contractDate": "2026-02-27",
-   "price": 800000000,
+   "priceWon": 800000000,
    "floor": 5,
    "exclusiveArea": 59.7501,
    "areaGroup": 60,
@@ -86,7 +88,7 @@
   },
   {
    "contractDate": "2026-02-21",
-   "price": 800000000,
+   "priceWon": 800000000,
    "floor": 6,
    "exclusiveArea": 59.7501,
    "areaGroup": 60,
@@ -95,7 +97,7 @@
   },
   {
    "contractDate": "2026-02-14",
-   "price": 790000000,
+   "priceWon": 790000000,
    "floor": 8,
    "exclusiveArea": 59.7501,
    "areaGroup": 60,
@@ -104,7 +106,7 @@
   },
   {
    "contractDate": "2026-02-09",
-   "price": 780000000,
+   "priceWon": 780000000,
    "floor": 10,
    "exclusiveArea": 59.7501,
    "areaGroup": 60,
@@ -113,7 +115,7 @@
   },
   {
    "contractDate": "2026-02-09",
-   "price": 784000000,
+   "priceWon": 784000000,
    "floor": 5,
    "exclusiveArea": 59.7501,
    "areaGroup": 60,
@@ -122,12 +124,19 @@
   },
   {
    "contractDate": "2026-02-04",
-   "price": 775000000,
+   "priceWon": 775000000,
    "floor": 5,
    "exclusiveArea": 59.7501,
    "areaGroup": 60,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.5998131143961,
+  "longitude": 126.944642936837,
+  "roadAddress": "서울 서대문구 홍은중앙로1길 100",
+  "jibunAddress": "서울 서대문구 홍은동 468",
+  "geocodeStatus": "valid"
+ }
 }

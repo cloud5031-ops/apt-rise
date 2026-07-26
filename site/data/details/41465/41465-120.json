@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "41465-120",
  "apartmentName": "만현마을3단지성원쌍떼빌",
  "sidoCode": "41",
@@ -14,7 +16,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-29",
-   "price": 925000000,
+   "priceWon": 925000000,
    "floor": 9,
    "exclusiveArea": 84.975,
    "areaGroup": 85,
@@ -23,7 +25,7 @@
   },
   {
    "contractDate": "2026-05-17",
-   "price": 895000000,
+   "priceWon": 895000000,
    "floor": 2,
    "exclusiveArea": 84.975,
    "areaGroup": 85,
@@ -32,7 +34,7 @@
   },
   {
    "contractDate": "2026-05-08",
-   "price": 823000000,
+   "priceWon": 823000000,
    "floor": 1,
    "exclusiveArea": 84.975,
    "areaGroup": 85,
@@ -41,7 +43,7 @@
   },
   {
    "contractDate": "2026-05-01",
-   "price": 940000000,
+   "priceWon": 940000000,
    "floor": 17,
    "exclusiveArea": 84.975,
    "areaGroup": 85,
@@ -50,7 +52,7 @@
   },
   {
    "contractDate": "2026-04-06",
-   "price": 900000000,
+   "priceWon": 900000000,
    "floor": 16,
    "exclusiveArea": 84.975,
    "areaGroup": 85,
@@ -59,7 +61,7 @@
   },
   {
    "contractDate": "2026-04-01",
-   "price": 835000000,
+   "priceWon": 835000000,
    "floor": 6,
    "exclusiveArea": 84.975,
    "areaGroup": 85,
@@ -68,7 +70,7 @@
   },
   {
    "contractDate": "2026-03-30",
-   "price": 885000000,
+   "priceWon": 885000000,
    "floor": 11,
    "exclusiveArea": 84.975,
    "areaGroup": 85,
@@ -77,7 +79,7 @@
   },
   {
    "contractDate": "2026-03-28",
-   "price": 842000000,
+   "priceWon": 842000000,
    "floor": 11,
    "exclusiveArea": 84.975,
    "areaGroup": 85,
@@ -86,7 +88,7 @@
   },
   {
    "contractDate": "2026-03-20",
-   "price": 860000000,
+   "priceWon": 860000000,
    "floor": 11,
    "exclusiveArea": 84.975,
    "areaGroup": 85,
@@ -95,7 +97,7 @@
   },
   {
    "contractDate": "2026-03-13",
-   "price": 840000000,
+   "priceWon": 840000000,
    "floor": 7,
    "exclusiveArea": 84.975,
    "areaGroup": 85,
@@ -104,12 +106,19 @@
   },
   {
    "contractDate": "2026-02-01",
-   "price": 842000000,
+   "priceWon": 842000000,
    "floor": 15,
    "exclusiveArea": 84.975,
    "areaGroup": 85,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.3096031820737,
+  "longitude": 127.090305544855,
+  "roadAddress": "경기 용인시 수지구 만현로67번길 19",
+  "jibunAddress": "경기 용인시 수지구 상현동 864",
+  "geocodeStatus": "valid"
+ }
 }

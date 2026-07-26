@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "41133-2701",
  "apartmentName": "동분당포레스트",
  "sidoCode": "41",
@@ -16,7 +18,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-29",
-   "price": 880000000,
+   "priceWon": 880000000,
    "floor": 3,
    "exclusiveArea": 75.48,
    "areaGroup": 75,
@@ -25,7 +27,7 @@
   },
   {
    "contractDate": "2026-06-03",
-   "price": 900000000,
+   "priceWon": 900000000,
    "floor": 6,
    "exclusiveArea": 84.98,
    "areaGroup": 85,
@@ -34,7 +36,7 @@
   },
   {
    "contractDate": "2026-06-01",
-   "price": 885000000,
+   "priceWon": 885000000,
    "floor": 3,
    "exclusiveArea": 84.95,
    "areaGroup": 85,
@@ -43,7 +45,7 @@
   },
   {
    "contractDate": "2026-05-22",
-   "price": 825000000,
+   "priceWon": 825000000,
    "floor": 2,
    "exclusiveArea": 84.95,
    "areaGroup": 85,
@@ -52,7 +54,7 @@
   },
   {
    "contractDate": "2026-05-20",
-   "price": 810000000,
+   "priceWon": 810000000,
    "floor": 2,
    "exclusiveArea": 84.95,
    "areaGroup": 85,
@@ -61,7 +63,7 @@
   },
   {
    "contractDate": "2026-04-30",
-   "price": 810000000,
+   "priceWon": 810000000,
    "floor": 1,
    "exclusiveArea": 84.95,
    "areaGroup": 85,
@@ -70,12 +72,19 @@
   },
   {
    "contractDate": "2026-02-21",
-   "price": 1000000000,
+   "priceWon": 1000000000,
    "floor": 14,
    "exclusiveArea": 84.95,
    "areaGroup": 85,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.4152837448241,
+  "longitude": 127.153814941909,
+  "roadAddress": "경기 성남시 중원구 도촌남로 67",
+  "jibunAddress": "경기 성남시 중원구 도촌동 702",
+  "geocodeStatus": "valid"
+ }
 }

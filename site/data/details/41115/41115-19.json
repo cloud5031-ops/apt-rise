@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "41115-19",
  "apartmentName": "화서주공3단지",
  "sidoCode": "41",
@@ -15,7 +17,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-29",
-   "price": 1010000000,
+   "priceWon": 1010000000,
    "floor": 6,
    "exclusiveArea": 84.9,
    "areaGroup": 85,
@@ -24,7 +26,7 @@
   },
   {
    "contractDate": "2026-06-26",
-   "price": 1003000000,
+   "priceWon": 1003000000,
    "floor": 17,
    "exclusiveArea": 84.79,
    "areaGroup": 85,
@@ -33,7 +35,7 @@
   },
   {
    "contractDate": "2026-06-09",
-   "price": 975000000,
+   "priceWon": 975000000,
    "floor": 6,
    "exclusiveArea": 84.79,
    "areaGroup": 85,
@@ -42,7 +44,7 @@
   },
   {
    "contractDate": "2026-04-27",
-   "price": 955000000,
+   "priceWon": 955000000,
    "floor": 15,
    "exclusiveArea": 84.79,
    "areaGroup": 85,
@@ -51,7 +53,7 @@
   },
   {
    "contractDate": "2026-04-15",
-   "price": 925000000,
+   "priceWon": 925000000,
    "floor": 4,
    "exclusiveArea": 84.9,
    "areaGroup": 85,
@@ -60,7 +62,7 @@
   },
   {
    "contractDate": "2026-04-07",
-   "price": 930000000,
+   "priceWon": 930000000,
    "floor": 5,
    "exclusiveArea": 84.79,
    "areaGroup": 85,
@@ -69,7 +71,7 @@
   },
   {
    "contractDate": "2026-04-01",
-   "price": 855000000,
+   "priceWon": 855000000,
    "floor": 1,
    "exclusiveArea": 84.79,
    "areaGroup": 85,
@@ -78,7 +80,7 @@
   },
   {
    "contractDate": "2026-03-23",
-   "price": 945000000,
+   "priceWon": 945000000,
    "floor": 11,
    "exclusiveArea": 84.79,
    "areaGroup": 85,
@@ -87,7 +89,7 @@
   },
   {
    "contractDate": "2026-03-20",
-   "price": 897000000,
+   "priceWon": 897000000,
    "floor": 7,
    "exclusiveArea": 84.79,
    "areaGroup": 85,
@@ -96,12 +98,19 @@
   },
   {
    "contractDate": "2026-03-13",
-   "price": 845000000,
+   "priceWon": 845000000,
    "floor": 2,
    "exclusiveArea": 84.79,
    "areaGroup": 85,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.2859186622843,
+  "longitude": 126.992204428884,
+  "roadAddress": "경기 수원시 팔달구 덕영대로697번길 47",
+  "jibunAddress": "경기 수원시 팔달구 화서동 646",
+  "geocodeStatus": "valid"
+ }
 }

@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "41465-183",
  "apartmentName": "우미이노스빌",
  "sidoCode": "41",
@@ -15,7 +17,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-27",
-   "price": 940000000,
+   "priceWon": 940000000,
    "floor": 13,
    "exclusiveArea": 59.9359,
    "areaGroup": 60,
@@ -24,7 +26,7 @@
   },
   {
    "contractDate": "2026-06-02",
-   "price": 970000000,
+   "priceWon": 970000000,
    "floor": 8,
    "exclusiveArea": 59.9359,
    "areaGroup": 60,
@@ -33,7 +35,7 @@
   },
   {
    "contractDate": "2026-05-29",
-   "price": 870000000,
+   "priceWon": 870000000,
    "floor": 14,
    "exclusiveArea": 59.5492,
    "areaGroup": 60,
@@ -42,7 +44,7 @@
   },
   {
    "contractDate": "2026-05-29",
-   "price": 865000000,
+   "priceWon": 865000000,
    "floor": 8,
    "exclusiveArea": 59.5492,
    "areaGroup": 60,
@@ -51,7 +53,7 @@
   },
   {
    "contractDate": "2026-05-19",
-   "price": 844000000,
+   "priceWon": 844000000,
    "floor": 11,
    "exclusiveArea": 59.5492,
    "areaGroup": 60,
@@ -60,7 +62,7 @@
   },
   {
    "contractDate": "2026-05-15",
-   "price": 760000000,
+   "priceWon": 760000000,
    "floor": 1,
    "exclusiveArea": 59.5492,
    "areaGroup": 60,
@@ -69,7 +71,7 @@
   },
   {
    "contractDate": "2026-05-11",
-   "price": 825000000,
+   "priceWon": 825000000,
    "floor": 4,
    "exclusiveArea": 59.5492,
    "areaGroup": 60,
@@ -78,7 +80,7 @@
   },
   {
    "contractDate": "2026-05-08",
-   "price": 810000000,
+   "priceWon": 810000000,
    "floor": 5,
    "exclusiveArea": 59.5492,
    "areaGroup": 60,
@@ -87,7 +89,7 @@
   },
   {
    "contractDate": "2026-05-02",
-   "price": 835000000,
+   "priceWon": 835000000,
    "floor": 3,
    "exclusiveArea": 59.5492,
    "areaGroup": 60,
@@ -96,7 +98,7 @@
   },
   {
    "contractDate": "2026-04-30",
-   "price": 840000000,
+   "priceWon": 840000000,
    "floor": 11,
    "exclusiveArea": 59.5492,
    "areaGroup": 60,
@@ -105,7 +107,7 @@
   },
   {
    "contractDate": "2026-04-29",
-   "price": 910000000,
+   "priceWon": 910000000,
    "floor": 2,
    "exclusiveArea": 59.9359,
    "areaGroup": 60,
@@ -114,7 +116,7 @@
   },
   {
    "contractDate": "2026-04-22",
-   "price": 805000000,
+   "priceWon": 805000000,
    "floor": 6,
    "exclusiveArea": 59.9359,
    "areaGroup": 60,
@@ -123,7 +125,7 @@
   },
   {
    "contractDate": "2026-04-21",
-   "price": 940000000,
+   "priceWon": 940000000,
    "floor": 12,
    "exclusiveArea": 59.9359,
    "areaGroup": 60,
@@ -132,7 +134,7 @@
   },
   {
    "contractDate": "2026-04-13",
-   "price": 920000000,
+   "priceWon": 920000000,
    "floor": 5,
    "exclusiveArea": 59.9359,
    "areaGroup": 60,
@@ -141,7 +143,7 @@
   },
   {
    "contractDate": "2026-04-11",
-   "price": 920000000,
+   "priceWon": 920000000,
    "floor": 15,
    "exclusiveArea": 59.9359,
    "areaGroup": 60,
@@ -150,7 +152,7 @@
   },
   {
    "contractDate": "2026-04-10",
-   "price": 930000000,
+   "priceWon": 930000000,
    "floor": 13,
    "exclusiveArea": 59.9359,
    "areaGroup": 60,
@@ -159,7 +161,7 @@
   },
   {
    "contractDate": "2026-03-28",
-   "price": 750000000,
+   "priceWon": 750000000,
    "floor": 2,
    "exclusiveArea": 59.5492,
    "areaGroup": 60,
@@ -168,7 +170,7 @@
   },
   {
    "contractDate": "2026-03-02",
-   "price": 850000000,
+   "priceWon": 850000000,
    "floor": 9,
    "exclusiveArea": 59.5492,
    "areaGroup": 60,
@@ -177,12 +179,19 @@
   },
   {
    "contractDate": "2026-02-07",
-   "price": 750000000,
+   "priceWon": 750000000,
    "floor": 1,
    "exclusiveArea": 59.5492,
    "areaGroup": 60,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.3356268693373,
+  "longitude": 127.094729993978,
+  "roadAddress": "경기 용인시 수지구 손곡로 67",
+  "jibunAddress": "경기 용인시 수지구 동천동 869",
+  "geocodeStatus": "ambiguous"
+ }
 }

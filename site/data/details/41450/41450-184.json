@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "41450-184",
  "apartmentName": "하남자이",
  "sidoCode": "41",
@@ -15,7 +17,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-27",
-   "price": 735000000,
+   "priceWon": 735000000,
    "floor": 5,
    "exclusiveArea": 84.99,
    "areaGroup": 85,
@@ -24,7 +26,7 @@
   },
   {
    "contractDate": "2026-06-27",
-   "price": 800000000,
+   "priceWon": 800000000,
    "floor": 13,
    "exclusiveArea": 84.99,
    "areaGroup": 85,
@@ -33,7 +35,7 @@
   },
   {
    "contractDate": "2026-06-14",
-   "price": 735000000,
+   "priceWon": 735000000,
    "floor": 21,
    "exclusiveArea": 84.99,
    "areaGroup": 85,
@@ -42,7 +44,7 @@
   },
   {
    "contractDate": "2026-06-14",
-   "price": 780000000,
+   "priceWon": 780000000,
    "floor": 4,
    "exclusiveArea": 125.07,
    "areaGroup": 125,
@@ -51,7 +53,7 @@
   },
   {
    "contractDate": "2026-05-25",
-   "price": 740000000,
+   "priceWon": 740000000,
    "floor": 7,
    "exclusiveArea": 84.99,
    "areaGroup": 85,
@@ -60,7 +62,7 @@
   },
   {
    "contractDate": "2026-05-23",
-   "price": 820000000,
+   "priceWon": 820000000,
    "floor": 5,
    "exclusiveArea": 125.07,
    "areaGroup": 125,
@@ -69,7 +71,7 @@
   },
   {
    "contractDate": "2026-05-16",
-   "price": 755000000,
+   "priceWon": 755000000,
    "floor": 12,
    "exclusiveArea": 84.99,
    "areaGroup": 85,
@@ -78,7 +80,7 @@
   },
   {
    "contractDate": "2026-04-22",
-   "price": 755000000,
+   "priceWon": 755000000,
    "floor": 17,
    "exclusiveArea": 84.99,
    "areaGroup": 85,
@@ -87,7 +89,7 @@
   },
   {
    "contractDate": "2026-04-21",
-   "price": 670000000,
+   "priceWon": 670000000,
    "floor": 12,
    "exclusiveArea": 84.99,
    "areaGroup": 85,
@@ -96,7 +98,7 @@
   },
   {
    "contractDate": "2026-04-13",
-   "price": 795000000,
+   "priceWon": 795000000,
    "floor": 21,
    "exclusiveArea": 125.07,
    "areaGroup": 125,
@@ -105,7 +107,7 @@
   },
   {
    "contractDate": "2026-04-11",
-   "price": 730000000,
+   "priceWon": 730000000,
    "floor": 13,
    "exclusiveArea": 84.99,
    "areaGroup": 85,
@@ -114,7 +116,7 @@
   },
   {
    "contractDate": "2026-04-10",
-   "price": 690000000,
+   "priceWon": 690000000,
    "floor": 4,
    "exclusiveArea": 84.99,
    "areaGroup": 85,
@@ -123,7 +125,7 @@
   },
   {
    "contractDate": "2026-04-09",
-   "price": 704000000,
+   "priceWon": 704000000,
    "floor": 7,
    "exclusiveArea": 84.99,
    "areaGroup": 85,
@@ -132,7 +134,7 @@
   },
   {
    "contractDate": "2026-04-04",
-   "price": 700000000,
+   "priceWon": 700000000,
    "floor": 9,
    "exclusiveArea": 84.99,
    "areaGroup": 85,
@@ -141,7 +143,7 @@
   },
   {
    "contractDate": "2026-03-28",
-   "price": 713000000,
+   "priceWon": 713000000,
    "floor": 22,
    "exclusiveArea": 84.99,
    "areaGroup": 85,
@@ -150,7 +152,7 @@
   },
   {
    "contractDate": "2026-03-28",
-   "price": 795000000,
+   "priceWon": 795000000,
    "floor": 21,
    "exclusiveArea": 125.07,
    "areaGroup": 125,
@@ -159,7 +161,7 @@
   },
   {
    "contractDate": "2026-03-27",
-   "price": 665000000,
+   "priceWon": 665000000,
    "floor": 17,
    "exclusiveArea": 84.99,
    "areaGroup": 85,
@@ -168,7 +170,7 @@
   },
   {
    "contractDate": "2026-03-16",
-   "price": 690000000,
+   "priceWon": 690000000,
    "floor": 9,
    "exclusiveArea": 84.99,
    "areaGroup": 85,
@@ -177,7 +179,7 @@
   },
   {
    "contractDate": "2026-03-15",
-   "price": 735000000,
+   "priceWon": 735000000,
    "floor": 15,
    "exclusiveArea": 84.99,
    "areaGroup": 85,
@@ -186,7 +188,7 @@
   },
   {
    "contractDate": "2026-03-06",
-   "price": 685000000,
+   "priceWon": 685000000,
    "floor": 5,
    "exclusiveArea": 84.99,
    "areaGroup": 85,
@@ -195,12 +197,19 @@
   },
   {
    "contractDate": "2026-03-04",
-   "price": 730000000,
+   "priceWon": 730000000,
    "floor": 5,
    "exclusiveArea": 84.99,
    "areaGroup": 85,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.5403509762501,
+  "longitude": 127.196828200888,
+  "roadAddress": "경기 하남시 덕풍공원로 38",
+  "jibunAddress": "경기 하남시 덕풍동 691",
+  "geocodeStatus": "valid"
+ }
 }

@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "41135-442",
  "apartmentName": "산운마을4단지(리가)",
  "sidoCode": "41",
@@ -15,7 +17,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-24",
-   "price": 1630000000,
+   "priceWon": 1630000000,
    "floor": 17,
    "exclusiveArea": 84.8536,
    "areaGroup": 85,
@@ -24,7 +26,7 @@
   },
   {
    "contractDate": "2026-06-19",
-   "price": 1650000000,
+   "priceWon": 1650000000,
    "floor": 7,
    "exclusiveArea": 84.8501,
    "areaGroup": 85,
@@ -33,7 +35,7 @@
   },
   {
    "contractDate": "2026-05-08",
-   "price": 1520000000,
+   "priceWon": 1520000000,
    "floor": 3,
    "exclusiveArea": 84.8501,
    "areaGroup": 85,
@@ -42,12 +44,19 @@
   },
   {
    "contractDate": "2026-04-11",
-   "price": 1530000000,
+   "priceWon": 1530000000,
    "floor": 2,
    "exclusiveArea": 84.8501,
    "areaGroup": 85,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.3908247211899,
+  "longitude": 127.069012217003,
+  "roadAddress": "경기 성남시 분당구 판교원로 7",
+  "jibunAddress": "경기 성남시 분당구 운중동 899",
+  "geocodeStatus": "valid"
+ }
 }

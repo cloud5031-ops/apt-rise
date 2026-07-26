@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "11290-117",
  "apartmentName": "정릉힐스테이트",
  "sidoCode": "11",
@@ -14,7 +16,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-25",
-   "price": 900000000,
+   "priceWon": 900000000,
    "floor": 1,
    "exclusiveArea": 84.92,
    "areaGroup": 85,
@@ -23,7 +25,7 @@
   },
   {
    "contractDate": "2026-05-07",
-   "price": 890000000,
+   "priceWon": 890000000,
    "floor": 20,
    "exclusiveArea": 84.92,
    "areaGroup": 85,
@@ -32,7 +34,7 @@
   },
   {
    "contractDate": "2026-05-02",
-   "price": 870000000,
+   "priceWon": 870000000,
    "floor": 15,
    "exclusiveArea": 84.92,
    "areaGroup": 85,
@@ -41,7 +43,7 @@
   },
   {
    "contractDate": "2026-05-01",
-   "price": 920000000,
+   "priceWon": 920000000,
    "floor": 14,
    "exclusiveArea": 84.92,
    "areaGroup": 85,
@@ -50,7 +52,7 @@
   },
   {
    "contractDate": "2026-04-22",
-   "price": 860000000,
+   "priceWon": 860000000,
    "floor": 21,
    "exclusiveArea": 84.92,
    "areaGroup": 85,
@@ -59,7 +61,7 @@
   },
   {
    "contractDate": "2026-04-01",
-   "price": 860000000,
+   "priceWon": 860000000,
    "floor": 21,
    "exclusiveArea": 84.92,
    "areaGroup": 85,
@@ -68,12 +70,19 @@
   },
   {
    "contractDate": "2026-03-31",
-   "price": 900000000,
+   "priceWon": 900000000,
    "floor": 24,
    "exclusiveArea": 84.92,
    "areaGroup": 85,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.6028250097742,
+  "longitude": 127.015555006077,
+  "roadAddress": "서울 성북구 정릉로 292",
+  "jibunAddress": "서울 성북구 정릉동 1025",
+  "geocodeStatus": "valid"
+ }
 }

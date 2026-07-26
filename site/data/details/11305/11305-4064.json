@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "11305-4064",
  "apartmentName": "수유역두산위브1",
  "sidoCode": "11",
@@ -15,7 +17,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-24",
-   "price": 795000000,
+   "priceWon": 795000000,
    "floor": 19,
    "exclusiveArea": 84.9986,
    "areaGroup": 85,
@@ -24,7 +26,7 @@
   },
   {
    "contractDate": "2026-06-06",
-   "price": 795000000,
+   "priceWon": 795000000,
    "floor": 10,
    "exclusiveArea": 84.9986,
    "areaGroup": 85,
@@ -33,7 +35,7 @@
   },
   {
    "contractDate": "2026-05-19",
-   "price": 755000000,
+   "priceWon": 755000000,
    "floor": 20,
    "exclusiveArea": 84.9986,
    "areaGroup": 85,
@@ -42,7 +44,7 @@
   },
   {
    "contractDate": "2026-04-21",
-   "price": 770000000,
+   "priceWon": 770000000,
    "floor": 8,
    "exclusiveArea": 84.9909,
    "areaGroup": 85,
@@ -51,12 +53,19 @@
   },
   {
    "contractDate": "2026-04-17",
-   "price": 763000000,
+   "priceWon": 763000000,
    "floor": 13,
    "exclusiveArea": 84.9986,
    "areaGroup": 85,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.6358377607602,
+  "longitude": 127.03201596996,
+  "roadAddress": "서울 강북구 덕릉로41길 12",
+  "jibunAddress": "서울 강북구 번동 410",
+  "geocodeStatus": "valid"
+ }
 }

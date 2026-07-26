@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "41194-339",
  "apartmentName": "부천범박힐스테이트5단지",
  "sidoCode": "41",
@@ -15,7 +17,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-23",
-   "price": 700000000,
+   "priceWon": 700000000,
    "floor": 7,
    "exclusiveArea": 122.8,
    "areaGroup": 123,
@@ -24,7 +26,7 @@
   },
   {
    "contractDate": "2026-06-07",
-   "price": 610000000,
+   "priceWon": 610000000,
    "floor": 11,
    "exclusiveArea": 122.8,
    "areaGroup": 123,
@@ -33,7 +35,7 @@
   },
   {
    "contractDate": "2026-06-07",
-   "price": 665000000,
+   "priceWon": 665000000,
    "floor": 4,
    "exclusiveArea": 140.94,
    "areaGroup": 141,
@@ -42,7 +44,7 @@
   },
   {
    "contractDate": "2026-06-03",
-   "price": 670000000,
+   "priceWon": 670000000,
    "floor": 20,
    "exclusiveArea": 122.8,
    "areaGroup": 123,
@@ -51,7 +53,7 @@
   },
   {
    "contractDate": "2026-05-29",
-   "price": 640000000,
+   "priceWon": 640000000,
    "floor": 3,
    "exclusiveArea": 122.8,
    "areaGroup": 123,
@@ -60,7 +62,7 @@
   },
   {
    "contractDate": "2026-05-03",
-   "price": 695000000,
+   "priceWon": 695000000,
    "floor": 7,
    "exclusiveArea": 122.8,
    "areaGroup": 123,
@@ -69,7 +71,7 @@
   },
   {
    "contractDate": "2026-04-28",
-   "price": 700000000,
+   "priceWon": 700000000,
    "floor": 14,
    "exclusiveArea": 140.94,
    "areaGroup": 141,
@@ -78,7 +80,7 @@
   },
   {
    "contractDate": "2026-04-20",
-   "price": 683000000,
+   "priceWon": 683000000,
    "floor": 3,
    "exclusiveArea": 140.94,
    "areaGroup": 141,
@@ -87,7 +89,7 @@
   },
   {
    "contractDate": "2026-04-12",
-   "price": 670000000,
+   "priceWon": 670000000,
    "floor": 3,
    "exclusiveArea": 140.94,
    "areaGroup": 141,
@@ -96,7 +98,7 @@
   },
   {
    "contractDate": "2026-04-10",
-   "price": 675000000,
+   "priceWon": 675000000,
    "floor": 1,
    "exclusiveArea": 140.94,
    "areaGroup": 141,
@@ -105,7 +107,7 @@
   },
   {
    "contractDate": "2026-04-06",
-   "price": 684000000,
+   "priceWon": 684000000,
    "floor": 7,
    "exclusiveArea": 140.94,
    "areaGroup": 141,
@@ -114,7 +116,7 @@
   },
   {
    "contractDate": "2026-04-04",
-   "price": 700000000,
+   "priceWon": 700000000,
    "floor": 10,
    "exclusiveArea": 140.94,
    "areaGroup": 141,
@@ -123,7 +125,7 @@
   },
   {
    "contractDate": "2026-03-16",
-   "price": 690000000,
+   "priceWon": 690000000,
    "floor": 24,
    "exclusiveArea": 140.94,
    "areaGroup": 141,
@@ -132,7 +134,7 @@
   },
   {
    "contractDate": "2026-03-02",
-   "price": 620000000,
+   "priceWon": 620000000,
    "floor": 13,
    "exclusiveArea": 122.8,
    "areaGroup": 123,
@@ -141,7 +143,7 @@
   },
   {
    "contractDate": "2026-02-27",
-   "price": 520000000,
+   "priceWon": 520000000,
    "floor": 5,
    "exclusiveArea": 140.94,
    "areaGroup": 141,
@@ -150,7 +152,7 @@
   },
   {
    "contractDate": "2026-02-20",
-   "price": 690000000,
+   "priceWon": 690000000,
    "floor": 6,
    "exclusiveArea": 140.94,
    "areaGroup": 141,
@@ -159,7 +161,7 @@
   },
   {
    "contractDate": "2026-02-13",
-   "price": 580000000,
+   "priceWon": 580000000,
    "floor": 17,
    "exclusiveArea": 122.8,
    "areaGroup": 123,
@@ -168,12 +170,19 @@
   },
   {
    "contractDate": "2026-02-09",
-   "price": 675000000,
+   "priceWon": 675000000,
    "floor": 20,
    "exclusiveArea": 122.8,
    "areaGroup": 123,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.4690465158356,
+  "longitude": 126.807884010754,
+  "roadAddress": "경기 부천시 소사구 범안로 130-21",
+  "jibunAddress": "경기 부천시 소사구 범박동 151-2",
+  "geocodeStatus": "valid"
+ }
 }

@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "41194-17",
  "apartmentName": "한신",
  "sidoCode": "41",
@@ -16,7 +18,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-26",
-   "price": 347000000,
+   "priceWon": 347000000,
    "floor": 6,
    "exclusiveArea": 64.335,
    "areaGroup": 64,
@@ -25,7 +27,7 @@
   },
   {
    "contractDate": "2026-06-20",
-   "price": 385000000,
+   "priceWon": 385000000,
    "floor": 4,
    "exclusiveArea": 84.205,
    "areaGroup": 84,
@@ -34,7 +36,7 @@
   },
   {
    "contractDate": "2026-06-17",
-   "price": 317000000,
+   "priceWon": 317000000,
    "floor": 5,
    "exclusiveArea": 64.335,
    "areaGroup": 64,
@@ -43,7 +45,7 @@
   },
   {
    "contractDate": "2026-06-08",
-   "price": 200000000,
+   "priceWon": 200000000,
    "floor": 11,
    "exclusiveArea": 41.295,
    "areaGroup": 41,
@@ -52,7 +54,7 @@
   },
   {
    "contractDate": "2026-05-07",
-   "price": 298000000,
+   "priceWon": 298000000,
    "floor": 11,
    "exclusiveArea": 64.335,
    "areaGroup": 64,
@@ -61,7 +63,7 @@
   },
   {
    "contractDate": "2026-05-05",
-   "price": 235000000,
+   "priceWon": 235000000,
    "floor": 7,
    "exclusiveArea": 41.295,
    "areaGroup": 41,
@@ -70,7 +72,7 @@
   },
   {
    "contractDate": "2026-05-01",
-   "price": 207000000,
+   "priceWon": 207000000,
    "floor": 5,
    "exclusiveArea": 41.295,
    "areaGroup": 41,
@@ -79,7 +81,7 @@
   },
   {
    "contractDate": "2026-04-06",
-   "price": 205000000,
+   "priceWon": 205000000,
    "floor": 2,
    "exclusiveArea": 41.295,
    "areaGroup": 41,
@@ -88,7 +90,7 @@
   },
   {
    "contractDate": "2026-04-05",
-   "price": 303000000,
+   "priceWon": 303000000,
    "floor": 5,
    "exclusiveArea": 64.335,
    "areaGroup": 64,
@@ -97,7 +99,7 @@
   },
   {
    "contractDate": "2026-04-05",
-   "price": 302000000,
+   "priceWon": 302000000,
    "floor": 1,
    "exclusiveArea": 64.335,
    "areaGroup": 64,
@@ -106,12 +108,19 @@
   },
   {
    "contractDate": "2026-02-05",
-   "price": 264000000,
+   "priceWon": 264000000,
    "floor": 2,
    "exclusiveArea": 64.335,
    "areaGroup": 64,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.4741647658975,
+  "longitude": 126.800476389876,
+  "roadAddress": "경기 부천시 소사구 소사로170번길 81",
+  "jibunAddress": "경기 부천시 소사구 소사본동 277-12",
+  "geocodeStatus": "valid"
+ }
 }

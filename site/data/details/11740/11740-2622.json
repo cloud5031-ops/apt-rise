@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "11740-2622",
  "apartmentName": "강동역에스케이허브",
  "sidoCode": "11",
@@ -16,7 +18,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-26",
-   "price": 920000000,
+   "priceWon": 920000000,
    "floor": 24,
    "exclusiveArea": 99.55,
    "areaGroup": 100,
@@ -25,7 +27,7 @@
   },
   {
    "contractDate": "2026-06-22",
-   "price": 950000000,
+   "priceWon": 950000000,
    "floor": 22,
    "exclusiveArea": 84.94,
    "areaGroup": 85,
@@ -34,7 +36,7 @@
   },
   {
    "contractDate": "2026-06-16",
-   "price": 1120000000,
+   "priceWon": 1120000000,
    "floor": 20,
    "exclusiveArea": 99.55,
    "areaGroup": 100,
@@ -43,7 +45,7 @@
   },
   {
    "contractDate": "2026-05-06",
-   "price": 1010000000,
+   "priceWon": 1010000000,
    "floor": 15,
    "exclusiveArea": 99.55,
    "areaGroup": 100,
@@ -52,7 +54,7 @@
   },
   {
    "contractDate": "2026-04-25",
-   "price": 920000000,
+   "priceWon": 920000000,
    "floor": 24,
    "exclusiveArea": 99.55,
    "areaGroup": 100,
@@ -61,12 +63,19 @@
   },
   {
    "contractDate": "2026-04-18",
-   "price": 850000000,
+   "priceWon": 850000000,
    "floor": 21,
    "exclusiveArea": 84.81,
    "areaGroup": 85,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.535548839049,
+  "longitude": 127.134922312296,
+  "roadAddress": "서울 강동구 천호대로 1107",
+  "jibunAddress": "서울 강동구 길동 445-1",
+  "geocodeStatus": "valid"
+ }
 }

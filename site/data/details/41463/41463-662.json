@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "41463-662",
  "apartmentName": "용인보정꿈에그린",
  "sidoCode": "41",
@@ -15,7 +17,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-29",
-   "price": 1088000000,
+   "priceWon": 1088000000,
    "floor": 5,
    "exclusiveArea": 101.7383,
    "areaGroup": 102,
@@ -24,7 +26,7 @@
   },
   {
    "contractDate": "2026-06-27",
-   "price": 1135000000,
+   "priceWon": 1135000000,
    "floor": 20,
    "exclusiveArea": 101.7145,
    "areaGroup": 102,
@@ -33,7 +35,7 @@
   },
   {
    "contractDate": "2026-06-20",
-   "price": 1015000000,
+   "priceWon": 1015000000,
    "floor": 3,
    "exclusiveArea": 101.7383,
    "areaGroup": 102,
@@ -42,7 +44,7 @@
   },
   {
    "contractDate": "2026-06-06",
-   "price": 919000000,
+   "priceWon": 919000000,
    "floor": 1,
    "exclusiveArea": 101.7383,
    "areaGroup": 102,
@@ -51,7 +53,7 @@
   },
   {
    "contractDate": "2026-05-30",
-   "price": 1075000000,
+   "priceWon": 1075000000,
    "floor": 7,
    "exclusiveArea": 101.7383,
    "areaGroup": 102,
@@ -60,7 +62,7 @@
   },
   {
    "contractDate": "2026-05-26",
-   "price": 1070000000,
+   "priceWon": 1070000000,
    "floor": 14,
    "exclusiveArea": 101.7145,
    "areaGroup": 102,
@@ -69,7 +71,7 @@
   },
   {
    "contractDate": "2026-05-21",
-   "price": 1090000000,
+   "priceWon": 1090000000,
    "floor": 17,
    "exclusiveArea": 101.7383,
    "areaGroup": 102,
@@ -78,7 +80,7 @@
   },
   {
    "contractDate": "2026-05-16",
-   "price": 1030000000,
+   "priceWon": 1030000000,
    "floor": 10,
    "exclusiveArea": 101.7383,
    "areaGroup": 102,
@@ -87,7 +89,7 @@
   },
   {
    "contractDate": "2026-05-14",
-   "price": 1020000000,
+   "priceWon": 1020000000,
    "floor": 10,
    "exclusiveArea": 101.7383,
    "areaGroup": 102,
@@ -96,7 +98,7 @@
   },
   {
    "contractDate": "2026-04-20",
-   "price": 1043000000,
+   "priceWon": 1043000000,
    "floor": 12,
    "exclusiveArea": 101.7383,
    "areaGroup": 102,
@@ -105,7 +107,7 @@
   },
   {
    "contractDate": "2026-04-18",
-   "price": 1030000000,
+   "priceWon": 1030000000,
    "floor": 10,
    "exclusiveArea": 101.7383,
    "areaGroup": 102,
@@ -114,7 +116,7 @@
   },
   {
    "contractDate": "2026-04-04",
-   "price": 900000000,
+   "priceWon": 900000000,
    "floor": 4,
    "exclusiveArea": 101.7383,
    "areaGroup": 102,
@@ -123,7 +125,7 @@
   },
   {
    "contractDate": "2026-04-02",
-   "price": 995000000,
+   "priceWon": 995000000,
    "floor": 6,
    "exclusiveArea": 101.7383,
    "areaGroup": 102,
@@ -132,12 +134,19 @@
   },
   {
    "contractDate": "2026-02-09",
-   "price": 950000000,
+   "priceWon": 950000000,
    "floor": 16,
    "exclusiveArea": 101.7383,
    "areaGroup": 102,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.3064417758063,
+  "longitude": 127.107291896777,
+  "roadAddress": "경기 용인시 기흥구 구교동로 17",
+  "jibunAddress": "경기 용인시 기흥구 보정동 1393",
+  "geocodeStatus": "valid"
+ }
 }

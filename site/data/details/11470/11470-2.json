@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "11470-2",
  "apartmentName": "건영",
  "sidoCode": "11",
@@ -17,7 +19,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-19",
-   "price": 885000000,
+   "priceWon": 885000000,
    "floor": 10,
    "exclusiveArea": 84.27,
    "areaGroup": 84,
@@ -26,7 +28,7 @@
   },
   {
    "contractDate": "2026-06-10",
-   "price": 830000000,
+   "priceWon": 830000000,
    "floor": 9,
    "exclusiveArea": 84.27,
    "areaGroup": 84,
@@ -35,7 +37,7 @@
   },
   {
    "contractDate": "2026-05-25",
-   "price": 750000000,
+   "priceWon": 750000000,
    "floor": 3,
    "exclusiveArea": 84.33,
    "areaGroup": 84,
@@ -44,7 +46,7 @@
   },
   {
    "contractDate": "2026-05-22",
-   "price": 825000000,
+   "priceWon": 825000000,
    "floor": 7,
    "exclusiveArea": 84.27,
    "areaGroup": 84,
@@ -53,7 +55,7 @@
   },
   {
    "contractDate": "2026-05-07",
-   "price": 745000000,
+   "priceWon": 745000000,
    "floor": 7,
    "exclusiveArea": 84.33,
    "areaGroup": 84,
@@ -62,7 +64,7 @@
   },
   {
    "contractDate": "2026-05-06",
-   "price": 505000000,
+   "priceWon": 505000000,
    "floor": 10,
    "exclusiveArea": 84.39,
    "areaGroup": 84,
@@ -71,7 +73,7 @@
   },
   {
    "contractDate": "2026-04-30",
-   "price": 760000000,
+   "priceWon": 760000000,
    "floor": 4,
    "exclusiveArea": 84.27,
    "areaGroup": 84,
@@ -80,7 +82,7 @@
   },
   {
    "contractDate": "2026-04-27",
-   "price": 750000000,
+   "priceWon": 750000000,
    "floor": 8,
    "exclusiveArea": 84.27,
    "areaGroup": 84,
@@ -89,7 +91,7 @@
   },
   {
    "contractDate": "2026-04-24",
-   "price": 700000000,
+   "priceWon": 700000000,
    "floor": 1,
    "exclusiveArea": 84.27,
    "areaGroup": 84,
@@ -98,7 +100,7 @@
   },
   {
    "contractDate": "2026-04-06",
-   "price": 760000000,
+   "priceWon": 760000000,
    "floor": 12,
    "exclusiveArea": 84.33,
    "areaGroup": 84,
@@ -107,7 +109,7 @@
   },
   {
    "contractDate": "2026-03-28",
-   "price": 750000000,
+   "priceWon": 750000000,
    "floor": 14,
    "exclusiveArea": 84.33,
    "areaGroup": 84,
@@ -116,7 +118,7 @@
   },
   {
    "contractDate": "2026-03-25",
-   "price": 710000000,
+   "priceWon": 710000000,
    "floor": 4,
    "exclusiveArea": 84.9,
    "areaGroup": 85,
@@ -125,7 +127,7 @@
   },
   {
    "contractDate": "2026-02-23",
-   "price": 700000000,
+   "priceWon": 700000000,
    "floor": 1,
    "exclusiveArea": 84.27,
    "areaGroup": 84,
@@ -134,12 +136,19 @@
   },
   {
    "contractDate": "2026-02-06",
-   "price": 737000000,
+   "priceWon": 737000000,
    "floor": 13,
    "exclusiveArea": 84.33,
    "areaGroup": 84,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.5418777174077,
+  "longitude": 126.872777644776,
+  "roadAddress": "서울 양천구 목동중앙본로22길 63",
+  "jibunAddress": "서울 양천구 목동 928",
+  "geocodeStatus": "ambiguous"
+ }
 }

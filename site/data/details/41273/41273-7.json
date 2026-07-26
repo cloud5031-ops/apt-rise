@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "41273-7",
  "apartmentName": "푸르지오1차",
  "sidoCode": "41",
@@ -19,7 +21,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-24",
-   "price": 538000000,
+   "priceWon": 538000000,
    "floor": 11,
    "exclusiveArea": 71.1837,
    "areaGroup": 71,
@@ -28,7 +30,7 @@
   },
   {
    "contractDate": "2026-06-22",
-   "price": 693000000,
+   "priceWon": 693000000,
    "floor": 6,
    "exclusiveArea": 84.782,
    "areaGroup": 85,
@@ -37,7 +39,7 @@
   },
   {
    "contractDate": "2026-06-21",
-   "price": 520000000,
+   "priceWon": 520000000,
    "floor": 1,
    "exclusiveArea": 71.1837,
    "areaGroup": 71,
@@ -46,7 +48,7 @@
   },
   {
    "contractDate": "2026-06-10",
-   "price": 620000000,
+   "priceWon": 620000000,
    "floor": 7,
    "exclusiveArea": 84.7828,
    "areaGroup": 85,
@@ -55,7 +57,7 @@
   },
   {
    "contractDate": "2026-05-23",
-   "price": 690000000,
+   "priceWon": 690000000,
    "floor": 7,
    "exclusiveArea": 84.782,
    "areaGroup": 85,
@@ -64,7 +66,7 @@
   },
   {
    "contractDate": "2026-05-07",
-   "price": 540000000,
+   "priceWon": 540000000,
    "floor": 9,
    "exclusiveArea": 71.1837,
    "areaGroup": 71,
@@ -73,7 +75,7 @@
   },
   {
    "contractDate": "2026-05-05",
-   "price": 670000000,
+   "priceWon": 670000000,
    "floor": 11,
    "exclusiveArea": 84.782,
    "areaGroup": 85,
@@ -82,7 +84,7 @@
   },
   {
    "contractDate": "2026-05-05",
-   "price": 600000000,
+   "priceWon": 600000000,
    "floor": 6,
    "exclusiveArea": 84.7828,
    "areaGroup": 85,
@@ -91,7 +93,7 @@
   },
   {
    "contractDate": "2026-05-04",
-   "price": 780000000,
+   "priceWon": 780000000,
    "floor": 5,
    "exclusiveArea": 116.3445,
    "areaGroup": 116,
@@ -100,7 +102,7 @@
   },
   {
    "contractDate": "2026-04-29",
-   "price": 680000000,
+   "priceWon": 680000000,
    "floor": 13,
    "exclusiveArea": 84.782,
    "areaGroup": 85,
@@ -109,7 +111,7 @@
   },
   {
    "contractDate": "2026-04-21",
-   "price": 627000000,
+   "priceWon": 627000000,
    "floor": 12,
    "exclusiveArea": 84.782,
    "areaGroup": 85,
@@ -118,7 +120,7 @@
   },
   {
    "contractDate": "2026-04-02",
-   "price": 627000000,
+   "priceWon": 627000000,
    "floor": 9,
    "exclusiveArea": 84.782,
    "areaGroup": 85,
@@ -127,7 +129,7 @@
   },
   {
    "contractDate": "2026-03-28",
-   "price": 682000000,
+   "priceWon": 682000000,
    "floor": 6,
    "exclusiveArea": 84.7828,
    "areaGroup": 85,
@@ -136,7 +138,7 @@
   },
   {
    "contractDate": "2026-03-17",
-   "price": 800000000,
+   "priceWon": 800000000,
    "floor": 4,
    "exclusiveArea": 116.3445,
    "areaGroup": 116,
@@ -145,7 +147,7 @@
   },
   {
    "contractDate": "2026-03-12",
-   "price": 616000000,
+   "priceWon": 616000000,
    "floor": 12,
    "exclusiveArea": 95.4946,
    "areaGroup": 95,
@@ -154,7 +156,7 @@
   },
   {
    "contractDate": "2026-03-03",
-   "price": 702500000,
+   "priceWon": 702500000,
    "floor": 10,
    "exclusiveArea": 95.4946,
    "areaGroup": 95,
@@ -163,7 +165,7 @@
   },
   {
    "contractDate": "2026-02-28",
-   "price": 561000000,
+   "priceWon": 561000000,
    "floor": 5,
    "exclusiveArea": 71.1837,
    "areaGroup": 71,
@@ -172,7 +174,7 @@
   },
   {
    "contractDate": "2026-02-14",
-   "price": 553000000,
+   "priceWon": 553000000,
    "floor": 7,
    "exclusiveArea": 71.1837,
    "areaGroup": 71,
@@ -181,7 +183,7 @@
   },
   {
    "contractDate": "2026-02-07",
-   "price": 630000000,
+   "priceWon": 630000000,
    "floor": 7,
    "exclusiveArea": 84.7828,
    "areaGroup": 85,
@@ -190,7 +192,7 @@
   },
   {
    "contractDate": "2026-02-07",
-   "price": 649000000,
+   "priceWon": 649000000,
    "floor": 6,
    "exclusiveArea": 84.7828,
    "areaGroup": 85,
@@ -199,12 +201,19 @@
   },
   {
    "contractDate": "2026-02-06",
-   "price": 650000000,
+   "priceWon": 650000000,
    "floor": 14,
    "exclusiveArea": 84.4458,
    "areaGroup": 84,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.3062475116757,
+  "longitude": 126.834019088894,
+  "roadAddress": "경기 안산시 단원구 광덕동로 26",
+  "jibunAddress": "경기 안산시 단원구 고잔동 781",
+  "geocodeStatus": "ambiguous"
+ }
 }

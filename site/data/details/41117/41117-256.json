@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "41117-256",
  "apartmentName": "오드카운티",
  "sidoCode": "41",
@@ -16,7 +18,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-27",
-   "price": 1620000000,
+   "priceWon": 1620000000,
    "floor": 20,
    "exclusiveArea": 121.9758,
    "areaGroup": 122,
@@ -25,7 +27,7 @@
   },
   {
    "contractDate": "2026-06-21",
-   "price": 1620000000,
+   "priceWon": 1620000000,
    "floor": 17,
    "exclusiveArea": 121.9758,
    "areaGroup": 122,
@@ -34,7 +36,7 @@
   },
   {
    "contractDate": "2026-06-11",
-   "price": 1610000000,
+   "priceWon": 1610000000,
    "floor": 18,
    "exclusiveArea": 123.4079,
    "areaGroup": 123,
@@ -43,7 +45,7 @@
   },
   {
    "contractDate": "2026-06-05",
-   "price": 1350000000,
+   "priceWon": 1350000000,
    "floor": 4,
    "exclusiveArea": 121.9758,
    "areaGroup": 122,
@@ -52,7 +54,7 @@
   },
   {
    "contractDate": "2026-06-05",
-   "price": 1550000000,
+   "priceWon": 1550000000,
    "floor": 18,
    "exclusiveArea": 121.9758,
    "areaGroup": 122,
@@ -61,7 +63,7 @@
   },
   {
    "contractDate": "2026-05-22",
-   "price": 1550000000,
+   "priceWon": 1550000000,
    "floor": 28,
    "exclusiveArea": 123.4079,
    "areaGroup": 123,
@@ -70,7 +72,7 @@
   },
   {
    "contractDate": "2026-05-09",
-   "price": 1480000000,
+   "priceWon": 1480000000,
    "floor": 3,
    "exclusiveArea": 121.9758,
    "areaGroup": 122,
@@ -79,7 +81,7 @@
   },
   {
    "contractDate": "2026-04-28",
-   "price": 1467000000,
+   "priceWon": 1467000000,
    "floor": 15,
    "exclusiveArea": 121.9758,
    "areaGroup": 122,
@@ -88,12 +90,19 @@
   },
   {
    "contractDate": "2026-02-04",
-   "price": 1575000000,
+   "priceWon": 1575000000,
    "floor": 9,
    "exclusiveArea": 122.4164,
    "areaGroup": 122,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.2924698298781,
+  "longitude": 127.05896046161,
+  "roadAddress": "경기 수원시 영통구 센트럴파크로 100",
+  "jibunAddress": "경기 수원시 영통구 이의동 1303",
+  "geocodeStatus": "valid"
+ }
 }

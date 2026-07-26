@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "11680-4394",
  "apartmentName": "래미안대치팰리스",
  "sidoCode": "11",
@@ -24,7 +26,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-17",
-   "price": 4750000000,
+   "priceWon": 4750000000,
    "floor": 12,
    "exclusiveArea": 94.49,
    "areaGroup": 94,
@@ -33,7 +35,7 @@
   },
   {
    "contractDate": "2026-06-16",
-   "price": 4450000000,
+   "priceWon": 4450000000,
    "floor": 20,
    "exclusiveArea": 91.89,
    "areaGroup": 92,
@@ -42,7 +44,7 @@
   },
   {
    "contractDate": "2026-06-03",
-   "price": 4400000000,
+   "priceWon": 4400000000,
    "floor": 15,
    "exclusiveArea": 84.97,
    "areaGroup": 85,
@@ -51,7 +53,7 @@
   },
   {
    "contractDate": "2026-05-27",
-   "price": 5700000000,
+   "priceWon": 5700000000,
    "floor": 5,
    "exclusiveArea": 151.31,
    "areaGroup": 151,
@@ -60,7 +62,7 @@
   },
   {
    "contractDate": "2026-05-15",
-   "price": 6375000000,
+   "priceWon": 6375000000,
    "floor": 18,
    "exclusiveArea": 114.17,
    "areaGroup": 114,
@@ -69,7 +71,7 @@
   },
   {
    "contractDate": "2026-05-13",
-   "price": 4700000000,
+   "priceWon": 4700000000,
    "floor": 6,
    "exclusiveArea": 94.49,
    "areaGroup": 94,
@@ -78,7 +80,7 @@
   },
   {
    "contractDate": "2026-05-13",
-   "price": 5800000000,
+   "priceWon": 5800000000,
    "floor": 10,
    "exclusiveArea": 114.14,
    "areaGroup": 114,
@@ -87,7 +89,7 @@
   },
   {
    "contractDate": "2026-05-08",
-   "price": 4300000000,
+   "priceWon": 4300000000,
    "floor": 15,
    "exclusiveArea": 84.99,
    "areaGroup": 85,
@@ -96,7 +98,7 @@
   },
   {
    "contractDate": "2026-05-07",
-   "price": 4250000000,
+   "priceWon": 4250000000,
    "floor": 13,
    "exclusiveArea": 84.97,
    "areaGroup": 85,
@@ -105,7 +107,7 @@
   },
   {
    "contractDate": "2026-05-06",
-   "price": 4390000000,
+   "priceWon": 4390000000,
    "floor": 11,
    "exclusiveArea": 84.98,
    "areaGroup": 85,
@@ -114,7 +116,7 @@
   },
   {
    "contractDate": "2026-04-16",
-   "price": 4300000000,
+   "priceWon": 4300000000,
    "floor": 27,
    "exclusiveArea": 91.93,
    "areaGroup": 92,
@@ -123,7 +125,7 @@
   },
   {
    "contractDate": "2026-04-11",
-   "price": 4250000000,
+   "priceWon": 4250000000,
    "floor": 9,
    "exclusiveArea": 93.18,
    "areaGroup": 93,
@@ -132,7 +134,7 @@
   },
   {
    "contractDate": "2026-04-09",
-   "price": 6000000000,
+   "priceWon": 6000000000,
    "floor": 16,
    "exclusiveArea": 114.17,
    "areaGroup": 114,
@@ -141,7 +143,7 @@
   },
   {
    "contractDate": "2026-03-28",
-   "price": 5950000000,
+   "priceWon": 5950000000,
    "floor": 22,
    "exclusiveArea": 151.27,
    "areaGroup": 151,
@@ -150,7 +152,7 @@
   },
   {
    "contractDate": "2026-03-19",
-   "price": 4050000000,
+   "priceWon": 4050000000,
    "floor": 14,
    "exclusiveArea": 84.98,
    "areaGroup": 85,
@@ -159,7 +161,7 @@
   },
   {
    "contractDate": "2026-03-16",
-   "price": 4190000000,
+   "priceWon": 4190000000,
    "floor": 4,
    "exclusiveArea": 84.97,
    "areaGroup": 85,
@@ -168,7 +170,7 @@
   },
   {
    "contractDate": "2026-03-13",
-   "price": 4150000000,
+   "priceWon": 4150000000,
    "floor": 12,
    "exclusiveArea": 84.97,
    "areaGroup": 85,
@@ -177,7 +179,7 @@
   },
   {
    "contractDate": "2026-03-07",
-   "price": 6500000000,
+   "priceWon": 6500000000,
    "floor": 10,
    "exclusiveArea": 151.31,
    "areaGroup": 151,
@@ -186,12 +188,19 @@
   },
   {
    "contractDate": "2026-02-21",
-   "price": 6550000000,
+   "priceWon": 6550000000,
    "floor": 24,
    "exclusiveArea": 151.31,
    "areaGroup": 151,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.4942977651239,
+  "longitude": 127.058003438015,
+  "roadAddress": "서울 강남구 삼성로51길 35",
+  "jibunAddress": "서울 강남구 대치동 1027",
+  "geocodeStatus": "valid"
+ }
 }

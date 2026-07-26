@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "41465-115",
  "apartmentName": "성복역아이파크",
  "sidoCode": "41",
@@ -16,7 +18,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-27",
-   "price": 1000000000,
+   "priceWon": 1000000000,
    "floor": 10,
    "exclusiveArea": 59.5915,
    "areaGroup": 60,
@@ -25,7 +27,7 @@
   },
   {
    "contractDate": "2026-05-28",
-   "price": 995000000,
+   "priceWon": 995000000,
    "floor": 8,
    "exclusiveArea": 116.7301,
    "areaGroup": 117,
@@ -34,7 +36,7 @@
   },
   {
    "contractDate": "2026-05-25",
-   "price": 1025000000,
+   "priceWon": 1025000000,
    "floor": 10,
    "exclusiveArea": 116.7301,
    "areaGroup": 117,
@@ -43,7 +45,7 @@
   },
   {
    "contractDate": "2026-05-22",
-   "price": 950000000,
+   "priceWon": 950000000,
    "floor": 12,
    "exclusiveArea": 84.9716,
    "areaGroup": 85,
@@ -52,7 +54,7 @@
   },
   {
    "contractDate": "2026-05-16",
-   "price": 1090000000,
+   "priceWon": 1090000000,
    "floor": 10,
    "exclusiveArea": 84.9716,
    "areaGroup": 85,
@@ -61,7 +63,7 @@
   },
   {
    "contractDate": "2026-05-01",
-   "price": 1130000000,
+   "priceWon": 1130000000,
    "floor": 5,
    "exclusiveArea": 116.7301,
    "areaGroup": 117,
@@ -70,7 +72,7 @@
   },
   {
    "contractDate": "2026-04-28",
-   "price": 1005000000,
+   "priceWon": 1005000000,
    "floor": 13,
    "exclusiveArea": 59.5915,
    "areaGroup": 60,
@@ -79,7 +81,7 @@
   },
   {
    "contractDate": "2026-04-18",
-   "price": 750000000,
+   "priceWon": 750000000,
    "floor": 17,
    "exclusiveArea": 84.9716,
    "areaGroup": 85,
@@ -88,7 +90,7 @@
   },
   {
    "contractDate": "2026-04-18",
-   "price": 1090000000,
+   "priceWon": 1090000000,
    "floor": 7,
    "exclusiveArea": 84.9716,
    "areaGroup": 85,
@@ -97,7 +99,7 @@
   },
   {
    "contractDate": "2026-04-16",
-   "price": 998000000,
+   "priceWon": 998000000,
    "floor": 13,
    "exclusiveArea": 59.5915,
    "areaGroup": 60,
@@ -106,7 +108,7 @@
   },
   {
    "contractDate": "2026-04-11",
-   "price": 710000000,
+   "priceWon": 710000000,
    "floor": 1,
    "exclusiveArea": 116.7301,
    "areaGroup": 117,
@@ -115,7 +117,7 @@
   },
   {
    "contractDate": "2026-04-11",
-   "price": 1015000000,
+   "priceWon": 1015000000,
    "floor": 13,
    "exclusiveArea": 116.7301,
    "areaGroup": 117,
@@ -124,7 +126,7 @@
   },
   {
    "contractDate": "2026-04-03",
-   "price": 940000000,
+   "priceWon": 940000000,
    "floor": 1,
    "exclusiveArea": 84.9716,
    "areaGroup": 85,
@@ -133,7 +135,7 @@
   },
   {
    "contractDate": "2026-03-07",
-   "price": 1100000000,
+   "priceWon": 1100000000,
    "floor": 18,
    "exclusiveArea": 116.7301,
    "areaGroup": 117,
@@ -142,7 +144,7 @@
   },
   {
    "contractDate": "2026-02-26",
-   "price": 947000000,
+   "priceWon": 947000000,
    "floor": 13,
    "exclusiveArea": 84.9716,
    "areaGroup": 85,
@@ -151,7 +153,7 @@
   },
   {
    "contractDate": "2026-02-25",
-   "price": 750000000,
+   "priceWon": 750000000,
    "floor": 11,
    "exclusiveArea": 84.9716,
    "areaGroup": 85,
@@ -160,7 +162,7 @@
   },
   {
    "contractDate": "2026-02-13",
-   "price": 920000000,
+   "priceWon": 920000000,
    "floor": 2,
    "exclusiveArea": 84.9716,
    "areaGroup": 85,
@@ -169,7 +171,7 @@
   },
   {
    "contractDate": "2026-02-13",
-   "price": 925000000,
+   "priceWon": 925000000,
    "floor": 2,
    "exclusiveArea": 84.9716,
    "areaGroup": 85,
@@ -178,12 +180,19 @@
   },
   {
    "contractDate": "2026-02-07",
-   "price": 975000000,
+   "priceWon": 975000000,
    "floor": 4,
    "exclusiveArea": 116.7301,
    "areaGroup": 117,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.3111937261473,
+  "longitude": 127.085524916948,
+  "roadAddress": "경기 용인시 수지구 상현로 142",
+  "jibunAddress": "경기 용인시 수지구 상현동 857",
+  "geocodeStatus": "valid"
+ }
 }

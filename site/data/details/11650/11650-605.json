@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "11650-605",
  "apartmentName": "대림서초리시온",
  "sidoCode": "11",
@@ -19,7 +21,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-29",
-   "price": 485000000,
+   "priceWon": 485000000,
    "floor": 7,
    "exclusiveArea": 45.72,
    "areaGroup": 46,
@@ -28,7 +30,7 @@
   },
   {
    "contractDate": "2026-06-29",
-   "price": 560000000,
+   "priceWon": 560000000,
    "floor": 6,
    "exclusiveArea": 49.92,
    "areaGroup": 50,
@@ -37,7 +39,7 @@
   },
   {
    "contractDate": "2026-06-19",
-   "price": 560000000,
+   "priceWon": 560000000,
    "floor": 7,
    "exclusiveArea": 49.92,
    "areaGroup": 50,
@@ -46,7 +48,7 @@
   },
   {
    "contractDate": "2026-06-11",
-   "price": 735000000,
+   "priceWon": 735000000,
    "floor": 12,
    "exclusiveArea": 52.68,
    "areaGroup": 53,
@@ -55,7 +57,7 @@
   },
   {
    "contractDate": "2026-06-01",
-   "price": 570000000,
+   "priceWon": 570000000,
    "floor": 8,
    "exclusiveArea": 49.92,
    "areaGroup": 50,
@@ -64,7 +66,7 @@
   },
   {
    "contractDate": "2026-05-27",
-   "price": 400000000,
+   "priceWon": 400000000,
    "floor": 11,
    "exclusiveArea": 33.54,
    "areaGroup": 34,
@@ -73,7 +75,7 @@
   },
   {
    "contractDate": "2026-05-06",
-   "price": 515000000,
+   "priceWon": 515000000,
    "floor": 7,
    "exclusiveArea": 49.92,
    "areaGroup": 50,
@@ -82,7 +84,7 @@
   },
   {
    "contractDate": "2026-05-01",
-   "price": 738000000,
+   "priceWon": 738000000,
    "floor": 14,
    "exclusiveArea": 56.43,
    "areaGroup": 56,
@@ -91,7 +93,7 @@
   },
   {
    "contractDate": "2026-04-14",
-   "price": 600000000,
+   "priceWon": 600000000,
    "floor": 13,
    "exclusiveArea": 49.79,
    "areaGroup": 50,
@@ -100,7 +102,7 @@
   },
   {
    "contractDate": "2026-03-14",
-   "price": 400000000,
+   "priceWon": 400000000,
    "floor": 11,
    "exclusiveArea": 33.54,
    "areaGroup": 34,
@@ -109,7 +111,7 @@
   },
   {
    "contractDate": "2026-03-05",
-   "price": 520000000,
+   "priceWon": 520000000,
    "floor": 6,
    "exclusiveArea": 49.92,
    "areaGroup": 50,
@@ -118,7 +120,7 @@
   },
   {
    "contractDate": "2026-03-04",
-   "price": 562000000,
+   "priceWon": 562000000,
    "floor": 5,
    "exclusiveArea": 49.92,
    "areaGroup": 50,
@@ -127,7 +129,7 @@
   },
   {
    "contractDate": "2026-02-27",
-   "price": 325000000,
+   "priceWon": 325000000,
    "floor": 11,
    "exclusiveArea": 33.54,
    "areaGroup": 34,
@@ -136,12 +138,19 @@
   },
   {
    "contractDate": "2026-02-26",
-   "price": 610000000,
+   "priceWon": 610000000,
    "floor": 13,
    "exclusiveArea": 49.79,
    "areaGroup": 50,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.4934729686325,
+  "longitude": 127.015440252256,
+  "roadAddress": "서울 서초구 서초중앙로22길 25",
+  "jibunAddress": "서울 서초구 서초동 1671-5",
+  "geocodeStatus": "valid"
+ }
 }

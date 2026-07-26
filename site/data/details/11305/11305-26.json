@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "11305-26",
  "apartmentName": "번동한양아파트",
  "sidoCode": "11",
@@ -14,7 +16,7 @@
  "transactions": [
   {
    "contractDate": "2026-05-18",
-   "price": 537000000,
+   "priceWon": 537000000,
    "floor": 7,
    "exclusiveArea": 84.67,
    "areaGroup": 85,
@@ -23,7 +25,7 @@
   },
   {
    "contractDate": "2026-05-11",
-   "price": 590000000,
+   "priceWon": 590000000,
    "floor": 15,
    "exclusiveArea": 84.67,
    "areaGroup": 85,
@@ -32,7 +34,7 @@
   },
   {
    "contractDate": "2026-04-24",
-   "price": 535000000,
+   "priceWon": 535000000,
    "floor": 14,
    "exclusiveArea": 84.67,
    "areaGroup": 85,
@@ -41,12 +43,19 @@
   },
   {
    "contractDate": "2026-02-23",
-   "price": 525000000,
+   "priceWon": 525000000,
    "floor": 2,
    "exclusiveArea": 84.67,
    "areaGroup": 85,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.6267143060941,
+  "longitude": 127.041240405765,
+  "roadAddress": "서울 강북구 한천로109길 67",
+  "jibunAddress": "서울 강북구 번동 133-1",
+  "geocodeStatus": "valid"
+ }
 }

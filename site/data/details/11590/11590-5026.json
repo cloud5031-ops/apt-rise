@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "11590-5026",
  "apartmentName": "보라매자이더포레스트",
  "sidoCode": "11",
@@ -20,7 +22,7 @@
  "transactions": [
   {
    "contractDate": "2026-05-29",
-   "price": 1720000000,
+   "priceWon": 1720000000,
    "floor": 9,
    "exclusiveArea": 59.9365,
    "areaGroup": 60,
@@ -29,7 +31,7 @@
   },
   {
    "contractDate": "2026-05-09",
-   "price": 1600000000,
+   "priceWon": 1600000000,
    "floor": 32,
    "exclusiveArea": 59.9459,
    "areaGroup": 60,
@@ -38,7 +40,7 @@
   },
   {
    "contractDate": "2026-05-06",
-   "price": 1845000000,
+   "priceWon": 1845000000,
    "floor": 11,
    "exclusiveArea": 84.7739,
    "areaGroup": 85,
@@ -47,7 +49,7 @@
   },
   {
    "contractDate": "2026-04-24",
-   "price": 1580000000,
+   "priceWon": 1580000000,
    "floor": 30,
    "exclusiveArea": 59.9278,
    "areaGroup": 60,
@@ -56,7 +58,7 @@
   },
   {
    "contractDate": "2026-04-23",
-   "price": 1640000000,
+   "priceWon": 1640000000,
    "floor": 33,
    "exclusiveArea": 59.9365,
    "areaGroup": 60,
@@ -65,7 +67,7 @@
   },
   {
    "contractDate": "2026-04-19",
-   "price": 1570000000,
+   "priceWon": 1570000000,
    "floor": 26,
    "exclusiveArea": 59.9278,
    "areaGroup": 60,
@@ -74,7 +76,7 @@
   },
   {
    "contractDate": "2026-04-13",
-   "price": 1450000000,
+   "priceWon": 1450000000,
    "floor": 13,
    "exclusiveArea": 59.9365,
    "areaGroup": 60,
@@ -83,7 +85,7 @@
   },
   {
    "contractDate": "2026-04-10",
-   "price": 1540000000,
+   "priceWon": 1540000000,
    "floor": 29,
    "exclusiveArea": 59.8807,
    "areaGroup": 60,
@@ -92,7 +94,7 @@
   },
   {
    "contractDate": "2026-03-14",
-   "price": 1645000000,
+   "priceWon": 1645000000,
    "floor": 17,
    "exclusiveArea": 59.9365,
    "areaGroup": 60,
@@ -101,7 +103,7 @@
   },
   {
    "contractDate": "2026-03-03",
-   "price": 1600000000,
+   "priceWon": 1600000000,
    "floor": 34,
    "exclusiveArea": 59.9278,
    "areaGroup": 60,
@@ -110,7 +112,7 @@
   },
   {
    "contractDate": "2026-03-03",
-   "price": 1900000000,
+   "priceWon": 1900000000,
    "floor": 28,
    "exclusiveArea": 84.75,
    "areaGroup": 85,
@@ -119,7 +121,7 @@
   },
   {
    "contractDate": "2026-02-11",
-   "price": 1600000000,
+   "priceWon": 1600000000,
    "floor": 25,
    "exclusiveArea": 59.3399,
    "areaGroup": 59,
@@ -128,12 +130,19 @@
   },
   {
    "contractDate": "2026-02-11",
-   "price": 1600000000,
+   "priceWon": 1600000000,
    "floor": 11,
    "exclusiveArea": 59.9365,
    "areaGroup": 60,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.498559088724,
+  "longitude": 126.926048617167,
+  "roadAddress": "서울 동작구 여의대방로22길 121",
+  "jibunAddress": "서울 동작구 신대방동 724",
+  "geocodeStatus": "valid"
+ }
 }

@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "11560-84",
  "apartmentName": "삼성래미안",
  "sidoCode": "11",
@@ -16,7 +18,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-15",
-   "price": 1350000000,
+   "priceWon": 1350000000,
    "floor": 20,
    "exclusiveArea": 114.63,
    "areaGroup": 115,
@@ -25,7 +27,7 @@
   },
   {
    "contractDate": "2026-06-12",
-   "price": 1340000000,
+   "priceWon": 1340000000,
    "floor": 4,
    "exclusiveArea": 114.63,
    "areaGroup": 115,
@@ -34,7 +36,7 @@
   },
   {
    "contractDate": "2026-06-11",
-   "price": 1206000000,
+   "priceWon": 1206000000,
    "floor": 22,
    "exclusiveArea": 59.4,
    "areaGroup": 59,
@@ -43,7 +45,7 @@
   },
   {
    "contractDate": "2026-05-19",
-   "price": 1100000000,
+   "priceWon": 1100000000,
    "floor": 12,
    "exclusiveArea": 59.4,
    "areaGroup": 59,
@@ -52,7 +54,7 @@
   },
   {
    "contractDate": "2026-05-18",
-   "price": 1250000000,
+   "priceWon": 1250000000,
    "floor": 5,
    "exclusiveArea": 114.63,
    "areaGroup": 115,
@@ -61,7 +63,7 @@
   },
   {
    "contractDate": "2026-05-14",
-   "price": 1270000000,
+   "priceWon": 1270000000,
    "floor": 7,
    "exclusiveArea": 114.63,
    "areaGroup": 115,
@@ -70,7 +72,7 @@
   },
   {
    "contractDate": "2026-05-06",
-   "price": 1147000000,
+   "priceWon": 1147000000,
    "floor": 21,
    "exclusiveArea": 59.4,
    "areaGroup": 59,
@@ -79,7 +81,7 @@
   },
   {
    "contractDate": "2026-05-01",
-   "price": 1330000000,
+   "priceWon": 1330000000,
    "floor": 14,
    "exclusiveArea": 114.63,
    "areaGroup": 115,
@@ -88,7 +90,7 @@
   },
   {
    "contractDate": "2026-04-28",
-   "price": 1128000000,
+   "priceWon": 1128000000,
    "floor": 4,
    "exclusiveArea": 59.4,
    "areaGroup": 59,
@@ -97,7 +99,7 @@
   },
   {
    "contractDate": "2026-04-28",
-   "price": 1140000000,
+   "priceWon": 1140000000,
    "floor": 19,
    "exclusiveArea": 114.63,
    "areaGroup": 115,
@@ -106,7 +108,7 @@
   },
   {
    "contractDate": "2026-04-20",
-   "price": 1129000000,
+   "priceWon": 1129000000,
    "floor": 6,
    "exclusiveArea": 59.4,
    "areaGroup": 59,
@@ -115,7 +117,7 @@
   },
   {
    "contractDate": "2026-04-16",
-   "price": 1090000000,
+   "priceWon": 1090000000,
    "floor": 12,
    "exclusiveArea": 59.4,
    "areaGroup": 59,
@@ -124,7 +126,7 @@
   },
   {
    "contractDate": "2026-04-07",
-   "price": 1260000000,
+   "priceWon": 1260000000,
    "floor": 18,
    "exclusiveArea": 114.63,
    "areaGroup": 115,
@@ -133,7 +135,7 @@
   },
   {
    "contractDate": "2026-04-02",
-   "price": 1100000000,
+   "priceWon": 1100000000,
    "floor": 15,
    "exclusiveArea": 59.4,
    "areaGroup": 59,
@@ -142,7 +144,7 @@
   },
   {
    "contractDate": "2026-03-03",
-   "price": 990000000,
+   "priceWon": 990000000,
    "floor": 13,
    "exclusiveArea": 59.4,
    "areaGroup": 59,
@@ -151,7 +153,7 @@
   },
   {
    "contractDate": "2026-02-27",
-   "price": 1000000000,
+   "priceWon": 1000000000,
    "floor": 21,
    "exclusiveArea": 59.4,
    "areaGroup": 59,
@@ -160,7 +162,7 @@
   },
   {
    "contractDate": "2026-02-20",
-   "price": 1283000000,
+   "priceWon": 1283000000,
    "floor": 2,
    "exclusiveArea": 114.63,
    "areaGroup": 115,
@@ -169,7 +171,7 @@
   },
   {
    "contractDate": "2026-02-11",
-   "price": 1190000000,
+   "priceWon": 1190000000,
    "floor": 14,
    "exclusiveArea": 84.69,
    "areaGroup": 85,
@@ -178,7 +180,7 @@
   },
   {
    "contractDate": "2026-02-10",
-   "price": 1175000000,
+   "priceWon": 1175000000,
    "floor": 13,
    "exclusiveArea": 84.69,
    "areaGroup": 85,
@@ -187,7 +189,7 @@
   },
   {
    "contractDate": "2026-02-05",
-   "price": 920000000,
+   "priceWon": 920000000,
    "floor": 2,
    "exclusiveArea": 59.4,
    "areaGroup": 59,
@@ -196,12 +198,19 @@
   },
   {
    "contractDate": "2026-02-03",
-   "price": 1200000000,
+   "priceWon": 1200000000,
    "floor": 9,
    "exclusiveArea": 114.63,
    "areaGroup": 115,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.5243961073332,
+  "longitude": 126.882570707837,
+  "roadAddress": "서울 영등포구 영등포로3길 7",
+  "jibunAddress": "서울 영등포구 양평동2가 38-1",
+  "geocodeStatus": "valid"
+ }
 }

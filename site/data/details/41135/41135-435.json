@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "41135-435",
  "apartmentName": "산운마을9단지(대방노블랜드)",
  "sidoCode": "41",
@@ -15,7 +17,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-20",
-   "price": 1737000000,
+   "priceWon": 1737000000,
    "floor": 5,
    "exclusiveArea": 59.93,
    "areaGroup": 60,
@@ -24,7 +26,7 @@
   },
   {
    "contractDate": "2026-05-25",
-   "price": 1935000000,
+   "priceWon": 1935000000,
    "floor": 13,
    "exclusiveArea": 84.99,
    "areaGroup": 85,
@@ -33,7 +35,7 @@
   },
   {
    "contractDate": "2026-05-02",
-   "price": 1900000000,
+   "priceWon": 1900000000,
    "floor": 16,
    "exclusiveArea": 84.99,
    "areaGroup": 85,
@@ -42,7 +44,7 @@
   },
   {
    "contractDate": "2026-04-21",
-   "price": 1650000000,
+   "priceWon": 1650000000,
    "floor": 4,
    "exclusiveArea": 59.93,
    "areaGroup": 60,
@@ -51,7 +53,7 @@
   },
   {
    "contractDate": "2026-04-10",
-   "price": 1770000000,
+   "priceWon": 1770000000,
    "floor": 2,
    "exclusiveArea": 84.99,
    "areaGroup": 85,
@@ -60,12 +62,19 @@
   },
   {
    "contractDate": "2026-03-11",
-   "price": 1865000000,
+   "priceWon": 1865000000,
    "floor": 17,
    "exclusiveArea": 84.99,
    "areaGroup": 85,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.3925554124473,
+  "longitude": 127.075064372199,
+  "roadAddress": "경기 성남시 분당구 산운로 126",
+  "jibunAddress": "경기 성남시 분당구 운중동 958",
+  "geocodeStatus": "valid"
+ }
 }

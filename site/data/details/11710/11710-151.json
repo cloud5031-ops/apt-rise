@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "11710-151",
  "apartmentName": "신동아",
  "sidoCode": "11",
@@ -15,7 +17,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-11",
-   "price": 777000000,
+   "priceWon": 777000000,
    "floor": 6,
    "exclusiveArea": 59.88,
    "areaGroup": 60,
@@ -24,7 +26,7 @@
   },
   {
    "contractDate": "2026-06-03",
-   "price": 710000000,
+   "priceWon": 710000000,
    "floor": 6,
    "exclusiveArea": 59.88,
    "areaGroup": 60,
@@ -33,7 +35,7 @@
   },
   {
    "contractDate": "2026-05-30",
-   "price": 690000000,
+   "priceWon": 690000000,
    "floor": 3,
    "exclusiveArea": 59.88,
    "areaGroup": 60,
@@ -42,7 +44,7 @@
   },
   {
    "contractDate": "2026-04-07",
-   "price": 705000000,
+   "priceWon": 705000000,
    "floor": 6,
    "exclusiveArea": 59.88,
    "areaGroup": 60,
@@ -51,7 +53,7 @@
   },
   {
    "contractDate": "2026-04-03",
-   "price": 995000000,
+   "priceWon": 995000000,
    "floor": 16,
    "exclusiveArea": 84.71,
    "areaGroup": 85,
@@ -60,7 +62,7 @@
   },
   {
    "contractDate": "2026-02-28",
-   "price": 652000000,
+   "priceWon": 652000000,
    "floor": 2,
    "exclusiveArea": 59.88,
    "areaGroup": 60,
@@ -69,7 +71,7 @@
   },
   {
    "contractDate": "2026-02-28",
-   "price": 930000000,
+   "priceWon": 930000000,
    "floor": 10,
    "exclusiveArea": 84.71,
    "areaGroup": 85,
@@ -78,7 +80,7 @@
   },
   {
    "contractDate": "2026-02-27",
-   "price": 620000000,
+   "priceWon": 620000000,
    "floor": 1,
    "exclusiveArea": 59.88,
    "areaGroup": 60,
@@ -87,7 +89,7 @@
   },
   {
    "contractDate": "2026-02-26",
-   "price": 690000000,
+   "priceWon": 690000000,
    "floor": 3,
    "exclusiveArea": 59.88,
    "areaGroup": 60,
@@ -96,12 +98,19 @@
   },
   {
    "contractDate": "2026-02-11",
-   "price": 660000000,
+   "priceWon": 660000000,
    "floor": 3,
    "exclusiveArea": 59.88,
    "areaGroup": 60,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.5004263627003,
+  "longitude": 127.144773140255,
+  "roadAddress": "서울 송파구 마천로 237",
+  "jibunAddress": "서울 송파구 마천동 20",
+  "geocodeStatus": "valid"
+ }
 }

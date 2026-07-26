@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "41465-96",
  "apartmentName": "상현마을금호베스트빌3단지",
  "sidoCode": "41",
@@ -14,7 +16,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-16",
-   "price": 825000000,
+   "priceWon": 825000000,
    "floor": 4,
    "exclusiveArea": 126.723,
    "areaGroup": 127,
@@ -23,7 +25,7 @@
   },
   {
    "contractDate": "2026-06-08",
-   "price": 880000000,
+   "priceWon": 880000000,
    "floor": 14,
    "exclusiveArea": 126.723,
    "areaGroup": 127,
@@ -32,7 +34,7 @@
   },
   {
    "contractDate": "2026-05-16",
-   "price": 710000000,
+   "priceWon": 710000000,
    "floor": 8,
    "exclusiveArea": 126.723,
    "areaGroup": 127,
@@ -41,7 +43,7 @@
   },
   {
    "contractDate": "2026-04-26",
-   "price": 690000000,
+   "priceWon": 690000000,
    "floor": 3,
    "exclusiveArea": 126.723,
    "areaGroup": 127,
@@ -50,7 +52,7 @@
   },
   {
    "contractDate": "2026-03-30",
-   "price": 708000000,
+   "priceWon": 708000000,
    "floor": 16,
    "exclusiveArea": 126.723,
    "areaGroup": 127,
@@ -59,7 +61,7 @@
   },
   {
    "contractDate": "2026-03-26",
-   "price": 690000000,
+   "priceWon": 690000000,
    "floor": 12,
    "exclusiveArea": 126.723,
    "areaGroup": 127,
@@ -68,7 +70,7 @@
   },
   {
    "contractDate": "2026-03-05",
-   "price": 792000000,
+   "priceWon": 792000000,
    "floor": 6,
    "exclusiveArea": 126.723,
    "areaGroup": 127,
@@ -77,7 +79,7 @@
   },
   {
    "contractDate": "2026-02-27",
-   "price": 700000000,
+   "priceWon": 700000000,
    "floor": 5,
    "exclusiveArea": 126.723,
    "areaGroup": 127,
@@ -86,7 +88,7 @@
   },
   {
    "contractDate": "2026-02-14",
-   "price": 847500000,
+   "priceWon": 847500000,
    "floor": 11,
    "exclusiveArea": 126.723,
    "areaGroup": 127,
@@ -95,12 +97,19 @@
   },
   {
    "contractDate": "2026-02-07",
-   "price": 700000000,
+   "priceWon": 700000000,
    "floor": 16,
    "exclusiveArea": 126.723,
    "areaGroup": 127,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.3029810308803,
+  "longitude": 127.082260271011,
+  "roadAddress": "경기 용인시 수지구 상현로42번길 40",
+  "jibunAddress": "경기 용인시 수지구 상현동 837",
+  "geocodeStatus": "valid"
+ }
 }

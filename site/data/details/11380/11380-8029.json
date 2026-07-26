@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "11380-8029",
  "apartmentName": "상림마을8단지롯데캐슬(821~830동)BL1-12",
  "sidoCode": "11",
@@ -18,7 +20,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-27",
-   "price": 910000000,
+   "priceWon": 910000000,
    "floor": 10,
    "exclusiveArea": 84.79,
    "areaGroup": 85,
@@ -27,7 +29,7 @@
   },
   {
    "contractDate": "2026-06-10",
-   "price": 970000000,
+   "priceWon": 970000000,
    "floor": 6,
    "exclusiveArea": 84.79,
    "areaGroup": 85,
@@ -36,7 +38,7 @@
   },
   {
    "contractDate": "2026-06-02",
-   "price": 970000000,
+   "priceWon": 970000000,
    "floor": 5,
    "exclusiveArea": 84.97,
    "areaGroup": 85,
@@ -45,7 +47,7 @@
   },
   {
    "contractDate": "2026-05-27",
-   "price": 985000000,
+   "priceWon": 985000000,
    "floor": 5,
    "exclusiveArea": 101.76,
    "areaGroup": 102,
@@ -54,7 +56,7 @@
   },
   {
    "contractDate": "2026-05-25",
-   "price": 1020000000,
+   "priceWon": 1020000000,
    "floor": 4,
    "exclusiveArea": 101.76,
    "areaGroup": 102,
@@ -63,7 +65,7 @@
   },
   {
    "contractDate": "2026-05-19",
-   "price": 990000000,
+   "priceWon": 990000000,
    "floor": 8,
    "exclusiveArea": 84.79,
    "areaGroup": 85,
@@ -72,7 +74,7 @@
   },
   {
    "contractDate": "2026-05-09",
-   "price": 880000000,
+   "priceWon": 880000000,
    "floor": 4,
    "exclusiveArea": 84.83,
    "areaGroup": 85,
@@ -81,7 +83,7 @@
   },
   {
    "contractDate": "2026-05-02",
-   "price": 1020000000,
+   "priceWon": 1020000000,
    "floor": 3,
    "exclusiveArea": 101.61,
    "areaGroup": 102,
@@ -90,7 +92,7 @@
   },
   {
    "contractDate": "2026-05-01",
-   "price": 1040000000,
+   "priceWon": 1040000000,
    "floor": 6,
    "exclusiveArea": 101.61,
    "areaGroup": 102,
@@ -99,7 +101,7 @@
   },
   {
    "contractDate": "2026-04-23",
-   "price": 925000000,
+   "priceWon": 925000000,
    "floor": 5,
    "exclusiveArea": 84.79,
    "areaGroup": 85,
@@ -108,7 +110,7 @@
   },
   {
    "contractDate": "2026-04-22",
-   "price": 890000000,
+   "priceWon": 890000000,
    "floor": 3,
    "exclusiveArea": 84.79,
    "areaGroup": 85,
@@ -117,7 +119,7 @@
   },
   {
    "contractDate": "2026-04-18",
-   "price": 900000000,
+   "priceWon": 900000000,
    "floor": 2,
    "exclusiveArea": 84.79,
    "areaGroup": 85,
@@ -126,7 +128,7 @@
   },
   {
    "contractDate": "2026-04-08",
-   "price": 900000000,
+   "priceWon": 900000000,
    "floor": 3,
    "exclusiveArea": 84.79,
    "areaGroup": 85,
@@ -135,7 +137,7 @@
   },
   {
    "contractDate": "2026-04-02",
-   "price": 1020000000,
+   "priceWon": 1020000000,
    "floor": 9,
    "exclusiveArea": 101.76,
    "areaGroup": 102,
@@ -144,7 +146,7 @@
   },
   {
    "contractDate": "2026-03-31",
-   "price": 950000000,
+   "priceWon": 950000000,
    "floor": 9,
    "exclusiveArea": 84.97,
    "areaGroup": 85,
@@ -153,7 +155,7 @@
   },
   {
    "contractDate": "2026-02-23",
-   "price": 960000000,
+   "priceWon": 960000000,
    "floor": 10,
    "exclusiveArea": 84.79,
    "areaGroup": 85,
@@ -162,12 +164,19 @@
   },
   {
    "contractDate": "2026-02-22",
-   "price": 980000000,
+   "priceWon": 980000000,
    "floor": 4,
    "exclusiveArea": 101.76,
    "areaGroup": 102,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.6419845917913,
+  "longitude": 126.922606227427,
+  "roadAddress": "서울 은평구 진관3로 70",
+  "jibunAddress": "서울 은평구 진관동 20",
+  "geocodeStatus": "valid"
+ }
 }

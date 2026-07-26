@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "41465-29",
  "apartmentName": "한성",
  "sidoCode": "41",
@@ -14,7 +16,7 @@
  "transactions": [
   {
    "contractDate": "2026-05-29",
-   "price": 1170000000,
+   "priceWon": 1170000000,
    "floor": 9,
    "exclusiveArea": 59.54,
    "areaGroup": 60,
@@ -23,7 +25,7 @@
   },
   {
    "contractDate": "2026-05-08",
-   "price": 1145000000,
+   "priceWon": 1145000000,
    "floor": 11,
    "exclusiveArea": 59.54,
    "areaGroup": 60,
@@ -32,7 +34,7 @@
   },
   {
    "contractDate": "2026-03-19",
-   "price": 970000000,
+   "priceWon": 970000000,
    "floor": 1,
    "exclusiveArea": 59.54,
    "areaGroup": 60,
@@ -41,7 +43,7 @@
   },
   {
    "contractDate": "2026-02-26",
-   "price": 1100000000,
+   "priceWon": 1100000000,
    "floor": 8,
    "exclusiveArea": 59.54,
    "areaGroup": 60,
@@ -50,12 +52,19 @@
   },
   {
    "contractDate": "2026-02-04",
-   "price": 1000000000,
+   "priceWon": 1000000000,
    "floor": 9,
    "exclusiveArea": 59.54,
    "areaGroup": 60,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.3248694753925,
+  "longitude": 127.0931106275,
+  "roadAddress": "경기 용인시 수지구 문정로 53",
+  "jibunAddress": "경기 용인시 수지구 풍덕천동 698-2",
+  "geocodeStatus": "valid"
+ }
 }

@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "41410-94",
  "apartmentName": "금정동쌍용",
  "sidoCode": "41",
@@ -15,7 +17,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-28",
-   "price": 595000000,
+   "priceWon": 595000000,
    "floor": 8,
    "exclusiveArea": 84.83,
    "areaGroup": 85,
@@ -24,7 +26,7 @@
   },
   {
    "contractDate": "2026-06-27",
-   "price": 550000000,
+   "priceWon": 550000000,
    "floor": 6,
    "exclusiveArea": 59.98,
    "areaGroup": 60,
@@ -33,7 +35,7 @@
   },
   {
    "contractDate": "2026-06-20",
-   "price": 555000000,
+   "priceWon": 555000000,
    "floor": 4,
    "exclusiveArea": 84.83,
    "areaGroup": 85,
@@ -42,7 +44,7 @@
   },
   {
    "contractDate": "2026-06-19",
-   "price": 580000000,
+   "priceWon": 580000000,
    "floor": 5,
    "exclusiveArea": 84.83,
    "areaGroup": 85,
@@ -51,7 +53,7 @@
   },
   {
    "contractDate": "2026-06-10",
-   "price": 538000000,
+   "priceWon": 538000000,
    "floor": 9,
    "exclusiveArea": 59.98,
    "areaGroup": 60,
@@ -60,7 +62,7 @@
   },
   {
    "contractDate": "2026-05-04",
-   "price": 529000000,
+   "priceWon": 529000000,
    "floor": 8,
    "exclusiveArea": 59.98,
    "areaGroup": 60,
@@ -69,7 +71,7 @@
   },
   {
    "contractDate": "2026-04-28",
-   "price": 630000000,
+   "priceWon": 630000000,
    "floor": 11,
    "exclusiveArea": 84.83,
    "areaGroup": 85,
@@ -78,7 +80,7 @@
   },
   {
    "contractDate": "2026-04-25",
-   "price": 485000000,
+   "priceWon": 485000000,
    "floor": 13,
    "exclusiveArea": 59.98,
    "areaGroup": 60,
@@ -87,7 +89,7 @@
   },
   {
    "contractDate": "2026-03-31",
-   "price": 620000000,
+   "priceWon": 620000000,
    "floor": 9,
    "exclusiveArea": 84.83,
    "areaGroup": 85,
@@ -96,12 +98,19 @@
   },
   {
    "contractDate": "2026-02-11",
-   "price": 565000000,
+   "priceWon": 565000000,
    "floor": 7,
    "exclusiveArea": 84.83,
    "areaGroup": 85,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.3665943241493,
+  "longitude": 126.939811152286,
+  "roadAddress": "경기 군포시 금정로42번길 17",
+  "jibunAddress": "경기 군포시 금정동 704",
+  "geocodeStatus": "valid"
+ }
 }

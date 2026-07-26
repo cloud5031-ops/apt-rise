@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "41410-45",
  "apartmentName": "삼성미도",
  "sidoCode": "41",
@@ -15,7 +17,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-29",
-   "price": 320000000,
+   "priceWon": 320000000,
    "floor": 2,
    "exclusiveArea": 59.12,
    "areaGroup": 59,
@@ -24,7 +26,7 @@
   },
   {
    "contractDate": "2026-06-09",
-   "price": 440000000,
+   "priceWon": 440000000,
    "floor": 16,
    "exclusiveArea": 84.375,
    "areaGroup": 84,
@@ -33,7 +35,7 @@
   },
   {
    "contractDate": "2026-05-25",
-   "price": 448000000,
+   "priceWon": 448000000,
    "floor": 9,
    "exclusiveArea": 84.375,
    "areaGroup": 84,
@@ -42,7 +44,7 @@
   },
   {
    "contractDate": "2026-05-08",
-   "price": 315000000,
+   "priceWon": 315000000,
    "floor": 20,
    "exclusiveArea": 59.12,
    "areaGroup": 59,
@@ -51,7 +53,7 @@
   },
   {
    "contractDate": "2026-05-07",
-   "price": 445000000,
+   "priceWon": 445000000,
    "floor": 15,
    "exclusiveArea": 84.375,
    "areaGroup": 84,
@@ -60,7 +62,7 @@
   },
   {
    "contractDate": "2026-04-03",
-   "price": 320000000,
+   "priceWon": 320000000,
    "floor": 15,
    "exclusiveArea": 84.375,
    "areaGroup": 84,
@@ -69,7 +71,7 @@
   },
   {
    "contractDate": "2026-03-14",
-   "price": 425000000,
+   "priceWon": 425000000,
    "floor": 8,
    "exclusiveArea": 84.375,
    "areaGroup": 84,
@@ -78,7 +80,7 @@
   },
   {
    "contractDate": "2026-03-07",
-   "price": 328000000,
+   "priceWon": 328000000,
    "floor": 15,
    "exclusiveArea": 59.12,
    "areaGroup": 59,
@@ -87,7 +89,7 @@
   },
   {
    "contractDate": "2026-02-10",
-   "price": 334000000,
+   "priceWon": 334000000,
    "floor": 15,
    "exclusiveArea": 59.12,
    "areaGroup": 59,
@@ -96,12 +98,19 @@
   },
   {
    "contractDate": "2026-02-09",
-   "price": 330000000,
+   "priceWon": 330000000,
    "floor": 5,
    "exclusiveArea": 59.12,
    "areaGroup": 59,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.3758116833875,
+  "longitude": 126.939373514944,
+  "roadAddress": "경기 군포시 고산로 747",
+  "jibunAddress": "경기 군포시 산본동 45-1",
+  "geocodeStatus": "valid"
+ }
 }

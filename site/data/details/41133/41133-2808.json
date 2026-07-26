@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "41133-2808",
  "apartmentName": "연꽃마을(4단지)",
  "sidoCode": "41",
@@ -16,7 +18,7 @@
  "transactions": [
   {
    "contractDate": "2026-05-27",
-   "price": 1545000000,
+   "priceWon": 1545000000,
    "floor": 7,
    "exclusiveArea": 120.97,
    "areaGroup": 121,
@@ -25,7 +27,7 @@
   },
   {
    "contractDate": "2026-05-01",
-   "price": 1470000000,
+   "priceWon": 1470000000,
    "floor": 14,
    "exclusiveArea": 120.97,
    "areaGroup": 121,
@@ -34,7 +36,7 @@
   },
   {
    "contractDate": "2026-04-28",
-   "price": 1220000000,
+   "priceWon": 1220000000,
    "floor": 9,
    "exclusiveArea": 120.97,
    "areaGroup": 121,
@@ -43,7 +45,7 @@
   },
   {
    "contractDate": "2026-04-25",
-   "price": 1440000000,
+   "priceWon": 1440000000,
    "floor": 7,
    "exclusiveArea": 120.97,
    "areaGroup": 121,
@@ -52,7 +54,7 @@
   },
   {
    "contractDate": "2026-04-22",
-   "price": 1430000000,
+   "priceWon": 1430000000,
    "floor": 6,
    "exclusiveArea": 120.97,
    "areaGroup": 121,
@@ -61,7 +63,7 @@
   },
   {
    "contractDate": "2026-04-16",
-   "price": 1495000000,
+   "priceWon": 1495000000,
    "floor": 13,
    "exclusiveArea": 120.97,
    "areaGroup": 121,
@@ -70,7 +72,7 @@
   },
   {
    "contractDate": "2026-04-13",
-   "price": 1450000000,
+   "priceWon": 1450000000,
    "floor": 4,
    "exclusiveArea": 120.97,
    "areaGroup": 121,
@@ -79,7 +81,7 @@
   },
   {
    "contractDate": "2026-04-13",
-   "price": 1530000000,
+   "priceWon": 1530000000,
    "floor": 8,
    "exclusiveArea": 134.97,
    "areaGroup": 135,
@@ -88,7 +90,7 @@
   },
   {
    "contractDate": "2026-03-30",
-   "price": 1120000000,
+   "priceWon": 1120000000,
    "floor": 1,
    "exclusiveArea": 120.97,
    "areaGroup": 121,
@@ -97,7 +99,7 @@
   },
   {
    "contractDate": "2026-03-26",
-   "price": 1400000000,
+   "priceWon": 1400000000,
    "floor": 6,
    "exclusiveArea": 101.99,
    "areaGroup": 102,
@@ -106,12 +108,19 @@
   },
   {
    "contractDate": "2026-03-07",
-   "price": 1375000000,
+   "priceWon": 1375000000,
    "floor": 10,
    "exclusiveArea": 101.99,
    "areaGroup": 102,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.4177249981297,
+  "longitude": 127.135447419528,
+  "roadAddress": "경기 성남시 중원구 여수울로 50",
+  "jibunAddress": "경기 성남시 중원구 여수동 601",
+  "geocodeStatus": "valid"
+ }
 }

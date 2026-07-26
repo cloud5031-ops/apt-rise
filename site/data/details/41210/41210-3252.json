@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "41210-3252",
  "apartmentName": "브라운스톤2차",
  "sidoCode": "41",
@@ -16,7 +18,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-19",
-   "price": 970000000,
+   "priceWon": 970000000,
    "floor": 14,
    "exclusiveArea": 84.613,
    "areaGroup": 85,
@@ -25,7 +27,7 @@
   },
   {
    "contractDate": "2026-06-04",
-   "price": 935000000,
+   "priceWon": 935000000,
    "floor": 13,
    "exclusiveArea": 84.613,
    "areaGroup": 85,
@@ -34,7 +36,7 @@
   },
   {
    "contractDate": "2026-04-17",
-   "price": 940000000,
+   "priceWon": 940000000,
    "floor": 20,
    "exclusiveArea": 84.613,
    "areaGroup": 85,
@@ -43,7 +45,7 @@
   },
   {
    "contractDate": "2026-04-17",
-   "price": 943000000,
+   "priceWon": 943000000,
    "floor": 13,
    "exclusiveArea": 106.587,
    "areaGroup": 107,
@@ -52,7 +54,7 @@
   },
   {
    "contractDate": "2026-04-13",
-   "price": 870000000,
+   "priceWon": 870000000,
    "floor": 11,
    "exclusiveArea": 84.613,
    "areaGroup": 85,
@@ -61,7 +63,7 @@
   },
   {
    "contractDate": "2026-04-07",
-   "price": 600000000,
+   "priceWon": 600000000,
    "floor": 12,
    "exclusiveArea": 59.757,
    "areaGroup": 60,
@@ -70,7 +72,7 @@
   },
   {
    "contractDate": "2026-03-23",
-   "price": 790000000,
+   "priceWon": 790000000,
    "floor": 12,
    "exclusiveArea": 84.613,
    "areaGroup": 85,
@@ -79,7 +81,7 @@
   },
   {
    "contractDate": "2026-03-06",
-   "price": 867000000,
+   "priceWon": 867000000,
    "floor": 21,
    "exclusiveArea": 106.587,
    "areaGroup": 107,
@@ -88,7 +90,7 @@
   },
   {
    "contractDate": "2026-02-28",
-   "price": 852000000,
+   "priceWon": 852000000,
    "floor": 20,
    "exclusiveArea": 59.757,
    "areaGroup": 60,
@@ -97,12 +99,19 @@
   },
   {
    "contractDate": "2026-02-27",
-   "price": 840000000,
+   "priceWon": 840000000,
    "floor": 16,
    "exclusiveArea": 84.613,
    "areaGroup": 85,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.4718872837178,
+  "longitude": 126.864471751292,
+  "roadAddress": "경기 광명시 도덕공원로 35",
+  "jibunAddress": "경기 광명시 철산동 630",
+  "geocodeStatus": "valid"
+ }
 }

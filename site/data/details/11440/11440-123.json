@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "11440-123",
  "apartmentName": "DMC마포청구아파트",
  "sidoCode": "11",
@@ -15,7 +17,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-27",
-   "price": 1190000000,
+   "priceWon": 1190000000,
    "floor": 17,
    "exclusiveArea": 84.9,
    "areaGroup": 85,
@@ -24,7 +26,7 @@
   },
   {
    "contractDate": "2026-06-09",
-   "price": 1115000000,
+   "priceWon": 1115000000,
    "floor": 8,
    "exclusiveArea": 84.9,
    "areaGroup": 85,
@@ -33,7 +35,7 @@
   },
   {
    "contractDate": "2026-05-28",
-   "price": 1150000000,
+   "priceWon": 1150000000,
    "floor": 17,
    "exclusiveArea": 84.9,
    "areaGroup": 85,
@@ -42,7 +44,7 @@
   },
   {
    "contractDate": "2026-05-22",
-   "price": 1170000000,
+   "priceWon": 1170000000,
    "floor": 17,
    "exclusiveArea": 84.9,
    "areaGroup": 85,
@@ -51,7 +53,7 @@
   },
   {
    "contractDate": "2026-05-21",
-   "price": 1120000000,
+   "priceWon": 1120000000,
    "floor": 11,
    "exclusiveArea": 84.6,
    "areaGroup": 85,
@@ -60,7 +62,7 @@
   },
   {
    "contractDate": "2026-05-19",
-   "price": 1200000000,
+   "priceWon": 1200000000,
    "floor": 15,
    "exclusiveArea": 84.9,
    "areaGroup": 85,
@@ -69,7 +71,7 @@
   },
   {
    "contractDate": "2026-05-15",
-   "price": 1118000000,
+   "priceWon": 1118000000,
    "floor": 13,
    "exclusiveArea": 84.6,
    "areaGroup": 85,
@@ -78,7 +80,7 @@
   },
   {
    "contractDate": "2026-05-01",
-   "price": 1100000000,
+   "priceWon": 1100000000,
    "floor": 9,
    "exclusiveArea": 84.9,
    "areaGroup": 85,
@@ -87,7 +89,7 @@
   },
   {
    "contractDate": "2026-02-20",
-   "price": 1100000000,
+   "priceWon": 1100000000,
    "floor": 20,
    "exclusiveArea": 84.9,
    "areaGroup": 85,
@@ -96,7 +98,7 @@
   },
   {
    "contractDate": "2026-02-11",
-   "price": 1100000000,
+   "priceWon": 1100000000,
    "floor": 13,
    "exclusiveArea": 84.9,
    "areaGroup": 85,
@@ -105,7 +107,7 @@
   },
   {
    "contractDate": "2026-02-10",
-   "price": 1085000000,
+   "priceWon": 1085000000,
    "floor": 10,
    "exclusiveArea": 84.6,
    "areaGroup": 85,
@@ -114,12 +116,19 @@
   },
   {
    "contractDate": "2026-02-06",
-   "price": 1100000000,
+   "priceWon": 1100000000,
    "floor": 19,
    "exclusiveArea": 84.9,
    "areaGroup": 85,
    "dealType": "중개거래",
    "cancellationStatus": "CANCELLED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.5740531394105,
+  "longitude": 126.901873208452,
+  "roadAddress": "서울 마포구 성암로11길 56",
+  "jibunAddress": "서울 마포구 중동 390",
+  "geocodeStatus": "ambiguous"
+ }
 }

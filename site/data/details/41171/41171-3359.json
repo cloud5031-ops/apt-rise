@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "41171-3359",
  "apartmentName": "안양센트럴헤센2차",
  "sidoCode": "41",
@@ -15,7 +17,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-18",
-   "price": 543000000,
+   "priceWon": 543000000,
    "floor": 4,
    "exclusiveArea": 66.5454,
    "areaGroup": 67,
@@ -24,7 +26,7 @@
   },
   {
    "contractDate": "2026-06-17",
-   "price": 450000000,
+   "priceWon": 450000000,
    "floor": 24,
    "exclusiveArea": 49.98,
    "areaGroup": 50,
@@ -33,7 +35,7 @@
   },
   {
    "contractDate": "2026-06-12",
-   "price": 585000000,
+   "priceWon": 585000000,
    "floor": 14,
    "exclusiveArea": 66.5454,
    "areaGroup": 67,
@@ -42,7 +44,7 @@
   },
   {
    "contractDate": "2026-05-18",
-   "price": 567000000,
+   "priceWon": 567000000,
    "floor": 12,
    "exclusiveArea": 66.5454,
    "areaGroup": 67,
@@ -51,7 +53,7 @@
   },
   {
    "contractDate": "2026-05-12",
-   "price": 548000000,
+   "priceWon": 548000000,
    "floor": 7,
    "exclusiveArea": 66.5454,
    "areaGroup": 67,
@@ -60,7 +62,7 @@
   },
   {
    "contractDate": "2026-05-09",
-   "price": 510000000,
+   "priceWon": 510000000,
    "floor": 3,
    "exclusiveArea": 66.5454,
    "areaGroup": 67,
@@ -69,7 +71,7 @@
   },
   {
    "contractDate": "2026-03-07",
-   "price": 455000000,
+   "priceWon": 455000000,
    "floor": 22,
    "exclusiveArea": 49.98,
    "areaGroup": 50,
@@ -78,7 +80,7 @@
   },
   {
    "contractDate": "2026-02-26",
-   "price": 585000000,
+   "priceWon": 585000000,
    "floor": 15,
    "exclusiveArea": 66.5454,
    "areaGroup": 67,
@@ -87,12 +89,19 @@
   },
   {
    "contractDate": "2026-02-24",
-   "price": 500000000,
+   "priceWon": 500000000,
    "floor": 2,
    "exclusiveArea": 66.5454,
    "areaGroup": 67,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.3906918880503,
+  "longitude": 126.929121928878,
+  "roadAddress": "경기 안양시 만안구 안양로 186",
+  "jibunAddress": "경기 안양시 만안구 안양동 433",
+  "geocodeStatus": "valid"
+ }
 }

@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "41113-56",
  "apartmentName": "신안풍림",
  "sidoCode": "41",
@@ -16,7 +18,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-25",
-   "price": 495000000,
+   "priceWon": 495000000,
    "floor": 12,
    "exclusiveArea": 101.97,
    "areaGroup": 102,
@@ -25,7 +27,7 @@
   },
   {
    "contractDate": "2026-06-01",
-   "price": 470000000,
+   "priceWon": 470000000,
    "floor": 7,
    "exclusiveArea": 101.94,
    "areaGroup": 102,
@@ -34,7 +36,7 @@
   },
   {
    "contractDate": "2026-05-22",
-   "price": 490000000,
+   "priceWon": 490000000,
    "floor": 5,
    "exclusiveArea": 101.97,
    "areaGroup": 102,
@@ -43,7 +45,7 @@
   },
   {
    "contractDate": "2026-05-06",
-   "price": 465000000,
+   "priceWon": 465000000,
    "floor": 14,
    "exclusiveArea": 101.97,
    "areaGroup": 102,
@@ -52,7 +54,7 @@
   },
   {
    "contractDate": "2026-04-08",
-   "price": 380000000,
+   "priceWon": 380000000,
    "floor": 1,
    "exclusiveArea": 101.97,
    "areaGroup": 102,
@@ -61,7 +63,7 @@
   },
   {
    "contractDate": "2026-04-04",
-   "price": 460000000,
+   "priceWon": 460000000,
    "floor": 10,
    "exclusiveArea": 101.97,
    "areaGroup": 102,
@@ -70,7 +72,7 @@
   },
   {
    "contractDate": "2026-03-26",
-   "price": 497000000,
+   "priceWon": 497000000,
    "floor": 4,
    "exclusiveArea": 134.07,
    "areaGroup": 134,
@@ -79,7 +81,7 @@
   },
   {
    "contractDate": "2026-03-20",
-   "price": 450000000,
+   "priceWon": 450000000,
    "floor": 2,
    "exclusiveArea": 101.97,
    "areaGroup": 102,
@@ -88,7 +90,7 @@
   },
   {
    "contractDate": "2026-02-23",
-   "price": 500000000,
+   "priceWon": 500000000,
    "floor": 11,
    "exclusiveArea": 101.94,
    "areaGroup": 102,
@@ -97,7 +99,7 @@
   },
   {
    "contractDate": "2026-02-21",
-   "price": 508000000,
+   "priceWon": 508000000,
    "floor": 11,
    "exclusiveArea": 101.94,
    "areaGroup": 102,
@@ -106,12 +108,19 @@
   },
   {
    "contractDate": "2026-02-05",
-   "price": 479000000,
+   "priceWon": 479000000,
    "floor": 14,
    "exclusiveArea": 101.94,
    "areaGroup": 102,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.2540141108002,
+  "longitude": 127.0336935142,
+  "roadAddress": "경기 수원시 권선구 권중로 31",
+  "jibunAddress": "경기 수원시 권선구 권선동 1235",
+  "geocodeStatus": "valid"
+ }
 }

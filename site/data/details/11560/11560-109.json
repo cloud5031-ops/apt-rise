@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "11560-109",
  "apartmentName": "신기목련아파트",
  "sidoCode": "11",
@@ -14,7 +16,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-10",
-   "price": 600000000,
+   "priceWon": 600000000,
    "floor": 2,
    "exclusiveArea": 59.4,
    "areaGroup": 59,
@@ -23,7 +25,7 @@
   },
   {
    "contractDate": "2026-06-03",
-   "price": 628000000,
+   "priceWon": 628000000,
    "floor": 1,
    "exclusiveArea": 59.4,
    "areaGroup": 59,
@@ -32,7 +34,7 @@
   },
   {
    "contractDate": "2026-05-25",
-   "price": 670000000,
+   "priceWon": 670000000,
    "floor": 17,
    "exclusiveArea": 59.4,
    "areaGroup": 59,
@@ -41,7 +43,7 @@
   },
   {
    "contractDate": "2026-05-15",
-   "price": 635000000,
+   "priceWon": 635000000,
    "floor": 11,
    "exclusiveArea": 59.4,
    "areaGroup": 59,
@@ -50,7 +52,7 @@
   },
   {
    "contractDate": "2026-04-29",
-   "price": 575000000,
+   "priceWon": 575000000,
    "floor": 1,
    "exclusiveArea": 59.4,
    "areaGroup": 59,
@@ -59,7 +61,7 @@
   },
   {
    "contractDate": "2026-04-25",
-   "price": 565000000,
+   "priceWon": 565000000,
    "floor": 19,
    "exclusiveArea": 59.4,
    "areaGroup": 59,
@@ -68,12 +70,19 @@
   },
   {
    "contractDate": "2026-04-02",
-   "price": 610000000,
+   "priceWon": 610000000,
    "floor": 9,
    "exclusiveArea": 59.4,
    "areaGroup": 59,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.5084064349722,
+  "longitude": 126.914921289635,
+  "roadAddress": "서울 영등포구 신길로42가길 34",
+  "jibunAddress": "서울 영등포구 신길동 4935",
+  "geocodeStatus": "valid"
+ }
 }

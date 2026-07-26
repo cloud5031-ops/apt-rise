@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "41310-992",
  "apartmentName": "아차산어울림아파트",
  "sidoCode": "41",
@@ -14,7 +16,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-23",
-   "price": 798000000,
+   "priceWon": 798000000,
    "floor": 10,
    "exclusiveArea": 84.8549,
    "areaGroup": 85,
@@ -23,7 +25,7 @@
   },
   {
    "contractDate": "2026-06-11",
-   "price": 830000000,
+   "priceWon": 830000000,
    "floor": 12,
    "exclusiveArea": 84.8549,
    "areaGroup": 85,
@@ -32,7 +34,7 @@
   },
   {
    "contractDate": "2026-06-03",
-   "price": 779000000,
+   "priceWon": 779000000,
    "floor": 12,
    "exclusiveArea": 84.8549,
    "areaGroup": 85,
@@ -41,7 +43,7 @@
   },
   {
    "contractDate": "2026-05-28",
-   "price": 750000000,
+   "priceWon": 750000000,
    "floor": 11,
    "exclusiveArea": 84.8549,
    "areaGroup": 85,
@@ -50,7 +52,7 @@
   },
   {
    "contractDate": "2026-05-20",
-   "price": 695000000,
+   "priceWon": 695000000,
    "floor": 1,
    "exclusiveArea": 84.8549,
    "areaGroup": 85,
@@ -59,7 +61,7 @@
   },
   {
    "contractDate": "2026-04-25",
-   "price": 759000000,
+   "priceWon": 759000000,
    "floor": 5,
    "exclusiveArea": 84.8549,
    "areaGroup": 85,
@@ -68,7 +70,7 @@
   },
   {
    "contractDate": "2026-04-05",
-   "price": 777000000,
+   "priceWon": 777000000,
    "floor": 10,
    "exclusiveArea": 84.8549,
    "areaGroup": 85,
@@ -77,7 +79,7 @@
   },
   {
    "contractDate": "2026-02-19",
-   "price": 695000000,
+   "priceWon": 695000000,
    "floor": 1,
    "exclusiveArea": 84.8549,
    "areaGroup": 85,
@@ -86,12 +88,19 @@
   },
   {
    "contractDate": "2026-02-13",
-   "price": 705000000,
+   "priceWon": 705000000,
    "floor": 2,
    "exclusiveArea": 84.8549,
    "areaGroup": 85,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.5972820682206,
+  "longitude": 127.129448986146,
+  "roadAddress": "경기 구리시 아차산로487번길 27",
+  "jibunAddress": "경기 구리시 교문동 829",
+  "geocodeStatus": "valid"
+ }
 }

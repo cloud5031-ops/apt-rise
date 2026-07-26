@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "41194-10646",
  "apartmentName": "제일풍경채제이드카운티2단지",
  "sidoCode": "41",
@@ -15,7 +17,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-29",
-   "price": 705000000,
+   "priceWon": 705000000,
    "floor": 10,
    "exclusiveArea": 84.9,
    "areaGroup": 85,
@@ -24,7 +26,7 @@
   },
   {
    "contractDate": "2026-05-18",
-   "price": 712000000,
+   "priceWon": 712000000,
    "floor": 14,
    "exclusiveArea": 84.9,
    "areaGroup": 85,
@@ -33,7 +35,7 @@
   },
   {
    "contractDate": "2026-05-13",
-   "price": 627000000,
+   "priceWon": 627000000,
    "floor": 8,
    "exclusiveArea": 74.96,
    "areaGroup": 75,
@@ -42,7 +44,7 @@
   },
   {
    "contractDate": "2026-05-10",
-   "price": 705000000,
+   "priceWon": 705000000,
    "floor": 25,
    "exclusiveArea": 84.9,
    "areaGroup": 85,
@@ -51,7 +53,7 @@
   },
   {
    "contractDate": "2026-04-28",
-   "price": 618000000,
+   "priceWon": 618000000,
    "floor": 9,
    "exclusiveArea": 74.96,
    "areaGroup": 75,
@@ -60,7 +62,7 @@
   },
   {
    "contractDate": "2026-04-21",
-   "price": 615000000,
+   "priceWon": 615000000,
    "floor": 12,
    "exclusiveArea": 74.96,
    "areaGroup": 75,
@@ -69,7 +71,7 @@
   },
   {
    "contractDate": "2026-04-09",
-   "price": 690000000,
+   "priceWon": 690000000,
    "floor": 21,
    "exclusiveArea": 84.9,
    "areaGroup": 85,
@@ -78,7 +80,7 @@
   },
   {
    "contractDate": "2026-04-03",
-   "price": 648000000,
+   "priceWon": 648000000,
    "floor": 26,
    "exclusiveArea": 84.9,
    "areaGroup": 85,
@@ -87,12 +89,19 @@
   },
   {
    "contractDate": "2026-02-07",
-   "price": 680000000,
+   "priceWon": 680000000,
    "floor": 2,
    "exclusiveArea": 84.9,
    "areaGroup": 85,
    "dealType": "직거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.4650075206967,
+  "longitude": 126.827234819818,
+  "roadAddress": "경기 부천시 소사구 양지로 234-9",
+  "jibunAddress": "경기 부천시 소사구 옥길동 739-1",
+  "geocodeStatus": "valid"
+ }
 }

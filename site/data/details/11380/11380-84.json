@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "11380-84",
  "apartmentName": "DMC우방",
  "sidoCode": "11",
@@ -16,7 +18,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-17",
-   "price": 1110000000,
+   "priceWon": 1110000000,
    "floor": 9,
    "exclusiveArea": 84.99,
    "areaGroup": 85,
@@ -25,7 +27,7 @@
   },
   {
    "contractDate": "2026-06-12",
-   "price": 1050000000,
+   "priceWon": 1050000000,
    "floor": 4,
    "exclusiveArea": 115.0,
    "areaGroup": 115,
@@ -34,7 +36,7 @@
   },
   {
    "contractDate": "2026-05-16",
-   "price": 950000000,
+   "priceWon": 950000000,
    "floor": 19,
    "exclusiveArea": 59.91,
    "areaGroup": 60,
@@ -43,7 +45,7 @@
   },
   {
    "contractDate": "2026-05-13",
-   "price": 900000000,
+   "priceWon": 900000000,
    "floor": 20,
    "exclusiveArea": 59.91,
    "areaGroup": 60,
@@ -52,7 +54,7 @@
   },
   {
    "contractDate": "2026-05-13",
-   "price": 924000000,
+   "priceWon": 924000000,
    "floor": 13,
    "exclusiveArea": 59.91,
    "areaGroup": 60,
@@ -61,7 +63,7 @@
   },
   {
    "contractDate": "2026-05-01",
-   "price": 868000000,
+   "priceWon": 868000000,
    "floor": 5,
    "exclusiveArea": 59.91,
    "areaGroup": 60,
@@ -70,7 +72,7 @@
   },
   {
    "contractDate": "2026-04-29",
-   "price": 870000000,
+   "priceWon": 870000000,
    "floor": 18,
    "exclusiveArea": 59.91,
    "areaGroup": 60,
@@ -79,7 +81,7 @@
   },
   {
    "contractDate": "2026-04-11",
-   "price": 950000000,
+   "priceWon": 950000000,
    "floor": 18,
    "exclusiveArea": 59.91,
    "areaGroup": 60,
@@ -88,7 +90,7 @@
   },
   {
    "contractDate": "2026-04-03",
-   "price": 828000000,
+   "priceWon": 828000000,
    "floor": 5,
    "exclusiveArea": 59.91,
    "areaGroup": 60,
@@ -97,7 +99,7 @@
   },
   {
    "contractDate": "2026-03-24",
-   "price": 1020000000,
+   "priceWon": 1020000000,
    "floor": 8,
    "exclusiveArea": 84.99,
    "areaGroup": 85,
@@ -106,7 +108,7 @@
   },
   {
    "contractDate": "2026-03-15",
-   "price": 980000000,
+   "priceWon": 980000000,
    "floor": 5,
    "exclusiveArea": 84.99,
    "areaGroup": 85,
@@ -115,7 +117,7 @@
   },
   {
    "contractDate": "2026-03-05",
-   "price": 800000000,
+   "priceWon": 800000000,
    "floor": 13,
    "exclusiveArea": 59.91,
    "areaGroup": 60,
@@ -124,7 +126,7 @@
   },
   {
    "contractDate": "2026-03-05",
-   "price": 800000000,
+   "priceWon": 800000000,
    "floor": 8,
    "exclusiveArea": 59.91,
    "areaGroup": 60,
@@ -133,7 +135,7 @@
   },
   {
    "contractDate": "2026-02-24",
-   "price": 820000000,
+   "priceWon": 820000000,
    "floor": 5,
    "exclusiveArea": 59.91,
    "areaGroup": 60,
@@ -142,12 +144,19 @@
   },
   {
    "contractDate": "2026-02-21",
-   "price": 940000000,
+   "priceWon": 940000000,
    "floor": 4,
    "exclusiveArea": 84.99,
    "areaGroup": 85,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.5819352063225,
+  "longitude": 126.903173422548,
+  "roadAddress": "서울 은평구 증산로3길 26-1",
+  "jibunAddress": "서울 은평구 증산동 244",
+  "geocodeStatus": "valid"
+ }
 }

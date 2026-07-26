@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "11650-62",
  "apartmentName": "유원서초",
  "sidoCode": "11",
@@ -15,7 +17,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-16",
-   "price": 2570000000,
+   "priceWon": 2570000000,
    "floor": 1,
    "exclusiveArea": 84.82,
    "areaGroup": 85,
@@ -24,7 +26,7 @@
   },
   {
    "contractDate": "2026-05-22",
-   "price": 2620000000,
+   "priceWon": 2620000000,
    "floor": 4,
    "exclusiveArea": 84.87,
    "areaGroup": 85,
@@ -33,7 +35,7 @@
   },
   {
    "contractDate": "2026-05-19",
-   "price": 2650000000,
+   "priceWon": 2650000000,
    "floor": 15,
    "exclusiveArea": 84.82,
    "areaGroup": 85,
@@ -42,7 +44,7 @@
   },
   {
    "contractDate": "2026-05-06",
-   "price": 2600000000,
+   "priceWon": 2600000000,
    "floor": 10,
    "exclusiveArea": 84.82,
    "areaGroup": 85,
@@ -51,7 +53,7 @@
   },
   {
    "contractDate": "2026-04-17",
-   "price": 2730000000,
+   "priceWon": 2730000000,
    "floor": 14,
    "exclusiveArea": 84.82,
    "areaGroup": 85,
@@ -60,7 +62,7 @@
   },
   {
    "contractDate": "2026-04-16",
-   "price": 2600000000,
+   "priceWon": 2600000000,
    "floor": 7,
    "exclusiveArea": 84.82,
    "areaGroup": 85,
@@ -69,7 +71,7 @@
   },
   {
    "contractDate": "2026-04-11",
-   "price": 2480000000,
+   "priceWon": 2480000000,
    "floor": 9,
    "exclusiveArea": 84.82,
    "areaGroup": 85,
@@ -78,12 +80,19 @@
   },
   {
    "contractDate": "2026-04-04",
-   "price": 2400000000,
+   "priceWon": 2400000000,
    "floor": 1,
    "exclusiveArea": 84.82,
    "areaGroup": 85,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.4962996549334,
+  "longitude": 127.018265560432,
+  "roadAddress": "서울 서초구 서초중앙로24길 43",
+  "jibunAddress": "서울 서초구 서초동 1687",
+  "geocodeStatus": "valid"
+ }
 }

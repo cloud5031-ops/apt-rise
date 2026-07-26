@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "11440-5097",
  "apartmentName": "메세나폴리스",
  "sidoCode": "11",
@@ -16,7 +18,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-22",
-   "price": 2950000000,
+   "priceWon": 2950000000,
    "floor": 27,
    "exclusiveArea": 148.981,
    "areaGroup": 149,
@@ -25,7 +27,7 @@
   },
   {
    "contractDate": "2026-05-27",
-   "price": 2870000000,
+   "priceWon": 2870000000,
    "floor": 24,
    "exclusiveArea": 148.981,
    "areaGroup": 149,
@@ -34,7 +36,7 @@
   },
   {
    "contractDate": "2026-05-26",
-   "price": 2690000000,
+   "priceWon": 2690000000,
    "floor": 35,
    "exclusiveArea": 142.034,
    "areaGroup": 142,
@@ -43,7 +45,7 @@
   },
   {
    "contractDate": "2026-05-22",
-   "price": 1910000000,
+   "priceWon": 1910000000,
    "floor": 34,
    "exclusiveArea": 122.867,
    "areaGroup": 123,
@@ -52,7 +54,7 @@
   },
   {
    "contractDate": "2026-05-21",
-   "price": 2300000000,
+   "priceWon": 2300000000,
    "floor": 9,
    "exclusiveArea": 142.034,
    "areaGroup": 142,
@@ -61,7 +63,7 @@
   },
   {
    "contractDate": "2026-05-11",
-   "price": 2650000000,
+   "priceWon": 2650000000,
    "floor": 25,
    "exclusiveArea": 142.034,
    "areaGroup": 142,
@@ -70,7 +72,7 @@
   },
   {
    "contractDate": "2026-05-04",
-   "price": 2500000000,
+   "priceWon": 2500000000,
    "floor": 8,
    "exclusiveArea": 148.981,
    "areaGroup": 149,
@@ -79,7 +81,7 @@
   },
   {
    "contractDate": "2026-04-20",
-   "price": 2150000000,
+   "priceWon": 2150000000,
    "floor": 7,
    "exclusiveArea": 122.867,
    "areaGroup": 123,
@@ -88,7 +90,7 @@
   },
   {
    "contractDate": "2026-04-02",
-   "price": 2500000000,
+   "priceWon": 2500000000,
    "floor": 18,
    "exclusiveArea": 142.034,
    "areaGroup": 142,
@@ -97,7 +99,7 @@
   },
   {
    "contractDate": "2026-03-13",
-   "price": 2750000000,
+   "priceWon": 2750000000,
    "floor": 23,
    "exclusiveArea": 148.981,
    "areaGroup": 149,
@@ -106,7 +108,7 @@
   },
   {
    "contractDate": "2026-03-09",
-   "price": 2490000000,
+   "priceWon": 2490000000,
    "floor": 16,
    "exclusiveArea": 142.034,
    "areaGroup": 142,
@@ -115,12 +117,19 @@
   },
   {
    "contractDate": "2026-03-04",
-   "price": 2820000000,
+   "priceWon": 2820000000,
    "floor": 30,
    "exclusiveArea": 148.981,
    "areaGroup": 149,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.5507467154903,
+  "longitude": 126.913768796333,
+  "roadAddress": "서울 마포구 양화로 45",
+  "jibunAddress": "서울 마포구 서교동 490",
+  "geocodeStatus": "valid"
+ }
 }

@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "11560-68",
  "apartmentName": "문래현대5차",
  "sidoCode": "11",
@@ -14,7 +16,7 @@
  "transactions": [
   {
    "contractDate": "2026-05-30",
-   "price": 1100000000,
+   "priceWon": 1100000000,
    "floor": 17,
    "exclusiveArea": 84.79,
    "areaGroup": 85,
@@ -23,7 +25,7 @@
   },
   {
    "contractDate": "2026-05-01",
-   "price": 1060000000,
+   "priceWon": 1060000000,
    "floor": 10,
    "exclusiveArea": 84.79,
    "areaGroup": 85,
@@ -32,7 +34,7 @@
   },
   {
    "contractDate": "2026-04-28",
-   "price": 1085000000,
+   "priceWon": 1085000000,
    "floor": 12,
    "exclusiveArea": 84.79,
    "areaGroup": 85,
@@ -41,7 +43,7 @@
   },
   {
    "contractDate": "2026-04-25",
-   "price": 1005000000,
+   "priceWon": 1005000000,
    "floor": 3,
    "exclusiveArea": 84.79,
    "areaGroup": 85,
@@ -50,7 +52,7 @@
   },
   {
    "contractDate": "2026-04-16",
-   "price": 993000000,
+   "priceWon": 993000000,
    "floor": 3,
    "exclusiveArea": 84.79,
    "areaGroup": 85,
@@ -59,7 +61,7 @@
   },
   {
    "contractDate": "2026-04-15",
-   "price": 1047000000,
+   "priceWon": 1047000000,
    "floor": 9,
    "exclusiveArea": 84.79,
    "areaGroup": 85,
@@ -68,7 +70,7 @@
   },
   {
    "contractDate": "2026-04-14",
-   "price": 1040000000,
+   "priceWon": 1040000000,
    "floor": 7,
    "exclusiveArea": 84.79,
    "areaGroup": 85,
@@ -77,7 +79,7 @@
   },
   {
    "contractDate": "2026-04-10",
-   "price": 1015000000,
+   "priceWon": 1015000000,
    "floor": 15,
    "exclusiveArea": 84.79,
    "areaGroup": 85,
@@ -86,7 +88,7 @@
   },
   {
    "contractDate": "2026-03-13",
-   "price": 890000000,
+   "priceWon": 890000000,
    "floor": 7,
    "exclusiveArea": 84.79,
    "areaGroup": 85,
@@ -95,7 +97,7 @@
   },
   {
    "contractDate": "2026-02-23",
-   "price": 978000000,
+   "priceWon": 978000000,
    "floor": 9,
    "exclusiveArea": 84.79,
    "areaGroup": 85,
@@ -104,12 +106,19 @@
   },
   {
    "contractDate": "2026-02-04",
-   "price": 850000000,
+   "priceWon": 850000000,
    "floor": 1,
    "exclusiveArea": 84.79,
    "areaGroup": 85,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.5176134940523,
+  "longitude": 126.883159021238,
+  "roadAddress": "서울 영등포구 선유서로9길 3",
+  "jibunAddress": "서울 영등포구 문래동5가 23-1",
+  "geocodeStatus": "valid"
+ }
 }

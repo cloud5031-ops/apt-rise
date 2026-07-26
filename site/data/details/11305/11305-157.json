@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "11305-157",
  "apartmentName": "한솔솔파크",
  "sidoCode": "11",
@@ -14,7 +16,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-26",
-   "price": 692000000,
+   "priceWon": 692000000,
    "floor": 13,
    "exclusiveArea": 84.88,
    "areaGroup": 85,
@@ -23,7 +25,7 @@
   },
   {
    "contractDate": "2026-06-16",
-   "price": 690000000,
+   "priceWon": 690000000,
    "floor": 5,
    "exclusiveArea": 84.88,
    "areaGroup": 85,
@@ -32,7 +34,7 @@
   },
   {
    "contractDate": "2026-06-15",
-   "price": 700000000,
+   "priceWon": 700000000,
    "floor": 15,
    "exclusiveArea": 84.88,
    "areaGroup": 85,
@@ -41,7 +43,7 @@
   },
   {
    "contractDate": "2026-05-16",
-   "price": 615500000,
+   "priceWon": 615500000,
    "floor": 1,
    "exclusiveArea": 84.88,
    "areaGroup": 85,
@@ -50,7 +52,7 @@
   },
   {
    "contractDate": "2026-04-02",
-   "price": 600000000,
+   "priceWon": 600000000,
    "floor": 13,
    "exclusiveArea": 84.88,
    "areaGroup": 85,
@@ -59,7 +61,7 @@
   },
   {
    "contractDate": "2026-03-30",
-   "price": 688000000,
+   "priceWon": 688000000,
    "floor": 6,
    "exclusiveArea": 84.88,
    "areaGroup": 85,
@@ -68,12 +70,19 @@
   },
   {
    "contractDate": "2026-02-23",
-   "price": 680000000,
+   "priceWon": 680000000,
    "floor": 13,
    "exclusiveArea": 84.88,
    "areaGroup": 85,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.6273613072931,
+  "longitude": 127.038842916774,
+  "roadAddress": "서울 강북구 오현로 180",
+  "jibunAddress": "서울 강북구 번동 138",
+  "geocodeStatus": "valid"
+ }
 }

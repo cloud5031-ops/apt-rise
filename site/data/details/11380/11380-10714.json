@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "11380-10714",
  "apartmentName": "은평뉴타운솔하임",
  "sidoCode": "11",
@@ -16,7 +18,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-11",
-   "price": 599000000,
+   "priceWon": 599000000,
    "floor": 19,
    "exclusiveArea": 45.034,
    "areaGroup": 45,
@@ -25,7 +27,7 @@
   },
   {
    "contractDate": "2026-06-01",
-   "price": 130000000,
+   "priceWon": 130000000,
    "floor": 18,
    "exclusiveArea": 14.235,
    "areaGroup": 14,
@@ -34,7 +36,7 @@
   },
   {
    "contractDate": "2026-05-26",
-   "price": 618000000,
+   "priceWon": 618000000,
    "floor": 18,
    "exclusiveArea": 45.034,
    "areaGroup": 45,
@@ -43,7 +45,7 @@
   },
   {
    "contractDate": "2026-05-23",
-   "price": 634000000,
+   "priceWon": 634000000,
    "floor": 19,
    "exclusiveArea": 45.044,
    "areaGroup": 45,
@@ -52,7 +54,7 @@
   },
   {
    "contractDate": "2026-05-09",
-   "price": 530000000,
+   "priceWon": 530000000,
    "floor": 4,
    "exclusiveArea": 45.034,
    "areaGroup": 45,
@@ -61,7 +63,7 @@
   },
   {
    "contractDate": "2026-04-29",
-   "price": 563000000,
+   "priceWon": 563000000,
    "floor": 7,
    "exclusiveArea": 45.034,
    "areaGroup": 45,
@@ -70,7 +72,7 @@
   },
   {
    "contractDate": "2026-04-11",
-   "price": 580000000,
+   "priceWon": 580000000,
    "floor": 20,
    "exclusiveArea": 45.034,
    "areaGroup": 45,
@@ -79,7 +81,7 @@
   },
   {
    "contractDate": "2026-03-28",
-   "price": 140000000,
+   "priceWon": 140000000,
    "floor": 18,
    "exclusiveArea": 14.235,
    "areaGroup": 14,
@@ -88,7 +90,7 @@
   },
   {
    "contractDate": "2026-03-24",
-   "price": 580000000,
+   "priceWon": 580000000,
    "floor": 19,
    "exclusiveArea": 45.044,
    "areaGroup": 45,
@@ -97,7 +99,7 @@
   },
   {
    "contractDate": "2026-03-16",
-   "price": 555000000,
+   "priceWon": 555000000,
    "floor": 14,
    "exclusiveArea": 45.034,
    "areaGroup": 45,
@@ -106,7 +108,7 @@
   },
   {
    "contractDate": "2026-03-14",
-   "price": 565000000,
+   "priceWon": 565000000,
    "floor": 15,
    "exclusiveArea": 45.044,
    "areaGroup": 45,
@@ -115,7 +117,7 @@
   },
   {
    "contractDate": "2026-03-14",
-   "price": 480000000,
+   "priceWon": 480000000,
    "floor": 12,
    "exclusiveArea": 45.034,
    "areaGroup": 45,
@@ -124,7 +126,7 @@
   },
   {
    "contractDate": "2026-02-27",
-   "price": 540000000,
+   "priceWon": 540000000,
    "floor": 4,
    "exclusiveArea": 45.044,
    "areaGroup": 45,
@@ -133,7 +135,7 @@
   },
   {
    "contractDate": "2026-02-21",
-   "price": 137000000,
+   "priceWon": 137000000,
    "floor": 17,
    "exclusiveArea": 14.235,
    "areaGroup": 14,
@@ -142,12 +144,19 @@
   },
   {
    "contractDate": "2026-02-06",
-   "price": 500000000,
+   "priceWon": 500000000,
    "floor": 5,
    "exclusiveArea": 45.034,
    "areaGroup": 45,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.6394124812671,
+  "longitude": 126.917322630702,
+  "roadAddress": "서울 은평구 통일로 1080",
+  "jibunAddress": "서울 은평구 진관동 60",
+  "geocodeStatus": "valid"
+ }
 }

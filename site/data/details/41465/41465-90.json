@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "41465-90",
  "apartmentName": "신봉마을엘지빌리지5차(B)",
  "sidoCode": "41",
@@ -16,7 +18,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-19",
-   "price": 835000000,
+   "priceWon": 835000000,
    "floor": 5,
    "exclusiveArea": 164.517,
    "areaGroup": 165,
@@ -25,7 +27,7 @@
   },
   {
    "contractDate": "2026-06-13",
-   "price": 890000000,
+   "priceWon": 890000000,
    "floor": 16,
    "exclusiveArea": 164.517,
    "areaGroup": 165,
@@ -34,7 +36,7 @@
   },
   {
    "contractDate": "2026-05-30",
-   "price": 850000000,
+   "priceWon": 850000000,
    "floor": 4,
    "exclusiveArea": 164.517,
    "areaGroup": 165,
@@ -43,7 +45,7 @@
   },
   {
    "contractDate": "2026-05-29",
-   "price": 805000000,
+   "priceWon": 805000000,
    "floor": 18,
    "exclusiveArea": 134.314,
    "areaGroup": 134,
@@ -52,7 +54,7 @@
   },
   {
    "contractDate": "2026-05-28",
-   "price": 873000000,
+   "priceWon": 873000000,
    "floor": 5,
    "exclusiveArea": 164.517,
    "areaGroup": 165,
@@ -61,7 +63,7 @@
   },
   {
    "contractDate": "2026-05-01",
-   "price": 835000000,
+   "priceWon": 835000000,
    "floor": 16,
    "exclusiveArea": 141.439,
    "areaGroup": 141,
@@ -70,7 +72,7 @@
   },
   {
    "contractDate": "2026-04-28",
-   "price": 750000000,
+   "priceWon": 750000000,
    "floor": 11,
    "exclusiveArea": 134.314,
    "areaGroup": 134,
@@ -79,7 +81,7 @@
   },
   {
    "contractDate": "2026-04-17",
-   "price": 815000000,
+   "priceWon": 815000000,
    "floor": 2,
    "exclusiveArea": 164.517,
    "areaGroup": 165,
@@ -88,7 +90,7 @@
   },
   {
    "contractDate": "2026-03-17",
-   "price": 780000000,
+   "priceWon": 780000000,
    "floor": 9,
    "exclusiveArea": 164.517,
    "areaGroup": 165,
@@ -97,7 +99,7 @@
   },
   {
    "contractDate": "2026-03-07",
-   "price": 842500000,
+   "priceWon": 842500000,
    "floor": 7,
    "exclusiveArea": 141.439,
    "areaGroup": 141,
@@ -106,7 +108,7 @@
   },
   {
    "contractDate": "2026-02-13",
-   "price": 845000000,
+   "priceWon": 845000000,
    "floor": 7,
    "exclusiveArea": 164.517,
    "areaGroup": 165,
@@ -115,12 +117,19 @@
   },
   {
    "contractDate": "2026-02-06",
-   "price": 825000000,
+   "priceWon": 825000000,
    "floor": 11,
    "exclusiveArea": 141.439,
    "areaGroup": 141,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.3255255050511,
+  "longitude": 127.074988392273,
+  "roadAddress": "경기 용인시 수지구 신봉1로 110",
+  "jibunAddress": "경기 용인시 수지구 신봉동 871",
+  "geocodeStatus": "ambiguous"
+ }
 }
