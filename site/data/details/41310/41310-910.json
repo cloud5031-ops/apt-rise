@@ -18,19 +18,19 @@
  "transactions": [
   {
    "contractDate": "2026-06-30",
-   "priceWon": 845000000,
-   "floor": 20,
-   "exclusiveArea": 59.335,
-   "areaGroup": 59,
+   "priceWon": 945000000,
+   "floor": 2,
+   "exclusiveArea": 114.829,
+   "areaGroup": 115,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   },
   {
    "contractDate": "2026-06-30",
-   "priceWon": 945000000,
-   "floor": 2,
-   "exclusiveArea": 114.829,
-   "areaGroup": 115,
+   "priceWon": 845000000,
+   "floor": 20,
+   "exclusiveArea": 59.335,
+   "areaGroup": 59,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   },
@@ -260,6 +260,12 @@
    "cancellationStatus": "COMPLETED"
   }
  ],
+ "historyCoverage": {
+  "startMonth": "202307",
+  "endMonth": "202606",
+  "months": 36,
+  "complete": false
+ },
  "location": {
   "latitude": 37.6105489468909,
   "longitude": 127.135794760497,

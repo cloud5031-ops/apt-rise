@@ -27,15 +27,6 @@
   },
   {
    "contractDate": "2026-06-09",
-   "priceWon": 618000000,
-   "floor": 19,
-   "exclusiveArea": 55.771,
-   "areaGroup": 56,
-   "dealType": "중개거래",
-   "cancellationStatus": "COMPLETED"
-  },
-  {
-   "contractDate": "2026-06-09",
    "priceWon": 695000000,
    "floor": 5,
    "exclusiveArea": 79.457,
@@ -44,11 +35,11 @@
    "cancellationStatus": "COMPLETED"
   },
   {
-   "contractDate": "2026-06-05",
-   "priceWon": 650000000,
-   "floor": 15,
-   "exclusiveArea": 79.457,
-   "areaGroup": 79,
+   "contractDate": "2026-06-09",
+   "priceWon": 618000000,
+   "floor": 19,
+   "exclusiveArea": 55.771,
+   "areaGroup": 56,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   },
@@ -58,6 +49,15 @@
    "floor": 7,
    "exclusiveArea": 121.455,
    "areaGroup": 121,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
+  {
+   "contractDate": "2026-06-05",
+   "priceWon": 650000000,
+   "floor": 15,
+   "exclusiveArea": 79.457,
+   "areaGroup": 79,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   },
@@ -215,6 +215,12 @@
    "cancellationStatus": "COMPLETED"
   }
  ],
+ "historyCoverage": {
+  "startMonth": "202307",
+  "endMonth": "202606",
+  "months": 36,
+  "complete": false
+ },
  "location": {
   "latitude": 37.4173454425842,
   "longitude": 126.91161771431,

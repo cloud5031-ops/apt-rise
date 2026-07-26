@@ -20,6 +20,15 @@
  "transactions": [
   {
    "contractDate": "2026-06-20",
+   "priceWon": 1180000000,
+   "floor": 22,
+   "exclusiveArea": 105.86,
+   "areaGroup": 106,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
+  {
+   "contractDate": "2026-06-20",
    "priceWon": 1080000000,
    "floor": 15,
    "exclusiveArea": 84.69,
@@ -37,15 +46,6 @@
    "cancellationStatus": "COMPLETED"
   },
   {
-   "contractDate": "2026-06-20",
-   "priceWon": 1180000000,
-   "floor": 22,
-   "exclusiveArea": 105.86,
-   "areaGroup": 106,
-   "dealType": "중개거래",
-   "cancellationStatus": "COMPLETED"
-  },
-  {
    "contractDate": "2026-06-17",
    "priceWon": 1030000000,
    "floor": 3,
@@ -56,8 +56,8 @@
   },
   {
    "contractDate": "2026-05-30",
-   "priceWon": 1050000000,
-   "floor": 14,
+   "priceWon": 1070000000,
+   "floor": 23,
    "exclusiveArea": 84.69,
    "areaGroup": 85,
    "dealType": "중개거래",
@@ -65,8 +65,8 @@
   },
   {
    "contractDate": "2026-05-30",
-   "priceWon": 1070000000,
-   "floor": 23,
+   "priceWon": 1050000000,
+   "floor": 14,
    "exclusiveArea": 84.69,
    "areaGroup": 85,
    "dealType": "중개거래",
@@ -110,8 +110,8 @@
   },
   {
    "contractDate": "2026-05-14",
-   "priceWon": 900000000,
-   "floor": 2,
+   "priceWon": 970000000,
+   "floor": 5,
    "exclusiveArea": 84.69,
    "areaGroup": 85,
    "dealType": "중개거래",
@@ -119,8 +119,8 @@
   },
   {
    "contractDate": "2026-05-14",
-   "priceWon": 970000000,
-   "floor": 5,
+   "priceWon": 900000000,
+   "floor": 2,
    "exclusiveArea": 84.69,
    "areaGroup": 85,
    "dealType": "중개거래",
@@ -155,19 +155,19 @@
   },
   {
    "contractDate": "2026-04-16",
-   "priceWon": 820000000,
-   "floor": 13,
-   "exclusiveArea": 59.98,
-   "areaGroup": 60,
+   "priceWon": 930000000,
+   "floor": 19,
+   "exclusiveArea": 75.93,
+   "areaGroup": 76,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   },
   {
    "contractDate": "2026-04-16",
-   "priceWon": 930000000,
-   "floor": 19,
-   "exclusiveArea": 75.93,
-   "areaGroup": 76,
+   "priceWon": 820000000,
+   "floor": 13,
+   "exclusiveArea": 59.98,
+   "areaGroup": 60,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   },
@@ -191,8 +191,8 @@
   },
   {
    "contractDate": "2026-04-07",
-   "priceWon": 795000000,
-   "floor": 2,
+   "priceWon": 840000000,
+   "floor": 7,
    "exclusiveArea": 59.83,
    "areaGroup": 60,
    "dealType": "중개거래",
@@ -200,8 +200,8 @@
   },
   {
    "contractDate": "2026-04-07",
-   "priceWon": 840000000,
-   "floor": 7,
+   "priceWon": 795000000,
+   "floor": 2,
    "exclusiveArea": 59.83,
    "areaGroup": 60,
    "dealType": "중개거래",
@@ -218,19 +218,19 @@
   },
   {
    "contractDate": "2026-03-26",
-   "priceWon": 835000000,
-   "floor": 16,
-   "exclusiveArea": 59.98,
-   "areaGroup": 60,
+   "priceWon": 920000000,
+   "floor": 8,
+   "exclusiveArea": 75.93,
+   "areaGroup": 76,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   },
   {
    "contractDate": "2026-03-26",
-   "priceWon": 920000000,
-   "floor": 8,
-   "exclusiveArea": 75.93,
-   "areaGroup": 76,
+   "priceWon": 835000000,
+   "floor": 16,
+   "exclusiveArea": 59.98,
+   "areaGroup": 60,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   },
@@ -317,15 +317,6 @@
   },
   {
    "contractDate": "2026-02-10",
-   "priceWon": 802000000,
-   "floor": 7,
-   "exclusiveArea": 59.83,
-   "areaGroup": 60,
-   "dealType": "중개거래",
-   "cancellationStatus": "COMPLETED"
-  },
-  {
-   "contractDate": "2026-02-10",
    "priceWon": 995000000,
    "floor": 10,
    "exclusiveArea": 84.69,
@@ -352,6 +343,15 @@
    "cancellationStatus": "COMPLETED"
   },
   {
+   "contractDate": "2026-02-10",
+   "priceWon": 802000000,
+   "floor": 7,
+   "exclusiveArea": 59.83,
+   "areaGroup": 60,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
+  {
    "contractDate": "2026-02-09",
    "priceWon": 1000000000,
    "floor": 18,
@@ -361,6 +361,12 @@
    "cancellationStatus": "COMPLETED"
   }
  ],
+ "historyCoverage": {
+  "startMonth": "202307",
+  "endMonth": "202606",
+  "months": 36,
+  "complete": false
+ },
  "location": {
   "latitude": 37.242989059368,
   "longitude": 127.042279841601,

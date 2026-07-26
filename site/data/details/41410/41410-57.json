@@ -17,19 +17,19 @@
  "transactions": [
   {
    "contractDate": "2026-06-29",
-   "priceWon": 755000000,
-   "floor": 5,
-   "exclusiveArea": 59.817,
-   "areaGroup": 60,
+   "priceWon": 850000000,
+   "floor": 6,
+   "exclusiveArea": 84.241,
+   "areaGroup": 84,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   },
   {
    "contractDate": "2026-06-29",
-   "priceWon": 850000000,
-   "floor": 6,
-   "exclusiveArea": 84.241,
-   "areaGroup": 84,
+   "priceWon": 755000000,
+   "floor": 5,
+   "exclusiveArea": 59.817,
+   "areaGroup": 60,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   },
@@ -80,6 +80,15 @@
   },
   {
    "contractDate": "2026-04-18",
+   "priceWon": 860000000,
+   "floor": 9,
+   "exclusiveArea": 84.241,
+   "areaGroup": 84,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
+  {
+   "contractDate": "2026-04-18",
    "priceWon": 825000000,
    "floor": 5,
    "exclusiveArea": 84.241,
@@ -88,9 +97,9 @@
    "cancellationStatus": "CANCELLED"
   },
   {
-   "contractDate": "2026-04-18",
-   "priceWon": 860000000,
-   "floor": 9,
+   "contractDate": "2026-04-10",
+   "priceWon": 830000000,
+   "floor": 10,
    "exclusiveArea": 84.241,
    "areaGroup": 84,
    "dealType": "중개거래",
@@ -100,15 +109,6 @@
    "contractDate": "2026-04-10",
    "priceWon": 770000000,
    "floor": 15,
-   "exclusiveArea": 84.241,
-   "areaGroup": 84,
-   "dealType": "중개거래",
-   "cancellationStatus": "COMPLETED"
-  },
-  {
-   "contractDate": "2026-04-10",
-   "priceWon": 830000000,
-   "floor": 10,
    "exclusiveArea": 84.241,
    "areaGroup": 84,
    "dealType": "중개거래",
@@ -134,23 +134,29 @@
   },
   {
    "contractDate": "2026-02-07",
-   "priceWon": 670000000,
-   "floor": 4,
-   "exclusiveArea": 59.817,
-   "areaGroup": 60,
-   "dealType": "중개거래",
-   "cancellationStatus": "COMPLETED"
-  },
-  {
-   "contractDate": "2026-02-07",
    "priceWon": 770000000,
    "floor": 6,
    "exclusiveArea": 84.241,
    "areaGroup": 84,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
+  },
+  {
+   "contractDate": "2026-02-07",
+   "priceWon": 670000000,
+   "floor": 4,
+   "exclusiveArea": 59.817,
+   "areaGroup": 60,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
   }
  ],
+ "historyCoverage": {
+  "startMonth": "202307",
+  "endMonth": "202606",
+  "months": 36,
+  "complete": false
+ },
  "location": {
   "latitude": 37.3642148317361,
   "longitude": 126.929279367654,

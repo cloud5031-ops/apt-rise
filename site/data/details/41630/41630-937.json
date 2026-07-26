@@ -139,15 +139,6 @@
   },
   {
    "contractDate": "2026-05-10",
-   "priceWon": 410000000,
-   "floor": 20,
-   "exclusiveArea": 75.0605,
-   "areaGroup": 75,
-   "dealType": "중개거래",
-   "cancellationStatus": "COMPLETED"
-  },
-  {
-   "contractDate": "2026-05-10",
    "priceWon": 489000000,
    "floor": 1,
    "exclusiveArea": 84.9834,
@@ -156,10 +147,28 @@
    "cancellationStatus": "COMPLETED"
   },
   {
+   "contractDate": "2026-05-10",
+   "priceWon": 410000000,
+   "floor": 20,
+   "exclusiveArea": 75.0605,
+   "areaGroup": 75,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
+  {
    "contractDate": "2026-05-09",
    "priceWon": 510000000,
    "floor": 28,
    "exclusiveArea": 84.9834,
+   "areaGroup": 85,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
+  {
+   "contractDate": "2026-05-03",
+   "priceWon": 490000000,
+   "floor": 4,
+   "exclusiveArea": 84.8533,
    "areaGroup": 85,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
@@ -183,15 +192,6 @@
    "cancellationStatus": "COMPLETED"
   },
   {
-   "contractDate": "2026-05-03",
-   "priceWon": 490000000,
-   "floor": 4,
-   "exclusiveArea": 84.8533,
-   "areaGroup": 85,
-   "dealType": "중개거래",
-   "cancellationStatus": "COMPLETED"
-  },
-  {
    "contractDate": "2026-04-30",
    "priceWon": 660000000,
    "floor": 31,
@@ -211,19 +211,19 @@
   },
   {
    "contractDate": "2026-04-25",
-   "priceWon": 419000000,
-   "floor": 32,
-   "exclusiveArea": 75.0605,
-   "areaGroup": 75,
+   "priceWon": 451000000,
+   "floor": 34,
+   "exclusiveArea": 84.9531,
+   "areaGroup": 85,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   },
   {
    "contractDate": "2026-04-25",
-   "priceWon": 451000000,
-   "floor": 34,
-   "exclusiveArea": 84.9531,
-   "areaGroup": 85,
+   "priceWon": 419000000,
+   "floor": 32,
+   "exclusiveArea": 75.0605,
+   "areaGroup": 75,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   },
@@ -363,6 +363,12 @@
    "cancellationStatus": "COMPLETED"
   }
  ],
+ "historyCoverage": {
+  "startMonth": "202307",
+  "endMonth": "202606",
+  "months": 36,
+  "complete": false
+ },
  "location": {
   "latitude": 37.8296209296492,
   "longitude": 127.089591231058,

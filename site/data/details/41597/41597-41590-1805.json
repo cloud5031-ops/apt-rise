@@ -22,15 +22,6 @@
  "transactions": [
   {
    "contractDate": "2026-06-30",
-   "priceWon": 1230000000,
-   "floor": 19,
-   "exclusiveArea": 84.52,
-   "areaGroup": 85,
-   "dealType": "중개거래",
-   "cancellationStatus": "COMPLETED"
-  },
-  {
-   "contractDate": "2026-06-30",
    "priceWon": 1270000000,
    "floor": 24,
    "exclusiveArea": 84.52,
@@ -40,8 +31,8 @@
   },
   {
    "contractDate": "2026-06-30",
-   "priceWon": 1100000000,
-   "floor": 7,
+   "priceWon": 1235000000,
+   "floor": 13,
    "exclusiveArea": 88.4828,
    "areaGroup": 88,
    "dealType": "중개거래",
@@ -49,8 +40,17 @@
   },
   {
    "contractDate": "2026-06-30",
-   "priceWon": 1235000000,
-   "floor": 13,
+   "priceWon": 1230000000,
+   "floor": 19,
+   "exclusiveArea": 84.52,
+   "areaGroup": 85,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
+  {
+   "contractDate": "2026-06-30",
+   "priceWon": 1100000000,
+   "floor": 7,
    "exclusiveArea": 88.4828,
    "areaGroup": 88,
    "dealType": "중개거래",
@@ -76,7 +76,7 @@
   },
   {
    "contractDate": "2026-06-06",
-   "priceWon": 1150000000,
+   "priceWon": 950000000,
    "floor": 8,
    "exclusiveArea": 88.4828,
    "areaGroup": 88,
@@ -85,7 +85,7 @@
   },
   {
    "contractDate": "2026-06-06",
-   "priceWon": 950000000,
+   "priceWon": 1150000000,
    "floor": 8,
    "exclusiveArea": 88.4828,
    "areaGroup": 88,
@@ -310,18 +310,18 @@
   },
   {
    "contractDate": "2026-03-21",
-   "priceWon": 935000000,
-   "floor": 15,
-   "exclusiveArea": 88.025,
+   "priceWon": 985000000,
+   "floor": 11,
+   "exclusiveArea": 88.4828,
    "areaGroup": 88,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   },
   {
    "contractDate": "2026-03-21",
-   "priceWon": 985000000,
-   "floor": 11,
-   "exclusiveArea": 88.4828,
+   "priceWon": 935000000,
+   "floor": 15,
+   "exclusiveArea": 88.025,
    "areaGroup": 88,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
@@ -381,6 +381,12 @@
    "cancellationStatus": "COMPLETED"
   }
  ],
+ "historyCoverage": {
+  "startMonth": "202307",
+  "endMonth": "202606",
+  "months": 36,
+  "complete": false
+ },
  "location": {
   "latitude": 37.1716193966699,
   "longitude": 127.109084059699,
