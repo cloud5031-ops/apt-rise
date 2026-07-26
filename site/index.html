@@ -3,15 +3,15 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>단지·면적별 실거래 중위가격 변화율</title>
+<title>아파트 매매가격 상승률</title>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
 <link rel="stylesheet" href="/index.css">
 </head>
 <body>
 <div class="wrap">
   <header>
-    <h1>단지·면적별 실거래 중위가격 변화율</h1>
-    <p class="meta" id="meta">정기 업데이트되는 실거래 데이터 기반 월간 랭킹입니다.</p>
+    <h1>아파트 매매가격 상승률</h1>
+    <p class="meta" id="meta">국토교통부 실거래 데이터를 기준으로 한 월간 상승률 순위입니다.</p>
   </header>
 
   <nav role="tablist" id="main-nav">
@@ -41,13 +41,21 @@
   </nav>
 
   <div id="apt-macro-container" class="chip-container" style="display:none;"></div>
-  <div id="apt-submacro-container" class="chip-container" style="display:none;"></div>
-  
-  <div id="apt-micro-container" class="micro-container" style="display:none;">
-    <div class="apt-micro-desktop hide-m"></div>
-    <div class="apt-micro-mobile hide-d">
-      <select class="apt-micro-select micro-select"></select>
+
+  <div id="apt-region-panels">
+    <div id="apt-region-panel-seoul" class="apt-region-panel" data-macro="서울" hidden>
+      <div id="apt-submacro-container" class="chip-container" style="display:none;"></div>
+
+      <div id="apt-micro-container" class="micro-container" style="display:none;">
+        <div class="apt-micro-desktop hide-m"></div>
+        <div class="apt-micro-mobile hide-d">
+          <select class="apt-micro-select micro-select"></select>
+        </div>
+      </div>
     </div>
+    <div id="apt-region-panel-gyeonggi" class="apt-region-panel" data-macro="경기" hidden></div>
+    <div id="apt-region-panel-incheon" class="apt-region-panel" data-macro="인천" hidden></div>
+    <div id="apt-region-panel-local" class="apt-region-panel" data-macro="지방" hidden></div>
   </div>
 
   <div id="apt-selected-region-info" class="selected-info" style="display:none;"></div>
@@ -157,6 +165,7 @@ const state = {
   macroRegion: "서울",
   microRegion: "서울 전체",
   aptMacroRegion: "서울",
+  expandedAptMacroRegion: null,
   aptSubMacroRegion: "경상",
   aptMicroRegion: "서울 전체",
   dataMode: "stable",
@@ -349,20 +358,83 @@ function getAptCountsBySgg(items) {
 }
 
 
+// 상위 지역 아코디언 패널 ID (aria-controls 용, 각각 고유)
+const APT_MACRO_PANEL_ID = {
+  '서울': 'apt-region-panel-seoul',
+  '경기': 'apt-region-panel-gyeonggi',
+  '인천': 'apt-region-panel-incheon',
+  '지방': 'apt-region-panel-local'
+};
+
+// 상위 지역 버튼에 표시할 단지·면적 그룹 수 (현재 집계/필터 반영)
+function getAptMacroTotal(macroName, items) {
+  const sidos = macroName === '지방'
+    ? APT_SUBMACRO['지방'].reduce((acc, s) => acc.concat(s.match), [])
+    : getAptSidoMatch(macroName, state.aptSubMacroRegion);
+  const seen = new Set();
+  let c = 0;
+  items.forEach(i => {
+    if (!sidos.includes(i.sidoCode)) return;
+    const k = i.apartmentKey + '|' + i.areaGroup;
+    if (seen.has(k)) return;
+    seen.add(k);
+    c++;
+  });
+  return c;
+}
+
+// 펼쳐진 상위 지역 패널만 노출한다. 하위 목록의 표시·숨김만 담당하며 필터/순위는 건드리지 않는다.
+function syncAptRegionPanels() {
+  const expanded = state.expandedAptMacroRegion;
+  const targetId = expanded ? APT_MACRO_PANEL_ID[expanded] : null;
+  const holder = targetId ? document.getElementById(targetId) : null;
+  const sub = document.getElementById('apt-submacro-container');
+  const micro = document.getElementById('apt-micro-container');
+
+  // 하위 목록 노드를 펼쳐진 패널로 옮긴다 (노드 이동이므로 id와 바인딩된 리스너가 유지된다)
+  if (holder && micro.parentElement !== holder) {
+    holder.appendChild(sub);
+    holder.appendChild(micro);
+  }
+
+  document.querySelectorAll('#apt-region-panels .apt-region-panel').forEach(p => {
+    p.hidden = !(expanded && p.id === targetId);
+  });
+}
+
 function renderAptMacroRegions() {
-  document.getElementById('apt-macro-container').innerHTML = APT_MACRO.map(m => 
-    `<button class="chip" aria-selected="${m === state.aptMacroRegion}" data-macro="${m}">${m}</button>`
-  ).join('');
-  
+  const items = getAptFilteredItems();
+
+  document.getElementById('apt-macro-container').innerHTML = APT_MACRO.map(m => {
+    const isExpanded = state.expandedAptMacroRegion === m;
+    const arrow = isExpanded ? '▲' : '▼';
+    return `<button class="chip" aria-selected="${m === state.aptMacroRegion}" aria-expanded="${isExpanded}" aria-controls="${APT_MACRO_PANEL_ID[m]}" data-macro="${m}">${m} ${getAptMacroTotal(m, items)} ${arrow}</button>`;
+  }).join('');
+
   document.querySelectorAll('#apt-macro-container .chip').forEach(b => {
     b.addEventListener('click', () => {
-      state.aptMacroRegion = b.dataset.macro;
-      if (state.aptMacroRegion === '지방') {
-        state.aptSubMacroRegion = '경상';
-        state.aptMicroRegion = '경상 전체';
-      } else {
-        state.aptMicroRegion = state.aptMacroRegion + ' 전체';
+      const macro = b.dataset.macro;
+
+      // 이미 펼쳐진 같은 버튼 -> 하위 목록만 접는다. 선택 상태와 순위 결과는 그대로 둔다.
+      if (state.expandedAptMacroRegion === macro) {
+        state.expandedAptMacroRegion = null;
+        b.setAttribute('aria-expanded', 'false');
+        b.textContent = b.textContent.replace('▲', '▼');
+        syncAptRegionPanels();
+        return;
       }
+
+      // 이미 선택된 지역을 펼치기만 하는 경우 -> 하위 선택(구/시군)을 유지한다.
+      if (state.aptMacroRegion !== macro) {
+        state.aptMacroRegion = macro;
+        if (macro === '지방') {
+          state.aptSubMacroRegion = '경상';
+          state.aptMicroRegion = '경상 전체';
+        } else {
+          state.aptMicroRegion = macro + ' 전체';
+        }
+      }
+      state.expandedAptMacroRegion = macro;
       renderApp();
     });
   });
@@ -383,6 +455,8 @@ function renderAptMacroRegions() {
   } else {
     document.getElementById('apt-submacro-container').style.display = 'none';
   }
+
+  syncAptRegionPanels();
 }
 
 function renderAptMicroRegions() {
@@ -529,6 +603,23 @@ const won = v => {
   if (man > 0 || uk === 0) res += man.toLocaleString() + "만원";
   return res.trim();
 };
+// 목록 표시 전용 면적 라벨. 원본 면적값은 변경하지 않으며 필터·정렬에는 쓰지 않는다.
+// 반올림 없이 Math.trunc 로 소수점만 제거하고, 평수는 절삭 전 원본 ㎡ 기준으로 계산한다.
+function formatAreaLabel(item) {
+  const areaM2 = Number(
+    item.exclusiveArea ??
+    item.areaGroup ??
+    item.area
+  );
+
+  if (!Number.isFinite(areaM2) || areaM2 <= 0) return "";
+
+  const displayM2 = Math.trunc(areaM2);
+  const displayPyeong = Math.trunc(areaM2 / 3.305785);
+
+  return `${displayM2}㎡ (${displayPyeong}평)`;
+}
+
 const rate = v => v == null ? "–" :
   `<span class="rate ${v>0?"up":v<0?"down":""}">${v>0?"+":""}${v.toFixed(2)}%</span>`;
 const confLabel = { high:"높음", medium:"보통", low:"낮음" };
@@ -756,14 +847,12 @@ function renderApartmentRankingList(d){
 
 
   const rows = filtered.slice(0,100).map((i, idx)=>{
-    const exact = i.exactAreas && i.exactAreas.length > 0 ? i.exactAreas.join(', ') : "";
     const warnHtml = i.compositionWarning ? `<span class="warn-icon" tabindex="0" data-reasons="${(i.warnings||[]).join('<br>')}">⚠️</span>` : "";
     const dtInfo = (i.baselineDirectTradeCount || i.currentDirectTradeCount) ? 
       `<div style="font-size:0.75rem; color:#d6293e; margin-top:2px;">직거래 이력 (과거 ${i.baselineDirectTradeCount||0}건, 현재 ${i.currentDirectTradeCount||0}건)</div>` : "";
       
-    const areaText = i.areaGroup ? `${i.areaGroup}㎡` : '면적 정보 없음';
-    const exactHtml = exact ? ` <span style="font-size:0.75rem; color:#888;">(${exact}㎡)</span>` : "";
-    
+    const areaText = formatAreaLabel(i);
+
     const baseFloorHtml = (i.baselineFloorMedian != null && isFinite(i.baselineFloorMedian)) 
       ? `<br><span style="font-size:0.75rem;color:var(--sub)">거래층 중앙값 ${i.baselineFloorMedian}층</span>` 
       : "";
@@ -783,7 +872,7 @@ function renderApartmentRankingList(d){
     <td class="rank-col">${idx + 1}</td>
     <td class="name-col">
       <div style="font-size:0.8rem;color:var(--sub)">${regionDisp}</div>
-      <b>${i.apartmentName}</b> ${areaText}${exactHtml} ${warnHtml}
+      <b>${i.apartmentName}</b> ${areaText} ${warnHtml}
       ${dtInfo}
     </td>
     <td class="hide-m">
@@ -853,10 +942,11 @@ function renderRegionRankingView() {
 
 function renderApartmentNationwideView() {
   document.getElementById("apt-macro-container").style.display = "none";
+  document.getElementById("apt-region-panels").style.display = "none";
   document.getElementById("apt-submacro-container").style.display = "none";
   document.getElementById("apt-micro-container").style.display = "none";
   document.getElementById("apt-selected-region-info").style.display = "none";
-  
+
   const mode = document.querySelector('input[name="dataMode"]:checked').value;
   const isProvisional = mode === "provisional";
   const d = isProvisional ? state.aptProvisional : state.aptStable;
@@ -866,9 +956,10 @@ function renderApartmentNationwideView() {
 
 function renderApartmentRegionControls() {
   document.getElementById("apt-macro-container").style.display = "flex";
+  document.getElementById("apt-region-panels").style.display = "block";
   document.getElementById("apt-micro-container").style.display = "block";
   document.getElementById("apt-selected-region-info").style.display = "block";
-  
+
   renderAptMacroRegions();
   renderAptMicroRegions();
   
@@ -1019,7 +1110,10 @@ function init() {
       if (state.apartmentView !== "nationwide" && state.apartmentView !== "regional") {
           state.apartmentView = "nationwide";
       }
-      
+      if (!APT_MACRO.includes(state.expandedAptMacroRegion)) {
+          state.expandedAptMacroRegion = null;
+      }
+
       setTimeout(() => {
          window.scrollTo(0, parsed.scrollPos || 0);
       }, 300);
