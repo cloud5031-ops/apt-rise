@@ -154,7 +154,7 @@ const state = {
   macroRegion: "서울",
   microRegion: "서울 전체",
   aptMacroRegion: "서울",
-  aptExpandedMacroRegion: null,
+  aptExpandedWholeRegion: null,
   aptSubMacroRegion: "경상",
   aptMicroRegion: "서울 전체",
   dataMode: "stable",
@@ -351,31 +351,23 @@ function renderAptMacroRegions() {
   const macros = ['서울', '경기', '인천', '지방'];
   document.getElementById('apt-macro-container').innerHTML = macros.map(m => {
     const isSelected = m === state.aptMacroRegion;
-    const isExpanded = m === state.aptExpandedMacroRegion;
-    const icon = isExpanded ? '▴' : '▾';
-    return `<button class="chip" aria-selected="${isSelected}" aria-expanded="${isExpanded}" aria-controls="apartment-region-panel-${m}" data-macro="${m}">${m} <span class="accordion-icon" style="margin-left:4px; font-size:0.8em; opacity:0.7;">${icon}</span></button>`;
+    return `<button class="chip" aria-selected="${isSelected}" data-macro="${m}">${m}</button>`;
   }).join('');
   
   document.querySelectorAll('#apt-macro-container .chip').forEach(b => {
     b.addEventListener('click', () => {
       const clicked = b.dataset.macro;
-      if (clicked === state.aptMacroRegion) {
-          if (state.aptExpandedMacroRegion === clicked) {
-              state.aptExpandedMacroRegion = null;
-          } else {
-              state.aptExpandedMacroRegion = clicked;
-          }
-      } else {
+      if (clicked !== state.aptMacroRegion) {
           state.aptMacroRegion = clicked;
-          state.aptExpandedMacroRegion = clicked;
+          state.aptExpandedWholeRegion = null; // Reset accordion state when changing macro region
           if (clicked === '지방') {
             state.aptSubMacroRegion = '경상';
             state.aptMicroRegion = '경상 전체';
           } else {
             state.aptMicroRegion = clicked + ' 전체';
           }
+          renderApp();
       }
-      renderApp();
     });
   });
 }
@@ -397,19 +389,17 @@ function renderAptMicroRegions() {
   let containerHtml = '';
   
   macros.forEach(macroName => {
-      const isExpanded = state.aptExpandedMacroRegion === macroName;
-      let displayStyle = isExpanded ? 'block' : 'none';
+      // Only display the panel for the currently selected macro region
+      let displayStyle = (macroName === state.aptMacroRegion) ? 'block' : 'none';
       
-      let htmlDesktop = `<div id="apartment-region-panel-${macroName}" style="display:${displayStyle}; transition: opacity 0.2s; width:100%; margin-top:8px; padding:12px; background:rgba(0,0,0,0.02); border-radius:8px;">`;
+      let htmlDesktop = `<div id="apartment-region-panel-${macroName}" style="display:${displayStyle}; width:100%; margin-top:8px;">`;
       
+      // Local submacro (경상, 전라, etc)
       if (macroName === '지방') {
          htmlDesktop += `<div style="margin-bottom:12px;" class="chip-container">` + APT_SUBMACRO['지방'].map(m => 
            `<button class="chip" aria-selected="${m.id === state.aptSubMacroRegion}" data-submacro="${m.id}" style="font-size:0.85rem; padding:4px 10px;">${m.id}</button>`
          ).join('') + `</div>`;
       }
-      
-      htmlDesktop += `<div style="font-size:0.75rem; color:var(--sub); margin-bottom:8px; width:100%;">지역별 숫자는 현재 집계 및 필터 조건에 해당하는 단지·면적 그룹 수입니다.</div>`;
-      htmlDesktop += `<div class="chip-container">`;
       
       const subMacro = macroName === '지방' ? state.aptSubMacroRegion : null;
       const sidos = getAptSidoMatch(macroName, subMacro);
@@ -420,13 +410,30 @@ function renderAptMicroRegions() {
           return acc;
       }, {c:0, seen:new Set()}).c;
       
+      const topName = macroName === '지방' ? state.aptSubMacroRegion : macroName;
+      const wholeRegionName = topName + ' 전체';
+      const isExpanded = state.aptExpandedWholeRegion === macroName;
+      const icon = isExpanded ? '▲' : '▼';
+      const isTopAllSelected = state.aptMicroRegion === wholeRegionName;
+      
+      // Render Whole Region Row
+      htmlDesktop += `<div class="whole-region-row" style="margin-bottom: 8px;">`;
+      const selectedAttr = isTopAllSelected ? 'aria-selected="true"' : 'aria-selected="false"';
+      htmlDesktop += `<button class="chip" ${selectedAttr} aria-expanded="${isExpanded}" aria-controls="subregion-panel-${macroName}" data-whole="${macroName}">${wholeRegionName} ${macroTotal} <span class="accordion-icon" style="margin-left:4px; font-size:0.8em; opacity:0.7;">${icon}</span></button>`;
+      htmlDesktop += `</div>`;
+      
+      // Render Subregion Panel
+      let panelDisplay = isExpanded ? 'flex' : 'none';
+      htmlDesktop += `<div id="subregion-panel-${macroName}" class="subregion-panel chip-container" style="display:${panelDisplay}; flex-wrap:wrap; gap:4px; padding:12px; background:rgba(0,0,0,0.02); border-radius:8px;">`;
+      htmlDesktop += `<div style="font-size:0.75rem; color:var(--sub); margin-bottom:4px; width:100%;">지역별 숫자는 현재 집계 및 필터 조건에 해당하는 단지·면적 그룹 수입니다.</div>`;
+      
       const addOption = (val, label, count, isSelected, isHeader=false) => {
         if (!label || label.trim() === '') return;
         const disabled = count === 0 && !isHeader;
         const txt = isHeader ? label : `${label} ${count > 0 ? count : '0건'}`;
         
         if (isHeader) {
-          htmlDesktop += `<div style="width:100%; margin-top:12px; margin-bottom:4px; font-size:0.85rem; color:var(--ink); font-weight:700; padding:4px 4px 4px 8px; border-left:3px solid var(--sub); background:rgba(0,0,0,0.03); border-radius:4px;">${txt}</div>`;
+          htmlDesktop += `<div style="width:100%; margin-top:8px; margin-bottom:4px; font-size:0.85rem; color:var(--ink); font-weight:700; padding:4px 4px 4px 8px; border-left:3px solid var(--sub); background:rgba(0,0,0,0.03); border-radius:4px;">${txt}</div>`;
         } else {
           const cls = disabled ? 'chip disabled' : 'chip';
           const selectedAttrDesk = isSelected ? 'aria-selected="true"' : 'aria-selected="false"';
@@ -434,10 +441,6 @@ function renderAptMicroRegions() {
           htmlDesktop += `<button class="${cls}" ${selectedAttrDesk} ${disabledAttr} data-micro="${val}">${txt}</button>`;
         }
       };
-      
-      const topName = macroName === '지방' ? state.aptSubMacroRegion : macroName;
-      const isTopAllSelected = state.aptMicroRegion === topName + ' 전체';
-      addOption(topName + ' 전체', topName + ' 전체', macroTotal, isTopAllSelected);
       
       const mode = document.querySelector('input[name="dataMode"]:checked').value;
       const d = (mode === 'provisional' ? state.aptProvisional : state.aptStable);
@@ -495,10 +498,35 @@ function renderAptMicroRegions() {
   
   document.getElementById('apt-micro-panels-container').innerHTML = containerHtml;
   
+  // Handlers for "XX 전체 N" whole region accordion toggles
+  document.querySelectorAll('#apt-micro-panels-container button[data-whole]').forEach(b => {
+    b.addEventListener('click', () => {
+      const macro = b.dataset.whole;
+      
+      // If the clicked whole button is the currently expanded one, just collapse it.
+      if (state.aptExpandedWholeRegion === macro) {
+          state.aptExpandedWholeRegion = null;
+      } else {
+          // Select it and expand it
+          state.aptExpandedWholeRegion = macro;
+          state.aptMacroRegion = macro;
+          
+          if (macro === '지방') {
+              state.aptMicroRegion = state.aptSubMacroRegion + ' 전체';
+          } else {
+              state.aptMicroRegion = macro + ' 전체';
+          }
+      }
+      renderApp();
+    });
+  });
+  
   document.querySelectorAll('#apt-micro-panels-container button[data-submacro]').forEach(b => {
     b.addEventListener('click', () => {
       state.aptSubMacroRegion = b.dataset.submacro;
       state.aptMicroRegion = state.aptSubMacroRegion + ' 전체';
+      // When submacro changes, auto-expand the new region list
+      state.aptExpandedWholeRegion = state.aptMacroRegion;
       renderApp();
     });
   });
@@ -506,356 +534,11 @@ function renderAptMicroRegions() {
   document.querySelectorAll('#apt-micro-panels-container button[data-micro]:not(.disabled)').forEach(b => {
     b.addEventListener('click', () => {
       state.aptMicroRegion = b.dataset.micro;
+      // Keep panel expanded when a micro region is clicked
+      state.aptExpandedWholeRegion = state.aptMacroRegion; 
       renderApp();
     });
   });
-}
-
-
-const won = v => {
-  if (v == null || Number.isNaN(v)) return "–";
-  const num = Number(v);
-  if (!isFinite(num)) return "–";
-  const uk = Math.floor(num / 100000000);
-  const man = Math.round((num % 100000000) / 10000);
-  let res = "";
-  if (uk > 0) res += uk + "억 ";
-  if (man > 0 || uk === 0) res += man.toLocaleString() + "만원";
-  return res.trim();
-};
-const rate = v => v == null ? "–" :
-  `<span class="rate ${v>0?"up":v<0?"down":""}">${v>0?"+":""}${v.toFixed(2)}%</span>`;
-const confLabel = { high:"높음", medium:"보통", low:"낮음" };
-
-document.querySelectorAll('input[name="confFilter"], input[name="dataMode"]').forEach(radio => {
-  radio.addEventListener('change', () => renderApp());
-});
-
-async function loadJson(url){
-  try{
-    const r = await fetch(url, {cache:"no-store"});
-    if(!r.ok) return { error: true };
-    return await r.json();
-  }catch{ return { error: true }; }
-}
-
-function renderRegionRankingTable(d){
-  if (d === null) return `<p class="empty">불러오는 중…</p>`;
-  if(d && d.error) return `<p class="empty">시군구 데이터를 불러오지 못했습니다.</p>`;
-  if(!d || !d.items || d.items.length === 0) return `<p class="empty">현재 조건에 해당하는 지역 순위 결과가 없습니다.</p>`;
-  
-  let filtered = d.items;
-  
-  if (state.regionSubTab === "local") {
-     const group = MACRO_GROUPS.find(g => g.id === state.macroRegion);
-     if (state.microRegion === `${state.macroRegion} 전체`) {
-        filtered = filtered.filter(item => {
-           const parts = item.regionName.split('>');
-           return group.match.includes(parts[0]);
-        });
-     } else {
-        filtered = filtered.filter(item => {
-           const parts = item.regionName.split('>').filter(p => !p.endsWith('권') && !p.endsWith('지역'));
-           const micro = parts.slice(1).join(' ');
-           return micro === state.microRegion;
-        });
-     }
-  }
-  
-  if (filtered.length === 0) {
-     return `<p class="empty">선택한 지역의 순위 데이터가 없습니다.</p>`;
-  }
-  
-  const max = Math.max(...filtered.map(i=>Math.abs(i.momRate||0)), 0.01);
-  const rows = filtered.map((i, idx) => {
-    const parts = i.regionName.split('>').filter(p => !p.endsWith('권') && !p.endsWith('지역'));
-    const displayName = parts.join(' ');
-    return `
-    <tr><td>${idx + 1}</td><td class="name" title="${i.regionName}">${displayName}</td>
-    <td>${rate(i.momRate)}<span class="bar" style="width:${Math.abs(i.momRate||0)/max*48}px"></span></td>
-    <td class="hide-m">${rate(i.threeMonthRate)}</td>
-    <td class="hide-m">${rate(i.yoyRate)}</td></tr>`;
-  }).join("");
-  return `<table><thead><tr><th>순위</th><th>지역</th><th>전월 대비</th>
-    <th class="hide-m">3개월</th><th class="hide-m">전년 동월</th></tr></thead>
-    <tbody>${rows}</tbody></table>`;
-}
-
-function renderMacroRegions() {
-  const html = MACRO_GROUPS.map(g => {
-    const isSelected = g.id === state.macroRegion;
-    return `<button class="chip" aria-selected="${isSelected}" data-macro="${g.id}">${g.id}</button>`;
-  }).join("");
-  document.getElementById("macro-container").innerHTML = html;
-  
-  document.querySelectorAll('#macro-container .chip').forEach(b => {
-    b.addEventListener('click', () => {
-      state.macroRegion = b.dataset.macro;
-      state.microRegion = b.dataset.macro + " 전체";
-      renderApp();
-    });
-  });
-}
-
-function getMicroRegions(macroId) {
-  const group = MACRO_GROUPS.find(g => g.id === macroId);
-  const items = state.region.items.filter(item => {
-    return group.match.includes(item.regionName.split('>')[0]);
-  });
-  
-  const microMap = {};
-  items.forEach(item => {
-    const parts = item.regionName.split('>').filter(p => !p.endsWith('권') && !p.endsWith('지역'));
-    const sido = parts[0];
-    const micro = parts.slice(1).join(' ');
-    if (micro) {
-      if (!microMap[sido]) microMap[sido] = new Set();
-      microMap[sido].add(micro);
-    }
-  });
-  return microMap;
-}
-
-function renderMicroRegions() {
-  if (!state.region || !state.region.items) return;
-  const microMap = getMicroRegions(state.macroRegion);
-  const group = MACRO_GROUPS.find(g => g.id === state.macroRegion);
-  const isMultiSido = group.match.length > 1;
-  
-  const isAll = state.microRegion === state.macroRegion + ' 전체';
-  let htmlDesktop = `<button class="chip" aria-selected="${isAll}" data-micro="${state.macroRegion} 전체">${state.macroRegion} 전체</button>`;
-  let htmlMobile = `<option value="${state.macroRegion} 전체">${state.macroRegion} 전체</option>`;
-  
-  group.match.forEach(sido => {
-    if (!microMap[sido]) return;
-    const sortedMicros = Array.from(microMap[sido]).sort();
-    
-    if (isMultiSido) {
-       htmlDesktop += `<div style="width:100%; margin-top:8px; font-size:0.8rem; color:var(--sub); font-weight:600; padding-left:4px;">${sido}</div>`;
-       htmlMobile += `<optgroup label="${sido}">`;
-    }
-    
-    sortedMicros.forEach(micro => {
-      const isSelected = state.microRegion === micro;
-      htmlDesktop += `<button class="chip" aria-selected="${isSelected}" data-micro="${micro}">${micro}</button>`;
-      htmlMobile += `<option value="${micro}" ${isSelected ? 'selected' : ''}>${micro}</option>`;
-    });
-    
-    if (isMultiSido) htmlMobile += `</optgroup>`;
-  });
-  
-  const deskContainer = document.querySelector('.micro-desktop');
-  const mobSelect = document.querySelector('.micro-select');
-  
-  deskContainer.innerHTML = htmlDesktop;
-  mobSelect.innerHTML = htmlMobile;
-  
-  deskContainer.querySelectorAll('button').forEach(b => {
-     b.addEventListener('click', () => {
-        state.microRegion = b.dataset.micro;
-        renderApp();
-     });
-  });
-}
-
-document.querySelector('.micro-select').addEventListener('change', (e) => {
-  state.microRegion = e.target.value;
-  renderApp();
-});
-
-function formatPeriod(m) {
-  const y = +m.slice(0,4), mo = +m.slice(4);
-  let by = y, bmo = mo - 3;
-  if (bmo <= 0) { by -= 1; bmo += 12; }
-  let by2 = y, bmo2 = mo - 1;
-  if (bmo2 <= 0) { by2 -= 1; bmo2 += 12; }
-  
-  const baseStr = `${by}.${String(bmo).padStart(2,'0')}~${by2}.${String(bmo2).padStart(2,'0')}`;
-  const curStr = `${y}.${String(mo).padStart(2,'0')}`;
-  return { baseStr, curStr };
-}
-
-function normalizeAptRankingItem(raw) {
-  return {
-    ...raw,
-    areaGroup: raw.areaGroup || raw.area_group,
-    baselineMedian: raw.baselineMedian || raw.baselineMedianPrice,
-    currentMedian: raw.currentMedian || raw.currentMedianPrice,
-    baselineFloorMedian: raw.baselineFloorMedian ?? raw.baselineMedianFloor ?? raw.baseline_median_floor,
-    currentFloorMedian: raw.currentFloorMedian ?? raw.currentMedianFloor ?? raw.current_median_floor,
-    baselineTradeCount: raw.baselineTradeCount || raw.baseline_trade_count,
-    currentTradeCount: raw.currentTradeCount || raw.current_trade_count,
-    warnings: raw.warnings || raw.warning_reasons || [],
-    compositionWarning: raw.compositionWarning || raw.composition_warning || false,
-    exactAreas: raw.exactAreas || raw.exact_areas || [],
-    baselineDirectTradeCount: raw.baselineDirectTradeCount || raw.baseline_direct_trade_count || 0,
-    currentDirectTradeCount: raw.currentDirectTradeCount || raw.current_direct_trade_count || 0,
-  };
-}
-
-function renderApartmentRankingList(d){
-  if (d === null) return `<p class="empty">불러오는 중…</p>`;
-  if(d && d.error) return `<p class="empty">개별 아파트 데이터를 불러오지 못했습니다.</p>`;
-  if(!d || !d.items || d.items.length === 0) return `<p class="empty">현재 조건에 해당하는 아파트 순위 결과가 없습니다.</p>`;
-  
-  const { baseStr, curStr } = formatPeriod(d.referenceMonth);
-  const filterVal = document.querySelector('input[name="confFilter"]:checked').value;
-  
-  let filtered = d.items.map(normalizeAptRankingItem);
-  
-  // 1. 지역 필터링 (regional 뷰일 때만)
-  if (state.apartmentView === 'regional') {
-     const macroName = state.aptMacroRegion;
-     const topName = macroName === '지방' ? state.aptSubMacroRegion : macroName;
-     const micro = state.aptMicroRegion;
-     
-     if (micro === topName + ' 전체') {
-        const allowedSidos = getAptSidoMatch(macroName, state.aptSubMacroRegion);
-        filtered = filtered.filter(i => allowedSidos.includes(i.sidoCode));
-     } else if (micro.length === 2) {
-        filtered = filtered.filter(i => i.sidoCode === micro);
-     } else if (micro.length === 5) {
-        let isParent = false;
-        let allowedChildren = [];
-        
-        for (const sidoKey of Object.keys(OFFICIAL_REGION_TREE)) {
-           const tree = OFFICIAL_REGION_TREE[sidoKey];
-           if (Array.isArray(tree)) {
-              for (const node of tree) {
-                 if (node.type === 'parent' && node.parentCode === micro) {
-                    isParent = true;
-                    allowedChildren = node.children;
-                    break;
-                 }
-              }
-           }
-        }
-        
-        if (isParent) {
-           filtered = filtered.filter(i => i.sggCode === micro || allowedChildren.includes(i.sggCode));
-        } else {
-           filtered = filtered.filter(i => i.sggCode === micro);
-        }
-     }
-  }
-
-  // 2. 등급 및 경고 필터링
-  if(filterVal === 'nowarn') filtered = filtered.filter(i => !i.compositionWarning);
-  if(filterVal === 'medup') filtered = filtered.filter(i => i.confidence === 'high' || i.confidence === 'medium');
-
-  if(filtered.length === 0) return `<p class="empty">선택한 지역과 조건에 해당하는 아파트 순위가 없습니다.</p>`;
-
-  // 3. 순위 재계산 (상승률 내림차순 정렬 후 순위 부여)
-  filtered.sort((a,b) => b.riseRate - a.riseRate);
-
-
-  const rows = filtered.slice(0,100).map((i, idx)=>{
-    const exact = i.exactAreas && i.exactAreas.length > 0 ? i.exactAreas.join(', ') : "";
-    const warnHtml = i.compositionWarning ? `<span class="warn-icon" tabindex="0" data-reasons="${(i.warnings||[]).join('<br>')}">⚠️</span>` : "";
-    const dtInfo = (i.baselineDirectTradeCount || i.currentDirectTradeCount) ? 
-      `<div style="font-size:0.75rem; color:#d6293e; margin-top:2px;">직거래 이력 (과거 ${i.baselineDirectTradeCount||0}건, 현재 ${i.currentDirectTradeCount||0}건)</div>` : "";
-      
-    const areaText = i.areaGroup ? `${i.areaGroup}㎡` : '면적 정보 없음';
-    const exactHtml = exact ? ` <span style="font-size:0.75rem; color:#888;">(${exact}㎡)</span>` : "";
-    
-    const baseFloorHtml = (i.baselineFloorMedian != null && isFinite(i.baselineFloorMedian)) 
-      ? `<br><span style="font-size:0.75rem;color:var(--sub)">거래층 중앙값 ${i.baselineFloorMedian}층</span>` 
-      : "";
-    const curFloorHtml = (i.currentFloorMedian != null && isFinite(i.currentFloorMedian)) 
-      ? `<br><span style="font-size:0.75rem;color:var(--sub)">거래층 중앙값 ${i.currentFloorMedian}층</span>` 
-      : "";
-
-    // 화면에 보여줄 이름 조합 (fallback to original item.region if SGG_CODE_MAP misses)
-    let regionDisp = i.region || i.sggCode;
-    if (SGG_CODE_MAP[i.sggCode]) {
-      const sidoDisp = SIDO_NAMES[i.sidoCode] || "";
-      regionDisp = (sidoDisp + " " + SGG_CODE_MAP[i.sggCode]).trim();
-    }
-
-    return `
-    <tr class="apt-row" onclick="goToApartment('${i.apartmentKey}')" style="cursor:pointer">
-    <td class="rank-col">${idx + 1}</td>
-    <td class="name-col">
-      <div style="font-size:0.8rem;color:var(--sub)">${regionDisp}</div>
-      <b>${i.apartmentName}</b> ${areaText}${exactHtml} ${warnHtml}
-      ${dtInfo}
-    </td>
-    <td class="hide-m">
-      ${won(i.baselineMedian)}${baseFloorHtml}
-    </td>
-    <td>
-      ${won(i.currentMedian)}${curFloorHtml}
-    </td>
-    <td>
-      ${rate(i.riseRate)}<br>
-      <span class="conf">신뢰도 ${confLabel[i.confidence]||""}<br>기준 ${i.baselineTradeCount||0}건 · 최근 ${i.currentTradeCount||0}건</span>
-    </td>
-    </tr>`;
-  }).join("");
-  
-  if(!rows) return `<p class="empty">선택한 지역과 조건에 해당하는 아파트 순위가 없습니다.</p>`;
-
-  return `<table><thead><tr><th>순위</th><th>단지</th>
-    <th class="hide-m">기준가<br><span style="font-weight:normal;font-size:0.75rem">${baseStr}</span></th>
-    <th>최근가<br><span style="font-weight:normal;font-size:0.75rem">${curStr}</span></th>
-    <th>상승률</th></tr></thead>
-    <tbody>${rows}</tbody></table>`;
-}
-
-function updateTabMeta(d, idPrefix, isProvisional=false) {
-  const metaSpan = document.getElementById(`tab-meta-${idPrefix}`);
-  if(d && !d.error && d.referenceMonth) {
-    const m = d.referenceMonth;
-    const suffix = isProvisional ? " 잠정" : " 기준";
-    metaSpan.innerHTML = `· ${m.slice(0,4)}년 ${+m.slice(4)}월${suffix}`;
-  } else {
-    metaSpan.innerHTML = ``;
-  }
-}
-
-
-function renderRegionRankingView() {
-  document.getElementById("aptMode").style.display = "none";
-  document.getElementById("aptFilters").style.display = "none";
-  document.getElementById("apt-sub-nav").style.display = "none";
-  document.getElementById("apt-macro-container").style.display = "none";
-  document.getElementById("apt-submacro-container").style.display = "none";
-  document.getElementById("apt-micro-container").style.display = "none";
-  document.getElementById("apt-selected-region-info").style.display = "none";
-  
-  document.getElementById("region-sub-nav").style.display = "flex";
-  
-  if (state.regionSubTab === "national") {
-     document.getElementById("macro-container").style.display = "none";
-     document.getElementById("micro-container").style.display = "none";
-     document.getElementById("selected-region-info").style.display = "none";
-  } else {
-     document.getElementById("macro-container").style.display = "flex";
-     document.getElementById("micro-container").style.display = "block";
-     document.getElementById("selected-region-info").style.display = "block";
-     
-     renderMacroRegions();
-     renderMicroRegions();
-     
-     const infoTxt = `선택 지역: ${state.macroRegion} · ${state.microRegion}`;
-     document.getElementById("selected-region-info").innerText = infoTxt;
-  }
-  
-  document.getElementById("region-ranking-content").innerHTML = renderRegionRankingTable(state.region);
-  updateTabMeta(state.region, 'region');
-}
-
-function renderApartmentNationwideView() {
-  document.getElementById("apt-macro-container").style.display = "none";
-  document.getElementById("apt-submacro-container").style.display = "none";
-  document.getElementById("apt-micro-container").style.display = "none";
-  document.getElementById("apt-selected-region-info").style.display = "none";
-  
-  const mode = document.querySelector('input[name="dataMode"]:checked').value;
-  const isProvisional = mode === "provisional";
-  const d = isProvisional ? state.aptProvisional : state.aptStable;
-  document.getElementById("apartment-nationwide-content").innerHTML = renderApartmentRankingList(d);
-  updateTabMeta(d, 'apt', isProvisional);
 }
 
 function renderApartmentRegionControls() {
@@ -1014,8 +697,8 @@ function init() {
           state.apartmentView = "nationwide";
       }
       
-      if (!['서울', '경기', '인천', '지방', null].includes(state.aptExpandedMacroRegion)) {
-          state.aptExpandedMacroRegion = null;
+      if (!['서울', '경기', '인천', '지방', null].includes(state.aptExpandedWholeRegion)) {
+          state.aptExpandedWholeRegion = null;
       }
 
       
