@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "44200-743",
  "apartmentName": "호반써밋그랜드마크Ⅰ(1차)",
  "sidoCode": "44",
@@ -15,7 +17,7 @@
  "transactions": [
   {
    "contractDate": "2026-05-01",
-   "price": 482000000,
+   "priceWon": 482000000,
    "floor": 6,
    "exclusiveArea": 84.6249,
    "areaGroup": 85,
@@ -24,7 +26,7 @@
   },
   {
    "contractDate": "2026-05-01",
-   "price": 488000000,
+   "priceWon": 488000000,
    "floor": 25,
    "exclusiveArea": 84.6249,
    "areaGroup": 85,
@@ -33,7 +35,7 @@
   },
   {
    "contractDate": "2026-04-27",
-   "price": 430000000,
+   "priceWon": 430000000,
    "floor": 23,
    "exclusiveArea": 84.6249,
    "areaGroup": 85,
@@ -42,7 +44,7 @@
   },
   {
    "contractDate": "2026-04-03",
-   "price": 470000000,
+   "priceWon": 470000000,
    "floor": 6,
    "exclusiveArea": 84.906,
    "areaGroup": 85,
@@ -51,7 +53,7 @@
   },
   {
    "contractDate": "2026-03-21",
-   "price": 488000000,
+   "priceWon": 488000000,
    "floor": 24,
    "exclusiveArea": 84.6249,
    "areaGroup": 85,
@@ -60,7 +62,7 @@
   },
   {
    "contractDate": "2026-03-01",
-   "price": 483000000,
+   "priceWon": 483000000,
    "floor": 14,
    "exclusiveArea": 84.906,
    "areaGroup": 85,
@@ -69,7 +71,7 @@
   },
   {
    "contractDate": "2026-02-12",
-   "price": 468000000,
+   "priceWon": 468000000,
    "floor": 4,
    "exclusiveArea": 84.6249,
    "areaGroup": 85,
@@ -78,12 +80,19 @@
   },
   {
    "contractDate": "2026-02-07",
-   "price": 442000000,
+   "priceWon": 442000000,
    "floor": 4,
    "exclusiveArea": 84.6249,
    "areaGroup": 85,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 36.796565602901,
+  "longitude": 127.065090911057,
+  "roadAddress": "충남 아산시 탕정면 갈산샛들로 57",
+  "jibunAddress": "충남 아산시 탕정면 갈산리 883",
+  "geocodeStatus": "valid"
+ }
 }

@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "43113-533",
  "apartmentName": "청주테크노폴리스지웰아파트",
  "sidoCode": "43",
@@ -16,7 +18,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-21",
-   "price": 520000000,
+   "priceWon": 520000000,
    "floor": 17,
    "exclusiveArea": 84.9741,
    "areaGroup": 85,
@@ -25,7 +27,7 @@
   },
   {
    "contractDate": "2026-06-09",
-   "price": 362000000,
+   "priceWon": 362000000,
    "floor": 20,
    "exclusiveArea": 84.9674,
    "areaGroup": 85,
@@ -34,7 +36,7 @@
   },
   {
    "contractDate": "2026-06-07",
-   "price": 526000000,
+   "priceWon": 526000000,
    "floor": 9,
    "exclusiveArea": 84.9783,
    "areaGroup": 85,
@@ -43,7 +45,7 @@
   },
   {
    "contractDate": "2026-05-31",
-   "price": 500000000,
+   "priceWon": 500000000,
    "floor": 13,
    "exclusiveArea": 84.9741,
    "areaGroup": 85,
@@ -52,7 +54,7 @@
   },
   {
    "contractDate": "2026-05-10",
-   "price": 490000000,
+   "priceWon": 490000000,
    "floor": 6,
    "exclusiveArea": 84.9674,
    "areaGroup": 85,
@@ -61,7 +63,7 @@
   },
   {
    "contractDate": "2026-04-30",
-   "price": 508000000,
+   "priceWon": 508000000,
    "floor": 21,
    "exclusiveArea": 84.9674,
    "areaGroup": 85,
@@ -70,7 +72,7 @@
   },
   {
    "contractDate": "2026-04-27",
-   "price": 485000000,
+   "priceWon": 485000000,
    "floor": 14,
    "exclusiveArea": 84.9674,
    "areaGroup": 85,
@@ -79,7 +81,7 @@
   },
   {
    "contractDate": "2026-04-19",
-   "price": 490000000,
+   "priceWon": 490000000,
    "floor": 13,
    "exclusiveArea": 84.9741,
    "areaGroup": 85,
@@ -88,7 +90,7 @@
   },
   {
    "contractDate": "2026-04-02",
-   "price": 485000000,
+   "priceWon": 485000000,
    "floor": 19,
    "exclusiveArea": 84.9741,
    "areaGroup": 85,
@@ -97,7 +99,7 @@
   },
   {
    "contractDate": "2026-03-30",
-   "price": 410000000,
+   "priceWon": 410000000,
    "floor": 1,
    "exclusiveArea": 84.9741,
    "areaGroup": 85,
@@ -106,7 +108,7 @@
   },
   {
    "contractDate": "2026-03-22",
-   "price": 480000000,
+   "priceWon": 480000000,
    "floor": 5,
    "exclusiveArea": 84.9741,
    "areaGroup": 85,
@@ -115,7 +117,7 @@
   },
   {
    "contractDate": "2026-03-14",
-   "price": 517000000,
+   "priceWon": 517000000,
    "floor": 18,
    "exclusiveArea": 84.9783,
    "areaGroup": 85,
@@ -124,7 +126,7 @@
   },
   {
    "contractDate": "2026-03-08",
-   "price": 530000000,
+   "priceWon": 530000000,
    "floor": 17,
    "exclusiveArea": 84.9783,
    "areaGroup": 85,
@@ -133,7 +135,7 @@
   },
   {
    "contractDate": "2026-02-16",
-   "price": 517000000,
+   "priceWon": 517000000,
    "floor": 19,
    "exclusiveArea": 84.9783,
    "areaGroup": 85,
@@ -142,7 +144,7 @@
   },
   {
    "contractDate": "2026-02-14",
-   "price": 492000000,
+   "priceWon": 492000000,
    "floor": 1,
    "exclusiveArea": 84.9783,
    "areaGroup": 85,
@@ -151,7 +153,7 @@
   },
   {
    "contractDate": "2026-02-12",
-   "price": 480000000,
+   "priceWon": 480000000,
    "floor": 11,
    "exclusiveArea": 84.9741,
    "areaGroup": 85,
@@ -160,12 +162,19 @@
   },
   {
    "contractDate": "2026-02-07",
-   "price": 490000000,
+   "priceWon": 490000000,
    "floor": 14,
    "exclusiveArea": 84.9674,
    "areaGroup": 85,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 36.6631531109092,
+  "longitude": 127.450663614623,
+  "roadAddress": "충북 청주시 흥덕구 송화로108번길 42",
+  "jibunAddress": "충북 청주시 흥덕구 송절동 690",
+  "geocodeStatus": "valid"
+ }
 }

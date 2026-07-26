@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "44131-44",
  "apartmentName": "성지새말2",
  "sidoCode": "44",
@@ -16,7 +18,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-21",
-   "price": 157000000,
+   "priceWon": 157000000,
    "floor": 18,
    "exclusiveArea": 59.97,
    "areaGroup": 60,
@@ -25,7 +27,7 @@
   },
   {
    "contractDate": "2026-06-05",
-   "price": 140000000,
+   "priceWon": 140000000,
    "floor": 7,
    "exclusiveArea": 59.97,
    "areaGroup": 60,
@@ -34,7 +36,7 @@
   },
   {
    "contractDate": "2026-06-03",
-   "price": 122000000,
+   "priceWon": 122000000,
    "floor": 13,
    "exclusiveArea": 59.97,
    "areaGroup": 60,
@@ -43,7 +45,7 @@
   },
   {
    "contractDate": "2026-05-25",
-   "price": 160000000,
+   "priceWon": 160000000,
    "floor": 5,
    "exclusiveArea": 84.96,
    "areaGroup": 85,
@@ -52,7 +54,7 @@
   },
   {
    "contractDate": "2026-05-16",
-   "price": 149000000,
+   "priceWon": 149000000,
    "floor": 17,
    "exclusiveArea": 59.97,
    "areaGroup": 60,
@@ -61,7 +63,7 @@
   },
   {
    "contractDate": "2026-05-10",
-   "price": 126500000,
+   "priceWon": 126500000,
    "floor": 20,
    "exclusiveArea": 59.97,
    "areaGroup": 60,
@@ -70,7 +72,7 @@
   },
   {
    "contractDate": "2026-05-01",
-   "price": 126500000,
+   "priceWon": 126500000,
    "floor": 20,
    "exclusiveArea": 59.97,
    "areaGroup": 60,
@@ -79,7 +81,7 @@
   },
   {
    "contractDate": "2026-05-01",
-   "price": 135000000,
+   "priceWon": 135000000,
    "floor": 20,
    "exclusiveArea": 59.97,
    "areaGroup": 60,
@@ -88,7 +90,7 @@
   },
   {
    "contractDate": "2026-05-01",
-   "price": 160000000,
+   "priceWon": 160000000,
    "floor": 17,
    "exclusiveArea": 59.97,
    "areaGroup": 60,
@@ -97,7 +99,7 @@
   },
   {
    "contractDate": "2026-03-19",
-   "price": 110000000,
+   "priceWon": 110000000,
    "floor": 17,
    "exclusiveArea": 59.97,
    "areaGroup": 60,
@@ -106,7 +108,7 @@
   },
   {
    "contractDate": "2026-03-05",
-   "price": 129000000,
+   "priceWon": 129000000,
    "floor": 12,
    "exclusiveArea": 59.97,
    "areaGroup": 60,
@@ -115,7 +117,7 @@
   },
   {
    "contractDate": "2026-02-21",
-   "price": 145000000,
+   "priceWon": 145000000,
    "floor": 6,
    "exclusiveArea": 70.92,
    "areaGroup": 71,
@@ -124,7 +126,7 @@
   },
   {
    "contractDate": "2026-02-05",
-   "price": 125000000,
+   "priceWon": 125000000,
    "floor": 23,
    "exclusiveArea": 59.97,
    "areaGroup": 60,
@@ -133,12 +135,19 @@
   },
   {
    "contractDate": "2026-02-04",
-   "price": 115000000,
+   "priceWon": 115000000,
    "floor": 18,
    "exclusiveArea": 59.97,
    "areaGroup": 60,
    "dealType": "중개거래",
    "cancellationStatus": "CANCELLED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 36.7925409334424,
+  "longitude": 127.1306229284,
+  "roadAddress": "충남 천안시 동남구 일봉로 20",
+  "jibunAddress": "충남 천안시 동남구 신방동 874",
+  "geocodeStatus": "valid"
+ }
 }

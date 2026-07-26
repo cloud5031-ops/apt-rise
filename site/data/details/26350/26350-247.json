@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "26350-247",
  "apartmentName": "롯데캐슬마린",
  "sidoCode": "26",
@@ -16,7 +18,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-20",
-   "price": 770000000,
+   "priceWon": 770000000,
    "floor": 14,
    "exclusiveArea": 101.927,
    "areaGroup": 102,
@@ -25,7 +27,7 @@
   },
   {
    "contractDate": "2026-06-17",
-   "price": 798000000,
+   "priceWon": 798000000,
    "floor": 17,
    "exclusiveArea": 84.9702,
    "areaGroup": 85,
@@ -34,7 +36,7 @@
   },
   {
    "contractDate": "2026-06-10",
-   "price": 783000000,
+   "priceWon": 783000000,
    "floor": 29,
    "exclusiveArea": 101.927,
    "areaGroup": 102,
@@ -43,7 +45,7 @@
   },
   {
    "contractDate": "2026-06-02",
-   "price": 780000000,
+   "priceWon": 780000000,
    "floor": 29,
    "exclusiveArea": 84.9702,
    "areaGroup": 85,
@@ -52,7 +54,7 @@
   },
   {
    "contractDate": "2026-05-22",
-   "price": 990000000,
+   "priceWon": 990000000,
    "floor": 26,
    "exclusiveArea": 125.1959,
    "areaGroup": 125,
@@ -61,7 +63,7 @@
   },
   {
    "contractDate": "2026-05-12",
-   "price": 750000000,
+   "priceWon": 750000000,
    "floor": 31,
    "exclusiveArea": 84.9702,
    "areaGroup": 85,
@@ -70,7 +72,7 @@
   },
   {
    "contractDate": "2026-04-12",
-   "price": 788000000,
+   "priceWon": 788000000,
    "floor": 20,
    "exclusiveArea": 84.9702,
    "areaGroup": 85,
@@ -79,7 +81,7 @@
   },
   {
    "contractDate": "2026-03-30",
-   "price": 830000000,
+   "priceWon": 830000000,
    "floor": 26,
    "exclusiveArea": 101.927,
    "areaGroup": 102,
@@ -88,7 +90,7 @@
   },
   {
    "contractDate": "2026-03-08",
-   "price": 730000000,
+   "priceWon": 730000000,
    "floor": 9,
    "exclusiveArea": 84.9702,
    "areaGroup": 85,
@@ -97,7 +99,7 @@
   },
   {
    "contractDate": "2026-02-26",
-   "price": 520000000,
+   "priceWon": 520000000,
    "floor": 12,
    "exclusiveArea": 101.927,
    "areaGroup": 102,
@@ -106,12 +108,19 @@
   },
   {
    "contractDate": "2026-02-21",
-   "price": 735000000,
+   "priceWon": 735000000,
    "floor": 7,
    "exclusiveArea": 84.9702,
    "areaGroup": 85,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 36.4229881378328,
+  "longitude": 128.285885181363,
+  "roadAddress": "",
+  "jibunAddress": "경북 상주시 중동면 간상리 1360",
+  "geocodeStatus": "ambiguous"
+ }
 }

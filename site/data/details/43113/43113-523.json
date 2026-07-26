@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "43113-523",
  "apartmentName": "청주복대2차두진하트리움아파트",
  "sidoCode": "43",
@@ -16,7 +18,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-08",
-   "price": 449000000,
+   "priceWon": 449000000,
    "floor": 9,
    "exclusiveArea": 74.8923,
    "areaGroup": 75,
@@ -25,7 +27,7 @@
   },
   {
    "contractDate": "2026-05-22",
-   "price": 455000000,
+   "priceWon": 455000000,
    "floor": 5,
    "exclusiveArea": 74.7903,
    "areaGroup": 75,
@@ -34,7 +36,7 @@
   },
   {
    "contractDate": "2026-05-20",
-   "price": 430000000,
+   "priceWon": 430000000,
    "floor": 11,
    "exclusiveArea": 74.8923,
    "areaGroup": 75,
@@ -43,7 +45,7 @@
   },
   {
    "contractDate": "2026-05-19",
-   "price": 490000000,
+   "priceWon": 490000000,
    "floor": 16,
    "exclusiveArea": 74.8923,
    "areaGroup": 75,
@@ -52,7 +54,7 @@
   },
   {
    "contractDate": "2026-05-01",
-   "price": 473000000,
+   "priceWon": 473000000,
    "floor": 11,
    "exclusiveArea": 74.8923,
    "areaGroup": 75,
@@ -61,7 +63,7 @@
   },
   {
    "contractDate": "2026-04-27",
-   "price": 455000000,
+   "priceWon": 455000000,
    "floor": 6,
    "exclusiveArea": 74.8923,
    "areaGroup": 75,
@@ -70,7 +72,7 @@
   },
   {
    "contractDate": "2026-04-18",
-   "price": 458000000,
+   "priceWon": 458000000,
    "floor": 16,
    "exclusiveArea": 74.7903,
    "areaGroup": 75,
@@ -79,7 +81,7 @@
   },
   {
    "contractDate": "2026-04-02",
-   "price": 435000000,
+   "priceWon": 435000000,
    "floor": 6,
    "exclusiveArea": 74.9074,
    "areaGroup": 75,
@@ -88,7 +90,7 @@
   },
   {
    "contractDate": "2026-03-27",
-   "price": 425000000,
+   "priceWon": 425000000,
    "floor": 3,
    "exclusiveArea": 74.8923,
    "areaGroup": 75,
@@ -97,7 +99,7 @@
   },
   {
    "contractDate": "2026-03-26",
-   "price": 475000000,
+   "priceWon": 475000000,
    "floor": 13,
    "exclusiveArea": 74.7903,
    "areaGroup": 75,
@@ -106,7 +108,7 @@
   },
   {
    "contractDate": "2026-03-23",
-   "price": 455000000,
+   "priceWon": 455000000,
    "floor": 6,
    "exclusiveArea": 74.8923,
    "areaGroup": 75,
@@ -115,7 +117,7 @@
   },
   {
    "contractDate": "2026-02-28",
-   "price": 448000000,
+   "priceWon": 448000000,
    "floor": 11,
    "exclusiveArea": 74.9074,
    "areaGroup": 75,
@@ -124,7 +126,7 @@
   },
   {
    "contractDate": "2026-02-10",
-   "price": 452000000,
+   "priceWon": 452000000,
    "floor": 14,
    "exclusiveArea": 74.9074,
    "areaGroup": 75,
@@ -133,7 +135,7 @@
   },
   {
    "contractDate": "2026-02-05",
-   "price": 430000000,
+   "priceWon": 430000000,
    "floor": 5,
    "exclusiveArea": 74.9074,
    "areaGroup": 75,
@@ -142,12 +144,19 @@
   },
   {
    "contractDate": "2026-02-04",
-   "price": 429000000,
+   "priceWon": 429000000,
    "floor": 4,
    "exclusiveArea": 74.9074,
    "areaGroup": 75,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 36.6402069029384,
+  "longitude": 127.432601275945,
+  "roadAddress": "충북 청주시 흥덕구 대신로73번길 50",
+  "jibunAddress": "충북 청주시 흥덕구 복대동 3403",
+  "geocodeStatus": "valid"
+ }
 }

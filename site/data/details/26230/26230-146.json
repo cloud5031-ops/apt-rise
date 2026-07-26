@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "26230-146",
  "apartmentName": "개금아이파크",
  "sidoCode": "26",
@@ -17,7 +19,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-20",
-   "price": 231000000,
+   "priceWon": 231000000,
    "floor": 16,
    "exclusiveArea": 59.76,
    "areaGroup": 60,
@@ -26,7 +28,7 @@
   },
   {
    "contractDate": "2026-06-20",
-   "price": 275000000,
+   "priceWon": 275000000,
    "floor": 11,
    "exclusiveArea": 74.59,
    "areaGroup": 75,
@@ -35,7 +37,7 @@
   },
   {
    "contractDate": "2026-06-14",
-   "price": 290000000,
+   "priceWon": 290000000,
    "floor": 8,
    "exclusiveArea": 84.99,
    "areaGroup": 85,
@@ -44,7 +46,7 @@
   },
   {
    "contractDate": "2026-06-07",
-   "price": 228000000,
+   "priceWon": 228000000,
    "floor": 5,
    "exclusiveArea": 59.76,
    "areaGroup": 60,
@@ -53,7 +55,7 @@
   },
   {
    "contractDate": "2026-06-02",
-   "price": 330000000,
+   "priceWon": 330000000,
    "floor": 19,
    "exclusiveArea": 102.39,
    "areaGroup": 102,
@@ -62,7 +64,7 @@
   },
   {
    "contractDate": "2026-05-29",
-   "price": 280000000,
+   "priceWon": 280000000,
    "floor": 11,
    "exclusiveArea": 84.99,
    "areaGroup": 85,
@@ -71,7 +73,7 @@
   },
   {
    "contractDate": "2026-05-28",
-   "price": 317000000,
+   "priceWon": 317000000,
    "floor": 8,
    "exclusiveArea": 84.99,
    "areaGroup": 85,
@@ -80,7 +82,7 @@
   },
   {
    "contractDate": "2026-05-27",
-   "price": 234000000,
+   "priceWon": 234000000,
    "floor": 13,
    "exclusiveArea": 59.76,
    "areaGroup": 60,
@@ -89,7 +91,7 @@
   },
   {
    "contractDate": "2026-05-22",
-   "price": 235000000,
+   "priceWon": 235000000,
    "floor": 17,
    "exclusiveArea": 59.76,
    "areaGroup": 60,
@@ -98,7 +100,7 @@
   },
   {
    "contractDate": "2026-05-13",
-   "price": 239500000,
+   "priceWon": 239500000,
    "floor": 4,
    "exclusiveArea": 74.59,
    "areaGroup": 75,
@@ -107,7 +109,7 @@
   },
   {
    "contractDate": "2026-05-05",
-   "price": 234000000,
+   "priceWon": 234000000,
    "floor": 4,
    "exclusiveArea": 59.76,
    "areaGroup": 60,
@@ -116,7 +118,7 @@
   },
   {
    "contractDate": "2026-04-15",
-   "price": 190000000,
+   "priceWon": 190000000,
    "floor": 1,
    "exclusiveArea": 59.76,
    "areaGroup": 60,
@@ -125,7 +127,7 @@
   },
   {
    "contractDate": "2026-04-09",
-   "price": 263000000,
+   "priceWon": 263000000,
    "floor": 7,
    "exclusiveArea": 84.99,
    "areaGroup": 85,
@@ -134,7 +136,7 @@
   },
   {
    "contractDate": "2026-04-04",
-   "price": 257000000,
+   "priceWon": 257000000,
    "floor": 4,
    "exclusiveArea": 74.59,
    "areaGroup": 75,
@@ -143,7 +145,7 @@
   },
   {
    "contractDate": "2026-03-26",
-   "price": 247000000,
+   "priceWon": 247000000,
    "floor": 4,
    "exclusiveArea": 74.59,
    "areaGroup": 75,
@@ -152,7 +154,7 @@
   },
   {
    "contractDate": "2026-03-24",
-   "price": 275000000,
+   "priceWon": 275000000,
    "floor": 3,
    "exclusiveArea": 84.99,
    "areaGroup": 85,
@@ -161,7 +163,7 @@
   },
   {
    "contractDate": "2026-03-19",
-   "price": 320000000,
+   "priceWon": 320000000,
    "floor": 10,
    "exclusiveArea": 102.39,
    "areaGroup": 102,
@@ -170,7 +172,7 @@
   },
   {
    "contractDate": "2026-02-25",
-   "price": 343000000,
+   "priceWon": 343000000,
    "floor": 5,
    "exclusiveArea": 102.39,
    "areaGroup": 102,
@@ -179,7 +181,7 @@
   },
   {
    "contractDate": "2026-02-24",
-   "price": 290000000,
+   "priceWon": 290000000,
    "floor": 9,
    "exclusiveArea": 84.99,
    "areaGroup": 85,
@@ -188,12 +190,19 @@
   },
   {
    "contractDate": "2026-02-02",
-   "price": 210000000,
+   "priceWon": 210000000,
    "floor": 2,
    "exclusiveArea": 59.76,
    "areaGroup": 60,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 35.1479459802223,
+  "longitude": 129.019313498167,
+  "roadAddress": "부산 부산진구 엄광로 16",
+  "jibunAddress": "부산 부산진구 개금동 618-2",
+  "geocodeStatus": "valid"
+ }
 }

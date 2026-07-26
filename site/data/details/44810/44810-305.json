@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "44810-305",
  "apartmentName": "원목마을이지더원2차아파트",
  "sidoCode": "44",
@@ -16,7 +18,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-24",
-   "price": 271000000,
+   "priceWon": 271000000,
    "floor": 4,
    "exclusiveArea": 84.8318,
    "areaGroup": 85,
@@ -25,7 +27,7 @@
   },
   {
    "contractDate": "2026-06-14",
-   "price": 278000000,
+   "priceWon": 278000000,
    "floor": 8,
    "exclusiveArea": 84.8318,
    "areaGroup": 85,
@@ -34,7 +36,7 @@
   },
   {
    "contractDate": "2026-06-08",
-   "price": 298000000,
+   "priceWon": 298000000,
    "floor": 16,
    "exclusiveArea": 84.853,
    "areaGroup": 85,
@@ -43,7 +45,7 @@
   },
   {
    "contractDate": "2026-06-07",
-   "price": 280000000,
+   "priceWon": 280000000,
    "floor": 1,
    "exclusiveArea": 84.853,
    "areaGroup": 85,
@@ -52,7 +54,7 @@
   },
   {
    "contractDate": "2026-05-27",
-   "price": 330000000,
+   "priceWon": 330000000,
    "floor": 11,
    "exclusiveArea": 84.8318,
    "areaGroup": 85,
@@ -61,7 +63,7 @@
   },
   {
    "contractDate": "2026-05-13",
-   "price": 299000000,
+   "priceWon": 299000000,
    "floor": 16,
    "exclusiveArea": 84.8318,
    "areaGroup": 85,
@@ -70,7 +72,7 @@
   },
   {
    "contractDate": "2026-05-07",
-   "price": 245000000,
+   "priceWon": 245000000,
    "floor": 4,
    "exclusiveArea": 67.7776,
    "areaGroup": 68,
@@ -79,7 +81,7 @@
   },
   {
    "contractDate": "2026-04-20",
-   "price": 270000000,
+   "priceWon": 270000000,
    "floor": 5,
    "exclusiveArea": 84.853,
    "areaGroup": 85,
@@ -88,7 +90,7 @@
   },
   {
    "contractDate": "2026-04-15",
-   "price": 252000000,
+   "priceWon": 252000000,
    "floor": 5,
    "exclusiveArea": 67.7776,
    "areaGroup": 68,
@@ -97,7 +99,7 @@
   },
   {
    "contractDate": "2026-03-30",
-   "price": 260000000,
+   "priceWon": 260000000,
    "floor": 5,
    "exclusiveArea": 84.853,
    "areaGroup": 85,
@@ -106,7 +108,7 @@
   },
   {
    "contractDate": "2026-03-17",
-   "price": 280000000,
+   "priceWon": 280000000,
    "floor": 4,
    "exclusiveArea": 84.8318,
    "areaGroup": 85,
@@ -115,7 +117,7 @@
   },
   {
    "contractDate": "2026-03-03",
-   "price": 297500000,
+   "priceWon": 297500000,
    "floor": 8,
    "exclusiveArea": 84.853,
    "areaGroup": 85,
@@ -124,12 +126,19 @@
   },
   {
    "contractDate": "2026-02-23",
-   "price": 260000000,
+   "priceWon": 260000000,
    "floor": 2,
    "exclusiveArea": 84.8318,
    "areaGroup": 85,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 36.6645117226724,
+  "longitude": 126.670501510742,
+  "roadAddress": "충남 예산군 삽교읍 수암천로 23",
+  "jibunAddress": "충남 예산군 삽교읍 목리 894",
+  "geocodeStatus": "valid"
+ }
 }

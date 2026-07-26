@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "52113-613",
  "apartmentName": "전주인후휴먼시아",
  "sidoCode": "52",
@@ -15,7 +17,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-26",
-   "price": 232000000,
+   "priceWon": 232000000,
    "floor": 7,
    "exclusiveArea": 59.58,
    "areaGroup": 60,
@@ -24,7 +26,7 @@
   },
   {
    "contractDate": "2026-06-12",
-   "price": 267000000,
+   "priceWon": 267000000,
    "floor": 8,
    "exclusiveArea": 59.58,
    "areaGroup": 60,
@@ -33,7 +35,7 @@
   },
   {
    "contractDate": "2026-05-08",
-   "price": 220000000,
+   "priceWon": 220000000,
    "floor": 4,
    "exclusiveArea": 59.58,
    "areaGroup": 60,
@@ -42,7 +44,7 @@
   },
   {
    "contractDate": "2026-04-23",
-   "price": 311000000,
+   "priceWon": 311000000,
    "floor": 4,
    "exclusiveArea": 84.65,
    "areaGroup": 85,
@@ -51,12 +53,19 @@
   },
   {
    "contractDate": "2026-04-01",
-   "price": 219000000,
+   "priceWon": 219000000,
    "floor": 10,
    "exclusiveArea": 59.58,
    "areaGroup": 60,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 35.8355058719057,
+  "longitude": 127.152050689627,
+  "roadAddress": "전북특별자치도 전주시 덕진구 팽나무2길 7",
+  "jibunAddress": "전북특별자치도 전주시 덕진구 인후동1가 1035",
+  "geocodeStatus": "valid"
+ }
 }

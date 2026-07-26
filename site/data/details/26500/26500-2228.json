@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "26500-2228",
  "apartmentName": "e편한세상오션테라스4단지",
  "sidoCode": "26",
@@ -17,7 +19,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-29",
-   "price": 795000000,
+   "priceWon": 795000000,
    "floor": 21,
    "exclusiveArea": 84.9275,
    "areaGroup": 85,
@@ -26,7 +28,7 @@
   },
   {
    "contractDate": "2026-06-26",
-   "price": 1220000000,
+   "priceWon": 1220000000,
    "floor": 10,
    "exclusiveArea": 114.98,
    "areaGroup": 115,
@@ -35,7 +37,7 @@
   },
   {
    "contractDate": "2026-06-20",
-   "price": 777000000,
+   "priceWon": 777000000,
    "floor": 15,
    "exclusiveArea": 84.9275,
    "areaGroup": 85,
@@ -44,7 +46,7 @@
   },
   {
    "contractDate": "2026-05-06",
-   "price": 700000000,
+   "priceWon": 700000000,
    "floor": 11,
    "exclusiveArea": 84.9275,
    "areaGroup": 85,
@@ -53,7 +55,7 @@
   },
   {
    "contractDate": "2026-04-26",
-   "price": 930000000,
+   "priceWon": 930000000,
    "floor": 3,
    "exclusiveArea": 91.9754,
    "areaGroup": 92,
@@ -62,7 +64,7 @@
   },
   {
    "contractDate": "2026-04-25",
-   "price": 780000000,
+   "priceWon": 780000000,
    "floor": 20,
    "exclusiveArea": 84.9275,
    "areaGroup": 85,
@@ -71,7 +73,7 @@
   },
   {
    "contractDate": "2026-04-21",
-   "price": 890000000,
+   "priceWon": 890000000,
    "floor": 6,
    "exclusiveArea": 91.9754,
    "areaGroup": 92,
@@ -80,7 +82,7 @@
   },
   {
    "contractDate": "2026-03-31",
-   "price": 780000000,
+   "priceWon": 780000000,
    "floor": 2,
    "exclusiveArea": 91.9754,
    "areaGroup": 92,
@@ -89,7 +91,7 @@
   },
   {
    "contractDate": "2026-03-30",
-   "price": 720000000,
+   "priceWon": 720000000,
    "floor": 16,
    "exclusiveArea": 84.9776,
    "areaGroup": 85,
@@ -98,12 +100,19 @@
   },
   {
    "contractDate": "2026-03-28",
-   "price": 728000000,
+   "priceWon": 728000000,
    "floor": 9,
    "exclusiveArea": 84.9275,
    "areaGroup": 85,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.7454300384621,
+  "longitude": 127.091200540494,
+  "roadAddress": "경기 의정부시 송현로82번길 28-1",
+  "jibunAddress": "경기 의정부시 민락동 782",
+  "geocodeStatus": "ambiguous"
+ }
 }

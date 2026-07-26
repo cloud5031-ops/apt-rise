@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "52113-761",
  "apartmentName": "대방디엠시티",
  "sidoCode": "52",
@@ -17,7 +19,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-25",
-   "price": 900000000,
+   "priceWon": 900000000,
    "floor": 15,
    "exclusiveArea": 118.5525,
    "areaGroup": 119,
@@ -26,7 +28,7 @@
   },
   {
    "contractDate": "2026-06-09",
-   "price": 845000000,
+   "priceWon": 845000000,
    "floor": 39,
    "exclusiveArea": 106.163,
    "areaGroup": 106,
@@ -35,7 +37,7 @@
   },
   {
    "contractDate": "2026-06-04",
-   "price": 905000000,
+   "priceWon": 905000000,
    "floor": 23,
    "exclusiveArea": 118.5525,
    "areaGroup": 119,
@@ -44,7 +46,7 @@
   },
   {
    "contractDate": "2026-05-28",
-   "price": 965000000,
+   "priceWon": 965000000,
    "floor": 45,
    "exclusiveArea": 106.163,
    "areaGroup": 106,
@@ -53,7 +55,7 @@
   },
   {
    "contractDate": "2026-05-05",
-   "price": 920000000,
+   "priceWon": 920000000,
    "floor": 26,
    "exclusiveArea": 118.5525,
    "areaGroup": 119,
@@ -62,7 +64,7 @@
   },
   {
    "contractDate": "2026-04-30",
-   "price": 800000000,
+   "priceWon": 800000000,
    "floor": 21,
    "exclusiveArea": 106.0219,
    "areaGroup": 106,
@@ -71,7 +73,7 @@
   },
   {
    "contractDate": "2026-04-30",
-   "price": 820000000,
+   "priceWon": 820000000,
    "floor": 23,
    "exclusiveArea": 118.5525,
    "areaGroup": 119,
@@ -80,7 +82,7 @@
   },
   {
    "contractDate": "2026-04-29",
-   "price": 820000000,
+   "priceWon": 820000000,
    "floor": 31,
    "exclusiveArea": 106.163,
    "areaGroup": 106,
@@ -89,7 +91,7 @@
   },
   {
    "contractDate": "2026-04-29",
-   "price": 865000000,
+   "priceWon": 865000000,
    "floor": 16,
    "exclusiveArea": 118.5525,
    "areaGroup": 119,
@@ -98,7 +100,7 @@
   },
   {
    "contractDate": "2026-04-25",
-   "price": 830000000,
+   "priceWon": 830000000,
    "floor": 26,
    "exclusiveArea": 106.0219,
    "areaGroup": 106,
@@ -107,7 +109,7 @@
   },
   {
    "contractDate": "2026-04-22",
-   "price": 750000000,
+   "priceWon": 750000000,
    "floor": 15,
    "exclusiveArea": 106.163,
    "areaGroup": 106,
@@ -116,7 +118,7 @@
   },
   {
    "contractDate": "2026-04-15",
-   "price": 854000000,
+   "priceWon": 854000000,
    "floor": 20,
    "exclusiveArea": 118.5525,
    "areaGroup": 119,
@@ -125,7 +127,7 @@
   },
   {
    "contractDate": "2026-04-04",
-   "price": 742000000,
+   "priceWon": 742000000,
    "floor": 11,
    "exclusiveArea": 106.163,
    "areaGroup": 106,
@@ -134,7 +136,7 @@
   },
   {
    "contractDate": "2026-03-18",
-   "price": 795000000,
+   "priceWon": 795000000,
    "floor": 42,
    "exclusiveArea": 106.0219,
    "areaGroup": 106,
@@ -143,7 +145,7 @@
   },
   {
    "contractDate": "2026-03-08",
-   "price": 850000000,
+   "priceWon": 850000000,
    "floor": 21,
    "exclusiveArea": 118.5525,
    "areaGroup": 119,
@@ -152,7 +154,7 @@
   },
   {
    "contractDate": "2026-03-03",
-   "price": 835000000,
+   "priceWon": 835000000,
    "floor": 43,
    "exclusiveArea": 106.0219,
    "areaGroup": 106,
@@ -161,7 +163,7 @@
   },
   {
    "contractDate": "2026-02-02",
-   "price": 804000000,
+   "priceWon": 804000000,
    "floor": 36,
    "exclusiveArea": 106.163,
    "areaGroup": 106,
@@ -170,12 +172,19 @@
   },
   {
    "contractDate": "2026-02-02",
-   "price": 935000000,
+   "priceWon": 935000000,
    "floor": 28,
    "exclusiveArea": 119.5226,
    "areaGroup": 120,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 35.8388129741943,
+  "longitude": 127.060135711394,
+  "roadAddress": "전북특별자치도 전주시 덕진구 기지로 77",
+  "jibunAddress": "전북특별자치도 전주시 덕진구 장동 1111",
+  "geocodeStatus": "valid"
+ }
 }

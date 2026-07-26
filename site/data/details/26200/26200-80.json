@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "26200-80",
  "apartmentName": "함지그린",
  "sidoCode": "26",
@@ -15,7 +17,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-26",
-   "price": 129000000,
+   "priceWon": 129000000,
    "floor": 2,
    "exclusiveArea": 57.09,
    "areaGroup": 57,
@@ -24,7 +26,7 @@
   },
   {
    "contractDate": "2026-06-25",
-   "price": 95500000,
+   "priceWon": 95500000,
    "floor": 13,
    "exclusiveArea": 45.5,
    "areaGroup": 46,
@@ -33,7 +35,7 @@
   },
   {
    "contractDate": "2026-06-12",
-   "price": 170000000,
+   "priceWon": 170000000,
    "floor": 14,
    "exclusiveArea": 57.09,
    "areaGroup": 57,
@@ -42,7 +44,7 @@
   },
   {
    "contractDate": "2026-06-06",
-   "price": 223000000,
+   "priceWon": 223000000,
    "floor": 10,
    "exclusiveArea": 57.09,
    "areaGroup": 57,
@@ -51,7 +53,7 @@
   },
   {
    "contractDate": "2026-06-05",
-   "price": 211000000,
+   "priceWon": 211000000,
    "floor": 17,
    "exclusiveArea": 57.09,
    "areaGroup": 57,
@@ -60,7 +62,7 @@
   },
   {
    "contractDate": "2026-06-04",
-   "price": 153000000,
+   "priceWon": 153000000,
    "floor": 7,
    "exclusiveArea": 57.09,
    "areaGroup": 57,
@@ -69,7 +71,7 @@
   },
   {
    "contractDate": "2026-05-20",
-   "price": 125000000,
+   "priceWon": 125000000,
    "floor": 16,
    "exclusiveArea": 45.5,
    "areaGroup": 46,
@@ -78,7 +80,7 @@
   },
   {
    "contractDate": "2026-05-10",
-   "price": 140000000,
+   "priceWon": 140000000,
    "floor": 6,
    "exclusiveArea": 57.09,
    "areaGroup": 57,
@@ -87,7 +89,7 @@
   },
   {
    "contractDate": "2026-05-06",
-   "price": 158000000,
+   "priceWon": 158000000,
    "floor": 15,
    "exclusiveArea": 57.09,
    "areaGroup": 57,
@@ -96,7 +98,7 @@
   },
   {
    "contractDate": "2026-05-04",
-   "price": 174000000,
+   "priceWon": 174000000,
    "floor": 19,
    "exclusiveArea": 57.09,
    "areaGroup": 57,
@@ -105,7 +107,7 @@
   },
   {
    "contractDate": "2026-04-17",
-   "price": 95000000,
+   "priceWon": 95000000,
    "floor": 8,
    "exclusiveArea": 45.5,
    "areaGroup": 46,
@@ -114,7 +116,7 @@
   },
   {
    "contractDate": "2026-04-16",
-   "price": 95000000,
+   "priceWon": 95000000,
    "floor": 12,
    "exclusiveArea": 45.5,
    "areaGroup": 46,
@@ -123,7 +125,7 @@
   },
   {
    "contractDate": "2026-04-03",
-   "price": 218000000,
+   "priceWon": 218000000,
    "floor": 19,
    "exclusiveArea": 57.09,
    "areaGroup": 57,
@@ -132,7 +134,7 @@
   },
   {
    "contractDate": "2026-03-20",
-   "price": 140000000,
+   "priceWon": 140000000,
    "floor": 13,
    "exclusiveArea": 57.09,
    "areaGroup": 57,
@@ -141,7 +143,7 @@
   },
   {
    "contractDate": "2026-03-12",
-   "price": 129000000,
+   "priceWon": 129000000,
    "floor": 5,
    "exclusiveArea": 57.09,
    "areaGroup": 57,
@@ -150,7 +152,7 @@
   },
   {
    "contractDate": "2026-03-06",
-   "price": 200000000,
+   "priceWon": 200000000,
    "floor": 15,
    "exclusiveArea": 57.09,
    "areaGroup": 57,
@@ -159,7 +161,7 @@
   },
   {
    "contractDate": "2026-02-27",
-   "price": 190000000,
+   "priceWon": 190000000,
    "floor": 16,
    "exclusiveArea": 57.09,
    "areaGroup": 57,
@@ -168,7 +170,7 @@
   },
   {
    "contractDate": "2026-02-23",
-   "price": 172000000,
+   "priceWon": 172000000,
    "floor": 18,
    "exclusiveArea": 57.09,
    "areaGroup": 57,
@@ -177,7 +179,7 @@
   },
   {
    "contractDate": "2026-02-10",
-   "price": 218000000,
+   "priceWon": 218000000,
    "floor": 19,
    "exclusiveArea": 57.09,
    "areaGroup": 57,
@@ -186,12 +188,19 @@
   },
   {
    "contractDate": "2026-02-06",
-   "price": 173000000,
+   "priceWon": 173000000,
    "floor": 9,
    "exclusiveArea": 57.09,
    "areaGroup": 57,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 35.0708931680362,
+  "longitude": 129.061995166605,
+  "roadAddress": "부산 영도구 함지로 8",
+  "jibunAddress": "부산 영도구 동삼동 1124",
+  "geocodeStatus": "valid"
+ }
 }

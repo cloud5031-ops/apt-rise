@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "27260-1478",
  "apartmentName": "브라운스톤범어",
  "sidoCode": "27",
@@ -17,7 +19,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-28",
-   "price": 737000000,
+   "priceWon": 737000000,
    "floor": 34,
    "exclusiveArea": 84.8538,
    "areaGroup": 85,
@@ -26,7 +28,7 @@
   },
   {
    "contractDate": "2026-06-21",
-   "price": 740000000,
+   "priceWon": 740000000,
    "floor": 12,
    "exclusiveArea": 84.8465,
    "areaGroup": 85,
@@ -35,7 +37,7 @@
   },
   {
    "contractDate": "2026-06-15",
-   "price": 745000000,
+   "priceWon": 745000000,
    "floor": 29,
    "exclusiveArea": 84.8538,
    "areaGroup": 85,
@@ -44,7 +46,7 @@
   },
   {
    "contractDate": "2026-05-14",
-   "price": 720000000,
+   "priceWon": 720000000,
    "floor": 22,
    "exclusiveArea": 84.8549,
    "areaGroup": 85,
@@ -53,7 +55,7 @@
   },
   {
    "contractDate": "2026-04-22",
-   "price": 700000000,
+   "priceWon": 700000000,
    "floor": 36,
    "exclusiveArea": 84.8549,
    "areaGroup": 85,
@@ -62,12 +64,19 @@
   },
   {
    "contractDate": "2026-04-16",
-   "price": 753000000,
+   "priceWon": 753000000,
    "floor": 24,
    "exclusiveArea": 84.9966,
    "areaGroup": 85,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 35.8616982697244,
+  "longitude": 128.627748914956,
+  "roadAddress": "대구 수성구 동대구로 354",
+  "jibunAddress": "대구 수성구 범어동 175-1",
+  "geocodeStatus": "valid"
+ }
 }

@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "48170-664",
  "apartmentName": "신진주역세권우미린더시그니처",
  "sidoCode": "48",
@@ -16,7 +18,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-15",
-   "price": 798000000,
+   "priceWon": 798000000,
    "floor": 22,
    "exclusiveArea": 84.9888,
    "areaGroup": 85,
@@ -25,7 +27,7 @@
   },
   {
    "contractDate": "2026-06-15",
-   "price": 720000000,
+   "priceWon": 720000000,
    "floor": 13,
    "exclusiveArea": 84.986,
    "areaGroup": 85,
@@ -34,7 +36,7 @@
   },
   {
    "contractDate": "2026-06-01",
-   "price": 795000000,
+   "priceWon": 795000000,
    "floor": 8,
    "exclusiveArea": 84.9888,
    "areaGroup": 85,
@@ -43,7 +45,7 @@
   },
   {
    "contractDate": "2026-05-31",
-   "price": 744000000,
+   "priceWon": 744000000,
    "floor": 16,
    "exclusiveArea": 84.9888,
    "areaGroup": 85,
@@ -52,7 +54,7 @@
   },
   {
    "contractDate": "2026-05-30",
-   "price": 795000000,
+   "priceWon": 795000000,
    "floor": 23,
    "exclusiveArea": 84.986,
    "areaGroup": 85,
@@ -61,7 +63,7 @@
   },
   {
    "contractDate": "2026-05-21",
-   "price": 740000000,
+   "priceWon": 740000000,
    "floor": 9,
    "exclusiveArea": 84.986,
    "areaGroup": 85,
@@ -70,7 +72,7 @@
   },
   {
    "contractDate": "2026-05-18",
-   "price": 790000000,
+   "priceWon": 790000000,
    "floor": 21,
    "exclusiveArea": 84.9888,
    "areaGroup": 85,
@@ -79,7 +81,7 @@
   },
   {
    "contractDate": "2026-05-15",
-   "price": 723000000,
+   "priceWon": 723000000,
    "floor": 10,
    "exclusiveArea": 84.9888,
    "areaGroup": 85,
@@ -88,7 +90,7 @@
   },
   {
    "contractDate": "2026-05-08",
-   "price": 735000000,
+   "priceWon": 735000000,
    "floor": 5,
    "exclusiveArea": 84.986,
    "areaGroup": 85,
@@ -97,7 +99,7 @@
   },
   {
    "contractDate": "2026-05-07",
-   "price": 733000000,
+   "priceWon": 733000000,
    "floor": 7,
    "exclusiveArea": 84.9888,
    "areaGroup": 85,
@@ -106,7 +108,7 @@
   },
   {
    "contractDate": "2026-05-03",
-   "price": 703000000,
+   "priceWon": 703000000,
    "floor": 2,
    "exclusiveArea": 84.9888,
    "areaGroup": 85,
@@ -115,7 +117,7 @@
   },
   {
    "contractDate": "2026-04-25",
-   "price": 760000000,
+   "priceWon": 760000000,
    "floor": 20,
    "exclusiveArea": 84.986,
    "areaGroup": 85,
@@ -124,7 +126,7 @@
   },
   {
    "contractDate": "2026-04-15",
-   "price": 727000000,
+   "priceWon": 727000000,
    "floor": 18,
    "exclusiveArea": 84.986,
    "areaGroup": 85,
@@ -133,7 +135,7 @@
   },
   {
    "contractDate": "2026-04-10",
-   "price": 725000000,
+   "priceWon": 725000000,
    "floor": 16,
    "exclusiveArea": 84.986,
    "areaGroup": 85,
@@ -142,7 +144,7 @@
   },
   {
    "contractDate": "2026-04-06",
-   "price": 710000000,
+   "priceWon": 710000000,
    "floor": 6,
    "exclusiveArea": 84.986,
    "areaGroup": 85,
@@ -151,7 +153,7 @@
   },
   {
    "contractDate": "2026-04-02",
-   "price": 678000000,
+   "priceWon": 678000000,
    "floor": 1,
    "exclusiveArea": 84.9888,
    "areaGroup": 85,
@@ -160,7 +162,7 @@
   },
   {
    "contractDate": "2026-03-23",
-   "price": 850000000,
+   "priceWon": 850000000,
    "floor": 6,
    "exclusiveArea": 116.8943,
    "areaGroup": 117,
@@ -169,12 +171,19 @@
   },
   {
    "contractDate": "2026-03-07",
-   "price": 670000000,
+   "priceWon": 670000000,
    "floor": 2,
    "exclusiveArea": 84.986,
    "areaGroup": 85,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 35.1511784769485,
+  "longitude": 128.109263126992,
+  "roadAddress": "경남 진주시 진주역로 55",
+  "jibunAddress": "경남 진주시 가좌동 1986",
+  "geocodeStatus": "valid"
+ }
 }

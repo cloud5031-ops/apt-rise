@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "30200-73",
  "apartmentName": "송림마을1단지(호반리젠시빌)",
  "sidoCode": "30",
@@ -16,7 +18,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-23",
-   "price": 437000000,
+   "priceWon": 437000000,
    "floor": 15,
    "exclusiveArea": 84.989,
    "areaGroup": 85,
@@ -25,7 +27,7 @@
   },
   {
    "contractDate": "2026-06-22",
-   "price": 378000000,
+   "priceWon": 378000000,
    "floor": 5,
    "exclusiveArea": 84.989,
    "areaGroup": 85,
@@ -34,7 +36,7 @@
   },
   {
    "contractDate": "2026-06-06",
-   "price": 430000000,
+   "priceWon": 430000000,
    "floor": 3,
    "exclusiveArea": 84.989,
    "areaGroup": 85,
@@ -43,7 +45,7 @@
   },
   {
    "contractDate": "2026-05-30",
-   "price": 355000000,
+   "priceWon": 355000000,
    "floor": 10,
    "exclusiveArea": 69.9928,
    "areaGroup": 70,
@@ -52,7 +54,7 @@
   },
   {
    "contractDate": "2026-05-21",
-   "price": 390000000,
+   "priceWon": 390000000,
    "floor": 20,
    "exclusiveArea": 84.989,
    "areaGroup": 85,
@@ -61,7 +63,7 @@
   },
   {
    "contractDate": "2026-05-19",
-   "price": 389000000,
+   "priceWon": 389000000,
    "floor": 18,
    "exclusiveArea": 84.989,
    "areaGroup": 85,
@@ -70,7 +72,7 @@
   },
   {
    "contractDate": "2026-03-27",
-   "price": 390000000,
+   "priceWon": 390000000,
    "floor": 5,
    "exclusiveArea": 84.9332,
    "areaGroup": 85,
@@ -79,7 +81,7 @@
   },
   {
    "contractDate": "2026-03-09",
-   "price": 419000000,
+   "priceWon": 419000000,
    "floor": 11,
    "exclusiveArea": 84.989,
    "areaGroup": 85,
@@ -88,7 +90,7 @@
   },
   {
    "contractDate": "2026-02-28",
-   "price": 405000000,
+   "priceWon": 405000000,
    "floor": 14,
    "exclusiveArea": 84.9332,
    "areaGroup": 85,
@@ -97,7 +99,7 @@
   },
   {
    "contractDate": "2026-02-13",
-   "price": 410000000,
+   "priceWon": 410000000,
    "floor": 18,
    "exclusiveArea": 84.989,
    "areaGroup": 85,
@@ -106,7 +108,7 @@
   },
   {
    "contractDate": "2026-02-06",
-   "price": 350000000,
+   "priceWon": 350000000,
    "floor": 6,
    "exclusiveArea": 69.9928,
    "areaGroup": 70,
@@ -115,12 +117,19 @@
   },
   {
    "contractDate": "2026-02-06",
-   "price": 400000000,
+   "priceWon": 400000000,
    "floor": 11,
    "exclusiveArea": 84.989,
    "areaGroup": 85,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 36.3886442979369,
+  "longitude": 127.318413349393,
+  "roadAddress": "대전 유성구 송림로 13",
+  "jibunAddress": "대전 유성구 하기동 512",
+  "geocodeStatus": "valid"
+ }
 }

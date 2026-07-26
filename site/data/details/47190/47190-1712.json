@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "47190-1712",
  "apartmentName": "도량롯데캐슬골드파크",
  "sidoCode": "47",
@@ -20,7 +22,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-28",
-   "price": 270000000,
+   "priceWon": 270000000,
    "floor": 13,
    "exclusiveArea": 59.9464,
    "areaGroup": 60,
@@ -29,7 +31,7 @@
   },
   {
    "contractDate": "2026-06-21",
-   "price": 465000000,
+   "priceWon": 465000000,
    "floor": 22,
    "exclusiveArea": 84.9674,
    "areaGroup": 85,
@@ -38,7 +40,7 @@
   },
   {
    "contractDate": "2026-06-06",
-   "price": 425000000,
+   "priceWon": 425000000,
    "floor": 18,
    "exclusiveArea": 84.9674,
    "areaGroup": 85,
@@ -47,7 +49,7 @@
   },
   {
    "contractDate": "2026-05-29",
-   "price": 475000000,
+   "priceWon": 475000000,
    "floor": 21,
    "exclusiveArea": 84.9734,
    "areaGroup": 85,
@@ -56,7 +58,7 @@
   },
   {
    "contractDate": "2026-05-02",
-   "price": 425000000,
+   "priceWon": 425000000,
    "floor": 27,
    "exclusiveArea": 84.9954,
    "areaGroup": 85,
@@ -65,7 +67,7 @@
   },
   {
    "contractDate": "2026-04-28",
-   "price": 428000000,
+   "priceWon": 428000000,
    "floor": 28,
    "exclusiveArea": 84.9674,
    "areaGroup": 85,
@@ -74,7 +76,7 @@
   },
   {
    "contractDate": "2026-04-18",
-   "price": 475000000,
+   "priceWon": 475000000,
    "floor": 29,
    "exclusiveArea": 84.9674,
    "areaGroup": 85,
@@ -83,7 +85,7 @@
   },
   {
    "contractDate": "2026-04-15",
-   "price": 409000000,
+   "priceWon": 409000000,
    "floor": 15,
    "exclusiveArea": 84.9734,
    "areaGroup": 85,
@@ -92,7 +94,7 @@
   },
   {
    "contractDate": "2026-04-11",
-   "price": 459000000,
+   "priceWon": 459000000,
    "floor": 13,
    "exclusiveArea": 84.9674,
    "areaGroup": 85,
@@ -101,7 +103,7 @@
   },
   {
    "contractDate": "2026-04-09",
-   "price": 275000000,
+   "priceWon": 275000000,
    "floor": 16,
    "exclusiveArea": 59.9464,
    "areaGroup": 60,
@@ -110,7 +112,7 @@
   },
   {
    "contractDate": "2026-04-03",
-   "price": 415000000,
+   "priceWon": 415000000,
    "floor": 9,
    "exclusiveArea": 84.9674,
    "areaGroup": 85,
@@ -119,7 +121,7 @@
   },
   {
    "contractDate": "2026-04-03",
-   "price": 620000000,
+   "priceWon": 620000000,
    "floor": 16,
    "exclusiveArea": 109.9103,
    "areaGroup": 110,
@@ -128,7 +130,7 @@
   },
   {
    "contractDate": "2026-03-30",
-   "price": 325000000,
+   "priceWon": 325000000,
    "floor": 18,
    "exclusiveArea": 64.9001,
    "areaGroup": 65,
@@ -137,7 +139,7 @@
   },
   {
    "contractDate": "2026-03-29",
-   "price": 232700000,
+   "priceWon": 232700000,
    "floor": 2,
    "exclusiveArea": 59.9464,
    "areaGroup": 60,
@@ -146,7 +148,7 @@
   },
   {
    "contractDate": "2026-03-29",
-   "price": 400000000,
+   "priceWon": 400000000,
    "floor": 22,
    "exclusiveArea": 84.9734,
    "areaGroup": 85,
@@ -155,7 +157,7 @@
   },
   {
    "contractDate": "2026-03-10",
-   "price": 450000000,
+   "priceWon": 450000000,
    "floor": 5,
    "exclusiveArea": 97.9669,
    "areaGroup": 98,
@@ -164,7 +166,7 @@
   },
   {
    "contractDate": "2026-03-04",
-   "price": 458000000,
+   "priceWon": 458000000,
    "floor": 26,
    "exclusiveArea": 84.9674,
    "areaGroup": 85,
@@ -173,7 +175,7 @@
   },
   {
    "contractDate": "2026-02-11",
-   "price": 405000000,
+   "priceWon": 405000000,
    "floor": 5,
    "exclusiveArea": 84.9674,
    "areaGroup": 85,
@@ -182,12 +184,19 @@
   },
   {
    "contractDate": "2026-02-03",
-   "price": 398000000,
+   "priceWon": 398000000,
    "floor": 12,
    "exclusiveArea": 84.9954,
    "areaGroup": 85,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 36.1429381889649,
+  "longitude": 128.330129861545,
+  "roadAddress": "경북 구미시 문장로 105",
+  "jibunAddress": "경북 구미시 도량동 868",
+  "geocodeStatus": "valid"
+ }
 }

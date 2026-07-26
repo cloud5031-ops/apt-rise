@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "31140-1489",
  "apartmentName": "삼산리버뷰웰가",
  "sidoCode": "31",
@@ -15,7 +17,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-25",
-   "price": 343000000,
+   "priceWon": 343000000,
    "floor": 17,
    "exclusiveArea": 55.974,
    "areaGroup": 56,
@@ -24,7 +26,7 @@
   },
   {
    "contractDate": "2026-05-27",
-   "price": 375000000,
+   "priceWon": 375000000,
    "floor": 16,
    "exclusiveArea": 55.974,
    "areaGroup": 56,
@@ -33,7 +35,7 @@
   },
   {
    "contractDate": "2026-05-02",
-   "price": 368000000,
+   "priceWon": 368000000,
    "floor": 10,
    "exclusiveArea": 55.974,
    "areaGroup": 56,
@@ -42,7 +44,7 @@
   },
   {
    "contractDate": "2026-04-29",
-   "price": 350000000,
+   "priceWon": 350000000,
    "floor": 8,
    "exclusiveArea": 55.5478,
    "areaGroup": 56,
@@ -51,7 +53,7 @@
   },
   {
    "contractDate": "2026-04-27",
-   "price": 355000000,
+   "priceWon": 355000000,
    "floor": 6,
    "exclusiveArea": 55.5478,
    "areaGroup": 56,
@@ -60,7 +62,7 @@
   },
   {
    "contractDate": "2026-04-18",
-   "price": 335000000,
+   "priceWon": 335000000,
    "floor": 9,
    "exclusiveArea": 55.974,
    "areaGroup": 56,
@@ -69,7 +71,7 @@
   },
   {
    "contractDate": "2026-04-18",
-   "price": 344000000,
+   "priceWon": 344000000,
    "floor": 4,
    "exclusiveArea": 55.974,
    "areaGroup": 56,
@@ -78,7 +80,7 @@
   },
   {
    "contractDate": "2026-04-17",
-   "price": 333000000,
+   "priceWon": 333000000,
    "floor": 9,
    "exclusiveArea": 55.974,
    "areaGroup": 56,
@@ -87,7 +89,7 @@
   },
   {
    "contractDate": "2026-04-17",
-   "price": 350000000,
+   "priceWon": 350000000,
    "floor": 16,
    "exclusiveArea": 55.974,
    "areaGroup": 56,
@@ -96,12 +98,19 @@
   },
   {
    "contractDate": "2026-02-05",
-   "price": 340000000,
+   "priceWon": 340000000,
    "floor": 5,
    "exclusiveArea": 55.974,
    "areaGroup": 56,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 35.5466215655617,
+  "longitude": 129.345175008358,
+  "roadAddress": "울산 남구 정동로 142",
+  "jibunAddress": "울산 남구 삼산동 183-1",
+  "geocodeStatus": "valid"
+ }
 }

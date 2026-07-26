@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "26350-2130",
  "apartmentName": "해운대중동두산위브",
  "sidoCode": "26",
@@ -16,7 +18,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-20",
-   "price": 692500000,
+   "priceWon": 692500000,
    "floor": 14,
    "exclusiveArea": 84.9264,
    "areaGroup": 85,
@@ -25,7 +27,7 @@
   },
   {
    "contractDate": "2026-06-09",
-   "price": 710000000,
+   "priceWon": 710000000,
    "floor": 17,
    "exclusiveArea": 84.9668,
    "areaGroup": 85,
@@ -34,7 +36,7 @@
   },
   {
    "contractDate": "2026-05-16",
-   "price": 770000000,
+   "priceWon": 770000000,
    "floor": 29,
    "exclusiveArea": 84.9668,
    "areaGroup": 85,
@@ -43,7 +45,7 @@
   },
   {
    "contractDate": "2026-05-04",
-   "price": 720000000,
+   "priceWon": 720000000,
    "floor": 27,
    "exclusiveArea": 84.9668,
    "areaGroup": 85,
@@ -52,7 +54,7 @@
   },
   {
    "contractDate": "2026-04-17",
-   "price": 620000000,
+   "priceWon": 620000000,
    "floor": 7,
    "exclusiveArea": 112.5054,
    "areaGroup": 113,
@@ -61,7 +63,7 @@
   },
   {
    "contractDate": "2026-04-12",
-   "price": 690000000,
+   "priceWon": 690000000,
    "floor": 14,
    "exclusiveArea": 84.9668,
    "areaGroup": 85,
@@ -70,12 +72,19 @@
   },
   {
    "contractDate": "2026-03-18",
-   "price": 680000000,
+   "priceWon": 680000000,
    "floor": 13,
    "exclusiveArea": 84.9668,
    "areaGroup": 85,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.5041931466785,
+  "longitude": 126.771111946832,
+  "roadAddress": "",
+  "jibunAddress": "경기 부천시 원미구 중동 1234-1",
+  "geocodeStatus": "ambiguous"
+ }
 }

@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "48170-535",
  "apartmentName": "진주혁신도시대방노블랜드더캐슬아파트",
  "sidoCode": "48",
@@ -18,7 +20,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-28",
-   "price": 750000000,
+   "priceWon": 750000000,
    "floor": 2,
    "exclusiveArea": 84.9899,
    "areaGroup": 85,
@@ -27,7 +29,7 @@
   },
   {
    "contractDate": "2026-06-21",
-   "price": 740000000,
+   "priceWon": 740000000,
    "floor": 5,
    "exclusiveArea": 84.9474,
    "areaGroup": 85,
@@ -36,7 +38,7 @@
   },
   {
    "contractDate": "2026-05-16",
-   "price": 885000000,
+   "priceWon": 885000000,
    "floor": 20,
    "exclusiveArea": 103.9623,
    "areaGroup": 104,
@@ -45,7 +47,7 @@
   },
   {
    "contractDate": "2026-05-13",
-   "price": 765000000,
+   "priceWon": 765000000,
    "floor": 6,
    "exclusiveArea": 84.9899,
    "areaGroup": 85,
@@ -54,7 +56,7 @@
   },
   {
    "contractDate": "2026-05-13",
-   "price": 780000000,
+   "priceWon": 780000000,
    "floor": 15,
    "exclusiveArea": 84.9474,
    "areaGroup": 85,
@@ -63,7 +65,7 @@
   },
   {
    "contractDate": "2026-05-09",
-   "price": 730000000,
+   "priceWon": 730000000,
    "floor": 14,
    "exclusiveArea": 84.9474,
    "areaGroup": 85,
@@ -72,7 +74,7 @@
   },
   {
    "contractDate": "2026-05-09",
-   "price": 885000000,
+   "priceWon": 885000000,
    "floor": 20,
    "exclusiveArea": 103.9623,
    "areaGroup": 104,
@@ -81,7 +83,7 @@
   },
   {
    "contractDate": "2026-04-28",
-   "price": 767000000,
+   "priceWon": 767000000,
    "floor": 15,
    "exclusiveArea": 84.9899,
    "areaGroup": 85,
@@ -90,7 +92,7 @@
   },
   {
    "contractDate": "2026-04-27",
-   "price": 755000000,
+   "priceWon": 755000000,
    "floor": 19,
    "exclusiveArea": 84.9899,
    "areaGroup": 85,
@@ -99,7 +101,7 @@
   },
   {
    "contractDate": "2026-04-24",
-   "price": 757000000,
+   "priceWon": 757000000,
    "floor": 12,
    "exclusiveArea": 84.9899,
    "areaGroup": 85,
@@ -108,7 +110,7 @@
   },
   {
    "contractDate": "2026-04-24",
-   "price": 820000000,
+   "priceWon": 820000000,
    "floor": 3,
    "exclusiveArea": 103.3591,
    "areaGroup": 103,
@@ -117,7 +119,7 @@
   },
   {
    "contractDate": "2026-04-14",
-   "price": 858000000,
+   "priceWon": 858000000,
    "floor": 1,
    "exclusiveArea": 104.8302,
    "areaGroup": 105,
@@ -126,7 +128,7 @@
   },
   {
    "contractDate": "2026-04-04",
-   "price": 745000000,
+   "priceWon": 745000000,
    "floor": 17,
    "exclusiveArea": 84.9899,
    "areaGroup": 85,
@@ -135,7 +137,7 @@
   },
   {
    "contractDate": "2026-03-21",
-   "price": 739000000,
+   "priceWon": 739000000,
    "floor": 11,
    "exclusiveArea": 84.9474,
    "areaGroup": 85,
@@ -144,7 +146,7 @@
   },
   {
    "contractDate": "2026-03-20",
-   "price": 875000000,
+   "priceWon": 875000000,
    "floor": 16,
    "exclusiveArea": 103.9623,
    "areaGroup": 104,
@@ -153,7 +155,7 @@
   },
   {
    "contractDate": "2026-03-12",
-   "price": 715000000,
+   "priceWon": 715000000,
    "floor": 19,
    "exclusiveArea": 84.9474,
    "areaGroup": 85,
@@ -162,7 +164,7 @@
   },
   {
    "contractDate": "2026-02-26",
-   "price": 730000000,
+   "priceWon": 730000000,
    "floor": 15,
    "exclusiveArea": 84.9899,
    "areaGroup": 85,
@@ -171,7 +173,7 @@
   },
   {
    "contractDate": "2026-02-21",
-   "price": 755000000,
+   "priceWon": 755000000,
    "floor": 16,
    "exclusiveArea": 84.9899,
    "areaGroup": 85,
@@ -180,7 +182,7 @@
   },
   {
    "contractDate": "2026-02-12",
-   "price": 670000000,
+   "priceWon": 670000000,
    "floor": 2,
    "exclusiveArea": 84.9474,
    "areaGroup": 85,
@@ -189,7 +191,7 @@
   },
   {
    "contractDate": "2026-02-08",
-   "price": 848000000,
+   "priceWon": 848000000,
    "floor": 20,
    "exclusiveArea": 104.8302,
    "areaGroup": 105,
@@ -198,12 +200,19 @@
   },
   {
    "contractDate": "2026-02-01",
-   "price": 790000000,
+   "priceWon": 790000000,
    "floor": 14,
    "exclusiveArea": 103.3591,
    "areaGroup": 103,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 35.1735512610539,
+  "longitude": 128.147758748898,
+  "roadAddress": "경남 진주시 사들로 61",
+  "jibunAddress": "경남 진주시 충무공동 296",
+  "geocodeStatus": "valid"
+ }
 }

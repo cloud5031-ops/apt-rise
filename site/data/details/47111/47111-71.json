@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "47111-71",
  "apartmentName": "삼성그린빌라",
  "sidoCode": "47",
@@ -14,7 +16,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-26",
-   "price": 480000000,
+   "priceWon": 480000000,
    "floor": 3,
    "exclusiveArea": 84.996,
    "areaGroup": 85,
@@ -23,7 +25,7 @@
   },
   {
    "contractDate": "2026-06-01",
-   "price": 380000000,
+   "priceWon": 380000000,
    "floor": 5,
    "exclusiveArea": 84.996,
    "areaGroup": 85,
@@ -32,7 +34,7 @@
   },
   {
    "contractDate": "2026-05-21",
-   "price": 460000000,
+   "priceWon": 460000000,
    "floor": 3,
    "exclusiveArea": 84.996,
    "areaGroup": 85,
@@ -41,7 +43,7 @@
   },
   {
    "contractDate": "2026-05-15",
-   "price": 467000000,
+   "priceWon": 467000000,
    "floor": 2,
    "exclusiveArea": 84.996,
    "areaGroup": 85,
@@ -50,7 +52,7 @@
   },
   {
    "contractDate": "2026-05-08",
-   "price": 530000000,
+   "priceWon": 530000000,
    "floor": 1,
    "exclusiveArea": 84.996,
    "areaGroup": 85,
@@ -59,7 +61,7 @@
   },
   {
    "contractDate": "2026-03-26",
-   "price": 450000000,
+   "priceWon": 450000000,
    "floor": 1,
    "exclusiveArea": 84.996,
    "areaGroup": 85,
@@ -68,12 +70,19 @@
   },
   {
    "contractDate": "2026-02-02",
-   "price": 383000000,
+   "priceWon": 383000000,
    "floor": 4,
    "exclusiveArea": 84.996,
    "areaGroup": 85,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 37.2506592543119,
+  "longitude": 127.128531145528,
+  "roadAddress": "경기 용인시 기흥구 지삼로98번길 26",
+  "jibunAddress": "경기 용인시 기흥구 지곡동 543-1",
+  "geocodeStatus": "ambiguous"
+ }
 }

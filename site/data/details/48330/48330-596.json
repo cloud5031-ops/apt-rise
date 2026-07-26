@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "48330-596",
  "apartmentName": "양산물금양우내안애3차센트럴아파트",
  "sidoCode": "48",
@@ -14,7 +16,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-30",
-   "price": 490000000,
+   "priceWon": 490000000,
    "floor": 25,
    "exclusiveArea": 100.3943,
    "areaGroup": 100,
@@ -23,7 +25,7 @@
   },
   {
    "contractDate": "2026-06-18",
-   "price": 478000000,
+   "priceWon": 478000000,
    "floor": 6,
    "exclusiveArea": 100.3943,
    "areaGroup": 100,
@@ -32,7 +34,7 @@
   },
   {
    "contractDate": "2026-06-13",
-   "price": 475000000,
+   "priceWon": 475000000,
    "floor": 22,
    "exclusiveArea": 100.3943,
    "areaGroup": 100,
@@ -41,7 +43,7 @@
   },
   {
    "contractDate": "2026-05-26",
-   "price": 480000000,
+   "priceWon": 480000000,
    "floor": 6,
    "exclusiveArea": 100.3943,
    "areaGroup": 100,
@@ -50,7 +52,7 @@
   },
   {
    "contractDate": "2026-05-13",
-   "price": 470000000,
+   "priceWon": 470000000,
    "floor": 2,
    "exclusiveArea": 100.3943,
    "areaGroup": 100,
@@ -59,7 +61,7 @@
   },
   {
    "contractDate": "2026-05-08",
-   "price": 438000000,
+   "priceWon": 438000000,
    "floor": 3,
    "exclusiveArea": 100.3943,
    "areaGroup": 100,
@@ -68,7 +70,7 @@
   },
   {
    "contractDate": "2026-04-30",
-   "price": 440000000,
+   "priceWon": 440000000,
    "floor": 20,
    "exclusiveArea": 100.3943,
    "areaGroup": 100,
@@ -77,7 +79,7 @@
   },
   {
    "contractDate": "2026-04-10",
-   "price": 470000000,
+   "priceWon": 470000000,
    "floor": 17,
    "exclusiveArea": 100.3943,
    "areaGroup": 100,
@@ -86,7 +88,7 @@
   },
   {
    "contractDate": "2026-03-07",
-   "price": 429000000,
+   "priceWon": 429000000,
    "floor": 2,
    "exclusiveArea": 100.3943,
    "areaGroup": 100,
@@ -95,7 +97,7 @@
   },
   {
    "contractDate": "2026-03-06",
-   "price": 449000000,
+   "priceWon": 449000000,
    "floor": 8,
    "exclusiveArea": 100.3943,
    "areaGroup": 100,
@@ -104,12 +106,19 @@
   },
   {
    "contractDate": "2026-03-05",
-   "price": 443500000,
+   "priceWon": 443500000,
    "floor": 12,
    "exclusiveArea": 100.3943,
    "areaGroup": 100,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 35.3132891771673,
+  "longitude": 129.006699436376,
+  "roadAddress": "경남 양산시 물금읍 야리로 89",
+  "jibunAddress": "경남 양산시 물금읍 가촌리 1282",
+  "geocodeStatus": "valid"
+ }
 }

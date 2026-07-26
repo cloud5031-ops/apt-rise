@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "26260-2",
  "apartmentName": "금양해바라기2",
  "sidoCode": "26",
@@ -18,7 +20,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-19",
-   "price": 488000000,
+   "priceWon": 488000000,
    "floor": 2,
    "exclusiveArea": 71.14,
    "areaGroup": 71,
@@ -27,7 +29,7 @@
   },
   {
    "contractDate": "2026-06-01",
-   "price": 525000000,
+   "priceWon": 525000000,
    "floor": 4,
    "exclusiveArea": 71.14,
    "areaGroup": 71,
@@ -36,7 +38,7 @@
   },
   {
    "contractDate": "2026-05-28",
-   "price": 488000000,
+   "priceWon": 488000000,
    "floor": 12,
    "exclusiveArea": 71.14,
    "areaGroup": 71,
@@ -45,7 +47,7 @@
   },
   {
    "contractDate": "2026-05-23",
-   "price": 491000000,
+   "priceWon": 491000000,
    "floor": 8,
    "exclusiveArea": 84.96,
    "areaGroup": 85,
@@ -54,7 +56,7 @@
   },
   {
    "contractDate": "2026-04-16",
-   "price": 420000000,
+   "priceWon": 420000000,
    "floor": 11,
    "exclusiveArea": 71.14,
    "areaGroup": 71,
@@ -63,7 +65,7 @@
   },
   {
    "contractDate": "2026-04-02",
-   "price": 460000000,
+   "priceWon": 460000000,
    "floor": 8,
    "exclusiveArea": 71.14,
    "areaGroup": 71,
@@ -72,7 +74,7 @@
   },
   {
    "contractDate": "2026-03-30",
-   "price": 725650000,
+   "priceWon": 725650000,
    "floor": 6,
    "exclusiveArea": 138.18,
    "areaGroup": 138,
@@ -81,7 +83,7 @@
   },
   {
    "contractDate": "2026-03-26",
-   "price": 446050000,
+   "priceWon": 446050000,
    "floor": 8,
    "exclusiveArea": 71.8,
    "areaGroup": 72,
@@ -90,7 +92,7 @@
   },
   {
    "contractDate": "2026-03-25",
-   "price": 441950000,
+   "priceWon": 441950000,
    "floor": 6,
    "exclusiveArea": 71.14,
    "areaGroup": 71,
@@ -99,7 +101,7 @@
   },
   {
    "contractDate": "2026-02-21",
-   "price": 450000000,
+   "priceWon": 450000000,
    "floor": 5,
    "exclusiveArea": 71.14,
    "areaGroup": 71,
@@ -108,7 +110,7 @@
   },
   {
    "contractDate": "2026-02-15",
-   "price": 424450000,
+   "priceWon": 424450000,
    "floor": 6,
    "exclusiveArea": 71.8,
    "areaGroup": 72,
@@ -117,7 +119,7 @@
   },
   {
    "contractDate": "2026-02-14",
-   "price": 440000000,
+   "priceWon": 440000000,
    "floor": 12,
    "exclusiveArea": 71.8,
    "areaGroup": 72,
@@ -126,7 +128,7 @@
   },
   {
    "contractDate": "2026-02-13",
-   "price": 455000000,
+   "priceWon": 455000000,
    "floor": 7,
    "exclusiveArea": 71.14,
    "areaGroup": 71,
@@ -135,12 +137,19 @@
   },
   {
    "contractDate": "2026-02-01",
-   "price": 405000000,
+   "priceWon": 405000000,
    "floor": 10,
    "exclusiveArea": 63.44,
    "areaGroup": 63,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 35.2018966096167,
+  "longitude": 129.0813609014,
+  "roadAddress": "부산 동래구 충렬대로202번길 14",
+  "jibunAddress": "부산 동래구 수안동 665-1",
+  "geocodeStatus": "valid"
+ }
 }

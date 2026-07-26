@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "27230-135",
  "apartmentName": "칠곡동서영남",
  "sidoCode": "27",
@@ -15,7 +17,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-12",
-   "price": 158000000,
+   "priceWon": 158000000,
    "floor": 8,
    "exclusiveArea": 70.33,
    "areaGroup": 70,
@@ -24,7 +26,7 @@
   },
   {
    "contractDate": "2026-06-09",
-   "price": 115000000,
+   "priceWon": 115000000,
    "floor": 1,
    "exclusiveArea": 70.33,
    "areaGroup": 70,
@@ -33,7 +35,7 @@
   },
   {
    "contractDate": "2026-05-28",
-   "price": 157000000,
+   "priceWon": 157000000,
    "floor": 12,
    "exclusiveArea": 59.84,
    "areaGroup": 60,
@@ -42,7 +44,7 @@
   },
   {
    "contractDate": "2026-05-26",
-   "price": 160000000,
+   "priceWon": 160000000,
    "floor": 11,
    "exclusiveArea": 59.84,
    "areaGroup": 60,
@@ -51,7 +53,7 @@
   },
   {
    "contractDate": "2026-04-23",
-   "price": 147000000,
+   "priceWon": 147000000,
    "floor": 11,
    "exclusiveArea": 70.33,
    "areaGroup": 70,
@@ -60,7 +62,7 @@
   },
   {
    "contractDate": "2026-04-15",
-   "price": 145000000,
+   "priceWon": 145000000,
    "floor": 7,
    "exclusiveArea": 70.33,
    "areaGroup": 70,
@@ -69,7 +71,7 @@
   },
   {
    "contractDate": "2026-04-09",
-   "price": 123000000,
+   "priceWon": 123000000,
    "floor": 11,
    "exclusiveArea": 59.84,
    "areaGroup": 60,
@@ -78,7 +80,7 @@
   },
   {
    "contractDate": "2026-03-25",
-   "price": 120000000,
+   "priceWon": 120000000,
    "floor": 4,
    "exclusiveArea": 59.84,
    "areaGroup": 60,
@@ -87,7 +89,7 @@
   },
   {
    "contractDate": "2026-03-23",
-   "price": 144000000,
+   "priceWon": 144000000,
    "floor": 1,
    "exclusiveArea": 59.84,
    "areaGroup": 60,
@@ -96,7 +98,7 @@
   },
   {
    "contractDate": "2026-03-22",
-   "price": 115000000,
+   "priceWon": 115000000,
    "floor": 12,
    "exclusiveArea": 59.84,
    "areaGroup": 60,
@@ -105,7 +107,7 @@
   },
   {
    "contractDate": "2026-03-19",
-   "price": 122000000,
+   "priceWon": 122000000,
    "floor": 8,
    "exclusiveArea": 59.84,
    "areaGroup": 60,
@@ -114,7 +116,7 @@
   },
   {
    "contractDate": "2026-03-10",
-   "price": 146000000,
+   "priceWon": 146000000,
    "floor": 14,
    "exclusiveArea": 59.84,
    "areaGroup": 60,
@@ -123,12 +125,19 @@
   },
   {
    "contractDate": "2026-02-28",
-   "price": 147000000,
+   "priceWon": 147000000,
    "floor": 8,
    "exclusiveArea": 59.84,
    "areaGroup": 60,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 36.3597800330602,
+  "longitude": 127.305417688475,
+  "roadAddress": "",
+  "jibunAddress": "대전 유성구 구암동 695-1",
+  "geocodeStatus": "ambiguous"
+ }
 }

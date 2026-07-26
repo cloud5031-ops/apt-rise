@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "36110-194",
  "apartmentName": "첫마을1단지(퍼스트프라임)",
  "sidoCode": "36",
@@ -20,7 +22,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-27",
-   "price": 330000000,
+   "priceWon": 330000000,
    "floor": 3,
    "exclusiveArea": 59.61,
    "areaGroup": 60,
@@ -29,7 +31,7 @@
   },
   {
    "contractDate": "2026-05-26",
-   "price": 565000000,
+   "priceWon": 565000000,
    "floor": 7,
    "exclusiveArea": 84.91,
    "areaGroup": 85,
@@ -38,7 +40,7 @@
   },
   {
    "contractDate": "2026-05-18",
-   "price": 540000000,
+   "priceWon": 540000000,
    "floor": 10,
    "exclusiveArea": 84.96,
    "areaGroup": 85,
@@ -47,7 +49,7 @@
   },
   {
    "contractDate": "2026-05-17",
-   "price": 565000000,
+   "priceWon": 565000000,
    "floor": 11,
    "exclusiveArea": 84.91,
    "areaGroup": 85,
@@ -56,7 +58,7 @@
   },
   {
    "contractDate": "2026-05-10",
-   "price": 675000000,
+   "priceWon": 675000000,
    "floor": 14,
    "exclusiveArea": 84.96,
    "areaGroup": 85,
@@ -65,7 +67,7 @@
   },
   {
    "contractDate": "2026-04-30",
-   "price": 375000000,
+   "priceWon": 375000000,
    "floor": 4,
    "exclusiveArea": 59.83,
    "areaGroup": 60,
@@ -74,7 +76,7 @@
   },
   {
    "contractDate": "2026-04-30",
-   "price": 535000000,
+   "priceWon": 535000000,
    "floor": 1,
    "exclusiveArea": 84.99,
    "areaGroup": 85,
@@ -83,7 +85,7 @@
   },
   {
    "contractDate": "2026-04-11",
-   "price": 530000000,
+   "priceWon": 530000000,
    "floor": 4,
    "exclusiveArea": 84.96,
    "areaGroup": 85,
@@ -92,7 +94,7 @@
   },
   {
    "contractDate": "2026-03-21",
-   "price": 730000000,
+   "priceWon": 730000000,
    "floor": 17,
    "exclusiveArea": 119.78,
    "areaGroup": 120,
@@ -101,7 +103,7 @@
   },
   {
    "contractDate": "2026-03-19",
-   "price": 660000000,
+   "priceWon": 660000000,
    "floor": 22,
    "exclusiveArea": 84.91,
    "areaGroup": 85,
@@ -110,7 +112,7 @@
   },
   {
    "contractDate": "2026-03-17",
-   "price": 550000000,
+   "priceWon": 550000000,
    "floor": 3,
    "exclusiveArea": 84.81,
    "areaGroup": 85,
@@ -119,12 +121,19 @@
   },
   {
    "contractDate": "2026-02-27",
-   "price": 580000000,
+   "priceWon": 580000000,
    "floor": 13,
    "exclusiveArea": 84.96,
    "areaGroup": 85,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 36.4813987647382,
+  "longitude": 127.258172357564,
+  "roadAddress": "세종특별자치시 노을3로 14",
+  "jibunAddress": "세종특별자치시 한솔동 939",
+  "geocodeStatus": "valid"
+ }
 }

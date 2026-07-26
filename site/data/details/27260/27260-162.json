@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "27260-162",
  "apartmentName": "범물에덴,신화아파트",
  "sidoCode": "27",
@@ -15,7 +17,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-30",
-   "price": 205000000,
+   "priceWon": 205000000,
    "floor": 2,
    "exclusiveArea": 83.46,
    "areaGroup": 83,
@@ -24,7 +26,7 @@
   },
   {
    "contractDate": "2026-06-27",
-   "price": 235000000,
+   "priceWon": 235000000,
    "floor": 8,
    "exclusiveArea": 83.46,
    "areaGroup": 83,
@@ -33,7 +35,7 @@
   },
   {
    "contractDate": "2026-05-26",
-   "price": 267500000,
+   "priceWon": 267500000,
    "floor": 6,
    "exclusiveArea": 83.46,
    "areaGroup": 83,
@@ -42,7 +44,7 @@
   },
   {
    "contractDate": "2026-05-02",
-   "price": 235000000,
+   "priceWon": 235000000,
    "floor": 2,
    "exclusiveArea": 83.46,
    "areaGroup": 83,
@@ -51,7 +53,7 @@
   },
   {
    "contractDate": "2026-04-21",
-   "price": 214000000,
+   "priceWon": 214000000,
    "floor": 14,
    "exclusiveArea": 83.46,
    "areaGroup": 83,
@@ -60,7 +62,7 @@
   },
   {
    "contractDate": "2026-04-19",
-   "price": 232500000,
+   "priceWon": 232500000,
    "floor": 4,
    "exclusiveArea": 84.94,
    "areaGroup": 85,
@@ -69,7 +71,7 @@
   },
   {
    "contractDate": "2026-03-31",
-   "price": 240000000,
+   "priceWon": 240000000,
    "floor": 12,
    "exclusiveArea": 84.94,
    "areaGroup": 85,
@@ -78,7 +80,7 @@
   },
   {
    "contractDate": "2026-03-30",
-   "price": 201000000,
+   "priceWon": 201000000,
    "floor": 12,
    "exclusiveArea": 83.46,
    "areaGroup": 83,
@@ -87,7 +89,7 @@
   },
   {
    "contractDate": "2026-03-27",
-   "price": 215000000,
+   "priceWon": 215000000,
    "floor": 11,
    "exclusiveArea": 83.46,
    "areaGroup": 83,
@@ -96,7 +98,7 @@
   },
   {
    "contractDate": "2026-03-26",
-   "price": 210000000,
+   "priceWon": 210000000,
    "floor": 9,
    "exclusiveArea": 83.46,
    "areaGroup": 83,
@@ -105,7 +107,7 @@
   },
   {
    "contractDate": "2026-03-21",
-   "price": 200000000,
+   "priceWon": 200000000,
    "floor": 11,
    "exclusiveArea": 83.46,
    "areaGroup": 83,
@@ -114,7 +116,7 @@
   },
   {
    "contractDate": "2026-03-03",
-   "price": 197000000,
+   "priceWon": 197000000,
    "floor": 6,
    "exclusiveArea": 83.46,
    "areaGroup": 83,
@@ -123,12 +125,19 @@
   },
   {
    "contractDate": "2026-03-02",
-   "price": 233000000,
+   "priceWon": 233000000,
    "floor": 11,
    "exclusiveArea": 84.94,
    "areaGroup": 85,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 35.819020406576,
+  "longitude": 128.640105034049,
+  "roadAddress": "대구 수성구 지범로40길 6",
+  "jibunAddress": "대구 수성구 범물동 1332",
+  "geocodeStatus": "valid"
+ }
 }

@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "48880-44",
  "apartmentName": "대경넥스빌",
  "sidoCode": "48",
@@ -15,7 +17,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-17",
-   "price": 175000000,
+   "priceWon": 175000000,
    "floor": 8,
    "exclusiveArea": 76.46,
    "areaGroup": 76,
@@ -24,7 +26,7 @@
   },
   {
    "contractDate": "2026-06-09",
-   "price": 197500000,
+   "priceWon": 197500000,
    "floor": 6,
    "exclusiveArea": 84.87,
    "areaGroup": 85,
@@ -33,7 +35,7 @@
   },
   {
    "contractDate": "2026-05-26",
-   "price": 235000000,
+   "priceWon": 235000000,
    "floor": 10,
    "exclusiveArea": 84.87,
    "areaGroup": 85,
@@ -42,7 +44,7 @@
   },
   {
    "contractDate": "2026-05-07",
-   "price": 232000000,
+   "priceWon": 232000000,
    "floor": 5,
    "exclusiveArea": 84.87,
    "areaGroup": 85,
@@ -51,7 +53,7 @@
   },
   {
    "contractDate": "2026-03-11",
-   "price": 224000000,
+   "priceWon": 224000000,
    "floor": 9,
    "exclusiveArea": 84.87,
    "areaGroup": 85,
@@ -60,7 +62,7 @@
   },
   {
    "contractDate": "2026-03-10",
-   "price": 190000000,
+   "priceWon": 190000000,
    "floor": 5,
    "exclusiveArea": 84.87,
    "areaGroup": 85,
@@ -69,7 +71,7 @@
   },
   {
    "contractDate": "2026-02-27",
-   "price": 195000000,
+   "priceWon": 195000000,
    "floor": 4,
    "exclusiveArea": 84.87,
    "areaGroup": 85,
@@ -78,12 +80,19 @@
   },
   {
    "contractDate": "2026-02-25",
-   "price": 174000000,
+   "priceWon": 174000000,
    "floor": 2,
    "exclusiveArea": 76.46,
    "areaGroup": 76,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 35.6890142838994,
+  "longitude": 127.901555727603,
+  "roadAddress": "경남 거창군 거창읍 거열로7길 25",
+  "jibunAddress": "경남 거창군 거창읍 상림리 772",
+  "geocodeStatus": "valid"
+ }
 }

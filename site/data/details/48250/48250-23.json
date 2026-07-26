@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "48250-23",
  "apartmentName": "분성마을현대I아파트2",
  "sidoCode": "48",
@@ -14,7 +16,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-16",
-   "price": 202000000,
+   "priceWon": 202000000,
    "floor": 6,
    "exclusiveArea": 84.9611,
    "areaGroup": 85,
@@ -23,7 +25,7 @@
   },
   {
    "contractDate": "2026-06-03",
-   "price": 208000000,
+   "priceWon": 208000000,
    "floor": 12,
    "exclusiveArea": 84.9611,
    "areaGroup": 85,
@@ -32,7 +34,7 @@
   },
   {
    "contractDate": "2026-04-26",
-   "price": 168000000,
+   "priceWon": 168000000,
    "floor": 1,
    "exclusiveArea": 84.9611,
    "areaGroup": 85,
@@ -41,7 +43,7 @@
   },
   {
    "contractDate": "2026-03-06",
-   "price": 164000000,
+   "priceWon": 164000000,
    "floor": 16,
    "exclusiveArea": 84.9611,
    "areaGroup": 85,
@@ -50,7 +52,7 @@
   },
   {
    "contractDate": "2026-03-05",
-   "price": 156000000,
+   "priceWon": 156000000,
    "floor": 12,
    "exclusiveArea": 84.9611,
    "areaGroup": 85,
@@ -59,12 +61,19 @@
   },
   {
    "contractDate": "2026-02-11",
-   "price": 160000000,
+   "priceWon": 160000000,
    "floor": 8,
    "exclusiveArea": 84.9611,
    "areaGroup": 85,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 35.2682616672502,
+  "longitude": 128.869127044282,
+  "roadAddress": "경남 김해시 가야로 72",
+  "jibunAddress": "경남 김해시 삼계동 1428-4",
+  "geocodeStatus": "valid"
+ }
 }

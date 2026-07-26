@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "27230-1008",
  "apartmentName": "코오롱하늘채2단지",
  "sidoCode": "27",
@@ -19,7 +21,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-26",
-   "price": 560000000,
+   "priceWon": 560000000,
    "floor": 7,
    "exclusiveArea": 125.4543,
    "areaGroup": 125,
@@ -28,7 +30,7 @@
   },
   {
    "contractDate": "2026-06-19",
-   "price": 414000000,
+   "priceWon": 414000000,
    "floor": 9,
    "exclusiveArea": 84.799,
    "areaGroup": 85,
@@ -37,7 +39,7 @@
   },
   {
    "contractDate": "2026-06-13",
-   "price": 645000000,
+   "priceWon": 645000000,
    "floor": 21,
    "exclusiveArea": 134.1855,
    "areaGroup": 134,
@@ -46,7 +48,7 @@
   },
   {
    "contractDate": "2026-06-04",
-   "price": 620000000,
+   "priceWon": 620000000,
    "floor": 17,
    "exclusiveArea": 134.1855,
    "areaGroup": 134,
@@ -55,7 +57,7 @@
   },
   {
    "contractDate": "2026-05-09",
-   "price": 450000000,
+   "priceWon": 450000000,
    "floor": 3,
    "exclusiveArea": 84.5064,
    "areaGroup": 85,
@@ -64,7 +66,7 @@
   },
   {
    "contractDate": "2026-05-01",
-   "price": 522000000,
+   "priceWon": 522000000,
    "floor": 11,
    "exclusiveArea": 106.382,
    "areaGroup": 106,
@@ -73,7 +75,7 @@
   },
   {
    "contractDate": "2026-04-23",
-   "price": 590000000,
+   "priceWon": 590000000,
    "floor": 9,
    "exclusiveArea": 134.1855,
    "areaGroup": 134,
@@ -82,7 +84,7 @@
   },
   {
    "contractDate": "2026-04-17",
-   "price": 460000000,
+   "priceWon": 460000000,
    "floor": 19,
    "exclusiveArea": 84.799,
    "areaGroup": 85,
@@ -91,7 +93,7 @@
   },
   {
    "contractDate": "2026-04-05",
-   "price": 415000000,
+   "priceWon": 415000000,
    "floor": 23,
    "exclusiveArea": 84.799,
    "areaGroup": 85,
@@ -100,7 +102,7 @@
   },
   {
    "contractDate": "2026-03-26",
-   "price": 480000000,
+   "priceWon": 480000000,
    "floor": 17,
    "exclusiveArea": 84.5064,
    "areaGroup": 85,
@@ -109,7 +111,7 @@
   },
   {
    "contractDate": "2026-03-21",
-   "price": 545000000,
+   "priceWon": 545000000,
    "floor": 17,
    "exclusiveArea": 106.382,
    "areaGroup": 106,
@@ -118,7 +120,7 @@
   },
   {
    "contractDate": "2026-03-21",
-   "price": 599500000,
+   "priceWon": 599500000,
    "floor": 7,
    "exclusiveArea": 134.1855,
    "areaGroup": 134,
@@ -127,7 +129,7 @@
   },
   {
    "contractDate": "2026-03-18",
-   "price": 385000000,
+   "priceWon": 385000000,
    "floor": 4,
    "exclusiveArea": 84.799,
    "areaGroup": 85,
@@ -136,7 +138,7 @@
   },
   {
    "contractDate": "2026-03-09",
-   "price": 697000000,
+   "priceWon": 697000000,
    "floor": 21,
    "exclusiveArea": 134.1855,
    "areaGroup": 134,
@@ -145,7 +147,7 @@
   },
   {
    "contractDate": "2026-02-20",
-   "price": 525000000,
+   "priceWon": 525000000,
    "floor": 11,
    "exclusiveArea": 106.382,
    "areaGroup": 106,
@@ -154,7 +156,7 @@
   },
   {
    "contractDate": "2026-02-14",
-   "price": 440000000,
+   "priceWon": 440000000,
    "floor": 16,
    "exclusiveArea": 84.9749,
    "areaGroup": 85,
@@ -163,7 +165,7 @@
   },
   {
    "contractDate": "2026-02-13",
-   "price": 418000000,
+   "priceWon": 418000000,
    "floor": 22,
    "exclusiveArea": 84.799,
    "areaGroup": 85,
@@ -172,7 +174,7 @@
   },
   {
    "contractDate": "2026-02-07",
-   "price": 508000000,
+   "priceWon": 508000000,
    "floor": 14,
    "exclusiveArea": 106.382,
    "areaGroup": 106,
@@ -181,12 +183,19 @@
   },
   {
    "contractDate": "2026-02-06",
-   "price": 440000000,
+   "priceWon": 440000000,
    "floor": 15,
    "exclusiveArea": 84.799,
    "areaGroup": 85,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 35.885820493766,
+  "longitude": 128.596196165783,
+  "roadAddress": "대구 북구 중앙대로 591",
+  "jibunAddress": "대구 북구 침산동 105-1",
+  "geocodeStatus": "valid"
+ }
 }

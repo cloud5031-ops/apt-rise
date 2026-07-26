@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "44131-850",
  "apartmentName": "신방한성필하우스",
  "sidoCode": "44",
@@ -20,7 +22,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-13",
-   "price": 327000000,
+   "priceWon": 327000000,
    "floor": 9,
    "exclusiveArea": 84.9879,
    "areaGroup": 85,
@@ -29,7 +31,7 @@
   },
   {
    "contractDate": "2026-06-12",
-   "price": 295000000,
+   "priceWon": 295000000,
    "floor": 3,
    "exclusiveArea": 108.2645,
    "areaGroup": 108,
@@ -38,7 +40,7 @@
   },
   {
    "contractDate": "2026-06-01",
-   "price": 288000000,
+   "priceWon": 288000000,
    "floor": 14,
    "exclusiveArea": 84.966,
    "areaGroup": 85,
@@ -47,7 +49,7 @@
   },
   {
    "contractDate": "2026-05-17",
-   "price": 280000000,
+   "priceWon": 280000000,
    "floor": 13,
    "exclusiveArea": 84.966,
    "areaGroup": 85,
@@ -56,7 +58,7 @@
   },
   {
    "contractDate": "2026-05-09",
-   "price": 295000000,
+   "priceWon": 295000000,
    "floor": 9,
    "exclusiveArea": 108.2645,
    "areaGroup": 108,
@@ -65,7 +67,7 @@
   },
   {
    "contractDate": "2026-04-25",
-   "price": 250000000,
+   "priceWon": 250000000,
    "floor": 5,
    "exclusiveArea": 84.9681,
    "areaGroup": 85,
@@ -74,7 +76,7 @@
   },
   {
    "contractDate": "2026-04-11",
-   "price": 250000000,
+   "priceWon": 250000000,
    "floor": 7,
    "exclusiveArea": 84.9681,
    "areaGroup": 85,
@@ -83,7 +85,7 @@
   },
   {
    "contractDate": "2026-04-11",
-   "price": 299000000,
+   "priceWon": 299000000,
    "floor": 8,
    "exclusiveArea": 108.2645,
    "areaGroup": 108,
@@ -92,7 +94,7 @@
   },
   {
    "contractDate": "2026-04-08",
-   "price": 238000000,
+   "priceWon": 238000000,
    "floor": 2,
    "exclusiveArea": 84.9681,
    "areaGroup": 85,
@@ -101,7 +103,7 @@
   },
   {
    "contractDate": "2026-03-20",
-   "price": 249000000,
+   "priceWon": 249000000,
    "floor": 10,
    "exclusiveArea": 84.9681,
    "areaGroup": 85,
@@ -110,7 +112,7 @@
   },
   {
    "contractDate": "2026-03-14",
-   "price": 220000000,
+   "priceWon": 220000000,
    "floor": 2,
    "exclusiveArea": 84.9681,
    "areaGroup": 85,
@@ -119,7 +121,7 @@
   },
   {
    "contractDate": "2026-03-01",
-   "price": 400000000,
+   "priceWon": 400000000,
    "floor": 3,
    "exclusiveArea": 148.7913,
    "areaGroup": 149,
@@ -128,7 +130,7 @@
   },
   {
    "contractDate": "2026-02-28",
-   "price": 287000000,
+   "priceWon": 287000000,
    "floor": 17,
    "exclusiveArea": 84.966,
    "areaGroup": 85,
@@ -137,7 +139,7 @@
   },
   {
    "contractDate": "2026-02-28",
-   "price": 299000000,
+   "priceWon": 299000000,
    "floor": 11,
    "exclusiveArea": 108.2578,
    "areaGroup": 108,
@@ -146,7 +148,7 @@
   },
   {
    "contractDate": "2026-02-27",
-   "price": 249000000,
+   "priceWon": 249000000,
    "floor": 8,
    "exclusiveArea": 84.9681,
    "areaGroup": 85,
@@ -155,7 +157,7 @@
   },
   {
    "contractDate": "2026-02-24",
-   "price": 245000000,
+   "priceWon": 245000000,
    "floor": 4,
    "exclusiveArea": 84.9681,
    "areaGroup": 85,
@@ -164,7 +166,7 @@
   },
   {
    "contractDate": "2026-02-21",
-   "price": 320000000,
+   "priceWon": 320000000,
    "floor": 10,
    "exclusiveArea": 108.0738,
    "areaGroup": 108,
@@ -173,12 +175,19 @@
   },
   {
    "contractDate": "2026-02-11",
-   "price": 295000000,
+   "priceWon": 295000000,
    "floor": 7,
    "exclusiveArea": 84.966,
    "areaGroup": 85,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 36.7762840514177,
+  "longitude": 127.132870077563,
+  "roadAddress": "충남 천안시 동남구 통정3로 68",
+  "jibunAddress": "충남 천안시 동남구 신방동 1557",
+  "geocodeStatus": "valid"
+ }
 }

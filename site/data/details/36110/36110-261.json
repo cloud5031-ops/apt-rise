@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "36110-261",
  "apartmentName": "가재마을7단지(중흥S클래스센터파크1차)",
  "sidoCode": "36",
@@ -16,7 +18,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-22",
-   "price": 600000000,
+   "priceWon": 600000000,
    "floor": 20,
    "exclusiveArea": 84.9911,
    "areaGroup": 85,
@@ -25,7 +27,7 @@
   },
   {
    "contractDate": "2026-05-26",
-   "price": 665000000,
+   "priceWon": 665000000,
    "floor": 28,
    "exclusiveArea": 106.76,
    "areaGroup": 107,
@@ -34,7 +36,7 @@
   },
   {
    "contractDate": "2026-05-13",
-   "price": 600000000,
+   "priceWon": 600000000,
    "floor": 11,
    "exclusiveArea": 84.9941,
    "areaGroup": 85,
@@ -43,7 +45,7 @@
   },
   {
    "contractDate": "2026-05-11",
-   "price": 677000000,
+   "priceWon": 677000000,
    "floor": 21,
    "exclusiveArea": 84.9941,
    "areaGroup": 85,
@@ -52,7 +54,7 @@
   },
   {
    "contractDate": "2026-05-07",
-   "price": 728500000,
+   "priceWon": 728500000,
    "floor": 28,
    "exclusiveArea": 84.9911,
    "areaGroup": 85,
@@ -61,7 +63,7 @@
   },
   {
    "contractDate": "2026-05-01",
-   "price": 610000000,
+   "priceWon": 610000000,
    "floor": 20,
    "exclusiveArea": 84.9911,
    "areaGroup": 85,
@@ -70,7 +72,7 @@
   },
   {
    "contractDate": "2026-04-26",
-   "price": 610000000,
+   "priceWon": 610000000,
    "floor": 24,
    "exclusiveArea": 84.9941,
    "areaGroup": 85,
@@ -79,7 +81,7 @@
   },
   {
    "contractDate": "2026-04-03",
-   "price": 500000000,
+   "priceWon": 500000000,
    "floor": 11,
    "exclusiveArea": 84.9941,
    "areaGroup": 85,
@@ -88,7 +90,7 @@
   },
   {
    "contractDate": "2026-03-30",
-   "price": 625000000,
+   "priceWon": 625000000,
    "floor": 26,
    "exclusiveArea": 84.9941,
    "areaGroup": 85,
@@ -97,7 +99,7 @@
   },
   {
    "contractDate": "2026-03-12",
-   "price": 685000000,
+   "priceWon": 685000000,
    "floor": 23,
    "exclusiveArea": 106.76,
    "areaGroup": 107,
@@ -106,7 +108,7 @@
   },
   {
    "contractDate": "2026-02-22",
-   "price": 649000000,
+   "priceWon": 649000000,
    "floor": 11,
    "exclusiveArea": 84.9941,
    "areaGroup": 85,
@@ -115,7 +117,7 @@
   },
   {
    "contractDate": "2026-02-07",
-   "price": 600000000,
+   "priceWon": 600000000,
    "floor": 8,
    "exclusiveArea": 84.9941,
    "areaGroup": 85,
@@ -124,12 +126,19 @@
   },
   {
    "contractDate": "2026-02-07",
-   "price": 680000000,
+   "priceWon": 680000000,
    "floor": 28,
    "exclusiveArea": 106.76,
    "areaGroup": 107,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 36.5066824177709,
+  "longitude": 127.248195972685,
+  "roadAddress": "세종특별자치시 달빛로 77",
+  "jibunAddress": "세종특별자치시 종촌동 649",
+  "geocodeStatus": "valid"
+ }
 }

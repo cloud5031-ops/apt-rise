@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "43113-417",
  "apartmentName": "어울림",
  "sidoCode": "43",
@@ -17,7 +19,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-26",
-   "price": 570000000,
+   "priceWon": 570000000,
    "floor": 12,
    "exclusiveArea": 131.309,
    "areaGroup": 131,
@@ -26,7 +28,7 @@
   },
   {
    "contractDate": "2026-06-21",
-   "price": 516000000,
+   "priceWon": 516000000,
    "floor": 9,
    "exclusiveArea": 131.309,
    "areaGroup": 131,
@@ -35,7 +37,7 @@
   },
   {
    "contractDate": "2026-06-21",
-   "price": 685000000,
+   "priceWon": 685000000,
    "floor": 18,
    "exclusiveArea": 163.847,
    "areaGroup": 164,
@@ -44,7 +46,7 @@
   },
   {
    "contractDate": "2026-06-12",
-   "price": 590000000,
+   "priceWon": 590000000,
    "floor": 12,
    "exclusiveArea": 163.847,
    "areaGroup": 164,
@@ -53,7 +55,7 @@
   },
   {
    "contractDate": "2026-06-07",
-   "price": 550000000,
+   "priceWon": 550000000,
    "floor": 8,
    "exclusiveArea": 163.847,
    "areaGroup": 164,
@@ -62,7 +64,7 @@
   },
   {
    "contractDate": "2026-06-06",
-   "price": 420000000,
+   "priceWon": 420000000,
    "floor": 13,
    "exclusiveArea": 84.627,
    "areaGroup": 85,
@@ -71,7 +73,7 @@
   },
   {
    "contractDate": "2026-06-03",
-   "price": 423000000,
+   "priceWon": 423000000,
    "floor": 11,
    "exclusiveArea": 84.627,
    "areaGroup": 85,
@@ -80,7 +82,7 @@
   },
   {
    "contractDate": "2026-06-02",
-   "price": 509000000,
+   "priceWon": 509000000,
    "floor": 1,
    "exclusiveArea": 131.309,
    "areaGroup": 131,
@@ -89,7 +91,7 @@
   },
   {
    "contractDate": "2026-05-27",
-   "price": 457000000,
+   "priceWon": 457000000,
    "floor": 17,
    "exclusiveArea": 99.693,
    "areaGroup": 100,
@@ -98,7 +100,7 @@
   },
   {
    "contractDate": "2026-05-25",
-   "price": 429000000,
+   "priceWon": 429000000,
    "floor": 2,
    "exclusiveArea": 84.627,
    "areaGroup": 85,
@@ -107,7 +109,7 @@
   },
   {
    "contractDate": "2026-05-10",
-   "price": 450000000,
+   "priceWon": 450000000,
    "floor": 14,
    "exclusiveArea": 84.627,
    "areaGroup": 85,
@@ -116,7 +118,7 @@
   },
   {
    "contractDate": "2026-05-10",
-   "price": 375000000,
+   "priceWon": 375000000,
    "floor": 1,
    "exclusiveArea": 99.693,
    "areaGroup": 100,
@@ -125,7 +127,7 @@
   },
   {
    "contractDate": "2026-05-08",
-   "price": 598000000,
+   "priceWon": 598000000,
    "floor": 20,
    "exclusiveArea": 131.309,
    "areaGroup": 131,
@@ -134,7 +136,7 @@
   },
   {
    "contractDate": "2026-05-02",
-   "price": 530000000,
+   "priceWon": 530000000,
    "floor": 9,
    "exclusiveArea": 163.847,
    "areaGroup": 164,
@@ -143,7 +145,7 @@
   },
   {
    "contractDate": "2026-04-29",
-   "price": 570000000,
+   "priceWon": 570000000,
    "floor": 17,
    "exclusiveArea": 163.847,
    "areaGroup": 164,
@@ -152,7 +154,7 @@
   },
   {
    "contractDate": "2026-04-08",
-   "price": 410000000,
+   "priceWon": 410000000,
    "floor": 4,
    "exclusiveArea": 84.627,
    "areaGroup": 85,
@@ -161,7 +163,7 @@
   },
   {
    "contractDate": "2026-03-26",
-   "price": 520000000,
+   "priceWon": 520000000,
    "floor": 11,
    "exclusiveArea": 163.847,
    "areaGroup": 164,
@@ -170,7 +172,7 @@
   },
   {
    "contractDate": "2026-03-22",
-   "price": 540000000,
+   "priceWon": 540000000,
    "floor": 6,
    "exclusiveArea": 163.847,
    "areaGroup": 164,
@@ -179,7 +181,7 @@
   },
   {
    "contractDate": "2026-02-23",
-   "price": 460000000,
+   "priceWon": 460000000,
    "floor": 14,
    "exclusiveArea": 99.693,
    "areaGroup": 100,
@@ -188,7 +190,7 @@
   },
   {
    "contractDate": "2026-02-22",
-   "price": 515000000,
+   "priceWon": 515000000,
    "floor": 2,
    "exclusiveArea": 163.847,
    "areaGroup": 164,
@@ -197,12 +199,19 @@
   },
   {
    "contractDate": "2026-02-10",
-   "price": 378000000,
+   "priceWon": 378000000,
    "floor": 1,
    "exclusiveArea": 84.627,
    "areaGroup": 85,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 36.640875590962,
+  "longitude": 127.436343275919,
+  "roadAddress": "충북 청주시 흥덕구 대신로74번길 21",
+  "jibunAddress": "충북 청주시 흥덕구 복대동 3367",
+  "geocodeStatus": "valid"
+ }
 }

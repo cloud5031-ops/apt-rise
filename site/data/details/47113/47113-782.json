@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "47113-782",
  "apartmentName": "양덕삼구트리니엔",
  "sidoCode": "47",
@@ -14,7 +16,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-12",
-   "price": 240000000,
+   "priceWon": 240000000,
    "floor": 10,
    "exclusiveArea": 84.9805,
    "areaGroup": 85,
@@ -23,7 +25,7 @@
   },
   {
    "contractDate": "2026-06-04",
-   "price": 230000000,
+   "priceWon": 230000000,
    "floor": 15,
    "exclusiveArea": 84.9805,
    "areaGroup": 85,
@@ -32,7 +34,7 @@
   },
   {
    "contractDate": "2026-05-11",
-   "price": 169000000,
+   "priceWon": 169000000,
    "floor": 11,
    "exclusiveArea": 84.9805,
    "areaGroup": 85,
@@ -41,7 +43,7 @@
   },
   {
    "contractDate": "2026-05-01",
-   "price": 215000000,
+   "priceWon": 215000000,
    "floor": 21,
    "exclusiveArea": 84.9805,
    "areaGroup": 85,
@@ -50,7 +52,7 @@
   },
   {
    "contractDate": "2026-04-13",
-   "price": 203000000,
+   "priceWon": 203000000,
    "floor": 15,
    "exclusiveArea": 84.9805,
    "areaGroup": 85,
@@ -59,12 +61,19 @@
   },
   {
    "contractDate": "2026-02-13",
-   "price": 200000000,
+   "priceWon": 200000000,
    "floor": 16,
    "exclusiveArea": 84.9805,
    "areaGroup": 85,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 36.0838658851387,
+  "longitude": 129.400454733556,
+  "roadAddress": "경북 포항시 북구 천마로72번길 33",
+  "jibunAddress": "경북 포항시 북구 양덕동 1463",
+  "geocodeStatus": "valid"
+ }
 }

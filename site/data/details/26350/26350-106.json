@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "26350-106",
  "apartmentName": "건영1",
  "sidoCode": "26",
@@ -17,7 +19,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-21",
-   "price": 405000000,
+   "priceWon": 405000000,
    "floor": 20,
    "exclusiveArea": 59.88,
    "areaGroup": 60,
@@ -26,7 +28,7 @@
   },
   {
    "contractDate": "2026-06-06",
-   "price": 390000000,
+   "priceWon": 390000000,
    "floor": 20,
    "exclusiveArea": 59.88,
    "areaGroup": 60,
@@ -35,7 +37,7 @@
   },
   {
    "contractDate": "2026-05-18",
-   "price": 350000000,
+   "priceWon": 350000000,
    "floor": 5,
    "exclusiveArea": 59.88,
    "areaGroup": 60,
@@ -44,7 +46,7 @@
   },
   {
    "contractDate": "2026-05-09",
-   "price": 530000000,
+   "priceWon": 530000000,
    "floor": 16,
    "exclusiveArea": 134.83,
    "areaGroup": 135,
@@ -53,7 +55,7 @@
   },
   {
    "contractDate": "2026-03-28",
-   "price": 362500000,
+   "priceWon": 362500000,
    "floor": 6,
    "exclusiveArea": 59.88,
    "areaGroup": 60,
@@ -62,7 +64,7 @@
   },
   {
    "contractDate": "2026-03-28",
-   "price": 595000000,
+   "priceWon": 595000000,
    "floor": 11,
    "exclusiveArea": 99.96,
    "areaGroup": 100,
@@ -71,7 +73,7 @@
   },
   {
    "contractDate": "2026-03-11",
-   "price": 545000000,
+   "priceWon": 545000000,
    "floor": 12,
    "exclusiveArea": 84.93,
    "areaGroup": 85,
@@ -80,7 +82,7 @@
   },
   {
    "contractDate": "2026-02-21",
-   "price": 356000000,
+   "priceWon": 356000000,
    "floor": 10,
    "exclusiveArea": 59.88,
    "areaGroup": 60,
@@ -89,7 +91,7 @@
   },
   {
    "contractDate": "2026-02-21",
-   "price": 347000000,
+   "priceWon": 347000000,
    "floor": 20,
    "exclusiveArea": 59.88,
    "areaGroup": 60,
@@ -98,12 +100,19 @@
   },
   {
    "contractDate": "2026-02-14",
-   "price": 400000000,
+   "priceWon": 400000000,
    "floor": 23,
    "exclusiveArea": 59.88,
    "areaGroup": 60,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 35.1780676861726,
+  "longitude": 129.180562713471,
+  "roadAddress": "부산 해운대구 좌동순환로217번길 19",
+  "jibunAddress": "부산 해운대구 좌동 1414",
+  "geocodeStatus": "valid"
+ }
 }

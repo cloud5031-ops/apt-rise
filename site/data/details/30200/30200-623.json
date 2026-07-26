@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "30200-623",
  "apartmentName": "대전노은4지구한화꿈에그린1블록",
  "sidoCode": "30",
@@ -16,7 +18,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-27",
-   "price": 520000000,
+   "priceWon": 520000000,
    "floor": 11,
    "exclusiveArea": 84.783,
    "areaGroup": 85,
@@ -25,7 +27,7 @@
   },
   {
    "contractDate": "2026-06-25",
-   "price": 510000000,
+   "priceWon": 510000000,
    "floor": 22,
    "exclusiveArea": 84.783,
    "areaGroup": 85,
@@ -34,7 +36,7 @@
   },
   {
    "contractDate": "2026-06-12",
-   "price": 510000000,
+   "priceWon": 510000000,
    "floor": 23,
    "exclusiveArea": 84.783,
    "areaGroup": 85,
@@ -43,7 +45,7 @@
   },
   {
    "contractDate": "2026-05-26",
-   "price": 625000000,
+   "priceWon": 625000000,
    "floor": 7,
    "exclusiveArea": 101.715,
    "areaGroup": 102,
@@ -52,7 +54,7 @@
   },
   {
    "contractDate": "2026-05-23",
-   "price": 520000000,
+   "priceWon": 520000000,
    "floor": 18,
    "exclusiveArea": 84.783,
    "areaGroup": 85,
@@ -61,7 +63,7 @@
   },
   {
    "contractDate": "2026-05-18",
-   "price": 510000000,
+   "priceWon": 510000000,
    "floor": 31,
    "exclusiveArea": 84.783,
    "areaGroup": 85,
@@ -70,7 +72,7 @@
   },
   {
    "contractDate": "2026-05-16",
-   "price": 520000000,
+   "priceWon": 520000000,
    "floor": 28,
    "exclusiveArea": 84.721,
    "areaGroup": 85,
@@ -79,7 +81,7 @@
   },
   {
    "contractDate": "2026-05-13",
-   "price": 625000000,
+   "priceWon": 625000000,
    "floor": 20,
    "exclusiveArea": 101.715,
    "areaGroup": 102,
@@ -88,7 +90,7 @@
   },
   {
    "contractDate": "2026-04-30",
-   "price": 510000000,
+   "priceWon": 510000000,
    "floor": 12,
    "exclusiveArea": 84.721,
    "areaGroup": 85,
@@ -97,7 +99,7 @@
   },
   {
    "contractDate": "2026-04-25",
-   "price": 470000000,
+   "priceWon": 470000000,
    "floor": 5,
    "exclusiveArea": 84.783,
    "areaGroup": 85,
@@ -106,7 +108,7 @@
   },
   {
    "contractDate": "2026-04-11",
-   "price": 720000000,
+   "priceWon": 720000000,
    "floor": 14,
    "exclusiveArea": 101.715,
    "areaGroup": 102,
@@ -115,7 +117,7 @@
   },
   {
    "contractDate": "2026-04-08",
-   "price": 720000000,
+   "priceWon": 720000000,
    "floor": 14,
    "exclusiveArea": 101.715,
    "areaGroup": 102,
@@ -124,7 +126,7 @@
   },
   {
    "contractDate": "2026-04-04",
-   "price": 488000000,
+   "priceWon": 488000000,
    "floor": 21,
    "exclusiveArea": 84.783,
    "areaGroup": 85,
@@ -133,7 +135,7 @@
   },
   {
    "contractDate": "2026-03-22",
-   "price": 466000000,
+   "priceWon": 466000000,
    "floor": 4,
    "exclusiveArea": 84.783,
    "areaGroup": 85,
@@ -142,7 +144,7 @@
   },
   {
    "contractDate": "2026-03-17",
-   "price": 475000000,
+   "priceWon": 475000000,
    "floor": 23,
    "exclusiveArea": 84.783,
    "areaGroup": 85,
@@ -151,7 +153,7 @@
   },
   {
    "contractDate": "2026-03-14",
-   "price": 489000000,
+   "priceWon": 489000000,
    "floor": 14,
    "exclusiveArea": 84.783,
    "areaGroup": 85,
@@ -160,7 +162,7 @@
   },
   {
    "contractDate": "2026-03-12",
-   "price": 517000000,
+   "priceWon": 517000000,
    "floor": 21,
    "exclusiveArea": 84.721,
    "areaGroup": 85,
@@ -169,12 +171,19 @@
   },
   {
    "contractDate": "2026-03-06",
-   "price": 520000000,
+   "priceWon": 520000000,
    "floor": 31,
    "exclusiveArea": 84.721,
    "areaGroup": 85,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 36.3879676496446,
+  "longitude": 127.301484225217,
+  "roadAddress": "대전 유성구 지족북로 33",
+  "jibunAddress": "대전 유성구 지족동 1089",
+  "geocodeStatus": "valid"
+ }
 }

@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "31110-2249",
  "apartmentName": "번영로센트리지5단지",
  "sidoCode": "31",
@@ -20,7 +22,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-22",
-   "price": 858000000,
+   "priceWon": 858000000,
    "floor": 12,
    "exclusiveArea": 84.986,
    "areaGroup": 85,
@@ -29,7 +31,7 @@
   },
   {
    "contractDate": "2026-06-20",
-   "price": 845000000,
+   "priceWon": 845000000,
    "floor": 15,
    "exclusiveArea": 84.926,
    "areaGroup": 85,
@@ -38,7 +40,7 @@
   },
   {
    "contractDate": "2026-06-18",
-   "price": 877000000,
+   "priceWon": 877000000,
    "floor": 13,
    "exclusiveArea": 84.986,
    "areaGroup": 85,
@@ -47,7 +49,7 @@
   },
   {
    "contractDate": "2026-06-13",
-   "price": 755000000,
+   "priceWon": 755000000,
    "floor": 2,
    "exclusiveArea": 84.893,
    "areaGroup": 85,
@@ -56,7 +58,7 @@
   },
   {
    "contractDate": "2026-06-04",
-   "price": 847000000,
+   "priceWon": 847000000,
    "floor": 19,
    "exclusiveArea": 84.986,
    "areaGroup": 85,
@@ -65,7 +67,7 @@
   },
   {
    "contractDate": "2026-05-26",
-   "price": 848000000,
+   "priceWon": 848000000,
    "floor": 7,
    "exclusiveArea": 84.893,
    "areaGroup": 85,
@@ -74,7 +76,7 @@
   },
   {
    "contractDate": "2026-05-19",
-   "price": 827000000,
+   "priceWon": 827000000,
    "floor": 16,
    "exclusiveArea": 84.962,
    "areaGroup": 85,
@@ -83,7 +85,7 @@
   },
   {
    "contractDate": "2026-05-14",
-   "price": 817000000,
+   "priceWon": 817000000,
    "floor": 22,
    "exclusiveArea": 84.926,
    "areaGroup": 85,
@@ -92,7 +94,7 @@
   },
   {
    "contractDate": "2026-04-07",
-   "price": 855000000,
+   "priceWon": 855000000,
    "floor": 9,
    "exclusiveArea": 84.971,
    "areaGroup": 85,
@@ -101,7 +103,7 @@
   },
   {
    "contractDate": "2026-03-27",
-   "price": 652000000,
+   "priceWon": 652000000,
    "floor": 4,
    "exclusiveArea": 59.865,
    "areaGroup": 60,
@@ -110,7 +112,7 @@
   },
   {
    "contractDate": "2026-03-05",
-   "price": 510000000,
+   "priceWon": 510000000,
    "floor": 18,
    "exclusiveArea": 84.986,
    "areaGroup": 85,
@@ -119,7 +121,7 @@
   },
   {
    "contractDate": "2026-03-04",
-   "price": 828000000,
+   "priceWon": 828000000,
    "floor": 6,
    "exclusiveArea": 84.893,
    "areaGroup": 85,
@@ -128,7 +130,7 @@
   },
   {
    "contractDate": "2026-02-25",
-   "price": 870000000,
+   "priceWon": 870000000,
    "floor": 24,
    "exclusiveArea": 84.971,
    "areaGroup": 85,
@@ -137,12 +139,19 @@
   },
   {
    "contractDate": "2026-02-16",
-   "price": 767000000,
+   "priceWon": 767000000,
    "floor": 18,
    "exclusiveArea": 75.916,
    "areaGroup": 76,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 35.5589075703417,
+  "longitude": 129.324581240172,
+  "roadAddress": "울산 중구 복산1길 1",
+  "jibunAddress": "울산 중구 복산동 834",
+  "geocodeStatus": "valid"
+ }
 }

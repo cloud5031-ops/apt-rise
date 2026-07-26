@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "47250-260",
  "apartmentName": "상주무양태왕아너스",
  "sidoCode": "47",
@@ -15,7 +17,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-15",
-   "price": 440000000,
+   "priceWon": 440000000,
    "floor": 8,
    "exclusiveArea": 84.9875,
    "areaGroup": 85,
@@ -24,7 +26,7 @@
   },
   {
    "contractDate": "2026-05-20",
-   "price": 439000000,
+   "priceWon": 439000000,
    "floor": 7,
    "exclusiveArea": 84.9875,
    "areaGroup": 85,
@@ -33,7 +35,7 @@
   },
   {
    "contractDate": "2026-05-04",
-   "price": 440000000,
+   "priceWon": 440000000,
    "floor": 8,
    "exclusiveArea": 84.9875,
    "areaGroup": 85,
@@ -42,7 +44,7 @@
   },
   {
    "contractDate": "2026-03-30",
-   "price": 385000000,
+   "priceWon": 385000000,
    "floor": 6,
    "exclusiveArea": 84.9875,
    "areaGroup": 85,
@@ -51,12 +53,19 @@
   },
   {
    "contractDate": "2026-03-04",
-   "price": 387000000,
+   "priceWon": 387000000,
    "floor": 11,
    "exclusiveArea": 84.959,
    "areaGroup": 85,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 36.4221941748119,
+  "longitude": 128.154096712715,
+  "roadAddress": "경북 상주시 동수4길 42-7",
+  "jibunAddress": "경북 상주시 무양동 318",
+  "geocodeStatus": "valid"
+ }
 }

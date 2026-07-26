@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "26350-2092",
  "apartmentName": "더샵센텀파크2차",
  "sidoCode": "26",
@@ -17,7 +19,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-15",
-   "price": 1130000000,
+   "priceWon": 1130000000,
    "floor": 19,
    "exclusiveArea": 84.6389,
    "areaGroup": 85,
@@ -26,7 +28,7 @@
   },
   {
    "contractDate": "2026-06-15",
-   "price": 1350000000,
+   "priceWon": 1350000000,
    "floor": 41,
    "exclusiveArea": 127.489,
    "areaGroup": 127,
@@ -35,7 +37,7 @@
   },
   {
    "contractDate": "2026-06-13",
-   "price": 1095000000,
+   "priceWon": 1095000000,
    "floor": 17,
    "exclusiveArea": 84.6389,
    "areaGroup": 85,
@@ -44,7 +46,7 @@
   },
   {
    "contractDate": "2026-06-13",
-   "price": 1280000000,
+   "priceWon": 1280000000,
    "floor": 9,
    "exclusiveArea": 127.489,
    "areaGroup": 127,
@@ -53,7 +55,7 @@
   },
   {
    "contractDate": "2026-05-07",
-   "price": 1080000000,
+   "priceWon": 1080000000,
    "floor": 19,
    "exclusiveArea": 84.6528,
    "areaGroup": 85,
@@ -62,7 +64,7 @@
   },
   {
    "contractDate": "2026-04-28",
-   "price": 1330000000,
+   "priceWon": 1330000000,
    "floor": 19,
    "exclusiveArea": 127.489,
    "areaGroup": 127,
@@ -71,7 +73,7 @@
   },
   {
    "contractDate": "2026-04-25",
-   "price": 1040000000,
+   "priceWon": 1040000000,
    "floor": 37,
    "exclusiveArea": 84.6389,
    "areaGroup": 85,
@@ -80,7 +82,7 @@
   },
   {
    "contractDate": "2026-04-24",
-   "price": 1145000000,
+   "priceWon": 1145000000,
    "floor": 11,
    "exclusiveArea": 100.945,
    "areaGroup": 101,
@@ -89,7 +91,7 @@
   },
   {
    "contractDate": "2026-04-03",
-   "price": 1010000000,
+   "priceWon": 1010000000,
    "floor": 9,
    "exclusiveArea": 84.6389,
    "areaGroup": 85,
@@ -98,7 +100,7 @@
   },
   {
    "contractDate": "2026-02-26",
-   "price": 1250000000,
+   "priceWon": 1250000000,
    "floor": 40,
    "exclusiveArea": 100.945,
    "areaGroup": 101,
@@ -107,12 +109,19 @@
   },
   {
    "contractDate": "2026-02-19",
-   "price": 1090000000,
+   "priceWon": 1090000000,
    "floor": 36,
    "exclusiveArea": 84.6389,
    "areaGroup": 85,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 35.1794241200433,
+  "longitude": 129.123126813123,
+  "roadAddress": "부산 해운대구 센텀중앙로 142",
+  "jibunAddress": "부산 해운대구 재송동 1197",
+  "geocodeStatus": "valid"
+ }
 }

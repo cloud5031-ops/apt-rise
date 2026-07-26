@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "47290-29",
  "apartmentName": "현대타운",
  "sidoCode": "47",
@@ -15,7 +17,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-29",
-   "price": 225000000,
+   "priceWon": 225000000,
    "floor": 16,
    "exclusiveArea": 59.82,
    "areaGroup": 60,
@@ -24,7 +26,7 @@
   },
   {
    "contractDate": "2026-06-20",
-   "price": 189000000,
+   "priceWon": 189000000,
    "floor": 15,
    "exclusiveArea": 59.82,
    "areaGroup": 60,
@@ -33,7 +35,7 @@
   },
   {
    "contractDate": "2026-05-27",
-   "price": 144000000,
+   "priceWon": 144000000,
    "floor": 2,
    "exclusiveArea": 59.82,
    "areaGroup": 60,
@@ -42,7 +44,7 @@
   },
   {
    "contractDate": "2026-05-17",
-   "price": 170000000,
+   "priceWon": 170000000,
    "floor": 16,
    "exclusiveArea": 59.82,
    "areaGroup": 60,
@@ -51,7 +53,7 @@
   },
   {
    "contractDate": "2026-05-15",
-   "price": 280000000,
+   "priceWon": 280000000,
    "floor": 16,
    "exclusiveArea": 84.99,
    "areaGroup": 85,
@@ -60,7 +62,7 @@
   },
   {
    "contractDate": "2026-05-13",
-   "price": 230000000,
+   "priceWon": 230000000,
    "floor": 4,
    "exclusiveArea": 84.99,
    "areaGroup": 85,
@@ -69,7 +71,7 @@
   },
   {
    "contractDate": "2026-04-29",
-   "price": 190000000,
+   "priceWon": 190000000,
    "floor": 13,
    "exclusiveArea": 59.82,
    "areaGroup": 60,
@@ -78,7 +80,7 @@
   },
   {
    "contractDate": "2026-04-25",
-   "price": 167000000,
+   "priceWon": 167000000,
    "floor": 6,
    "exclusiveArea": 59.82,
    "areaGroup": 60,
@@ -87,7 +89,7 @@
   },
   {
    "contractDate": "2026-04-20",
-   "price": 178000000,
+   "priceWon": 178000000,
    "floor": 8,
    "exclusiveArea": 59.82,
    "areaGroup": 60,
@@ -96,7 +98,7 @@
   },
   {
    "contractDate": "2026-04-15",
-   "price": 238000000,
+   "priceWon": 238000000,
    "floor": 16,
    "exclusiveArea": 84.99,
    "areaGroup": 85,
@@ -105,7 +107,7 @@
   },
   {
    "contractDate": "2026-04-14",
-   "price": 250000000,
+   "priceWon": 250000000,
    "floor": 5,
    "exclusiveArea": 84.99,
    "areaGroup": 85,
@@ -114,7 +116,7 @@
   },
   {
    "contractDate": "2026-03-29",
-   "price": 255000000,
+   "priceWon": 255000000,
    "floor": 2,
    "exclusiveArea": 84.99,
    "areaGroup": 85,
@@ -123,7 +125,7 @@
   },
   {
    "contractDate": "2026-03-23",
-   "price": 235000000,
+   "priceWon": 235000000,
    "floor": 11,
    "exclusiveArea": 84.99,
    "areaGroup": 85,
@@ -132,7 +134,7 @@
   },
   {
    "contractDate": "2026-03-17",
-   "price": 190000000,
+   "priceWon": 190000000,
    "floor": 10,
    "exclusiveArea": 59.82,
    "areaGroup": 60,
@@ -141,7 +143,7 @@
   },
   {
    "contractDate": "2026-03-16",
-   "price": 168000000,
+   "priceWon": 168000000,
    "floor": 13,
    "exclusiveArea": 59.82,
    "areaGroup": 60,
@@ -150,7 +152,7 @@
   },
   {
    "contractDate": "2026-02-28",
-   "price": 223000000,
+   "priceWon": 223000000,
    "floor": 15,
    "exclusiveArea": 84.99,
    "areaGroup": 85,
@@ -159,12 +161,19 @@
   },
   {
    "contractDate": "2026-02-10",
-   "price": 260000000,
+   "priceWon": 260000000,
    "floor": 14,
    "exclusiveArea": 84.99,
    "areaGroup": 85,
    "dealType": "중개거래",
    "cancellationStatus": "CANCELLED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 35.8357438292272,
+  "longitude": 128.728528749919,
+  "roadAddress": "경북 경산시 대학로 47",
+  "jibunAddress": "경북 경산시 정평동 130",
+  "geocodeStatus": "valid"
+ }
 }

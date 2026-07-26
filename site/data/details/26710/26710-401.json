@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "26710-401",
  "apartmentName": "정관신동아파밀리에",
  "sidoCode": "26",
@@ -17,7 +19,7 @@
  "transactions": [
   {
    "contractDate": "2026-05-18",
-   "price": 415000000,
+   "priceWon": 415000000,
    "floor": 4,
    "exclusiveArea": 107.83,
    "areaGroup": 108,
@@ -26,7 +28,7 @@
   },
   {
    "contractDate": "2026-05-09",
-   "price": 342000000,
+   "priceWon": 342000000,
    "floor": 6,
    "exclusiveArea": 107.83,
    "areaGroup": 108,
@@ -35,7 +37,7 @@
   },
   {
    "contractDate": "2026-04-29",
-   "price": 335000000,
+   "priceWon": 335000000,
    "floor": 2,
    "exclusiveArea": 107.83,
    "areaGroup": 108,
@@ -44,7 +46,7 @@
   },
   {
    "contractDate": "2026-04-27",
-   "price": 635000000,
+   "priceWon": 635000000,
    "floor": 4,
    "exclusiveArea": 152.64,
    "areaGroup": 153,
@@ -53,7 +55,7 @@
   },
   {
    "contractDate": "2026-04-25",
-   "price": 360000000,
+   "priceWon": 360000000,
    "floor": 4,
    "exclusiveArea": 110.33,
    "areaGroup": 110,
@@ -62,7 +64,7 @@
   },
   {
    "contractDate": "2026-03-14",
-   "price": 500000000,
+   "priceWon": 500000000,
    "floor": 6,
    "exclusiveArea": 138.22,
    "areaGroup": 138,
@@ -71,7 +73,7 @@
   },
   {
    "contractDate": "2026-03-02",
-   "price": 375000000,
+   "priceWon": 375000000,
    "floor": 12,
    "exclusiveArea": 107.83,
    "areaGroup": 108,
@@ -80,7 +82,7 @@
   },
   {
    "contractDate": "2026-02-06",
-   "price": 560000000,
+   "priceWon": 560000000,
    "floor": 11,
    "exclusiveArea": 152.64,
    "areaGroup": 153,
@@ -89,12 +91,19 @@
   },
   {
    "contractDate": "2026-02-03",
-   "price": 342000000,
+   "priceWon": 342000000,
    "floor": 5,
    "exclusiveArea": 107.83,
    "areaGroup": 108,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 35.3256794610799,
+  "longitude": 129.175974063004,
+  "roadAddress": "부산 기장군 정관읍 정관5로 75",
+  "jibunAddress": "부산 기장군 정관읍 용수리 1322",
+  "geocodeStatus": "valid"
+ }
 }

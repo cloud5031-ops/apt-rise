@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "43113-543",
  "apartmentName": "청주가경아이파크4단지",
  "sidoCode": "43",
@@ -15,7 +17,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-19",
-   "price": 595000000,
+   "priceWon": 595000000,
    "floor": 13,
    "exclusiveArea": 84.8743,
    "areaGroup": 85,
@@ -24,7 +26,7 @@
   },
   {
    "contractDate": "2026-06-10",
-   "price": 580000000,
+   "priceWon": 580000000,
    "floor": 8,
    "exclusiveArea": 84.403,
    "areaGroup": 84,
@@ -33,7 +35,7 @@
   },
   {
    "contractDate": "2026-06-09",
-   "price": 585000000,
+   "priceWon": 585000000,
    "floor": 18,
    "exclusiveArea": 84.403,
    "areaGroup": 84,
@@ -42,7 +44,7 @@
   },
   {
    "contractDate": "2026-06-01",
-   "price": 600000000,
+   "priceWon": 600000000,
    "floor": 20,
    "exclusiveArea": 84.8743,
    "areaGroup": 85,
@@ -51,7 +53,7 @@
   },
   {
    "contractDate": "2026-05-30",
-   "price": 550000000,
+   "priceWon": 550000000,
    "floor": 7,
    "exclusiveArea": 84.8743,
    "areaGroup": 85,
@@ -60,7 +62,7 @@
   },
   {
    "contractDate": "2026-05-26",
-   "price": 550000000,
+   "priceWon": 550000000,
    "floor": 8,
    "exclusiveArea": 84.8743,
    "areaGroup": 85,
@@ -69,7 +71,7 @@
   },
   {
    "contractDate": "2026-05-23",
-   "price": 565000000,
+   "priceWon": 565000000,
    "floor": 24,
    "exclusiveArea": 84.8743,
    "areaGroup": 85,
@@ -78,7 +80,7 @@
   },
   {
    "contractDate": "2026-05-20",
-   "price": 577000000,
+   "priceWon": 577000000,
    "floor": 21,
    "exclusiveArea": 84.8743,
    "areaGroup": 85,
@@ -87,7 +89,7 @@
   },
   {
    "contractDate": "2026-05-10",
-   "price": 568000000,
+   "priceWon": 568000000,
    "floor": 7,
    "exclusiveArea": 84.8743,
    "areaGroup": 85,
@@ -96,7 +98,7 @@
   },
   {
    "contractDate": "2026-05-07",
-   "price": 565000000,
+   "priceWon": 565000000,
    "floor": 19,
    "exclusiveArea": 84.8743,
    "areaGroup": 85,
@@ -105,7 +107,7 @@
   },
   {
    "contractDate": "2026-05-02",
-   "price": 557000000,
+   "priceWon": 557000000,
    "floor": 14,
    "exclusiveArea": 84.8743,
    "areaGroup": 85,
@@ -114,7 +116,7 @@
   },
   {
    "contractDate": "2026-04-28",
-   "price": 558000000,
+   "priceWon": 558000000,
    "floor": 11,
    "exclusiveArea": 84.8743,
    "areaGroup": 85,
@@ -123,7 +125,7 @@
   },
   {
    "contractDate": "2026-04-23",
-   "price": 560000000,
+   "priceWon": 560000000,
    "floor": 11,
    "exclusiveArea": 84.8743,
    "areaGroup": 85,
@@ -132,7 +134,7 @@
   },
   {
    "contractDate": "2026-04-22",
-   "price": 555000000,
+   "priceWon": 555000000,
    "floor": 18,
    "exclusiveArea": 84.8743,
    "areaGroup": 85,
@@ -141,7 +143,7 @@
   },
   {
    "contractDate": "2026-04-14",
-   "price": 558000000,
+   "priceWon": 558000000,
    "floor": 6,
    "exclusiveArea": 84.8743,
    "areaGroup": 85,
@@ -150,7 +152,7 @@
   },
   {
    "contractDate": "2026-03-29",
-   "price": 570000000,
+   "priceWon": 570000000,
    "floor": 10,
    "exclusiveArea": 84.8743,
    "areaGroup": 85,
@@ -159,7 +161,7 @@
   },
   {
    "contractDate": "2026-03-21",
-   "price": 550000000,
+   "priceWon": 550000000,
    "floor": 7,
    "exclusiveArea": 84.8743,
    "areaGroup": 85,
@@ -168,7 +170,7 @@
   },
   {
    "contractDate": "2026-03-21",
-   "price": 565000000,
+   "priceWon": 565000000,
    "floor": 7,
    "exclusiveArea": 84.8743,
    "areaGroup": 85,
@@ -177,7 +179,7 @@
   },
   {
    "contractDate": "2026-03-21",
-   "price": 530000000,
+   "priceWon": 530000000,
    "floor": 4,
    "exclusiveArea": 84.8743,
    "areaGroup": 85,
@@ -186,12 +188,19 @@
   },
   {
    "contractDate": "2026-03-02",
-   "price": 570000000,
+   "priceWon": 570000000,
    "floor": 9,
    "exclusiveArea": 84.8743,
    "areaGroup": 85,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 36.6145638219539,
+  "longitude": 127.431989059048,
+  "roadAddress": "충북 청주시 흥덕구 홍골로 82",
+  "jibunAddress": "충북 청주시 흥덕구 가경동 2251",
+  "geocodeStatus": "valid"
+ }
 }

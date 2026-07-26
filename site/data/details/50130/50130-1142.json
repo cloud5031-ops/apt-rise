@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "50130-1142",
  "apartmentName": "e편한세상중문",
  "sidoCode": "50",
@@ -16,7 +18,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-30",
-   "price": 480000000,
+   "priceWon": 480000000,
    "floor": 5,
    "exclusiveArea": 84.9875,
    "areaGroup": 85,
@@ -25,7 +27,7 @@
   },
   {
    "contractDate": "2026-05-26",
-   "price": 570000000,
+   "priceWon": 570000000,
    "floor": 5,
    "exclusiveArea": 84.9875,
    "areaGroup": 85,
@@ -34,7 +36,7 @@
   },
   {
    "contractDate": "2026-05-25",
-   "price": 480000000,
+   "priceWon": 480000000,
    "floor": 6,
    "exclusiveArea": 84.9875,
    "areaGroup": 85,
@@ -43,7 +45,7 @@
   },
   {
    "contractDate": "2026-04-24",
-   "price": 440000000,
+   "priceWon": 440000000,
    "floor": 2,
    "exclusiveArea": 84.9875,
    "areaGroup": 85,
@@ -52,7 +54,7 @@
   },
   {
    "contractDate": "2026-04-07",
-   "price": 465000000,
+   "priceWon": 465000000,
    "floor": 6,
    "exclusiveArea": 84.9875,
    "areaGroup": 85,
@@ -61,7 +63,7 @@
   },
   {
    "contractDate": "2026-04-04",
-   "price": 450000000,
+   "priceWon": 450000000,
    "floor": 3,
    "exclusiveArea": 84.9875,
    "areaGroup": 85,
@@ -70,7 +72,7 @@
   },
   {
    "contractDate": "2026-03-23",
-   "price": 364000000,
+   "priceWon": 364000000,
    "floor": 1,
    "exclusiveArea": 73.436,
    "areaGroup": 73,
@@ -79,7 +81,7 @@
   },
   {
    "contractDate": "2026-03-18",
-   "price": 464000000,
+   "priceWon": 464000000,
    "floor": 4,
    "exclusiveArea": 84.9875,
    "areaGroup": 85,
@@ -88,7 +90,7 @@
   },
   {
    "contractDate": "2026-03-16",
-   "price": 464000000,
+   "priceWon": 464000000,
    "floor": 4,
    "exclusiveArea": 84.9875,
    "areaGroup": 85,
@@ -97,7 +99,7 @@
   },
   {
    "contractDate": "2026-03-05",
-   "price": 385000000,
+   "priceWon": 385000000,
    "floor": 6,
    "exclusiveArea": 79.004,
    "areaGroup": 79,
@@ -106,7 +108,7 @@
   },
   {
    "contractDate": "2026-02-02",
-   "price": 470000000,
+   "priceWon": 470000000,
    "floor": 6,
    "exclusiveArea": 79.004,
    "areaGroup": 79,
@@ -115,12 +117,19 @@
   },
   {
    "contractDate": "2026-02-01",
-   "price": 560000000,
+   "priceWon": 560000000,
    "floor": 7,
    "exclusiveArea": 84.9875,
    "areaGroup": 85,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 33.2555358346849,
+  "longitude": 126.430458769419,
+  "roadAddress": "제주특별자치도 서귀포시 일주서로731번길 10",
+  "jibunAddress": "제주특별자치도 서귀포시 중문동 1726",
+  "geocodeStatus": "valid"
+ }
 }

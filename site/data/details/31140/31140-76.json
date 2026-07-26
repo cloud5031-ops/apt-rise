@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "31140-76",
  "apartmentName": "금탑",
  "sidoCode": "31",
@@ -15,7 +17,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-13",
-   "price": 500000000,
+   "priceWon": 500000000,
    "floor": 3,
    "exclusiveArea": 55.31,
    "areaGroup": 55,
@@ -24,7 +26,7 @@
   },
   {
    "contractDate": "2026-06-08",
-   "price": 510000000,
+   "priceWon": 510000000,
    "floor": 2,
    "exclusiveArea": 55.31,
    "areaGroup": 55,
@@ -33,7 +35,7 @@
   },
   {
    "contractDate": "2026-05-09",
-   "price": 475000000,
+   "priceWon": 475000000,
    "floor": 4,
    "exclusiveArea": 55.31,
    "areaGroup": 55,
@@ -42,7 +44,7 @@
   },
   {
    "contractDate": "2026-04-01",
-   "price": 440000000,
+   "priceWon": 440000000,
    "floor": 5,
    "exclusiveArea": 55.31,
    "areaGroup": 55,
@@ -51,7 +53,7 @@
   },
   {
    "contractDate": "2026-03-22",
-   "price": 465000000,
+   "priceWon": 465000000,
    "floor": 1,
    "exclusiveArea": 55.31,
    "areaGroup": 55,
@@ -60,7 +62,7 @@
   },
   {
    "contractDate": "2026-03-20",
-   "price": 440000000,
+   "priceWon": 440000000,
    "floor": 5,
    "exclusiveArea": 59.38,
    "areaGroup": 59,
@@ -69,12 +71,19 @@
   },
   {
    "contractDate": "2026-03-04",
-   "price": 475000000,
+   "priceWon": 475000000,
    "floor": 3,
    "exclusiveArea": 55.31,
    "areaGroup": 55,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 35.5054701918831,
+  "longitude": 126.853863295551,
+  "roadAddress": "",
+  "jibunAddress": "전북특별자치도 정읍시 신정동 1591",
+  "geocodeStatus": "ambiguous"
+ }
 }

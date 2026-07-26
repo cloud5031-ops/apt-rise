@@ -1,4 +1,6 @@
 {
+ "schemaVersion": 2,
+ "priceUnit": "KRW",
  "apartmentKey": "27110-270",
  "apartmentName": "센트로팰리스",
  "sidoCode": "27",
@@ -18,7 +20,7 @@
  "transactions": [
   {
    "contractDate": "2026-06-30",
-   "price": 525000000,
+   "priceWon": 525000000,
    "floor": 20,
    "exclusiveArea": 80.736,
    "areaGroup": 81,
@@ -27,7 +29,7 @@
   },
   {
    "contractDate": "2026-06-24",
-   "price": 680000000,
+   "priceWon": 680000000,
    "floor": 9,
    "exclusiveArea": 141.466,
    "areaGroup": 141,
@@ -36,7 +38,7 @@
   },
   {
    "contractDate": "2026-06-18",
-   "price": 470000000,
+   "priceWon": 470000000,
    "floor": 24,
    "exclusiveArea": 80.706,
    "areaGroup": 81,
@@ -45,7 +47,7 @@
   },
   {
    "contractDate": "2026-05-31",
-   "price": 537000000,
+   "priceWon": 537000000,
    "floor": 21,
    "exclusiveArea": 80.736,
    "areaGroup": 81,
@@ -54,7 +56,7 @@
   },
   {
    "contractDate": "2026-05-19",
-   "price": 415000000,
+   "priceWon": 415000000,
    "floor": 9,
    "exclusiveArea": 80.706,
    "areaGroup": 81,
@@ -63,7 +65,7 @@
   },
   {
    "contractDate": "2026-05-18",
-   "price": 430000000,
+   "priceWon": 430000000,
    "floor": 10,
    "exclusiveArea": 80.706,
    "areaGroup": 81,
@@ -72,7 +74,7 @@
   },
   {
    "contractDate": "2026-04-29",
-   "price": 440000000,
+   "priceWon": 440000000,
    "floor": 18,
    "exclusiveArea": 80.736,
    "areaGroup": 81,
@@ -81,7 +83,7 @@
   },
   {
    "contractDate": "2026-04-22",
-   "price": 425000000,
+   "priceWon": 425000000,
    "floor": 11,
    "exclusiveArea": 80.736,
    "areaGroup": 81,
@@ -90,7 +92,7 @@
   },
   {
    "contractDate": "2026-04-18",
-   "price": 489000000,
+   "priceWon": 489000000,
    "floor": 18,
    "exclusiveArea": 80.736,
    "areaGroup": 81,
@@ -99,7 +101,7 @@
   },
   {
    "contractDate": "2026-04-14",
-   "price": 425000000,
+   "priceWon": 425000000,
    "floor": 12,
    "exclusiveArea": 80.706,
    "areaGroup": 81,
@@ -108,7 +110,7 @@
   },
   {
    "contractDate": "2026-04-04",
-   "price": 445000000,
+   "priceWon": 445000000,
    "floor": 3,
    "exclusiveArea": 80.736,
    "areaGroup": 81,
@@ -117,7 +119,7 @@
   },
   {
    "contractDate": "2026-04-04",
-   "price": 700000000,
+   "priceWon": 700000000,
    "floor": 37,
    "exclusiveArea": 153.045,
    "areaGroup": 153,
@@ -126,7 +128,7 @@
   },
   {
    "contractDate": "2026-03-31",
-   "price": 530000000,
+   "priceWon": 530000000,
    "floor": 25,
    "exclusiveArea": 153.045,
    "areaGroup": 153,
@@ -135,7 +137,7 @@
   },
   {
    "contractDate": "2026-03-28",
-   "price": 683000000,
+   "priceWon": 683000000,
    "floor": 12,
    "exclusiveArea": 141.466,
    "areaGroup": 141,
@@ -144,7 +146,7 @@
   },
   {
    "contractDate": "2026-03-05",
-   "price": 435000000,
+   "priceWon": 435000000,
    "floor": 15,
    "exclusiveArea": 80.706,
    "areaGroup": 81,
@@ -153,7 +155,7 @@
   },
   {
    "contractDate": "2026-02-24",
-   "price": 495000000,
+   "priceWon": 495000000,
    "floor": 12,
    "exclusiveArea": 80.736,
    "areaGroup": 81,
@@ -162,7 +164,7 @@
   },
   {
    "contractDate": "2026-02-21",
-   "price": 507500000,
+   "priceWon": 507500000,
    "floor": 18,
    "exclusiveArea": 80.736,
    "areaGroup": 81,
@@ -171,7 +173,7 @@
   },
   {
    "contractDate": "2026-02-21",
-   "price": 390000000,
+   "priceWon": 390000000,
    "floor": 4,
    "exclusiveArea": 80.736,
    "areaGroup": 81,
@@ -180,7 +182,7 @@
   },
   {
    "contractDate": "2026-02-14",
-   "price": 685000000,
+   "priceWon": 685000000,
    "floor": 40,
    "exclusiveArea": 129.185,
    "areaGroup": 129,
@@ -189,7 +191,7 @@
   },
   {
    "contractDate": "2026-02-01",
-   "price": 405000000,
+   "priceWon": 405000000,
    "floor": 7,
    "exclusiveArea": 80.706,
    "areaGroup": 81,
@@ -198,12 +200,19 @@
   },
   {
    "contractDate": "2026-02-01",
-   "price": 745000000,
+   "priceWon": 745000000,
    "floor": 37,
    "exclusiveArea": 153.045,
    "areaGroup": 153,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
- ]
+ ],
+ "location": {
+  "latitude": 35.8618716224073,
+  "longitude": 128.601593514671,
+  "roadAddress": "대구 중구 대봉로 260",
+  "jibunAddress": "대구 중구 대봉동 60-10",
+  "geocodeStatus": "valid"
+ }
 }
