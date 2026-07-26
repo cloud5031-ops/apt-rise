@@ -1,27 +1,27 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ko">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>?⑥?쨌硫댁쟻蹂??ㅺ굅??以묒쐞媛寃?蹂?붿쑉</title>
+<title>단지·면적별 실거래 중위가격 변화율</title>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
 <link rel="stylesheet" href="/index.css">
 </head>
 <body>
 <div class="wrap">
   <header>
-    <h1>?⑥?쨌硫댁쟻蹂??ㅺ굅??以묒쐞媛寃?蹂?붿쑉</h1>
-    <p class="meta" id="meta">?뺢린 ?낅뜲?댄듃?섎뒗 ?ㅺ굅???곗씠??湲곕컲 ?붽컙 ??궧?낅땲??</p>
+    <h1>단지·면적별 실거래 중위가격 변화율</h1>
+    <p class="meta" id="meta">정기 업데이트되는 실거래 데이터 기반 월간 랭킹입니다.</p>
   </header>
 
   <nav role="tablist" id="main-nav">
-    <button role="tab" aria-selected="true"  data-tab="region">?쒓뎔援??곸듅瑜?<span id="tab-meta-region" style="font-weight:normal; font-size:0.8em; color:var(--sub);"></span></button>
-    <button role="tab" aria-selected="false" data-tab="apt">媛쒕퀎 ?꾪뙆??<span id="tab-meta-apt" style="font-weight:normal; font-size:0.8em; color:var(--sub);"></span></button>
+    <button role="tab" aria-selected="true"  data-tab="region">시군구 상승률 <span id="tab-meta-region" style="font-weight:normal; font-size:0.8em; color:var(--sub);"></span></button>
+    <button role="tab" aria-selected="false" data-tab="apt">개별 아파트 <span id="tab-meta-apt" style="font-weight:normal; font-size:0.8em; color:var(--sub);"></span></button>
   </nav>
 
   <nav role="tablist" id="region-sub-nav" class="sub-nav">
-    <button role="tab" aria-selected="true" data-subtab="national">?꾧뎅 ?곸듅?쒖쐞</button>
-    <button role="tab" aria-selected="false" data-subtab="local">吏??퀎 蹂닿린</button>
+    <button role="tab" aria-selected="true" data-subtab="national">전국 상승순위</button>
+    <button role="tab" aria-selected="false" data-subtab="local">지역별 보기</button>
   </nav>
 
   <div id="macro-container" class="chip-container" style="display:none;"></div>
@@ -36,8 +36,8 @@
   <div id="selected-region-info" class="selected-info" style="display:none;"></div>
 
   <nav role="tablist" id="apt-sub-nav" class="sub-nav" style="display:none;">
-    <button role="tab" aria-selected="true" data-subtab="national">?꾧뎅 ?곸듅?쒖쐞</button>
-    <button role="tab" aria-selected="false" data-subtab="local">吏??퀎 蹂닿린</button>
+    <button role="tab" aria-selected="true" data-subtab="national">전국 상승순위</button>
+    <button role="tab" aria-selected="false" data-subtab="local">지역별 보기</button>
   </nav>
 
   <div id="apt-macro-container" class="chip-container" style="display:none;"></div>
@@ -55,44 +55,43 @@
   <div id="aptMode" class="mode-switch" style="display:none;">
     <label>
       <input type="radio" name="dataMode" value="stable" checked> 
-      <span>?덉젙 吏묎퀎 <span class="mode-desc">(?좉퀬媛 鍮꾧탳??諛섏쁺??湲곗???</span></span>
+      <span>안정 집계 <span class="mode-desc">(신고가 비교적 반영된 기준월)</span></span>
     </label>
     <label id="provisionalOption" style="display:none;">
       <input type="radio" name="dataMode" value="provisional"> 
-      <span>?좎젙 吏묎퀎 <span class="mode-desc">(?좉퀬 吏??諛?怨꾩빟 ?댁젣濡?寃곌낵媛 蹂寃쎈맆 ???덉쓬)</span></span>
+      <span>잠정 집계 <span class="mode-desc">(신고 지연 및 계약 해제로 결과가 변경될 수 있음)</span></span>
     </label>
   </div>
 
   <div id="aptFilters" class="filters" style="display:none;">
-    <b>?꾪꽣:</b>
-    <label><input type="radio" name="confFilter" value="all" checked> ?꾩껜</label>
-    <label><input type="radio" name="confFilter" value="nowarn"> ?좑툘寃쎄퀬 ?놁쓬</label>
-    <label><input type="radio" name="confFilter" value="medup"> ?좊ː??蹂댄넻 ?댁긽</label>
+    <b>필터:</b>
+    <label><input type="radio" name="confFilter" value="all" checked> 전체</label>
+    <label><input type="radio" name="confFilter" value="nowarn"> ⚠️경고 없음</label>
+    <label><input type="radio" name="confFilter" value="medup"> 신뢰도 보통 이상</label>
   </div>
 
-  <div id="content"><p class="empty">遺덈윭?ㅻ뒗 以묅?/p></div>
+  <div id="content"><p class="empty">불러오는 중…</p></div>
 
   <div class="desc-box">
-    <b>[?곗씠???뚯뒪]</b> ?쒓뎔援? ?쒓뎅遺?숈궛??媛寃⑹???쨌 媛쒕퀎 ?⑥?: 援?넗援먰넻遺 ?ㅺ굅?섍? (?댁젣 嫄곕옒 ?쒖쇅)<br><br>
-    <b>[?곗텧 諛⑹떇]</b>
+    <b>[데이터 소스]</b> 시군구: 한국부동산원 가격지수 · 개별 단지: 국토교통부 실거래가 (해제 거래 제외)<br><br>
+    <b>[산출 방식]</b>
     <ul>
-      <li><b>湲곗?媛:</b> ?꾩옱 ??吏곸쟾 3媛쒖썡??以묎컻嫄곕옒 ?ㅺ굅?섍? 以묒븰媛?/li>
-      <li><b>理쒓렐媛:</b> ?꾩옱 ??以묎컻嫄곕옒 ?ㅺ굅?섍? 以묒븰媛?/li>
-      <li><b>?곸듅瑜?</b> 理쒓렐媛 첨 湲곗?媛瑜??댁슜??蹂?붿쑉</li>
-      <li>* 怨듭떇 ?쒖꽭媛 ?꾨땶 <b>?ㅺ굅???쒕낯??以묒쐞媛寃?蹂?붿쑉</b>?낅땲??</li>
+      <li><b>기준가:</b> 현재 월 직전 3개월의 중개거래 실거래가 중앙값</li>
+      <li><b>최근가:</b> 현재 월 중개거래 실거래가 중앙값</li>
+      <li><b>상승률:</b> 최근가 ÷ 기준가를 이용한 변화율</li>
+      <li>* 공식 시세가 아닌 <b>실거래 표본의 중위가격 변화율</b>입니다.</li>
     </ul>
     <br>
-    <b>[?좊ː???깃툒]</b>
+    <b>[신뢰도 등급]</b>
     <ul>
-      <li><b>?믪쓬:</b> ?쒕낯??異⑸텇?섍퀬 援ъ꽦 李⑥씠媛 ?곸쓬</li>
-      <li><b>蹂댄넻:</b> ?쒕낯???쒗븳?곸씠嫄곕굹 ?쇰? 寃쎄퀬媛 ?덉쓬</li>
-      <li><b>??쓬:</b> ?쒕낯???곴굅??援ъ꽦?④낵 媛?μ꽦????/li>
+      <li><b>높음:</b> 표본이 충분하고 구성 차이가 적음</li>
+      <li><b>보통:</b> 표본이 제한적이거나 일부 경고가 있음</li>
+      <li><b>낮음:</b> 표본이 적거나 구성효과 가능성이 큼</li>
     </ul>
   </div>
 </div>
 
 <script>
-
 let activeTooltipTarget = null;
 const portalTooltip = document.createElement('div');
 portalTooltip.id = 'portal-tooltip';
@@ -148,59 +147,58 @@ const state = {
   region: null, 
   aptStable: null, 
   aptProvisional: null,
-  selectedRankingRegion: 'all',
   regionSubTab: "national",
-  macroRegion: "?쒖슱",
-  microRegion: "?쒖슱 ?꾩껜"
+  macroRegion: "서울",
+  microRegion: "서울 전체"
 };
 
 const SGG_CODE_MAP = {
-  // ?쒖슱
-  "11110": "醫낅줈援?, "11140": "以묎뎄", "11170": "?⑹궛援?, "11200": "?깅룞援?, "11215": "愿묒쭊援?, "11230": "?숇?臾멸뎄", "11260": "以묐옉援?, "11290": "?깅턿援?, "11305": "媛뺣턿援?, "11320": "?꾨큺援?, "11350": "?몄썝援?, "11380": "??됯뎄", "11410": "?쒕?臾멸뎄", "11440": "留덊룷援?, "11470": "?묒쿇援?, "11500": "媛뺤꽌援?, "11530": "援щ줈援?, "11545": "湲덉쿇援?, "11560": "?곷벑?ш뎄", "11590": "?숈옉援?, "11620": "愿?낃뎄", "11650": "?쒖큹援?, "11680": "媛뺣궓援?, "11710": "?≫뙆援?, "11740": "媛뺣룞援?,
-  // 遺??
-  "26110": "以묎뎄", "26140": "?쒓뎄", "26170": "?숆뎄", "26200": "?곷룄援?, "26230": "遺?곗쭊援?, "26260": "?숇옒援?, "26290": "?④뎄", "26320": "遺곴뎄", "26350": "?댁슫?援?, "26380": "?ы븯援?, "26410": "湲덉젙援?, "26440": "媛뺤꽌援?, "26470": "?곗젣援?, "26500": "?섏쁺援?, "26530": "?ъ긽援?, "26710": "湲곗옣援?,
-  // ?援?
-  "27110": "以묎뎄", "27140": "?숆뎄", "27170": "?쒓뎄", "27200": "?④뎄", "27230": "遺곴뎄", "27260": "?섏꽦援?, "27290": "?ъ꽌援?, "27710": "?ъ꽦援?, "27720": "援곗쐞援?,
-  // ?몄쿇 (援???
-  "28110": "以묎뎄", "28140": "?숆뎄", "28177": "誘몄텛?援?, "28185": "?곗닔援?, "28200": "?⑤룞援?, "28237": "遺?됯뎄", "28245": "怨꾩뼇援?, "28260": "?쒓뎄", "28710": "媛뺥솕援?, "28720": "?뱀쭊援?,
-  "28730": "?쒕Ъ?ш뎄", "28740": "?곸쥌援?, "28750": "寃?④뎄",
-  // 愿묒＜
-  "29110": "?숆뎄", "29140": "?쒓뎄", "29155": "?④뎄", "29170": "遺곴뎄", "29200": "愿묒궛援?,
-  // ???
-  "30110": "?숆뎄", "30140": "以묎뎄", "30170": "?쒓뎄", "30200": "?좎꽦援?, "30230": "??뺢뎄",
-  // ?몄궛
-  "31110": "以묎뎄", "31140": "?④뎄", "31170": "?숆뎄", "31200": "遺곴뎄", "31710": "?몄＜援?,
-  // ?몄쥌
-  "36110": "?몄쥌??, // Placeholder if needed
-  // 寃쎄린 - 遺紐⑥떆
-  "41110": "?섏썝??, "41130": "?깅궓??, "41170": "?덉뼇??, "41190": "遺泥쒖떆", "41270": "?덉궛??, "41280": "怨좎뼇??, "41460": "?⑹씤??, "41590": "?붿꽦??,
-  // 寃쎄린 - 援?
-  "41111": "?섏썝???μ븞援?, "41113": "?섏썝??沅뚯꽑援?, "41115": "?섏썝???붾떖援?, "41117": "?섏썝???곹넻援?, 
-  "41131": "?깅궓???섏젙援?, "41133": "?깅궓??以묒썝援?, "41135": "?깅궓??遺꾨떦援?, 
-  "41171": "?덉뼇??留뚯븞援?, "41173": "?덉뼇???숈븞援?,
-  "41192": "遺泥쒖떆 ?먮?援?, "41193": "遺泥쒖떆 ?뚯궗援?, "41194": "遺泥쒖떆 ?ㅼ젙援?,
-  "41271": "?덉궛???곷줉援?, "41273": "?덉궛???⑥썝援?,
-  "41281": "怨좎뼇???뺤뼇援?, "41285": "怨좎뼇???쇱궛?숆뎄", "41287": "怨좎뼇???쇱궛?쒓뎄",
-  "41461": "?⑹씤??泥섏씤援?, "41463": "?⑹씤??湲고씎援?, "41465": "?⑹씤???섏?援?,
-  "41595": "?붿꽦??蹂묒젏援?, "41597": "?붿꽦???숉깂援?, "41591": "?붿꽦??留뚯꽭援?, "41593": "?붿꽦???⑦뻾援?, // placeholder codes for new hwaseong gus
-  // 寃쎄린 - ?낅┰
-  "41150": "?섏젙遺??, "41210": "愿묐챸??, "41220": "?됲깮??, "41250": "?숇몢泥쒖떆", "41290": "怨쇱쿇??, "41310": "援щ━??, "41360": "?⑥뼇二쇱떆", "41370": "?ㅼ궛??, "41390": "?쒗씎??, "41410": "援고룷??, "41430": "?섏솗??, "41450": "?섎궓??, "41480": "?뚯＜??, "41500": "?댁쿇??, "41550": "?덉꽦??, "41570": "源?ъ떆", "41610": "愿묒＜??, "41630": "?묒＜??, "41650": "?ъ쿇??, "41670": "?ъ＜??, "41800": "?곗쿇援?, "41820": "媛?됯뎔", "41830": "?묓룊援?,
-  // 異⑸턿
-  "43110": "泥?＜??, "43111": "泥?＜???곷떦援?, "43112": "泥?＜???쒖썝援?, "43113": "泥?＜???λ뜒援?, "43114": "泥?＜??泥?썝援?, "43130": "異⑹＜??, "43150": "?쒖쿇??, "43720": "蹂댁?援?, "43730": "?μ쿇援?, "43740": "?곷룞援?, "43745": "利앺룊援?, "43750": "吏꾩쿇援?, "43760": "愿댁궛援?, "43770": "?뚯꽦援?, "43800": "?⑥뼇援?,
-  // 異⑸궓
-  "44130": "泥쒖븞??, "44131": "泥쒖븞???숇궓援?, "44133": "泥쒖븞???쒕턿援?, "44150": "怨듭＜??, "44180": "蹂대졊??, "44200": "?꾩궛??, "44210": "?쒖궛??, "44230": "?쇱궛??, "44250": "怨꾨！??, "44270": "?뱀쭊??, "44710": "湲덉궛援?, "44760": "遺?ш뎔", "44770": "?쒖쿇援?, "44790": "泥?뼇援?, "44800": "?띿꽦援?, "44810": "?덉궛援?, "44825": "?쒖븞援?,
-  // ?꾨턿
-  "45110": "?꾩＜??, "45111": "?꾩＜???꾩궛援?, "45113": "?꾩＜???뺤쭊援?, "45130": "援곗궛??, "45140": "?듭궛??, "45180": "?뺤쓭??, "45190": "?⑥썝??, "45210": "源?쒖떆", "45710": "?꾩＜援?, "45720": "吏꾩븞援?, "45730": "臾댁＜援?, "45740": "?μ닔援?, "45750": "?꾩떎援?, "45770": "?쒖갹援?, "45790": "怨좎갹援?, "45800": "遺?덇뎔",
-  // ?꾨궓
-  "46110": "紐⑺룷??, "46130": "?ъ닔??, "46150": "?쒖쿇??, "46170": "?섏＜??, "46230": "愿묒뼇??, "46710": "?댁뼇援?, "46720": "怨≪꽦援?, "46730": "援щ?援?, "46770": "怨좏씎援?, "46780": "蹂댁꽦援?, "46790": "?붿닚援?, "46800": "?ν씎援?, "46810": "媛뺤쭊援?, "46820": "?대궓援?, "46830": "?곸븫援?, "46840": "臾댁븞援?, "46860": "?⑦룊援?, "46870": "?곴킅援?, "46880": "?μ꽦援?, "46890": "?꾨룄援?, "46900": "吏꾨룄援?, "46910": "?좎븞援?,
-  // 寃쎈턿
-  "47110": "?ы빆??, "47111": "?ы빆???④뎄", "47113": "?ы빆??遺곴뎄", "47130": "寃쎌＜??, "47150": "源泥쒖떆", "47170": "?덈룞??, "47190": "援щ???, "47210": "?곸＜??, "47230": "?곸쿇??, "47250": "?곸＜??, "47280": "臾멸꼍??, "47290": "寃쎌궛??, "47720": "援곗쐞援?, "47730": "?섏꽦援?, "47750": "泥?넚援?, "47760": "?곸뼇援?, "47770": "?곷뜒援?, "47820": "泥?룄援?, "47830": "怨좊졊援?, "47840": "?깆＜援?, "47850": "移좉끝援?, "47900": "?덉쿇援?, "47920": "遊됲솕援?, "47930": "?몄쭊援?, "47940": "?몃쫱援?,
-  // 寃쎈궓
-  "48120": "李쎌썝??, "48121": "李쎌썝???섏갹援?, "48123": "李쎌썝???깆궛援?, "48125": "李쎌썝??留덉궛?⑺룷援?, "48127": "李쎌썝??留덉궛?뚯썝援?, "48129": "李쎌썝??吏꾪빐援?, "48170": "吏꾩＜??, "48220": "?듭쁺??, "48240": "?ъ쿇??, "48250": "源?댁떆", "48270": "諛?묒떆", "48310": "嫄곗젣??, "48330": "?묒궛??, "48720": "?섎졊援?, "48730": "?⑥븞援?, "48740": "李쎈뀞援?, "48820": "怨좎꽦援?, "48840": "?⑦빐援?, "48850": "?섎룞援?, "48860": "?곗껌援?, "48870": "?⑥뼇援?, "48880": "嫄곗갹援?, "48890": "?⑹쿇援?,
-  // ?쒖＜
-  "50110": "?쒖＜??, "50130": "?쒓??ъ떆",
-  // 媛뺤썝
-  "51110": "異섏쿇??, "51130": "?먯＜??, "51150": "媛뺣쫱??, "51170": "?숉빐??, "51190": "?쒕갚??, "51210": "?띿큹??, "51230": "?쇱쿃??, "51720": "?띿쿇援?, "51730": "?≪꽦援?, "51750": "?곸썡援?, "51760": "?됱갹援?, "51770": "?뺤꽑援?, "51780": "泥좎썝援?, "51790": "?붿쿇援?, "51800": "?묎뎄援?, "51810": "?몄젣援?, "51820": "怨좎꽦援?, "51830": "?묒뼇援?
+  // 서울
+  "11110": "종로구", "11140": "중구", "11170": "용산구", "11200": "성동구", "11215": "광진구", "11230": "동대문구", "11260": "중랑구", "11290": "성북구", "11305": "강북구", "11320": "도봉구", "11350": "노원구", "11380": "은평구", "11410": "서대문구", "11440": "마포구", "11470": "양천구", "11500": "강서구", "11530": "구로구", "11545": "금천구", "11560": "영등포구", "11590": "동작구", "11620": "관악구", "11650": "서초구", "11680": "강남구", "11710": "송파구", "11740": "강동구",
+  // 부산
+  "26110": "중구", "26140": "서구", "26170": "동구", "26200": "영도구", "26230": "부산진구", "26260": "동래구", "26290": "남구", "26320": "북구", "26350": "해운대구", "26380": "사하구", "26410": "금정구", "26440": "강서구", "26470": "연제구", "26500": "수영구", "26530": "사상구", "26710": "기장군",
+  // 대구
+  "27110": "중구", "27140": "동구", "27170": "서구", "27200": "남구", "27230": "북구", "27260": "수성구", "27290": "달서구", "27710": "달성군", "27720": "군위군",
+  // 인천 (구/신)
+  "28110": "중구", "28140": "동구", "28177": "미추홀구", "28185": "연수구", "28200": "남동구", "28237": "부평구", "28245": "계양구", "28260": "서구", "28710": "강화군", "28720": "옹진군",
+  "28730": "제물포구", "28740": "영종구", "28750": "검단구",
+  // 광주
+  "29110": "동구", "29140": "서구", "29155": "남구", "29170": "북구", "29200": "광산구",
+  // 대전
+  "30110": "동구", "30140": "중구", "30170": "서구", "30200": "유성구", "30230": "대덕구",
+  // 울산
+  "31110": "중구", "31140": "남구", "31170": "동구", "31200": "북구", "31710": "울주군",
+  // 세종
+  "36110": "세종시", // Placeholder if needed
+  // 경기 - 부모시
+  "41110": "수원시", "41130": "성남시", "41170": "안양시", "41190": "부천시", "41270": "안산시", "41280": "고양시", "41460": "용인시", "41590": "화성시",
+  // 경기 - 구
+  "41111": "수원시 장안구", "41113": "수원시 권선구", "41115": "수원시 팔달구", "41117": "수원시 영통구", 
+  "41131": "성남시 수정구", "41133": "성남시 중원구", "41135": "성남시 분당구", 
+  "41171": "안양시 만안구", "41173": "안양시 동안구",
+  "41192": "부천시 원미구", "41193": "부천시 소사구", "41194": "부천시 오정구",
+  "41271": "안산시 상록구", "41273": "안산시 단원구",
+  "41281": "고양시 덕양구", "41285": "고양시 일산동구", "41287": "고양시 일산서구",
+  "41461": "용인시 처인구", "41463": "용인시 기흥구", "41465": "용인시 수지구",
+  "41595": "화성시 병점구", "41597": "화성시 동탄구", "41591": "화성시 만세구", "41593": "화성시 효행구", // placeholder codes for new hwaseong gus
+  // 경기 - 독립
+  "41150": "의정부시", "41210": "광명시", "41220": "평택시", "41250": "동두천시", "41290": "과천시", "41310": "구리시", "41360": "남양주시", "41370": "오산시", "41390": "시흥시", "41410": "군포시", "41430": "의왕시", "41450": "하남시", "41480": "파주시", "41500": "이천시", "41550": "안성시", "41570": "김포시", "41610": "광주시", "41630": "양주시", "41650": "포천시", "41670": "여주시", "41800": "연천군", "41820": "가평군", "41830": "양평군",
+  // 충북
+  "43110": "청주시", "43111": "청주시 상당구", "43112": "청주시 서원구", "43113": "청주시 흥덕구", "43114": "청주시 청원구", "43130": "충주시", "43150": "제천시", "43720": "보은군", "43730": "옥천군", "43740": "영동군", "43745": "증평군", "43750": "진천군", "43760": "괴산군", "43770": "음성군", "43800": "단양군",
+  // 충남
+  "44130": "천안시", "44131": "천안시 동남구", "44133": "천안시 서북구", "44150": "공주시", "44180": "보령시", "44200": "아산시", "44210": "서산시", "44230": "논산시", "44250": "계룡시", "44270": "당진시", "44710": "금산군", "44760": "부여군", "44770": "서천군", "44790": "청양군", "44800": "홍성군", "44810": "예산군", "44825": "태안군",
+  // 전북
+  "45110": "전주시", "45111": "전주시 완산구", "45113": "전주시 덕진구", "45130": "군산시", "45140": "익산시", "45180": "정읍시", "45190": "남원시", "45210": "김제시", "45710": "완주군", "45720": "진안군", "45730": "무주군", "45740": "장수군", "45750": "임실군", "45770": "순창군", "45790": "고창군", "45800": "부안군",
+  // 전남
+  "46110": "목포시", "46130": "여수시", "46150": "순천시", "46170": "나주시", "46230": "광양시", "46710": "담양군", "46720": "곡성군", "46730": "구례군", "46770": "고흥군", "46780": "보성군", "46790": "화순군", "46800": "장흥군", "46810": "강진군", "46820": "해남군", "46830": "영암군", "46840": "무안군", "46860": "함평군", "46870": "영광군", "46880": "장성군", "46890": "완도군", "46900": "진도군", "46910": "신안군",
+  // 경북
+  "47110": "포항시", "47111": "포항시 남구", "47113": "포항시 북구", "47130": "경주시", "47150": "김천시", "47170": "안동시", "47190": "구미시", "47210": "영주시", "47230": "영천시", "47250": "상주시", "47280": "문경시", "47290": "경산시", "47720": "군위군", "47730": "의성군", "47750": "청송군", "47760": "영양군", "47770": "영덕군", "47820": "청도군", "47830": "고령군", "47840": "성주군", "47850": "칠곡군", "47900": "예천군", "47920": "봉화군", "47930": "울진군", "47940": "울릉군",
+  // 경남
+  "48120": "창원시", "48121": "창원시 의창구", "48123": "창원시 성산구", "48125": "창원시 마산합포구", "48127": "창원시 마산회원구", "48129": "창원시 진해구", "48170": "진주시", "48220": "통영시", "48240": "사천시", "48250": "김해시", "48270": "밀양시", "48310": "거제시", "48330": "양산시", "48720": "의령군", "48730": "함안군", "48740": "창녕군", "48820": "고성군", "48840": "남해군", "48850": "하동군", "48860": "산청군", "48870": "함양군", "48880": "거창군", "48890": "합천군",
+  // 제주
+  "50110": "제주시", "50130": "서귀포시",
+  // 강원
+  "51110": "춘천시", "51130": "원주시", "51150": "강릉시", "51170": "동해시", "51190": "태백시", "51210": "속초시", "51230": "삼척시", "51720": "홍천군", "51730": "횡성군", "51750": "영월군", "51760": "평창군", "51770": "정선군", "51780": "철원군", "51790": "화천군", "51800": "양구군", "51810": "인제군", "51820": "고성군", "51830": "양양군"
 };
 
 const OFFICIAL_REGION_TREE = {
@@ -250,52 +248,52 @@ const OFFICIAL_REGION_TREE = {
 };
 
 
-SGG_CODE_MAP["41190"] = "遺泥쒖떆";
-SGG_CODE_MAP["41192"] = "遺泥쒖떆 ?먮?援?;
-SGG_CODE_MAP["41193"] = "遺泥쒖떆 ?뚯궗援?;
-SGG_CODE_MAP["41194"] = "遺泥쒖떆 ?ㅼ젙援?;
-SGG_CODE_MAP["41590"] = "?붿꽦??;
-SGG_CODE_MAP["41595"] = "?붿꽦??蹂묒젏援?;
-SGG_CODE_MAP["41597"] = "?붿꽦???숉깂援?;
+SGG_CODE_MAP["41190"] = "부천시";
+SGG_CODE_MAP["41192"] = "부천시 원미구";
+SGG_CODE_MAP["41193"] = "부천시 소사구";
+SGG_CODE_MAP["41194"] = "부천시 오정구";
+SGG_CODE_MAP["41590"] = "화성시";
+SGG_CODE_MAP["41595"] = "화성시 병점구";
+SGG_CODE_MAP["41597"] = "화성시 동탄구";
 
 
 
 
 const MACRO_GROUPS = [
-  { id: "?쒖슱", match: ["?쒖슱"] },
-  { id: "寃쎄린", match: ["寃쎄린"] },
-  { id: "?몄쿇", match: ["?몄쿇"] },
-  { id: "媛뺤썝", match: ["媛뺤썝"] },
-  { id: "異⑹껌", match: ["???, "?몄쥌", "異⑸턿", "異⑸궓"] },
-  { id: "?꾨씪", match: ["愿묒＜", "?꾨턿", "?꾨궓"] },
-  { id: "寃쎌긽", match: ["遺??, "?援?, "?몄궛", "寃쎈턿", "寃쎈궓"] },
-  { id: "?쒖＜", match: ["?쒖＜"] }
+  { id: "서울", match: ["서울"] },
+  { id: "경기", match: ["경기"] },
+  { id: "인천", match: ["인천"] },
+  { id: "강원", match: ["강원"] },
+  { id: "충청", match: ["대전", "세종", "충북", "충남"] },
+  { id: "전라", match: ["광주", "전북", "전남"] },
+  { id: "경상", match: ["부산", "대구", "울산", "경북", "경남"] },
+  { id: "제주", match: ["제주"] }
 ];
 
 
-const APT_MACRO = ['?쒖슱', '寃쎄린', '?몄쿇', '吏諛?];
+const APT_MACRO = ['서울', '경기', '인천', '지방'];
 const APT_SUBMACRO = {
-  '吏諛?: [
-    { id: '媛뺤썝', match: ['51'] },
-    { id: '異⑹껌', match: ['30', '36', '43', '44'] },
-    { id: '?꾨씪', match: ['29', '45', '46'] },
-    { id: '寃쎌긽', match: ['26', '27', '31', '47', '48'] },
-    { id: '?쒖＜', match: ['50'] }
+  '지방': [
+    { id: '강원', match: ['51'] },
+    { id: '충청', match: ['30', '36', '43', '44'] },
+    { id: '전라', match: ['29', '45', '46'] },
+    { id: '경상', match: ['26', '27', '31', '47', '48'] },
+    { id: '제주', match: ['50'] }
   ]
 };
 const SIDO_NAMES = {
-  '11': '?쒖슱', '26': '遺??, '27': '?援?, '28': '?몄쿇', '29': '愿묒＜',
-  '30': '???, '31': '?몄궛', '36': '?몄쥌', '41': '寃쎄린', '43': '異⑸턿',
-  '44': '異⑸궓', '45': '?꾨턿', '46': '?꾨궓', '47': '寃쎈턿', '48': '寃쎈궓',
-  '50': '?쒖＜', '51': '媛뺤썝'
+  '11': '서울', '26': '부산', '27': '대구', '28': '인천', '29': '광주',
+  '30': '대전', '31': '울산', '36': '세종', '41': '경기', '43': '충북',
+  '44': '충남', '45': '전북', '46': '전남', '47': '경북', '48': '경남',
+  '50': '제주', '51': '강원'
 };
 
 function getAptSidoMatch(macroId, subMacroId) {
-  if (macroId === '?쒖슱') return ['11'];
-  if (macroId === '寃쎄린') return ['41'];
-  if (macroId === '?몄쿇') return ['28'];
-  if (macroId === '吏諛?) {
-    const sub = APT_SUBMACRO['吏諛?].find(s => s.id === subMacroId);
+  if (macroId === '서울') return ['11'];
+  if (macroId === '경기') return ['41'];
+  if (macroId === '인천') return ['28'];
+  if (macroId === '지방') {
+    const sub = APT_SUBMACRO['지방'].find(s => s.id === subMacroId);
     return sub ? sub.match : [];
   }
   return [];
@@ -339,32 +337,6 @@ function getAptCountsBySgg(items) {
   return counts;
 }
 
-
-function renderAptRankingRegion(countsBySido) {
-  const container = document.getElementById('apt-ranking-region-container');
-  if (!container) return;
-  const btnDefs = [
-    { id: 'all', label: '전국', match: () => true },
-    { id: 'seoul', label: '서울', match: (s) => s === '11' },
-    { id: 'gyeonggi', label: '경기', match: (s) => s === '41' },
-    { id: 'incheon', label: '인천', match: (s) => s === '28' },
-    { id: 'local', label: '지방', match: (s) => s !== '11' && s !== '41' && s !== '28' }
-  ];
-  const html = btnDefs.map(def => {
-    const isSelected = state.selectedRankingRegion === def.id;
-    const count = Object.entries(countsBySido).reduce((sum, [sido, c]) => sum + (def.match(sido) ? c : 0), 0);
-    const countStr = count > 0 ? ` ${count.toLocaleString()}` : '';
-    return `<button class="chip" aria-selected="${isSelected}" data-rr="${def.id}">${def.label}${countStr}</button>`;
-  }).join('');
-  container.innerHTML = html;
-  document.querySelectorAll('#apt-ranking-region-container .chip').forEach(b => {
-    b.addEventListener('click', () => {
-      state.selectedRankingRegion = b.dataset.rr;
-      paint();
-    });
-  });
-}
-
 function renderAptMacroRegions() {
   document.getElementById('apt-macro-container').innerHTML = APT_MACRO.map(m => 
     `<button class="chip" aria-selected="${m === state.aptMacroRegion}" data-macro="${m}">${m}</button>`
@@ -373,26 +345,26 @@ function renderAptMacroRegions() {
   document.querySelectorAll('#apt-macro-container .chip').forEach(b => {
     b.addEventListener('click', () => {
       state.aptMacroRegion = b.dataset.macro;
-      if (state.aptMacroRegion === '吏諛?) {
-        state.aptSubMacroRegion = '寃쎌긽';
-        state.aptMicroRegion = '寃쎌긽 ?꾩껜';
+      if (state.aptMacroRegion === '지방') {
+        state.aptSubMacroRegion = '경상';
+        state.aptMicroRegion = '경상 전체';
       } else {
-        state.aptMicroRegion = state.aptMacroRegion + ' ?꾩껜';
+        state.aptMicroRegion = state.aptMacroRegion + ' 전체';
       }
       paint();
     });
   });
 
-  if (state.aptMacroRegion === '吏諛?) {
+  if (state.aptMacroRegion === '지방') {
     document.getElementById('apt-submacro-container').style.display = 'flex';
-    document.getElementById('apt-submacro-container').innerHTML = APT_SUBMACRO['吏諛?].map(m => 
+    document.getElementById('apt-submacro-container').innerHTML = APT_SUBMACRO['지방'].map(m => 
       `<button class="chip" aria-selected="${m.id === state.aptSubMacroRegion}" data-submacro="${m.id}">${m.id}</button>`
     ).join('');
     
     document.querySelectorAll('#apt-submacro-container .chip').forEach(b => {
       b.addEventListener('click', () => {
         state.aptSubMacroRegion = b.dataset.submacro;
-        state.aptMicroRegion = state.aptSubMacroRegion + ' ?꾩껜';
+        state.aptMicroRegion = state.aptSubMacroRegion + ' 전체';
         paint();
       });
     });
@@ -409,7 +381,7 @@ function renderAptMicroRegions() {
   const counts = getAptCountsBySgg(items);
   const getCount = (code) => counts[code] || 0;
   
-  // Calculate total count for "?꾩껜" buttons
+  // Calculate total count for "전체" buttons
   const getTotalCountForSido = (sidoCode) => {
     return items.reduce((acc, i) => {
       const k = i.apartmentKey + '|' + i.areaGroup;
@@ -418,14 +390,14 @@ function renderAptMicroRegions() {
     }, {c:0, seen:new Set()}).c;
   };
   
-  // Calculate total for Macro/SubMacro "?꾩껜"
+  // Calculate total for Macro/SubMacro "전체"
   const macroTotal = items.reduce((acc, i) => {
       const k = i.apartmentKey + '|' + i.areaGroup;
       if (sidos.includes(i.sidoCode) && !acc.seen.has(k)) { acc.seen.add(k); acc.c++; }
       return acc;
   }, {c:0, seen:new Set()}).c;
   
-  let htmlDesktop = `<div style="font-size:0.75rem; color:var(--sub); margin-bottom:8px; width:100%;">吏??퀎 ?レ옄???꾩옱 吏묎퀎 諛??꾪꽣 議곌굔???대떦?섎뒗 ?⑥?쨌硫댁쟻 洹몃９ ?섏엯?덈떎.</div>`;
+  let htmlDesktop = `<div style="font-size:0.75rem; color:var(--sub); margin-bottom:8px; width:100%;">지역별 숫자는 현재 집계 및 필터 조건에 해당하는 단지·면적 그룹 수입니다.</div>`;
   let htmlMobile = ``;
   
   const addOption = (val, label, count, isSelected, isHeader=false) => {
@@ -434,7 +406,7 @@ function renderAptMicroRegions() {
        return;
     }
     const disabled = count === 0 && !isHeader;
-    const txt = isHeader ? label : `${label} ${count > 0 ? count : '0嫄?}`;
+    const txt = isHeader ? label : `${label} ${count > 0 ? count : '0건'}`;
     
     if (isHeader) {
       htmlDesktop += `<div style="width:100%; margin-top:16px; font-size:0.85rem; color:var(--ink); font-weight:700; padding:4px 4px 4px 8px; border-left:3px solid var(--sub); background:rgba(0,0,0,0.03); border-radius:4px;">${txt}</div>`;
@@ -453,9 +425,9 @@ function renderAptMicroRegions() {
   };
   const closeOptgroup = () => { htmlMobile += `</optgroup>`; };
   
-  const topName = macroName === '吏諛? ? state.aptSubMacroRegion : macroName;
-  const isTopAllSelected = state.aptMicroRegion === topName + ' ?꾩껜';
-  addOption(topName + ' ?꾩껜', topName + ' ?꾩껜', macroTotal, isTopAllSelected);
+  const topName = macroName === '지방' ? state.aptSubMacroRegion : macroName;
+  const isTopAllSelected = state.aptMicroRegion === topName + ' 전체';
+  addOption(topName + ' 전체', topName + ' 전체', macroTotal, isTopAllSelected);
   
   // Choose correct Incheon version based on referenceMonth
   const mode = document.querySelector('input[name="dataMode"]:checked').value;
@@ -472,7 +444,7 @@ function renderAptMicroRegions() {
     const isMultiSido = sidos.length > 1;
     if (isMultiSido) {
       addOption(null, SIDO_NAMES[sido] || sido, null, false, true);
-      addOption(sido, (SIDO_NAMES[sido] || sido) + ' ?꾩껜', getTotalCountForSido(sido), state.aptMicroRegion === sido);
+      addOption(sido, (SIDO_NAMES[sido] || sido) + ' 전체', getTotalCountForSido(sido), state.aptMicroRegion === sido);
     }
     
     const processFlatNodes = (nodes) => {
@@ -493,7 +465,7 @@ function renderAptMicroRegions() {
         if (!pName) { console.warn(`Unmapped parentCode: ${p.parentCode}`); return; }
         
         addOption(null, pName, null, false, true); // Create Header
-        addOption(p.parentCode, pName + ' ?꾩껜', getCount(p.parentCode), state.aptMicroRegion === p.parentCode);
+        addOption(p.parentCode, pName + ' 전체', getCount(p.parentCode), state.aptMicroRegion === p.parentCode);
         
         const children = [...p.children].sort((a,b) => (SGG_CODE_MAP[a]||'').localeCompare(SGG_CODE_MAP[b]||''));
         children.forEach(cCode => {
@@ -506,7 +478,7 @@ function renderAptMicroRegions() {
       });
       
       if (standalones.length > 0) {
-        addOption(null, '?쇰컲 ?쑣룰뎔', null, false, true);
+        addOption(null, '일반 시·군', null, false, true);
         processFlatNodes(standalones);
         closeOptgroup();
       }
@@ -535,19 +507,19 @@ document.querySelector('.apt-micro-select').addEventListener('change', (e) => {
 });
 
 const won = v => {
-  if (v == null || Number.isNaN(v)) return "??;
+  if (v == null || Number.isNaN(v)) return "–";
   const num = Number(v);
-  if (!isFinite(num)) return "??;
+  if (!isFinite(num)) return "–";
   const uk = Math.floor(num / 100000000);
   const man = Math.round((num % 100000000) / 10000);
   let res = "";
-  if (uk > 0) res += uk + "??";
-  if (man > 0 || uk === 0) res += man.toLocaleString() + "留뚯썝";
+  if (uk > 0) res += uk + "억 ";
+  if (man > 0 || uk === 0) res += man.toLocaleString() + "만원";
   return res.trim();
 };
-const rate = v => v == null ? "?? :
+const rate = v => v == null ? "–" :
   `<span class="rate ${v>0?"up":v<0?"down":""}">${v>0?"+":""}${v.toFixed(2)}%</span>`;
-const confLabel = { high:"?믪쓬", medium:"蹂댄넻", low:"??쓬" };
+const confLabel = { high:"높음", medium:"보통", low:"낮음" };
 
 document.querySelectorAll('input[name="confFilter"], input[name="dataMode"]').forEach(radio => {
   radio.addEventListener('change', () => paint());
@@ -562,22 +534,22 @@ async function loadJson(url){
 }
 
 function renderRegion(d){
-  if (d === null) return `<p class="empty">遺덈윭?ㅻ뒗 以묅?/p>`;
-  if(d && d.error) return `<p class="empty">?쒓뎔援??곗씠?곕? 遺덈윭?ㅼ? 紐삵뻽?듬땲??</p>`;
-  if(!d || !d.items || d.items.length === 0) return `<p class="empty">?꾩옱 議곌굔???대떦?섎뒗 吏???쒖쐞 寃곌낵媛 ?놁뒿?덈떎.</p>`;
+  if (d === null) return `<p class="empty">불러오는 중…</p>`;
+  if(d && d.error) return `<p class="empty">시군구 데이터를 불러오지 못했습니다.</p>`;
+  if(!d || !d.items || d.items.length === 0) return `<p class="empty">현재 조건에 해당하는 지역 순위 결과가 없습니다.</p>`;
   
   let filtered = d.items;
   
   if (state.regionSubTab === "local") {
      const group = MACRO_GROUPS.find(g => g.id === state.macroRegion);
-     if (state.microRegion === `${state.macroRegion} ?꾩껜`) {
+     if (state.microRegion === `${state.macroRegion} 전체`) {
         filtered = filtered.filter(item => {
            const parts = item.regionName.split('>');
            return group.match.includes(parts[0]);
         });
      } else {
         filtered = filtered.filter(item => {
-           const parts = item.regionName.split('>').filter(p => !p.endsWith('沅?) && !p.endsWith('吏??));
+           const parts = item.regionName.split('>').filter(p => !p.endsWith('권') && !p.endsWith('지역'));
            const micro = parts.slice(1).join(' ');
            return micro === state.microRegion;
         });
@@ -585,12 +557,12 @@ function renderRegion(d){
   }
   
   if (filtered.length === 0) {
-     return `<p class="empty">?좏깮??吏??쓽 ?쒖쐞 ?곗씠?곌? ?놁뒿?덈떎.</p>`;
+     return `<p class="empty">선택한 지역의 순위 데이터가 없습니다.</p>`;
   }
   
   const max = Math.max(...filtered.map(i=>Math.abs(i.momRate||0)), 0.01);
   const rows = filtered.map((i, idx) => {
-    const parts = i.regionName.split('>').filter(p => !p.endsWith('沅?) && !p.endsWith('吏??));
+    const parts = i.regionName.split('>').filter(p => !p.endsWith('권') && !p.endsWith('지역'));
     const displayName = parts.join(' ');
     return `
     <tr><td>${idx + 1}</td><td class="name" title="${i.regionName}">${displayName}</td>
@@ -598,8 +570,8 @@ function renderRegion(d){
     <td class="hide-m">${rate(i.threeMonthRate)}</td>
     <td class="hide-m">${rate(i.yoyRate)}</td></tr>`;
   }).join("");
-  return `<table><thead><tr><th>?쒖쐞</th><th>吏??/th><th>?꾩썡 ?鍮?/th>
-    <th class="hide-m">3媛쒖썡</th><th class="hide-m">?꾨뀈 ?숈썡</th></tr></thead>
+  return `<table><thead><tr><th>순위</th><th>지역</th><th>전월 대비</th>
+    <th class="hide-m">3개월</th><th class="hide-m">전년 동월</th></tr></thead>
     <tbody>${rows}</tbody></table>`;
 }
 
@@ -613,7 +585,7 @@ function renderMacroRegions() {
   document.querySelectorAll('#macro-container .chip').forEach(b => {
     b.addEventListener('click', () => {
       state.macroRegion = b.dataset.macro;
-      state.microRegion = b.dataset.macro + " ?꾩껜";
+      state.microRegion = b.dataset.macro + " 전체";
       paint();
     });
   });
@@ -627,7 +599,7 @@ function getMicroRegions(macroId) {
   
   const microMap = {};
   items.forEach(item => {
-    const parts = item.regionName.split('>').filter(p => !p.endsWith('沅?) && !p.endsWith('吏??));
+    const parts = item.regionName.split('>').filter(p => !p.endsWith('권') && !p.endsWith('지역'));
     const sido = parts[0];
     const micro = parts.slice(1).join(' ');
     if (micro) {
@@ -644,9 +616,9 @@ function renderMicroRegions() {
   const group = MACRO_GROUPS.find(g => g.id === state.macroRegion);
   const isMultiSido = group.match.length > 1;
   
-  const isAll = state.microRegion === state.macroRegion + ' ?꾩껜';
-  let htmlDesktop = `<button class="chip" aria-selected="${isAll}" data-micro="${state.macroRegion} ?꾩껜">${state.macroRegion} ?꾩껜</button>`;
-  let htmlMobile = `<option value="${state.macroRegion} ?꾩껜">${state.macroRegion} ?꾩껜</option>`;
+  const isAll = state.microRegion === state.macroRegion + ' 전체';
+  let htmlDesktop = `<button class="chip" aria-selected="${isAll}" data-micro="${state.macroRegion} 전체">${state.macroRegion} 전체</button>`;
+  let htmlMobile = `<option value="${state.macroRegion} 전체">${state.macroRegion} 전체</option>`;
   
   group.match.forEach(sido => {
     if (!microMap[sido]) return;
@@ -725,11 +697,12 @@ function renderApt(d){
   
   let filtered = d.items.map(normalizeAptRankingItem);
   
-  // 1. 지역별 보기 필터 (local tab)
+  // 1. 지역 필터링
   if (state.aptSubTab === 'local') {
      const macroName = state.aptMacroRegion;
      const topName = macroName === '지방' ? state.aptSubMacroRegion : macroName;
      const micro = state.aptMicroRegion;
+     
      if (micro === topName + ' 전체') {
         const allowedSidos = getAptSidoMatch(macroName, state.aptSubMacroRegion);
         filtered = filtered.filter(i => allowedSidos.includes(i.sidoCode));
@@ -738,6 +711,7 @@ function renderApt(d){
      } else if (micro.length === 5) {
         let isParent = false;
         let allowedChildren = [];
+        
         for (const sidoKey of Object.keys(OFFICIAL_REGION_TREE)) {
            const tree = OFFICIAL_REGION_TREE[sidoKey];
            if (Array.isArray(tree)) {
@@ -750,6 +724,7 @@ function renderApt(d){
               }
            }
         }
+        
         if (isParent) {
            filtered = filtered.filter(i => i.sggCode === micro || allowedChildren.includes(i.sggCode));
         } else {
@@ -758,56 +733,68 @@ function renderApt(d){
      }
   }
 
-  // 2. 등급 및 경고 필터 (all tabs)
+  // 2. 등급 및 경고 필터링
   if(filterVal === 'nowarn') filtered = filtered.filter(i => !i.compositionWarning);
   if(filterVal === 'medup') filtered = filtered.filter(i => i.confidence === 'high' || i.confidence === 'medium');
 
-  // 3. 전국 상승순위 지역 필터 (national tab)
-  if (state.aptSubTab === 'national') {
-    let countsBySido = {};
-    filtered.forEach(i => {
-       const sCode = String(i.sidoCode).padStart(2, "0");
-       countsBySido[sCode] = (countsBySido[sCode] || 0) + 1;
-    });
-    
-    renderAptRankingRegion(countsBySido);
-    
-    if (state.selectedRankingRegion === 'seoul') {
-       filtered = filtered.filter(i => String(i.sidoCode).padStart(2, "0") === '11');
-    } else if (state.selectedRankingRegion === 'gyeonggi') {
-       filtered = filtered.filter(i => String(i.sidoCode).padStart(2, "0") === '41');
-    } else if (state.selectedRankingRegion === 'incheon') {
-       filtered = filtered.filter(i => String(i.sidoCode).padStart(2, "0") === '28');
-    } else if (state.selectedRankingRegion === 'local') {
-       filtered = filtered.filter(i => {
-         const sc = String(i.sidoCode).padStart(2, "0");
-         return sc !== '11' && sc !== '41' && sc !== '28';
-       });
-    }
-  }
-
   if(filtered.length === 0) return `<p class="empty">선택한 지역과 조건에 해당하는 아파트 순위가 없습니다.</p>`;
 
-  // 4. 순위 재계산 (상승률 내림차순)
+  // 3. 지역 정보 텍스트 표시
+  const infoTxtElem = document.getElementById("apt-selected-region-info");
+  if (state.aptSubTab === "national") {
+     infoTxtElem.style.display = "none";
+  } else {
+     infoTxtElem.style.display = "block";
+     let microName = "";
+     if (state.aptMicroRegion.endsWith(" 전체")) {
+       microName = state.aptMicroRegion;
+     } else {
+       const code = state.aptMicroRegion;
+       if (SGG_CODE_MAP[code]) {
+         microName = SGG_CODE_MAP[code];
+         if (state.aptMacroRegion === "지방") {
+           const sido = code.slice(0,2);
+           microName = (SIDO_NAMES[sido]||"") + " " + SGG_CODE_MAP[code];
+         }
+       }
+     }
+     
+     let fullText = `선택 지역: `;
+     if (microName === state.aptMacroRegion + " 전체") {
+        fullText += microName;
+     } else if (state.aptMacroRegion === "지방") {
+        if (microName === state.aptSubMacroRegion + " 전체") {
+            fullText += `지방 · ${microName}`;
+        } else {
+            fullText += `지방 · ${state.aptSubMacroRegion} · ${microName}`;
+        }
+     } else {
+        fullText += `${state.aptMacroRegion} · ${microName}`;
+     }
+     fullText += ` <span style="color:var(--sub); font-weight:normal; margin-left:8px;">(검색 결과 ${filtered.length}개 단지·면적 그룹)</span>`;
+     infoTxtElem.innerHTML = fullText;
+  }
+
+  // 4. 순위 재계산 (상승률 내림차순 정렬 후 순위 부여)
   filtered.sort((a,b) => b.riseRate - a.riseRate);
 
   const rows = filtered.slice(0,100).map((i, idx)=>{
     const exact = i.exactAreas && i.exactAreas.length > 0 ? i.exactAreas.join(', ') : "";
-    const warnHtml = i.compositionWarning ? `<span class="warn-icon" tabindex="0" data-reasons="${(i.warnings||[]).join('<br>')}">?좑툘</span>` : "";
+    const warnHtml = i.compositionWarning ? `<span class="warn-icon" tabindex="0" data-reasons="${(i.warnings||[]).join('<br>')}">⚠️</span>` : "";
     const dtInfo = (i.baselineDirectTradeCount || i.currentDirectTradeCount) ? 
-      `<div style="font-size:0.75rem; color:#d6293e; margin-top:2px;">吏곴굅???대젰 (怨쇨굅 ${i.baselineDirectTradeCount||0}嫄? ?꾩옱 ${i.currentDirectTradeCount||0}嫄?</div>` : "";
+      `<div style="font-size:0.75rem; color:#d6293e; margin-top:2px;">직거래 이력 (과거 ${i.baselineDirectTradeCount||0}건, 현재 ${i.currentDirectTradeCount||0}건)</div>` : "";
       
-    const areaText = i.areaGroup ? `${i.areaGroup}?? : '硫댁쟻 ?뺣낫 ?놁쓬';
-    const exactHtml = exact ? ` <span style="font-size:0.75rem; color:#888;">(${exact}??</span>` : "";
+    const areaText = i.areaGroup ? `${i.areaGroup}㎡` : '면적 정보 없음';
+    const exactHtml = exact ? ` <span style="font-size:0.75rem; color:#888;">(${exact}㎡)</span>` : "";
     
     const baseFloorHtml = (i.baselineFloorMedian != null && isFinite(i.baselineFloorMedian)) 
-      ? `<br><span style="font-size:0.75rem;color:var(--sub)">嫄곕옒痢?以묒븰媛?${i.baselineFloorMedian}痢?/span>` 
+      ? `<br><span style="font-size:0.75rem;color:var(--sub)">거래층 중앙값 ${i.baselineFloorMedian}층</span>` 
       : "";
     const curFloorHtml = (i.currentFloorMedian != null && isFinite(i.currentFloorMedian)) 
-      ? `<br><span style="font-size:0.75rem;color:var(--sub)">嫄곕옒痢?以묒븰媛?${i.currentFloorMedian}痢?/span>` 
+      ? `<br><span style="font-size:0.75rem;color:var(--sub)">거래층 중앙값 ${i.currentFloorMedian}층</span>` 
       : "";
 
-    // ?붾㈃??蹂댁뿬以??대쫫 議고빀 (fallback to original item.region if SGG_CODE_MAP misses)
+    // 화면에 보여줄 이름 조합 (fallback to original item.region if SGG_CODE_MAP misses)
     let regionDisp = i.region || i.sggCode;
     if (SGG_CODE_MAP[i.sggCode]) {
       const sidoDisp = SIDO_NAMES[i.sidoCode] || "";
@@ -830,17 +817,17 @@ function renderApt(d){
     </td>
     <td>
       ${rate(i.riseRate)}<br>
-      <span class="conf">?좊ː??${confLabel[i.confidence]||""}<br>湲곗? ${i.baselineTradeCount||0}嫄?쨌 理쒓렐 ${i.currentTradeCount||0}嫄?/span>
+      <span class="conf">신뢰도 ${confLabel[i.confidence]||""}<br>기준 ${i.baselineTradeCount||0}건 · 최근 ${i.currentTradeCount||0}건</span>
     </td>
     </tr>`;
   }).join("");
   
-  if(!rows) return `<p class="empty">?좏깮??吏??낵 議곌굔???대떦?섎뒗 ?꾪뙆???쒖쐞媛 ?놁뒿?덈떎.</p>`;
+  if(!rows) return `<p class="empty">선택한 지역과 조건에 해당하는 아파트 순위가 없습니다.</p>`;
 
-  return `<table><thead><tr><th>?쒖쐞</th><th>?⑥?</th>
-    <th class="hide-m">湲곗?媛<br><span style="font-weight:normal;font-size:0.75rem">${baseStr}</span></th>
-    <th>理쒓렐媛<br><span style="font-weight:normal;font-size:0.75rem">${curStr}</span></th>
-    <th>?곸듅瑜?/th></tr></thead>
+  return `<table><thead><tr><th>순위</th><th>단지</th>
+    <th class="hide-m">기준가<br><span style="font-weight:normal;font-size:0.75rem">${baseStr}</span></th>
+    <th>최근가<br><span style="font-weight:normal;font-size:0.75rem">${curStr}</span></th>
+    <th>상승률</th></tr></thead>
     <tbody>${rows}</tbody></table>`;
 }
 
@@ -848,8 +835,8 @@ function updateTabMeta(d, idPrefix, isProvisional=false) {
   const metaSpan = document.getElementById(`tab-meta-${idPrefix}`);
   if(d && !d.error && d.referenceMonth) {
     const m = d.referenceMonth;
-    const suffix = isProvisional ? " ?좎젙" : " 湲곗?";
-    metaSpan.innerHTML = `쨌 ${m.slice(0,4)}??${+m.slice(4)}??{suffix}`;
+    const suffix = isProvisional ? " 잠정" : " 기준";
+    metaSpan.innerHTML = `· ${m.slice(0,4)}년 ${+m.slice(4)}월${suffix}`;
   } else {
     metaSpan.innerHTML = ``;
   }
@@ -879,7 +866,7 @@ function paint(){
        renderMacroRegions();
        renderMicroRegions();
        
-       const infoTxt = `?좏깮 吏?? ${state.macroRegion} 쨌 ${state.microRegion}`;
+       const infoTxt = `선택 지역: ${state.macroRegion} · ${state.microRegion}`;
        document.getElementById("selected-region-info").innerText = infoTxt;
     }
     
@@ -1016,7 +1003,6 @@ function goToApartment(key) {
   sessionStorage.setItem('apt_state', JSON.stringify(state));
   window.location.href = 'apartment.html?key=' + key;
 }
-
 </script>
 </body>
 </html>
