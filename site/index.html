@@ -43,11 +43,8 @@
   <div id="apt-macro-container" class="chip-container" style="display:none;"></div>
   <div id="apt-submacro-container" class="chip-container" style="display:none;"></div>
   
-  <div id="apt-micro-container" class="micro-container" style="display:none;">
-    <div class="apt-micro-desktop hide-m"></div>
-    <div class="apt-micro-mobile hide-d">
-      <select class="apt-micro-select micro-select"></select>
-    </div>
+    <div id="apt-micro-container" class="micro-container" style="display:none;">
+    <div id="apt-micro-panels-container"></div>
   </div>
 
   <div id="apt-selected-region-info" class="selected-info" style="display:none;"></div>
@@ -157,6 +154,7 @@ const state = {
   macroRegion: "서울",
   microRegion: "서울 전체",
   aptMacroRegion: "서울",
+  aptExpandedMacroRegion: null,
   aptSubMacroRegion: "경상",
   aptMicroRegion: "서울 전체",
   dataMode: "stable",
@@ -350,50 +348,43 @@ function getAptCountsBySgg(items) {
 
 
 function renderAptMacroRegions() {
-  document.getElementById('apt-macro-container').innerHTML = APT_MACRO.map(m => 
-    `<button class="chip" aria-selected="${m === state.aptMacroRegion}" data-macro="${m}">${m}</button>`
-  ).join('');
+  const macros = ['서울', '경기', '인천', '지방'];
+  document.getElementById('apt-macro-container').innerHTML = macros.map(m => {
+    const isSelected = m === state.aptMacroRegion;
+    const isExpanded = m === state.aptExpandedMacroRegion;
+    const icon = isExpanded ? '▴' : '▾';
+    return `<button class="chip" aria-selected="${isSelected}" aria-expanded="${isExpanded}" aria-controls="apartment-region-panel-${m}" data-macro="${m}">${m} <span class="accordion-icon" style="margin-left:4px; font-size:0.8em; opacity:0.7;">${icon}</span></button>`;
+  }).join('');
   
   document.querySelectorAll('#apt-macro-container .chip').forEach(b => {
     b.addEventListener('click', () => {
-      state.aptMacroRegion = b.dataset.macro;
-      if (state.aptMacroRegion === '지방') {
-        state.aptSubMacroRegion = '경상';
-        state.aptMicroRegion = '경상 전체';
+      const clicked = b.dataset.macro;
+      if (clicked === state.aptMacroRegion) {
+          if (state.aptExpandedMacroRegion === clicked) {
+              state.aptExpandedMacroRegion = null;
+          } else {
+              state.aptExpandedMacroRegion = clicked;
+          }
       } else {
-        state.aptMicroRegion = state.aptMacroRegion + ' 전체';
+          state.aptMacroRegion = clicked;
+          state.aptExpandedMacroRegion = clicked;
+          if (clicked === '지방') {
+            state.aptSubMacroRegion = '경상';
+            state.aptMicroRegion = '경상 전체';
+          } else {
+            state.aptMicroRegion = clicked + ' 전체';
+          }
       }
       renderApp();
     });
   });
-
-  if (state.aptMacroRegion === '지방') {
-    document.getElementById('apt-submacro-container').style.display = 'flex';
-    document.getElementById('apt-submacro-container').innerHTML = APT_SUBMACRO['지방'].map(m => 
-      `<button class="chip" aria-selected="${m.id === state.aptSubMacroRegion}" data-submacro="${m.id}">${m.id}</button>`
-    ).join('');
-    
-    document.querySelectorAll('#apt-submacro-container .chip').forEach(b => {
-      b.addEventListener('click', () => {
-        state.aptSubMacroRegion = b.dataset.submacro;
-        state.aptMicroRegion = state.aptSubMacroRegion + ' 전체';
-        renderApp();
-      });
-    });
-  } else {
-    document.getElementById('apt-submacro-container').style.display = 'none';
-  }
 }
 
 function renderAptMicroRegions() {
-  const macroName = state.aptMacroRegion;
-  const sidos = getAptSidoMatch(macroName, state.aptSubMacroRegion);
-  
   const items = getAptFilteredItems();
   const counts = getAptCountsBySgg(items);
   const getCount = (code) => counts[code] || 0;
   
-  // Calculate total count for "전체" buttons
   const getTotalCountForSido = (sidoCode) => {
     return items.reduce((acc, i) => {
       const k = i.apartmentKey + '|' + i.areaGroup;
@@ -401,111 +392,118 @@ function renderAptMicroRegions() {
       return acc;
     }, {c:0, seen:new Set()}).c;
   };
+
+  const macros = ['서울', '경기', '인천', '지방'];
+  let containerHtml = '';
   
-  // Calculate total for Macro/SubMacro "전체"
-  const macroTotal = items.reduce((acc, i) => {
-      const k = i.apartmentKey + '|' + i.areaGroup;
-      if (sidos.includes(i.sidoCode) && !acc.seen.has(k)) { acc.seen.add(k); acc.c++; }
-      return acc;
-  }, {c:0, seen:new Set()}).c;
-  
-  let htmlDesktop = `<div style="font-size:0.75rem; color:var(--sub); margin-bottom:8px; width:100%;">지역별 숫자는 현재 집계 및 필터 조건에 해당하는 단지·면적 그룹 수입니다.</div>`;
-  let htmlMobile = ``;
-  
-  const addOption = (val, label, count, isSelected, isHeader=false) => {
-    if (!label || label.trim() === '') {
-       if (val) console.warn(`Unmapped sggCode or empty label: ${val}`);
-       return;
-    }
-    const disabled = count === 0 && !isHeader;
-    const txt = isHeader ? label : `${label} ${count > 0 ? count : '0건'}`;
-    
-    if (isHeader) {
-      htmlDesktop += `<div style="width:100%; margin-top:16px; font-size:0.85rem; color:var(--ink); font-weight:700; padding:4px 4px 4px 8px; border-left:3px solid var(--sub); background:rgba(0,0,0,0.03); border-radius:4px;">${txt}</div>`;
-      htmlMobile += `<optgroup label="${txt}">`;
-    } else {
-      const cls = disabled ? 'chip disabled' : 'chip';
-      const selectedAttrDesk = isSelected ? 'aria-selected="true"' : 'aria-selected="false"';
-      const disabledAttr = disabled ? 'disabled style="opacity:0.5; pointer-events:none;"' : '';
+  macros.forEach(macroName => {
+      const isExpanded = state.aptExpandedMacroRegion === macroName;
+      let displayStyle = isExpanded ? 'block' : 'none';
       
-      const selectedAttrMob = isSelected ? 'selected' : '';
-      const disabledAttrMob = disabled ? 'disabled' : '';
+      let htmlDesktop = `<div id="apartment-region-panel-${macroName}" style="display:${displayStyle}; transition: opacity 0.2s; width:100%; margin-top:8px; padding:12px; background:rgba(0,0,0,0.02); border-radius:8px;">`;
       
-      htmlDesktop += `<button class="${cls}" ${selectedAttrDesk} ${disabledAttr} data-micro="${val}">${txt}</button>`;
-      htmlMobile += `<option value="${val}" ${selectedAttrMob} ${disabledAttrMob}>${txt}</option>`;
-    }
-  };
-  const closeOptgroup = () => { htmlMobile += `</optgroup>`; };
-  
-  const topName = macroName === '지방' ? state.aptSubMacroRegion : macroName;
-  const isTopAllSelected = state.aptMicroRegion === topName + ' 전체';
-  addOption(topName + ' 전체', topName + ' 전체', macroTotal, isTopAllSelected);
-  
-  // Choose correct Incheon version based on referenceMonth
-  const mode = document.querySelector('input[name="dataMode"]:checked').value;
-  const d = (mode === 'provisional' ? state.aptProvisional : state.aptStable);
-  const refMonth = (d && d.referenceMonth) || "202606";
-  
-  sidos.forEach(sido => {
-    let treeKey = sido;
-    if (sido === '28') treeKey = parseInt(refMonth) >= 202607 ? '28_new' : '28_old';
-    
-    const tree = OFFICIAL_REGION_TREE[treeKey] || [];
-    if (tree.length === 0) return;
-    
-    const isMultiSido = sidos.length > 1;
-    if (isMultiSido) {
-      addOption(null, SIDO_NAMES[sido] || sido, null, false, true);
-      addOption(sido, (SIDO_NAMES[sido] || sido) + ' 전체', getTotalCountForSido(sido), state.aptMicroRegion === sido);
-    }
-    
-    const processFlatNodes = (nodes) => {
-       const sorted = [...nodes].sort((a,b) => (SGG_CODE_MAP[a]||'').localeCompare(SGG_CODE_MAP[b]||''));
-       sorted.forEach(code => {
-         if (!SGG_CODE_MAP[code]) console.warn(`Unmapped sggCode: ${code}`);
-         addOption(code, SGG_CODE_MAP[code] || '', getCount(code), state.aptMicroRegion === code);
-       });
-    };
-    
-    if (treeKey === '41' || treeKey === '43' || treeKey === '44' || treeKey === '45' || treeKey === '47' || treeKey === '48') {
-      // Tree with parents and standalones
-      const parents = tree.filter(n => n.type === 'parent').sort((a,b) => (SGG_CODE_MAP[a.parentCode]||'').localeCompare(SGG_CODE_MAP[b.parentCode]||''));
-      const standalones = tree.find(n => n.type === 'standalone')?.codes || [];
-      
-      parents.forEach(p => {
-        const pName = SGG_CODE_MAP[p.parentCode];
-        if (!pName) { console.warn(`Unmapped parentCode: ${p.parentCode}`); return; }
-        
-        addOption(null, pName, null, false, true); // Create Header
-        addOption(p.parentCode, pName + ' 전체', getCount(p.parentCode), state.aptMicroRegion === p.parentCode);
-        
-        const children = [...p.children].sort((a,b) => (SGG_CODE_MAP[a]||'').localeCompare(SGG_CODE_MAP[b]||''));
-        children.forEach(cCode => {
-          const cName = SGG_CODE_MAP[cCode];
-          if (!cName) { console.warn(`Unmapped sggCode: ${cCode}`); return; }
-          const shortName = cName.replace(pName + ' ', '');
-          addOption(cCode, shortName, getCount(cCode), state.aptMicroRegion === cCode);
-        });
-        closeOptgroup();
-      });
-      
-      if (standalones.length > 0) {
-        addOption(null, '일반 시·군', null, false, true);
-        processFlatNodes(standalones);
-        closeOptgroup();
+      if (macroName === '지방') {
+         htmlDesktop += `<div style="margin-bottom:12px;" class="chip-container">` + APT_SUBMACRO['지방'].map(m => 
+           `<button class="chip" aria-selected="${m.id === state.aptSubMacroRegion}" data-submacro="${m.id}" style="font-size:0.85rem; padding:4px 10px;">${m.id}</button>`
+         ).join('') + `</div>`;
       }
-    } else {
-      // Flat tree
-      processFlatNodes(tree);
-    }
-    
-    if (isMultiSido) closeOptgroup();
+      
+      htmlDesktop += `<div style="font-size:0.75rem; color:var(--sub); margin-bottom:8px; width:100%;">지역별 숫자는 현재 집계 및 필터 조건에 해당하는 단지·면적 그룹 수입니다.</div>`;
+      htmlDesktop += `<div class="chip-container">`;
+      
+      const subMacro = macroName === '지방' ? state.aptSubMacroRegion : null;
+      const sidos = getAptSidoMatch(macroName, subMacro);
+      
+      const macroTotal = items.reduce((acc, i) => {
+          const k = i.apartmentKey + '|' + i.areaGroup;
+          if (sidos.includes(i.sidoCode) && !acc.seen.has(k)) { acc.seen.add(k); acc.c++; }
+          return acc;
+      }, {c:0, seen:new Set()}).c;
+      
+      const addOption = (val, label, count, isSelected, isHeader=false) => {
+        if (!label || label.trim() === '') return;
+        const disabled = count === 0 && !isHeader;
+        const txt = isHeader ? label : `${label} ${count > 0 ? count : '0건'}`;
+        
+        if (isHeader) {
+          htmlDesktop += `<div style="width:100%; margin-top:12px; margin-bottom:4px; font-size:0.85rem; color:var(--ink); font-weight:700; padding:4px 4px 4px 8px; border-left:3px solid var(--sub); background:rgba(0,0,0,0.03); border-radius:4px;">${txt}</div>`;
+        } else {
+          const cls = disabled ? 'chip disabled' : 'chip';
+          const selectedAttrDesk = isSelected ? 'aria-selected="true"' : 'aria-selected="false"';
+          const disabledAttr = disabled ? 'disabled style="opacity:0.5; pointer-events:none;"' : '';
+          htmlDesktop += `<button class="${cls}" ${selectedAttrDesk} ${disabledAttr} data-micro="${val}">${txt}</button>`;
+        }
+      };
+      
+      const topName = macroName === '지방' ? state.aptSubMacroRegion : macroName;
+      const isTopAllSelected = state.aptMicroRegion === topName + ' 전체';
+      addOption(topName + ' 전체', topName + ' 전체', macroTotal, isTopAllSelected);
+      
+      const mode = document.querySelector('input[name="dataMode"]:checked').value;
+      const d = (mode === 'provisional' ? state.aptProvisional : state.aptStable);
+      const refMonth = (d && d.referenceMonth) || "202606";
+      
+      sidos.forEach(sido => {
+        let treeKey = sido;
+        if (sido === '28') treeKey = parseInt(refMonth) >= 202607 ? '28_new' : '28_old';
+        
+        const tree = OFFICIAL_REGION_TREE[treeKey] || [];
+        if (tree.length === 0) return;
+        
+        const isMultiSido = sidos.length > 1;
+        if (isMultiSido) {
+          addOption(null, SIDO_NAMES[sido] || sido, null, false, true);
+          addOption(sido, (SIDO_NAMES[sido] || sido) + ' 전체', getTotalCountForSido(sido), state.aptMicroRegion === sido);
+        }
+        
+        const processFlatNodes = (nodes) => {
+           const sorted = [...nodes].sort((a,b) => (SGG_CODE_MAP[a]||'').localeCompare(SGG_CODE_MAP[b]||''));
+           sorted.forEach(code => {
+             addOption(code, SGG_CODE_MAP[code] || '', getCount(code), state.aptMicroRegion === code);
+           });
+        };
+        
+        if (treeKey === '41' || treeKey === '43' || treeKey === '44' || treeKey === '45' || treeKey === '47' || treeKey === '48') {
+          const parents = tree.filter(n => n.type === 'parent').sort((a,b) => (SGG_CODE_MAP[a.parentCode]||'').localeCompare(SGG_CODE_MAP[b.parentCode]||''));
+          const standalones = tree.find(n => n.type === 'standalone')?.codes || [];
+          
+          parents.forEach(p => {
+            const pName = SGG_CODE_MAP[p.parentCode];
+            if (!pName) return;
+            addOption(null, pName, null, false, true);
+            addOption(p.parentCode, pName + ' 전체', getCount(p.parentCode), state.aptMicroRegion === p.parentCode);
+            const children = [...p.children].sort((a,b) => (SGG_CODE_MAP[a]||'').localeCompare(SGG_CODE_MAP[b]||''));
+            children.forEach(cCode => {
+              const cName = SGG_CODE_MAP[cCode];
+              if (!cName) return;
+              const shortName = cName.replace(pName + ' ', '');
+              addOption(cCode, shortName, getCount(cCode), state.aptMicroRegion === cCode);
+            });
+          });
+          
+          if (standalones.length > 0) {
+            addOption(null, '일반 시·군', null, false, true);
+            processFlatNodes(standalones);
+          }
+        } else {
+          processFlatNodes(tree);
+        }
+      });
+      htmlDesktop += `</div></div>`;
+      containerHtml += htmlDesktop;
   });
   
-  document.querySelector('.apt-micro-desktop').innerHTML = htmlDesktop;
-  document.querySelector('.apt-micro-select').innerHTML = htmlMobile;
+  document.getElementById('apt-micro-panels-container').innerHTML = containerHtml;
   
-  document.querySelectorAll('.apt-micro-desktop button:not(.disabled)').forEach(b => {
+  document.querySelectorAll('#apt-micro-panels-container button[data-submacro]').forEach(b => {
+    b.addEventListener('click', () => {
+      state.aptSubMacroRegion = b.dataset.submacro;
+      state.aptMicroRegion = state.aptSubMacroRegion + ' 전체';
+      renderApp();
+    });
+  });
+  
+  document.querySelectorAll('#apt-micro-panels-container button[data-micro]:not(.disabled)').forEach(b => {
     b.addEventListener('click', () => {
       state.aptMicroRegion = b.dataset.micro;
       renderApp();
@@ -513,10 +511,6 @@ function renderAptMicroRegions() {
   });
 }
 
-document.querySelector('.apt-micro-select').addEventListener('change', (e) => {
-  state.aptMicroRegion = e.target.value;
-  renderApp();
-});
 
 const won = v => {
   if (v == null || Number.isNaN(v)) return "–";
@@ -1019,6 +1013,11 @@ function init() {
       if (state.apartmentView !== "nationwide" && state.apartmentView !== "regional") {
           state.apartmentView = "nationwide";
       }
+      
+      if (!['서울', '경기', '인천', '지방', null].includes(state.aptExpandedMacroRegion)) {
+          state.aptExpandedMacroRegion = null;
+      }
+
       
       setTimeout(() => {
          window.scrollTo(0, parsed.scrollPos || 0);
