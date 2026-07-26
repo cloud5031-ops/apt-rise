@@ -474,6 +474,8 @@ function showMapError(reason, msg) {
   if (containerEl) {
     containerEl.style.display = 'none';
   }
+  mapLoaded = false;
+  mapLoading = false;
 }
 
 function clearMapError() {
@@ -520,6 +522,7 @@ function loadKakaoMap() {
   
   function initMap() {
     try {
+        clearMapError(); // Ensure container is block before init
         const container = document.getElementById('map-container');
         const pos = new window.kakao.maps.LatLng(lat, lng);
         const options = { center: pos, level: 3 };
@@ -538,8 +541,12 @@ function loadKakaoMap() {
         
         mapLoaded = true;
         mapLoading = false;
+        
+        setTimeout(() => {
+            mapInst.relayout();
+            mapInst.setCenter(pos);
+        }, 100);
     } catch (e) {
-        mapLoading = false;
         showMapError('map_init_failed', '지도 서비스를 불러오지 못했습니다.');
     }
   }
@@ -567,14 +574,12 @@ function loadKakaoMap() {
   script.src = `https://dapi.kakao.com/v2/maps/sdk.js?appkey=${encodeURIComponent(key)}&autoload=false`;
   
   const timeout = setTimeout(() => {
-     mapLoading = false;
      showMapError('kakao_sdk_timeout', '지도 서비스를 불러오지 못했습니다.');
   }, 15000);
   
   script.onload = () => {
     clearTimeout(timeout);
     if (!window.kakao || !window.kakao.maps) {
-      mapLoading = false;
       showMapError('kakao_namespace_missing', '지도 서비스를 불러오지 못했습니다.');
       return;
     }
@@ -584,7 +589,6 @@ function loadKakaoMap() {
   };
   script.onerror = () => {
     clearTimeout(timeout);
-    mapLoading = false;
     showMapError('kakao_sdk_network_error', '지도 서비스를 불러오지 못했습니다.');
   };
   document.head.appendChild(script);
