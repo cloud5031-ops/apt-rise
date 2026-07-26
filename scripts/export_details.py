@@ -1,10 +1,24 @@
 import os
+import sys
 import json
 import sqlite3
 import argparse
 import requests
-import config
+import time
+from datetime import datetime
+from pathlib import Path
+
+PROJECT_ROOT = Path(__file__).resolve().parents[1]
+DATA_DIR = PROJECT_ROOT / "data"
+SITE_DIR = PROJECT_ROOT / "site"
+DETAILS_DIR = SITE_DIR / "data" / "details"
+GEOCODE_CACHE_PATH = DATA_DIR / "geocoding" / "apartment_coordinates.json"
+SHARDS_DIR = DATA_DIR / "shards"
+DB_PATH = DATA_DIR / "apt.sqlite"
+
+sys.path.insert(0, str(PROJECT_ROOT / "scripts"))
 from utils import get_dynamic_months
+import config
 
 def get_target_months(ref_month_str):
     y = int(ref_month_str[:4])
@@ -19,32 +33,27 @@ def get_target_months(ref_month_str):
         months.append(f"{ty:04d}{tm:02d}")
     return sorted(months)
 
-
-import time
-from datetime import datetime
-
-GEOCODE_CACHE_PATH = os.path.join(config.DATA_DIR, "geocoding", "apartment_coordinates.json")
-
 def load_geocode_cache():
-    if os.path.exists(GEOCODE_CACHE_PATH):
+    if GEOCODE_CACHE_PATH.exists():
         with open(GEOCODE_CACHE_PATH, 'r', encoding='utf-8') as f:
             return json.load(f)
     return {}
 
 def save_geocode_cache(cache):
-    os.makedirs(os.path.dirname(GEOCODE_CACHE_PATH), exist_ok=True)
+    GEOCODE_CACHE_PATH.parent.mkdir(parents=True, exist_ok=True)
     with open(GEOCODE_CACHE_PATH, 'w', encoding='utf-8') as f:
         json.dump(cache, f, ensure_ascii=False, indent=2)
 
-def geocode_apartment(apt_key, sido_name, sgg_name, dong_name, jibun, cache):
+def geocode_apartment(apt_key, sido_name, sgg_name, dong_name, jibun, cache, stats):
     if apt_key in cache:
         status = cache[apt_key].get("geocodeStatus")
-        # Do not recall if valid. Re-call if api_error, or we could also skip if ambiguous/not_found
         if status in ("valid", "ambiguous", "not_found"):
+            stats['cache_hits'] += 1
             return cache[apt_key]
 
     api_key = getattr(config, "KAKAO_REST_API_KEY", os.environ.get("KAKAO_REST_API_KEY", ""))
     if not api_key:
+        stats['api_error'] += 1
         return None
 
     query = f"{dong_name} {jibun}"
@@ -52,7 +61,7 @@ def geocode_apartment(apt_key, sido_name, sgg_name, dong_name, jibun, cache):
     headers = {"Authorization": f"KakaoAK {api_key}"}
     
     try:
-        time.sleep(0.05) # Rate limit protection (20 req/s max safely)
+        time.sleep(0.05)
         res = requests.get(url, headers=headers, params={"query": query}, timeout=5)
         if res.status_code == 200:
             data = res.json()
@@ -60,7 +69,11 @@ def geocode_apartment(apt_key, sido_name, sgg_name, dong_name, jibun, cache):
             if len(docs) > 0:
                 doc = docs[0]
                 status = "valid"
-                if len(docs) > 1: status = "ambiguous"
+                if len(docs) > 1: 
+                    status = "ambiguous"
+                    stats['ambiguous'] += 1
+                else:
+                    stats['new_geocode_success'] += 1
                 
                 cache[apt_key] = {
                     "apartmentKey": apt_key,
@@ -73,6 +86,7 @@ def geocode_apartment(apt_key, sido_name, sgg_name, dong_name, jibun, cache):
                     "geocodedAt": datetime.now().isoformat()
                 }
             else:
+                stats['not_found'] += 1
                 cache[apt_key] = {
                     "apartmentKey": apt_key,
                     "geocodeStatus": "not_found",
@@ -80,6 +94,7 @@ def geocode_apartment(apt_key, sido_name, sgg_name, dong_name, jibun, cache):
                     "geocodedAt": datetime.now().isoformat()
                 }
         else:
+            stats['api_error'] += 1
             cache[apt_key] = {
                 "apartmentKey": apt_key,
                 "geocodeStatus": "api_error",
@@ -88,6 +103,7 @@ def geocode_apartment(apt_key, sido_name, sgg_name, dong_name, jibun, cache):
             }
     except Exception as e:
         print(f"Geocoding error for {apt_key}: {e}")
+        stats['api_error'] += 1
         return None
 
     return cache[apt_key]
@@ -99,6 +115,12 @@ def export_details():
     parser.add_argument("--provisional-month", help="고정 기준월 (잠정 집계)")
     args = parser.parse_args()
 
+    # Pre-execution checks
+    if not PROJECT_ROOT.exists():
+        raise FileNotFoundError(f"PROJECT_ROOT does not exist: {PROJECT_ROOT}")
+    if not DB_PATH.exists():
+        raise FileNotFoundError(f"DB_PATH does not exist: {DB_PATH}")
+
     if args.stable_month and args.provisional_month:
         stable_month = args.stable_month
         provisional_month = args.provisional_month
@@ -107,14 +129,25 @@ def export_details():
         stable_month = months_info["stableMonth"]
         provisional_month = months_info["provisionalMonth"]
 
-    keys_to_export = {} # key -> dict of info
+    stable_shard_path = SHARDS_DIR / stable_month / "stable" / f"{args.region_group}.json"
+    provisional_shard_path = SHARDS_DIR / provisional_month / "provisional" / f"{args.region_group}.json"
+
+    if not stable_shard_path.exists() and not provisional_shard_path.exists():
+        print(f"No shards found for region {args.region_group}. Checked paths:")
+        print(f"- {stable_shard_path}")
+        print(f"- {provisional_shard_path}")
+        return
+
+    DETAILS_DIR.mkdir(parents=True, exist_ok=True)
+    GEOCODE_CACHE_PATH.parent.mkdir(parents=True, exist_ok=True)
+
+    keys_to_export = {}
     ref_months = set([stable_month, provisional_month])
     
-    def process_shard(month, status):
-        shard_path = os.path.join(config.SHARDS_DIR, month, status, f"{args.region_group}.json")
-        if os.path.exists(shard_path):
+    def process_shard(path):
+        if path.exists():
             try:
-                with open(shard_path, 'r', encoding='utf-8') as f:
+                with open(path, 'r', encoding='utf-8') as f:
                     data = json.load(f)
                     for item in data.get("items", []):
                         apt_key = item["apartmentKey"]
@@ -125,37 +158,37 @@ def export_details():
                                 "apartmentName": item.get("apartmentName", "")
                             }
             except Exception as e:
-                print(f"Error reading shard {shard_path}: {e}")
+                print(f"Error reading shard {path}: {e}")
 
-    process_shard(stable_month, "stable")
-    process_shard(provisional_month, "provisional")
+    process_shard(stable_shard_path)
+    process_shard(provisional_shard_path)
 
-    success_count = 0
-    zero_count = 0
-    fail_count = 0
+    stats = {
+        'target_count': len(keys_to_export),
+        'success_count': 0,
+        'zero_count': 0,
+        'fail_count': 0,
+        'cache_hits': 0,
+        'new_geocode_success': 0,
+        'ambiguous': 0,
+        'not_found': 0,
+        'api_error': 0
+    }
     failed_keys = []
 
     if not keys_to_export:
         print(f"No apartments to export for region {args.region_group}.")
-        write_summary(args.region_group, 0, 0, 0, [])
+        write_summary(args.region_group, stats, failed_keys)
         return
 
     target_months = set()
     for rm in ref_months:
         target_months.update(get_target_months(rm))
 
-    db_path = config.DB_PATH
-    if not os.path.exists(db_path):
-        print("DB not found.")
-        write_summary(args.region_group, 0, 0, len(keys_to_export), list(keys_to_export.keys()))
-        return
-
-    con = sqlite3.connect(db_path)
+    con = sqlite3.connect(DB_PATH)
     con.row_factory = sqlite3.Row
     c = con.cursor()
 
-    out_dir_base = os.path.join(config.SITE_DATA_DIR, "details")
-    os.makedirs(out_dir_base, exist_ok=True)
     months_placeholder = ",".join("?" for _ in target_months)
     target_months_list = list(target_months)
 
@@ -164,9 +197,9 @@ def export_details():
 
     for apt_key, info in keys_to_export.items():
         sgg = info["sggCode"]
-        sgg_dir = os.path.join(out_dir_base, sgg)
-        os.makedirs(sgg_dir, exist_ok=True)
-        out_path = os.path.join(sgg_dir, f"{apt_key}.json")
+        sgg_dir = DETAILS_DIR / sgg
+        sgg_dir.mkdir(parents=True, exist_ok=True)
+        out_path = sgg_dir / f"{apt_key}.json"
 
         try:
             c.execute(f"""
@@ -179,17 +212,15 @@ def export_details():
             rows = c.fetchall()
 
             if not rows:
-                zero_count += 1
-                # If there's an existing valid file, don't overwrite it with empty transactions
-                if not os.path.exists(out_path):
-                    # We can still write a skeleton JSON
+                stats['zero_count'] += 1
+                if not out_path.exists():
                     pass
 
             transactions = []
             available_areas = set()
             dong_name = ""
-
             jibun = ""
+
             for r in rows:
                 if not dong_name: dong_name = r['umd_name']
                 if not jibun: jibun = r['jibun']
@@ -204,12 +235,10 @@ def export_details():
                     "cancellationStatus": "CANCELLED" if r['is_cancelled'] else "COMPLETED"
                 })
 
-            # Don't overwrite if 0 transactions and file already exists
-            if not transactions and os.path.exists(out_path):
-                # keep old file
+            if not transactions and out_path.exists():
                 continue
 
-            geo = geocode_apartment(apt_key, info["sidoCode"], sgg, dong_name, jibun, geocode_cache)
+            geo = geocode_apartment(apt_key, info["sidoCode"], sgg, dong_name, jibun, geocode_cache, stats)
             if geo and not geocode_updated:
                 geocode_updated = True
                 
@@ -246,27 +275,42 @@ def export_details():
                 json.dump(out_data, f, ensure_ascii=False, indent=1)
             
             if transactions:
-                success_count += 1
+                stats['success_count'] += 1
 
         except Exception as e:
             print(f"Error processing {apt_key}: {e}")
-            fail_count += 1
+            stats['fail_count'] += 1
             failed_keys.append(apt_key)
 
     con.close()
     if geocode_updated:
         save_geocode_cache(geocode_cache)
-    print(f"Export completed for {args.region_group}. Success: {success_count}, Zero: {zero_count}, Fail: {fail_count}")
-    write_summary(args.region_group, success_count, zero_count, fail_count, failed_keys)
+        
+    print(f"Export completed for {args.region_group}.")
+    print(f"대상 단지 수: {stats['target_count']}")
+    print(f"생성 성공 수: {stats['success_count']}")
+    print(f"캐시 적중 수: {stats['cache_hits']}")
+    print(f"새 지오코딩 성공 수: {stats['new_geocode_success']}")
+    print(f"ambiguous 수: {stats['ambiguous']}")
+    print(f"not_found 수: {stats['not_found']}")
+    print(f"api_error 수: {stats['api_error']}")
+    print(f"실패 단지 수: {stats['fail_count']}")
+    
+    write_summary(args.region_group, stats, failed_keys)
 
-def write_summary(region, success, zero, fail, failed_keys):
+def write_summary(region, stats, failed_keys):
     summary_file = os.environ.get("GITHUB_STEP_SUMMARY")
     if summary_file:
         with open(summary_file, "a", encoding="utf-8") as f:
             f.write(f"### 🏢 상세 JSON 생성 리포트 ({region})\n")
-            f.write(f"- **성공 단지 (거래 있음)**: {success}건\n")
-            f.write(f"- **상세 거래 0건 단지**: {zero}건\n")
-            f.write(f"- **실패 단지**: {fail}건\n")
+            f.write(f"- **대상 단지 수**: {stats['target_count']}건\n")
+            f.write(f"- **성공 단지 (거래 있음)**: {stats['success_count']}건\n")
+            f.write(f"- **상세 거래 0건 단지**: {stats['zero_count']}건\n")
+            f.write(f"- **실패 단지**: {stats['fail_count']}건\n")
+            f.write(f"- **Geocode 캐시 적중**: {stats['cache_hits']}건\n")
+            f.write(f"- **새 지오코딩 성공**: {stats['new_geocode_success']}건\n")
+            f.write(f"- **Geocode Not Found**: {stats['not_found']}건\n")
+            f.write(f"- **Geocode API Error**: {stats['api_error']}건\n")
             if failed_keys:
                 f.write(f"<details><summary>실패한 apartmentKey 목록</summary>\n\n```text\n{', '.join(failed_keys)}\n```\n</details>\n")
             f.write("\n")

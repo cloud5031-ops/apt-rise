@@ -54,7 +54,24 @@ jobs:
           KAKAO_REST_API_KEY: ${{ secrets.KAKAO_REST_API_KEY }}
         run: |
           python scripts/compute_apt_rankings.py --region-group seoul --stable-month ${{ steps.parse_manifest.outputs.stable_month }} --provisional-month ${{ steps.parse_manifest.outputs.provisional_month }}
-          python scripts/export_details.py --region-group seoul --stable-month ${{ steps.parse_manifest.outputs.stable_month }} --provisional-month ${{ steps.parse_manifest.outputs.provisional_month }} || true
+
+      - name: Export Details (Seoul)
+        id: export_details_seoul
+        continue-on-error: true
+        env:
+          KAKAO_REST_API_KEY: ${{ secrets.KAKAO_REST_API_KEY }}
+        run: |
+          python scripts/export_details.py --region-group seoul --stable-month ${{ steps.parse_manifest.outputs.stable_month }} --provisional-month ${{ steps.parse_manifest.outputs.provisional_month }}
+
+      - name: Report Details Export (Seoul)
+        if: always()
+        run: |
+          if [ "${{ steps.export_details_seoul.outcome }}" != "success" ]; then
+            echo "::warning::Export Details (Seoul) failed"
+            echo "### ⚠️ Seoul detail export failed" >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo "### ✅ Seoul detail export succeeded" >> "$GITHUB_STEP_SUMMARY"
+          fi
 
       - name: Collect Trades (Gyeonggi Incheon)
         env:
@@ -70,7 +87,24 @@ jobs:
           KAKAO_REST_API_KEY: ${{ secrets.KAKAO_REST_API_KEY }}
         run: |
           python scripts/compute_apt_rankings.py --region-group gyeonggi_incheon --stable-month ${{ steps.parse_manifest.outputs.stable_month }} --provisional-month ${{ steps.parse_manifest.outputs.provisional_month }}
-          python scripts/export_details.py --region-group gyeonggi_incheon --stable-month ${{ steps.parse_manifest.outputs.stable_month }} --provisional-month ${{ steps.parse_manifest.outputs.provisional_month }} || true
+
+      - name: Export Details (Gyeonggi Incheon)
+        id: export_details_gyeonggi
+        continue-on-error: true
+        env:
+          KAKAO_REST_API_KEY: ${{ secrets.KAKAO_REST_API_KEY }}
+        run: |
+          python scripts/export_details.py --region-group gyeonggi_incheon --stable-month ${{ steps.parse_manifest.outputs.stable_month }} --provisional-month ${{ steps.parse_manifest.outputs.provisional_month }}
+
+      - name: Report Details Export (Gyeonggi Incheon)
+        if: always()
+        run: |
+          if [ "${{ steps.export_details_gyeonggi.outcome }}" != "success" ]; then
+            echo "::warning::Export Details (Gyeonggi Incheon) failed"
+            echo "### ⚠️ Gyeonggi Incheon detail export failed" >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo "### ✅ Gyeonggi Incheon detail export succeeded" >> "$GITHUB_STEP_SUMMARY"
+          fi
 
       - name: Validate Shards
         run: python scripts/validate_shard.py
