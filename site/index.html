@@ -92,6 +92,7 @@
 </div>
 
 <script>
+
 let activeTooltipTarget = null;
 const portalTooltip = document.createElement('div');
 portalTooltip.id = 'portal-tooltip';
@@ -147,6 +148,7 @@ const state = {
   region: null, 
   aptStable: null, 
   aptProvisional: null,
+  selectedRankingRegion: "all",
   regionSubTab: "national",
   macroRegion: "서울",
   microRegion: "서울 전체"
@@ -335,6 +337,32 @@ function getAptCountsBySgg(items) {
     }
   });
   return counts;
+}
+
+
+function renderAptRankingRegion(countsBySido) {
+  const container = document.getElementById('apt-ranking-region-container');
+  if (!container) return;
+  const btnDefs = [
+    { id: 'all', label: '전국', match: () => true },
+    { id: 'seoul', label: '서울', match: (s) => s === '11' },
+    { id: 'gyeonggi', label: '경기', match: (s) => s === '41' },
+    { id: 'incheon', label: '인천', match: (s) => s === '28' },
+    { id: 'local', label: '지방', match: (s) => s !== '11' && s !== '41' && s !== '28' }
+  ];
+  const html = btnDefs.map(def => {
+    const isSelected = state.selectedRankingRegion === def.id;
+    const count = Object.entries(countsBySido).reduce((sum, [sido, c]) => sum + (def.match(sido) ? c : 0), 0);
+    const countStr = count > 0 ? ` ${count.toLocaleString()}` : '';
+    return `<button class="chip" aria-selected="${isSelected}" data-rr="${def.id}">${def.label}${countStr}</button>`;
+  }).join('');
+  container.innerHTML = html;
+  document.querySelectorAll('#apt-ranking-region-container .chip').forEach(b => {
+    b.addEventListener('click', () => {
+      state.selectedRankingRegion = b.dataset.rr;
+      paint();
+    });
+  });
 }
 
 function renderAptMacroRegions() {
@@ -737,12 +765,38 @@ function renderApt(d){
   if(filterVal === 'nowarn') filtered = filtered.filter(i => !i.compositionWarning);
   if(filterVal === 'medup') filtered = filtered.filter(i => i.confidence === 'high' || i.confidence === 'medium');
 
+  // 3. 전국 상승순위 지역 필터 (national tab)
+  if (state.aptSubTab === 'national') {
+    let countsBySido = {};
+    filtered.forEach(i => {
+       const sCode = String(i.sidoCode).padStart(2, "0");
+       countsBySido[sCode] = (countsBySido[sCode] || 0) + 1;
+    });
+    
+    renderAptRankingRegion(countsBySido);
+    
+    if (state.selectedRankingRegion === 'seoul') {
+       filtered = filtered.filter(i => String(i.sidoCode).padStart(2, "0") === '11');
+    } else if (state.selectedRankingRegion === 'gyeonggi') {
+       filtered = filtered.filter(i => String(i.sidoCode).padStart(2, "0") === '41');
+    } else if (state.selectedRankingRegion === 'incheon') {
+       filtered = filtered.filter(i => String(i.sidoCode).padStart(2, "0") === '28');
+    } else if (state.selectedRankingRegion === 'local') {
+       filtered = filtered.filter(i => {
+         const sc = String(i.sidoCode).padStart(2, "0");
+         return sc !== '11' && sc !== '41' && sc !== '28';
+       });
+    }
+  }
+
   if(filtered.length === 0) return `<p class="empty">선택한 지역과 조건에 해당하는 아파트 순위가 없습니다.</p>`;
 
-  // 3. 지역 정보 텍스트 표시
+  // 4. 지역 정보 텍스트 표시
   const infoTxtElem = document.getElementById("apt-selected-region-info");
   if (state.aptSubTab === "national") {
-     infoTxtElem.style.display = "none";
+     infoTxtElem.style.display = "block";
+     const titles = { all: '전국', seoul: '서울', gyeonggi: '경기', incheon: '인천', local: '지방' };
+     infoTxtElem.innerHTML = `선택 지역: ${titles[state.selectedRankingRegion]} <span style="color:var(--sub); font-weight:normal; margin-left:8px;">(검색 결과 ${filtered.length}개 단지·면적 그룹)</span>`;
   } else {
      infoTxtElem.style.display = "block";
      let microName = "";
@@ -775,7 +829,7 @@ function renderApt(d){
      infoTxtElem.innerHTML = fullText;
   }
 
-  // 4. 순위 재계산 (상승률 내림차순 정렬 후 순위 부여)
+  // 5. 순위 재계산 (상승률 내림차순 정렬 후 순위 부여)
   filtered.sort((a,b) => b.riseRate - a.riseRate);
 
   const rows = filtered.slice(0,100).map((i, idx)=>{
@@ -1003,6 +1057,7 @@ function goToApartment(key) {
   sessionStorage.setItem('apt_state', JSON.stringify(state));
   window.location.href = 'apartment.html?key=' + key;
 }
+
 </script>
 </body>
 </html>
