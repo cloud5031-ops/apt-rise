@@ -82,6 +82,8 @@
     100000, 200000, 250000, 500000, 1000000
   ];
 
+  var MAX_PRICE_TICKS = 6;
+
   function niceAxis(minWon, maxWon, targetTicks) {
     var minMan = Number(minWon) / 10000;
     var maxMan = Number(maxWon) / 10000;
@@ -89,14 +91,27 @@
     if (maxMan === minMan) { minMan -= 1000; maxMan += 1000; }
 
     var raw = (maxMan - minMan) / (targetTicks || 5);
-    var step = TICK_LADDER_MAN[TICK_LADDER_MAN.length - 1];
+    var idx = TICK_LADDER_MAN.length - 1;
     for (var i = 0; i < TICK_LADDER_MAN.length; i++) {
-      if (TICK_LADDER_MAN[i] >= raw) { step = TICK_LADDER_MAN[i]; break; }
+      if (TICK_LADDER_MAN[i] >= raw) { idx = i; break; }
     }
-    var lo = Math.floor(minMan / step) * step;
-    var hi = Math.ceil(maxMan / step) * step;
-    if (lo === hi) hi = lo + step;
-    return { min: lo * 10000, max: hi * 10000, stepSize: step * 10000 };
+
+    /* 최고/최저가가 축 경계에 딱 붙으면 점 반경만큼 잘리므로,
+     * 경계와 데이터 사이에 최소 1/4 눈금의 headroom을 보장한다.
+     * headroom 때문에 눈금이 6개를 넘으면 한 단계 굵은 눈금으로 다시 계산한다. */
+    while (true) {
+      var step = TICK_LADDER_MAN[idx];
+      var lo = Math.floor(minMan / step) * step;
+      var hi = Math.ceil(maxMan / step) * step;
+      if (lo === hi) hi = lo + step;
+      if (hi - maxMan < step * 0.25) hi += step;
+      if (minMan - lo < step * 0.25) lo = Math.max(0, lo - step);
+      var count = Math.round((hi - lo) / step) + 1;
+      if (count <= MAX_PRICE_TICKS || idx >= TICK_LADDER_MAN.length - 1) {
+        return { min: lo * 10000, max: hi * 10000, stepSize: step * 10000 };
+      }
+      idx++;
+    }
   }
 
   // 표시 전용 면적 라벨. 반올림 없이 소수점만 버린다. 원본 값은 그대로 둔다.
@@ -318,7 +333,7 @@
       '</div>' +
       '<div class="apt-inline-chart-block">' +
         '<h4 class="apt-inline-chart-title">월별 중위가격 · 거래 건수</h4>' +
-        '<div class="apt-inline-chart"><canvas data-chart="monthly"></canvas></div>' +
+        '<div class="apt-inline-chart monthly"><canvas data-chart="monthly"></canvas></div>' +
       '</div>';
 
     var msg = body.querySelector("[data-chart-msg]");
@@ -396,7 +411,10 @@
             borderColor: "#1b4b99",
             borderWidth: 1,
             pointRadius: 6,
-            pointHoverRadius: 9
+            pointHoverRadius: 9,
+            // 창 경계(마지막 달) 위의 점이 chartArea에서 잘리지 않게 한다.
+            // layout.padding이 잉여 공간을 만들어 축 라벨 침범은 없다.
+            clip: false
           },
           {
             label: "직거래",
@@ -406,14 +424,15 @@
             borderWidth: 1,
             pointStyle: "triangle",
             pointRadius: 8,
-            pointHoverRadius: 11
+            pointHoverRadius: 11,
+            clip: false
           }
         ]
       },
       options: {
         responsive: true,
         maintainAspectRatio: false,
-        layout: { padding: { top: 4, right: 6 } },
+        layout: { padding: { top: 16, right: 22, bottom: 8, left: 8 } },
         plugins: {
           legend: legendCommon,
           tooltip: {
@@ -442,6 +461,7 @@
               maxTicksLimit: 6,
               autoSkip: true,
               maxRotation: 0,
+              minRotation: 0,
               font: { size: 11 },
               callback: function (val) {
                 var d = new Date(val);
@@ -457,6 +477,7 @@
             border: { display: false },
             ticks: {
               stepSize: axis.stepSize,
+              maxTicksLimit: MAX_PRICE_TICKS,
               font: { size: 11 },
               callback: function (v) { return formatAxisPrice(v); }
             }
@@ -510,14 +531,15 @@
             pointRadius: 3,
             pointHoverRadius: 6,
             spanGaps: true,
-            order: 1
+            order: 1,
+            clip: false
           }
         ]
       },
       options: {
         responsive: true,
         maintainAspectRatio: false,
-        layout: { padding: { top: 4, right: 6 } },
+        layout: { padding: { top: 16, right: 22, bottom: 8, left: 8 } },
         interaction: { mode: "index", intersect: false },
         plugins: {
           legend: legendCommon,
@@ -552,6 +574,7 @@
               maxTicksLimit: 7,
               autoSkip: true,
               maxRotation: 0,
+              minRotation: 0,
               font: { size: 11 }
             }
           },
@@ -564,6 +587,7 @@
             border: { display: false },
             ticks: {
               stepSize: axis.stepSize,
+              maxTicksLimit: MAX_PRICE_TICKS,
               font: { size: 11 },
               callback: function (v) { return formatAxisPrice(v); }
             }
@@ -577,6 +601,7 @@
             border: { display: false },
             ticks: {
               precision: 0,
+              padding: 6,
               font: { size: 11 },
               // 막대 영역(아래 1/3) 밖의 눈금은 숨겨 축이 어수선해지지 않게 한다
               callback: function (v) { return v <= maxVol ? v + "건" : ""; }

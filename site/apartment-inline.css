@@ -180,8 +180,20 @@ tr.apt-row-open {
 }
 .apt-inline-chart {
   position: relative;
-  height: 260px;
+  height: 280px;
   width: 100%;
+  min-width: 0;
+}
+.apt-inline-chart.monthly {
+  height: 300px;
+}
+@media (max-width: 600px) {
+  .apt-inline-chart {
+    height: 240px;
+  }
+  .apt-inline-chart.monthly {
+    height: 260px;
+  }
 }
 .apt-inline-chart-msg,
 .apt-inline-map-msg {
@@ -223,9 +235,6 @@ tr.apt-row-open {
 @media (max-width: 480px) {
   .apt-inline-panel {
     padding: 12px;
-  }
-  .apt-inline-chart {
-    height: 210px;
   }
   .apt-inline-map {
     height: 220px;
