@@ -17,8 +17,12 @@ SHARDS_DIR = DATA_DIR / "shards"
 DB_PATH = DATA_DIR / "apt.sqlite"
 
 sys.path.insert(0, str(PROJECT_ROOT / "scripts"))
-from utils import get_dynamic_months
+from utils import get_dynamic_months, shift_month
 import config
+from details_history import (
+    merge_transactions, compute_history_coverage,
+    load_backfill_state, record_collected_months, save_backfill_state,
+)
 
 def get_target_months(ref_month_str):
     y = int(ref_month_str[:4])
@@ -180,6 +184,8 @@ def export_details():
     stats = {
         'target_count': len(keys_to_export),
         'generated_with_transactions': 0,
+        'history_complete': 0,
+        'history_partial': 0,
         'preserved_existing': 0,
         'skipped_no_transactions': 0,
         'geocode_valid': 0,
@@ -198,6 +204,35 @@ def export_details():
     target_months = set()
     for rm in ref_months:
         target_months.update(get_target_months(rm))
+
+    # ── 36개월 이력 병합 준비 ─────────────────────────────────────
+    # 끝 기준월(anchor)은 잠정 집계월로 통일한다 (계획: 36개월 창 = provisional-35 ~ provisional)
+    history_end_month = provisional_month
+
+    # 수집이력 장부: 이번 실행에서 collect_trades가 성공적으로 수집한 시군구에 한해
+    # 수집 창(stable-3 ~ provisional, 5개월)을 기록한다. run_meta.json이 근거.
+    backfill_state = load_backfill_state()
+    collect_window = []
+    m = shift_month(stable_month, -3)
+    while m <= provisional_month:
+        collect_window.append(m)
+        m = shift_month(m, 1)
+
+    run_meta_path = PROJECT_ROOT / "run_meta.json"
+    collected_sggs = set()
+    if run_meta_path.exists():
+        try:
+            with open(run_meta_path, 'r', encoding='utf-8') as f:
+                meta = json.load(f)
+            if meta.get("regionGroup") == args.region_group:
+                collected_sggs = set(meta.get("successfulSggCodes") or [])
+        except Exception:
+            collected_sggs = set()
+
+    if collected_sggs:
+        for sgg_ok in collected_sggs:
+            record_collected_months(backfill_state, sgg_ok, collect_window)
+        save_backfill_state(backfill_state)
 
     con = sqlite3.connect(DB_PATH)
     con.row_factory = sqlite3.Row
@@ -264,6 +299,24 @@ def export_details():
                     stats['skipped_no_transactions'] += 1
                 continue
 
+            # ── 기존 이력과 병합 (덮어쓰기 금지) ──────────────────
+            existing_tx = []
+            if out_path.exists():
+                try:
+                    with open(out_path, 'r', encoding='utf-8') as f:
+                        existing_data = json.load(f)
+                    existing_tx = existing_data.get("transactions") or []
+                    if not dong_name:
+                        dong_name = existing_data.get("dongName") or ""
+                except Exception:
+                    existing_tx = []
+
+            merged_tx = merge_transactions(existing_tx, transactions, history_end_month)
+            available_areas = set(
+                t["exclusiveArea"] for t in merged_tx
+                if t.get("exclusiveArea") is not None
+            )
+
             existing_loc = get_existing_valid_location(out_path)
             geo = geocode_apartment(apt_key, info["sidoCode"], sgg, dong_name, jibun, geocode_cache, stats, existing_loc)
             if geo and not geocode_updated:
@@ -284,8 +337,15 @@ def export_details():
                 "dongName": dong_name,
                 "referenceMonths": sorted(list(ref_months)),
                 "availableAreas": sorted(list(available_areas)),
-                "transactions": transactions
+                "transactions": merged_tx
             }
+
+            coverage = compute_history_coverage(sgg, history_end_month, backfill_state)
+            out_data["historyCoverage"] = coverage
+            if coverage["complete"]:
+                stats['history_complete'] += 1
+            else:
+                stats['history_partial'] += 1
 
             if geo:
                 out_data["location"] = {
@@ -339,6 +399,8 @@ def write_summary(region, stats, failed_keys):
             f.write(f"### 🏢 상세 JSON 생성 리포트 ({region})\n")
             f.write(f"- **대상 단지 수**: {stats['target_count']}건\n")
             f.write(f"- **거래 포함 신규 생성 (V2)**: {stats['generated_with_transactions']}건\n")
+            f.write(f"- **36개월 이력 완료**: {stats['history_complete']}건\n")
+            f.write(f"- **일부 기간만 수집됨**: {stats['history_partial']}건\n")
             f.write(f"- **유효 거래 없음 (기존 보존)**: {stats['preserved_existing']}건\n")
             f.write(f"- **유효 거래 없음 (스킵됨)**: {stats['skipped_no_transactions']}건\n")
             f.write(f"- **실패 단지**: {stats['failed']}건\n")
