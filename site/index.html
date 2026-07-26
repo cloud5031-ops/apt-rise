@@ -16,7 +16,7 @@
 
   <nav role="tablist" id="main-nav">
     <button role="tab" aria-selected="true"  data-tab="region">시군구 상승률 <span id="tab-meta-region" style="font-weight:normal; font-size:0.8em; color:var(--sub);"></span></button>
-    <button role="tab" aria-selected="false" data-tab="apt">개별 아파트 <span id="tab-meta-apt" style="font-weight:normal; font-size:0.8em; color:var(--sub);"></span></button>
+    <button role="tab" aria-selected="false" data-tab="apartment">개별 아파트 <span id="tab-meta-apt" style="font-weight:normal; font-size:0.8em; color:var(--sub);"></span></button>
   </nav>
 
   <nav role="tablist" id="region-sub-nav" class="sub-nav">
@@ -70,7 +70,11 @@
     <label><input type="radio" name="confFilter" value="medup"> 신뢰도 보통 이상</label>
   </div>
 
-  <div id="content"><p class="empty">불러오는 중…</p></div>
+  <div id="region-ranking-content"></div>
+  <div id="apartment-ranking-content">
+    <div id="apartment-nationwide-content"></div>
+    <div id="apartment-regional-content"></div>
+  </div>
 
   <div class="desc-box">
     <b>[데이터 소스]</b> 시군구: 한국부동산원 가격지수 · 개별 단지: 국토교통부 실거래가 (해제 거래 제외)<br><br>
@@ -144,14 +148,19 @@ window.addEventListener('scroll', hideTooltip, {passive:true});
 window.addEventListener('resize', hideTooltip, {passive:true});
 
 const state = { 
-  tab: "region", 
+  mainTab: "region", 
   region: null, 
   aptStable: null, 
   aptProvisional: null,
-  selectedRankingRegion: "all",
+  apartmentView: "nationwide",
   regionSubTab: "national",
   macroRegion: "서울",
-  microRegion: "서울 전체"
+  microRegion: "서울 전체",
+  aptMacroRegion: "서울",
+  aptSubMacroRegion: "경상",
+  aptMicroRegion: "서울 전체",
+  dataMode: "stable",
+  confFilter: "all"
 };
 
 const SGG_CODE_MAP = {
@@ -340,31 +349,6 @@ function getAptCountsBySgg(items) {
 }
 
 
-function renderAptRankingRegion(countsBySido) {
-  const container = document.getElementById('apt-ranking-region-container');
-  if (!container) return;
-  const btnDefs = [
-    { id: 'all', label: '전국', match: () => true },
-    { id: 'seoul', label: '서울', match: (s) => s === '11' },
-    { id: 'gyeonggi', label: '경기', match: (s) => s === '41' },
-    { id: 'incheon', label: '인천', match: (s) => s === '28' },
-    { id: 'local', label: '지방', match: (s) => s !== '11' && s !== '41' && s !== '28' }
-  ];
-  const html = btnDefs.map(def => {
-    const isSelected = state.selectedRankingRegion === def.id;
-    const count = Object.entries(countsBySido).reduce((sum, [sido, c]) => sum + (def.match(sido) ? c : 0), 0);
-    const countStr = count > 0 ? ` ${count.toLocaleString()}` : '';
-    return `<button class="chip" aria-selected="${isSelected}" data-rr="${def.id}">${def.label}${countStr}</button>`;
-  }).join('');
-  container.innerHTML = html;
-  document.querySelectorAll('#apt-ranking-region-container .chip').forEach(b => {
-    b.addEventListener('click', () => {
-      state.selectedRankingRegion = b.dataset.rr;
-      paint();
-    });
-  });
-}
-
 function renderAptMacroRegions() {
   document.getElementById('apt-macro-container').innerHTML = APT_MACRO.map(m => 
     `<button class="chip" aria-selected="${m === state.aptMacroRegion}" data-macro="${m}">${m}</button>`
@@ -379,7 +363,7 @@ function renderAptMacroRegions() {
       } else {
         state.aptMicroRegion = state.aptMacroRegion + ' 전체';
       }
-      paint();
+      renderApp();
     });
   });
 
@@ -393,7 +377,7 @@ function renderAptMacroRegions() {
       b.addEventListener('click', () => {
         state.aptSubMacroRegion = b.dataset.submacro;
         state.aptMicroRegion = state.aptSubMacroRegion + ' 전체';
-        paint();
+        renderApp();
       });
     });
   } else {
@@ -524,14 +508,14 @@ function renderAptMicroRegions() {
   document.querySelectorAll('.apt-micro-desktop button:not(.disabled)').forEach(b => {
     b.addEventListener('click', () => {
       state.aptMicroRegion = b.dataset.micro;
-      paint();
+      renderApp();
     });
   });
 }
 
 document.querySelector('.apt-micro-select').addEventListener('change', (e) => {
   state.aptMicroRegion = e.target.value;
-  paint();
+  renderApp();
 });
 
 const won = v => {
@@ -550,7 +534,7 @@ const rate = v => v == null ? "–" :
 const confLabel = { high:"높음", medium:"보통", low:"낮음" };
 
 document.querySelectorAll('input[name="confFilter"], input[name="dataMode"]').forEach(radio => {
-  radio.addEventListener('change', () => paint());
+  radio.addEventListener('change', () => renderApp());
 });
 
 async function loadJson(url){
@@ -561,7 +545,7 @@ async function loadJson(url){
   }catch{ return { error: true }; }
 }
 
-function renderRegion(d){
+function renderRegionRankingTable(d){
   if (d === null) return `<p class="empty">불러오는 중…</p>`;
   if(d && d.error) return `<p class="empty">시군구 데이터를 불러오지 못했습니다.</p>`;
   if(!d || !d.items || d.items.length === 0) return `<p class="empty">현재 조건에 해당하는 지역 순위 결과가 없습니다.</p>`;
@@ -614,7 +598,7 @@ function renderMacroRegions() {
     b.addEventListener('click', () => {
       state.macroRegion = b.dataset.macro;
       state.microRegion = b.dataset.macro + " 전체";
-      paint();
+      renderApp();
     });
   });
 }
@@ -675,14 +659,14 @@ function renderMicroRegions() {
   deskContainer.querySelectorAll('button').forEach(b => {
      b.addEventListener('click', () => {
         state.microRegion = b.dataset.micro;
-        paint();
+        renderApp();
      });
   });
 }
 
 document.querySelector('.micro-select').addEventListener('change', (e) => {
   state.microRegion = e.target.value;
-  paint();
+  renderApp();
 });
 
 function formatPeriod(m) {
@@ -715,7 +699,7 @@ function normalizeAptRankingItem(raw) {
   };
 }
 
-function renderApt(d){
+function renderApartmentRankingList(d){
   if (d === null) return `<p class="empty">불러오는 중…</p>`;
   if(d && d.error) return `<p class="empty">개별 아파트 데이터를 불러오지 못했습니다.</p>`;
   if(!d || !d.items || d.items.length === 0) return `<p class="empty">현재 조건에 해당하는 아파트 순위 결과가 없습니다.</p>`;
@@ -725,8 +709,8 @@ function renderApt(d){
   
   let filtered = d.items.map(normalizeAptRankingItem);
   
-  // 1. 지역 필터링
-  if (state.aptSubTab === 'local') {
+  // 1. 지역 필터링 (regional 뷰일 때만)
+  if (state.apartmentView === 'regional') {
      const macroName = state.aptMacroRegion;
      const topName = macroName === '지방' ? state.aptSubMacroRegion : macroName;
      const micro = state.aptMicroRegion;
@@ -765,72 +749,11 @@ function renderApt(d){
   if(filterVal === 'nowarn') filtered = filtered.filter(i => !i.compositionWarning);
   if(filterVal === 'medup') filtered = filtered.filter(i => i.confidence === 'high' || i.confidence === 'medium');
 
-  // 3. 전국 상승순위 지역 필터 (national tab)
-  if (state.aptSubTab === 'national') {
-    let countsBySido = {};
-    filtered.forEach(i => {
-       const sCode = String(i.sidoCode).padStart(2, "0");
-       countsBySido[sCode] = (countsBySido[sCode] || 0) + 1;
-    });
-    
-    renderAptRankingRegion(countsBySido);
-    
-    if (state.selectedRankingRegion === 'seoul') {
-       filtered = filtered.filter(i => String(i.sidoCode).padStart(2, "0") === '11');
-    } else if (state.selectedRankingRegion === 'gyeonggi') {
-       filtered = filtered.filter(i => String(i.sidoCode).padStart(2, "0") === '41');
-    } else if (state.selectedRankingRegion === 'incheon') {
-       filtered = filtered.filter(i => String(i.sidoCode).padStart(2, "0") === '28');
-    } else if (state.selectedRankingRegion === 'local') {
-       filtered = filtered.filter(i => {
-         const sc = String(i.sidoCode).padStart(2, "0");
-         return sc !== '11' && sc !== '41' && sc !== '28';
-       });
-    }
-  }
-
   if(filtered.length === 0) return `<p class="empty">선택한 지역과 조건에 해당하는 아파트 순위가 없습니다.</p>`;
 
-  // 4. 지역 정보 텍스트 표시
-  const infoTxtElem = document.getElementById("apt-selected-region-info");
-  if (state.aptSubTab === "national") {
-     infoTxtElem.style.display = "block";
-     const titles = { all: '전국', seoul: '서울', gyeonggi: '경기', incheon: '인천', local: '지방' };
-     infoTxtElem.innerHTML = `선택 지역: ${titles[state.selectedRankingRegion]} <span style="color:var(--sub); font-weight:normal; margin-left:8px;">(검색 결과 ${filtered.length}개 단지·면적 그룹)</span>`;
-  } else {
-     infoTxtElem.style.display = "block";
-     let microName = "";
-     if (state.aptMicroRegion.endsWith(" 전체")) {
-       microName = state.aptMicroRegion;
-     } else {
-       const code = state.aptMicroRegion;
-       if (SGG_CODE_MAP[code]) {
-         microName = SGG_CODE_MAP[code];
-         if (state.aptMacroRegion === "지방") {
-           const sido = code.slice(0,2);
-           microName = (SIDO_NAMES[sido]||"") + " " + SGG_CODE_MAP[code];
-         }
-       }
-     }
-     
-     let fullText = `선택 지역: `;
-     if (microName === state.aptMacroRegion + " 전체") {
-        fullText += microName;
-     } else if (state.aptMacroRegion === "지방") {
-        if (microName === state.aptSubMacroRegion + " 전체") {
-            fullText += `지방 · ${microName}`;
-        } else {
-            fullText += `지방 · ${state.aptSubMacroRegion} · ${microName}`;
-        }
-     } else {
-        fullText += `${state.aptMacroRegion} · ${microName}`;
-     }
-     fullText += ` <span style="color:var(--sub); font-weight:normal; margin-left:8px;">(검색 결과 ${filtered.length}개 단지·면적 그룹)</span>`;
-     infoTxtElem.innerHTML = fullText;
-  }
-
-  // 5. 순위 재계산 (상승률 내림차순 정렬 후 순위 부여)
+  // 3. 순위 재계산 (상승률 내림차순 정렬 후 순위 부여)
   filtered.sort((a,b) => b.riseRate - a.riseRate);
+
 
   const rows = filtered.slice(0,100).map((i, idx)=>{
     const exact = i.exactAreas && i.exactAreas.length > 0 ? i.exactAreas.join(', ') : "";
@@ -896,83 +819,191 @@ function updateTabMeta(d, idPrefix, isProvisional=false) {
   }
 }
 
-function paint(){
-  if (state.tab === "region") {
-    document.getElementById("aptMode").style.display = "none";
-    document.getElementById("aptFilters").style.display = "none";
-    document.getElementById("apt-sub-nav").style.display = "none";
-    document.getElementById("apt-macro-container").style.display = "none";
-    document.getElementById("apt-submacro-container").style.display = "none";
-    document.getElementById("apt-micro-container").style.display = "none";
-    document.getElementById("apt-selected-region-info").style.display = "none";
-    
-    document.getElementById("region-sub-nav").style.display = "flex";
-    
-    if (state.regionSubTab === "national") {
-       document.getElementById("macro-container").style.display = "none";
-       document.getElementById("micro-container").style.display = "none";
-       document.getElementById("selected-region-info").style.display = "none";
-    } else {
-       document.getElementById("macro-container").style.display = "flex";
-       document.getElementById("micro-container").style.display = "block";
-       document.getElementById("selected-region-info").style.display = "block";
-       
-       renderMacroRegions();
-       renderMicroRegions();
-       
-       const infoTxt = `선택 지역: ${state.macroRegion} · ${state.microRegion}`;
-       document.getElementById("selected-region-info").innerText = infoTxt;
-    }
-    
-    document.getElementById("content").innerHTML = renderRegion(state.region);
-    updateTabMeta(state.region, 'region');
+
+function renderRegionRankingView() {
+  document.getElementById("aptMode").style.display = "none";
+  document.getElementById("aptFilters").style.display = "none";
+  document.getElementById("apt-sub-nav").style.display = "none";
+  document.getElementById("apt-macro-container").style.display = "none";
+  document.getElementById("apt-submacro-container").style.display = "none";
+  document.getElementById("apt-micro-container").style.display = "none";
+  document.getElementById("apt-selected-region-info").style.display = "none";
+  
+  document.getElementById("region-sub-nav").style.display = "flex";
+  
+  if (state.regionSubTab === "national") {
+     document.getElementById("macro-container").style.display = "none";
+     document.getElementById("micro-container").style.display = "none";
+     document.getElementById("selected-region-info").style.display = "none";
   } else {
-    document.getElementById("aptMode").style.display = "flex";
-    document.getElementById("aptFilters").style.display = "flex";
-    document.getElementById("region-sub-nav").style.display = "none";
-    document.getElementById("macro-container").style.display = "none";
-    document.getElementById("micro-container").style.display = "none";
-    document.getElementById("selected-region-info").style.display = "none";
-    
-    document.getElementById("apt-sub-nav").style.display = "flex";
-    
-    if (state.aptSubTab === "national") {
-       document.getElementById("apt-macro-container").style.display = "none";
-       document.getElementById("apt-submacro-container").style.display = "none";
-       document.getElementById("apt-micro-container").style.display = "none";
-       document.getElementById("apt-selected-region-info").style.display = "none";
-    } else {
-       document.getElementById("apt-macro-container").style.display = "flex";
-       document.getElementById("apt-micro-container").style.display = "block";
-       document.getElementById("apt-selected-region-info").style.display = "block";
-       
-       renderAptMacroRegions();
-       renderAptMicroRegions();
+     document.getElementById("macro-container").style.display = "flex";
+     document.getElementById("micro-container").style.display = "block";
+     document.getElementById("selected-region-info").style.display = "block";
+     
+     renderMacroRegions();
+     renderMicroRegions();
+     
+     const infoTxt = `선택 지역: ${state.macroRegion} · ${state.microRegion}`;
+     document.getElementById("selected-region-info").innerText = infoTxt;
+  }
+  
+  document.getElementById("region-ranking-content").innerHTML = renderRegionRankingTable(state.region);
+  updateTabMeta(state.region, 'region');
+}
+
+function renderApartmentNationwideView() {
+  document.getElementById("apt-macro-container").style.display = "none";
+  document.getElementById("apt-submacro-container").style.display = "none";
+  document.getElementById("apt-micro-container").style.display = "none";
+  document.getElementById("apt-selected-region-info").style.display = "none";
+  
+  const mode = document.querySelector('input[name="dataMode"]:checked').value;
+  const isProvisional = mode === "provisional";
+  const d = isProvisional ? state.aptProvisional : state.aptStable;
+  document.getElementById("apartment-nationwide-content").innerHTML = renderApartmentRankingList(d);
+  updateTabMeta(d, 'apt', isProvisional);
+}
+
+function renderApartmentRegionControls() {
+  document.getElementById("apt-macro-container").style.display = "flex";
+  document.getElementById("apt-micro-container").style.display = "block";
+  document.getElementById("apt-selected-region-info").style.display = "block";
+  
+  renderAptMacroRegions();
+  renderAptMicroRegions();
+  
+  const infoTxtElem = document.getElementById("apt-selected-region-info");
+  let microName = "";
+  if (state.aptMicroRegion.endsWith(" 전체")) {
+    microName = state.aptMicroRegion;
+  } else {
+    const code = state.aptMicroRegion;
+    if (SGG_CODE_MAP[code]) {
+      microName = SGG_CODE_MAP[code];
+      if (state.aptMacroRegion === "지방") {
+        const sido = code.slice(0,2);
+        microName = (SIDO_NAMES[sido]||"") + " " + SGG_CODE_MAP[code];
+      }
     }
-    
-    const mode = document.querySelector('input[name="dataMode"]:checked').value;
-    const isProvisional = mode === "provisional";
-    const d = isProvisional ? state.aptProvisional : state.aptStable;
-    document.getElementById("content").innerHTML = renderApt(d);
-    updateTabMeta(d, 'apt', isProvisional);
+  }
+  
+  let fullText = `선택 지역: `;
+  if (microName === state.aptMacroRegion + " 전체") {
+     fullText += microName;
+  } else if (state.aptMacroRegion === "지방") {
+     if (microName === state.aptSubMacroRegion + " 전체") {
+         fullText += `지방 · ${microName}`;
+     } else {
+         fullText += `지방 · ${state.aptSubMacroRegion} · ${microName}`;
+     }
+  } else {
+     fullText += `${state.aptMacroRegion} · ${microName}`;
+  }
+  
+  const mode = document.querySelector('input[name="dataMode"]:checked').value;
+  const d = mode === "provisional" ? state.aptProvisional : state.aptStable;
+  let count = 0;
+  if(d && d.items) {
+      // Re-evaluate count of filtered items
+      const filterVal = document.querySelector('input[name="confFilter"]:checked').value;
+      let filtered = d.items;
+      if (state.apartmentView === 'regional') {
+         const macroName = state.aptMacroRegion;
+         const topName = macroName === '지방' ? state.aptSubMacroRegion : macroName;
+         const micro = state.aptMicroRegion;
+         if (micro === topName + ' 전체') {
+            const allowedSidos = getAptSidoMatch(macroName, state.aptSubMacroRegion);
+            filtered = filtered.filter(i => allowedSidos.includes(i.sidoCode));
+         } else if (micro.length === 2) {
+            filtered = filtered.filter(i => i.sidoCode === micro);
+         } else if (micro.length === 5) {
+            let isParent = false;
+            let allowedChildren = [];
+            for (const sidoKey of Object.keys(OFFICIAL_REGION_TREE)) {
+               const tree = OFFICIAL_REGION_TREE[sidoKey];
+               if (Array.isArray(tree)) {
+                  for (const node of tree) {
+                     if (node.type === 'parent' && node.parentCode === micro) {
+                        isParent = true;
+                        allowedChildren = node.children;
+                        break;
+                     }
+                  }
+               }
+            }
+            if (isParent) {
+               filtered = filtered.filter(i => i.sggCode === micro || allowedChildren.includes(i.sggCode));
+            } else {
+               filtered = filtered.filter(i => i.sggCode === micro);
+            }
+         }
+      }
+      if(filterVal === 'nowarn') filtered = filtered.filter(i => !i.compositionWarning);
+      if(filterVal === 'medup') filtered = filtered.filter(i => i.confidence === 'high' || i.confidence === 'medium');
+      count = filtered.length;
+  }
+  
+  fullText += ` <span style="color:var(--sub); font-weight:normal; margin-left:8px;">(검색 결과 ${count}개 단지·면적 그룹)</span>`;
+  infoTxtElem.innerHTML = fullText;
+}
+
+function renderApartmentRegionalView() {
+  renderApartmentRegionControls();
+  
+  const mode = document.querySelector('input[name="dataMode"]:checked').value;
+  const isProvisional = mode === "provisional";
+  const d = isProvisional ? state.aptProvisional : state.aptStable;
+  document.getElementById("apartment-regional-content").innerHTML = renderApartmentRankingList(d);
+  updateTabMeta(d, 'apt', isProvisional);
+}
+
+function renderApp() {
+  // Reset visibility
+  document.getElementById("region-ranking-content").style.display = "none";
+  document.getElementById("apartment-ranking-content").style.display = "none";
+  document.getElementById("apartment-nationwide-content").style.display = "none";
+  document.getElementById("apartment-regional-content").style.display = "none";
+  
+  if (state.mainTab === "region") {
+    document.getElementById("region-ranking-content").style.display = "block";
+    renderRegionRankingView();
+    return;
+  }
+  
+  document.getElementById("apartment-ranking-content").style.display = "block";
+  document.getElementById("aptMode").style.display = "flex";
+  document.getElementById("aptFilters").style.display = "flex";
+  document.getElementById("region-sub-nav").style.display = "none";
+  document.getElementById("macro-container").style.display = "none";
+  document.getElementById("micro-container").style.display = "none";
+  document.getElementById("selected-region-info").style.display = "none";
+  
+  document.getElementById("apt-sub-nav").style.display = "flex";
+
+  if (state.apartmentView === "nationwide") {
+    document.getElementById("apartment-nationwide-content").style.display = "block";
+    renderApartmentNationwideView();
+  } else {
+    document.getElementById("apartment-regional-content").style.display = "block";
+    renderApartmentRegionalView();
   }
 }
 
+
 document.querySelectorAll("#main-nav button").forEach(b=>b.addEventListener("click",()=>{
   document.querySelectorAll("#main-nav button").forEach(x=>x.setAttribute("aria-selected", x===b));
-  state.tab = b.dataset.tab; paint();
+  state.mainTab = b.dataset.tab; renderApp();
 }));
 
 document.querySelectorAll("#region-sub-nav button").forEach(b=>b.addEventListener("click",()=>{
   document.querySelectorAll("#region-sub-nav button").forEach(x=>x.setAttribute("aria-selected", x===b));
-  state.regionSubTab = b.dataset.subtab; paint();
+  state.regionSubTab = b.dataset.subtab; renderApp();
 }));
 
 document.querySelectorAll("#apt-sub-nav button").forEach(b=>b.addEventListener("click",()=>{
   document.querySelectorAll("#apt-sub-nav button").forEach(x=>x.setAttribute("aria-selected", x===b));
-  state.aptSubTab = b.dataset.subtab; paint();
+  state.apartmentView = b.dataset.subtab; renderApp();
 }));
-
 
 function init() {
   const savedState = sessionStorage.getItem('apt_state');
@@ -980,6 +1011,14 @@ function init() {
     try {
       const parsed = JSON.parse(savedState);
       Object.assign(state, parsed);
+      
+      // Validation & Defaults
+      if (state.mainTab !== "region" && state.mainTab !== "apartment") {
+          state.mainTab = "region";
+      }
+      if (state.apartmentView !== "nationwide" && state.apartmentView !== "regional") {
+          state.apartmentView = "nationwide";
+      }
       
       setTimeout(() => {
          window.scrollTo(0, parsed.scrollPos || 0);
@@ -992,7 +1031,7 @@ function init() {
       if (radioFilter) radioFilter.checked = true;
       
       document.querySelectorAll('nav:not(#region-sub-nav):not(#apt-sub-nav) button').forEach(b => {
-         if (b.dataset.tab === state.tab) b.classList.add('active');
+         if (b.dataset.tab === state.mainTab) b.classList.add('active');
          else b.classList.remove('active');
       });
       document.querySelectorAll('#region-sub-nav button').forEach(b => {
@@ -1005,7 +1044,7 @@ function init() {
          }
       });
       document.querySelectorAll('#apt-sub-nav button').forEach(b => {
-         if (b.dataset.subtab === state.aptSubTab) {
+         if (b.dataset.subtab === state.apartmentView) {
              b.classList.add('active');
              b.setAttribute('aria-selected', 'true');
          } else {
@@ -1018,7 +1057,7 @@ function init() {
     sessionStorage.removeItem('apt_state');
   }
   // Main tabs are instantly responsive
-  paint();
+  renderApp();
   
   Promise.resolve().then(async () => {
     try {
@@ -1028,7 +1067,7 @@ function init() {
       console.error("Failed to load region data:", e);
       state.region = { error: true };
     }
-    if (state.tab === "region") paint();
+    if (state.mainTab === "region") renderApp();
   });
 
   Promise.resolve().then(async () => {
@@ -1047,9 +1086,10 @@ function init() {
       console.error("Failed to load apt data:", e);
       state.aptStable = { error: true };
     }
-    if (state.tab === "apt") paint();
+    if (state.mainTab === "apartment") renderApp();
   });
 }
+
 init();
 
 function goToApartment(key) {
