@@ -7,14 +7,51 @@
  "sggCode": "11230",
  "dongName": "휘경동",
  "referenceMonths": [
-  "202605",
-  "202606"
+  "202606",
+  "202607"
  ],
  "availableAreas": [
   59.732,
-  84.973
+  84.973,
+  120.456
  ],
  "transactions": [
+  {
+   "contractDate": "2026-07-11",
+   "priceWon": 1100000000,
+   "floor": 10,
+   "exclusiveArea": 120.456,
+   "areaGroup": 120,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
+  {
+   "contractDate": "2026-07-10",
+   "priceWon": 1000000000,
+   "floor": 20,
+   "exclusiveArea": 84.973,
+   "areaGroup": 85,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
+  {
+   "contractDate": "2026-07-07",
+   "priceWon": 937000000,
+   "floor": 5,
+   "exclusiveArea": 84.973,
+   "areaGroup": 85,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
+  {
+   "contractDate": "2026-07-06",
+   "priceWon": 1000000000,
+   "floor": 13,
+   "exclusiveArea": 84.973,
+   "areaGroup": 85,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
   {
    "contractDate": "2026-05-30",
    "priceWon": 842000000,
@@ -98,8 +135,8 @@
   }
  ],
  "historyCoverage": {
-  "startMonth": "202307",
-  "endMonth": "202606",
+  "startMonth": "202308",
+  "endMonth": "202607",
   "months": 36,
   "complete": false
  },

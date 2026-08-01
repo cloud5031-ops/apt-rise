@@ -7,8 +7,8 @@
  "sggCode": "31110",
  "dongName": "복산동",
  "referenceMonths": [
-  "202605",
-  "202606"
+  "202606",
+  "202607"
  ],
  "availableAreas": [
   59.865,
@@ -20,6 +20,42 @@
   84.986
  ],
  "transactions": [
+  {
+   "contractDate": "2026-07-23",
+   "priceWon": 770000000,
+   "floor": 6,
+   "exclusiveArea": 84.986,
+   "areaGroup": 85,
+   "dealType": "직거래",
+   "cancellationStatus": "COMPLETED"
+  },
+  {
+   "contractDate": "2026-07-11",
+   "priceWon": 880000000,
+   "floor": 15,
+   "exclusiveArea": 84.926,
+   "areaGroup": 85,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
+  {
+   "contractDate": "2026-07-04",
+   "priceWon": 857000000,
+   "floor": 13,
+   "exclusiveArea": 84.926,
+   "areaGroup": 85,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
+  {
+   "contractDate": "2026-07-01",
+   "priceWon": 837000000,
+   "floor": 12,
+   "exclusiveArea": 84.926,
+   "areaGroup": 85,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
   {
    "contractDate": "2026-06-22",
    "priceWon": 858000000,
@@ -147,6 +183,12 @@
    "cancellationStatus": "COMPLETED"
   }
  ],
+ "historyCoverage": {
+  "startMonth": "202308",
+  "endMonth": "202607",
+  "months": 36,
+  "complete": false
+ },
  "location": {
   "latitude": 35.5589075703417,
   "longitude": 129.324581240172,

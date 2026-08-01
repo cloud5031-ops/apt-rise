@@ -7,16 +7,53 @@
  "sggCode": "47113",
  "dongName": "양덕동",
  "referenceMonths": [
-  "202605",
-  "202606"
+  "202606",
+  "202607"
  ],
  "availableAreas": [
   84.6734,
   84.8944,
   115.3648,
-  129.7774
+  129.7774,
+  147.6362
  ],
  "transactions": [
+  {
+   "contractDate": "2026-07-21",
+   "priceWon": 167000000,
+   "floor": 3,
+   "exclusiveArea": 84.8944,
+   "areaGroup": 85,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
+  {
+   "contractDate": "2026-07-13",
+   "priceWon": 200000000,
+   "floor": 5,
+   "exclusiveArea": 129.7774,
+   "areaGroup": 130,
+   "dealType": "직거래",
+   "cancellationStatus": "COMPLETED"
+  },
+  {
+   "contractDate": "2026-07-11",
+   "priceWon": 275000000,
+   "floor": 20,
+   "exclusiveArea": 147.6362,
+   "areaGroup": 148,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
+  {
+   "contractDate": "2026-07-01",
+   "priceWon": 177000000,
+   "floor": 15,
+   "exclusiveArea": 84.8944,
+   "areaGroup": 85,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
   {
    "contractDate": "2026-06-29",
    "priceWon": 295000000,
@@ -55,19 +92,19 @@
   },
   {
    "contractDate": "2026-06-09",
-   "priceWon": 168000000,
-   "floor": 20,
-   "exclusiveArea": 84.6734,
-   "areaGroup": 85,
+   "priceWon": 278000000,
+   "floor": 21,
+   "exclusiveArea": 129.7774,
+   "areaGroup": 130,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   },
   {
    "contractDate": "2026-06-09",
-   "priceWon": 278000000,
-   "floor": 21,
-   "exclusiveArea": 129.7774,
-   "areaGroup": 130,
+   "priceWon": 168000000,
+   "floor": 20,
+   "exclusiveArea": 84.6734,
+   "areaGroup": 85,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   },
@@ -189,6 +226,12 @@
    "cancellationStatus": "COMPLETED"
   }
  ],
+ "historyCoverage": {
+  "startMonth": "202308",
+  "endMonth": "202607",
+  "months": 36,
+  "complete": false
+ },
  "location": {
   "latitude": 36.0847006645246,
   "longitude": 129.403450213351,

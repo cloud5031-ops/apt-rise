@@ -7,15 +7,34 @@
  "sggCode": "11380",
  "dongName": "불광동",
  "referenceMonths": [
-  "202605",
-  "202606"
+  "202606",
+  "202607"
  ],
  "availableAreas": [
   59.817,
   84.369,
-  84.734
+  84.734,
+  114.942
  ],
  "transactions": [
+  {
+   "contractDate": "2026-07-20",
+   "priceWon": 970000000,
+   "floor": 3,
+   "exclusiveArea": 59.817,
+   "areaGroup": 60,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
+  {
+   "contractDate": "2026-07-20",
+   "priceWon": 1160000000,
+   "floor": 4,
+   "exclusiveArea": 114.942,
+   "areaGroup": 115,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
   {
    "contractDate": "2026-06-30",
    "priceWon": 928000000,
@@ -180,8 +199,8 @@
   }
  ],
  "historyCoverage": {
-  "startMonth": "202307",
-  "endMonth": "202606",
+  "startMonth": "202308",
+  "endMonth": "202607",
   "months": 36,
   "complete": false
  },

@@ -7,16 +7,44 @@
  "sggCode": "11560",
  "dongName": "신길동",
  "referenceMonths": [
-  "202605",
-  "202606"
+  "202606",
+  "202607"
  ],
  "availableAreas": [
+  42.68,
   49.7,
   59.87,
   59.91,
   84.86
  ],
  "transactions": [
+  {
+   "contractDate": "2026-07-10",
+   "priceWon": 1000000000,
+   "floor": 25,
+   "exclusiveArea": 42.68,
+   "areaGroup": 43,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
+  {
+   "contractDate": "2026-07-09",
+   "priceWon": 1125000000,
+   "floor": 10,
+   "exclusiveArea": 42.68,
+   "areaGroup": 43,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
+  {
+   "contractDate": "2026-07-06",
+   "priceWon": 1900000000,
+   "floor": 13,
+   "exclusiveArea": 84.86,
+   "areaGroup": 85,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
   {
    "contractDate": "2026-06-26",
    "priceWon": 1750000000,
@@ -217,8 +245,8 @@
   }
  ],
  "historyCoverage": {
-  "startMonth": "202307",
-  "endMonth": "202606",
+  "startMonth": "202308",
+  "endMonth": "202607",
   "months": 36,
   "complete": false
  },

@@ -7,8 +7,8 @@
  "sggCode": "26350",
  "dongName": "좌동",
  "referenceMonths": [
-  "202605",
-  "202606"
+  "202606",
+  "202607"
  ],
  "availableAreas": [
   59.88,
@@ -17,6 +17,24 @@
   134.83
  ],
  "transactions": [
+  {
+   "contractDate": "2026-07-23",
+   "priceWon": 388000000,
+   "floor": 16,
+   "exclusiveArea": 59.88,
+   "areaGroup": 60,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
+  {
+   "contractDate": "2026-07-04",
+   "priceWon": 550000000,
+   "floor": 8,
+   "exclusiveArea": 84.93,
+   "areaGroup": 85,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
   {
    "contractDate": "2026-06-21",
    "priceWon": 405000000,
@@ -55,19 +73,19 @@
   },
   {
    "contractDate": "2026-03-28",
-   "priceWon": 362500000,
-   "floor": 6,
-   "exclusiveArea": 59.88,
-   "areaGroup": 60,
+   "priceWon": 595000000,
+   "floor": 11,
+   "exclusiveArea": 99.96,
+   "areaGroup": 100,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   },
   {
    "contractDate": "2026-03-28",
-   "priceWon": 595000000,
-   "floor": 11,
-   "exclusiveArea": 99.96,
-   "areaGroup": 100,
+   "priceWon": 362500000,
+   "floor": 6,
+   "exclusiveArea": 59.88,
+   "areaGroup": 60,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   },
@@ -108,6 +126,12 @@
    "cancellationStatus": "COMPLETED"
   }
  ],
+ "historyCoverage": {
+  "startMonth": "202308",
+  "endMonth": "202607",
+  "months": 36,
+  "complete": false
+ },
  "location": {
   "latitude": 35.1780676861726,
   "longitude": 129.180562713471,

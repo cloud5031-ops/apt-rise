@@ -7,8 +7,8 @@
  "sggCode": "27260",
  "dongName": "황금동",
  "referenceMonths": [
-  "202605",
-  "202606"
+  "202606",
+  "202607"
  ],
  "availableAreas": [
   75.458,
@@ -19,6 +19,15 @@
   84.9956
  ],
  "transactions": [
+  {
+   "contractDate": "2026-07-12",
+   "priceWon": 1050000000,
+   "floor": 21,
+   "exclusiveArea": 84.9899,
+   "areaGroup": 85,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
   {
    "contractDate": "2026-06-20",
    "priceWon": 940000000,
@@ -57,19 +66,19 @@
   },
   {
    "contractDate": "2026-05-30",
-   "priceWon": 910000000,
-   "floor": 19,
-   "exclusiveArea": 75.8632,
-   "areaGroup": 76,
+   "priceWon": 971500000,
+   "floor": 29,
+   "exclusiveArea": 84.9652,
+   "areaGroup": 85,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   },
   {
    "contractDate": "2026-05-30",
-   "priceWon": 971500000,
-   "floor": 29,
-   "exclusiveArea": 84.9652,
-   "areaGroup": 85,
+   "priceWon": 910000000,
+   "floor": 19,
+   "exclusiveArea": 75.8632,
+   "areaGroup": 76,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   },
@@ -237,23 +246,29 @@
   },
   {
    "contractDate": "2026-02-02",
-   "priceWon": 900000000,
-   "floor": 10,
-   "exclusiveArea": 75.8632,
-   "areaGroup": 76,
-   "dealType": "중개거래",
-   "cancellationStatus": "COMPLETED"
-  },
-  {
-   "contractDate": "2026-02-02",
    "priceWon": 940000000,
    "floor": 16,
    "exclusiveArea": 84.9652,
    "areaGroup": 85,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
+  },
+  {
+   "contractDate": "2026-02-02",
+   "priceWon": 900000000,
+   "floor": 10,
+   "exclusiveArea": 75.8632,
+   "areaGroup": 76,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
   }
  ],
+ "historyCoverage": {
+  "startMonth": "202308",
+  "endMonth": "202607",
+  "months": 36,
+  "complete": false
+ },
  "location": {
   "latitude": 34.917821954851,
   "longitude": 127.619380539896,

@@ -7,8 +7,8 @@
  "sggCode": "11710",
  "dongName": "잠실동",
  "referenceMonths": [
-  "202605",
-  "202606"
+  "202606",
+  "202607"
  ],
  "availableAreas": [
   99.385,
@@ -16,6 +16,24 @@
   151.008
  ],
  "transactions": [
+  {
+   "contractDate": "2026-07-09",
+   "priceWon": 3451000000,
+   "floor": 2,
+   "exclusiveArea": 99.385,
+   "areaGroup": 99,
+   "dealType": "직거래",
+   "cancellationStatus": "COMPLETED"
+  },
+  {
+   "contractDate": "2026-07-03",
+   "priceWon": 5750000000,
+   "floor": 7,
+   "exclusiveArea": 151.008,
+   "areaGroup": 151,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
   {
    "contractDate": "2026-06-19",
    "priceWon": 4250000000,
@@ -162,8 +180,8 @@
   }
  ],
  "historyCoverage": {
-  "startMonth": "202307",
-  "endMonth": "202606",
+  "startMonth": "202308",
+  "endMonth": "202607",
   "months": 36,
   "complete": false
  },

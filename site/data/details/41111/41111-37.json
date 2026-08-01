@@ -7,14 +7,32 @@
  "sggCode": "41111",
  "dongName": "정자동",
  "referenceMonths": [
-  "202605",
-  "202606"
+  "202606",
+  "202607"
  ],
  "availableAreas": [
   59.97,
   59.99
  ],
  "transactions": [
+  {
+   "contractDate": "2026-07-18",
+   "priceWon": 480000000,
+   "floor": 13,
+   "exclusiveArea": 59.97,
+   "areaGroup": 60,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
+  {
+   "contractDate": "2026-07-03",
+   "priceWon": 460000000,
+   "floor": 15,
+   "exclusiveArea": 59.99,
+   "areaGroup": 60,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
   {
    "contractDate": "2026-06-20",
    "priceWon": 510000000,
@@ -107,8 +125,8 @@
   }
  ],
  "historyCoverage": {
-  "startMonth": "202307",
-  "endMonth": "202606",
+  "startMonth": "202308",
+  "endMonth": "202607",
   "months": 36,
   "complete": false
  },

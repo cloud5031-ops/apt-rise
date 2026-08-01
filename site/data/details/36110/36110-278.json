@@ -7,14 +7,51 @@
  "sggCode": "36110",
  "dongName": "종촌동",
  "referenceMonths": [
-  "202605",
-  "202606"
+  "202606",
+  "202607"
  ],
  "availableAreas": [
   84.9911,
-  84.9941
+  84.9941,
+  106.76
  ],
  "transactions": [
+  {
+   "contractDate": "2026-07-23",
+   "priceWon": 400000000,
+   "floor": 25,
+   "exclusiveArea": 84.9941,
+   "areaGroup": 85,
+   "dealType": "직거래",
+   "cancellationStatus": "COMPLETED"
+  },
+  {
+   "contractDate": "2026-07-17",
+   "priceWon": 730000000,
+   "floor": 10,
+   "exclusiveArea": 106.76,
+   "areaGroup": 107,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
+  {
+   "contractDate": "2026-07-11",
+   "priceWon": 570000000,
+   "floor": 4,
+   "exclusiveArea": 84.9941,
+   "areaGroup": 85,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
+  {
+   "contractDate": "2026-07-08",
+   "priceWon": 555000000,
+   "floor": 5,
+   "exclusiveArea": 84.9941,
+   "areaGroup": 85,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
   {
    "contractDate": "2026-06-06",
    "priceWon": 620000000,
@@ -143,20 +180,20 @@
   },
   {
    "contractDate": "2026-02-07",
-   "priceWon": 598000000,
-   "floor": 12,
-   "exclusiveArea": 84.9911,
-   "areaGroup": 85,
-   "dealType": "직거래",
-   "cancellationStatus": "COMPLETED"
-  },
-  {
-   "contractDate": "2026-02-07",
    "priceWon": 599000000,
    "floor": 12,
    "exclusiveArea": 84.9941,
    "areaGroup": 85,
    "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
+  {
+   "contractDate": "2026-02-07",
+   "priceWon": 598000000,
+   "floor": 12,
+   "exclusiveArea": 84.9911,
+   "areaGroup": 85,
+   "dealType": "직거래",
    "cancellationStatus": "COMPLETED"
   },
   {
@@ -169,6 +206,12 @@
    "cancellationStatus": "COMPLETED"
   }
  ],
+ "historyCoverage": {
+  "startMonth": "202308",
+  "endMonth": "202607",
+  "months": 36,
+  "complete": false
+ },
  "location": {
   "latitude": 36.5058126531557,
   "longitude": 127.252007353862,

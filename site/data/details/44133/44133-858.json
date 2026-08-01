@@ -7,14 +7,23 @@
  "sggCode": "44133",
  "dongName": "불당동",
  "referenceMonths": [
-  "202605",
-  "202606"
+  "202606",
+  "202607"
  ],
  "availableAreas": [
   42.8428,
   45.7798
  ],
  "transactions": [
+  {
+   "contractDate": "2026-07-20",
+   "priceWon": 270000000,
+   "floor": 6,
+   "exclusiveArea": 45.7798,
+   "areaGroup": 46,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
   {
    "contractDate": "2026-06-13",
    "priceWon": 190000000,
@@ -79,6 +88,12 @@
    "cancellationStatus": "COMPLETED"
   }
  ],
+ "historyCoverage": {
+  "startMonth": "202308",
+  "endMonth": "202607",
+  "months": 36,
+  "complete": false
+ },
  "location": {
   "latitude": 36.8008828562653,
   "longitude": 127.10911177843,

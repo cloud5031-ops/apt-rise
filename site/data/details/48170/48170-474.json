@@ -7,8 +7,8 @@
  "sggCode": "48170",
  "dongName": "금산면 장사리",
  "referenceMonths": [
-  "202605",
-  "202606"
+  "202606",
+  "202607"
  ],
  "availableAreas": [
   84.991,
@@ -19,6 +19,15 @@
   138.043
  ],
  "transactions": [
+  {
+   "contractDate": "2026-07-30",
+   "priceWon": 255000000,
+   "floor": 19,
+   "exclusiveArea": 84.995,
+   "areaGroup": 85,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
   {
    "contractDate": "2026-06-09",
    "priceWon": 300000000,
@@ -129,21 +138,21 @@
   },
   {
    "contractDate": "2026-03-07",
-   "priceWon": 217000000,
-   "floor": 5,
-   "exclusiveArea": 84.995,
-   "areaGroup": 85,
-   "dealType": "중개거래",
-   "cancellationStatus": "COMPLETED"
-  },
-  {
-   "contractDate": "2026-03-07",
    "priceWon": 284000000,
    "floor": 8,
    "exclusiveArea": 112.897,
    "areaGroup": 113,
    "dealType": "중개거래",
    "cancellationStatus": "CANCELLED"
+  },
+  {
+   "contractDate": "2026-03-07",
+   "priceWon": 217000000,
+   "floor": 5,
+   "exclusiveArea": 84.995,
+   "areaGroup": 85,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
   },
   {
    "contractDate": "2026-03-06",
@@ -173,6 +182,12 @@
    "cancellationStatus": "COMPLETED"
   }
  ],
+ "historyCoverage": {
+  "startMonth": "202308",
+  "endMonth": "202607",
+  "months": 36,
+  "complete": false
+ },
  "location": {
   "latitude": 35.2202859123549,
   "longitude": 128.148461985949,

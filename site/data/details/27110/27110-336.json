@@ -7,8 +7,8 @@
  "sggCode": "27110",
  "dongName": "달성동",
  "referenceMonths": [
-  "202605",
-  "202606"
+  "202606",
+  "202607"
  ],
  "availableAreas": [
   39.7662,
@@ -19,6 +19,33 @@
   84.9713
  ],
  "transactions": [
+  {
+   "contractDate": "2026-07-12",
+   "priceWon": 648000000,
+   "floor": 5,
+   "exclusiveArea": 84.9713,
+   "areaGroup": 85,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
+  {
+   "contractDate": "2026-07-09",
+   "priceWon": 698000000,
+   "floor": 17,
+   "exclusiveArea": 84.9713,
+   "areaGroup": 85,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
+  {
+   "contractDate": "2026-07-04",
+   "priceWon": 535000000,
+   "floor": 1,
+   "exclusiveArea": 74.9933,
+   "areaGroup": 75,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
   {
    "contractDate": "2026-06-25",
    "priceWon": 525000000,
@@ -39,18 +66,18 @@
   },
   {
    "contractDate": "2026-06-13",
-   "priceWon": 674000000,
-   "floor": 9,
-   "exclusiveArea": 84.9713,
+   "priceWon": 696000000,
+   "floor": 14,
+   "exclusiveArea": 84.9221,
    "areaGroup": 85,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   },
   {
    "contractDate": "2026-06-13",
-   "priceWon": 696000000,
-   "floor": 14,
-   "exclusiveArea": 84.9221,
+   "priceWon": 674000000,
+   "floor": 9,
+   "exclusiveArea": 84.9713,
    "areaGroup": 85,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
@@ -66,19 +93,19 @@
   },
   {
    "contractDate": "2026-06-06",
-   "priceWon": 250000000,
-   "floor": 10,
-   "exclusiveArea": 39.7662,
-   "areaGroup": 40,
+   "priceWon": 610000000,
+   "floor": 14,
+   "exclusiveArea": 74.9933,
+   "areaGroup": 75,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   },
   {
    "contractDate": "2026-06-06",
-   "priceWon": 610000000,
-   "floor": 14,
-   "exclusiveArea": 74.9933,
-   "areaGroup": 75,
+   "priceWon": 250000000,
+   "floor": 10,
+   "exclusiveArea": 39.7662,
+   "areaGroup": 40,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   },
@@ -120,8 +147,8 @@
   },
   {
    "contractDate": "2026-05-31",
-   "priceWon": 618000000,
-   "floor": 21,
+   "priceWon": 640000000,
+   "floor": 17,
    "exclusiveArea": 74.9933,
    "areaGroup": 75,
    "dealType": "중개거래",
@@ -129,8 +156,8 @@
   },
   {
    "contractDate": "2026-05-31",
-   "priceWon": 640000000,
-   "floor": 17,
+   "priceWon": 618000000,
+   "floor": 21,
    "exclusiveArea": 74.9933,
    "areaGroup": 75,
    "dealType": "중개거래",
@@ -174,15 +201,6 @@
   },
   {
    "contractDate": "2026-05-16",
-   "priceWon": 257000000,
-   "floor": 20,
-   "exclusiveArea": 39.7662,
-   "areaGroup": 40,
-   "dealType": "중개거래",
-   "cancellationStatus": "COMPLETED"
-  },
-  {
-   "contractDate": "2026-05-16",
    "priceWon": 582000000,
    "floor": 13,
    "exclusiveArea": 74.9933,
@@ -191,9 +209,9 @@
    "cancellationStatus": "COMPLETED"
   },
   {
-   "contractDate": "2026-05-11",
-   "priceWon": 232000000,
-   "floor": 2,
+   "contractDate": "2026-05-16",
+   "priceWon": 257000000,
+   "floor": 20,
    "exclusiveArea": 39.7662,
    "areaGroup": 40,
    "dealType": "중개거래",
@@ -205,6 +223,15 @@
    "floor": 4,
    "exclusiveArea": 74.9933,
    "areaGroup": 75,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
+  {
+   "contractDate": "2026-05-11",
+   "priceWon": 232000000,
+   "floor": 2,
+   "exclusiveArea": 39.7662,
+   "areaGroup": 40,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   },
@@ -569,6 +596,12 @@
    "cancellationStatus": "COMPLETED"
   }
  ],
+ "historyCoverage": {
+  "startMonth": "202308",
+  "endMonth": "202607",
+  "months": 36,
+  "complete": false
+ },
  "location": {
   "latitude": 35.8768519443607,
   "longitude": 128.580438419105,

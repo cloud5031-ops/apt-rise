@@ -7,8 +7,8 @@
  "sggCode": "48170",
  "dongName": "가좌동",
  "referenceMonths": [
-  "202605",
-  "202606"
+  "202606",
+  "202607"
  ],
  "availableAreas": [
   84.986,
@@ -16,6 +16,15 @@
   116.8943
  ],
  "transactions": [
+  {
+   "contractDate": "2026-07-01",
+   "priceWon": 815000000,
+   "floor": 21,
+   "exclusiveArea": 84.9888,
+   "areaGroup": 85,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
   {
    "contractDate": "2026-06-15",
    "priceWon": 798000000,
@@ -179,6 +188,12 @@
    "cancellationStatus": "COMPLETED"
   }
  ],
+ "historyCoverage": {
+  "startMonth": "202308",
+  "endMonth": "202607",
+  "months": 36,
+  "complete": false
+ },
  "location": {
   "latitude": 35.1511784769485,
   "longitude": 128.109263126992,

@@ -7,8 +7,8 @@
  "sggCode": "36110",
  "dongName": "대평동",
  "referenceMonths": [
-  "202605",
-  "202606"
+  "202606",
+  "202607"
  ],
  "availableAreas": [
   99.0725,
@@ -16,6 +16,15 @@
   99.2501
  ],
  "transactions": [
+  {
+   "contractDate": "2026-07-25",
+   "priceWon": 760000000,
+   "floor": 5,
+   "exclusiveArea": 99.1844,
+   "areaGroup": 99,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
   {
    "contractDate": "2026-06-20",
    "priceWon": 855000000,
@@ -71,6 +80,12 @@
    "cancellationStatus": "COMPLETED"
   }
  ],
+ "historyCoverage": {
+  "startMonth": "202308",
+  "endMonth": "202607",
+  "months": 36,
+  "complete": false
+ },
  "location": {
   "latitude": 36.4749224528824,
   "longitude": 127.278124258254,

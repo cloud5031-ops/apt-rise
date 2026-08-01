@@ -7,17 +7,54 @@
  "sggCode": "11470",
  "dongName": "신정동",
  "referenceMonths": [
-  "202605",
-  "202606"
+  "202606",
+  "202607"
  ],
  "availableAreas": [
   59.95,
   84.88,
   84.98,
   100.84,
-  113.68
+  113.68,
+  155.77
  ],
  "transactions": [
+  {
+   "contractDate": "2026-07-15",
+   "priceWon": 2410000000,
+   "floor": 11,
+   "exclusiveArea": 113.68,
+   "areaGroup": 114,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
+  {
+   "contractDate": "2026-07-11",
+   "priceWon": 2180000000,
+   "floor": 6,
+   "exclusiveArea": 84.98,
+   "areaGroup": 85,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
+  {
+   "contractDate": "2026-07-10",
+   "priceWon": 1850000000,
+   "floor": 12,
+   "exclusiveArea": 59.95,
+   "areaGroup": 60,
+   "dealType": "중개거래",
+   "cancellationStatus": "CANCELLED"
+  },
+  {
+   "contractDate": "2026-07-08",
+   "priceWon": 2980000000,
+   "floor": 22,
+   "exclusiveArea": 155.77,
+   "areaGroup": 156,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
   {
    "contractDate": "2026-06-30",
    "priceWon": 2075000000,
@@ -173,8 +210,8 @@
   }
  ],
  "historyCoverage": {
-  "startMonth": "202307",
-  "endMonth": "202606",
+  "startMonth": "202308",
+  "endMonth": "202607",
   "months": 36,
   "complete": false
  },

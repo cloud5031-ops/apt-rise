@@ -7,14 +7,32 @@
  "sggCode": "41597",
  "dongName": "목동",
  "referenceMonths": [
-  "202605",
-  "202606"
+  "202606",
+  "202607"
  ],
  "availableAreas": [
   53.4754,
   53.788
  ],
  "transactions": [
+  {
+   "contractDate": "2026-07-04",
+   "priceWon": 750000000,
+   "floor": 18,
+   "exclusiveArea": 53.4754,
+   "areaGroup": 53,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
+  {
+   "contractDate": "2026-07-04",
+   "priceWon": 726000000,
+   "floor": 22,
+   "exclusiveArea": 53.4754,
+   "areaGroup": 53,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
   {
    "contractDate": "2026-06-30",
    "priceWon": 740000000,
@@ -629,8 +647,8 @@
   }
  ],
  "historyCoverage": {
-  "startMonth": "202307",
-  "endMonth": "202606",
+  "startMonth": "202308",
+  "endMonth": "202607",
   "months": 36,
   "complete": false
  },

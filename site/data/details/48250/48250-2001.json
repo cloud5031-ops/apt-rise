@@ -7,8 +7,8 @@
  "sggCode": "48250",
  "dongName": "내동",
  "referenceMonths": [
-  "202605",
-  "202606"
+  "202606",
+  "202607"
  ],
  "availableAreas": [
   84.8621,
@@ -20,12 +20,30 @@
  ],
  "transactions": [
   {
-   "contractDate": "2026-06-27",
-   "priceWon": 518000000,
-   "floor": 18,
-   "exclusiveArea": 84.996,
+   "contractDate": "2026-07-06",
+   "priceWon": 570000000,
+   "floor": 33,
+   "exclusiveArea": 84.8621,
    "areaGroup": 85,
    "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
+  {
+   "contractDate": "2026-07-06",
+   "priceWon": 443000000,
+   "floor": 4,
+   "exclusiveArea": 84.969,
+   "areaGroup": 85,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
+  {
+   "contractDate": "2026-07-02",
+   "priceWon": 495000000,
+   "floor": 4,
+   "exclusiveArea": 84.969,
+   "areaGroup": 85,
+   "dealType": "직거래",
    "cancellationStatus": "COMPLETED"
   },
   {
@@ -34,6 +52,15 @@
    "floor": 12,
    "exclusiveArea": 114.8366,
    "areaGroup": 115,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
+  {
+   "contractDate": "2026-06-27",
+   "priceWon": 518000000,
+   "floor": 18,
+   "exclusiveArea": 84.996,
+   "areaGroup": 85,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   },
@@ -237,19 +264,19 @@
   },
   {
    "contractDate": "2026-03-07",
-   "priceWon": 530000000,
-   "floor": 14,
-   "exclusiveArea": 84.996,
-   "areaGroup": 85,
+   "priceWon": 900000000,
+   "floor": 11,
+   "exclusiveArea": 114.9353,
+   "areaGroup": 115,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   },
   {
    "contractDate": "2026-03-07",
-   "priceWon": 900000000,
-   "floor": 11,
-   "exclusiveArea": 114.9353,
-   "areaGroup": 115,
+   "priceWon": 530000000,
+   "floor": 14,
+   "exclusiveArea": 84.996,
+   "areaGroup": 85,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   },
@@ -263,6 +290,12 @@
    "cancellationStatus": "COMPLETED"
   }
  ],
+ "historyCoverage": {
+  "startMonth": "202308",
+  "endMonth": "202607",
+  "months": 36,
+  "complete": false
+ },
  "location": {
   "latitude": 37.5219509151909,
   "longitude": 126.77805433809,

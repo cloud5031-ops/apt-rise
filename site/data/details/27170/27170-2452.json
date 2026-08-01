@@ -7,8 +7,8 @@
  "sggCode": "27170",
  "dongName": "내당동",
  "referenceMonths": [
-  "202605",
-  "202606"
+  "202606",
+  "202607"
  ],
  "availableAreas": [
   84.8601,
@@ -72,18 +72,18 @@
   },
   {
    "contractDate": "2026-05-06",
-   "priceWon": 605000000,
-   "floor": 6,
-   "exclusiveArea": 84.953,
+   "priceWon": 700000000,
+   "floor": 45,
+   "exclusiveArea": 84.8601,
    "areaGroup": 85,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   },
   {
    "contractDate": "2026-05-06",
-   "priceWon": 700000000,
-   "floor": 45,
-   "exclusiveArea": 84.8601,
+   "priceWon": 605000000,
+   "floor": 6,
+   "exclusiveArea": 84.953,
    "areaGroup": 85,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
@@ -117,20 +117,20 @@
   },
   {
    "contractDate": "2026-04-03",
-   "priceWon": 580000000,
-   "floor": 45,
-   "exclusiveArea": 84.9116,
-   "areaGroup": 85,
-   "dealType": "중개거래",
-   "cancellationStatus": "COMPLETED"
-  },
-  {
-   "contractDate": "2026-04-03",
    "priceWon": 610000000,
    "floor": 20,
    "exclusiveArea": 84.953,
    "areaGroup": 85,
    "dealType": "직거래",
+   "cancellationStatus": "COMPLETED"
+  },
+  {
+   "contractDate": "2026-04-03",
+   "priceWon": 580000000,
+   "floor": 45,
+   "exclusiveArea": 84.9116,
+   "areaGroup": 85,
+   "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   },
   {
@@ -153,20 +153,20 @@
   },
   {
    "contractDate": "2026-03-17",
-   "priceWon": 590000000,
-   "floor": 5,
-   "exclusiveArea": 84.953,
-   "areaGroup": 85,
-   "dealType": "직거래",
-   "cancellationStatus": "COMPLETED"
-  },
-  {
-   "contractDate": "2026-03-17",
    "priceWon": 599500000,
    "floor": 36,
    "exclusiveArea": 84.9116,
    "areaGroup": 85,
    "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
+  {
+   "contractDate": "2026-03-17",
+   "priceWon": 590000000,
+   "floor": 5,
+   "exclusiveArea": 84.953,
+   "areaGroup": 85,
+   "dealType": "직거래",
    "cancellationStatus": "COMPLETED"
   },
   {
@@ -216,18 +216,18 @@
   },
   {
    "contractDate": "2026-02-13",
-   "priceWon": 593460000,
-   "floor": 28,
-   "exclusiveArea": 84.953,
+   "priceWon": 610000000,
+   "floor": 21,
+   "exclusiveArea": 84.9116,
    "areaGroup": 85,
    "dealType": "직거래",
    "cancellationStatus": "COMPLETED"
   },
   {
    "contractDate": "2026-02-13",
-   "priceWon": 610000000,
-   "floor": 21,
-   "exclusiveArea": 84.9116,
+   "priceWon": 593460000,
+   "floor": 28,
+   "exclusiveArea": 84.953,
    "areaGroup": 85,
    "dealType": "직거래",
    "cancellationStatus": "COMPLETED"
@@ -252,15 +252,6 @@
   },
   {
    "contractDate": "2026-02-10",
-   "priceWon": 589290000,
-   "floor": 30,
-   "exclusiveArea": 84.953,
-   "areaGroup": 85,
-   "dealType": "직거래",
-   "cancellationStatus": "COMPLETED"
-  },
-  {
-   "contractDate": "2026-02-10",
    "priceWon": 645540000,
    "floor": 39,
    "exclusiveArea": 84.953,
@@ -269,9 +260,9 @@
    "cancellationStatus": "COMPLETED"
   },
   {
-   "contractDate": "2026-02-09",
-   "priceWon": 590010000,
-   "floor": 9,
+   "contractDate": "2026-02-10",
+   "priceWon": 589290000,
+   "floor": 30,
    "exclusiveArea": 84.953,
    "areaGroup": 85,
    "dealType": "직거래",
@@ -287,18 +278,18 @@
    "cancellationStatus": "CANCELLED"
   },
   {
-   "contractDate": "2026-02-06",
-   "priceWon": 680000000,
-   "floor": 26,
+   "contractDate": "2026-02-09",
+   "priceWon": 590010000,
+   "floor": 9,
    "exclusiveArea": 84.953,
    "areaGroup": 85,
-   "dealType": "중개거래",
+   "dealType": "직거래",
    "cancellationStatus": "COMPLETED"
   },
   {
    "contractDate": "2026-02-06",
-   "priceWon": 610000000,
-   "floor": 33,
+   "priceWon": 680000000,
+   "floor": 26,
    "exclusiveArea": 84.953,
    "areaGroup": 85,
    "dealType": "중개거래",
@@ -314,6 +305,15 @@
    "cancellationStatus": "COMPLETED"
   },
   {
+   "contractDate": "2026-02-06",
+   "priceWon": 610000000,
+   "floor": 33,
+   "exclusiveArea": 84.953,
+   "areaGroup": 85,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
+  {
    "contractDate": "2026-02-05",
    "priceWon": 720000000,
    "floor": 47,
@@ -323,6 +323,12 @@
    "cancellationStatus": "COMPLETED"
   }
  ],
+ "historyCoverage": {
+  "startMonth": "202308",
+  "endMonth": "202607",
+  "months": 36,
+  "complete": false
+ },
  "location": {
   "latitude": 35.8603245645736,
   "longitude": 128.557249919761,

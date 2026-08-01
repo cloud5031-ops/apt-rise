@@ -7,14 +7,23 @@
  "sggCode": "26200",
  "dongName": "동삼동",
  "referenceMonths": [
-  "202605",
-  "202606"
+  "202606",
+  "202607"
  ],
  "availableAreas": [
   45.5,
   57.09
  ],
  "transactions": [
+  {
+   "contractDate": "2026-07-10",
+   "priceWon": 140000000,
+   "floor": 5,
+   "exclusiveArea": 57.09,
+   "areaGroup": 57,
+   "dealType": "직거래",
+   "cancellationStatus": "COMPLETED"
+  },
   {
    "contractDate": "2026-06-26",
    "priceWon": 129000000,
@@ -196,6 +205,12 @@
    "cancellationStatus": "COMPLETED"
   }
  ],
+ "historyCoverage": {
+  "startMonth": "202308",
+  "endMonth": "202607",
+  "months": 36,
+  "complete": false
+ },
  "location": {
   "latitude": 35.0708931680362,
   "longitude": 129.061995166605,

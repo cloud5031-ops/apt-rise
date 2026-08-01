@@ -7,14 +7,32 @@
  "sggCode": "30200",
  "dongName": "반석동",
  "referenceMonths": [
-  "202605",
-  "202606"
+  "202606",
+  "202607"
  ],
  "availableAreas": [
   76.677,
   84.903
  ],
  "transactions": [
+  {
+   "contractDate": "2026-07-23",
+   "priceWon": 372000000,
+   "floor": 13,
+   "exclusiveArea": 84.903,
+   "areaGroup": 85,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
+  {
+   "contractDate": "2026-07-01",
+   "priceWon": 378000000,
+   "floor": 11,
+   "exclusiveArea": 84.903,
+   "areaGroup": 85,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
   {
    "contractDate": "2026-06-22",
    "priceWon": 418000000,
@@ -98,19 +116,19 @@
   },
   {
    "contractDate": "2026-04-08",
-   "priceWon": 344000000,
-   "floor": 5,
-   "exclusiveArea": 76.677,
-   "areaGroup": 77,
+   "priceWon": 380000000,
+   "floor": 4,
+   "exclusiveArea": 84.903,
+   "areaGroup": 85,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   },
   {
    "contractDate": "2026-04-08",
-   "priceWon": 380000000,
-   "floor": 4,
-   "exclusiveArea": 84.903,
-   "areaGroup": 85,
+   "priceWon": 344000000,
+   "floor": 5,
+   "exclusiveArea": 76.677,
+   "areaGroup": 77,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   },
@@ -178,6 +196,12 @@
    "cancellationStatus": "COMPLETED"
   }
  ],
+ "historyCoverage": {
+  "startMonth": "202308",
+  "endMonth": "202607",
+  "months": 36,
+  "complete": false
+ },
  "location": {
   "latitude": 36.3961468575134,
   "longitude": 127.309725508233,

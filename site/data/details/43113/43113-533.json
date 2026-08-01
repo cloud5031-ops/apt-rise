@@ -7,8 +7,8 @@
  "sggCode": "43113",
  "dongName": "송절동",
  "referenceMonths": [
-  "202605",
-  "202606"
+  "202606",
+  "202607"
  ],
  "availableAreas": [
   84.9674,
@@ -16,6 +16,15 @@
   84.9783
  ],
  "transactions": [
+  {
+   "contractDate": "2026-07-27",
+   "priceWon": 540000000,
+   "floor": 15,
+   "exclusiveArea": 84.9783,
+   "areaGroup": 85,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
   {
    "contractDate": "2026-06-21",
    "priceWon": 520000000,
@@ -170,6 +179,12 @@
    "cancellationStatus": "COMPLETED"
   }
  ],
+ "historyCoverage": {
+  "startMonth": "202308",
+  "endMonth": "202607",
+  "months": 36,
+  "complete": false
+ },
  "location": {
   "latitude": 36.6631531109092,
   "longitude": 127.450663614623,

@@ -7,14 +7,41 @@
  "sggCode": "11350",
  "dongName": "하계동",
  "referenceMonths": [
-  "202605",
-  "202606"
+  "202606",
+  "202607"
  ],
  "availableAreas": [
   112.24,
   138.29
  ],
  "transactions": [
+  {
+   "contractDate": "2026-07-08",
+   "priceWon": 1030000000,
+   "floor": 10,
+   "exclusiveArea": 112.24,
+   "areaGroup": 112,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
+  {
+   "contractDate": "2026-07-06",
+   "priceWon": 1025000000,
+   "floor": 4,
+   "exclusiveArea": 112.24,
+   "areaGroup": 112,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
+  {
+   "contractDate": "2026-07-04",
+   "priceWon": 1035000000,
+   "floor": 6,
+   "exclusiveArea": 138.29,
+   "areaGroup": 138,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
   {
    "contractDate": "2026-06-28",
    "priceWon": 865000000,
@@ -107,8 +134,8 @@
   }
  ],
  "historyCoverage": {
-  "startMonth": "202307",
-  "endMonth": "202606",
+  "startMonth": "202308",
+  "endMonth": "202607",
   "months": 36,
   "complete": false
  },

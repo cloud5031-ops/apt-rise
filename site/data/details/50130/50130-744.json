@@ -7,14 +7,32 @@
  "sggCode": "50130",
  "dongName": "서호동",
  "referenceMonths": [
-  "202605",
-  "202606"
+  "202606",
+  "202607"
  ],
  "availableAreas": [
   84.9,
   84.94
  ],
  "transactions": [
+  {
+   "contractDate": "2026-07-22",
+   "priceWon": 405000000,
+   "floor": 13,
+   "exclusiveArea": 84.94,
+   "areaGroup": 85,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
+  {
+   "contractDate": "2026-07-04",
+   "priceWon": 420000000,
+   "floor": 9,
+   "exclusiveArea": 84.94,
+   "areaGroup": 85,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
   {
    "contractDate": "2026-06-30",
    "priceWon": 410000000,
@@ -79,6 +97,12 @@
    "cancellationStatus": "COMPLETED"
   }
  ],
+ "historyCoverage": {
+  "startMonth": "202308",
+  "endMonth": "202607",
+  "months": 36,
+  "complete": false
+ },
  "location": {
   "latitude": 33.2487298783863,
   "longitude": 126.520886946719,

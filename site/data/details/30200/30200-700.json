@@ -7,8 +7,8 @@
  "sggCode": "30200",
  "dongName": "도룡동",
  "referenceMonths": [
-  "202605",
-  "202606"
+  "202606",
+  "202607"
  ],
  "availableAreas": [
   59.9964,
@@ -16,6 +16,24 @@
   127.7275
  ],
  "transactions": [
+  {
+   "contractDate": "2026-07-19",
+   "priceWon": 820000000,
+   "floor": 8,
+   "exclusiveArea": 59.9964,
+   "areaGroup": 60,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
+  {
+   "contractDate": "2026-07-04",
+   "priceWon": 825000000,
+   "floor": 10,
+   "exclusiveArea": 59.9964,
+   "areaGroup": 60,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
   {
    "contractDate": "2026-06-28",
    "priceWon": 800000000,
@@ -134,6 +152,12 @@
    "cancellationStatus": "COMPLETED"
   }
  ],
+ "historyCoverage": {
+  "startMonth": "202308",
+  "endMonth": "202607",
+  "months": 36,
+  "complete": false
+ },
  "location": {
   "latitude": 36.3849261489354,
   "longitude": 127.37538863864,

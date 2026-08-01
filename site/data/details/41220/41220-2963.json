@@ -7,15 +7,43 @@
  "sggCode": "41220",
  "dongName": "용이동",
  "referenceMonths": [
-  "202605",
-  "202606"
+  "202606",
+  "202607"
  ],
  "availableAreas": [
   75.008,
+  84.952,
   84.975,
   119.58
  ],
  "transactions": [
+  {
+   "contractDate": "2026-07-24",
+   "priceWon": 325000000,
+   "floor": 1,
+   "exclusiveArea": 75.008,
+   "areaGroup": 75,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
+  {
+   "contractDate": "2026-07-11",
+   "priceWon": 430000000,
+   "floor": 14,
+   "exclusiveArea": 84.975,
+   "areaGroup": 85,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
+  {
+   "contractDate": "2026-07-04",
+   "priceWon": 395000000,
+   "floor": 6,
+   "exclusiveArea": 84.952,
+   "areaGroup": 85,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
   {
    "contractDate": "2026-06-08",
    "priceWon": 378000000,
@@ -162,8 +190,8 @@
   }
  ],
  "historyCoverage": {
-  "startMonth": "202307",
-  "endMonth": "202606",
+  "startMonth": "202308",
+  "endMonth": "202607",
   "months": 36,
   "complete": false
  },

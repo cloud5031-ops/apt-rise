@@ -7,8 +7,8 @@
  "sggCode": "27140",
  "dongName": "신서동",
  "referenceMonths": [
-  "202605",
-  "202606"
+  "202606",
+  "202607"
  ],
  "availableAreas": [
   59.7594,
@@ -19,11 +19,20 @@
  ],
  "transactions": [
   {
-   "contractDate": "2026-06-18",
-   "priceWon": 213000000,
-   "floor": 14,
-   "exclusiveArea": 59.7594,
-   "areaGroup": 60,
+   "contractDate": "2026-07-28",
+   "priceWon": 290000000,
+   "floor": 16,
+   "exclusiveArea": 84.951,
+   "areaGroup": 85,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
+  {
+   "contractDate": "2026-07-02",
+   "priceWon": 268000000,
+   "floor": 13,
+   "exclusiveArea": 84.9644,
+   "areaGroup": 85,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   },
@@ -33,6 +42,15 @@
    "floor": 12,
    "exclusiveArea": 84.9644,
    "areaGroup": 85,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
+  {
+   "contractDate": "2026-06-18",
+   "priceWon": 213000000,
+   "floor": 14,
+   "exclusiveArea": 59.7594,
+   "areaGroup": 60,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   },
@@ -118,6 +136,12 @@
    "cancellationStatus": "COMPLETED"
   }
  ],
+ "historyCoverage": {
+  "startMonth": "202308",
+  "endMonth": "202607",
+  "months": 36,
+  "complete": false
+ },
  "location": {
   "latitude": 35.8705798501847,
   "longitude": 128.725701256183,

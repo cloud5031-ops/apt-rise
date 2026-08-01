@@ -7,8 +7,8 @@
  "sggCode": "41360",
  "dongName": "다산동",
  "referenceMonths": [
-  "202605",
-  "202606"
+  "202606",
+  "202607"
  ],
  "availableAreas": [
   79.8247,
@@ -16,6 +16,42 @@
   84.9527
  ],
  "transactions": [
+  {
+   "contractDate": "2026-07-15",
+   "priceWon": 910000000,
+   "floor": 2,
+   "exclusiveArea": 79.8247,
+   "areaGroup": 80,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
+  {
+   "contractDate": "2026-07-12",
+   "priceWon": 1045000000,
+   "floor": 4,
+   "exclusiveArea": 84.8937,
+   "areaGroup": 85,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
+  {
+   "contractDate": "2026-07-11",
+   "priceWon": 1150000000,
+   "floor": 29,
+   "exclusiveArea": 84.8937,
+   "areaGroup": 85,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
+  {
+   "contractDate": "2026-07-06",
+   "priceWon": 1100000000,
+   "floor": 24,
+   "exclusiveArea": 84.9527,
+   "areaGroup": 85,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
   {
    "contractDate": "2026-06-27",
    "priceWon": 1060000000,
@@ -324,8 +360,8 @@
   }
  ],
  "historyCoverage": {
-  "startMonth": "202307",
-  "endMonth": "202606",
+  "startMonth": "202308",
+  "endMonth": "202607",
   "months": 36,
   "complete": false
  },

@@ -7,14 +7,23 @@
  "sggCode": "11260",
  "dongName": "묵동",
  "referenceMonths": [
-  "202605",
-  "202606"
+  "202606",
+  "202607"
  ],
  "availableAreas": [
   102.7,
   126.28
  ],
  "transactions": [
+  {
+   "contractDate": "2026-07-17",
+   "priceWon": 1280000000,
+   "floor": 11,
+   "exclusiveArea": 126.28,
+   "areaGroup": 126,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
   {
    "contractDate": "2026-06-11",
    "priceWon": 1045000000,
@@ -143,8 +152,8 @@
   }
  ],
  "historyCoverage": {
-  "startMonth": "202307",
-  "endMonth": "202606",
+  "startMonth": "202308",
+  "endMonth": "202607",
   "months": 36,
   "complete": false
  },

@@ -7,14 +7,23 @@
  "sggCode": "41135",
  "dongName": "운중동",
  "referenceMonths": [
-  "202605",
-  "202606"
+  "202606",
+  "202607"
  ],
  "availableAreas": [
   84.8501,
   84.8536
  ],
  "transactions": [
+  {
+   "contractDate": "2026-07-02",
+   "priceWon": 1615000000,
+   "floor": 11,
+   "exclusiveArea": 84.8536,
+   "areaGroup": 85,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
   {
    "contractDate": "2026-06-24",
    "priceWon": 1630000000,
@@ -53,8 +62,8 @@
   }
  ],
  "historyCoverage": {
-  "startMonth": "202307",
-  "endMonth": "202606",
+  "startMonth": "202308",
+  "endMonth": "202607",
   "months": 36,
   "complete": false
  },

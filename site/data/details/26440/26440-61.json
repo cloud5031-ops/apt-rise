@@ -7,14 +7,32 @@
  "sggCode": "26440",
  "dongName": "명지동",
  "referenceMonths": [
-  "202605",
-  "202606"
+  "202606",
+  "202607"
  ],
  "availableAreas": [
   84.9975,
   84.9985
  ],
  "transactions": [
+  {
+   "contractDate": "2026-07-31",
+   "priceWon": 495000000,
+   "floor": 15,
+   "exclusiveArea": 84.9985,
+   "areaGroup": 85,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
+  {
+   "contractDate": "2026-07-04",
+   "priceWon": 510000000,
+   "floor": 8,
+   "exclusiveArea": 84.9985,
+   "areaGroup": 85,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
   {
    "contractDate": "2026-06-29",
    "priceWon": 520000000,
@@ -53,8 +71,8 @@
   },
   {
    "contractDate": "2026-06-04",
-   "priceWon": 554000000,
-   "floor": 17,
+   "priceWon": 570000000,
+   "floor": 16,
    "exclusiveArea": 84.9985,
    "areaGroup": 85,
    "dealType": "중개거래",
@@ -62,8 +80,8 @@
   },
   {
    "contractDate": "2026-06-04",
-   "priceWon": 570000000,
-   "floor": 16,
+   "priceWon": 554000000,
+   "floor": 17,
    "exclusiveArea": 84.9985,
    "areaGroup": 85,
    "dealType": "중개거래",
@@ -143,8 +161,8 @@
   },
   {
    "contractDate": "2026-02-07",
-   "priceWon": 505000000,
-   "floor": 12,
+   "priceWon": 547000000,
+   "floor": 11,
    "exclusiveArea": 84.9975,
    "areaGroup": 85,
    "dealType": "중개거래",
@@ -152,14 +170,20 @@
   },
   {
    "contractDate": "2026-02-07",
-   "priceWon": 547000000,
-   "floor": 11,
+   "priceWon": 505000000,
+   "floor": 12,
    "exclusiveArea": 84.9975,
    "areaGroup": 85,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   }
  ],
+ "historyCoverage": {
+  "startMonth": "202308",
+  "endMonth": "202607",
+  "months": 36,
+  "complete": false
+ },
  "location": {
   "latitude": 35.0947983738681,
   "longitude": 128.91833233182,

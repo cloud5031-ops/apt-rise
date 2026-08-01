@@ -7,14 +7,23 @@
  "sggCode": "47290",
  "dongName": "정평동",
  "referenceMonths": [
-  "202605",
-  "202606"
+  "202606",
+  "202607"
  ],
  "availableAreas": [
   59.82,
   84.99
  ],
  "transactions": [
+  {
+   "contractDate": "2026-07-22",
+   "priceWon": 122000000,
+   "floor": 1,
+   "exclusiveArea": 59.82,
+   "areaGroup": 60,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
   {
    "contractDate": "2026-06-29",
    "priceWon": 225000000,
@@ -169,6 +178,12 @@
    "cancellationStatus": "CANCELLED"
   }
  ],
+ "historyCoverage": {
+  "startMonth": "202308",
+  "endMonth": "202607",
+  "months": 36,
+  "complete": false
+ },
  "location": {
   "latitude": 35.8357438292272,
   "longitude": 128.728528749919,

@@ -7,14 +7,32 @@
  "sggCode": "41171",
  "dongName": "안양동",
  "referenceMonths": [
-  "202605",
-  "202606"
+  "202606",
+  "202607"
  ],
  "availableAreas": [
   49.98,
   66.5454
  ],
  "transactions": [
+  {
+   "contractDate": "2026-07-26",
+   "priceWon": 600000000,
+   "floor": 18,
+   "exclusiveArea": 66.5454,
+   "areaGroup": 67,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
+  {
+   "contractDate": "2026-07-21",
+   "priceWon": 450000000,
+   "floor": 13,
+   "exclusiveArea": 49.98,
+   "areaGroup": 50,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
   {
    "contractDate": "2026-06-18",
    "priceWon": 543000000,
@@ -98,8 +116,8 @@
   }
  ],
  "historyCoverage": {
-  "startMonth": "202307",
-  "endMonth": "202606",
+  "startMonth": "202308",
+  "endMonth": "202607",
   "months": 36,
   "complete": false
  },

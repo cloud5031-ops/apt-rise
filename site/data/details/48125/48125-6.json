@@ -7,8 +7,8 @@
  "sggCode": "48125",
  "dongName": "월영동",
  "referenceMonths": [
-  "202605",
-  "202606"
+  "202606",
+  "202607"
  ],
  "availableAreas": [
   59.526,
@@ -16,6 +16,33 @@
   84.84
  ],
  "transactions": [
+  {
+   "contractDate": "2026-07-24",
+   "priceWon": 195000000,
+   "floor": 14,
+   "exclusiveArea": 84.64,
+   "areaGroup": 85,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
+  {
+   "contractDate": "2026-07-13",
+   "priceWon": 182500000,
+   "floor": 17,
+   "exclusiveArea": 59.526,
+   "areaGroup": 60,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
+  {
+   "contractDate": "2026-07-11",
+   "priceWon": 183000000,
+   "floor": 12,
+   "exclusiveArea": 84.64,
+   "areaGroup": 85,
+   "dealType": "중개거래",
+   "cancellationStatus": "CANCELLED"
+  },
   {
    "contractDate": "2026-06-08",
    "priceWon": 208000000,
@@ -125,6 +152,12 @@
    "cancellationStatus": "COMPLETED"
   }
  ],
+ "historyCoverage": {
+  "startMonth": "202308",
+  "endMonth": "202607",
+  "months": 36,
+  "complete": false
+ },
  "location": {
   "latitude": 35.175267222416,
   "longitude": 128.559559677692,

@@ -7,8 +7,8 @@
  "sggCode": "11305",
  "dongName": "수유동",
  "referenceMonths": [
-  "202605",
-  "202606"
+  "202606",
+  "202607"
  ],
  "availableAreas": [
   63.78,
@@ -17,6 +17,42 @@
   122.58
  ],
  "transactions": [
+  {
+   "contractDate": "2026-07-11",
+   "priceWon": 500000000,
+   "floor": 1,
+   "exclusiveArea": 63.78,
+   "areaGroup": 64,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
+  {
+   "contractDate": "2026-07-10",
+   "priceWon": 600000000,
+   "floor": 11,
+   "exclusiveArea": 63.78,
+   "areaGroup": 64,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
+  {
+   "contractDate": "2026-07-09",
+   "priceWon": 738000000,
+   "floor": 5,
+   "exclusiveArea": 122.58,
+   "areaGroup": 123,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
+  {
+   "contractDate": "2026-07-04",
+   "priceWon": 790000000,
+   "floor": 10,
+   "exclusiveArea": 122.58,
+   "areaGroup": 123,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
   {
    "contractDate": "2026-06-30",
    "priceWon": 745000000,
@@ -343,8 +379,8 @@
   }
  ],
  "historyCoverage": {
-  "startMonth": "202307",
-  "endMonth": "202606",
+  "startMonth": "202308",
+  "endMonth": "202607",
   "months": 36,
   "complete": false
  },

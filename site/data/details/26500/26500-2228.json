@@ -7,8 +7,8 @@
  "sggCode": "26500",
  "dongName": "민락동",
  "referenceMonths": [
-  "202605",
-  "202606"
+  "202606",
+  "202607"
  ],
  "availableAreas": [
   84.9275,
@@ -17,6 +17,24 @@
   114.98
  ],
  "transactions": [
+  {
+   "contractDate": "2026-07-25",
+   "priceWon": 935000000,
+   "floor": 4,
+   "exclusiveArea": 84.9275,
+   "areaGroup": 85,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
+  {
+   "contractDate": "2026-07-06",
+   "priceWon": 1000000000,
+   "floor": 11,
+   "exclusiveArea": 114.98,
+   "areaGroup": 115,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
   {
    "contractDate": "2026-06-29",
    "priceWon": 795000000,
@@ -108,6 +126,12 @@
    "cancellationStatus": "COMPLETED"
   }
  ],
+ "historyCoverage": {
+  "startMonth": "202308",
+  "endMonth": "202607",
+  "months": 36,
+  "complete": false
+ },
  "location": {
   "latitude": 37.7454300384621,
   "longitude": 127.091200540494,

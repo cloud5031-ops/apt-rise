@@ -7,8 +7,8 @@
  "sggCode": "30170",
  "dongName": "둔산동",
  "referenceMonths": [
-  "202605",
-  "202606"
+  "202606",
+  "202607"
  ],
  "availableAreas": [
   71.52,
@@ -16,6 +16,33 @@
   84.99
  ],
  "transactions": [
+  {
+   "contractDate": "2026-07-23",
+   "priceWon": 430000000,
+   "floor": 11,
+   "exclusiveArea": 71.52,
+   "areaGroup": 72,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
+  {
+   "contractDate": "2026-07-20",
+   "priceWon": 520000000,
+   "floor": 11,
+   "exclusiveArea": 84.99,
+   "areaGroup": 85,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
+  {
+   "contractDate": "2026-07-10",
+   "priceWon": 515000000,
+   "floor": 14,
+   "exclusiveArea": 84.99,
+   "areaGroup": 85,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
   {
    "contractDate": "2026-06-30",
    "priceWon": 459000000,
@@ -108,19 +135,19 @@
   },
   {
    "contractDate": "2026-05-09",
-   "priceWon": 388000000,
-   "floor": 6,
-   "exclusiveArea": 71.52,
-   "areaGroup": 72,
+   "priceWon": 539000000,
+   "floor": 4,
+   "exclusiveArea": 84.99,
+   "areaGroup": 85,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   },
   {
    "contractDate": "2026-05-09",
-   "priceWon": 539000000,
-   "floor": 4,
-   "exclusiveArea": 84.99,
-   "areaGroup": 85,
+   "priceWon": 388000000,
+   "floor": 6,
+   "exclusiveArea": 71.52,
+   "areaGroup": 72,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   },
@@ -207,15 +234,6 @@
   },
   {
    "contractDate": "2026-03-13",
-   "priceWon": 360000000,
-   "floor": 4,
-   "exclusiveArea": 71.52,
-   "areaGroup": 72,
-   "dealType": "중개거래",
-   "cancellationStatus": "COMPLETED"
-  },
-  {
-   "contractDate": "2026-03-13",
    "priceWon": 457500000,
    "floor": 12,
    "exclusiveArea": 84.99,
@@ -229,6 +247,15 @@
    "floor": 15,
    "exclusiveArea": 84.99,
    "areaGroup": 85,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
+  {
+   "contractDate": "2026-03-13",
+   "priceWon": 360000000,
+   "floor": 4,
+   "exclusiveArea": 71.52,
+   "areaGroup": 72,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   },
@@ -332,6 +359,12 @@
    "cancellationStatus": "COMPLETED"
   }
  ],
+ "historyCoverage": {
+  "startMonth": "202308",
+  "endMonth": "202607",
+  "months": 36,
+  "complete": false
+ },
  "location": {
   "latitude": 36.3590899681752,
   "longitude": 127.397196977215,

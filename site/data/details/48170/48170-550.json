@@ -7,14 +7,32 @@
  "sggCode": "48170",
  "dongName": "충무공동",
  "referenceMonths": [
-  "202605",
-  "202606"
+  "202606",
+  "202607"
  ],
  "availableAreas": [
   59.9885,
   59.9925
  ],
  "transactions": [
+  {
+   "contractDate": "2026-07-24",
+   "priceWon": 400000000,
+   "floor": 3,
+   "exclusiveArea": 59.9925,
+   "areaGroup": 60,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
+  {
+   "contractDate": "2026-07-16",
+   "priceWon": 380000000,
+   "floor": 8,
+   "exclusiveArea": 59.9925,
+   "areaGroup": 60,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
   {
    "contractDate": "2026-06-30",
    "priceWon": 428000000,
@@ -125,8 +143,8 @@
   },
   {
    "contractDate": "2026-05-17",
-   "priceWon": 338000000,
-   "floor": 1,
+   "priceWon": 389000000,
+   "floor": 18,
    "exclusiveArea": 59.9925,
    "areaGroup": 60,
    "dealType": "중개거래",
@@ -134,8 +152,8 @@
   },
   {
    "contractDate": "2026-05-17",
-   "priceWon": 389000000,
-   "floor": 18,
+   "priceWon": 338000000,
+   "floor": 1,
    "exclusiveArea": 59.9925,
    "areaGroup": 60,
    "dealType": "중개거래",
@@ -170,8 +188,8 @@
   },
   {
    "contractDate": "2026-04-26",
-   "priceWon": 390000000,
-   "floor": 14,
+   "priceWon": 403000000,
+   "floor": 15,
    "exclusiveArea": 59.9925,
    "areaGroup": 60,
    "dealType": "중개거래",
@@ -179,8 +197,8 @@
   },
   {
    "contractDate": "2026-04-26",
-   "priceWon": 403000000,
-   "floor": 15,
+   "priceWon": 390000000,
+   "floor": 14,
    "exclusiveArea": 59.9925,
    "areaGroup": 60,
    "dealType": "중개거래",
@@ -250,6 +268,12 @@
    "cancellationStatus": "COMPLETED"
   }
  ],
+ "historyCoverage": {
+  "startMonth": "202308",
+  "endMonth": "202607",
+  "months": 36,
+  "complete": false
+ },
  "location": {
   "latitude": 35.1684291124281,
   "longitude": 128.137649867133,

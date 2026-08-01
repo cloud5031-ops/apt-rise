@@ -7,14 +7,23 @@
  "sggCode": "43113",
  "dongName": "가경동",
  "referenceMonths": [
-  "202605",
-  "202606"
+  "202606",
+  "202607"
  ],
  "availableAreas": [
   84.403,
   84.8743
  ],
  "transactions": [
+  {
+   "contractDate": "2026-07-16",
+   "priceWon": 595000000,
+   "floor": 23,
+   "exclusiveArea": 84.8743,
+   "areaGroup": 85,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
   {
    "contractDate": "2026-06-19",
    "priceWon": 595000000,
@@ -161,21 +170,21 @@
   },
   {
    "contractDate": "2026-03-21",
-   "priceWon": 550000000,
-   "floor": 7,
-   "exclusiveArea": 84.8743,
-   "areaGroup": 85,
-   "dealType": "중개거래",
-   "cancellationStatus": "CANCELLED"
-  },
-  {
-   "contractDate": "2026-03-21",
    "priceWon": 565000000,
    "floor": 7,
    "exclusiveArea": 84.8743,
    "areaGroup": 85,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
+  },
+  {
+   "contractDate": "2026-03-21",
+   "priceWon": 550000000,
+   "floor": 7,
+   "exclusiveArea": 84.8743,
+   "areaGroup": 85,
+   "dealType": "중개거래",
+   "cancellationStatus": "CANCELLED"
   },
   {
    "contractDate": "2026-03-21",
@@ -196,6 +205,12 @@
    "cancellationStatus": "COMPLETED"
   }
  ],
+ "historyCoverage": {
+  "startMonth": "202308",
+  "endMonth": "202607",
+  "months": 36,
+  "complete": false
+ },
  "location": {
   "latitude": 36.6145638219539,
   "longitude": 127.431989059048,

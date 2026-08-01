@@ -7,8 +7,8 @@
  "sggCode": "26350",
  "dongName": "재송동",
  "referenceMonths": [
-  "202605",
-  "202606"
+  "202606",
+  "202607"
  ],
  "availableAreas": [
   84.6389,
@@ -19,15 +19,6 @@
  "transactions": [
   {
    "contractDate": "2026-06-15",
-   "priceWon": 1130000000,
-   "floor": 19,
-   "exclusiveArea": 84.6389,
-   "areaGroup": 85,
-   "dealType": "중개거래",
-   "cancellationStatus": "COMPLETED"
-  },
-  {
-   "contractDate": "2026-06-15",
    "priceWon": 1350000000,
    "floor": 41,
    "exclusiveArea": 127.489,
@@ -36,9 +27,9 @@
    "cancellationStatus": "COMPLETED"
   },
   {
-   "contractDate": "2026-06-13",
-   "priceWon": 1095000000,
-   "floor": 17,
+   "contractDate": "2026-06-15",
+   "priceWon": 1130000000,
+   "floor": 19,
    "exclusiveArea": 84.6389,
    "areaGroup": 85,
    "dealType": "중개거래",
@@ -50,6 +41,15 @@
    "floor": 9,
    "exclusiveArea": 127.489,
    "areaGroup": 127,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
+  {
+   "contractDate": "2026-06-13",
+   "priceWon": 1095000000,
+   "floor": 17,
+   "exclusiveArea": 84.6389,
+   "areaGroup": 85,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   },
@@ -117,6 +117,12 @@
    "cancellationStatus": "COMPLETED"
   }
  ],
+ "historyCoverage": {
+  "startMonth": "202308",
+  "endMonth": "202607",
+  "months": 36,
+  "complete": false
+ },
  "location": {
   "latitude": 35.1794241200433,
   "longitude": 129.123126813123,

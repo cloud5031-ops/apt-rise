@@ -7,16 +7,35 @@
  "sggCode": "41597",
  "dongName": "여울동",
  "referenceMonths": [
-  "202605",
-  "202606"
+  "202606",
+  "202607"
  ],
  "availableAreas": [
   97.3043,
+  97.8618,
   97.8915,
   107.9565,
   155.9432
  ],
  "transactions": [
+  {
+   "contractDate": "2026-07-04",
+   "priceWon": 1400000000,
+   "floor": 13,
+   "exclusiveArea": 97.8618,
+   "areaGroup": 98,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
+  {
+   "contractDate": "2026-07-04",
+   "priceWon": 1250000000,
+   "floor": 5,
+   "exclusiveArea": 107.9565,
+   "areaGroup": 108,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
   {
    "contractDate": "2026-06-30",
    "priceWon": 1258000000,
@@ -262,8 +281,8 @@
   }
  ],
  "historyCoverage": {
-  "startMonth": "202307",
-  "endMonth": "202606",
+  "startMonth": "202308",
+  "endMonth": "202607",
   "months": 36,
   "complete": false
  },

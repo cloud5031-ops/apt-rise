@@ -7,13 +7,31 @@
  "sggCode": "41133",
  "dongName": "은행동",
  "referenceMonths": [
-  "202605",
-  "202606"
+  "202606",
+  "202607"
  ],
  "availableAreas": [
   56.6448
  ],
  "transactions": [
+  {
+   "contractDate": "2026-07-18",
+   "priceWon": 765000000,
+   "floor": 14,
+   "exclusiveArea": 56.6448,
+   "areaGroup": 57,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
+  {
+   "contractDate": "2026-07-11",
+   "priceWon": 740000000,
+   "floor": 8,
+   "exclusiveArea": 56.6448,
+   "areaGroup": 57,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
   {
    "contractDate": "2026-06-20",
    "priceWon": 695000000,
@@ -178,8 +196,8 @@
   }
  ],
  "historyCoverage": {
-  "startMonth": "202307",
-  "endMonth": "202606",
+  "startMonth": "202308",
+  "endMonth": "202607",
   "months": 36,
   "complete": false
  },
