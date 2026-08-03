@@ -40,6 +40,9 @@ SHARDS_DIR = PROJECT_ROOT / "data" / "shards"
 DETAILS_DIR = PROJECT_ROOT / "site" / "data" / "details"
 MANIFEST_PATH = PROJECT_ROOT / "site" / "data" / "apt_rankings_manifest.json"
 
+# 연속 실패가 이 횟수에 도달하면 수집을 중단한다 (일일 API 한도 소진 방어).
+MAX_CONSECUTIVE_FAILURES = 15
+
 
 def read_manifest_months():
     """manifest에서 anchor(잠정월)와 안정월을 읽는다. 실패 시 동적 계산."""
@@ -137,8 +140,12 @@ def main():
     fetched = 0
     skipped = 0
     failed_pairs = []
+    consecutive_failures = 0
+    aborted_reason = None
 
     for sgg in sgg_codes:
+        if aborted_reason:
+            break
         have = collected_months_for(state, sgg) if args.resume else set()
         for month in months:
             if month in have:
@@ -156,7 +163,21 @@ def main():
             if not success:
                 print(f"[실패] {sgg}/{month} (3회 시도 초과)")
                 failed_pairs.append(f"{sgg}/{month}")
+                consecutive_failures += 1
+                # 일일 API 한도를 넘기면 남은 수천 건이 전부 실패하면서
+                # 재시도·타임아웃만으로 Actions 6시간 한도를 태운다.
+                # 연속 실패가 이어지면 수집을 접고 여기까지 성공한 분량을
+                # 병합·push하도록 정상 경로로 빠져나간다.
+                if consecutive_failures >= MAX_CONSECUTIVE_FAILURES:
+                    aborted_reason = (
+                        f"연속 {consecutive_failures}회 API 실패로 수집을 중단했습니다. "
+                        "일일 호출 한도 소진일 가능성이 높습니다. "
+                        "여기까지 성공한 분량은 저장되며, --resume 으로 이어서 실행하세요."
+                    )
+                    print(f"::warning::{aborted_reason}")
+                    break
                 continue
+            consecutive_failures = 0
             upsert(conn, trades)
             record_collected_months(state, sgg, [month])
             fetched += 1
@@ -181,6 +202,7 @@ def main():
         'fetched_sgg_months': fetched,
         'skipped_sgg_months': skipped,
         'updated_files': 0,
+        'aborted_reason': aborted_reason,
     }
 
     for apt_key, info in targets.items():
@@ -282,7 +304,12 @@ def main():
 
     write_summary(args.region_group, stats, failed_pairs)
 
-    # 수집 시도가 전부 실패했을 때만 실패 처리 (부분 성공은 진행분을 살린다)
+    if aborted_reason:
+        print(f"\n::warning::{aborted_reason}")
+
+    # 수집 시도가 전부 실패했을 때만 실패 처리.
+    # 서킷브레이커로 중단됐어도 일부라도 받아왔다면 정상 종료해
+    # push 스텝이 진행분과 장부를 저장하도록 한다.
     if fetched == 0 and skipped == 0 and failed_pairs:
         sys.exit(1)
 
@@ -302,6 +329,9 @@ def write_summary(region, stats, failed_pairs):
         f.write(f"- **API 호출 성공 (시군구×월)**: {stats['fetched_sgg_months']}건\n")
         f.write(f"- **장부 스킵 (이미 수집됨)**: {stats['skipped_sgg_months']}건\n")
         f.write(f"- **API 실패 (시군구×월)**: {stats['api_failed_sgg_months']}건\n")
+        if stats.get('aborted_reason'):
+            f.write("\n> [!WARNING]\n> **수집이 조기 중단되었습니다.**\n> "
+                    + stats['aborted_reason'] + "\n")
         if failed_pairs:
             f.write("\n<details><summary>실패한 시군구/월 목록</summary>\n\n```text\n"
                     + ", ".join(failed_pairs) + "\n```\n</details>\n")

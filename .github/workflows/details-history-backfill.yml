@@ -42,6 +42,8 @@ permissions:
 jobs:
   backfill:
     runs-on: ubuntu-latest
+    # GitHub의 6시간 하드캔슬(진행분이 통째로 유실된다)에 닿기 전에 끝낸다.
+    timeout-minutes: 330
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
