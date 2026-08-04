@@ -175,8 +175,10 @@ jobs:
           done
 
       # 위 조건의 정확한 부정. 발행을 건너뛴 이유를 남긴다.
+      # always()가 없으면 GitHub이 success()를 암묵적으로 AND 하므로,
+      # 선행 스텝이 실패한 run에서는 이 안내마저 사라진다.
       - name: Report skipped publish
-        if: github.ref != 'refs/heads/main' || (github.event_name == 'workflow_dispatch' && inputs.publish != true)
+        if: always() && (github.ref != 'refs/heads/main' || (github.event_name == 'workflow_dispatch' && inputs.publish != true))
         run: |
           {
             echo "### ⏭️ remote push skipped"

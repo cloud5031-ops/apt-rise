@@ -10,8 +10,11 @@
 """
 import argparse
 import json
+import os
+import re
 import sys
 import time
+import urllib.parse
 import xml.etree.ElementTree as ET
 from datetime import datetime, timezone
 
@@ -20,6 +23,44 @@ import requests
 import config
 import db
 from utils import apartment_key, area_group, parse_deal_amount, recent_months
+
+
+# ── 비밀값 마스킹 ────────────────────────────────────────────────
+# requests의 예외 메시지에는 요청 URL이 통째로 들어가고, 그 안에 serviceKey
+# 쿼리값이 그대로 담긴다. 로그로 나가기 전에 애플리케이션에서 직접 지운다.
+# GitHub Actions의 시크릿 마스킹에만 기대면 로컬 실행·테스트 출력이 무방비다.
+_SERVICE_KEY_RE = re.compile(r"(serviceKey=)[^&\s'\"<>]*", re.IGNORECASE)
+_SECRET_ENV_NAMES = (
+    "DATA_GO_KR_API_KEY", "KAKAO_REST_API_KEY", "RONE_API_KEY", "KOSIS_API_KEY",
+)
+_MIN_SECRET_LEN = 8   # 짧은 값은 무관한 문자열까지 훼손할 수 있어 제외한다
+
+
+def _secret_values():
+    """현재 설정된 키의 원문과 URL 인코딩 변형들."""
+    out = set()
+    for name in _SECRET_ENV_NAMES:
+        raw = os.environ.get(name) or getattr(config, name, "") or ""
+        raw = str(raw).strip()
+        if len(raw) < _MIN_SECRET_LEN:
+            continue
+        for variant in (raw,
+                        urllib.parse.quote(raw, safe=""),
+                        urllib.parse.quote_plus(raw),
+                        urllib.parse.unquote(raw)):
+            if len(variant) >= _MIN_SECRET_LEN:
+                out.add(variant)
+    # 긴 것부터 지워야 부분 치환으로 조각이 남지 않는다
+    return sorted(out, key=len, reverse=True)
+
+
+def mask_secrets(text) -> str:
+    """serviceKey 쿼리값과 알려진 키 원문을 ***로 가린다."""
+    s = str(text)
+    s = _SERVICE_KEY_RE.sub(r"\1***", s)
+    for value in _secret_values():
+        s = s.replace(value, "***")
+    return s
 
 
 # ── 시간 예산 (소프트) ───────────────────────────────────────────
@@ -81,7 +122,8 @@ class TransientApiError(Exception):
 
 
 def log(msg: str):
-    print(msg, flush=True)
+    # 모든 출력이 이 함수를 지나므로 여기서 한 번 더 거른다.
+    print(mask_secrets(msg), flush=True)
 
 
 def text(item, tag, default=None):
@@ -123,7 +165,9 @@ def fetch_trades(sgg_code: str, month: str, budget_seconds: float = PAIR_BUDGET_
                 timeout=(CONNECT_TIMEOUT, min(READ_TIMEOUT, max(1.0, remaining))),
             )
         except requests.exceptions.RequestException as e:
-            raise TransientApiError(f"{type(e).__name__}: {e}")
+            # 예외 객체 자체에 키가 남으면 테스트 실패 출력이나 traceback으로
+            # 새어 나간다. 로그 단계가 아니라 여기서 지운다.
+            raise TransientApiError(mask_secrets(f"{type(e).__name__}: {e}"))
 
         if resp.status_code in (401, 403):
             raise FatalApiError(f"HTTP {resp.status_code} (인증/권한)")
@@ -135,11 +179,24 @@ def fetch_trades(sgg_code: str, month: str, budget_seconds: float = PAIR_BUDGET_
         try:
             root = ET.fromstring(resp.text)
         except ET.ParseError as e:
-            raise TransientApiError(f"XMLParseError: {e} | body[:200]={resp.text[:200]!r}")
+            raise TransientApiError(
+                mask_secrets(f"XMLParseError: {e} | body[:200]={resp.text[:200]!r}"))
 
         # 선행 0이 살아 있어야 분류가 맞는다("03" != "3"). 문자열 그대로 비교한다.
         result_code = (root.findtext(".//resultCode", "") or "").strip()
         msg = root.findtext(".//resultMsg", "unknown")
+
+        # 인증·한도 오류는 서비스가 아니라 게이트웨이가 막는 것이라
+        # 표준 봉투 대신 OpenAPI_ServiceResponse로 온다. HTTP는 200이고
+        # 코드 체계는 같지만 태그 이름이 returnReasonCode/returnAuthMsg다.
+        # 이 fallback이 없으면 한도 초과(22)가 "미분류 → Transient"로 재시도된다.
+        if not result_code:
+            result_code = (root.findtext(".//returnReasonCode", "") or "").strip()
+            if result_code:
+                msg = (root.findtext(".//returnAuthMsg")
+                       or root.findtext(".//errMsg")
+                       or "unknown")
+
         if result_code in FATAL_RESULT_CODES:
             raise FatalApiError(
                 f"resultCode {result_code} ({FATAL_RESULT_CODES[result_code]}): {msg}"

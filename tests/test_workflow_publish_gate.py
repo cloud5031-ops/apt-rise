@@ -105,6 +105,12 @@ class Parser:
         if kind == "str":
             return text[1:-1]
         if kind == "name":
+            # 상태 함수 호출: always() / success() / failure() / cancelled()
+            if self.peek()[0] == "lparen":
+                self.take()
+                if self.take()[0] != "rparen":
+                    raise ValueError(f"{text}() 인자는 지원하지 않음")
+                return status_function(text, self.ctx)
             if text == "true":
                 return True
             if text == "false":
@@ -113,6 +119,20 @@ class Parser:
                 return None
             return lookup(self.ctx, text)
         raise ValueError(f"예상치 못한 토큰: {kind} {text!r}")
+
+
+def status_function(name, context):
+    """GitHub 상태 함수. job_status는 컨텍스트로 주입한다."""
+    status = context.get("job_status", "success")
+    if name == "always":
+        return True
+    if name == "success":
+        return status == "success"
+    if name == "failure":
+        return status == "failure"
+    if name == "cancelled":
+        return status == "cancelled"
+    raise ValueError(f"지원하지 않는 함수: {name}()")
 
 
 def lookup(context, dotted):
@@ -133,12 +153,27 @@ def evaluate(expr, context):
     return truthy(Parser(tokenize(expr), context).parse())
 
 
-def make_context(event_name, ref, publish):
+def make_context(event_name, ref, publish, job_status="success"):
     """publish가 None이면 inputs 컨텍스트 자체가 없는 상황(schedule)."""
-    ctx = {"github": {"event_name": event_name, "ref": ref}}
+    ctx = {"github": {"event_name": event_name, "ref": ref}, "job_status": job_status}
     if publish is not None:
         ctx["inputs"] = {"publish": publish}
     return ctx
+
+
+_STATUS_FN = re.compile(r"\b(always|success|failure|cancelled)\s*\(")
+
+
+def step_runs(expr, context):
+    """스텝이 실제로 실행되는지.
+
+    GitHub은 if에 상태 함수가 없으면 success()를 암묵적으로 AND 한다.
+    이 규칙을 반영해야 '선행 스텝이 실패하면 안내가 사라지는' 문제를 잡을 수 있다.
+    """
+    if not _STATUS_FN.search(expr):
+        if not status_function("success", context):
+            return False
+    return evaluate(expr, context)
 
 
 # ── 실제 YAML에서 조건식을 읽어온다 ──────────────────────────────
@@ -181,13 +216,13 @@ class TestPublishGate(unittest.TestCase):
 
     def assert_case(self, event_name, ref, publish, should_push, label):
         ctx = make_context(event_name, ref, publish)
-        pushed = evaluate(self.push_if, ctx)
-        skipped_report = evaluate(self.skip_if, ctx)
+        pushed = step_runs(self.push_if, ctx)
+        skipped_report = step_runs(self.skip_if, ctx)
 
         self.assertEqual(pushed, should_push, f"{label}: push 판정이 다르다")
         self.assertNotEqual(
             pushed, skipped_report,
-            f"{label}: push 스텝과 안내 스텝의 조건이 서로 정확한 부정이어야 한다")
+            f"{label}: 성공 run에서 push 스텝과 안내 스텝은 서로 정확한 부정이어야 한다")
 
     def test_push_step_has_condition(self):
         self.assertTrue(self.push_if, "push 스텝에 if 조건이 있어야 한다")
@@ -217,9 +252,55 @@ class TestPublishGate(unittest.TestCase):
         """main 이외의 어떤 ref에서도, publish 값과 무관하게 발행되지 않는다."""
         for ref in ("refs/heads/feature/x", "refs/heads/rescue/y", "refs/tags/v1"):
             for publish in (True, False, None):
-                ctx = make_context("workflow_dispatch", ref, publish)
-                self.assertFalse(evaluate(self.push_if, ctx),
-                                 f"{ref} / publish={publish} 에서 발행되면 안 된다")
+                for status in ("success", "failure"):
+                    ctx = make_context("workflow_dispatch", ref, publish, status)
+                    self.assertFalse(step_runs(self.push_if, ctx),
+                                     f"{ref} / publish={publish} / {status} 에서 발행되면 안 된다")
+
+
+class TestSkipNoticeSurvivesFailure(unittest.TestCase):
+    """선행 스텝이 실패한 run에서도 '왜 발행 안 했는지' 안내는 남아야 한다.
+
+    run 30881311694에서 Collect가 실패하자 이 안내 스텝이 통째로 skipped 됐다.
+    if에 상태 함수가 없으면 GitHub이 success()를 암묵적으로 AND 하기 때문이다.
+    """
+
+    @classmethod
+    def setUpClass(cls):
+        conditions = step_conditions()
+        cls.push_if = conditions.get(PUSH_STEP)
+        cls.skip_if = conditions.get(SKIP_STEP)
+
+    def test_skip_notice_declares_a_status_function(self):
+        self.assertRegex(self.skip_if, r"\balways\s*\(",
+                         "always()가 없으면 실패 run에서 안내가 사라진다")
+
+    def test_skip_notice_runs_on_failed_feature_run(self):
+        ctx = make_context("workflow_dispatch",
+                           "refs/heads/feature/inline-apartment-details",
+                           False, job_status="failure")
+        self.assertTrue(step_runs(self.skip_if, ctx),
+                        "실패한 feature run에서도 안내가 나와야 한다")
+        self.assertFalse(step_runs(self.push_if, ctx),
+                         "실패 run에서 발행되면 안 된다")
+
+    def test_skip_notice_runs_on_cancelled_run(self):
+        ctx = make_context("workflow_dispatch", "refs/heads/feature/x",
+                           False, job_status="cancelled")
+        self.assertTrue(step_runs(self.skip_if, ctx))
+
+    def test_skip_notice_stays_silent_on_successful_main_publish(self):
+        """정상 발행 run에서는 안내가 나오면 안 된다."""
+        for event, publish in (("schedule", None), ("workflow_dispatch", True)):
+            ctx = make_context(event, "refs/heads/main", publish)
+            self.assertFalse(step_runs(self.skip_if, ctx),
+                             f"{event}/publish={publish}: 발행했는데 안내가 나왔다")
+            self.assertTrue(step_runs(self.push_if, ctx))
+
+    def test_push_step_never_runs_on_failed_run(self):
+        """실패 run에서는 main이어도 발행하지 않는다 (암묵적 success())."""
+        ctx = make_context("schedule", "refs/heads/main", None, job_status="failure")
+        self.assertFalse(step_runs(self.push_if, ctx))
 
 
 class TestWorkflowInputs(unittest.TestCase):

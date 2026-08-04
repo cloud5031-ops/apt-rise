@@ -50,6 +50,15 @@ def code_body(code, msg="MSG"):
             "<body><items/><totalCount>0</totalCount></body></response>")
 
 
+def gateway_body(code, msg="SERVICE ERROR"):
+    """게이트웨이가 막았을 때 오는 봉투. resultCode가 아예 없다."""
+    return ("<OpenAPI_ServiceResponse><cmmMsgHeader>"
+            "<errMsg>SERVICE ERROR</errMsg>"
+            f"<returnAuthMsg>{msg}</returnAuthMsg>"
+            f"<returnReasonCode>{code}</returnReasonCode>"
+            "</cmmMsgHeader></OpenAPI_ServiceResponse>")
+
+
 class FakeResponse:
     def __init__(self, text, status_code=200):
         self.text = text
@@ -198,6 +207,65 @@ class TestFatalErrors(CollectTradesTestCase):
         self.set_responder(lambda sgg, month: FakeResponse(code_body("30")))
         self.assertEqual(self.run_collect(), 2)
         self.assertEqual(len(self.calls), 1)
+
+    def test_gateway_quota_envelope_aborts_immediately(self):
+        """한도 초과는 HTTP 200 + returnReasonCode 봉투로도 온다."""
+        self.set_responder(lambda sgg, month: FakeResponse(
+            gateway_body("22", "LIMITED_NUMBER_OF_SERVICE_REQUESTS_EXCEEDS_ERROR")))
+        self.assertEqual(self.run_collect(), 2, "재시도 대상이 아니라 즉시 중단이어야 한다")
+        self.assertEqual(len(self.calls), 1)
+
+    def test_gateway_unregistered_key_envelope_aborts_immediately(self):
+        self.set_responder(lambda sgg, month: FakeResponse(
+            gateway_body("30", "SERVICE_KEY_IS_NOT_REGISTERED_ERROR")))
+        self.assertEqual(self.run_collect(), 2)
+        self.assertEqual(len(self.calls), 1)
+
+    def test_http_403_is_fatal_regardless_of_body(self):
+        """본문을 파싱하지 않고도 401/403은 즉시 중단이어야 한다."""
+        self.set_responder(lambda sgg, month: FakeResponse("not xml at all", status_code=403))
+        self.assertEqual(self.run_collect(), 2)
+        self.assertEqual(len(self.calls), 1)
+
+
+class TestGatewayEnvelope(CollectTradesTestCase):
+    """게이트웨이 봉투(returnReasonCode)도 표준 봉투와 같은 정책을 따른다."""
+
+    def test_gateway_nodata_matches_result_code_03(self):
+        """returnReasonCode 03도 '거래 없음'으로, 실패가 아니다."""
+        self.set_responder(lambda sgg, month: FakeResponse(gateway_body("03", "NODATA_ERROR")))
+        exit_code = self.run_collect()
+
+        expected_pairs = self.SGG_COUNT * MONTH_COUNT
+        self.assertEqual(exit_code, 0)
+        self.assertEqual(len(self.calls), expected_pairs, "재시도 없이 쌍당 1회")
+        progress, trades, _ = self.db_counts()
+        self.assertEqual(progress, expected_pairs)
+        self.assertEqual(trades, 0)
+        self.assertEqual(self.run_meta()["failedSggCodes"], [])
+
+    def test_gateway_transient_code_is_retried(self):
+        self.set_responder(lambda sgg, month: FakeResponse(gateway_body("01", "APPLICATION_ERROR")))
+        self.run_collect()
+        self.assertGreater(len(self.calls), self.SGG_COUNT,
+                           "일시 오류는 재시도되어야 한다")
+
+    def test_gateway_leading_zero_is_preserved(self):
+        """'03'과 '3'은 게이트웨이 봉투에서도 서로 다른 코드다."""
+        self.set_responder(lambda sgg, month: FakeResponse(gateway_body("03")))
+        self.assertEqual(self.ct.fetch_trades("11100", STABLE, budget_seconds=5), [])
+
+        self.set_responder(lambda sgg, month: FakeResponse(gateway_body("3")))
+        with self.assertRaises(self.ct.TransientApiError):
+            self.ct.fetch_trades("11100", STABLE, budget_seconds=5)
+
+    def test_standard_envelope_still_wins_when_both_present(self):
+        """resultCode가 있으면 그것을 쓴다 (기존 형식 우선)."""
+        body = ("<response><header><resultCode>00</resultCode><resultMsg>OK</resultMsg></header>"
+                "<cmmMsgHeader><returnReasonCode>22</returnReasonCode></cmmMsgHeader>"
+                "<body><items/><totalCount>0</totalCount></body></response>")
+        self.set_responder(lambda sgg, month: FakeResponse(body))
+        self.assertEqual(self.ct.fetch_trades("11100", STABLE, budget_seconds=5), [])
 
 
 class TestTransientErrors(CollectTradesTestCase):
