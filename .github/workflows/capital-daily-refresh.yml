@@ -2,6 +2,12 @@ name: Capital Daily Refresh
 
 on:
   workflow_dispatch:
+    inputs:
+      publish:
+        description: "Push generated outputs to main"
+        required: false
+        type: boolean
+        default: false
   schedule:
     - cron: '17 4 * * 1-6'
       timezone: 'Asia/Seoul'
@@ -137,7 +143,11 @@ jobs:
       - name: Validate JSON
         run: python scripts/validate_json.py
 
+      # main 브랜치에서만 발행한다. 수동 실행은 publish=true를 명시해야 한다.
+      # feature 브랜치에서 실행하면 HEAD에 코드 커밋이 들어 있어
+      # `git push origin HEAD:main`이 데이터뿐 아니라 그 코드까지 main에 올린다.
       - name: Push Shards and National JSON
+        if: github.ref == 'refs/heads/main' && (github.event_name != 'workflow_dispatch' || inputs.publish == true)
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -163,6 +173,23 @@ jobs:
             echo "Push conflict, retrying in 5 seconds..."
             sleep 5
           done
+
+      # 위 조건의 정확한 부정. 발행을 건너뛴 이유를 남긴다.
+      - name: Report skipped publish
+        if: github.ref != 'refs/heads/main' || (github.event_name == 'workflow_dispatch' && inputs.publish != true)
+        run: |
+          {
+            echo "### ⏭️ remote push skipped"
+            echo ""
+            echo "- event name: \`${{ github.event_name }}\`"
+            echo "- github.ref: \`${{ github.ref }}\`"
+            echo "- publish 입력값: \`${{ inputs.publish }}\`"
+            echo ""
+            echo "feature branch validation run이므로 \`main\`은 변경되지 않았습니다."
+            echo "수집·집계·상세 생성·검증·병합까지는 모두 실행되었고,"
+            echo "생성된 산출물은 원격으로 발행되지 않았습니다."
+          } >> "$GITHUB_STEP_SUMMARY"
+          echo "::notice::remote push skipped (event=${{ github.event_name }}, ref=${{ github.ref }}, publish=${{ inputs.publish }})"
 
       # 수집이 중간에 끊겨도 어디까지 갔는지 사후에 확인할 수 있게 남긴다.
       # DB는 git 미추적 임시 파일이라 이 단계가 없으면 진행분이 사라진다.
