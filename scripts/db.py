@@ -76,6 +76,18 @@ CREATE TABLE IF NOT EXISTS apartment_monthly_metrics (
   calculated_at   TEXT NOT NULL,
   PRIMARY KEY (apartment_key, reference_month, area_group)
 );
+
+-- 수집 체크포인트. 거래 upsert와 같은 트랜잭션에서 기록·커밋하므로
+-- 이 표와 apartment_trades는 원리상 어긋날 수 없다. DB가 지워지면
+-- 체크포인트도 함께 사라져 전량 재수집으로 되돌아간다.
+CREATE TABLE IF NOT EXISTS collection_progress (
+  sgg_code      TEXT NOT NULL,
+  deal_month    TEXT NOT NULL,
+  region_group  TEXT,
+  trade_count   INTEGER NOT NULL,
+  collected_at  TEXT NOT NULL,
+  PRIMARY KEY (sgg_code, deal_month)
+);
 """
 
 

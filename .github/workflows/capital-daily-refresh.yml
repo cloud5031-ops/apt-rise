@@ -16,6 +16,13 @@ permissions:
 jobs:
   capital-daily:
     runs-on: ubuntu-latest
+    # 하드캡. 최근 성공 run 3건의 job 전체 소요는 20m33s~23m39s였다.
+    # 두 Collect step 백스톱(25+50분)에 나머지 단계 여유를 더해도 충분하며,
+    # GitHub 기본 6시간 하드캔슬(정리 스텝까지 죽는다)보다 훨씬 앞선다.
+    timeout-minutes: 120
+    env:
+      # 강제 종료되더라도 어디까지 진행했는지 로그가 남도록 버퍼링을 끈다.
+      PYTHONUNBUFFERED: "1"
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -41,13 +48,18 @@ jobs:
         run: python scripts/verify_manifest.py
 
       - name: Collect Trades (Seoul)
+        # 하드캡. Python 예산(20분)은 진행 중인 HTTP 요청을 끊지 못하므로
+        # 실제 상한은 이 값이다. 최근 성공 run 실측 6m28s/7m06s/7m37s의
+        # 약 3.3배. job timeout(120분)보다 짧아, 여기서 걸려도 job은 살아
+        # 있고 if: always() 보존·검증 스텝이 실행된다.
+        timeout-minutes: 25
         env:
           DATA_GO_KR_API_KEY: ${{ secrets.DATA_GO_KR_API_KEY }}
           KAKAO_REST_API_KEY: ${{ secrets.KAKAO_REST_API_KEY }}
         run: |
           rm -f data/apt.sqlite run_meta.json
           python scripts/db.py
-          python scripts/collect_trades.py --region-group seoul --stable-month ${{ steps.parse_manifest.outputs.stable_month }} --provisional-month ${{ steps.parse_manifest.outputs.provisional_month }}
+          python scripts/collect_trades.py --region-group seoul --max-runtime-seconds 1200 --stable-month ${{ steps.parse_manifest.outputs.stable_month }} --provisional-month ${{ steps.parse_manifest.outputs.provisional_month }}
 
       - name: Compute Apt Rankings (Seoul)
         env:
@@ -66,7 +78,12 @@ jobs:
       - name: Report Details Export (Seoul)
         if: always()
         run: |
-          if [ "${{ steps.export_details_seoul.outcome }}" != "success" ]; then
+          OUTCOME="${{ steps.export_details_seoul.outcome }}"
+          # 선행 스텝이 죽어 아예 실행되지 않은 경우(빈 값 또는 skipped)를
+          # "실패"로 표시하면 원인을 오해하게 된다. 셋을 구분한다.
+          if [ -z "$OUTCOME" ] || [ "$OUTCOME" = "skipped" ]; then
+            echo "### ⏭️ Seoul detail export skipped (선행 단계 실패로 미실행)" >> "$GITHUB_STEP_SUMMARY"
+          elif [ "$OUTCOME" != "success" ]; then
             echo "::warning::Export Details (Seoul) failed"
             echo "### ⚠️ Seoul detail export failed" >> "$GITHUB_STEP_SUMMARY"
           else
@@ -74,13 +91,15 @@ jobs:
           fi
 
       - name: Collect Trades (Gyeonggi Incheon)
+        # 하드캡. 최근 성공 run 실측 13m09s/15m18s/16m49s의 약 3배.
+        timeout-minutes: 50
         env:
           DATA_GO_KR_API_KEY: ${{ secrets.DATA_GO_KR_API_KEY }}
           KAKAO_REST_API_KEY: ${{ secrets.KAKAO_REST_API_KEY }}
         run: |
           rm -f data/apt.sqlite run_meta.json
           python scripts/db.py
-          python scripts/collect_trades.py --region-group gyeonggi_incheon --stable-month ${{ steps.parse_manifest.outputs.stable_month }} --provisional-month ${{ steps.parse_manifest.outputs.provisional_month }}
+          python scripts/collect_trades.py --region-group gyeonggi_incheon --max-runtime-seconds 2400 --stable-month ${{ steps.parse_manifest.outputs.stable_month }} --provisional-month ${{ steps.parse_manifest.outputs.provisional_month }}
 
       - name: Compute Apt Rankings (Gyeonggi Incheon)
         env:
@@ -99,7 +118,10 @@ jobs:
       - name: Report Details Export (Gyeonggi Incheon)
         if: always()
         run: |
-          if [ "${{ steps.export_details_gyeonggi.outcome }}" != "success" ]; then
+          OUTCOME="${{ steps.export_details_gyeonggi.outcome }}"
+          if [ -z "$OUTCOME" ] || [ "$OUTCOME" = "skipped" ]; then
+            echo "### ⏭️ Gyeonggi Incheon detail export skipped (선행 단계 실패로 미실행)" >> "$GITHUB_STEP_SUMMARY"
+          elif [ "$OUTCOME" != "success" ]; then
             echo "::warning::Export Details (Gyeonggi Incheon) failed"
             echo "### ⚠️ Gyeonggi Incheon detail export failed" >> "$GITHUB_STEP_SUMMARY"
           else
@@ -141,3 +163,40 @@ jobs:
             echo "Push conflict, retrying in 5 seconds..."
             sleep 5
           done
+
+      # 수집이 중간에 끊겨도 어디까지 갔는지 사후에 확인할 수 있게 남긴다.
+      # DB는 git 미추적 임시 파일이라 이 단계가 없으면 진행분이 사라진다.
+      - name: Preserve collection state
+        if: always()
+        # 진단용 보존이 실패했다고 원래 오류를 덮어써서는 안 된다.
+        # 이 스텝의 실패는 job 결과에 영향을 주지 않는다.
+        continue-on-error: true
+        uses: actions/upload-artifact@v4
+        with:
+          name: collection-state-${{ github.run_id }}-${{ github.run_attempt }}
+          path: |
+            data/apt.sqlite*
+            run_meta.json
+          if-no-files-found: ignore
+          retention-days: 7
+
+      # continue-on-error를 쓴 export 스텝이 실제로 실패했다면
+      # job을 초록색으로 끝내지 않는다.
+      - name: Verify step outcomes
+        if: always()
+        run: |
+          FAILED=0
+          for PAIR in "Seoul:${{ steps.export_details_seoul.outcome }}" \
+                      "Gyeonggi Incheon:${{ steps.export_details_gyeonggi.outcome }}"; do
+            NAME="${PAIR%%:*}"
+            OUTCOME="${PAIR##*:}"
+            if [ "$OUTCOME" = "failure" ]; then
+              echo "::error::Export Details ($NAME) 가 실제로 실패했습니다."
+              FAILED=1
+            fi
+          done
+          if [ "$FAILED" = "1" ]; then
+            echo "### ❌ detail export 실패로 job을 실패 처리합니다" >> "$GITHUB_STEP_SUMMARY"
+            exit 1
+          fi
+          echo "detail export 단계에 실제 실패 없음."
