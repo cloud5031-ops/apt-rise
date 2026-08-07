@@ -7,14 +7,32 @@
  "sggCode": "41131",
  "dongName": "단대동",
  "referenceMonths": [
-  "202605",
-  "202606"
+  "202606",
+  "202607"
  ],
  "availableAreas": [
   59.97,
   84.9
  ],
  "transactions": [
+  {
+   "contractDate": "2026-07-25",
+   "priceWon": 760000000,
+   "floor": 8,
+   "exclusiveArea": 59.97,
+   "areaGroup": 60,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
+  {
+   "contractDate": "2026-07-09",
+   "priceWon": 668000000,
+   "floor": 11,
+   "exclusiveArea": 59.97,
+   "areaGroup": 60,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
   {
    "contractDate": "2026-06-08",
    "priceWon": 820000000,
@@ -107,10 +125,10 @@
   }
  ],
  "historyCoverage": {
-  "startMonth": "202307",
-  "endMonth": "202606",
+  "startMonth": "202308",
+  "endMonth": "202607",
   "months": 36,
-  "complete": false
+  "complete": true
  },
  "location": {
   "latitude": 37.4508941729962,

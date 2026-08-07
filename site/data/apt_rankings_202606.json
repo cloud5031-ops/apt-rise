@@ -1,7 +1,7 @@
 {
  "referenceMonth": "202606",
  "status": "stable",
- "collectedAt": "2026-08-02T05:39:02.198100+09:00",
+ "collectedAt": "2026-08-08T05:10:05.105954+09:00",
  "items": [
   {
    "apartmentKey": "51210-167",
@@ -147,11 +147,11 @@
    "sggCode": "41310",
    "areaGroup": 37.7,
    "referenceMonth": "202606",
-   "baselineMedian": 407500000.0,
+   "baselineMedian": 405000000,
    "currentMedian": 528000000,
-   "riseAmount": 120500000,
-   "riseRate": 29.57,
-   "baselineTradeCount": 10,
+   "riseAmount": 123000000,
+   "riseRate": 30.37,
+   "baselineTradeCount": 9,
    "currentTradeCount": 3,
    "confidence": "low",
    "warnings": [
@@ -161,7 +161,7 @@
    "exactAreas": [
     37.67
    ],
-   "baselineFloorMedian": 6.5,
+   "baselineFloorMedian": 6,
    "currentFloorMedian": 11,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
@@ -823,6 +823,42 @@
    "rank": 24
   },
   {
+   "apartmentKey": "41597-41590-1103",
+   "aptSeq": "41590-1103",
+   "apartmentName": "동탄센트럴포레스트",
+   "sidoCode": "41",
+   "sggCode": "41597",
+   "areaGroup": 74.7,
+   "referenceMonth": "202606",
+   "baselineMedian": 511500000.0,
+   "currentMedian": 630000000,
+   "riseAmount": 118500000,
+   "riseRate": 23.17,
+   "baselineTradeCount": 16,
+   "currentTradeCount": 5,
+   "confidence": "medium",
+   "warnings": [
+    "층수 차이(8층 이상 또는 구간 차이)",
+    "서로 다른 세부 전용면적 혼합",
+    "20% 이상 급변동"
+   ],
+   "region": "41597 반송동",
+   "exactAreas": [
+    74.66,
+    74.73
+   ],
+   "baselineFloorMedian": 7.0,
+   "currentFloorMedian": 17,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": true,
+   "directTradeWarning": false,
+   "compositionWarning": true,
+   "exclusiveAreaGroup": 74.7,
+   "calculationVersion": "v1.1",
+   "rank": 25
+  },
+  {
    "apartmentKey": "44131-850",
    "aptSeq": "850",
    "apartmentName": "신방한성필하우스",
@@ -855,42 +891,6 @@
    "directTradeWarning": false,
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
-   "calculationVersion": "v1.1",
-   "rank": 25
-  },
-  {
-   "apartmentKey": "41597-41590-1103",
-   "aptSeq": "41590-1103",
-   "apartmentName": "동탄센트럴포레스트",
-   "sidoCode": "41",
-   "sggCode": "41597",
-   "areaGroup": 74.7,
-   "referenceMonth": "202606",
-   "baselineMedian": 513000000,
-   "currentMedian": 630000000,
-   "riseAmount": 117000000,
-   "riseRate": 22.81,
-   "baselineTradeCount": 17,
-   "currentTradeCount": 5,
-   "confidence": "medium",
-   "warnings": [
-    "층수 차이(8층 이상 또는 구간 차이)",
-    "서로 다른 세부 전용면적 혼합",
-    "20% 이상 급변동"
-   ],
-   "region": "41597 반송동",
-   "exactAreas": [
-    74.66,
-    74.73
-   ],
-   "baselineFloorMedian": 7,
-   "currentFloorMedian": 17,
-   "baselineDirectTradeCount": 0,
-   "currentDirectTradeCount": 0,
-   "floorMixWarning": true,
-   "directTradeWarning": false,
-   "compositionWarning": true,
-   "exclusiveAreaGroup": 74.7,
    "calculationVersion": "v1.1",
    "rank": 26
   },
@@ -5042,39 +5042,6 @@
    "rank": 151
   },
   {
-   "apartmentKey": "41173-40",
-   "aptSeq": "40",
-   "apartmentName": "공작성일",
-   "sidoCode": "41",
-   "sggCode": "41173",
-   "areaGroup": 39.6,
-   "referenceMonth": "202606",
-   "baselineMedian": 370000000,
-   "currentMedian": 422500000.0,
-   "riseAmount": 52500000,
-   "riseRate": 14.19,
-   "baselineTradeCount": 13,
-   "currentTradeCount": 2,
-   "confidence": "low",
-   "warnings": [
-    "직거래 포함 이력 존재"
-   ],
-   "region": "41173 관양동",
-   "exactAreas": [
-    39.6
-   ],
-   "baselineFloorMedian": 7.5,
-   "currentFloorMedian": 11.5,
-   "baselineDirectTradeCount": 1,
-   "currentDirectTradeCount": 0,
-   "floorMixWarning": false,
-   "directTradeWarning": true,
-   "compositionWarning": true,
-   "exclusiveAreaGroup": 39.6,
-   "calculationVersion": "v1.1",
-   "rank": 152
-  },
-  {
    "apartmentKey": "41570-56",
    "aptSeq": "56",
    "apartmentName": "당곡마을(월드메르디앙)",
@@ -5103,7 +5070,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 80.0,
    "calculationVersion": "v1.1",
-   "rank": 153
+   "rank": 152
   },
   {
    "apartmentKey": "26350-115",
@@ -5137,7 +5104,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 134.6,
    "calculationVersion": "v1.1",
-   "rank": 154
+   "rank": 153
   },
   {
    "apartmentKey": "48170-516",
@@ -5168,7 +5135,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 155
+   "rank": 154
   },
   {
    "apartmentKey": "41597-41590-1538",
@@ -5199,7 +5166,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 156
+   "rank": 155
   },
   {
    "apartmentKey": "41597-41590-1770",
@@ -5232,7 +5199,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 157
+   "rank": 156
   },
   {
    "apartmentKey": "41597-41590-968",
@@ -5268,7 +5235,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.7,
    "calculationVersion": "v1.1",
-   "rank": 158
+   "rank": 157
   },
   {
    "apartmentKey": "41597-41590-966",
@@ -5302,7 +5269,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.4,
    "calculationVersion": "v1.1",
-   "rank": 159
+   "rank": 158
   },
   {
    "apartmentKey": "41597-41590-1025",
@@ -5335,7 +5302,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.1,
    "calculationVersion": "v1.1",
-   "rank": 160
+   "rank": 159
   },
   {
    "apartmentKey": "41173-67",
@@ -5369,7 +5336,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 59.8,
    "calculationVersion": "v1.1",
-   "rank": 161
+   "rank": 160
   },
   {
    "apartmentKey": "41597-41590-1024",
@@ -5400,7 +5367,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 84.2,
    "calculationVersion": "v1.1",
-   "rank": 162
+   "rank": 161
   },
   {
    "apartmentKey": "11530-84",
@@ -5433,7 +5400,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 163
+   "rank": 162
   },
   {
    "apartmentKey": "41597-41590-1544",
@@ -5469,7 +5436,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 164
+   "rank": 163
   },
   {
    "apartmentKey": "41150-4",
@@ -5501,6 +5468,40 @@
    "directTradeWarning": false,
    "compositionWarning": true,
    "exclusiveAreaGroup": 59.8,
+   "calculationVersion": "v1.1",
+   "rank": 164
+  },
+  {
+   "apartmentKey": "11740-5273",
+   "aptSeq": "5273",
+   "apartmentName": "올림픽파크포레온",
+   "sidoCode": "11",
+   "sggCode": "11740",
+   "areaGroup": 85.0,
+   "referenceMonth": "202606",
+   "baselineMedian": 2780000000,
+   "currentMedian": 3165000000.0,
+   "riseAmount": 385000000,
+   "riseRate": 13.85,
+   "baselineTradeCount": 33,
+   "currentTradeCount": 2,
+   "confidence": "low",
+   "warnings": [
+    "서로 다른 세부 전용면적 혼합"
+   ],
+   "region": "11740 둔촌동",
+   "exactAreas": [
+    84.99,
+    84.98
+   ],
+   "baselineFloorMedian": 22,
+   "currentFloorMedian": 24.5,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": false,
+   "directTradeWarning": false,
+   "compositionWarning": true,
+   "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
    "rank": 165
   },
@@ -7338,6 +7339,37 @@
    "rank": 221
   },
   {
+   "apartmentKey": "41173-15",
+   "aptSeq": "15",
+   "apartmentName": "샛별마을한양4-1",
+   "sidoCode": "41",
+   "sggCode": "41173",
+   "areaGroup": 42.6,
+   "referenceMonth": "202606",
+   "baselineMedian": 467000000,
+   "currentMedian": 525000000.0,
+   "riseAmount": 58000000,
+   "riseRate": 12.42,
+   "baselineTradeCount": 21,
+   "currentTradeCount": 4,
+   "confidence": "medium",
+   "warnings": [],
+   "region": "41173 비산동",
+   "exactAreas": [
+    42.615
+   ],
+   "baselineFloorMedian": 8,
+   "currentFloorMedian": 8.5,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": false,
+   "directTradeWarning": false,
+   "compositionWarning": false,
+   "exclusiveAreaGroup": 42.6,
+   "calculationVersion": "v1.1",
+   "rank": 222
+  },
+  {
    "apartmentKey": "41135-32",
    "aptSeq": "32",
    "apartmentName": "장안타운(건영)",
@@ -7366,7 +7398,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 70.7,
    "calculationVersion": "v1.1",
-   "rank": 222
+   "rank": 223
   },
   {
    "apartmentKey": "43113-426",
@@ -7399,7 +7431,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 124.8,
    "calculationVersion": "v1.1",
-   "rank": 223
+   "rank": 224
   },
   {
    "apartmentKey": "41597-41590-1022",
@@ -7432,7 +7464,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 76.2,
    "calculationVersion": "v1.1",
-   "rank": 224
+   "rank": 225
   },
   {
    "apartmentKey": "41310-121",
@@ -7465,7 +7497,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 225
+   "rank": 226
   },
   {
    "apartmentKey": "41111-63",
@@ -7499,7 +7531,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.5,
    "calculationVersion": "v1.1",
-   "rank": 226
+   "rank": 227
   },
   {
    "apartmentKey": "41463-9",
@@ -7530,7 +7562,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 227
+   "rank": 228
   },
   {
    "apartmentKey": "41117-50",
@@ -7561,7 +7593,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 60.0,
    "calculationVersion": "v1.1",
-   "rank": 228
+   "rank": 229
   },
   {
    "apartmentKey": "41597-41590-1522",
@@ -7594,7 +7626,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 229
+   "rank": 230
   },
   {
    "apartmentKey": "41597-41590-2098",
@@ -7627,7 +7659,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 96.6,
    "calculationVersion": "v1.1",
-   "rank": 230
+   "rank": 231
   },
   {
    "apartmentKey": "41597-41590-973",
@@ -7660,7 +7692,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 76.8,
    "calculationVersion": "v1.1",
-   "rank": 231
+   "rank": 232
   },
   {
    "apartmentKey": "11380-11221",
@@ -7694,7 +7726,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 232
+   "rank": 233
   },
   {
    "apartmentKey": "41597-41590-1042",
@@ -7727,7 +7759,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 233
+   "rank": 234
   },
   {
    "apartmentKey": "41595-41590-63",
@@ -7758,7 +7790,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 97.1,
    "calculationVersion": "v1.1",
-   "rank": 234
+   "rank": 235
   },
   {
    "apartmentKey": "11500-26",
@@ -7790,37 +7822,6 @@
    "directTradeWarning": false,
    "compositionWarning": true,
    "exclusiveAreaGroup": 58.9,
-   "calculationVersion": "v1.1",
-   "rank": 235
-  },
-  {
-   "apartmentKey": "41463-62",
-   "aptSeq": "62",
-   "apartmentName": "호수청구",
-   "sidoCode": "41",
-   "sggCode": "41463",
-   "areaGroup": 70.3,
-   "referenceMonth": "202606",
-   "baselineMedian": 268500000.0,
-   "currentMedian": 301000000.0,
-   "riseAmount": 32500000,
-   "riseRate": 12.1,
-   "baselineTradeCount": 4,
-   "currentTradeCount": 2,
-   "confidence": "medium",
-   "warnings": [],
-   "region": "41463 공세동",
-   "exactAreas": [
-    70.33
-   ],
-   "baselineFloorMedian": 8.0,
-   "currentFloorMedian": 9.0,
-   "baselineDirectTradeCount": 0,
-   "currentDirectTradeCount": 0,
-   "floorMixWarning": false,
-   "directTradeWarning": false,
-   "compositionWarning": false,
-   "exclusiveAreaGroup": 70.3,
    "calculationVersion": "v1.1",
    "rank": 236
   },
@@ -8292,37 +8293,6 @@
    "rank": 250
   },
   {
-   "apartmentKey": "11305-24",
-   "aptSeq": "24",
-   "apartmentName": "주공1단지",
-   "sidoCode": "11",
-   "sggCode": "11305",
-   "areaGroup": 41.3,
-   "referenceMonth": "202606",
-   "baselineMedian": 470000000,
-   "currentMedian": 525000000.0,
-   "riseAmount": 55000000,
-   "riseRate": 11.7,
-   "baselineTradeCount": 19,
-   "currentTradeCount": 4,
-   "confidence": "medium",
-   "warnings": [],
-   "region": "11305 번동",
-   "exactAreas": [
-    41.3
-   ],
-   "baselineFloorMedian": 7,
-   "currentFloorMedian": 7.5,
-   "baselineDirectTradeCount": 0,
-   "currentDirectTradeCount": 0,
-   "floorMixWarning": false,
-   "directTradeWarning": false,
-   "compositionWarning": false,
-   "exclusiveAreaGroup": 41.3,
-   "calculationVersion": "v1.1",
-   "rank": 251
-  },
-  {
    "apartmentKey": "41597-41590-1438",
    "aptSeq": "41590-1438",
    "apartmentName": "동탄역반도유보라아이비파크2.0",
@@ -8354,7 +8324,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 252
+   "rank": 251
   },
   {
    "apartmentKey": "41210-13",
@@ -8385,7 +8355,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 49.9,
    "calculationVersion": "v1.1",
-   "rank": 253
+   "rank": 252
   },
   {
    "apartmentKey": "11500-20",
@@ -8416,7 +8386,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 59.9,
    "calculationVersion": "v1.1",
-   "rank": 254
+   "rank": 253
   },
   {
    "apartmentKey": "41597-41590-1025",
@@ -8447,7 +8417,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 255
+   "rank": 254
   },
   {
    "apartmentKey": "11740-276",
@@ -8478,7 +8448,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 256
+   "rank": 255
   },
   {
    "apartmentKey": "11410-60",
@@ -8511,7 +8481,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 257
+   "rank": 256
   },
   {
    "apartmentKey": "41597-41590-1802",
@@ -8546,6 +8516,39 @@
    "directTradeWarning": true,
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.5,
+   "calculationVersion": "v1.1",
+   "rank": 257
+  },
+  {
+   "apartmentKey": "41597-41590-1894",
+   "aptSeq": "41590-1894",
+   "apartmentName": "중흥에스클래스에듀하이",
+   "sidoCode": "41",
+   "sggCode": "41597",
+   "areaGroup": 83.0,
+   "referenceMonth": "202606",
+   "baselineMedian": 690000000,
+   "currentMedian": 770000000.0,
+   "riseAmount": 80000000,
+   "riseRate": 11.59,
+   "baselineTradeCount": 15,
+   "currentTradeCount": 12,
+   "confidence": "medium",
+   "warnings": [
+    "층수 차이(8층 이상 또는 구간 차이)"
+   ],
+   "region": "41597 산척동",
+   "exactAreas": [
+    83.0109
+   ],
+   "baselineFloorMedian": 12,
+   "currentFloorMedian": 15.5,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": true,
+   "directTradeWarning": false,
+   "compositionWarning": true,
+   "exclusiveAreaGroup": 83.0,
    "calculationVersion": "v1.1",
    "rank": 258
   },
@@ -9278,39 +9281,6 @@
    "rank": 280
   },
   {
-   "apartmentKey": "41597-41590-1894",
-   "aptSeq": "41590-1894",
-   "apartmentName": "중흥에스클래스에듀하이",
-   "sidoCode": "41",
-   "sggCode": "41597",
-   "areaGroup": 83.0,
-   "referenceMonth": "202606",
-   "baselineMedian": 692500000.0,
-   "currentMedian": 770000000.0,
-   "riseAmount": 77500000,
-   "riseRate": 11.19,
-   "baselineTradeCount": 14,
-   "currentTradeCount": 12,
-   "confidence": "medium",
-   "warnings": [
-    "층수 차이(8층 이상 또는 구간 차이)"
-   ],
-   "region": "41597 산척동",
-   "exactAreas": [
-    83.0109
-   ],
-   "baselineFloorMedian": 12.0,
-   "currentFloorMedian": 15.5,
-   "baselineDirectTradeCount": 0,
-   "currentDirectTradeCount": 0,
-   "floorMixWarning": true,
-   "directTradeWarning": false,
-   "compositionWarning": true,
-   "exclusiveAreaGroup": 83.0,
-   "calculationVersion": "v1.1",
-   "rank": 281
-  },
-  {
    "apartmentKey": "41465-121",
    "aptSeq": "121",
    "apartmentName": "성복역금호베스트빌",
@@ -9339,7 +9309,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 102.0,
    "calculationVersion": "v1.1",
-   "rank": 282
+   "rank": 281
   },
   {
    "apartmentKey": "41463-601",
@@ -9373,7 +9343,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 283
+   "rank": 282
   },
   {
    "apartmentKey": "41597-41590-1719",
@@ -9404,7 +9374,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 104.4,
    "calculationVersion": "v1.1",
-   "rank": 284
+   "rank": 283
   },
   {
    "apartmentKey": "41310-17",
@@ -9435,7 +9405,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 58.1,
    "calculationVersion": "v1.1",
-   "rank": 285
+   "rank": 284
   },
   {
    "apartmentKey": "26350-9",
@@ -9466,7 +9436,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 84.8,
    "calculationVersion": "v1.1",
-   "rank": 286
+   "rank": 285
   },
   {
    "apartmentKey": "11305-21",
@@ -9500,7 +9470,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 59.8,
    "calculationVersion": "v1.1",
-   "rank": 287
+   "rank": 286
   },
   {
    "apartmentKey": "41111-49",
@@ -9533,7 +9503,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 59.8,
    "calculationVersion": "v1.1",
-   "rank": 288
+   "rank": 287
   },
   {
    "apartmentKey": "11230-44",
@@ -9566,7 +9536,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 115.0,
    "calculationVersion": "v1.1",
-   "rank": 289
+   "rank": 288
   },
   {
    "apartmentKey": "30170-81",
@@ -9599,7 +9569,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 290
+   "rank": 289
   },
   {
    "apartmentKey": "11350-110",
@@ -9632,7 +9602,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 115.3,
    "calculationVersion": "v1.1",
-   "rank": 291
+   "rank": 290
   },
   {
    "apartmentKey": "41593-41590-2317",
@@ -9665,7 +9635,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 59.6,
    "calculationVersion": "v1.1",
-   "rank": 292
+   "rank": 291
   },
   {
    "apartmentKey": "11530-3798",
@@ -9699,7 +9669,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 293
+   "rank": 292
   },
   {
    "apartmentKey": "41450-389",
@@ -9732,7 +9702,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 59.9,
    "calculationVersion": "v1.1",
-   "rank": 294
+   "rank": 293
   },
   {
    "apartmentKey": "11290-116",
@@ -9763,7 +9733,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 60.0,
    "calculationVersion": "v1.1",
-   "rank": 295
+   "rank": 294
   },
   {
    "apartmentKey": "30200-700",
@@ -9797,7 +9767,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 60.0,
    "calculationVersion": "v1.1",
-   "rank": 296
+   "rank": 295
   },
   {
    "apartmentKey": "41597-41590-1343",
@@ -9830,7 +9800,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.0,
    "calculationVersion": "v1.1",
-   "rank": 297
+   "rank": 296
   },
   {
    "apartmentKey": "41173-186",
@@ -9865,7 +9835,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 59.9,
    "calculationVersion": "v1.1",
-   "rank": 298
+   "rank": 297
   },
   {
    "apartmentKey": "11350-81",
@@ -9896,7 +9866,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 35.3,
    "calculationVersion": "v1.1",
-   "rank": 299
+   "rank": 298
   },
   {
    "apartmentKey": "41597-41590-1831",
@@ -9930,6 +9900,37 @@
    "directTradeWarning": false,
    "compositionWarning": true,
    "exclusiveAreaGroup": 75.0,
+   "calculationVersion": "v1.1",
+   "rank": 299
+  },
+  {
+   "apartmentKey": "11500-150",
+   "aptSeq": "150",
+   "apartmentName": "가양도시개발9-2단지",
+   "sidoCode": "11",
+   "sggCode": "11500",
+   "areaGroup": 34.4,
+   "referenceMonth": "202606",
+   "baselineMedian": 642000000,
+   "currentMedian": 712000000.0,
+   "riseAmount": 70000000,
+   "riseRate": 10.9,
+   "baselineTradeCount": 9,
+   "currentTradeCount": 2,
+   "confidence": "medium",
+   "warnings": [],
+   "region": "11500 가양동",
+   "exactAreas": [
+    34.44
+   ],
+   "baselineFloorMedian": 8,
+   "currentFloorMedian": 5.5,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": false,
+   "directTradeWarning": false,
+   "compositionWarning": false,
+   "exclusiveAreaGroup": 34.4,
    "calculationVersion": "v1.1",
    "rank": 300
   }

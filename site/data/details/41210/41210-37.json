@@ -7,14 +7,32 @@
  "sggCode": "41210",
  "dongName": "철산동",
  "referenceMonths": [
-  "202605",
-  "202606"
+  "202606",
+  "202607"
  ],
  "availableAreas": [
   59.94,
   84.67
  ],
  "transactions": [
+  {
+   "contractDate": "2026-07-18",
+   "priceWon": 665000000,
+   "floor": 11,
+   "exclusiveArea": 59.94,
+   "areaGroup": 60,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
+  {
+   "contractDate": "2026-07-11",
+   "priceWon": 655000000,
+   "floor": 13,
+   "exclusiveArea": 59.94,
+   "areaGroup": 60,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
   {
    "contractDate": "2026-05-30",
    "priceWon": 600000000,
@@ -269,10 +287,10 @@
   }
  ],
  "historyCoverage": {
-  "startMonth": "202307",
-  "endMonth": "202606",
+  "startMonth": "202308",
+  "endMonth": "202607",
   "months": 36,
-  "complete": false
+  "complete": true
  },
  "location": {
   "latitude": 37.4910710329568,
