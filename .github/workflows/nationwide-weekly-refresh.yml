@@ -104,24 +104,57 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/shards/
-          git add site/data/apt_rankings_*.json
-          git add data/geocoding/apartment_coordinates.json || true
-          git add site/data/details/*/*.json
-          git commit -m "Update nationwide apt rankings (Weekly Rollover)" || echo "No changes to commit"
-          
-          # 재시도 루프 (최대 3회)
+
+          # 배포 산출물 allowlist. capital-daily-refresh와 같은 안전장치를 쓴다.
+          # data/details_backfill_state.json은 export_details.py가 매 실행 갱신하는
+          # tracked 파일인데 여기서도 누락돼 있었다 (capital과 동일한 결함).
+          # 진단용 data/apt.sqlite(gitignored)와 run_meta.json(untracked)은 제외한다.
+          git add -- \
+            data/shards \
+            data/details_backfill_state.json \
+            data/geocoding/apartment_coordinates.json \
+            site/data/apt_rankings_*.json \
+            site/data/details/*/*.json
+
+          if git diff --cached --quiet; then
+            echo "발행할 변경이 없습니다."
+            exit 0
+          fi
+
+          git commit -m "Update nationwide apt rankings (Weekly Rollover)"
+
+          # 커밋 후에도 tracked 변경이 남으면 allowlist가 산출물을 놓친 것이다.
+          # stash로 감추면 원인이 다음 실행까지 이어지므로, 목록을 남기고 멈춘다.
+          LEFTOVER="$(git status --porcelain --untracked-files=no)"
+          if [ -n "$LEFTOVER" ]; then
+            echo "::error::커밋되지 않은 tracked 변경이 남아 있습니다. publish allowlist를 확인하세요."
+            echo "$LEFTOVER"
+            {
+              echo "### ❌ 발행 중단: allowlist 누락"
+              echo ""
+              echo '```'
+              echo "$LEFTOVER"
+              echo '```'
+            } >> "${GITHUB_STEP_SUMMARY:-/dev/null}"
+            exit 1
+          fi
+
+          # 수집이 오래 걸리는 동안 main이 전진할 수 있으므로 fetch/rebase는 여기 둔다.
           for i in {1..4}; do
             git fetch origin main
-            git rebase origin/main
-            if git push origin HEAD:main; then
-              echo "Push successful."
-              break
-            fi
-            if [ $i -eq 4 ]; then
-              echo "Push failed after 3 retries"
+            if ! git rebase origin/main; then
+              git rebase --abort || true
+              echo "::error::origin/main 위로 rebase하지 못했습니다 (충돌). push하지 않습니다."
               exit 1
             fi
-            echo "Push conflict, retrying in 5 seconds..."
+            if git push origin HEAD:main; then
+              echo "Push successful."
+              exit 0
+            fi
+            if [ "$i" -eq 4 ]; then
+              echo "::error::Push failed after 3 retries"
+              exit 1
+            fi
+            echo "Push rejected, retrying in 5 seconds..."
             sleep 5
           done
