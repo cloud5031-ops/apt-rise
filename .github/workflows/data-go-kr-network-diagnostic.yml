@@ -1,0 +1,83 @@
+name: data.go.kr Network Diagnostic
+
+# 수동 실행 전용 진단. 데이터를 수집하지도, 커밋하지도, 발행하지도 않는다.
+# GitHub 러너에서 apis.data.go.kr로 가는 경로가 DNS/TCP/TLS/HTTP 중
+# 어디서 끊기는지만 확인한다.
+#
+# 개별 네트워크 probe가 실패해도 job은 실패로 끝나지 않는다.
+# 진단 결과가 나쁜 것과 진단이 수행되지 못한 것은 다르다.
+
+on:
+  workflow_dispatch:
+    inputs:
+      check_egress_ip:
+        description: "러너의 public IPv4 확인 (외부 echo 서비스 의존이 추가됨)"
+        required: false
+        type: boolean
+        default: false
+
+# 저장소에 쓰지 않는다. 체크아웃에 필요한 읽기 권한만.
+permissions:
+  contents: read
+
+jobs:
+  diagnose:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      PYTHONUNBUFFERED: "1"
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install requests
+
+      # 환경변수 전체를 덤프하지 않는다. 필요한 값만 골라 찍는다.
+      - name: Runner info
+        continue-on-error: true
+        run: |
+          echo "os=$RUNNER_OS arch=$RUNNER_ARCH"
+          echo "run_id=$GITHUB_RUN_ID attempt=$GITHUB_RUN_ATTEMPT"
+          echo "kernel=$(uname -sr)"
+          python --version
+          curl --version | head -1
+
+      # 파이썬 진단과 별개로 curl로 한 번 더 본다. 서비스 키가 개입하지 않는
+      # 요청만 다루므로 -w 출력에 비밀값이 섞일 여지가 없다.
+      - name: curl probes (no secret involved)
+        continue-on-error: true
+        run: |
+          probe() {
+            local url="$1" family="$2" out rc
+            out="$(curl -sS -o /dev/null "$family" --max-time 20 \
+                    -w 'dns=%{time_namelookup}s connect=%{time_connect}s tls=%{time_appconnect}s total=%{time_total}s http=%{http_code}' \
+                    "$url" 2>&1)" && rc=0 || rc=$?
+            echo "[$family $url] rc=$rc $out"
+          }
+          for url in https://apis.data.go.kr/ https://www.data.go.kr/ https://github.com/; do
+            probe "$url" -4
+            probe "$url" -6
+          done
+
+      - name: Network diagnostic
+        continue-on-error: true
+        env:
+          DATA_GO_KR_API_KEY: ${{ secrets.DATA_GO_KR_API_KEY }}
+          CHECK_EGRESS_IP: ${{ inputs.check_egress_ip }}
+        run: python scripts/diagnose_network.py
+
+      - name: Upload diagnostic result
+        if: always()
+        continue-on-error: true
+        uses: actions/upload-artifact@v4
+        with:
+          name: network-diagnostic-${{ github.run_id }}-${{ github.run_attempt }}
+          path: network_diagnostic.json
+          if-no-files-found: warn
+          retention-days: 7
