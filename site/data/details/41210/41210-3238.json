@@ -7,14 +7,32 @@
  "sggCode": "41210",
  "dongName": "소하동",
  "referenceMonths": [
-  "202605",
-  "202606"
+  "202606",
+  "202607"
  ],
  "availableAreas": [
   59.97,
   84.99
  ],
  "transactions": [
+  {
+   "contractDate": "2026-07-30",
+   "priceWon": 640000000,
+   "floor": 17,
+   "exclusiveArea": 59.97,
+   "areaGroup": 60,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
+  {
+   "contractDate": "2026-07-06",
+   "priceWon": 630000000,
+   "floor": 10,
+   "exclusiveArea": 59.97,
+   "areaGroup": 60,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
   {
    "contractDate": "2026-06-15",
    "priceWon": 595000000,
@@ -89,10 +107,10 @@
   }
  ],
  "historyCoverage": {
-  "startMonth": "202307",
-  "endMonth": "202606",
+  "startMonth": "202308",
+  "endMonth": "202607",
   "months": 36,
-  "complete": false
+  "complete": true
  },
  "location": {
   "latitude": 37.4520939178,
