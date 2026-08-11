@@ -3,7 +3,7 @@
  "referenceMonth": "202606",
  "status": "stable",
  "validationStatus": "valid",
- "generatedAt": "2026-08-11T05:02:36.765456+09:00",
+ "generatedAt": "2026-08-12T05:07:29.725870+09:00",
  "calculationVersion": "v1.1",
  "schemaVersion": "v1.0",
  "includedSidoCodes": [
@@ -64,12 +64,12 @@
   "11740"
  ],
  "failedSggCodes": [],
- "rawTradeCount": 5270,
- "validTradeCount": 5161,
- "cancelledTradeCount": 109,
+ "rawTradeCount": 5278,
+ "validTradeCount": 5168,
+ "cancelledTradeCount": 110,
  "directTradeCount": 171,
- "candidateGroupCount": 3489,
- "filteredOutGroupCount": 3121,
+ "candidateGroupCount": 3494,
+ "filteredOutGroupCount": 3126,
  "items": [
   {
    "apartmentKey": "11530-56",
@@ -531,40 +531,6 @@
    "rank": 14
   },
   {
-   "apartmentKey": "11740-5273",
-   "aptSeq": "5273",
-   "apartmentName": "올림픽파크포레온",
-   "sidoCode": "11",
-   "sggCode": "11740",
-   "areaGroup": 85.0,
-   "referenceMonth": "202606",
-   "baselineMedian": 2780000000,
-   "currentMedian": 3165000000.0,
-   "riseAmount": 385000000,
-   "riseRate": 13.85,
-   "baselineTradeCount": 33,
-   "currentTradeCount": 2,
-   "confidence": "low",
-   "warnings": [
-    "서로 다른 세부 전용면적 혼합"
-   ],
-   "region": "11740 둔촌동",
-   "exactAreas": [
-    84.99,
-    84.98
-   ],
-   "baselineFloorMedian": 22,
-   "currentFloorMedian": 24.5,
-   "baselineDirectTradeCount": 0,
-   "currentDirectTradeCount": 0,
-   "floorMixWarning": false,
-   "directTradeWarning": false,
-   "compositionWarning": true,
-   "exclusiveAreaGroup": 85.0,
-   "calculationVersion": "v1.1",
-   "rank": 15
-  },
-  {
    "apartmentKey": "11350-48",
    "aptSeq": "48",
    "apartmentName": "한신3차",
@@ -597,7 +563,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.6,
    "calculationVersion": "v1.1",
-   "rank": 16
+   "rank": 15
   },
   {
    "apartmentKey": "11710-19",
@@ -628,7 +594,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 43.2,
    "calculationVersion": "v1.1",
-   "rank": 17
+   "rank": 16
   },
   {
    "apartmentKey": "11350-102",
@@ -661,7 +627,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 39.8,
    "calculationVersion": "v1.1",
-   "rank": 18
+   "rank": 17
   },
   {
    "apartmentKey": "11350-120",
@@ -695,7 +661,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 39.9,
    "calculationVersion": "v1.1",
-   "rank": 19
+   "rank": 18
   },
   {
    "apartmentKey": "11350-83",
@@ -728,7 +694,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 138.3,
    "calculationVersion": "v1.1",
-   "rank": 20
+   "rank": 19
   },
   {
    "apartmentKey": "11320-100",
@@ -761,7 +727,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 49.9,
    "calculationVersion": "v1.1",
-   "rank": 21
+   "rank": 20
   },
   {
    "apartmentKey": "11320-12",
@@ -795,7 +761,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 22
+   "rank": 21
   },
   {
    "apartmentKey": "11620-37",
@@ -830,7 +796,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 74.2,
    "calculationVersion": "v1.1",
-   "rank": 23
+   "rank": 22
   },
   {
    "apartmentKey": "11230-44",
@@ -861,7 +827,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 24
+   "rank": 23
   },
   {
    "apartmentKey": "11305-33",
@@ -894,7 +860,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 122.6,
    "calculationVersion": "v1.1",
-   "rank": 25
+   "rank": 24
   },
   {
    "apartmentKey": "11500-150",
@@ -925,7 +891,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 39.6,
    "calculationVersion": "v1.1",
-   "rank": 26
+   "rank": 25
   },
   {
    "apartmentKey": "11260-92",
@@ -958,7 +924,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 39.8,
    "calculationVersion": "v1.1",
-   "rank": 27
+   "rank": 26
   },
   {
    "apartmentKey": "11350-141",
@@ -991,6 +957,40 @@
    "directTradeWarning": true,
    "compositionWarning": true,
    "exclusiveAreaGroup": 39.6,
+   "calculationVersion": "v1.1",
+   "rank": 27
+  },
+  {
+   "apartmentKey": "11740-5273",
+   "aptSeq": "5273",
+   "apartmentName": "올림픽파크포레온",
+   "sidoCode": "11",
+   "sggCode": "11740",
+   "areaGroup": 85.0,
+   "referenceMonth": "202606",
+   "baselineMedian": 2780000000,
+   "currentMedian": 3130000000,
+   "riseAmount": 350000000,
+   "riseRate": 12.59,
+   "baselineTradeCount": 33,
+   "currentTradeCount": 3,
+   "confidence": "low",
+   "warnings": [
+    "서로 다른 세부 전용면적 혼합"
+   ],
+   "region": "11740 둔촌동",
+   "exactAreas": [
+    84.99,
+    84.98
+   ],
+   "baselineFloorMedian": 22,
+   "currentFloorMedian": 19,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": false,
+   "directTradeWarning": false,
+   "compositionWarning": true,
+   "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
    "rank": 28
   },
