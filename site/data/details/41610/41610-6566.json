@@ -7,13 +7,31 @@
  "sggCode": "41610",
  "dongName": "신현동",
  "referenceMonths": [
-  "202605",
-  "202606"
+  "202606",
+  "202607"
  ],
  "availableAreas": [
   74.9916
  ],
  "transactions": [
+  {
+   "contractDate": "2026-07-25",
+   "priceWon": 700000000,
+   "floor": 4,
+   "exclusiveArea": 74.9916,
+   "areaGroup": 75,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
+  {
+   "contractDate": "2026-07-24",
+   "priceWon": 707000000,
+   "floor": 10,
+   "exclusiveArea": 74.9916,
+   "areaGroup": 75,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
   {
    "contractDate": "2026-05-22",
    "priceWon": 668000000,
@@ -52,10 +70,10 @@
   }
  ],
  "historyCoverage": {
-  "startMonth": "202307",
-  "endMonth": "202606",
+  "startMonth": "202308",
+  "endMonth": "202607",
   "months": 36,
-  "complete": false
+  "complete": true
  },
  "location": {
   "latitude": 37.3587741844546,
