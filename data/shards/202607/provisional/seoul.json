@@ -3,7 +3,7 @@
  "referenceMonth": "202607",
  "status": "provisional",
  "validationStatus": "valid",
- "generatedAt": "2026-08-14T05:02:03.089501+09:00",
+ "generatedAt": "2026-08-15T04:57:48.352187+09:00",
  "calculationVersion": "v1.1",
  "schemaVersion": "v1.0",
  "includedSidoCodes": [
@@ -64,12 +64,12 @@
   "11740"
  ],
  "failedSggCodes": [],
- "rawTradeCount": 4967,
- "validTradeCount": 4886,
- "cancelledTradeCount": 81,
- "directTradeCount": 270,
- "candidateGroupCount": 3163,
- "filteredOutGroupCount": 2731,
+ "rawTradeCount": 5050,
+ "validTradeCount": 4966,
+ "cancelledTradeCount": 84,
+ "directTradeCount": 273,
+ "candidateGroupCount": 3213,
+ "filteredOutGroupCount": 2775,
  "items": [
   {
    "apartmentKey": "11260-92",
@@ -541,6 +541,39 @@
    "rank": 14
   },
   {
+   "apartmentKey": "11560-1398",
+   "aptSeq": "1398",
+   "apartmentName": "한솔솔파크",
+   "sidoCode": "11",
+   "sggCode": "11560",
+   "areaGroup": 84.9,
+   "referenceMonth": "202607",
+   "baselineMedian": 877500000.0,
+   "currentMedian": 1037500000.0,
+   "riseAmount": 160000000,
+   "riseRate": 18.23,
+   "baselineTradeCount": 4,
+   "currentTradeCount": 2,
+   "confidence": "low",
+   "warnings": [
+    "층수 차이(8층 이상 또는 구간 차이)"
+   ],
+   "region": "11560 대림동",
+   "exactAreas": [
+    84.89
+   ],
+   "baselineFloorMedian": 4.5,
+   "currentFloorMedian": 9.5,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": true,
+   "directTradeWarning": false,
+   "compositionWarning": true,
+   "exclusiveAreaGroup": 84.9,
+   "calculationVersion": "v1.1",
+   "rank": 15
+  },
+  {
    "apartmentKey": "11500-192",
    "aptSeq": "192",
    "apartmentName": "마곡중앙하이츠아파트",
@@ -572,7 +605,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 39.6,
    "calculationVersion": "v1.1",
-   "rank": 15
+   "rank": 16
   },
   {
    "apartmentKey": "11350-35",
@@ -603,7 +636,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 59.4,
    "calculationVersion": "v1.1",
-   "rank": 16
+   "rank": 17
   },
   {
    "apartmentKey": "11500-194",
@@ -636,7 +669,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 64.7,
    "calculationVersion": "v1.1",
-   "rank": 17
+   "rank": 18
   },
   {
    "apartmentKey": "11260-52",
@@ -667,7 +700,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 49.8,
    "calculationVersion": "v1.1",
-   "rank": 18
+   "rank": 19
   },
   {
    "apartmentKey": "11470-139",
@@ -700,7 +733,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.8,
    "calculationVersion": "v1.1",
-   "rank": 19
+   "rank": 20
   },
   {
    "apartmentKey": "11260-54",
@@ -731,7 +764,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 126.3,
    "calculationVersion": "v1.1",
-   "rank": 20
+   "rank": 21
   },
   {
    "apartmentKey": "11350-202",
@@ -764,7 +797,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 44.3,
    "calculationVersion": "v1.1",
-   "rank": 21
+   "rank": 22
   },
   {
    "apartmentKey": "11500-193",
@@ -795,7 +828,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 39.8,
    "calculationVersion": "v1.1",
-   "rank": 22
+   "rank": 23
   },
   {
    "apartmentKey": "11530-30",
@@ -829,7 +862,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 70.5,
    "calculationVersion": "v1.1",
-   "rank": 23
+   "rank": 24
   },
   {
    "apartmentKey": "11350-81",
@@ -862,7 +895,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 27.0,
    "calculationVersion": "v1.1",
-   "rank": 24
+   "rank": 25
   },
   {
    "apartmentKey": "11500-54",
@@ -893,7 +926,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 41.9,
    "calculationVersion": "v1.1",
-   "rank": 25
+   "rank": 26
   },
   {
    "apartmentKey": "11170-3048",
@@ -926,7 +959,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 124.0,
    "calculationVersion": "v1.1",
-   "rank": 26
+   "rank": 27
   },
   {
    "apartmentKey": "11560-102",
@@ -957,7 +990,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 60.0,
    "calculationVersion": "v1.1",
-   "rank": 27
+   "rank": 28
   },
   {
    "apartmentKey": "11500-197",
@@ -990,7 +1023,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 33.2,
    "calculationVersion": "v1.1",
-   "rank": 28
+   "rank": 29
   },
   {
    "apartmentKey": "11500-101",
@@ -1021,7 +1054,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 56.9,
    "calculationVersion": "v1.1",
-   "rank": 29
+   "rank": 30
   },
   {
    "apartmentKey": "11305-3667",
@@ -1056,7 +1089,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 30
+   "rank": 31
   },
   {
    "apartmentKey": "11305-13",
@@ -1087,7 +1120,38 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 59.7,
    "calculationVersion": "v1.1",
-   "rank": 31
+   "rank": 32
+  },
+  {
+   "apartmentKey": "11305-24",
+   "aptSeq": "24",
+   "apartmentName": "주공1단지",
+   "sidoCode": "11",
+   "sggCode": "11305",
+   "areaGroup": 49.9,
+   "referenceMonth": "202607",
+   "baselineMedian": 609500000.0,
+   "currentMedian": 700000000,
+   "riseAmount": 90500000,
+   "riseRate": 14.85,
+   "baselineTradeCount": 4,
+   "currentTradeCount": 3,
+   "confidence": "medium",
+   "warnings": [],
+   "region": "11305 번동",
+   "exactAreas": [
+    49.94
+   ],
+   "baselineFloorMedian": 9.0,
+   "currentFloorMedian": 11,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": false,
+   "directTradeWarning": false,
+   "compositionWarning": false,
+   "exclusiveAreaGroup": 49.9,
+   "calculationVersion": "v1.1",
+   "rank": 33
   },
   {
    "apartmentKey": "11350-102",
@@ -1121,7 +1185,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 40.0,
    "calculationVersion": "v1.1",
-   "rank": 32
+   "rank": 34
   },
   {
    "apartmentKey": "11230-12",
@@ -1152,7 +1216,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 84.8,
    "calculationVersion": "v1.1",
-   "rank": 33
+   "rank": 35
   },
   {
    "apartmentKey": "11350-120",
@@ -1186,7 +1250,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 39.9,
    "calculationVersion": "v1.1",
-   "rank": 34
+   "rank": 36
   },
   {
    "apartmentKey": "11710-144",
@@ -1217,7 +1281,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 83.0,
    "calculationVersion": "v1.1",
-   "rank": 35
+   "rank": 37
   },
   {
    "apartmentKey": "11305-27",
@@ -1251,7 +1315,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 59.9,
    "calculationVersion": "v1.1",
-   "rank": 36
+   "rank": 38
   },
   {
    "apartmentKey": "11350-5",
@@ -1282,7 +1346,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 59.7,
    "calculationVersion": "v1.1",
-   "rank": 37
+   "rank": 39
   },
   {
    "apartmentKey": "11290-82",
@@ -1313,7 +1377,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 60.0,
    "calculationVersion": "v1.1",
-   "rank": 38
+   "rank": 40
   },
   {
    "apartmentKey": "11350-141",
@@ -1344,7 +1408,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 33.2,
    "calculationVersion": "v1.1",
-   "rank": 39
+   "rank": 41
   },
   {
    "apartmentKey": "11380-120",
@@ -1378,7 +1442,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 59.8,
    "calculationVersion": "v1.1",
-   "rank": 40
+   "rank": 42
   },
   {
    "apartmentKey": "11620-21",
@@ -1409,7 +1473,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 59.8,
    "calculationVersion": "v1.1",
-   "rank": 41
+   "rank": 43
   },
   {
    "apartmentKey": "11140-1039",
@@ -1444,7 +1508,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 42
+   "rank": 44
   },
   {
    "apartmentKey": "11290-82",
@@ -1475,7 +1539,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 114.8,
    "calculationVersion": "v1.1",
-   "rank": 43
+   "rank": 45
   },
   {
    "apartmentKey": "11350-160",
@@ -1508,7 +1572,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 39.6,
    "calculationVersion": "v1.1",
-   "rank": 44
+   "rank": 46
   },
   {
    "apartmentKey": "11530-3213",
@@ -1539,7 +1603,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 45
+   "rank": 47
   },
   {
    "apartmentKey": "11530-92",
@@ -1570,7 +1634,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 59.5,
    "calculationVersion": "v1.1",
-   "rank": 46
+   "rank": 48
   },
   {
    "apartmentKey": "11530-89",
@@ -1603,7 +1667,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.6,
    "calculationVersion": "v1.1",
-   "rank": 47
+   "rank": 49
   },
   {
    "apartmentKey": "11320-42",
@@ -1636,7 +1700,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 53.2,
    "calculationVersion": "v1.1",
-   "rank": 48
+   "rank": 50
   },
   {
    "apartmentKey": "11710-83",
@@ -1667,7 +1731,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 39.7,
    "calculationVersion": "v1.1",
-   "rank": 49
+   "rank": 51
   },
   {
    "apartmentKey": "11305-4255",
@@ -1701,7 +1765,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 50
+   "rank": 52
   },
   {
    "apartmentKey": "11500-55",
@@ -1735,7 +1799,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 37.7,
    "calculationVersion": "v1.1",
-   "rank": 51
+   "rank": 53
   },
   {
    "apartmentKey": "11500-149",
@@ -1766,7 +1830,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 39.6,
    "calculationVersion": "v1.1",
-   "rank": 52
+   "rank": 54
   },
   {
    "apartmentKey": "11530-69",
@@ -1797,7 +1861,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 53
+   "rank": 55
   },
   {
    "apartmentKey": "11530-10",
@@ -1830,7 +1894,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 60.0,
    "calculationVersion": "v1.1",
-   "rank": 54
+   "rank": 56
   },
   {
    "apartmentKey": "11530-35",
@@ -1861,7 +1925,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 44.8,
    "calculationVersion": "v1.1",
-   "rank": 55
+   "rank": 57
   },
   {
    "apartmentKey": "11350-72",
@@ -1892,7 +1956,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 49.8,
    "calculationVersion": "v1.1",
-   "rank": 56
+   "rank": 58
   },
   {
    "apartmentKey": "11350-149",
@@ -1923,7 +1987,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 60.0,
    "calculationVersion": "v1.1",
-   "rank": 57
+   "rank": 59
   },
   {
    "apartmentKey": "11545-2",
@@ -1957,7 +2021,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 58
+   "rank": 60
   },
   {
    "apartmentKey": "11350-33",
@@ -1990,7 +2054,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 58.0,
    "calculationVersion": "v1.1",
-   "rank": 59
+   "rank": 61
   },
   {
    "apartmentKey": "11350-149",
@@ -2021,7 +2085,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 44.5,
    "calculationVersion": "v1.1",
-   "rank": 60
+   "rank": 62
   },
   {
    "apartmentKey": "11380-10527",
@@ -2056,7 +2120,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 60.0,
    "calculationVersion": "v1.1",
-   "rank": 61
+   "rank": 63
   },
   {
    "apartmentKey": "11350-34",
@@ -2087,7 +2151,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 45.9,
    "calculationVersion": "v1.1",
-   "rank": 62
+   "rank": 64
   },
   {
    "apartmentKey": "11410-11",
@@ -2118,7 +2182,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 59.4,
    "calculationVersion": "v1.1",
-   "rank": 63
+   "rank": 65
   },
   {
    "apartmentKey": "11500-151",
@@ -2149,12 +2213,12 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 34.4,
    "calculationVersion": "v1.1",
-   "rank": 64
+   "rank": 66
   },
   {
    "apartmentKey": "11230-53",
    "aptSeq": "53",
-   "apartmentName": "주공1",
+   "apartmentName": "휘경리오포레아파트(1단지)",
    "sidoCode": "11",
    "sggCode": "11230",
    "areaGroup": 84.8,
@@ -2185,7 +2249,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.8,
    "calculationVersion": "v1.1",
-   "rank": 65
+   "rank": 67
   },
   {
    "apartmentKey": "11290-56",
@@ -2216,7 +2280,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 84.8,
    "calculationVersion": "v1.1",
-   "rank": 66
+   "rank": 68
   },
   {
    "apartmentKey": "11620-5",
@@ -2249,7 +2313,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 114.8,
    "calculationVersion": "v1.1",
-   "rank": 67
+   "rank": 69
   },
   {
    "apartmentKey": "11260-30",
@@ -2280,7 +2344,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 59.6,
    "calculationVersion": "v1.1",
-   "rank": 68
+   "rank": 70
   },
   {
    "apartmentKey": "11560-111",
@@ -2313,7 +2377,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 49.6,
    "calculationVersion": "v1.1",
-   "rank": 69
+   "rank": 71
   },
   {
    "apartmentKey": "11410-49",
@@ -2344,7 +2408,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 70
+   "rank": 72
   },
   {
    "apartmentKey": "11290-54",
@@ -2377,7 +2441,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 59.9,
    "calculationVersion": "v1.1",
-   "rank": 71
+   "rank": 73
   },
   {
    "apartmentKey": "11260-98",
@@ -2411,7 +2475,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 49.9,
    "calculationVersion": "v1.1",
-   "rank": 72
+   "rank": 74
   },
   {
    "apartmentKey": "11290-57",
@@ -2442,7 +2506,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 111.7,
    "calculationVersion": "v1.1",
-   "rank": 73
+   "rank": 75
   },
   {
    "apartmentKey": "11560-131",
@@ -2475,7 +2539,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 52.1,
    "calculationVersion": "v1.1",
-   "rank": 74
+   "rank": 76
   },
   {
    "apartmentKey": "11260-15",
@@ -2506,7 +2570,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 59.9,
    "calculationVersion": "v1.1",
-   "rank": 75
+   "rank": 77
   },
   {
    "apartmentKey": "11110-25",
@@ -2537,7 +2601,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 76
+   "rank": 78
   },
   {
    "apartmentKey": "11350-140",
@@ -2570,7 +2634,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 33.3,
    "calculationVersion": "v1.1",
-   "rank": 77
+   "rank": 79
   },
   {
    "apartmentKey": "11305-6",
@@ -2601,7 +2665,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 60.0,
    "calculationVersion": "v1.1",
-   "rank": 78
+   "rank": 80
   },
   {
    "apartmentKey": "11545-1642",
@@ -2635,7 +2699,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 115.8,
    "calculationVersion": "v1.1",
-   "rank": 79
+   "rank": 81
   },
   {
    "apartmentKey": "11350-197",
@@ -2668,7 +2732,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 59.2,
    "calculationVersion": "v1.1",
-   "rank": 80
+   "rank": 82
   },
   {
    "apartmentKey": "11470-153",
@@ -2703,7 +2767,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 50.0,
    "calculationVersion": "v1.1",
-   "rank": 81
+   "rank": 83
   },
   {
    "apartmentKey": "11350-121",
@@ -2734,7 +2798,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 84.3,
    "calculationVersion": "v1.1",
-   "rank": 82
+   "rank": 84
   },
   {
    "apartmentKey": "11305-6",
@@ -2767,7 +2831,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.8,
    "calculationVersion": "v1.1",
-   "rank": 83
+   "rank": 85
   },
   {
    "apartmentKey": "11290-74",
@@ -2798,7 +2862,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 60.0,
    "calculationVersion": "v1.1",
-   "rank": 84
+   "rank": 86
   },
   {
    "apartmentKey": "11350-38",
@@ -2829,7 +2893,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 41.3,
    "calculationVersion": "v1.1",
-   "rank": 85
+   "rank": 87
   },
   {
    "apartmentKey": "11350-40",
@@ -2862,7 +2926,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 32.4,
    "calculationVersion": "v1.1",
-   "rank": 86
+   "rank": 88
   },
   {
    "apartmentKey": "11170-66",
@@ -2893,7 +2957,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 115.0,
    "calculationVersion": "v1.1",
-   "rank": 87
+   "rank": 89
   },
   {
    "apartmentKey": "11530-91",
@@ -2928,7 +2992,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 88
+   "rank": 90
   },
   {
    "apartmentKey": "11290-77",
@@ -2959,7 +3023,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 59.9,
    "calculationVersion": "v1.1",
-   "rank": 89
+   "rank": 91
   },
   {
    "apartmentKey": "11350-29",
@@ -2990,7 +3054,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 41.3,
    "calculationVersion": "v1.1",
-   "rank": 90
+   "rank": 92
   },
   {
    "apartmentKey": "11290-3510",
@@ -3021,7 +3085,41 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 59.8,
    "calculationVersion": "v1.1",
-   "rank": 91
+   "rank": 93
+  },
+  {
+   "apartmentKey": "11740-129",
+   "aptSeq": "129",
+   "apartmentName": "성내동삼성아파트",
+   "sidoCode": "11",
+   "sggCode": "11740",
+   "areaGroup": 85.0,
+   "referenceMonth": "202607",
+   "baselineMedian": 1535000000.0,
+   "currentMedian": 1700500000.0,
+   "riseAmount": 165500000,
+   "riseRate": 10.78,
+   "baselineTradeCount": 2,
+   "currentTradeCount": 2,
+   "confidence": "low",
+   "warnings": [
+    "층수 차이(8층 이상 또는 구간 차이)",
+    "비교/기준 기간 거래량 모두 최소 조건(2건)"
+   ],
+   "region": "11740 성내동",
+   "exactAreas": [
+    84.99
+   ],
+   "baselineFloorMedian": 14.5,
+   "currentFloorMedian": 18.5,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": true,
+   "directTradeWarning": false,
+   "compositionWarning": true,
+   "exclusiveAreaGroup": 85.0,
+   "calculationVersion": "v1.1",
+   "rank": 94
   },
   {
    "apartmentKey": "11320-100",
@@ -3052,7 +3150,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 36.2,
    "calculationVersion": "v1.1",
-   "rank": 92
+   "rank": 95
   },
   {
    "apartmentKey": "11380-11600",
@@ -3083,7 +3181,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 60.0,
    "calculationVersion": "v1.1",
-   "rank": 93
+   "rank": 96
   },
   {
    "apartmentKey": "11200-2938",
@@ -3118,7 +3216,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 94
+   "rank": 97
   },
   {
    "apartmentKey": "11260-17",
@@ -3152,7 +3250,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 95
+   "rank": 98
   },
   {
    "apartmentKey": "11305-4255",
@@ -3185,38 +3283,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 60.0,
    "calculationVersion": "v1.1",
-   "rank": 96
-  },
-  {
-   "apartmentKey": "11500-56",
-   "aptSeq": "56",
-   "apartmentName": "주공5",
-   "sidoCode": "11",
-   "sggCode": "11500",
-   "areaGroup": 58.1,
-   "referenceMonth": "202607",
-   "baselineMedian": 1000000000,
-   "currentMedian": 1105000000,
-   "riseAmount": 105000000,
-   "riseRate": 10.5,
-   "baselineTradeCount": 17,
-   "currentTradeCount": 3,
-   "confidence": "medium",
-   "warnings": [],
-   "region": "11500 등촌동",
-   "exactAreas": [
-    58.14
-   ],
-   "baselineFloorMedian": 12,
-   "currentFloorMedian": 12,
-   "baselineDirectTradeCount": 0,
-   "currentDirectTradeCount": 0,
-   "floorMixWarning": false,
-   "directTradeWarning": false,
-   "compositionWarning": false,
-   "exclusiveAreaGroup": 58.1,
-   "calculationVersion": "v1.1",
-   "rank": 97
+   "rank": 99
   },
   {
    "apartmentKey": "11680-425",
@@ -3249,12 +3316,12 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 183.4,
    "calculationVersion": "v1.1",
-   "rank": 98
+   "rank": 100
   },
   {
    "apartmentKey": "11230-64",
    "aptSeq": "64",
-   "apartmentName": "주공2",
+   "apartmentName": "휘경리오포레아파트(2단지)",
    "sidoCode": "11",
    "sggCode": "11230",
    "areaGroup": 40.0,
@@ -3285,7 +3352,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 40.0,
    "calculationVersion": "v1.1",
-   "rank": 99
+   "rank": 101
   },
   {
    "apartmentKey": "11290-5098",
@@ -3316,7 +3383,38 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 59.8,
    "calculationVersion": "v1.1",
-   "rank": 100
+   "rank": 102
+  },
+  {
+   "apartmentKey": "11530-91",
+   "aptSeq": "91",
+   "apartmentName": "현대",
+   "sidoCode": "11",
+   "sggCode": "11530",
+   "areaGroup": 115.0,
+   "referenceMonth": "202607",
+   "baselineMedian": 1010000000,
+   "currentMedian": 1115000000.0,
+   "riseAmount": 105000000,
+   "riseRate": 10.4,
+   "baselineTradeCount": 5,
+   "currentTradeCount": 2,
+   "confidence": "medium",
+   "warnings": [],
+   "region": "11530 개봉동",
+   "exactAreas": [
+    114.99
+   ],
+   "baselineFloorMedian": 9,
+   "currentFloorMedian": 14.5,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": false,
+   "directTradeWarning": false,
+   "compositionWarning": false,
+   "exclusiveAreaGroup": 115.0,
+   "calculationVersion": "v1.1",
+   "rank": 103
   },
   {
    "apartmentKey": "11590-63",
@@ -3347,7 +3445,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 51.7,
    "calculationVersion": "v1.1",
-   "rank": 101
+   "rank": 104
   },
   {
    "apartmentKey": "11470-20",
@@ -3378,7 +3476,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 47.2,
    "calculationVersion": "v1.1",
-   "rank": 102
+   "rank": 105
   },
   {
    "apartmentKey": "11545-2587",
@@ -3409,7 +3507,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 59.9,
    "calculationVersion": "v1.1",
-   "rank": 103
+   "rank": 106
   },
   {
    "apartmentKey": "11530-171",
@@ -3442,7 +3540,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 78.7,
    "calculationVersion": "v1.1",
-   "rank": 104
+   "rank": 107
   },
   {
    "apartmentKey": "11230-2",
@@ -3473,7 +3571,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 58.6,
    "calculationVersion": "v1.1",
-   "rank": 105
+   "rank": 108
   },
   {
    "apartmentKey": "11350-156",
@@ -3506,7 +3604,38 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 60.0,
    "calculationVersion": "v1.1",
-   "rank": 106
+   "rank": 109
+  },
+  {
+   "apartmentKey": "11500-56",
+   "aptSeq": "56",
+   "apartmentName": "주공5",
+   "sidoCode": "11",
+   "sggCode": "11500",
+   "areaGroup": 58.1,
+   "referenceMonth": "202607",
+   "baselineMedian": 1000000000,
+   "currentMedian": 1102500000.0,
+   "riseAmount": 102500000,
+   "riseRate": 10.25,
+   "baselineTradeCount": 17,
+   "currentTradeCount": 4,
+   "confidence": "medium",
+   "warnings": [],
+   "region": "11500 등촌동",
+   "exactAreas": [
+    58.14
+   ],
+   "baselineFloorMedian": 12,
+   "currentFloorMedian": 12.0,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": false,
+   "directTradeWarning": false,
+   "compositionWarning": false,
+   "exclusiveAreaGroup": 58.1,
+   "calculationVersion": "v1.1",
+   "rank": 110
   },
   {
    "apartmentKey": "11740-4214",
@@ -3541,7 +3670,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 107
+   "rank": 111
   },
   {
    "apartmentKey": "11710-282",
@@ -3574,7 +3703,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 133.3,
    "calculationVersion": "v1.1",
-   "rank": 108
+   "rank": 112
   },
   {
    "apartmentKey": "11305-33",
@@ -3607,7 +3736,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 122.6,
    "calculationVersion": "v1.1",
-   "rank": 109
+   "rank": 113
   },
   {
    "apartmentKey": "11710-133",
@@ -3638,7 +3767,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 49.8,
    "calculationVersion": "v1.1",
-   "rank": 110
+   "rank": 114
   },
   {
    "apartmentKey": "11500-199",
@@ -3671,7 +3800,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 111
+   "rank": 115
   },
   {
    "apartmentKey": "11305-13",
@@ -3702,7 +3831,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 60.0,
    "calculationVersion": "v1.1",
-   "rank": 112
+   "rank": 116
   },
   {
    "apartmentKey": "11290-212",
@@ -3733,7 +3862,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 84.6,
    "calculationVersion": "v1.1",
-   "rank": 113
+   "rank": 117
   },
   {
    "apartmentKey": "11560-107",
@@ -3764,7 +3893,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 59.3,
    "calculationVersion": "v1.1",
-   "rank": 114
+   "rank": 118
   },
   {
    "apartmentKey": "11290-37",
@@ -3795,7 +3924,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 59.6,
    "calculationVersion": "v1.1",
-   "rank": 115
+   "rank": 119
   },
   {
    "apartmentKey": "11350-72",
@@ -3826,7 +3955,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 49.5,
    "calculationVersion": "v1.1",
-   "rank": 116
+   "rank": 120
   },
   {
    "apartmentKey": "11680-426",
@@ -3859,7 +3988,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 170.4,
    "calculationVersion": "v1.1",
-   "rank": 117
+   "rank": 121
   },
   {
    "apartmentKey": "11470-138",
@@ -3890,7 +4019,40 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 49.8,
    "calculationVersion": "v1.1",
-   "rank": 118
+   "rank": 122
+  },
+  {
+   "apartmentKey": "11350-6",
+   "aptSeq": "6",
+   "apartmentName": "동아불암",
+   "sidoCode": "11",
+   "sggCode": "11350",
+   "areaGroup": 59.4,
+   "referenceMonth": "202607",
+   "baselineMedian": 483000000,
+   "currentMedian": 530000000,
+   "riseAmount": 47000000,
+   "riseRate": 9.73,
+   "baselineTradeCount": 7,
+   "currentTradeCount": 5,
+   "confidence": "medium",
+   "warnings": [
+    "직거래 포함 이력 존재"
+   ],
+   "region": "11350 상계동",
+   "exactAreas": [
+    59.4
+   ],
+   "baselineFloorMedian": 11.5,
+   "currentFloorMedian": 12,
+   "baselineDirectTradeCount": 1,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": false,
+   "directTradeWarning": true,
+   "compositionWarning": true,
+   "exclusiveAreaGroup": 59.4,
+   "calculationVersion": "v1.1",
+   "rank": 123
   },
   {
    "apartmentKey": "11620-183",
@@ -3923,7 +4085,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 114.8,
    "calculationVersion": "v1.1",
-   "rank": 119
+   "rank": 124
   },
   {
    "apartmentKey": "11230-18",
@@ -3956,7 +4118,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 59.8,
    "calculationVersion": "v1.1",
-   "rank": 120
+   "rank": 125
   },
   {
    "apartmentKey": "11320-2349",
@@ -3989,7 +4151,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 121
+   "rank": 126
   },
   {
    "apartmentKey": "11620-28",
@@ -4020,7 +4182,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 68.8,
    "calculationVersion": "v1.1",
-   "rank": 122
+   "rank": 127
   },
   {
    "apartmentKey": "11230-2578",
@@ -4054,7 +4216,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 122.0,
    "calculationVersion": "v1.1",
-   "rank": 123
+   "rank": 128
   },
   {
    "apartmentKey": "11350-216",
@@ -4085,7 +4247,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 84.7,
    "calculationVersion": "v1.1",
-   "rank": 124
+   "rank": 129
   },
   {
    "apartmentKey": "11260-3783",
@@ -4116,7 +4278,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 60.0,
    "calculationVersion": "v1.1",
-   "rank": 125
+   "rank": 130
   },
   {
    "apartmentKey": "11380-8922",
@@ -4151,7 +4313,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 126
+   "rank": 131
   },
   {
    "apartmentKey": "11305-46",
@@ -4182,7 +4344,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 114.9,
    "calculationVersion": "v1.1",
-   "rank": 127
+   "rank": 132
   },
   {
    "apartmentKey": "11320-98",
@@ -4215,7 +4377,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 49.9,
    "calculationVersion": "v1.1",
-   "rank": 128
+   "rank": 133
   },
   {
    "apartmentKey": "11320-99",
@@ -4246,7 +4408,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 49.9,
    "calculationVersion": "v1.1",
-   "rank": 129
+   "rank": 134
   },
   {
    "apartmentKey": "11350-40",
@@ -4277,7 +4439,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 41.3,
    "calculationVersion": "v1.1",
-   "rank": 130
+   "rank": 135
   },
   {
    "apartmentKey": "11290-71",
@@ -4308,7 +4470,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 60.0,
    "calculationVersion": "v1.1",
-   "rank": 131
+   "rank": 136
   },
   {
    "apartmentKey": "11305-6",
@@ -4342,7 +4504,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 132
+   "rank": 137
   },
   {
    "apartmentKey": "11350-156",
@@ -4375,7 +4537,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 133
+   "rank": 138
   },
   {
    "apartmentKey": "11290-3794",
@@ -4406,7 +4568,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 84.7,
    "calculationVersion": "v1.1",
-   "rank": 134
+   "rank": 139
   },
   {
    "apartmentKey": "11230-12",
@@ -4437,7 +4599,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 59.8,
    "calculationVersion": "v1.1",
-   "rank": 135
+   "rank": 140
   },
   {
    "apartmentKey": "11500-197",
@@ -4470,7 +4632,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 39.6,
    "calculationVersion": "v1.1",
-   "rank": 136
+   "rank": 141
   },
   {
    "apartmentKey": "11500-150",
@@ -4504,40 +4666,40 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 34.4,
    "calculationVersion": "v1.1",
-   "rank": 137
+   "rank": 142
   },
   {
-   "apartmentKey": "11350-6",
-   "aptSeq": "6",
-   "apartmentName": "동아불암",
+   "apartmentKey": "11290-3572",
+   "aptSeq": "3572",
+   "apartmentName": "월곡래미안루나밸리",
    "sidoCode": "11",
-   "sggCode": "11350",
-   "areaGroup": 59.4,
+   "sggCode": "11290",
+   "areaGroup": 60.0,
    "referenceMonth": "202607",
-   "baselineMedian": 483000000,
-   "currentMedian": 527500000.0,
-   "riseAmount": 44500000,
-   "riseRate": 9.21,
-   "baselineTradeCount": 7,
-   "currentTradeCount": 4,
+   "baselineMedian": 980000000,
+   "currentMedian": 1070000000.0,
+   "riseAmount": 90000000,
+   "riseRate": 9.18,
+   "baselineTradeCount": 11,
+   "currentTradeCount": 2,
    "confidence": "low",
    "warnings": [
-    "직거래 포함 이력 존재"
+    "층수 차이(8층 이상 또는 구간 차이)"
    ],
-   "region": "11350 상계동",
+   "region": "11290 하월곡동",
    "exactAreas": [
-    59.4
+    59.98
    ],
-   "baselineFloorMedian": 11.5,
-   "currentFloorMedian": 14.0,
-   "baselineDirectTradeCount": 1,
+   "baselineFloorMedian": 18,
+   "currentFloorMedian": 7.0,
+   "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
-   "floorMixWarning": false,
-   "directTradeWarning": true,
+   "floorMixWarning": true,
+   "directTradeWarning": false,
    "compositionWarning": true,
-   "exclusiveAreaGroup": 59.4,
+   "exclusiveAreaGroup": 60.0,
    "calculationVersion": "v1.1",
-   "rank": 138
+   "rank": 143
   },
   {
    "apartmentKey": "11350-43",
@@ -4570,7 +4732,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 58.0,
    "calculationVersion": "v1.1",
-   "rank": 139
+   "rank": 144
   },
   {
    "apartmentKey": "11740-5220",
@@ -4603,7 +4765,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.6,
    "calculationVersion": "v1.1",
-   "rank": 140
+   "rank": 145
   },
   {
    "apartmentKey": "11530-91",
@@ -4636,7 +4798,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 59.9,
    "calculationVersion": "v1.1",
-   "rank": 141
+   "rank": 146
   },
   {
    "apartmentKey": "11440-221",
@@ -4669,7 +4831,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 92.4,
    "calculationVersion": "v1.1",
-   "rank": 142
+   "rank": 147
   },
   {
    "apartmentKey": "11620-145",
@@ -4702,7 +4864,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 83.9,
    "calculationVersion": "v1.1",
-   "rank": 143
+   "rank": 148
   },
   {
    "apartmentKey": "11545-38",
@@ -4737,7 +4899,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 53.8,
    "calculationVersion": "v1.1",
-   "rank": 144
+   "rank": 149
   },
   {
    "apartmentKey": "11530-3134",
@@ -4770,7 +4932,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 145
+   "rank": 150
   },
   {
    "apartmentKey": "11305-26",
@@ -4803,7 +4965,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.7,
    "calculationVersion": "v1.1",
-   "rank": 146
+   "rank": 151
   },
   {
    "apartmentKey": "11350-36",
@@ -4834,41 +4996,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 41.3,
    "calculationVersion": "v1.1",
-   "rank": 147
-  },
-  {
-   "apartmentKey": "11320-47",
-   "aptSeq": "47",
-   "apartmentName": "청구아파트",
-   "sidoCode": "11",
-   "sggCode": "11320",
-   "areaGroup": 85.0,
-   "referenceMonth": "202607",
-   "baselineMedian": 512500000.0,
-   "currentMedian": 557500000.0,
-   "riseAmount": 45000000,
-   "riseRate": 8.78,
-   "baselineTradeCount": 12,
-   "currentTradeCount": 8,
-   "confidence": "medium",
-   "warnings": [
-    "층수 차이(8층 이상 또는 구간 차이)",
-    "직거래 포함 이력 존재"
-   ],
-   "region": "11320 방학동",
-   "exactAreas": [
-    84.97
-   ],
-   "baselineFloorMedian": 4,
-   "currentFloorMedian": 6.5,
-   "baselineDirectTradeCount": 1,
-   "currentDirectTradeCount": 0,
-   "floorMixWarning": true,
-   "directTradeWarning": true,
-   "compositionWarning": true,
-   "exclusiveAreaGroup": 85.0,
-   "calculationVersion": "v1.1",
-   "rank": 148
+   "rank": 152
   },
   {
    "apartmentKey": "11200-21",
@@ -4901,7 +5029,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 60.0,
    "calculationVersion": "v1.1",
-   "rank": 149
+   "rank": 153
   },
   {
    "apartmentKey": "11530-9",
@@ -4934,7 +5062,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 44.6,
    "calculationVersion": "v1.1",
-   "rank": 150
+   "rank": 154
   },
   {
    "apartmentKey": "11350-110",
@@ -4965,7 +5093,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 101.9,
    "calculationVersion": "v1.1",
-   "rank": 151
+   "rank": 155
   },
   {
    "apartmentKey": "11290-84",
@@ -4996,38 +5124,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 60.0,
    "calculationVersion": "v1.1",
-   "rank": 152
-  },
-  {
-   "apartmentKey": "11305-24",
-   "aptSeq": "24",
-   "apartmentName": "주공1단지",
-   "sidoCode": "11",
-   "sggCode": "11305",
-   "areaGroup": 49.9,
-   "referenceMonth": "202607",
-   "baselineMedian": 609500000.0,
-   "currentMedian": 662500000.0,
-   "riseAmount": 53000000,
-   "riseRate": 8.7,
-   "baselineTradeCount": 4,
-   "currentTradeCount": 2,
-   "confidence": "medium",
-   "warnings": [],
-   "region": "11305 번동",
-   "exactAreas": [
-    49.94
-   ],
-   "baselineFloorMedian": 9.0,
-   "currentFloorMedian": 7.0,
-   "baselineDirectTradeCount": 0,
-   "currentDirectTradeCount": 0,
-   "floorMixWarning": false,
-   "directTradeWarning": false,
-   "compositionWarning": false,
-   "exclusiveAreaGroup": 49.9,
-   "calculationVersion": "v1.1",
-   "rank": 153
+   "rank": 156
   },
   {
    "apartmentKey": "11350-206",
@@ -5058,7 +5155,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 46.0,
    "calculationVersion": "v1.1",
-   "rank": 154
+   "rank": 157
   },
   {
    "apartmentKey": "11560-127",
@@ -5091,7 +5188,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 59.9,
    "calculationVersion": "v1.1",
-   "rank": 155
+   "rank": 158
   },
   {
    "apartmentKey": "11590-79",
@@ -5124,7 +5221,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.6,
    "calculationVersion": "v1.1",
-   "rank": 156
+   "rank": 159
   },
   {
    "apartmentKey": "11290-3794",
@@ -5158,7 +5255,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 59.6,
    "calculationVersion": "v1.1",
-   "rank": 157
+   "rank": 160
   },
   {
    "apartmentKey": "11350-183",
@@ -5189,7 +5286,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 59.9,
    "calculationVersion": "v1.1",
-   "rank": 158
+   "rank": 161
   },
   {
    "apartmentKey": "11350-102",
@@ -5220,7 +5317,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 49.5,
    "calculationVersion": "v1.1",
-   "rank": 159
+   "rank": 162
   },
   {
    "apartmentKey": "11290-3492",
@@ -5251,7 +5348,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 59.8,
    "calculationVersion": "v1.1",
-   "rank": 160
+   "rank": 163
   },
   {
    "apartmentKey": "11500-120",
@@ -5284,7 +5381,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 125.0,
    "calculationVersion": "v1.1",
-   "rank": 161
+   "rank": 164
   },
   {
    "apartmentKey": "11500-6753",
@@ -5317,7 +5414,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 127.1,
    "calculationVersion": "v1.1",
-   "rank": 162
+   "rank": 165
   },
   {
    "apartmentKey": "11620-144",
@@ -5350,7 +5447,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.7,
    "calculationVersion": "v1.1",
-   "rank": 163
+   "rank": 166
   },
   {
    "apartmentKey": "11500-151",
@@ -5381,7 +5478,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 39.6,
    "calculationVersion": "v1.1",
-   "rank": 164
+   "rank": 167
   },
   {
    "apartmentKey": "11110-2224",
@@ -5412,40 +5509,41 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 59.9,
    "calculationVersion": "v1.1",
-   "rank": 165
+   "rank": 168
   },
   {
-   "apartmentKey": "11140-37",
-   "aptSeq": "37",
-   "apartmentName": "약수하이츠",
+   "apartmentKey": "11320-47",
+   "aptSeq": "47",
+   "apartmentName": "청구아파트",
    "sidoCode": "11",
-   "sggCode": "11140",
-   "areaGroup": 84.9,
+   "sggCode": "11320",
+   "areaGroup": 85.0,
    "referenceMonth": "202607",
-   "baselineMedian": 1680000000.0,
-   "currentMedian": 1820000000,
-   "riseAmount": 140000000,
-   "riseRate": 8.33,
-   "baselineTradeCount": 2,
-   "currentTradeCount": 3,
-   "confidence": "low",
+   "baselineMedian": 512500000.0,
+   "currentMedian": 555000000,
+   "riseAmount": 42500000,
+   "riseRate": 8.29,
+   "baselineTradeCount": 12,
+   "currentTradeCount": 9,
+   "confidence": "medium",
    "warnings": [
-    "층수 차이(8층 이상 또는 구간 차이)"
+    "층수 차이(8층 이상 또는 구간 차이)",
+    "직거래 포함 이력 존재"
    ],
-   "region": "11140 신당동",
+   "region": "11320 방학동",
    "exactAreas": [
-    84.88
+    84.97
    ],
-   "baselineFloorMedian": 5.0,
-   "currentFloorMedian": 12,
-   "baselineDirectTradeCount": 0,
+   "baselineFloorMedian": 4,
+   "currentFloorMedian": 8,
+   "baselineDirectTradeCount": 1,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
-   "directTradeWarning": false,
+   "directTradeWarning": true,
    "compositionWarning": true,
-   "exclusiveAreaGroup": 84.9,
+   "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 166
+   "rank": 169
   },
   {
    "apartmentKey": "11710-83",
@@ -5478,7 +5576,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 35.5,
    "calculationVersion": "v1.1",
-   "rank": 167
+   "rank": 170
   },
   {
    "apartmentKey": "11590-103",
@@ -5509,7 +5607,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 55.5,
    "calculationVersion": "v1.1",
-   "rank": 168
+   "rank": 171
   },
   {
    "apartmentKey": "11230-2975",
@@ -5543,7 +5641,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 59.8,
    "calculationVersion": "v1.1",
-   "rank": 169
+   "rank": 172
   },
   {
    "apartmentKey": "11230-129",
@@ -5574,7 +5672,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 81.0,
    "calculationVersion": "v1.1",
-   "rank": 170
+   "rank": 173
   },
   {
    "apartmentKey": "11410-67",
@@ -5607,7 +5705,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 60.1,
    "calculationVersion": "v1.1",
-   "rank": 171
+   "rank": 174
   },
   {
    "apartmentKey": "11230-2072",
@@ -5638,7 +5736,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 172
+   "rank": 175
   },
   {
    "apartmentKey": "11530-3214",
@@ -5671,7 +5769,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 173
+   "rank": 176
   },
   {
    "apartmentKey": "11380-11599",
@@ -5706,7 +5804,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 74.8,
    "calculationVersion": "v1.1",
-   "rank": 174
+   "rank": 177
   },
   {
    "apartmentKey": "11740-4804",
@@ -5739,7 +5837,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 60.0,
    "calculationVersion": "v1.1",
-   "rank": 175
+   "rank": 178
   },
   {
    "apartmentKey": "11350-14",
@@ -5772,7 +5870,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 176
+   "rank": 179
   },
   {
    "apartmentKey": "11305-25",
@@ -5803,7 +5901,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 49.9,
    "calculationVersion": "v1.1",
-   "rank": 177
+   "rank": 180
   },
   {
    "apartmentKey": "11710-110",
@@ -5836,7 +5934,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 178
+   "rank": 181
   },
   {
    "apartmentKey": "11500-55",
@@ -5869,7 +5967,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 58.1,
    "calculationVersion": "v1.1",
-   "rank": 179
+   "rank": 182
   },
   {
    "apartmentKey": "11410-95",
@@ -5903,7 +6001,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 60.0,
    "calculationVersion": "v1.1",
-   "rank": 180
+   "rank": 183
   },
   {
    "apartmentKey": "11350-133",
@@ -5934,7 +6032,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 181
+   "rank": 184
   },
   {
    "apartmentKey": "11290-20",
@@ -5965,7 +6063,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 59.6,
    "calculationVersion": "v1.1",
-   "rank": 182
+   "rank": 185
   },
   {
    "apartmentKey": "11350-34",
@@ -5998,7 +6096,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 41.3,
    "calculationVersion": "v1.1",
-   "rank": 183
+   "rank": 186
   },
   {
    "apartmentKey": "11350-139",
@@ -6031,7 +6129,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 51.5,
    "calculationVersion": "v1.1",
-   "rank": 184
+   "rank": 187
   },
   {
    "apartmentKey": "11620-183",
@@ -6062,7 +6160,40 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 84.8,
    "calculationVersion": "v1.1",
-   "rank": 185
+   "rank": 188
+  },
+  {
+   "apartmentKey": "11140-37",
+   "aptSeq": "37",
+   "apartmentName": "약수하이츠",
+   "sidoCode": "11",
+   "sggCode": "11140",
+   "areaGroup": 84.9,
+   "referenceMonth": "202607",
+   "baselineMedian": 1680000000.0,
+   "currentMedian": 1810000000.0,
+   "riseAmount": 130000000,
+   "riseRate": 7.74,
+   "baselineTradeCount": 2,
+   "currentTradeCount": 4,
+   "confidence": "low",
+   "warnings": [
+    "층수 차이(8층 이상 또는 구간 차이)"
+   ],
+   "region": "11140 신당동",
+   "exactAreas": [
+    84.88
+   ],
+   "baselineFloorMedian": 5.0,
+   "currentFloorMedian": 12.5,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": true,
+   "directTradeWarning": false,
+   "compositionWarning": true,
+   "exclusiveAreaGroup": 84.9,
+   "calculationVersion": "v1.1",
+   "rank": 189
   },
   {
    "apartmentKey": "11350-117",
@@ -6096,7 +6227,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 49.7,
    "calculationVersion": "v1.1",
-   "rank": 186
+   "rank": 190
   },
   {
    "apartmentKey": "11440-118",
@@ -6129,7 +6260,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.5,
    "calculationVersion": "v1.1",
-   "rank": 187
+   "rank": 191
   },
   {
    "apartmentKey": "11740-4675",
@@ -6164,7 +6295,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 60.0,
    "calculationVersion": "v1.1",
-   "rank": 188
+   "rank": 192
   },
   {
    "apartmentKey": "11620-21",
@@ -6197,7 +6328,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 189
+   "rank": 193
   },
   {
    "apartmentKey": "11350-140",
@@ -6230,7 +6361,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 50.1,
    "calculationVersion": "v1.1",
-   "rank": 190
+   "rank": 194
   },
   {
    "apartmentKey": "11305-46",
@@ -6263,7 +6394,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.7,
    "calculationVersion": "v1.1",
-   "rank": 191
+   "rank": 195
   },
   {
    "apartmentKey": "11350-5",
@@ -6296,7 +6427,38 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 192
+   "rank": 196
+  },
+  {
+   "apartmentKey": "11500-477",
+   "aptSeq": "477",
+   "apartmentName": "우장산힐스테이트",
+   "sidoCode": "11",
+   "sggCode": "11500",
+   "areaGroup": 60.0,
+   "referenceMonth": "202607",
+   "baselineMedian": 1385000000,
+   "currentMedian": 1490000000,
+   "riseAmount": 105000000,
+   "riseRate": 7.58,
+   "baselineTradeCount": 5,
+   "currentTradeCount": 3,
+   "confidence": "medium",
+   "warnings": [],
+   "region": "11500 내발산동",
+   "exactAreas": [
+    59.98
+   ],
+   "baselineFloorMedian": 11,
+   "currentFloorMedian": 13,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": false,
+   "directTradeWarning": false,
+   "compositionWarning": false,
+   "exclusiveAreaGroup": 60.0,
+   "calculationVersion": "v1.1",
+   "rank": 197
   },
   {
    "apartmentKey": "11380-105",
@@ -6329,7 +6491,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.8,
    "calculationVersion": "v1.1",
-   "rank": 193
+   "rank": 198
   },
   {
    "apartmentKey": "11680-3834",
@@ -6360,7 +6522,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 84.2,
    "calculationVersion": "v1.1",
-   "rank": 194
+   "rank": 199
   },
   {
    "apartmentKey": "11620-14",
@@ -6393,7 +6555,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.8,
    "calculationVersion": "v1.1",
-   "rank": 195
+   "rank": 200
   },
   {
    "apartmentKey": "11500-193",
@@ -6426,7 +6588,42 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 49.8,
    "calculationVersion": "v1.1",
-   "rank": 196
+   "rank": 201
+  },
+  {
+   "apartmentKey": "11410-4769",
+   "aptSeq": "4769",
+   "apartmentName": "홍제센트럴IPARK",
+   "sidoCode": "11",
+   "sggCode": "11410",
+   "areaGroup": 85.0,
+   "referenceMonth": "202607",
+   "baselineMedian": 1402500000.0,
+   "currentMedian": 1507500000.0,
+   "riseAmount": 105000000,
+   "riseRate": 7.49,
+   "baselineTradeCount": 10,
+   "currentTradeCount": 4,
+   "confidence": "low",
+   "warnings": [
+    "서로 다른 세부 전용면적 혼합"
+   ],
+   "region": "11410 홍제동",
+   "exactAreas": [
+    84.9728,
+    84.9602,
+    84.9644
+   ],
+   "baselineFloorMedian": 7.0,
+   "currentFloorMedian": 6.0,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": false,
+   "directTradeWarning": false,
+   "compositionWarning": true,
+   "exclusiveAreaGroup": 85.0,
+   "calculationVersion": "v1.1",
+   "rank": 202
   },
   {
    "apartmentKey": "11410-4476",
@@ -6463,7 +6660,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 197
+   "rank": 203
   },
   {
    "apartmentKey": "11350-143",
@@ -6497,7 +6694,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 50.2,
    "calculationVersion": "v1.1",
-   "rank": 198
+   "rank": 204
   },
   {
    "apartmentKey": "11320-32",
@@ -6531,7 +6728,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 199
+   "rank": 205
   },
   {
    "apartmentKey": "11320-92",
@@ -6565,7 +6762,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 200
+   "rank": 206
   },
   {
    "apartmentKey": "11305-6",
@@ -6596,7 +6793,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 114.8,
    "calculationVersion": "v1.1",
-   "rank": 201
+   "rank": 207
   },
   {
    "apartmentKey": "11470-332",
@@ -6627,7 +6824,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 84.8,
    "calculationVersion": "v1.1",
-   "rank": 202
+   "rank": 208
   },
   {
    "apartmentKey": "11260-83",
@@ -6658,7 +6855,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 59.4,
    "calculationVersion": "v1.1",
-   "rank": 203
+   "rank": 209
   },
   {
    "apartmentKey": "11320-101",
@@ -6692,7 +6889,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 68.9,
    "calculationVersion": "v1.1",
-   "rank": 204
+   "rank": 210
   },
   {
    "apartmentKey": "11290-210",
@@ -6723,7 +6920,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 205
+   "rank": 211
   },
   {
    "apartmentKey": "11290-3492",
@@ -6756,7 +6953,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.6,
    "calculationVersion": "v1.1",
-   "rank": 206
+   "rank": 212
   },
   {
    "apartmentKey": "11230-84",
@@ -6789,7 +6986,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 207
+   "rank": 213
   },
   {
    "apartmentKey": "11530-4424",
@@ -6820,7 +7017,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 208
+   "rank": 214
   },
   {
    "apartmentKey": "11740-4628",
@@ -6851,7 +7048,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 59.8,
    "calculationVersion": "v1.1",
-   "rank": 209
+   "rank": 215
   },
   {
    "apartmentKey": "11380-8697",
@@ -6887,7 +7084,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 210
+   "rank": 216
   },
   {
    "apartmentKey": "11530-89",
@@ -6920,7 +7117,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 59.6,
    "calculationVersion": "v1.1",
-   "rank": 211
+   "rank": 217
   },
   {
    "apartmentKey": "11350-150",
@@ -6951,7 +7148,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 59.4,
    "calculationVersion": "v1.1",
-   "rank": 212
+   "rank": 218
   },
   {
    "apartmentKey": "11500-16",
@@ -6982,7 +7179,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 59.9,
    "calculationVersion": "v1.1",
-   "rank": 213
+   "rank": 219
   },
   {
    "apartmentKey": "11320-11",
@@ -7013,7 +7210,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 58.8,
    "calculationVersion": "v1.1",
-   "rank": 214
+   "rank": 220
   },
   {
    "apartmentKey": "11500-197",
@@ -7047,7 +7244,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 49.8,
    "calculationVersion": "v1.1",
-   "rank": 215
+   "rank": 221
   },
   {
    "apartmentKey": "11260-99",
@@ -7080,7 +7277,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 49.8,
    "calculationVersion": "v1.1",
-   "rank": 216
+   "rank": 222
   },
   {
    "apartmentKey": "11410-108",
@@ -7113,7 +7310,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 65.3,
    "calculationVersion": "v1.1",
-   "rank": 217
+   "rank": 223
   },
   {
    "apartmentKey": "11500-149",
@@ -7147,7 +7344,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 49.5,
    "calculationVersion": "v1.1",
-   "rank": 218
+   "rank": 224
   },
   {
    "apartmentKey": "11260-46",
@@ -7180,7 +7377,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.0,
    "calculationVersion": "v1.1",
-   "rank": 219
+   "rank": 225
   },
   {
    "apartmentKey": "11530-3775",
@@ -7214,7 +7411,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 220
+   "rank": 226
   },
   {
    "apartmentKey": "11290-3622",
@@ -7247,7 +7444,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 60.0,
    "calculationVersion": "v1.1",
-   "rank": 221
+   "rank": 227
   },
   {
    "apartmentKey": "11710-59",
@@ -7278,7 +7475,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 84.7,
    "calculationVersion": "v1.1",
-   "rank": 222
+   "rank": 228
   },
   {
    "apartmentKey": "11530-180",
@@ -7309,7 +7506,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 223
+   "rank": 229
   },
   {
    "apartmentKey": "11530-3391",
@@ -7343,7 +7540,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 224
+   "rank": 230
   },
   {
    "apartmentKey": "11710-8865",
@@ -7380,7 +7577,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 225
+   "rank": 231
   },
   {
    "apartmentKey": "11740-91",
@@ -7413,7 +7610,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 59.6,
    "calculationVersion": "v1.1",
-   "rank": 226
+   "rank": 232
   },
   {
    "apartmentKey": "11380-24",
@@ -7446,7 +7643,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.8,
    "calculationVersion": "v1.1",
-   "rank": 227
+   "rank": 233
   },
   {
    "apartmentKey": "11350-33",
@@ -7477,7 +7674,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 49.9,
    "calculationVersion": "v1.1",
-   "rank": 228
+   "rank": 234
   },
   {
    "apartmentKey": "11290-116",
@@ -7510,7 +7707,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 60.0,
    "calculationVersion": "v1.1",
-   "rank": 229
+   "rank": 235
   },
   {
    "apartmentKey": "11530-3249",
@@ -7544,7 +7741,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 36.9,
    "calculationVersion": "v1.1",
-   "rank": 230
+   "rank": 236
   },
   {
    "apartmentKey": "11200-24",
@@ -7575,7 +7772,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 231
+   "rank": 237
   },
   {
    "apartmentKey": "11530-133",
@@ -7608,7 +7805,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 66.0,
    "calculationVersion": "v1.1",
-   "rank": 232
+   "rank": 238
   },
   {
    "apartmentKey": "11350-104",
@@ -7641,7 +7838,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 233
+   "rank": 239
   },
   {
    "apartmentKey": "11380-11061",
@@ -7675,7 +7872,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 234
+   "rank": 240
   },
   {
    "apartmentKey": "11200-14",
@@ -7706,7 +7903,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 235
+   "rank": 241
   },
   {
    "apartmentKey": "11350-40",
@@ -7739,7 +7936,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 58.0,
    "calculationVersion": "v1.1",
-   "rank": 236
+   "rank": 242
   },
   {
    "apartmentKey": "11320-27",
@@ -7772,7 +7969,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.7,
    "calculationVersion": "v1.1",
-   "rank": 237
+   "rank": 243
   },
   {
    "apartmentKey": "11380-9188",
@@ -7805,7 +8002,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.4,
    "calculationVersion": "v1.1",
-   "rank": 238
+   "rank": 244
   },
   {
    "apartmentKey": "11350-182",
@@ -7838,7 +8035,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 49.6,
    "calculationVersion": "v1.1",
-   "rank": 239
+   "rank": 245
   },
   {
    "apartmentKey": "11545-39",
@@ -7869,7 +8066,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 240
+   "rank": 246
   },
   {
    "apartmentKey": "11410-104",
@@ -7902,7 +8099,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 59.4,
    "calculationVersion": "v1.1",
-   "rank": 241
+   "rank": 247
   },
   {
    "apartmentKey": "11170-134",
@@ -7933,7 +8130,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 242
+   "rank": 248
   },
   {
    "apartmentKey": "11560-2123",
@@ -7966,7 +8163,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 243
+   "rank": 249
   },
   {
    "apartmentKey": "11350-30",
@@ -8000,7 +8197,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 49.9,
    "calculationVersion": "v1.1",
-   "rank": 244
+   "rank": 250
   },
   {
    "apartmentKey": "11500-6",
@@ -8031,7 +8228,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 60.0,
    "calculationVersion": "v1.1",
-   "rank": 245
+   "rank": 251
   },
   {
    "apartmentKey": "11200-2914",
@@ -8062,7 +8259,76 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 84.7,
    "calculationVersion": "v1.1",
-   "rank": 246
+   "rank": 252
+  },
+  {
+   "apartmentKey": "11260-46",
+   "aptSeq": "46",
+   "apartmentName": "한신아파트상가동유치원동(103~109)",
+   "sidoCode": "11",
+   "sggCode": "11260",
+   "areaGroup": 59.8,
+   "referenceMonth": "202607",
+   "baselineMedian": 830000000.0,
+   "currentMedian": 882500000.0,
+   "riseAmount": 52500000,
+   "riseRate": 6.33,
+   "baselineTradeCount": 18,
+   "currentTradeCount": 8,
+   "confidence": "medium",
+   "warnings": [
+    "층수 차이(8층 이상 또는 구간 차이)",
+    "직거래 포함 이력 존재"
+   ],
+   "region": "11260 중화동",
+   "exactAreas": [
+    59.76
+   ],
+   "baselineFloorMedian": 17,
+   "currentFloorMedian": 12.5,
+   "baselineDirectTradeCount": 1,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": true,
+   "directTradeWarning": true,
+   "compositionWarning": true,
+   "exclusiveAreaGroup": 59.8,
+   "calculationVersion": "v1.1",
+   "rank": 253
+  },
+  {
+   "apartmentKey": "11350-2515",
+   "aptSeq": "2515",
+   "apartmentName": "노원롯데캐슬시그니처",
+   "sidoCode": "11",
+   "sggCode": "11350",
+   "areaGroup": 85.0,
+   "referenceMonth": "202607",
+   "baselineMedian": 1150000000,
+   "currentMedian": 1222500000.0,
+   "riseAmount": 72500000,
+   "riseRate": 6.3,
+   "baselineTradeCount": 9,
+   "currentTradeCount": 4,
+   "confidence": "low",
+   "warnings": [
+    "서로 다른 세부 전용면적 혼합",
+    "직거래 포함 이력 존재"
+   ],
+   "region": "11350 상계동",
+   "exactAreas": [
+    84.999,
+    84.997
+   ],
+   "baselineFloorMedian": 15.5,
+   "currentFloorMedian": 18.0,
+   "baselineDirectTradeCount": 1,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": false,
+   "directTradeWarning": true,
+   "compositionWarning": true,
+   "exclusiveAreaGroup": 85.0,
+   "calculationVersion": "v1.1",
+   "rank": 254
   },
   {
    "apartmentKey": "11350-97",
@@ -8095,7 +8361,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 59.9,
    "calculationVersion": "v1.1",
-   "rank": 247
+   "rank": 255
   },
   {
    "apartmentKey": "11260-92",
@@ -8128,7 +8394,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 49.8,
    "calculationVersion": "v1.1",
-   "rank": 248
+   "rank": 256
   },
   {
    "apartmentKey": "11290-88",
@@ -8161,7 +8427,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 59.9,
    "calculationVersion": "v1.1",
-   "rank": 249
+   "rank": 257
   },
   {
    "apartmentKey": "11740-4735",
@@ -8196,7 +8462,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 59.1,
    "calculationVersion": "v1.1",
-   "rank": 250
+   "rank": 258
   },
   {
    "apartmentKey": "11410-30",
@@ -8227,7 +8493,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 251
+   "rank": 259
   },
   {
    "apartmentKey": "11500-192",
@@ -8260,7 +8526,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 51.0,
    "calculationVersion": "v1.1",
-   "rank": 252
+   "rank": 260
   },
   {
    "apartmentKey": "11620-5",
@@ -8291,7 +8557,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 253
+   "rank": 261
   },
   {
    "apartmentKey": "11350-114",
@@ -8322,7 +8588,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 44.5,
    "calculationVersion": "v1.1",
-   "rank": 254
+   "rank": 262
   },
   {
    "apartmentKey": "11350-184",
@@ -8353,7 +8619,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 59.4,
    "calculationVersion": "v1.1",
-   "rank": 255
+   "rank": 263
   },
   {
    "apartmentKey": "11620-102",
@@ -8384,7 +8650,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 59.6,
    "calculationVersion": "v1.1",
-   "rank": 256
+   "rank": 264
   },
   {
    "apartmentKey": "11620-4347",
@@ -8419,7 +8685,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 257
+   "rank": 265
   },
   {
    "apartmentKey": "11710-8865",
@@ -8454,7 +8720,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 39.1,
    "calculationVersion": "v1.1",
-   "rank": 258
+   "rank": 266
   },
   {
    "apartmentKey": "11350-1",
@@ -8488,7 +8754,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 60.0,
    "calculationVersion": "v1.1",
-   "rank": 259
+   "rank": 267
   },
   {
    "apartmentKey": "11440-32",
@@ -8522,7 +8788,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.8,
    "calculationVersion": "v1.1",
-   "rank": 260
+   "rank": 268
   },
   {
    "apartmentKey": "11650-4887",
@@ -8558,7 +8824,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 261
+   "rank": 269
   },
   {
    "apartmentKey": "11530-36",
@@ -8591,7 +8857,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 56.5,
    "calculationVersion": "v1.1",
-   "rank": 262
+   "rank": 270
   },
   {
    "apartmentKey": "11680-279",
@@ -8622,7 +8888,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 51.1,
    "calculationVersion": "v1.1",
-   "rank": 263
+   "rank": 271
   },
   {
    "apartmentKey": "11140-1039",
@@ -8655,7 +8921,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 264
+   "rank": 272
   },
   {
    "apartmentKey": "11290-3824",
@@ -8686,7 +8952,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 60.0,
    "calculationVersion": "v1.1",
-   "rank": 265
+   "rank": 273
   },
   {
    "apartmentKey": "11530-18",
@@ -8717,41 +8983,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 80.0,
    "calculationVersion": "v1.1",
-   "rank": 266
-  },
-  {
-   "apartmentKey": "11260-46",
-   "aptSeq": "46",
-   "apartmentName": "한신아파트상가동유치원동(103~109)",
-   "sidoCode": "11",
-   "sggCode": "11260",
-   "areaGroup": 59.8,
-   "referenceMonth": "202607",
-   "baselineMedian": 830000000.0,
-   "currentMedian": 880000000,
-   "riseAmount": 50000000,
-   "riseRate": 6.02,
-   "baselineTradeCount": 18,
-   "currentTradeCount": 7,
-   "confidence": "medium",
-   "warnings": [
-    "층수 차이(8층 이상 또는 구간 차이)",
-    "직거래 포함 이력 존재"
-   ],
-   "region": "11260 중화동",
-   "exactAreas": [
-    59.76
-   ],
-   "baselineFloorMedian": 17,
-   "currentFloorMedian": 11,
-   "baselineDirectTradeCount": 1,
-   "currentDirectTradeCount": 0,
-   "floorMixWarning": true,
-   "directTradeWarning": true,
-   "compositionWarning": true,
-   "exclusiveAreaGroup": 59.8,
-   "calculationVersion": "v1.1",
-   "rank": 267
+   "rank": 274
   },
   {
    "apartmentKey": "11320-21",
@@ -8782,7 +9014,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 76.9,
    "calculationVersion": "v1.1",
-   "rank": 268
+   "rank": 275
   },
   {
    "apartmentKey": "11500-20",
@@ -8813,7 +9045,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 59.9,
    "calculationVersion": "v1.1",
-   "rank": 269
+   "rank": 276
   },
   {
    "apartmentKey": "11410-3517",
@@ -8844,7 +9076,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 270
+   "rank": 277
   },
   {
    "apartmentKey": "11530-36",
@@ -8875,7 +9107,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 72.3,
    "calculationVersion": "v1.1",
-   "rank": 271
+   "rank": 278
   },
   {
    "apartmentKey": "11290-82",
@@ -8906,7 +9138,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 84.1,
    "calculationVersion": "v1.1",
-   "rank": 272
+   "rank": 279
   },
   {
    "apartmentKey": "11560-111",
@@ -8939,7 +9171,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 64.4,
    "calculationVersion": "v1.1",
-   "rank": 273
+   "rank": 280
   },
   {
    "apartmentKey": "11440-47",
@@ -8970,7 +9202,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 59.9,
    "calculationVersion": "v1.1",
-   "rank": 274
+   "rank": 281
   },
   {
    "apartmentKey": "11710-89",
@@ -9003,7 +9235,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.8,
    "calculationVersion": "v1.1",
-   "rank": 275
+   "rank": 282
   },
   {
    "apartmentKey": "11560-62",
@@ -9036,7 +9268,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 59.0,
    "calculationVersion": "v1.1",
-   "rank": 276
+   "rank": 283
   },
   {
    "apartmentKey": "11740-4672",
@@ -9069,7 +9301,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 277
+   "rank": 284
   },
   {
    "apartmentKey": "11260-4104",
@@ -9103,7 +9335,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 278
+   "rank": 285
   },
   {
    "apartmentKey": "11230-2222",
@@ -9137,7 +9369,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 279
+   "rank": 286
   },
   {
    "apartmentKey": "11320-19",
@@ -9168,7 +9400,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 84.6,
    "calculationVersion": "v1.1",
-   "rank": 280
+   "rank": 287
   },
   {
    "apartmentKey": "11500-5419",
@@ -9201,7 +9433,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 115.0,
    "calculationVersion": "v1.1",
-   "rank": 281
+   "rank": 288
   },
   {
    "apartmentKey": "11230-5",
@@ -9232,7 +9464,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 59.8,
    "calculationVersion": "v1.1",
-   "rank": 282
+   "rank": 289
   },
   {
    "apartmentKey": "11230-59",
@@ -9267,7 +9499,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 283
+   "rank": 290
   },
   {
    "apartmentKey": "11350-68",
@@ -9298,38 +9530,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 70.6,
    "calculationVersion": "v1.1",
-   "rank": 284
-  },
-  {
-   "apartmentKey": "11500-477",
-   "aptSeq": "477",
-   "apartmentName": "우장산힐스테이트",
-   "sidoCode": "11",
-   "sggCode": "11500",
-   "areaGroup": 60.0,
-   "referenceMonth": "202607",
-   "baselineMedian": 1385000000,
-   "currentMedian": 1465000000.0,
-   "riseAmount": 80000000,
-   "riseRate": 5.78,
-   "baselineTradeCount": 5,
-   "currentTradeCount": 2,
-   "confidence": "medium",
-   "warnings": [],
-   "region": "11500 내발산동",
-   "exactAreas": [
-    59.98
-   ],
-   "baselineFloorMedian": 11,
-   "currentFloorMedian": 13.5,
-   "baselineDirectTradeCount": 0,
-   "currentDirectTradeCount": 0,
-   "floorMixWarning": false,
-   "directTradeWarning": false,
-   "compositionWarning": false,
-   "exclusiveAreaGroup": 60.0,
-   "calculationVersion": "v1.1",
-   "rank": 285
+   "rank": 291
   },
   {
    "apartmentKey": "11230-65",
@@ -9363,7 +9564,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 286
+   "rank": 292
   },
   {
    "apartmentKey": "11500-155",
@@ -9394,7 +9595,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 287
+   "rank": 293
   },
   {
    "apartmentKey": "11350-32",
@@ -9427,7 +9628,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 49.9,
    "calculationVersion": "v1.1",
-   "rank": 288
+   "rank": 294
   },
   {
    "apartmentKey": "11350-137",
@@ -9458,7 +9659,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 70.8,
    "calculationVersion": "v1.1",
-   "rank": 289
+   "rank": 295
   },
   {
    "apartmentKey": "11290-82",
@@ -9489,7 +9690,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 59.9,
    "calculationVersion": "v1.1",
-   "rank": 290
+   "rank": 296
   },
   {
    "apartmentKey": "11500-58",
@@ -9520,7 +9721,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 291
+   "rank": 297
   },
   {
    "apartmentKey": "11500-149",
@@ -9553,7 +9754,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 58.6,
    "calculationVersion": "v1.1",
-   "rank": 292
+   "rank": 298
   },
   {
    "apartmentKey": "11305-4129",
@@ -9586,7 +9787,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 59.4,
    "calculationVersion": "v1.1",
-   "rank": 293
+   "rank": 299
   },
   {
    "apartmentKey": "11350-69",
@@ -9617,7 +9818,38 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 294
+   "rank": 300
+  },
+  {
+   "apartmentKey": "11530-115",
+   "aptSeq": "115",
+   "apartmentName": "영풍마드레빌",
+   "sidoCode": "11",
+   "sggCode": "11530",
+   "areaGroup": 84.7,
+   "referenceMonth": "202607",
+   "baselineMedian": 762500000.0,
+   "currentMedian": 806000000.0,
+   "riseAmount": 43500000,
+   "riseRate": 5.7,
+   "baselineTradeCount": 8,
+   "currentTradeCount": 4,
+   "confidence": "medium",
+   "warnings": [],
+   "region": "11530 오류동",
+   "exactAreas": [
+    84.741
+   ],
+   "baselineFloorMedian": 6.0,
+   "currentFloorMedian": 8.5,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": false,
+   "directTradeWarning": false,
+   "compositionWarning": false,
+   "exclusiveAreaGroup": 84.7,
+   "calculationVersion": "v1.1",
+   "rank": 301
   },
   {
    "apartmentKey": "11380-11078",
@@ -9652,7 +9884,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 295
+   "rank": 302
   },
   {
    "apartmentKey": "11440-149",
@@ -9683,7 +9915,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 296
+   "rank": 303
   },
   {
    "apartmentKey": "11290-111",
@@ -9717,7 +9949,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 297
+   "rank": 304
   },
   {
    "apartmentKey": "11470-138",
@@ -9750,7 +9982,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 59.7,
    "calculationVersion": "v1.1",
-   "rank": 298
+   "rank": 305
   },
   {
    "apartmentKey": "11380-11169",
@@ -9781,7 +10013,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 299
+   "rank": 306
   },
   {
    "apartmentKey": "11230-2822",
@@ -9812,7 +10044,38 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 300
+   "rank": 307
+  },
+  {
+   "apartmentKey": "11545-2",
+   "aptSeq": "2",
+   "apartmentName": "두산",
+   "sidoCode": "11",
+   "sggCode": "11545",
+   "areaGroup": 59.8,
+   "referenceMonth": "202607",
+   "baselineMedian": 677000000,
+   "currentMedian": 714500000.0,
+   "riseAmount": 37500000,
+   "riseRate": 5.54,
+   "baselineTradeCount": 17,
+   "currentTradeCount": 2,
+   "confidence": "medium",
+   "warnings": [],
+   "region": "11545 가산동",
+   "exactAreas": [
+    59.84
+   ],
+   "baselineFloorMedian": 11,
+   "currentFloorMedian": 12.0,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": false,
+   "directTradeWarning": false,
+   "compositionWarning": false,
+   "exclusiveAreaGroup": 59.8,
+   "calculationVersion": "v1.1",
+   "rank": 308
   },
   {
    "apartmentKey": "11305-47",
@@ -9845,7 +10108,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 60.0,
    "calculationVersion": "v1.1",
-   "rank": 301
+   "rank": 309
   },
   {
    "apartmentKey": "11710-6150",
@@ -9881,7 +10144,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 302
+   "rank": 310
   },
   {
    "apartmentKey": "11620-4349",
@@ -9914,7 +10177,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.8,
    "calculationVersion": "v1.1",
-   "rank": 303
+   "rank": 311
   },
   {
    "apartmentKey": "11590-3954",
@@ -9945,7 +10208,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 84.6,
    "calculationVersion": "v1.1",
-   "rank": 304
+   "rank": 312
   },
   {
    "apartmentKey": "11500-5419",
@@ -9976,7 +10239,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 305
+   "rank": 313
   },
   {
    "apartmentKey": "11410-68",
@@ -10009,7 +10272,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 83.0,
    "calculationVersion": "v1.1",
-   "rank": 306
+   "rank": 314
   },
   {
    "apartmentKey": "11230-10",
@@ -10042,7 +10305,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 114.3,
    "calculationVersion": "v1.1",
-   "rank": 307
+   "rank": 315
   },
   {
    "apartmentKey": "11530-129",
@@ -10076,7 +10339,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.5,
    "calculationVersion": "v1.1",
-   "rank": 308
+   "rank": 316
   },
   {
    "apartmentKey": "11260-33",
@@ -10109,7 +10372,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 309
+   "rank": 317
   },
   {
    "apartmentKey": "11530-133",
@@ -10140,7 +10403,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 37.9,
    "calculationVersion": "v1.1",
-   "rank": 310
+   "rank": 318
   },
   {
    "apartmentKey": "11320-63",
@@ -10171,7 +10434,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 84.8,
    "calculationVersion": "v1.1",
-   "rank": 311
+   "rank": 319
   },
   {
    "apartmentKey": "11560-1955",
@@ -10202,7 +10465,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 115.6,
    "calculationVersion": "v1.1",
-   "rank": 312
+   "rank": 320
   },
   {
    "apartmentKey": "11350-136",
@@ -10236,7 +10499,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 134.6,
    "calculationVersion": "v1.1",
-   "rank": 313
+   "rank": 321
   },
   {
    "apartmentKey": "11410-4894",
@@ -10267,7 +10530,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 314
+   "rank": 322
   },
   {
    "apartmentKey": "11590-4",
@@ -10298,7 +10561,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 114.8,
    "calculationVersion": "v1.1",
-   "rank": 315
+   "rank": 323
   },
   {
    "apartmentKey": "11530-131",
@@ -10331,7 +10594,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 59.6,
    "calculationVersion": "v1.1",
-   "rank": 316
+   "rank": 324
   },
   {
    "apartmentKey": "11230-5",
@@ -10362,7 +10625,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 84.8,
    "calculationVersion": "v1.1",
-   "rank": 317
+   "rank": 325
   },
   {
    "apartmentKey": "11500-5371",
@@ -10396,7 +10659,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.7,
    "calculationVersion": "v1.1",
-   "rank": 318
+   "rank": 326
   },
   {
    "apartmentKey": "11530-17",
@@ -10429,38 +10692,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 59.9,
    "calculationVersion": "v1.1",
-   "rank": 319
-  },
-  {
-   "apartmentKey": "11530-115",
-   "aptSeq": "115",
-   "apartmentName": "영풍마드레빌",
-   "sidoCode": "11",
-   "sggCode": "11530",
-   "areaGroup": 84.7,
-   "referenceMonth": "202607",
-   "baselineMedian": 762500000.0,
-   "currentMedian": 802000000,
-   "riseAmount": 39500000,
-   "riseRate": 5.18,
-   "baselineTradeCount": 8,
-   "currentTradeCount": 3,
-   "confidence": "medium",
-   "warnings": [],
-   "region": "11530 오류동",
-   "exactAreas": [
-    84.741
-   ],
-   "baselineFloorMedian": 6.0,
-   "currentFloorMedian": 8,
-   "baselineDirectTradeCount": 0,
-   "currentDirectTradeCount": 0,
-   "floorMixWarning": false,
-   "directTradeWarning": false,
-   "compositionWarning": false,
-   "exclusiveAreaGroup": 84.7,
-   "calculationVersion": "v1.1",
-   "rank": 320
+   "rank": 327
   },
   {
    "apartmentKey": "11710-89",
@@ -10491,7 +10723,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 136.3,
    "calculationVersion": "v1.1",
-   "rank": 321
+   "rank": 328
   },
   {
    "apartmentKey": "11230-2126",
@@ -10524,7 +10756,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.8,
    "calculationVersion": "v1.1",
-   "rank": 322
+   "rank": 329
   },
   {
    "apartmentKey": "11110-90",
@@ -10558,7 +10790,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 114.9,
    "calculationVersion": "v1.1",
-   "rank": 323
+   "rank": 330
   },
   {
    "apartmentKey": "11305-13",
@@ -10591,7 +10823,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 324
+   "rank": 331
   },
   {
    "apartmentKey": "11290-24",
@@ -10625,7 +10857,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 58.6,
    "calculationVersion": "v1.1",
-   "rank": 325
+   "rank": 332
   },
   {
    "apartmentKey": "11380-11600",
@@ -10658,7 +10890,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 326
+   "rank": 333
   },
   {
    "apartmentKey": "11620-28",
@@ -10689,7 +10921,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 58.6,
    "calculationVersion": "v1.1",
-   "rank": 327
+   "rank": 334
   },
   {
    "apartmentKey": "11350-202",
@@ -10723,7 +10955,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 79.2,
    "calculationVersion": "v1.1",
-   "rank": 328
+   "rank": 335
   },
   {
    "apartmentKey": "11710-59",
@@ -10754,7 +10986,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 59.9,
    "calculationVersion": "v1.1",
-   "rank": 329
+   "rank": 336
   },
   {
    "apartmentKey": "11545-23",
@@ -10785,7 +11017,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 84.8,
    "calculationVersion": "v1.1",
-   "rank": 330
+   "rank": 337
   },
   {
    "apartmentKey": "11380-11598",
@@ -10819,7 +11051,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 331
+   "rank": 338
   },
   {
    "apartmentKey": "11545-2262",
@@ -10850,7 +11082,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 71.4,
    "calculationVersion": "v1.1",
-   "rank": 332
+   "rank": 339
   },
   {
    "apartmentKey": "11710-6266",
@@ -10881,7 +11113,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 333
+   "rank": 340
   },
   {
    "apartmentKey": "11470-83",
@@ -10914,7 +11146,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 59.5,
    "calculationVersion": "v1.1",
-   "rank": 334
+   "rank": 341
   },
   {
    "apartmentKey": "11620-11",
@@ -10948,7 +11180,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 59.9,
    "calculationVersion": "v1.1",
-   "rank": 335
+   "rank": 342
   },
   {
    "apartmentKey": "11590-29",
@@ -10981,7 +11213,38 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.5,
    "calculationVersion": "v1.1",
-   "rank": 336
+   "rank": 343
+  },
+  {
+   "apartmentKey": "11350-29",
+   "aptSeq": "29",
+   "apartmentName": "상계주공1(고층)",
+   "sidoCode": "11",
+   "sggCode": "11350",
+   "areaGroup": 58.0,
+   "referenceMonth": "202607",
+   "baselineMedian": 630000000,
+   "currentMedian": 661000000.0,
+   "riseAmount": 31000000,
+   "riseRate": 4.92,
+   "baselineTradeCount": 19,
+   "currentTradeCount": 6,
+   "confidence": "high",
+   "warnings": [],
+   "region": "11350 상계동",
+   "exactAreas": [
+    58.01
+   ],
+   "baselineFloorMedian": 6,
+   "currentFloorMedian": 5.5,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": false,
+   "directTradeWarning": false,
+   "compositionWarning": false,
+   "exclusiveAreaGroup": 58.0,
+   "calculationVersion": "v1.1",
+   "rank": 344
   },
   {
    "apartmentKey": "11470-5630",
@@ -11016,7 +11279,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 337
+   "rank": 345
   },
   {
    "apartmentKey": "11710-164",
@@ -11049,7 +11312,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 81.8,
    "calculationVersion": "v1.1",
-   "rank": 338
+   "rank": 346
   },
   {
    "apartmentKey": "11140-1039",
@@ -11083,7 +11346,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 59.9,
    "calculationVersion": "v1.1",
-   "rank": 339
+   "rank": 347
   },
   {
    "apartmentKey": "11260-1971",
@@ -11116,7 +11379,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 74.2,
    "calculationVersion": "v1.1",
-   "rank": 340
+   "rank": 348
   },
   {
    "apartmentKey": "11560-108",
@@ -11147,7 +11410,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 59.5,
    "calculationVersion": "v1.1",
-   "rank": 341
+   "rank": 349
   },
   {
    "apartmentKey": "11710-137",
@@ -11180,7 +11443,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 59.7,
    "calculationVersion": "v1.1",
-   "rank": 342
+   "rank": 350
   },
   {
    "apartmentKey": "11230-2157",
@@ -11214,7 +11477,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 343
+   "rank": 351
   },
   {
    "apartmentKey": "11650-290",
@@ -11245,7 +11508,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 59.9,
    "calculationVersion": "v1.1",
-   "rank": 344
+   "rank": 352
   },
   {
    "apartmentKey": "11500-5326",
@@ -11278,42 +11541,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.7,
    "calculationVersion": "v1.1",
-   "rank": 345
-  },
-  {
-   "apartmentKey": "11410-4769",
-   "aptSeq": "4769",
-   "apartmentName": "홍제센트럴IPARK",
-   "sidoCode": "11",
-   "sggCode": "11410",
-   "areaGroup": 85.0,
-   "referenceMonth": "202607",
-   "baselineMedian": 1402500000.0,
-   "currentMedian": 1470000000,
-   "riseAmount": 67500000,
-   "riseRate": 4.81,
-   "baselineTradeCount": 10,
-   "currentTradeCount": 3,
-   "confidence": "low",
-   "warnings": [
-    "서로 다른 세부 전용면적 혼합"
-   ],
-   "region": "11410 홍제동",
-   "exactAreas": [
-    84.9728,
-    84.9602,
-    84.9644
-   ],
-   "baselineFloorMedian": 7.0,
-   "currentFloorMedian": 7,
-   "baselineDirectTradeCount": 0,
-   "currentDirectTradeCount": 0,
-   "floorMixWarning": false,
-   "directTradeWarning": false,
-   "compositionWarning": true,
-   "exclusiveAreaGroup": 85.0,
-   "calculationVersion": "v1.1",
-   "rank": 346
+   "rank": 353
   },
   {
    "apartmentKey": "11290-3824",
@@ -11346,7 +11574,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 347
+   "rank": 354
   },
   {
    "apartmentKey": "11740-2931",
@@ -11377,7 +11605,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 60.0,
    "calculationVersion": "v1.1",
-   "rank": 348
+   "rank": 355
   },
   {
    "apartmentKey": "11305-4123",
@@ -11408,7 +11636,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 349
+   "rank": 356
   },
   {
    "apartmentKey": "11545-22",
@@ -11439,7 +11667,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 129.7,
    "calculationVersion": "v1.1",
-   "rank": 350
+   "rank": 357
   },
   {
    "apartmentKey": "11380-8619",
@@ -11472,7 +11700,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.8,
    "calculationVersion": "v1.1",
-   "rank": 351
+   "rank": 358
   },
   {
    "apartmentKey": "11590-76",
@@ -11503,7 +11731,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 66.7,
    "calculationVersion": "v1.1",
-   "rank": 352
+   "rank": 359
   },
   {
    "apartmentKey": "11410-7",
@@ -11536,7 +11764,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 59.9,
    "calculationVersion": "v1.1",
-   "rank": 353
+   "rank": 360
   },
   {
    "apartmentKey": "11440-6132",
@@ -11567,7 +11795,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 43.3,
    "calculationVersion": "v1.1",
-   "rank": 354
+   "rank": 361
   },
   {
    "apartmentKey": "11740-7",
@@ -11600,7 +11828,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 66.9,
    "calculationVersion": "v1.1",
-   "rank": 355
+   "rank": 362
   },
   {
    "apartmentKey": "11200-3120",
@@ -11635,7 +11863,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 59.9,
    "calculationVersion": "v1.1",
-   "rank": 356
+   "rank": 363
   },
   {
    "apartmentKey": "11260-7",
@@ -11670,7 +11898,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 357
+   "rank": 364
   },
   {
    "apartmentKey": "11290-3786",
@@ -11704,7 +11932,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 358
+   "rank": 365
   },
   {
    "apartmentKey": "11350-41",
@@ -11737,7 +11965,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 49.9,
    "calculationVersion": "v1.1",
-   "rank": 359
+   "rank": 366
   },
   {
    "apartmentKey": "11290-60",
@@ -11768,7 +11996,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 60.0,
    "calculationVersion": "v1.1",
-   "rank": 360
+   "rank": 367
   },
   {
    "apartmentKey": "11320-57",
@@ -11802,7 +12030,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 59.8,
    "calculationVersion": "v1.1",
-   "rank": 361
+   "rank": 368
   },
   {
    "apartmentKey": "11545-1642",
@@ -11835,7 +12063,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.8,
    "calculationVersion": "v1.1",
-   "rank": 362
+   "rank": 369
   },
   {
    "apartmentKey": "11410-3524",
@@ -11868,7 +12096,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.8,
    "calculationVersion": "v1.1",
-   "rank": 363
+   "rank": 370
   },
   {
    "apartmentKey": "11230-36",
@@ -11903,7 +12131,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 95.4,
    "calculationVersion": "v1.1",
-   "rank": 364
+   "rank": 371
   },
   {
    "apartmentKey": "11200-32",
@@ -11936,7 +12164,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.8,
    "calculationVersion": "v1.1",
-   "rank": 365
+   "rank": 372
   },
   {
    "apartmentKey": "11500-6919",
@@ -11969,7 +12197,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 60.0,
    "calculationVersion": "v1.1",
-   "rank": 366
+   "rank": 373
   },
   {
    "apartmentKey": "11710-133",
@@ -12002,7 +12230,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 39.6,
    "calculationVersion": "v1.1",
-   "rank": 367
+   "rank": 374
   },
   {
    "apartmentKey": "11500-196",
@@ -12033,7 +12261,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 59.0,
    "calculationVersion": "v1.1",
-   "rank": 368
+   "rank": 375
   },
   {
    "apartmentKey": "11410-4762",
@@ -12068,7 +12296,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 369
+   "rank": 376
   },
   {
    "apartmentKey": "11290-56",
@@ -12099,7 +12327,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 60.0,
    "calculationVersion": "v1.1",
-   "rank": 370
+   "rank": 377
   },
   {
    "apartmentKey": "11380-11086",
@@ -12133,7 +12361,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 371
+   "rank": 378
   },
   {
    "apartmentKey": "11710-83",
@@ -12166,7 +12394,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 25.6,
    "calculationVersion": "v1.1",
-   "rank": 372
+   "rank": 379
   },
   {
    "apartmentKey": "11410-4085",
@@ -12201,7 +12429,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 373
+   "rank": 380
   },
   {
    "apartmentKey": "11740-5220",
@@ -12236,7 +12464,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 374
+   "rank": 381
   },
   {
    "apartmentKey": "11350-124",
@@ -12267,7 +12495,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 115.5,
    "calculationVersion": "v1.1",
-   "rank": 375
+   "rank": 382
   },
   {
    "apartmentKey": "11290-4861",
@@ -12301,7 +12529,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 376
+   "rank": 383
   },
   {
    "apartmentKey": "11350-79",
@@ -12332,7 +12560,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 377
+   "rank": 384
   },
   {
    "apartmentKey": "11380-10719",
@@ -12365,7 +12593,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 60.0,
    "calculationVersion": "v1.1",
-   "rank": 378
+   "rank": 385
   },
   {
    "apartmentKey": "11320-112",
@@ -12398,7 +12626,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 379
+   "rank": 386
   },
   {
    "apartmentKey": "11410-22",
@@ -12429,42 +12657,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 59.7,
    "calculationVersion": "v1.1",
-   "rank": 380
-  },
-  {
-   "apartmentKey": "11290-3807",
-   "aptSeq": "3807",
-   "apartmentName": "길음뉴타운8단지(래미안)",
-   "sidoCode": "11",
-   "sggCode": "11290",
-   "areaGroup": 115.0,
-   "referenceMonth": "202607",
-   "baselineMedian": 1545000000.0,
-   "currentMedian": 1610000000.0,
-   "riseAmount": 65000000,
-   "riseRate": 4.21,
-   "baselineTradeCount": 6,
-   "currentTradeCount": 2,
-   "confidence": "low",
-   "warnings": [
-    "층수 차이(8층 이상 또는 구간 차이)",
-    "서로 다른 세부 전용면적 혼합"
-   ],
-   "region": "11290 길음동",
-   "exactAreas": [
-    114.98,
-    114.99
-   ],
-   "baselineFloorMedian": 14.5,
-   "currentFloorMedian": 5.0,
-   "baselineDirectTradeCount": 0,
-   "currentDirectTradeCount": 0,
-   "floorMixWarning": true,
-   "directTradeWarning": false,
-   "compositionWarning": true,
-   "exclusiveAreaGroup": 115.0,
-   "calculationVersion": "v1.1",
-   "rank": 381
+   "rank": 387
   },
   {
    "apartmentKey": "11710-6028",
@@ -12498,7 +12691,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 382
+   "rank": 388
   },
   {
    "apartmentKey": "11350-143",
@@ -12529,7 +12722,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 59.5,
    "calculationVersion": "v1.1",
-   "rank": 383
+   "rank": 389
   },
   {
    "apartmentKey": "11560-133",
@@ -12562,7 +12755,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 384
+   "rank": 390
   },
   {
    "apartmentKey": "11470-5629",
@@ -12593,7 +12786,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 385
+   "rank": 391
   },
   {
    "apartmentKey": "11710-7441",
@@ -12627,7 +12820,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 51.8,
    "calculationVersion": "v1.1",
-   "rank": 386
+   "rank": 392
   },
   {
    "apartmentKey": "11710-6249",
@@ -12660,7 +12853,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 387
+   "rank": 393
   },
   {
    "apartmentKey": "11530-29",
@@ -12693,7 +12886,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 73.1,
    "calculationVersion": "v1.1",
-   "rank": 388
+   "rank": 394
   },
   {
    "apartmentKey": "11320-66",
@@ -12726,7 +12919,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.5,
    "calculationVersion": "v1.1",
-   "rank": 389
+   "rank": 395
   },
   {
    "apartmentKey": "11350-2275",
@@ -12757,7 +12950,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 60.0,
    "calculationVersion": "v1.1",
-   "rank": 390
+   "rank": 396
   },
   {
    "apartmentKey": "11500-14",
@@ -12788,7 +12981,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 60.0,
    "calculationVersion": "v1.1",
-   "rank": 391
+   "rank": 397
   },
   {
    "apartmentKey": "11290-67",
@@ -12819,7 +13012,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 59.9,
    "calculationVersion": "v1.1",
-   "rank": 392
+   "rank": 398
   },
   {
    "apartmentKey": "11590-127",
@@ -12850,7 +13043,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 393
+   "rank": 399
   },
   {
    "apartmentKey": "11590-76",
@@ -12881,7 +13074,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 394
+   "rank": 400
   },
   {
    "apartmentKey": "11620-11",
@@ -12915,7 +13108,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 395
+   "rank": 401
   },
   {
    "apartmentKey": "11140-1300",
@@ -12949,7 +13142,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 60.0,
    "calculationVersion": "v1.1",
-   "rank": 396
+   "rank": 402
   },
   {
    "apartmentKey": "11290-84",
@@ -12980,7 +13173,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 115.0,
    "calculationVersion": "v1.1",
-   "rank": 397
+   "rank": 403
   },
   {
    "apartmentKey": "11215-21",
@@ -13011,7 +13204,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 84.8,
    "calculationVersion": "v1.1",
-   "rank": 398
+   "rank": 404
   },
   {
    "apartmentKey": "11500-143",
@@ -13042,7 +13235,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 399
+   "rank": 405
   },
   {
    "apartmentKey": "11350-429",
@@ -13073,7 +13266,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 400
+   "rank": 406
   },
   {
    "apartmentKey": "11740-2664",
@@ -13108,7 +13301,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 401
+   "rank": 407
   },
   {
    "apartmentKey": "11380-11",
@@ -13139,7 +13332,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 84.7,
    "calculationVersion": "v1.1",
-   "rank": 402
+   "rank": 408
   },
   {
    "apartmentKey": "11590-51",
@@ -13172,7 +13365,42 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 60.0,
    "calculationVersion": "v1.1",
-   "rank": 403
+   "rank": 409
+  },
+  {
+   "apartmentKey": "11290-3807",
+   "aptSeq": "3807",
+   "apartmentName": "길음뉴타운8단지(래미안)",
+   "sidoCode": "11",
+   "sggCode": "11290",
+   "areaGroup": 115.0,
+   "referenceMonth": "202607",
+   "baselineMedian": 1545000000.0,
+   "currentMedian": 1600000000,
+   "riseAmount": 55000000,
+   "riseRate": 3.56,
+   "baselineTradeCount": 6,
+   "currentTradeCount": 3,
+   "confidence": "low",
+   "warnings": [
+    "층수 차이(8층 이상 또는 구간 차이)",
+    "서로 다른 세부 전용면적 혼합"
+   ],
+   "region": "11290 길음동",
+   "exactAreas": [
+    114.98,
+    114.99
+   ],
+   "baselineFloorMedian": 14.5,
+   "currentFloorMedian": 6,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": true,
+   "directTradeWarning": false,
+   "compositionWarning": true,
+   "exclusiveAreaGroup": 115.0,
+   "calculationVersion": "v1.1",
+   "rank": 410
   },
   {
    "apartmentKey": "11470-126",
@@ -13203,7 +13431,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 404
+   "rank": 411
   },
   {
    "apartmentKey": "11620-95",
@@ -13234,7 +13462,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 405
+   "rank": 412
   },
   {
    "apartmentKey": "11680-319",
@@ -13265,7 +13493,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 50.0,
    "calculationVersion": "v1.1",
-   "rank": 406
+   "rank": 413
   },
   {
    "apartmentKey": "11710-6266",
@@ -13299,7 +13527,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.8,
    "calculationVersion": "v1.1",
-   "rank": 407
+   "rank": 414
   },
   {
    "apartmentKey": "11530-4392",
@@ -13332,7 +13560,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 408
+   "rank": 415
   },
   {
    "apartmentKey": "11620-4",
@@ -13365,7 +13593,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 59.8,
    "calculationVersion": "v1.1",
-   "rank": 409
+   "rank": 416
   },
   {
    "apartmentKey": "11410-13",
@@ -13396,7 +13624,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 60.0,
    "calculationVersion": "v1.1",
-   "rank": 410
+   "rank": 417
   },
   {
    "apartmentKey": "11680-316",
@@ -13429,7 +13657,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 411
+   "rank": 418
   },
   {
    "apartmentKey": "11620-11",
@@ -13460,7 +13688,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 115.0,
    "calculationVersion": "v1.1",
-   "rank": 412
+   "rank": 419
   },
   {
    "apartmentKey": "11230-10",
@@ -13491,7 +13719,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 413
+   "rank": 420
   },
   {
    "apartmentKey": "11230-81",
@@ -13524,7 +13752,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 414
+   "rank": 421
   },
   {
    "apartmentKey": "11230-3341",
@@ -13561,7 +13789,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 415
+   "rank": 422
   },
   {
    "apartmentKey": "11545-2479",
@@ -13594,7 +13822,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.4,
    "calculationVersion": "v1.1",
-   "rank": 416
+   "rank": 423
   },
   {
    "apartmentKey": "11410-28",
@@ -13627,7 +13855,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 59.6,
    "calculationVersion": "v1.1",
-   "rank": 417
+   "rank": 424
   },
   {
    "apartmentKey": "11410-10",
@@ -13658,7 +13886,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 59.6,
    "calculationVersion": "v1.1",
-   "rank": 418
+   "rank": 425
   },
   {
    "apartmentKey": "11230-2078",
@@ -13693,7 +13921,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 59.9,
    "calculationVersion": "v1.1",
-   "rank": 419
+   "rank": 426
   },
   {
    "apartmentKey": "11410-4947",
@@ -13724,7 +13952,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 72.8,
    "calculationVersion": "v1.1",
-   "rank": 420
+   "rank": 427
   },
   {
    "apartmentKey": "11440-136",
@@ -13755,7 +13983,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 59.9,
    "calculationVersion": "v1.1",
-   "rank": 421
+   "rank": 428
   },
   {
    "apartmentKey": "11560-47",
@@ -13788,7 +14016,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 59.9,
    "calculationVersion": "v1.1",
-   "rank": 422
+   "rank": 429
   },
   {
    "apartmentKey": "11470-5852",
@@ -13821,7 +14049,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 74.6,
    "calculationVersion": "v1.1",
-   "rank": 423
+   "rank": 430
   },
   {
    "apartmentKey": "11200-31",
@@ -13854,7 +14082,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 60.0,
    "calculationVersion": "v1.1",
-   "rank": 424
+   "rank": 431
   },
   {
    "apartmentKey": "11740-129",
@@ -13887,7 +14115,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 59.9,
    "calculationVersion": "v1.1",
-   "rank": 425
+   "rank": 432
   },
   {
    "apartmentKey": "11140-28",
@@ -13920,7 +14148,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 426
+   "rank": 433
   },
   {
    "apartmentKey": "11590-39",
@@ -13951,7 +14179,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 427
+   "rank": 434
   },
   {
    "apartmentKey": "11530-132",
@@ -13982,7 +14210,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 428
+   "rank": 435
   },
   {
    "apartmentKey": "11710-6346",
@@ -14015,43 +14243,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.8,
    "calculationVersion": "v1.1",
-   "rank": 429
-  },
-  {
-   "apartmentKey": "11350-2515",
-   "aptSeq": "2515",
-   "apartmentName": "노원롯데캐슬시그니처",
-   "sidoCode": "11",
-   "sggCode": "11350",
-   "areaGroup": 85.0,
-   "referenceMonth": "202607",
-   "baselineMedian": 1150000000,
-   "currentMedian": 1185000000,
-   "riseAmount": 35000000,
-   "riseRate": 3.04,
-   "baselineTradeCount": 9,
-   "currentTradeCount": 3,
-   "confidence": "low",
-   "warnings": [
-    "층수 차이(8층 이상 또는 구간 차이)",
-    "서로 다른 세부 전용면적 혼합",
-    "직거래 포함 이력 존재"
-   ],
-   "region": "11350 상계동",
-   "exactAreas": [
-    84.999,
-    84.997
-   ],
-   "baselineFloorMedian": 15.5,
-   "currentFloorMedian": 15,
-   "baselineDirectTradeCount": 1,
-   "currentDirectTradeCount": 0,
-   "floorMixWarning": true,
-   "directTradeWarning": true,
-   "compositionWarning": true,
-   "exclusiveAreaGroup": 85.0,
-   "calculationVersion": "v1.1",
-   "rank": 430
+   "rank": 436
   },
   {
    "apartmentKey": "11350-2280",
@@ -14082,7 +14274,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 431
+   "rank": 437
   },
   {
    "apartmentKey": "11590-89",
@@ -14115,7 +14307,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 59.9,
    "calculationVersion": "v1.1",
-   "rank": 432
+   "rank": 438
   }
  ]
 }

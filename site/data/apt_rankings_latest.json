@@ -1,7 +1,7 @@
 {
  "referenceMonth": "202606",
  "status": "stable",
- "collectedAt": "2026-08-14T05:09:35.759984+09:00",
+ "collectedAt": "2026-08-15T05:04:31.169060+09:00",
  "items": [
   {
    "apartmentKey": "51210-167",
@@ -8570,18 +8570,18 @@
    "currentTradeCount": 12,
    "confidence": "medium",
    "warnings": [
-    "층수 차이(8층 이상 또는 구간 차이)"
+    "직거래 포함 이력 존재"
    ],
    "region": "41597 산척동",
    "exactAreas": [
     83.0109
    ],
    "baselineFloorMedian": 12,
-   "currentFloorMedian": 15.5,
+   "currentFloorMedian": 15,
    "baselineDirectTradeCount": 0,
-   "currentDirectTradeCount": 0,
-   "floorMixWarning": true,
-   "directTradeWarning": false,
+   "currentDirectTradeCount": 1,
+   "floorMixWarning": false,
+   "directTradeWarning": true,
    "compositionWarning": true,
    "exclusiveAreaGroup": 83.0,
    "calculationVersion": "v1.1",
