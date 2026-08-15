@@ -3,7 +3,7 @@
  "referenceMonth": "202606",
  "status": "stable",
  "validationStatus": "valid",
- "generatedAt": "2026-08-10T10:06:07.796996+09:00",
+ "generatedAt": "2026-08-16T04:04:17.278065+09:00",
  "calculationVersion": "v1.1",
  "schemaVersion": "v1.0",
  "includedSidoCodes": [
@@ -88,12 +88,12 @@
   "31710"
  ],
  "failedSggCodes": [],
- "rawTradeCount": 7037,
- "validTradeCount": 6790,
- "cancelledTradeCount": 247,
+ "rawTradeCount": 7044,
+ "validTradeCount": 6783,
+ "cancelledTradeCount": 261,
  "directTradeCount": 428,
- "candidateGroupCount": 4208,
- "filteredOutGroupCount": 4143,
+ "candidateGroupCount": 4212,
+ "filteredOutGroupCount": 4147,
  "items": [
   {
    "apartmentKey": "26320-114",
@@ -930,6 +930,37 @@
    "rank": 25
   },
   {
+   "apartmentKey": "30200-66",
+   "aptSeq": "66",
+   "apartmentName": "반석마을7단지(삼부르네상스1단지)",
+   "sidoCode": "30",
+   "sggCode": "30200",
+   "areaGroup": 84.9,
+   "referenceMonth": "202606",
+   "baselineMedian": 380000000,
+   "currentMedian": 414000000.0,
+   "riseAmount": 34000000,
+   "riseRate": 8.95,
+   "baselineTradeCount": 7,
+   "currentTradeCount": 2,
+   "confidence": "medium",
+   "warnings": [],
+   "region": "30200 반석동",
+   "exactAreas": [
+    84.903
+   ],
+   "baselineFloorMedian": 8,
+   "currentFloorMedian": 15.0,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": false,
+   "directTradeWarning": false,
+   "compositionWarning": false,
+   "exclusiveAreaGroup": 84.9,
+   "calculationVersion": "v1.1",
+   "rank": 26
+  },
+  {
    "apartmentKey": "31140-1541",
    "aptSeq": "1541",
    "apartmentName": "울산호수공원대명루첸아파트",
@@ -960,7 +991,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 73.0,
    "calculationVersion": "v1.1",
-   "rank": 26
+   "rank": 27
   },
   {
    "apartmentKey": "30170-168",
@@ -994,7 +1025,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 27
+   "rank": 28
   },
   {
    "apartmentKey": "26350-2092",
@@ -1027,7 +1058,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.6,
    "calculationVersion": "v1.1",
-   "rank": 28
+   "rank": 29
   },
   {
    "apartmentKey": "27200-993",
@@ -1061,7 +1092,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 74.9,
    "calculationVersion": "v1.1",
-   "rank": 29
+   "rank": 30
   },
   {
    "apartmentKey": "31710-715",
@@ -1094,7 +1125,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 30
+   "rank": 31
   },
   {
    "apartmentKey": "26350-2285",
@@ -1127,7 +1158,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 80.9,
    "calculationVersion": "v1.1",
-   "rank": 31
+   "rank": 32
   },
   {
    "apartmentKey": "27260-1517",
@@ -1158,7 +1189,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 32
+   "rank": 33
   },
   {
    "apartmentKey": "27110-336",
@@ -1191,7 +1222,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 33
+   "rank": 34
   },
   {
    "apartmentKey": "26500-2228",
@@ -1217,39 +1248,6 @@
    ],
    "baselineFloorMedian": 11,
    "currentFloorMedian": 18.0,
-   "baselineDirectTradeCount": 0,
-   "currentDirectTradeCount": 0,
-   "floorMixWarning": true,
-   "directTradeWarning": false,
-   "compositionWarning": true,
-   "exclusiveAreaGroup": 84.9,
-   "calculationVersion": "v1.1",
-   "rank": 34
-  },
-  {
-   "apartmentKey": "30200-66",
-   "aptSeq": "66",
-   "apartmentName": "반석마을7단지(삼부르네상스1단지)",
-   "sidoCode": "30",
-   "sggCode": "30200",
-   "areaGroup": 84.9,
-   "referenceMonth": "202606",
-   "baselineMedian": 380000000,
-   "currentMedian": 410000000,
-   "riseAmount": 30000000,
-   "riseRate": 7.89,
-   "baselineTradeCount": 7,
-   "currentTradeCount": 3,
-   "confidence": "low",
-   "warnings": [
-    "층수 차이(8층 이상 또는 구간 차이)"
-   ],
-   "region": "30200 반석동",
-   "exactAreas": [
-    84.903
-   ],
-   "baselineFloorMedian": 8,
-   "currentFloorMedian": 17,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,

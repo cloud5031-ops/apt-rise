@@ -3,7 +3,7 @@
  "referenceMonth": "202607",
  "status": "provisional",
  "validationStatus": "valid",
- "generatedAt": "2026-08-10T10:16:48.636525+09:00",
+ "generatedAt": "2026-08-16T04:14:27.556640+09:00",
  "calculationVersion": "v1.1",
  "schemaVersion": "v1.0",
  "includedSidoCodes": [
@@ -149,12 +149,12 @@
   "52800"
  ],
  "failedSggCodes": [],
- "rawTradeCount": 5264,
- "validTradeCount": 5126,
- "cancelledTradeCount": 138,
- "directTradeCount": 534,
- "candidateGroupCount": 3262,
- "filteredOutGroupCount": 3208,
+ "rawTradeCount": 5451,
+ "validTradeCount": 5285,
+ "cancelledTradeCount": 166,
+ "directTradeCount": 556,
+ "candidateGroupCount": 3334,
+ "filteredOutGroupCount": 3278,
  "items": [
   {
    "apartmentKey": "48123-29",
@@ -791,6 +791,40 @@
    "rank": 19
   },
   {
+   "apartmentKey": "48170-664",
+   "aptSeq": "664",
+   "apartmentName": "신진주역세권우미린더시그니처",
+   "sidoCode": "48",
+   "sggCode": "48170",
+   "areaGroup": 85.0,
+   "referenceMonth": "202607",
+   "baselineMedian": 735000000,
+   "currentMedian": 806250000.0,
+   "riseAmount": 71250000,
+   "riseRate": 9.69,
+   "baselineTradeCount": 15,
+   "currentTradeCount": 2,
+   "confidence": "low",
+   "warnings": [
+    "서로 다른 세부 전용면적 혼합"
+   ],
+   "region": "48170 가좌동",
+   "exactAreas": [
+    84.986,
+    84.9888
+   ],
+   "baselineFloorMedian": 13,
+   "currentFloorMedian": 15.0,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": false,
+   "directTradeWarning": false,
+   "compositionWarning": true,
+   "exclusiveAreaGroup": 85.0,
+   "calculationVersion": "v1.1",
+   "rank": 20
+  },
+  {
    "apartmentKey": "48123-64",
    "aptSeq": "64",
    "apartmentName": "현대2차",
@@ -821,7 +855,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 69.8,
    "calculationVersion": "v1.1",
-   "rank": 20
+   "rank": 21
   },
   {
    "apartmentKey": "48123-44",
@@ -854,7 +888,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 21
+   "rank": 22
   },
   {
    "apartmentKey": "48123-178",
@@ -887,7 +921,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 22
+   "rank": 23
   },
   {
    "apartmentKey": "48170-548",
@@ -923,7 +957,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 23
+   "rank": 24
   },
   {
    "apartmentKey": "52140-539",
@@ -957,7 +991,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 159.2,
    "calculationVersion": "v1.1",
-   "rank": 24
+   "rank": 25
   },
   {
    "apartmentKey": "48170-114",
@@ -988,7 +1022,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 125.6,
    "calculationVersion": "v1.1",
-   "rank": 25
+   "rank": 26
   },
   {
    "apartmentKey": "48220-431",
@@ -1023,7 +1057,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 26
+   "rank": 27
   },
   {
    "apartmentKey": "52113-687",
@@ -1054,7 +1088,40 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 27
+   "rank": 28
+  },
+  {
+   "apartmentKey": "48170-532",
+   "aptSeq": "532",
+   "apartmentName": "혁신도시엔에이치에프10단지",
+   "sidoCode": "48",
+   "sggCode": "48170",
+   "areaGroup": 85.0,
+   "referenceMonth": "202607",
+   "baselineMedian": 507500000.0,
+   "currentMedian": 550000000,
+   "riseAmount": 42500000,
+   "riseRate": 8.37,
+   "baselineTradeCount": 2,
+   "currentTradeCount": 3,
+   "confidence": "low",
+   "warnings": [
+    "직거래 포함 이력 존재"
+   ],
+   "region": "48170 충무공동",
+   "exactAreas": [
+    84.99
+   ],
+   "baselineFloorMedian": 9.5,
+   "currentFloorMedian": 11,
+   "baselineDirectTradeCount": 2,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": false,
+   "directTradeWarning": true,
+   "compositionWarning": true,
+   "exclusiveAreaGroup": 85.0,
+   "calculationVersion": "v1.1",
+   "rank": 29
   },
   {
    "apartmentKey": "48250-1704",
@@ -1087,7 +1154,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 128.6,
    "calculationVersion": "v1.1",
-   "rank": 28
+   "rank": 30
   },
   {
    "apartmentKey": "48170-505",
@@ -1118,7 +1185,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 75.8,
    "calculationVersion": "v1.1",
-   "rank": 29
+   "rank": 31
   },
   {
    "apartmentKey": "48127-817",
@@ -1149,7 +1216,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 30
+   "rank": 32
   },
   {
    "apartmentKey": "48250-1858",
@@ -1182,7 +1249,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 81.8,
    "calculationVersion": "v1.1",
-   "rank": 31
+   "rank": 33
   },
   {
    "apartmentKey": "47290-563",
@@ -1215,7 +1282,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.6,
    "calculationVersion": "v1.1",
-   "rank": 32
+   "rank": 34
   },
   {
    "apartmentKey": "48170-516",
@@ -1248,7 +1315,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 33
+   "rank": 35
   },
   {
    "apartmentKey": "48170-523",
@@ -1281,7 +1348,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 60.0,
    "calculationVersion": "v1.1",
-   "rank": 34
+   "rank": 36
   },
   {
    "apartmentKey": "48170-553",
@@ -1316,40 +1383,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 35
-  },
-  {
-   "apartmentKey": "48123-184",
-   "aptSeq": "184",
-   "apartmentName": "성산반도유보라아이비파크",
-   "sidoCode": "48",
-   "sggCode": "48123",
-   "areaGroup": 64.8,
-   "referenceMonth": "202607",
-   "baselineMedian": 515000000.0,
-   "currentMedian": 552500000.0,
-   "riseAmount": 37500000,
-   "riseRate": 7.28,
-   "baselineTradeCount": 2,
-   "currentTradeCount": 2,
-   "confidence": "low",
-   "warnings": [
-    "비교/기준 기간 거래량 모두 최소 조건(2건)"
-   ],
-   "region": "48123 사파정동",
-   "exactAreas": [
-    64.7713
-   ],
-   "baselineFloorMedian": 7.0,
-   "currentFloorMedian": 10.5,
-   "baselineDirectTradeCount": 0,
-   "currentDirectTradeCount": 0,
-   "floorMixWarning": false,
-   "directTradeWarning": false,
-   "compositionWarning": true,
-   "exclusiveAreaGroup": 64.8,
-   "calculationVersion": "v1.1",
-   "rank": 36
+   "rank": 37
   },
   {
    "apartmentKey": "47170-273",
@@ -1383,7 +1417,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.7,
    "calculationVersion": "v1.1",
-   "rank": 37
+   "rank": 38
   },
   {
    "apartmentKey": "48127-790",
@@ -1416,7 +1450,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 114.1,
    "calculationVersion": "v1.1",
-   "rank": 38
+   "rank": 39
   },
   {
    "apartmentKey": "48127-734",
@@ -1447,7 +1481,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 124.4,
    "calculationVersion": "v1.1",
-   "rank": 39
+   "rank": 40
   },
   {
    "apartmentKey": "52113-730",
@@ -1480,7 +1514,38 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 40
+   "rank": 41
+  },
+  {
+   "apartmentKey": "48123-184",
+   "aptSeq": "184",
+   "apartmentName": "성산반도유보라아이비파크",
+   "sidoCode": "48",
+   "sggCode": "48123",
+   "areaGroup": 64.8,
+   "referenceMonth": "202607",
+   "baselineMedian": 515000000.0,
+   "currentMedian": 548000000,
+   "riseAmount": 33000000,
+   "riseRate": 6.41,
+   "baselineTradeCount": 2,
+   "currentTradeCount": 3,
+   "confidence": "medium",
+   "warnings": [],
+   "region": "48123 사파정동",
+   "exactAreas": [
+    64.7713
+   ],
+   "baselineFloorMedian": 7.0,
+   "currentFloorMedian": 7,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": false,
+   "directTradeWarning": false,
+   "compositionWarning": false,
+   "exclusiveAreaGroup": 64.8,
+   "calculationVersion": "v1.1",
+   "rank": 42
   },
   {
    "apartmentKey": "48170-506",
@@ -1511,7 +1576,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 41
+   "rank": 43
   },
   {
    "apartmentKey": "48123-207",
@@ -1542,7 +1607,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 80.0,
    "calculationVersion": "v1.1",
-   "rank": 42
+   "rank": 44
   },
   {
    "apartmentKey": "52113-692",
@@ -1552,11 +1617,11 @@
    "sggCode": "52113",
    "areaGroup": 85.0,
    "referenceMonth": "202607",
-   "baselineMedian": 509500000.0,
+   "baselineMedian": 509000000,
    "currentMedian": 540000000,
-   "riseAmount": 30500000,
-   "riseRate": 5.99,
-   "baselineTradeCount": 8,
+   "riseAmount": 31000000,
+   "riseRate": 6.09,
+   "baselineTradeCount": 7,
    "currentTradeCount": 3,
    "confidence": "low",
    "warnings": [
@@ -1566,7 +1631,7 @@
    "exactAreas": [
     84.9904
    ],
-   "baselineFloorMedian": 9.0,
+   "baselineFloorMedian": 8,
    "currentFloorMedian": 20,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
@@ -1575,7 +1640,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 43
+   "rank": 45
   },
   {
    "apartmentKey": "47130-1157",
@@ -1608,7 +1673,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 101.8,
    "calculationVersion": "v1.1",
-   "rank": 44
+   "rank": 46
   },
   {
    "apartmentKey": "48170-545",
@@ -1642,7 +1707,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 45
+   "rank": 47
   },
   {
    "apartmentKey": "48123-180",
@@ -1675,7 +1740,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 73.7,
    "calculationVersion": "v1.1",
-   "rank": 46
+   "rank": 48
   },
   {
    "apartmentKey": "48170-536",
@@ -1708,7 +1773,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 47
+   "rank": 49
   },
   {
    "apartmentKey": "48123-205",
@@ -1739,7 +1804,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 60.4,
    "calculationVersion": "v1.1",
-   "rank": 48
+   "rank": 50
   },
   {
    "apartmentKey": "52113-748",
@@ -1774,7 +1839,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 49
+   "rank": 51
   },
   {
    "apartmentKey": "48123-154",
@@ -1809,7 +1874,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 50
+   "rank": 52
   },
   {
    "apartmentKey": "48170-554",
@@ -1842,7 +1907,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 99.9,
    "calculationVersion": "v1.1",
-   "rank": 51
+   "rank": 53
   },
   {
    "apartmentKey": "48123-175",
@@ -1853,14 +1918,13 @@
    "areaGroup": 84.8,
    "referenceMonth": "202607",
    "baselineMedian": 717000000.0,
-   "currentMedian": 750000000.0,
+   "currentMedian": 750000000,
    "riseAmount": 33000000,
    "riseRate": 4.6,
    "baselineTradeCount": 2,
-   "currentTradeCount": 4,
+   "currentTradeCount": 3,
    "confidence": "low",
    "warnings": [
-    "층수 차이(8층 이상 또는 구간 차이)",
     "서로 다른 세부 전용면적 혼합"
    ],
    "region": "48123 가음동",
@@ -1869,15 +1933,15 @@
     84.8074
    ],
    "baselineFloorMedian": 16.0,
-   "currentFloorMedian": 13.5,
+   "currentFloorMedian": 16,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
-   "floorMixWarning": true,
+   "floorMixWarning": false,
    "directTradeWarning": false,
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.8,
    "calculationVersion": "v1.1",
-   "rank": 52
+   "rank": 54
   },
   {
    "apartmentKey": "48123-583",
@@ -1910,7 +1974,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 75.5,
    "calculationVersion": "v1.1",
-   "rank": 53
+   "rank": 55
   },
   {
    "apartmentKey": "52113-761",
@@ -1943,7 +2007,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 106.2,
    "calculationVersion": "v1.1",
-   "rank": 54
+   "rank": 56
   }
  ]
 }

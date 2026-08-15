@@ -3,7 +3,7 @@
  "referenceMonth": "202607",
  "status": "provisional",
  "validationStatus": "valid",
- "generatedAt": "2026-08-10T10:10:44.774449+09:00",
+ "generatedAt": "2026-08-16T04:08:35.506157+09:00",
  "calculationVersion": "v1.1",
  "schemaVersion": "v1.0",
  "includedSidoCodes": [
@@ -119,12 +119,12 @@
   "51830"
  ],
  "failedSggCodes": [],
- "rawTradeCount": 4454,
- "validTradeCount": 4351,
- "cancelledTradeCount": 103,
- "directTradeCount": 483,
- "candidateGroupCount": 2648,
- "filteredOutGroupCount": 2628,
+ "rawTradeCount": 4607,
+ "validTradeCount": 4493,
+ "cancelledTradeCount": 114,
+ "directTradeCount": 508,
+ "candidateGroupCount": 2727,
+ "filteredOutGroupCount": 2708,
  "items": [
   {
    "apartmentKey": "43111-59",
@@ -261,6 +261,39 @@
    "rank": 4
   },
   {
+   "apartmentKey": "43113-474",
+   "aptSeq": "474",
+   "apartmentName": "두산위브지웰시티2차",
+   "sidoCode": "43",
+   "sggCode": "43113",
+   "areaGroup": 80.1,
+   "referenceMonth": "202607",
+   "baselineMedian": 880000000.0,
+   "currentMedian": 1020000000,
+   "riseAmount": 140000000,
+   "riseRate": 15.91,
+   "baselineTradeCount": 14,
+   "currentTradeCount": 3,
+   "confidence": "low",
+   "warnings": [
+    "층수 차이(8층 이상 또는 구간 차이)"
+   ],
+   "region": "43113 복대동",
+   "exactAreas": [
+    80.135
+   ],
+   "baselineFloorMedian": 16.0,
+   "currentFloorMedian": 38,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": true,
+   "directTradeWarning": false,
+   "compositionWarning": true,
+   "exclusiveAreaGroup": 80.1,
+   "calculationVersion": "v1.1",
+   "rank": 5
+  },
+  {
    "apartmentKey": "44133-931",
    "aptSeq": "931",
    "apartmentName": "두정역효성해링턴플레이스",
@@ -292,39 +325,6 @@
    "directTradeWarning": false,
    "compositionWarning": true,
    "exclusiveAreaGroup": 71.4,
-   "calculationVersion": "v1.1",
-   "rank": 5
-  },
-  {
-   "apartmentKey": "43113-474",
-   "aptSeq": "474",
-   "apartmentName": "두산위브지웰시티2차",
-   "sidoCode": "43",
-   "sggCode": "43113",
-   "areaGroup": 80.1,
-   "referenceMonth": "202607",
-   "baselineMedian": 880000000.0,
-   "currentMedian": 1010000000.0,
-   "riseAmount": 130000000,
-   "riseRate": 14.77,
-   "baselineTradeCount": 14,
-   "currentTradeCount": 2,
-   "confidence": "low",
-   "warnings": [
-    "층수 차이(8층 이상 또는 구간 차이)"
-   ],
-   "region": "43113 복대동",
-   "exactAreas": [
-    80.135
-   ],
-   "baselineFloorMedian": 16.0,
-   "currentFloorMedian": 28.5,
-   "baselineDirectTradeCount": 0,
-   "currentDirectTradeCount": 0,
-   "floorMixWarning": true,
-   "directTradeWarning": false,
-   "compositionWarning": true,
-   "exclusiveAreaGroup": 80.1,
    "calculationVersion": "v1.1",
    "rank": 6
   },
@@ -695,43 +695,6 @@
    "rank": 17
   },
   {
-   "apartmentKey": "43114-313",
-   "aptSeq": "313",
-   "apartmentName": "한신더휴센트럴파크",
-   "sidoCode": "43",
-   "sggCode": "43114",
-   "areaGroup": 85.0,
-   "referenceMonth": "202607",
-   "baselineMedian": 490600000.0,
-   "currentMedian": 521500000.0,
-   "riseAmount": 30900000,
-   "riseRate": 6.3,
-   "baselineTradeCount": 24,
-   "currentTradeCount": 2,
-   "confidence": "low",
-   "warnings": [
-    "서로 다른 세부 전용면적 혼합",
-    "직거래 포함 이력 존재"
-   ],
-   "region": "43114 오창읍 각리",
-   "exactAreas": [
-    84.9893,
-    84.9801,
-    84.9823,
-    84.9922
-   ],
-   "baselineFloorMedian": 28.0,
-   "currentFloorMedian": 32.0,
-   "baselineDirectTradeCount": 2,
-   "currentDirectTradeCount": 0,
-   "floorMixWarning": false,
-   "directTradeWarning": true,
-   "compositionWarning": true,
-   "exclusiveAreaGroup": 85.0,
-   "calculationVersion": "v1.1",
-   "rank": 18
-  },
-  {
    "apartmentKey": "36110-393",
    "aptSeq": "393",
    "apartmentName": "호려울마을3단지",
@@ -766,7 +729,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 60.0,
    "calculationVersion": "v1.1",
-   "rank": 19
+   "rank": 18
   },
   {
    "apartmentKey": "44133-860",
@@ -799,7 +762,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 99.3,
    "calculationVersion": "v1.1",
-   "rank": 20
+   "rank": 19
   }
  ]
 }

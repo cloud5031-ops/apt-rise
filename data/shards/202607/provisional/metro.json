@@ -3,7 +3,7 @@
  "referenceMonth": "202607",
  "status": "provisional",
  "validationStatus": "valid",
- "generatedAt": "2026-08-10T10:06:07.796996+09:00",
+ "generatedAt": "2026-08-16T04:04:17.278065+09:00",
  "calculationVersion": "v1.1",
  "schemaVersion": "v1.0",
  "includedSidoCodes": [
@@ -88,12 +88,12 @@
   "31710"
  ],
  "failedSggCodes": [],
- "rawTradeCount": 6004,
- "validTradeCount": 5856,
- "cancelledTradeCount": 148,
- "directTradeCount": 401,
- "candidateGroupCount": 3833,
- "filteredOutGroupCount": 3783,
+ "rawTradeCount": 6292,
+ "validTradeCount": 6123,
+ "cancelledTradeCount": 169,
+ "directTradeCount": 422,
+ "candidateGroupCount": 3978,
+ "filteredOutGroupCount": 3924,
  "items": [
   {
    "apartmentKey": "27110-341",
@@ -202,6 +202,42 @@
    "rank": 3
   },
   {
+   "apartmentKey": "26500-1839",
+   "aptSeq": "1839",
+   "apartmentName": "쌍용예가디오션",
+   "sidoCode": "26",
+   "sggCode": "26500",
+   "areaGroup": 85.0,
+   "referenceMonth": "202607",
+   "baselineMedian": 1000000000,
+   "currentMedian": 1195000000.0,
+   "riseAmount": 195000000,
+   "riseRate": 19.5,
+   "baselineTradeCount": 7,
+   "currentTradeCount": 2,
+   "confidence": "low",
+   "warnings": [
+    "층수 차이(8층 이상 또는 구간 차이)",
+    "서로 다른 세부 전용면적 혼합"
+   ],
+   "region": "26500 광안동",
+   "exactAreas": [
+    84.98,
+    84.9616,
+    84.9897
+   ],
+   "baselineFloorMedian": 4,
+   "currentFloorMedian": 27.5,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": true,
+   "directTradeWarning": false,
+   "compositionWarning": true,
+   "exclusiveAreaGroup": 85.0,
+   "calculationVersion": "v1.1",
+   "rank": 4
+  },
+  {
    "apartmentKey": "30200-52",
    "aptSeq": "52",
    "apartmentName": "한빛",
@@ -232,7 +268,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 142.7,
    "calculationVersion": "v1.1",
-   "rank": 4
+   "rank": 5
   },
   {
    "apartmentKey": "31140-143",
@@ -265,7 +301,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 5
+   "rank": 6
   },
   {
    "apartmentKey": "26530-89",
@@ -296,7 +332,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 6
+   "rank": 7
   },
   {
    "apartmentKey": "26380-1617",
@@ -331,7 +367,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 7
+   "rank": 8
   },
   {
    "apartmentKey": "31140-159",
@@ -364,39 +400,6 @@
    "directTradeWarning": true,
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
-   "calculationVersion": "v1.1",
-   "rank": 8
-  },
-  {
-   "apartmentKey": "30170-85",
-   "aptSeq": "85",
-   "apartmentName": "크로바",
-   "sidoCode": "30",
-   "sggCode": "30170",
-   "areaGroup": 134.9,
-   "referenceMonth": "202607",
-   "baselineMedian": 1795000000,
-   "currentMedian": 2070000000.0,
-   "riseAmount": 275000000,
-   "riseRate": 15.32,
-   "baselineTradeCount": 3,
-   "currentTradeCount": 2,
-   "confidence": "low",
-   "warnings": [
-    "층수 차이(8층 이상 또는 구간 차이)"
-   ],
-   "region": "30170 둔산동",
-   "exactAreas": [
-    134.91
-   ],
-   "baselineFloorMedian": 4,
-   "currentFloorMedian": 10.0,
-   "baselineDirectTradeCount": 0,
-   "currentDirectTradeCount": 0,
-   "floorMixWarning": true,
-   "directTradeWarning": false,
-   "compositionWarning": true,
-   "exclusiveAreaGroup": 134.9,
    "calculationVersion": "v1.1",
    "rank": 9
   },
@@ -608,6 +611,39 @@
    "rank": 15
   },
   {
+   "apartmentKey": "30170-85",
+   "aptSeq": "85",
+   "apartmentName": "크로바",
+   "sidoCode": "30",
+   "sggCode": "30170",
+   "areaGroup": 134.9,
+   "referenceMonth": "202607",
+   "baselineMedian": 1795000000,
+   "currentMedian": 2000000000,
+   "riseAmount": 205000000,
+   "riseRate": 11.42,
+   "baselineTradeCount": 3,
+   "currentTradeCount": 3,
+   "confidence": "low",
+   "warnings": [
+    "층수 차이(8층 이상 또는 구간 차이)"
+   ],
+   "region": "30170 둔산동",
+   "exactAreas": [
+    134.91
+   ],
+   "baselineFloorMedian": 4,
+   "currentFloorMedian": 6,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": true,
+   "directTradeWarning": false,
+   "compositionWarning": true,
+   "exclusiveAreaGroup": 134.9,
+   "calculationVersion": "v1.1",
+   "rank": 16
+  },
+  {
    "apartmentKey": "26470-1460",
    "aptSeq": "1460",
    "apartmentName": "센텀리버SKVIEW",
@@ -638,7 +674,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 64.0,
    "calculationVersion": "v1.1",
-   "rank": 16
+   "rank": 17
   },
   {
    "apartmentKey": "26530-994",
@@ -672,7 +708,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 72.6,
    "calculationVersion": "v1.1",
-   "rank": 17
+   "rank": 18
   },
   {
    "apartmentKey": "30140-79",
@@ -703,7 +739,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 84.8,
    "calculationVersion": "v1.1",
-   "rank": 18
+   "rank": 19
   },
   {
    "apartmentKey": "30230-26",
@@ -737,7 +773,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 19
+   "rank": 20
   },
   {
    "apartmentKey": "27290-1382",
@@ -770,7 +806,43 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 59.9,
    "calculationVersion": "v1.1",
-   "rank": 20
+   "rank": 21
+  },
+  {
+   "apartmentKey": "26350-2107",
+   "aptSeq": "2107",
+   "apartmentName": "센텀동부센트레빌",
+   "sidoCode": "26",
+   "sggCode": "26350",
+   "areaGroup": 85.0,
+   "referenceMonth": "202607",
+   "baselineMedian": 524500000.0,
+   "currentMedian": 575000000,
+   "riseAmount": 50500000,
+   "riseRate": 9.63,
+   "baselineTradeCount": 6,
+   "currentTradeCount": 3,
+   "confidence": "low",
+   "warnings": [
+    "층수 차이(8층 이상 또는 구간 차이)",
+    "서로 다른 세부 전용면적 혼합"
+   ],
+   "region": "26350 재송동",
+   "exactAreas": [
+    84.9749,
+    84.9926,
+    84.9885
+   ],
+   "baselineFloorMedian": 8.0,
+   "currentFloorMedian": 17,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": true,
+   "directTradeWarning": false,
+   "compositionWarning": true,
+   "exclusiveAreaGroup": 85.0,
+   "calculationVersion": "v1.1",
+   "rank": 22
   },
   {
    "apartmentKey": "30110-946",
@@ -805,7 +877,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 21
+   "rank": 23
   },
   {
    "apartmentKey": "26320-1606",
@@ -838,7 +910,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 73.1,
    "calculationVersion": "v1.1",
-   "rank": 22
+   "rank": 24
   },
   {
    "apartmentKey": "27230-240",
@@ -871,7 +943,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 23
+   "rank": 25
   },
   {
    "apartmentKey": "31110-1257",
@@ -905,7 +977,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 125.5,
    "calculationVersion": "v1.1",
-   "rank": 24
+   "rank": 26
   },
   {
    "apartmentKey": "26320-1640",
@@ -942,7 +1014,41 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 25
+   "rank": 27
+  },
+  {
+   "apartmentKey": "26500-2352",
+   "aptSeq": "2352",
+   "apartmentName": "광안KCC스위첸하버뷰",
+   "sidoCode": "26",
+   "sggCode": "26500",
+   "areaGroup": 40.4,
+   "referenceMonth": "202607",
+   "baselineMedian": 487500000.0,
+   "currentMedian": 529000000.0,
+   "riseAmount": 41500000,
+   "riseRate": 8.51,
+   "baselineTradeCount": 2,
+   "currentTradeCount": 2,
+   "confidence": "low",
+   "warnings": [
+    "층수 차이(8층 이상 또는 구간 차이)",
+    "비교/기준 기간 거래량 모두 최소 조건(2건)"
+   ],
+   "region": "26500 민락동",
+   "exactAreas": [
+    40.3845
+   ],
+   "baselineFloorMedian": 15.5,
+   "currentFloorMedian": 10.5,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": true,
+   "directTradeWarning": false,
+   "compositionWarning": true,
+   "exclusiveAreaGroup": 40.4,
+   "calculationVersion": "v1.1",
+   "rank": 28
   },
   {
    "apartmentKey": "26440-58",
@@ -977,7 +1083,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 26
+   "rank": 29
   },
   {
    "apartmentKey": "27230-989",
@@ -1010,7 +1116,42 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 27
+   "rank": 30
+  },
+  {
+   "apartmentKey": "31140-1364",
+   "aptSeq": "1364",
+   "apartmentName": "울산신정푸르지오",
+   "sidoCode": "31",
+   "sggCode": "31140",
+   "areaGroup": 85.0,
+   "referenceMonth": "202607",
+   "baselineMedian": 690000000,
+   "currentMedian": 744000000.0,
+   "riseAmount": 54000000,
+   "riseRate": 7.83,
+   "baselineTradeCount": 9,
+   "currentTradeCount": 2,
+   "confidence": "low",
+   "warnings": [
+    "층수 차이(8층 이상 또는 구간 차이)",
+    "서로 다른 세부 전용면적 혼합"
+   ],
+   "region": "31140 신정동",
+   "exactAreas": [
+    84.9569,
+    84.9627
+   ],
+   "baselineFloorMedian": 14,
+   "currentFloorMedian": 24.5,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": true,
+   "directTradeWarning": false,
+   "compositionWarning": true,
+   "exclusiveAreaGroup": 85.0,
+   "calculationVersion": "v1.1",
+   "rank": 31
   },
   {
    "apartmentKey": "31110-1207",
@@ -1043,7 +1184,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 28
+   "rank": 32
   },
   {
    "apartmentKey": "27260-1327",
@@ -1077,7 +1218,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 29
+   "rank": 33
   },
   {
    "apartmentKey": "27110-274",
@@ -1108,7 +1249,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 30
+   "rank": 34
   },
   {
    "apartmentKey": "30170-1049",
@@ -1145,7 +1286,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 31
+   "rank": 35
   },
   {
    "apartmentKey": "26470-1920",
@@ -1178,7 +1319,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 75.9,
    "calculationVersion": "v1.1",
-   "rank": 32
+   "rank": 36
   },
   {
    "apartmentKey": "27260-1498",
@@ -1213,7 +1354,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 33
+   "rank": 37
   },
   {
    "apartmentKey": "26320-152",
@@ -1244,7 +1385,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 34
+   "rank": 38
   },
   {
    "apartmentKey": "30170-104",
@@ -1277,7 +1418,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 101.8,
    "calculationVersion": "v1.1",
-   "rank": 35
+   "rank": 39
   },
   {
    "apartmentKey": "26350-121",
@@ -1310,7 +1451,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 36
+   "rank": 40
   },
   {
    "apartmentKey": "26500-29",
@@ -1341,38 +1482,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 131.3,
    "calculationVersion": "v1.1",
-   "rank": 37
-  },
-  {
-   "apartmentKey": "30170-87",
-   "aptSeq": "87",
-   "apartmentName": "한마루아파트",
-   "sidoCode": "30",
-   "sggCode": "30170",
-   "areaGroup": 101.9,
-   "referenceMonth": "202607",
-   "baselineMedian": 997000000.0,
-   "currentMedian": 1060000000,
-   "riseAmount": 63000000,
-   "riseRate": 6.32,
-   "baselineTradeCount": 10,
-   "currentTradeCount": 3,
-   "confidence": "medium",
-   "warnings": [],
-   "region": "30170 둔산동",
-   "exactAreas": [
-    101.94
-   ],
-   "baselineFloorMedian": 6.5,
-   "currentFloorMedian": 11,
-   "baselineDirectTradeCount": 0,
-   "currentDirectTradeCount": 0,
-   "floorMixWarning": false,
-   "directTradeWarning": false,
-   "compositionWarning": false,
-   "exclusiveAreaGroup": 101.9,
-   "calculationVersion": "v1.1",
-   "rank": 38
+   "rank": 41
   },
   {
    "apartmentKey": "31200-357",
@@ -1405,7 +1515,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 39
+   "rank": 42
   },
   {
    "apartmentKey": "30170-44",
@@ -1438,7 +1548,38 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.3,
    "calculationVersion": "v1.1",
-   "rank": 40
+   "rank": 43
+  },
+  {
+   "apartmentKey": "30170-87",
+   "aptSeq": "87",
+   "apartmentName": "한마루아파트",
+   "sidoCode": "30",
+   "sggCode": "30170",
+   "areaGroup": 101.9,
+   "referenceMonth": "202607",
+   "baselineMedian": 997000000.0,
+   "currentMedian": 1055000000.0,
+   "riseAmount": 58000000,
+   "riseRate": 5.82,
+   "baselineTradeCount": 10,
+   "currentTradeCount": 4,
+   "confidence": "medium",
+   "warnings": [],
+   "region": "30170 둔산동",
+   "exactAreas": [
+    101.94
+   ],
+   "baselineFloorMedian": 6.5,
+   "currentFloorMedian": 12.5,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": false,
+   "directTradeWarning": false,
+   "compositionWarning": false,
+   "exclusiveAreaGroup": 101.9,
+   "calculationVersion": "v1.1",
+   "rank": 44
   },
   {
    "apartmentKey": "30200-14",
@@ -1471,7 +1612,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 41
+   "rank": 45
   },
   {
    "apartmentKey": "27230-1402",
@@ -1504,7 +1645,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 42
+   "rank": 46
   },
   {
    "apartmentKey": "27260-1616",
@@ -1522,6 +1663,7 @@
    "currentTradeCount": 3,
    "confidence": "low",
    "warnings": [
+    "층수 차이(8층 이상 또는 구간 차이)",
     "서로 다른 세부 전용면적 혼합",
     "직거래 포함 이력 존재"
    ],
@@ -1532,15 +1674,15 @@
     84.9911
    ],
    "baselineFloorMedian": 39.5,
-   "currentFloorMedian": 45,
+   "currentFloorMedian": 30.0,
    "baselineDirectTradeCount": 5,
-   "currentDirectTradeCount": 0,
-   "floorMixWarning": false,
+   "currentDirectTradeCount": 1,
+   "floorMixWarning": true,
    "directTradeWarning": true,
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 43
+   "rank": 47
   },
   {
    "apartmentKey": "30170-85",
@@ -1571,7 +1713,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 114.6,
    "calculationVersion": "v1.1",
-   "rank": 44
+   "rank": 48
   },
   {
    "apartmentKey": "30200-727",
@@ -1606,7 +1748,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.8,
    "calculationVersion": "v1.1",
-   "rank": 45
+   "rank": 49
   },
   {
    "apartmentKey": "26290-3240",
@@ -1637,78 +1779,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 59.9,
    "calculationVersion": "v1.1",
-   "rank": 46
-  },
-  {
-   "apartmentKey": "27110-325",
-   "aptSeq": "325",
-   "apartmentName": "청라힐스자이",
-   "sidoCode": "27",
-   "sggCode": "27110",
-   "areaGroup": 84.9,
-   "referenceMonth": "202607",
-   "baselineMedian": 830000000,
-   "currentMedian": 868500000.0,
-   "riseAmount": 38500000,
-   "riseRate": 4.64,
-   "baselineTradeCount": 3,
-   "currentTradeCount": 2,
-   "confidence": "low",
-   "warnings": [
-    "층수 차이(8층 이상 또는 구간 차이)",
-    "서로 다른 세부 전용면적 혼합"
-   ],
-   "region": "27110 남산동",
-   "exactAreas": [
-    84.8688,
-    84.8634
-   ],
-   "baselineFloorMedian": 11,
-   "currentFloorMedian": 22.0,
-   "baselineDirectTradeCount": 0,
-   "currentDirectTradeCount": 0,
-   "floorMixWarning": true,
-   "directTradeWarning": false,
-   "compositionWarning": true,
-   "exclusiveAreaGroup": 84.9,
-   "calculationVersion": "v1.1",
-   "rank": 47
-  },
-  {
-   "apartmentKey": "30200-683",
-   "aptSeq": "683",
-   "apartmentName": "문지효성해링턴플레이스",
-   "sidoCode": "30",
-   "sggCode": "30200",
-   "areaGroup": 85.0,
-   "referenceMonth": "202607",
-   "baselineMedian": 710000000,
-   "currentMedian": 742500000.0,
-   "riseAmount": 32500000,
-   "riseRate": 4.58,
-   "baselineTradeCount": 7,
-   "currentTradeCount": 2,
-   "confidence": "low",
-   "warnings": [
-    "층수 차이(8층 이상 또는 구간 차이)",
-    "서로 다른 세부 전용면적 혼합"
-   ],
-   "region": "30200 문지동",
-   "exactAreas": [
-    84.954,
-    84.986,
-    84.978
-   ],
-   "baselineFloorMedian": 17,
-   "currentFloorMedian": 9.5,
-   "baselineDirectTradeCount": 0,
-   "currentDirectTradeCount": 0,
-   "floorMixWarning": true,
-   "directTradeWarning": false,
-   "compositionWarning": true,
-   "exclusiveAreaGroup": 85.0,
-   "calculationVersion": "v1.1",
-   "rank": 48
+   "rank": 50
   },
   {
    "apartmentKey": "27260-1330",
@@ -1739,7 +1810,43 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 143.8,
    "calculationVersion": "v1.1",
-   "rank": 49
+   "rank": 51
+  },
+  {
+   "apartmentKey": "30200-683",
+   "aptSeq": "683",
+   "apartmentName": "문지효성해링턴플레이스",
+   "sidoCode": "30",
+   "sggCode": "30200",
+   "areaGroup": 85.0,
+   "referenceMonth": "202607",
+   "baselineMedian": 710000000,
+   "currentMedian": 740000000,
+   "riseAmount": 30000000,
+   "riseRate": 4.23,
+   "baselineTradeCount": 7,
+   "currentTradeCount": 3,
+   "confidence": "low",
+   "warnings": [
+    "층수 차이(8층 이상 또는 구간 차이)",
+    "서로 다른 세부 전용면적 혼합"
+   ],
+   "region": "30200 문지동",
+   "exactAreas": [
+    84.954,
+    84.986,
+    84.978
+   ],
+   "baselineFloorMedian": 17,
+   "currentFloorMedian": 8,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": true,
+   "directTradeWarning": false,
+   "compositionWarning": true,
+   "exclusiveAreaGroup": 85.0,
+   "calculationVersion": "v1.1",
+   "rank": 52
   },
   {
    "apartmentKey": "27260-1536",
@@ -1772,7 +1879,38 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 77.7,
    "calculationVersion": "v1.1",
-   "rank": 50
+   "rank": 53
+  },
+  {
+   "apartmentKey": "27260-1332",
+   "aptSeq": "1332",
+   "apartmentName": "범어삼성쉐르빌",
+   "sidoCode": "27",
+   "sggCode": "27260",
+   "areaGroup": 84.9,
+   "referenceMonth": "202607",
+   "baselineMedian": 947000000,
+   "currentMedian": 977500000.0,
+   "riseAmount": 30500000,
+   "riseRate": 3.22,
+   "baselineTradeCount": 3,
+   "currentTradeCount": 2,
+   "confidence": "medium",
+   "warnings": [],
+   "region": "27260 범어동",
+   "exactAreas": [
+    84.9356
+   ],
+   "baselineFloorMedian": 7,
+   "currentFloorMedian": 11.0,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": false,
+   "directTradeWarning": false,
+   "compositionWarning": false,
+   "exclusiveAreaGroup": 84.9,
+   "calculationVersion": "v1.1",
+   "rank": 54
   }
  ]
 }
