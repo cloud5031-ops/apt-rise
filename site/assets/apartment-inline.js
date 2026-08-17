@@ -780,6 +780,11 @@
     var regionEl = active.row.querySelector(".name-col div");
     if (regionEl) regionText = regionEl.textContent.trim();
     var place = [regionText, data.dongName].filter(Boolean).join(" · ");
+    // 건축년도는 상세 JSON이 아니라 순위 항목에 실려 오므로 행의 data 속성에서 읽는다.
+    var buildYear = Number(active.row.getAttribute("data-build-year"));
+    var buildYearText = (Number.isFinite(buildYear) && buildYear > 0)
+      ? Math.trunc(buildYear) + "년 건축"
+      : "건축년도 미상";
 
     var areaBtns = data.availableAreas.map(function (a) {
       return '<button type="button" class="apt-inline-area" data-inline-area="' + a + '"' +
@@ -798,6 +803,7 @@
         '<div>' +
           '<strong class="apt-inline-title">' + escapeHtml(data.apartmentName) + '</strong>' +
           (place ? '<div class="apt-inline-place">' + escapeHtml(place) + '</div>' : '') +
+          '<div class="apt-inline-place">' + escapeHtml(buildYearText) + '</div>' +
         '</div>' +
         '<button type="button" class="apt-inline-close" data-inline-close="1">접기</button>' +
       '</div>' +

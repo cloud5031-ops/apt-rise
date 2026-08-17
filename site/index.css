@@ -29,6 +29,13 @@
   th,td{padding:10px 8px; text-align:right; border-bottom:1px solid var(--line);
         white-space:nowrap}
   th{color:var(--sub); font-weight:500; font-size:.78rem}
+  /* 정렬 헤더. 기존 th 서식을 그대로 물려받아 목록 레이아웃을 바꾸지 않는다. */
+  th .sort-header{all:unset; display:inline; cursor:pointer; text-align:right;
+        color:inherit; font:inherit; line-height:inherit}
+  th .sort-header:focus-visible{outline:2px solid var(--ink); outline-offset:2px; border-radius:3px}
+  th .sort-arrow{opacity:.55; font-size:.72rem}
+  th[aria-sort="ascending"], th[aria-sort="descending"]{color:var(--ink)}
+  th[aria-sort="ascending"] .sort-arrow, th[aria-sort="descending"] .sort-arrow{opacity:1}
   th:nth-child(2), td:nth-child(2){text-align:left}
   td.name{text-align:left; max-width:280px; overflow:hidden; text-overflow:ellipsis; white-space:normal}
   .rate{font-weight:700}

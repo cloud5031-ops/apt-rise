@@ -152,11 +152,16 @@ def main():
     # 3. 배포
     os.makedirs(config.SITE_DATA_DIR, exist_ok=True)
     
+    # 조건을 통과한 그룹은 자르지 않고 전부 싣는다.
+    # 예전에는 상위 300건만 남겼는데, 그 컷 때문에 상승률이 낮은 달의 인천처럼
+    # 지역 전체가 통째로 사라졌다 (202606: 인천 24건이 전국 332위 이하라 0건이 됨).
+    # 목록 길이는 프론트에서 렌더링 단위로 다룬다.
     stable_out = {
         "referenceMonth": stable_month,
         "status": "stable",
         "collectedAt": now,
-        "items": stable_items[:300],
+        "itemCount": len(stable_items),
+        "items": stable_items,
     }
     stable_path = os.path.join(config.SITE_DATA_DIR, f"apt_rankings_{stable_month}.json")
     latest_path = os.path.join(config.SITE_DATA_DIR, "apt_rankings_latest.json")
@@ -177,7 +182,8 @@ def main():
             "referenceMonth": provisional_month,
             "status": "provisional",
             "collectedAt": now,
-            "items": provisional_items[:300],
+            "itemCount": len(provisional_items),
+            "items": provisional_items,
         }
         provisional_path = os.path.join(config.SITE_DATA_DIR, f"apt_rankings_{provisional_month}.json")
         save_json_atomically(provisional_out, provisional_path)

@@ -170,8 +170,59 @@ const state = {
   aptSubMacroRegion: "경상",
   aptMicroRegion: "서울 전체",
   dataMode: "stable",
-  confFilter: "all"
+  confFilter: "all",
+  // 헤더 클릭 정렬. 새로고침하면 기본값으로 돌아간다(저장하지 않는다).
+  aptSortKey: "riseRate",
+  aptSortDir: "desc",
+  regionSortKey: "momRate",
+  regionSortDir: "desc"
 };
+
+// ── 헤더 클릭 정렬 공통 ────────────────────────────────────────────
+// 화면 문자열("12억", "+10.2%")이 아니라 원본 숫자 필드로만 비교한다.
+function sortableNumber(v) {
+  if (v === null || v === undefined || v === "") return null;
+  const n = Number(v);
+  return Number.isFinite(n) ? n : null;
+}
+
+// 값이 없는 항목은 오름/내림에 관계없이 항상 뒤로 보낸다.
+// 반환값이 0이면 호출부가 다음 tie-break로 넘어간다.
+function compareNumericWithNullsLast(a, b, dir) {
+  const na = sortableNumber(a);
+  const nb = sortableNumber(b);
+  if (na === null && nb === null) return 0;
+  if (na === null) return 1;
+  if (nb === null) return -1;
+  if (na === nb) return 0;
+  return dir === "asc" ? na - nb : nb - na;
+}
+
+const KO = (a, b) => String(a ?? "").localeCompare(String(b ?? ""), "ko");
+
+// 같은 헤더 재클릭이면 방향만 뒤집고, 다른 헤더면 항상 내림차순부터 시작한다.
+function nextSortDirection(currentKey, currentDir, clickedKey) {
+  if (currentKey !== clickedKey) return "desc";
+  return currentDir === "desc" ? "asc" : "desc";
+}
+
+function ariaSortValue(activeKey, dir, key) {
+  if (activeKey !== key) return "none";
+  return dir === "asc" ? "ascending" : "descending";
+}
+
+// 비활성 ↕ / 활성 ↓·↑
+function sortIndicator(activeKey, dir, key) {
+  if (activeKey !== key) return "↕";
+  return dir === "asc" ? "↑" : "↓";
+}
+
+function sortHeaderButton(key, label, sub, activeKey, dir, attr) {
+  const indicator = sortIndicator(activeKey, dir, key);
+  const subHtml = sub ? `<br><span style="font-weight:normal;font-size:0.75rem">${sub}</span>` : "";
+  return `<button type="button" class="sort-header" ${attr}="${key}">` +
+    `${label} <span class="sort-arrow" aria-hidden="true">${indicator}</span>${subHtml}</button>`;
+}
 
 const SGG_CODE_MAP = {
   // 서울
@@ -182,7 +233,8 @@ const SGG_CODE_MAP = {
   "27110": "중구", "27140": "동구", "27170": "서구", "27200": "남구", "27230": "북구", "27260": "수성구", "27290": "달서구", "27710": "달성군", "27720": "군위군",
   // 인천 (구/신)
   "28110": "중구", "28140": "동구", "28177": "미추홀구", "28185": "연수구", "28200": "남동구", "28237": "부평구", "28245": "계양구", "28260": "서구", "28710": "강화군", "28720": "옹진군",
-  "28730": "제물포구", "28740": "영종구", "28750": "검단구",
+  // 개편 후 신설 구. 코드와 이름 모두 data/regions.json 기준이다.
+  "28125": "제물포구", "28155": "영종구", "28275": "서해구", "28290": "검단구",
   // 광주
   "29110": "동구", "29140": "서구", "29155": "남구", "29170": "북구", "29200": "광산구",
   // 대전
@@ -197,7 +249,8 @@ const SGG_CODE_MAP = {
   "41111": "수원시 장안구", "41113": "수원시 권선구", "41115": "수원시 팔달구", "41117": "수원시 영통구", 
   "41131": "성남시 수정구", "41133": "성남시 중원구", "41135": "성남시 분당구", 
   "41171": "안양시 만안구", "41173": "안양시 동안구",
-  "41192": "부천시 원미구", "41193": "부천시 소사구", "41194": "부천시 오정구",
+  // 부천시 일반구는 41192 원미 / 41194 소사 / 41196 오정 (data/regions.json).
+  "41192": "부천시 원미구", "41194": "부천시 소사구", "41196": "부천시 오정구",
   "41271": "안산시 상록구", "41273": "안산시 단원구",
   "41281": "고양시 덕양구", "41285": "고양시 일산동구", "41287": "고양시 일산서구",
   "41461": "용인시 처인구", "41463": "용인시 기흥구", "41465": "용인시 수지구",
@@ -210,10 +263,12 @@ const SGG_CODE_MAP = {
   "44130": "천안시", "44131": "천안시 동남구", "44133": "천안시 서북구", "44150": "공주시", "44180": "보령시", "44200": "아산시", "44210": "서산시", "44230": "논산시", "44250": "계룡시", "44270": "당진시", "44710": "금산군", "44760": "부여군", "44770": "서천군", "44790": "청양군", "44800": "홍성군", "44810": "예산군", "44825": "태안군",
   // 전북
   "45110": "전주시", "45111": "전주시 완산구", "45113": "전주시 덕진구", "45130": "군산시", "45140": "익산시", "45180": "정읍시", "45190": "남원시", "45210": "김제시", "45710": "완주군", "45720": "진안군", "45730": "무주군", "45740": "장수군", "45750": "임실군", "45770": "순창군", "45790": "고창군", "45800": "부안군",
+  // 전북특별자치도(52). 위 45 블록은 옛 코드로 들어온 과거 데이터용으로 남겨둔다.
+  "52110": "전주시", "52111": "전주시 완산구", "52113": "전주시 덕진구", "52130": "군산시", "52140": "익산시", "52180": "정읍시", "52190": "남원시", "52210": "김제시", "52710": "완주군", "52720": "진안군", "52730": "무주군", "52740": "장수군", "52750": "임실군", "52770": "순창군", "52790": "고창군", "52800": "부안군",
   // 전남
   "46110": "목포시", "46130": "여수시", "46150": "순천시", "46170": "나주시", "46230": "광양시", "46710": "담양군", "46720": "곡성군", "46730": "구례군", "46770": "고흥군", "46780": "보성군", "46790": "화순군", "46800": "장흥군", "46810": "강진군", "46820": "해남군", "46830": "영암군", "46840": "무안군", "46860": "함평군", "46870": "영광군", "46880": "장성군", "46890": "완도군", "46900": "진도군", "46910": "신안군",
   // 경북
-  "47110": "포항시", "47111": "포항시 남구", "47113": "포항시 북구", "47130": "경주시", "47150": "김천시", "47170": "안동시", "47190": "구미시", "47210": "영주시", "47230": "영천시", "47250": "상주시", "47280": "문경시", "47290": "경산시", "47720": "군위군", "47730": "의성군", "47750": "청송군", "47760": "영양군", "47770": "영덕군", "47820": "청도군", "47830": "고령군", "47840": "성주군", "47850": "칠곡군", "47900": "예천군", "47920": "봉화군", "47930": "울진군", "47940": "울릉군",
+  "47110": "포항시", "47111": "포항시 남구", "47113": "포항시 북구", "47130": "경주시", "47150": "김천시", "47170": "안동시", "47190": "구미시", "47210": "영주시", "47230": "영천시", "47250": "상주시", "47280": "문경시", "47290": "경산시", "47730": "의성군", "47750": "청송군", "47760": "영양군", "47770": "영덕군", "47820": "청도군", "47830": "고령군", "47840": "성주군", "47850": "칠곡군", "47900": "예천군", "47920": "봉화군", "47930": "울진군", "47940": "울릉군",
   // 경남
   "48120": "창원시", "48121": "창원시 의창구", "48123": "창원시 성산구", "48125": "창원시 마산합포구", "48127": "창원시 마산회원구", "48129": "창원시 진해구", "48170": "진주시", "48220": "통영시", "48240": "사천시", "48250": "김해시", "48270": "밀양시", "48310": "거제시", "48330": "양산시", "48720": "의령군", "48730": "함안군", "48740": "창녕군", "48820": "고성군", "48840": "남해군", "48850": "하동군", "48860": "산청군", "48870": "함양군", "48880": "거창군", "48890": "합천군",
   // 제주
@@ -226,15 +281,18 @@ const OFFICIAL_REGION_TREE = {
   "11": ["11110", "11140", "11170", "11200", "11215", "11230", "11260", "11290", "11305", "11320", "11350", "11380", "11410", "11440", "11470", "11500", "11530", "11545", "11560", "11590", "11620", "11650", "11680", "11710", "11740"],
   "26": ["26110", "26140", "26170", "26200", "26230", "26260", "26290", "26320", "26350", "26380", "26410", "26440", "26470", "26500", "26530", "26710"],
   "27": ["27110", "27140", "27170", "27200", "27230", "27260", "27290", "27710", "27720"],
+  // 인천 구 개편 전 코드. 현재 data/regions.json에는 없고 수집 데이터에도 없지만
+  // 옛 데이터가 들어올 때를 위해 남겨둔다.
   "28_old": ["28110", "28140", "28177", "28185", "28200", "28237", "28245", "28260", "28710", "28720"],
-  "28_new": ["28730", "28740", "28177", "28185", "28200", "28237", "28245", "28750", "28710", "28720"],
+  // 개편 후 코드. data/regions.json의 인천 11개와 정확히 일치한다.
+  "28_new": ["28125", "28155", "28177", "28185", "28200", "28237", "28245", "28275", "28290", "28710", "28720"],
   "29": ["29110", "29140", "29155", "29170", "29200"],
   "30": ["30110", "30140", "30170", "30200", "30230"],
   "31": ["31110", "31140", "31170", "31200", "31710"],
   "36": ["36110"],
   "41": [
     { type: "parent", parentCode: "41280", children: ["41281", "41285", "41287"] },
-    { type: "parent", parentCode: "41190", children: ["41192", "41193", "41194"] },
+    { type: "parent", parentCode: "41190", children: ["41192", "41194", "41196"] },
     { type: "parent", parentCode: "41130", children: ["41131", "41133", "41135"] },
     { type: "parent", parentCode: "41110", children: ["41111", "41113", "41115", "41117"] },
     { type: "parent", parentCode: "41270", children: ["41271", "41273"] },
@@ -258,21 +316,28 @@ const OFFICIAL_REGION_TREE = {
   "46": ["46110", "46130", "46150", "46170", "46230", "46710", "46720", "46730", "46770", "46780", "46790", "46800", "46810", "46820", "46830", "46840", "46860", "46870", "46880", "46890", "46900", "46910"],
   "47": [
     { type: "parent", parentCode: "47110", children: ["47111", "47113"] },
-    { type: "standalone", codes: ["47130", "47150", "47170", "47190", "47210", "47230", "47250", "47280", "47290", "47720", "47730", "47750", "47760", "47770", "47820", "47830", "47840", "47850", "47900", "47920", "47930", "47940"] }
+    // 군위군은 대구로 넘어가 27720이 되었다. regions.json에도 47720은 없다.
+    { type: "standalone", codes: ["47130", "47150", "47170", "47190", "47210", "47230", "47250", "47280", "47290", "47730", "47750", "47760", "47770", "47820", "47830", "47840", "47850", "47900", "47920", "47930", "47940"] }
   ],
   "48": [
     { type: "parent", parentCode: "48120", children: ["48121", "48123", "48125", "48127", "48129"] },
     { type: "standalone", codes: ["48170", "48220", "48240", "48250", "48270", "48310", "48330", "48720", "48730", "48740", "48820", "48840", "48850", "48860", "48870", "48880", "48890"] }
   ],
   "50": ["50110", "50130"],
-  "51": ["51110", "51130", "51150", "51170", "51190", "51210", "51230", "51720", "51730", "51750", "51760", "51770", "51780", "51790", "51800", "51810", "51820", "51830"]
+  "51": ["51110", "51130", "51150", "51170", "51190", "51210", "51230", "51720", "51730", "51750", "51760", "51770", "51780", "51790", "51800", "51810", "51820", "51830"],
+  // 전북특별자치도. 45를 대체한 현행 코드로, regions.json의 16개 시군구가 기준이다.
+  // 전주시만 일반구(완산·덕진)를 가져 parent 구조를 쓴다.
+  "52": [
+    { type: "parent", parentCode: "52110", children: ["52111", "52113"] },
+    { type: "standalone", codes: ["52130", "52140", "52180", "52190", "52210", "52710", "52720", "52730", "52740", "52750", "52770", "52790", "52800"] }
+  ]
 };
 
 
 SGG_CODE_MAP["41190"] = "부천시";
 SGG_CODE_MAP["41192"] = "부천시 원미구";
-SGG_CODE_MAP["41193"] = "부천시 소사구";
-SGG_CODE_MAP["41194"] = "부천시 오정구";
+SGG_CODE_MAP["41194"] = "부천시 소사구";
+SGG_CODE_MAP["41196"] = "부천시 오정구";
 SGG_CODE_MAP["41590"] = "화성시";
 SGG_CODE_MAP["41595"] = "화성시 병점구";
 SGG_CODE_MAP["41597"] = "화성시 동탄구";
@@ -286,7 +351,10 @@ const MACRO_GROUPS = [
   { id: "인천", match: ["인천"] },
   { id: "강원", match: ["강원"] },
   { id: "충청", match: ["대전", "세종", "충북", "충남"] },
-  { id: "전라", match: ["광주", "전북", "전남"] },
+  // 시군구 지수는 시군구코드가 아니라 R-ONE 지역명 문자열로 묶인다. 현재 데이터는
+  // 광주·전남을 '전남광주' 한 토큰으로 내려주므로, 이게 빠지면 11개 지역이
+  // 지역별 보기에서 통째로 사라진다. 옛 토큰도 과거 데이터용으로 남긴다.
+  { id: "전라", match: ["광주", "전북", "전남", "전남광주"] },
   { id: "경상", match: ["부산", "대구", "울산", "경북", "경남"] },
   { id: "제주", match: ["제주"] }
 ];
@@ -297,7 +365,8 @@ const APT_SUBMACRO = {
   '지방': [
     { id: '강원', match: ['51'] },
     { id: '충청', match: ['30', '36', '43', '44'] },
-    { id: '전라', match: ['29', '45', '46'] },
+    // 45는 전북의 옛 코드. 현재 regions.json은 52만 쓰지만 과거 데이터 호환을 위해 남긴다.
+    { id: '전라', match: ['29', '45', '46', '52'] },
     { id: '경상', match: ['26', '27', '31', '47', '48'] },
     { id: '제주', match: ['50'] }
   ]
@@ -306,8 +375,25 @@ const SIDO_NAMES = {
   '11': '서울', '26': '부산', '27': '대구', '28': '인천', '29': '광주',
   '30': '대전', '31': '울산', '36': '세종', '41': '경기', '43': '충북',
   '44': '충남', '45': '전북', '46': '전남', '47': '경북', '48': '경남',
-  '50': '제주', '51': '강원'
+  '50': '제주', '51': '강원', '52': '전북'
 };
+
+// 현행 코드로 대체된 옛 시도코드. 매핑은 과거 데이터를 위해 남기되,
+// 해당 코드의 항목이 실제로 없으면 지역 목록에 중복 블록을 만들지 않는다.
+const LEGACY_SIDO_CODES = { '45': '52' };
+
+// 인천 구 개편 전 시군구 코드.
+const INCHEON_LEGACY_SGG = ['28110', '28140', '28260'];
+
+// 개편 전/후 트리 중 어느 쪽을 그릴지 고른다.
+// 기준월로 나누던 예전 방식은 실제 데이터와 맞지 않았다 — 개편 시점 이전인
+// 202605·202606 집계에도 이미 신설 코드(영종·서해·검단) 거래가 들어 있어서
+// 그 단지들이 지역 목록에서 통째로 빠졌다. 데이터에 옛 코드가 실제로 있을
+// 때만 옛 트리를 쓴다.
+function incheonTreeKey(items) {
+  const hasLegacy = items.some(i => INCHEON_LEGACY_SGG.includes(i.sggCode));
+  return hasLegacy ? '28_old' : '28_new';
+}
 
 function getAptSidoMatch(macroId, subMacroId) {
   if (macroId === '서울') return ['11'];
@@ -516,18 +602,23 @@ function renderAptMicroRegions() {
   const isTopAllSelected = state.aptMicroRegion === topName + ' 전체';
   addOption(topName + ' 전체', topName + ' 전체', macroTotal, isTopAllSelected);
   
-  // Choose correct Incheon version based on referenceMonth
   const mode = document.querySelector('input[name="dataMode"]:checked').value;
   const d = (mode === 'provisional' ? state.aptProvisional : state.aptStable);
   const refMonth = (d && d.referenceMonth) || "202606";
-  
+  const incheonKey = incheonTreeKey(items);
+
   sidos.forEach(sido => {
+    // 45(전북)는 52(전북특별자치도)로 대체된 옛 시도코드다. 두 매핑을 모두 들고 있어야
+    // 과거 45 데이터가 표시되지만, 그대로 두면 '전북' 블록이 두 번 나온다.
+    // 실제 45 항목이 있을 때만 옛 블록을 그린다.
+    if (LEGACY_SIDO_CODES[sido] && getTotalCountForSido(sido) === 0) return;
+
     let treeKey = sido;
-    if (sido === '28') treeKey = parseInt(refMonth) >= 202607 ? '28_new' : '28_old';
-    
+    if (sido === '28') treeKey = incheonKey;
+
     const tree = OFFICIAL_REGION_TREE[treeKey] || [];
     if (tree.length === 0) return;
-    
+
     const isMultiSido = sidos.length > 1;
     if (isMultiSido) {
       addOption(null, SIDO_NAMES[sido] || sido, null, false, true);
@@ -542,7 +633,7 @@ function renderAptMicroRegions() {
        });
     };
     
-    if (treeKey === '41' || treeKey === '43' || treeKey === '44' || treeKey === '45' || treeKey === '47' || treeKey === '48') {
+    if (treeKey === '41' || treeKey === '43' || treeKey === '44' || treeKey === '45' || treeKey === '47' || treeKey === '48' || treeKey === '52') {
       // Tree with parents and standalones
       const parents = tree.filter(n => n.type === 'parent').sort((a,b) => (SGG_CODE_MAP[a.parentCode]||'').localeCompare(SGG_CODE_MAP[b.parentCode]||''));
       const standalones = tree.find(n => n.type === 'standalone')?.codes || [];
@@ -621,6 +712,14 @@ function formatAreaLabel(item) {
   return `${displayM2}㎡ (${displayPyeong}평)`;
 }
 
+// 표시 전용 건축년도 라벨. buildYear는 예전 JSON에 없을 수 있는 선택 필드라
+// 값이 없거나 0/비정상이면 "미상"으로 떨어뜨리고 "0년"·"null년"은 만들지 않는다.
+function formatBuildYearLabel(item) {
+  const year = Number(item && item.buildYear);
+  if (!Number.isFinite(year) || year <= 0) return "건축년도 미상";
+  return `${Math.trunc(year)}년 건축`;
+}
+
 const rate = v => v == null ? "–" :
   `<span class="rate ${v>0?"up":v<0?"down":""}">${v>0?"+":""}${v.toFixed(2)}%</span>`;
 const confLabel = { high:"높음", medium:"보통", low:"낮음" };
@@ -635,6 +734,41 @@ async function loadJson(url){
     if(!r.ok) return { error: true };
     return await r.json();
   }catch{ return { error: true }; }
+}
+
+// 시군구 표의 정렬 가능한 컬럼 → region_rankings JSON의 실제 숫자 필드.
+const REGION_SORT_FIELDS = {
+  momRate: "momRate",
+  threeMonthRate: "threeMonthRate",
+  yoyRate: "yoyRate"
+};
+
+// regionName은 "경기>서해안권>화성시>동탄구" 꼴이라 시도명은 첫 조각,
+// 시군구명은 권역 조각을 걷어낸 나머지다.
+function regionSidoName(item) {
+  return String(item.regionName || "").split(">")[0] || "";
+}
+function regionLocalName(item) {
+  return String(item.regionName || "").split(">")
+    .filter(p => !p.endsWith("권") && !p.endsWith("지역"))
+    .slice(1).join(" ");
+}
+
+// 1차 사용자 선택값 → 2차 momRate DESC → 3차 시도명 → 4차 시군구명.
+// 기존 기본 정렬(momRate DESC)을 2차 기준으로 그대로 재사용한다.
+function sortRegionItems(items, key, dir) {
+  const field = REGION_SORT_FIELDS[key] || REGION_SORT_FIELDS.momRate;
+  return items.sort((a, b) => {
+    const primary = compareNumericWithNullsLast(a[field], b[field], dir);
+    if (primary !== 0) return primary;
+    if (field !== "momRate") {
+      const byMom = compareNumericWithNullsLast(a.momRate, b.momRate, "desc");
+      if (byMom !== 0) return byMom;
+    }
+    const bySido = KO(regionSidoName(a), regionSidoName(b));
+    if (bySido !== 0) return bySido;
+    return KO(regionLocalName(a), regionLocalName(b));
+  });
 }
 
 function renderRegionRankingTable(d){
@@ -664,6 +798,8 @@ function renderRegionRankingTable(d){
      return `<p class="empty">선택한 지역의 순위 데이터가 없습니다.</p>`;
   }
   
+  filtered = sortRegionItems(filtered.slice(), state.regionSortKey, state.regionSortDir);
+
   const max = Math.max(...filtered.map(i=>Math.abs(i.momRate||0)), 0.01);
   const rows = filtered.map((i, idx) => {
     const parts = i.regionName.split('>').filter(p => !p.endsWith('권') && !p.endsWith('지역'));
@@ -674,8 +810,15 @@ function renderRegionRankingTable(d){
     <td class="hide-m">${rate(i.threeMonthRate)}</td>
     <td class="hide-m">${rate(i.yoyRate)}</td></tr>`;
   }).join("");
-  return `<table><thead><tr><th>순위</th><th>지역</th><th>전월 대비</th>
-    <th class="hide-m">3개월</th><th class="hide-m">전년 동월</th></tr></thead>
+  const sk = state.regionSortKey, sd = state.regionSortDir;
+  const regionHeader = (key, label, cls) =>
+    `<th ${cls} aria-sort="${ariaSortValue(sk, sd, key)}">` +
+    sortHeaderButton(key, label, "", sk, sd, "data-region-sort") + `</th>`;
+
+  return `<table><thead><tr><th>순위</th><th>지역</th>
+    ${regionHeader("momRate", "전월 대비", "")}
+    ${regionHeader("threeMonthRate", "3개월", 'class="hide-m"')}
+    ${regionHeader("yoyRate", "전년 동월", 'class="hide-m"')}</tr></thead>
     <tbody>${rows}</tbody></table>`;
 }
 
@@ -791,6 +934,49 @@ function normalizeAptRankingItem(raw) {
   };
 }
 
+// 정렬 가능한 컬럼 → merged JSON의 실제 숫자 필드.
+// normalizeAptRankingItem을 거친 뒤의 이름이다.
+const APT_SORT_FIELDS = {
+  baselineMedian: "baselineMedian",
+  currentMedian: "currentMedian",
+  riseRate: "riseRate"
+};
+
+// 1차 사용자 선택값 → 2차 riseRate DESC → 3차 단지명 → 4차 면적그룹.
+// 기존 기본 정렬(riseRate DESC)을 2차 기준으로 그대로 재사용한다.
+function sortAptItems(items, key, dir) {
+  const field = APT_SORT_FIELDS[key] || APT_SORT_FIELDS.riseRate;
+  return items.sort((a, b) => {
+    const primary = compareNumericWithNullsLast(a[field], b[field], dir);
+    if (primary !== 0) return primary;
+    if (field !== "riseRate") {
+      const byRise = compareNumericWithNullsLast(a.riseRate, b.riseRate, "desc");
+      if (byRise !== 0) return byRise;
+    }
+    const byName = KO(a.apartmentName, b.apartmentName);
+    if (byName !== 0) return byName;
+    return compareNumericWithNullsLast(a.areaGroup, b.areaGroup, "asc");
+  });
+}
+
+// 데이터는 조건을 통과한 전부를 싣는다. 화면은 여기서 끊는다.
+const APT_PAGE_SIZE = 100;
+let aptVisibleCount = APT_PAGE_SIZE;
+let aptListSignature = "";
+
+// 탭·집계·지역·필터가 바뀌면 다시 처음부터 보여준다.
+// 개별 핸들러를 고치는 대신 렌더 시점에 조건 조합을 비교해, 새 진입점이
+// 생겨도 페이징 리셋을 빠뜨리지 않는다.
+function currentAptSignature(d) {
+  const mode = document.querySelector('input[name="dataMode"]:checked');
+  const filt = document.querySelector('input[name="confFilter"]:checked');
+  return [
+    state.apartmentView, state.aptMacroRegion, state.aptSubMacroRegion,
+    state.aptMicroRegion, mode && mode.value, filt && filt.value,
+    d && d.referenceMonth, state.aptSortKey, state.aptSortDir
+  ].join("|");
+}
+
 function renderApartmentRankingList(d){
   if (d === null) return `<p class="empty">불러오는 중…</p>`;
   if(d && d.error) return `<p class="empty">개별 아파트 데이터를 불러오지 못했습니다.</p>`;
@@ -843,16 +1029,23 @@ function renderApartmentRankingList(d){
 
   if(filtered.length === 0) return `<p class="empty">선택한 지역과 조건에 해당하는 아파트 순위가 없습니다.</p>`;
 
-  // 3. 순위 재계산 (상승률 내림차순 정렬 후 순위 부여)
-  filtered.sort((a,b) => b.riseRate - a.riseRate);
+  // 3. 정렬 (기본 상승률 내림차순, 헤더 클릭으로 변경) 후 순위 부여
+  sortAptItems(filtered, state.aptSortKey, state.aptSortDir);
 
+  const signature = currentAptSignature(d);
+  if (signature !== aptListSignature) {
+    aptListSignature = signature;
+    aptVisibleCount = APT_PAGE_SIZE;
+  }
+  const shown = Math.min(aptVisibleCount, filtered.length);
 
-  const rows = filtered.slice(0,100).map((i, idx)=>{
+  const rows = filtered.slice(0, shown).map((i, idx)=>{
     const warnHtml = i.compositionWarning ? `<span class="warn-icon" tabindex="0" data-reasons="${(i.warnings||[]).join('<br>')}">⚠️</span>` : "";
     const dtInfo = (i.baselineDirectTradeCount || i.currentDirectTradeCount) ? 
       `<div style="font-size:0.75rem; color:#d6293e; margin-top:2px;">직거래 이력 (과거 ${i.baselineDirectTradeCount||0}건, 현재 ${i.currentDirectTradeCount||0}건)</div>` : "";
       
     const areaText = formatAreaLabel(i);
+    const buildYearText = formatBuildYearLabel(i);
 
     const baseFloorHtml = (i.baselineFloorMedian != null && isFinite(i.baselineFloorMedian)) 
       ? `<br><span style="font-size:0.75rem;color:var(--sub)">거래층 중앙값 ${i.baselineFloorMedian}층</span>` 
@@ -869,11 +1062,12 @@ function renderApartmentRankingList(d){
     }
 
     return `
-    <tr class="apt-row" data-apt-key="${i.apartmentKey}" role="button" tabindex="0" aria-expanded="false">
+    <tr class="apt-row" data-apt-key="${i.apartmentKey}" data-build-year="${(Number.isFinite(Number(i.buildYear)) && Number(i.buildYear) > 0) ? Math.trunc(Number(i.buildYear)) : ''}" role="button" tabindex="0" aria-expanded="false">
     <td class="rank-col">${idx + 1}</td>
     <td class="name-col">
       <div style="font-size:0.8rem;color:var(--sub)">${regionDisp}</div>
       <b>${i.apartmentName}</b> ${areaText} ${warnHtml}
+      <div style="font-size:0.75rem;color:var(--sub);margin-top:2px;">${buildYearText}</div>
       ${dtInfo}
     </td>
     <td class="hide-m">
@@ -891,11 +1085,20 @@ function renderApartmentRankingList(d){
   
   if(!rows) return `<p class="empty">선택한 지역과 조건에 해당하는 아파트 순위가 없습니다.</p>`;
 
+  const more = filtered.length > shown
+    ? `<button type="button" data-apt-more="1" style="display:block; width:100%; margin-top:12px; padding:11px; font-size:0.85rem; border:1px solid var(--line); border-radius:8px; background:var(--panel); color:var(--ink); cursor:pointer;">${shown}/${filtered.length}건 · 다음 ${Math.min(APT_PAGE_SIZE, filtered.length - shown)}건 더보기</button>`
+    : `<p style="margin-top:12px; text-align:center; font-size:0.8rem; color:var(--sub);">전체 ${filtered.length}건 표시</p>`;
+
+  const sk = state.aptSortKey, sd = state.aptSortDir;
+  const aptHeader = (key, label, sub, cls) =>
+    `<th ${cls} aria-sort="${ariaSortValue(sk, sd, key)}">` +
+    sortHeaderButton(key, label, sub, sk, sd, "data-apt-sort") + `</th>`;
+
   return `<table><thead><tr><th>순위</th><th>단지</th>
-    <th class="hide-m">기준가<br><span style="font-weight:normal;font-size:0.75rem">${baseStr}</span></th>
-    <th>최근가<br><span style="font-weight:normal;font-size:0.75rem">${curStr}</span></th>
-    <th>상승률</th></tr></thead>
-    <tbody>${rows}</tbody></table>`;
+    ${aptHeader("baselineMedian", "기준가", baseStr, 'class="hide-m"')}
+    ${aptHeader("currentMedian", "최근가", curStr, "")}
+    ${aptHeader("riseRate", "상승률", "", "")}</tr></thead>
+    <tbody>${rows}</tbody></table>${more}`;
 }
 
 function updateTabMeta(d, idPrefix, isProvisional=false) {
@@ -1081,6 +1284,33 @@ function renderApp() {
   }
 }
 
+
+// 목록은 innerHTML로 다시 그려지므로 위임으로 받는다.
+document.addEventListener("click", e => {
+  const btn = e.target.closest("[data-apt-more]");
+  if (!btn) return;
+  aptVisibleCount += APT_PAGE_SIZE;
+  renderApp();
+});
+
+// 정렬 헤더도 같은 이유로 위임. 페이징 리셋은 currentAptSignature가 처리한다.
+document.addEventListener("click", e => {
+  const aptBtn = e.target.closest("[data-apt-sort]");
+  if (aptBtn) {
+    const key = aptBtn.dataset.aptSort;
+    state.aptSortDir = nextSortDirection(state.aptSortKey, state.aptSortDir, key);
+    state.aptSortKey = key;
+    renderApp();
+    return;
+  }
+  const regionBtn = e.target.closest("[data-region-sort]");
+  if (regionBtn) {
+    const key = regionBtn.dataset.regionSort;
+    state.regionSortDir = nextSortDirection(state.regionSortKey, state.regionSortDir, key);
+    state.regionSortKey = key;
+    renderApp();
+  }
+});
 
 document.querySelectorAll("#main-nav button").forEach(b=>b.addEventListener("click",()=>{
   document.querySelectorAll("#main-nav button").forEach(x=>x.setAttribute("aria-selected", x===b));

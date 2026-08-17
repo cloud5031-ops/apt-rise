@@ -6,9 +6,26 @@
 import json
 import os
 import sys
-from collections import defaultdict
+from collections import Counter, defaultdict
 from datetime import datetime, timezone
 import zoneinfo
+
+
+def representative_build_year(values):
+    """그룹의 대표 건축년도.
+
+    build_year는 거래 행마다 붙어 오므로 원리상 한 그룹 안에서 값이 갈릴 수
+    있다(오기·재건축). 실측으로는 서울 29,585건 8,811개 그룹에서 충돌이
+    0건이었지만, 평균이나 중앙값 같은 없는 연도를 만들어내지 않도록
+    최빈값을 고르고 동률이면 큰 연도를 택한다.
+    유효한 값이 하나도 없으면 None을 돌려 UI가 '미상'으로 처리하게 한다.
+    """
+    valid = [int(v) for v in (values or []) if v and int(v) > 0]
+    if not valid:
+        return None
+    counts = Counter(valid)
+    top = max(counts.values())
+    return max(year for year, n in counts.items() if n == top)
 
 import config
 import db
@@ -40,7 +57,7 @@ def load_groups(conn, months: list[str], included_sido_codes: list[str] = None) 
         
     rows = conn.execute(
         f"""SELECT apartment_key, exclusive_area, deal_month, deal_amount,
-                   floor, dealing_type, apt_name, sgg_code, umd_name
+                   floor, dealing_type, apt_name, sgg_code, umd_name, build_year
             FROM apartment_trades
             WHERE {where_clause}""",
         params,
@@ -52,9 +69,11 @@ def load_groups(conn, months: list[str], included_sido_codes: list[str] = None) 
         g = groups.setdefault(gkey, {
             "apt_name": r["apt_name"], "sgg_code": r["sgg_code"],
             "umd_name": r["umd_name"], "trades": defaultdict(list),
-            "exact_areas": set(),
+            "exact_areas": set(), "build_years": [],
         })
         g["exact_areas"].add(r["exclusive_area"])
+        if r["build_year"] and r["build_year"] > 0:
+            g["build_years"].append(r["build_year"])
         g["trades"][r["deal_month"]].append({
             "amount": r["deal_amount"],
             "floor": r["floor"] or 0,
@@ -188,6 +207,7 @@ def compute_for_month(conn, ref_month: str, regions: dict, now: str, status: str
                 "sidoCode": sido_str,
                 "sggCode": sgg_str,
                 "areaGroup": ag,
+                "buildYear": representative_build_year(g.get("build_years")),
                 "referenceMonth": ref_month,
                 "baselineMedian": base_median,
                 "currentMedian": cur_median,
