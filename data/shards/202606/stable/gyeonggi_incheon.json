@@ -3,7 +3,7 @@
  "referenceMonth": "202606",
  "status": "stable",
  "validationStatus": "valid",
- "generatedAt": "2026-08-17T19:39:45.246676+09:00",
+ "generatedAt": "2026-08-18T04:49:14.608617+09:00",
  "calculationVersion": "v1.1",
  "schemaVersion": "v1.0",
  "includedSidoCodes": [
@@ -148,8 +148,8 @@
  ],
  "failedSggCodes": [],
  "rawTradeCount": 19242,
- "validTradeCount": 18580,
- "cancelledTradeCount": 662,
+ "validTradeCount": 18578,
+ "cancelledTradeCount": 664,
  "directTradeCount": 596,
  "candidateGroupCount": 8948,
  "filteredOutGroupCount": 8085,
@@ -11247,6 +11247,38 @@
    "rank": 328
   },
   {
+   "apartmentKey": "41597-41590-1067",
+   "aptSeq": "41590-1067",
+   "apartmentName": "신일유토빌",
+   "sidoCode": "41",
+   "sggCode": "41597",
+   "areaGroup": 101.9,
+   "buildYear": 2008,
+   "referenceMonth": "202606",
+   "baselineMedian": 749000000,
+   "currentMedian": 815000000,
+   "riseAmount": 66000000,
+   "riseRate": 8.81,
+   "baselineTradeCount": 9,
+   "currentTradeCount": 7,
+   "confidence": "high",
+   "warnings": [],
+   "region": "41597 석우동",
+   "exactAreas": [
+    101.857
+   ],
+   "baselineFloorMedian": 11,
+   "currentFloorMedian": 7,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": false,
+   "directTradeWarning": false,
+   "compositionWarning": false,
+   "exclusiveAreaGroup": 101.9,
+   "calculationVersion": "v1.1",
+   "rank": 329
+  },
+  {
    "apartmentKey": "41597-41590-1682",
    "aptSeq": "41590-1682",
    "apartmentName": "동탄금강펜테리움센트럴파크Ⅳ",
@@ -11279,7 +11311,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 329
+   "rank": 330
   },
   {
    "apartmentKey": "41310-58",
@@ -11314,7 +11346,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.7,
    "calculationVersion": "v1.1",
-   "rank": 330
+   "rank": 331
   },
   {
    "apartmentKey": "41117-263",
@@ -11348,7 +11380,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.5,
    "calculationVersion": "v1.1",
-   "rank": 331
+   "rank": 332
   },
   {
    "apartmentKey": "41133-2810",
@@ -11380,7 +11412,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 332
+   "rank": 333
   },
   {
    "apartmentKey": "41597-41590-1770",
@@ -11414,7 +11446,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 75.0,
    "calculationVersion": "v1.1",
-   "rank": 333
+   "rank": 334
   },
   {
    "apartmentKey": "41463-835",
@@ -11446,7 +11478,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 334
+   "rank": 335
   },
   {
    "apartmentKey": "41597-41590-996",
@@ -11478,7 +11510,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 72.7,
    "calculationVersion": "v1.1",
-   "rank": 335
+   "rank": 336
   },
   {
    "apartmentKey": "41117-52",
@@ -11513,38 +11545,6 @@
    "directTradeWarning": true,
    "compositionWarning": true,
    "exclusiveAreaGroup": 60.0,
-   "calculationVersion": "v1.1",
-   "rank": 336
-  },
-  {
-   "apartmentKey": "41173-16",
-   "aptSeq": "16",
-   "apartmentName": "샛별한양4-2",
-   "sidoCode": "41",
-   "sggCode": "41173",
-   "areaGroup": 41.3,
-   "buildYear": 1993,
-   "referenceMonth": "202606",
-   "baselineMedian": 440000000,
-   "currentMedian": 478500000.0,
-   "riseAmount": 38500000,
-   "riseRate": 8.75,
-   "baselineTradeCount": 9,
-   "currentTradeCount": 4,
-   "confidence": "medium",
-   "warnings": [],
-   "region": "41173 비산동",
-   "exactAreas": [
-    41.265
-   ],
-   "baselineFloorMedian": 6,
-   "currentFloorMedian": 8.5,
-   "baselineDirectTradeCount": 0,
-   "currentDirectTradeCount": 0,
-   "floorMixWarning": false,
-   "directTradeWarning": false,
-   "compositionWarning": false,
-   "exclusiveAreaGroup": 41.3,
    "calculationVersion": "v1.1",
    "rank": 337
   },
@@ -14636,6 +14636,38 @@
    "rank": 428
   },
   {
+   "apartmentKey": "41173-16",
+   "aptSeq": "16",
+   "apartmentName": "샛별한양4-2",
+   "sidoCode": "41",
+   "sggCode": "41173",
+   "areaGroup": 41.3,
+   "buildYear": 1993,
+   "referenceMonth": "202606",
+   "baselineMedian": 445000000.0,
+   "currentMedian": 478500000.0,
+   "riseAmount": 33500000,
+   "riseRate": 7.53,
+   "baselineTradeCount": 10,
+   "currentTradeCount": 4,
+   "confidence": "medium",
+   "warnings": [],
+   "region": "41173 비산동",
+   "exactAreas": [
+    41.265
+   ],
+   "baselineFloorMedian": 6.0,
+   "currentFloorMedian": 8.5,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": false,
+   "directTradeWarning": false,
+   "compositionWarning": false,
+   "exclusiveAreaGroup": 41.3,
+   "calculationVersion": "v1.1",
+   "rank": 429
+  },
+  {
    "apartmentKey": "41117-34",
    "aptSeq": "34",
    "apartmentName": "신나무실극동",
@@ -14665,7 +14697,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 75.7,
    "calculationVersion": "v1.1",
-   "rank": 429
+   "rank": 430
   },
   {
    "apartmentKey": "41192-216",
@@ -14697,7 +14729,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 51.7,
    "calculationVersion": "v1.1",
-   "rank": 430
+   "rank": 431
   },
   {
    "apartmentKey": "41463-736",
@@ -14733,7 +14765,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.8,
    "calculationVersion": "v1.1",
-   "rank": 431
+   "rank": 432
   },
   {
    "apartmentKey": "41192-321",
@@ -14767,7 +14799,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.8,
    "calculationVersion": "v1.1",
-   "rank": 432
+   "rank": 433
   },
   {
    "apartmentKey": "41171-3120",
@@ -14799,7 +14831,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 39.5,
    "calculationVersion": "v1.1",
-   "rank": 433
+   "rank": 434
   },
   {
    "apartmentKey": "41192-255",
@@ -14831,7 +14863,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 75.2,
    "calculationVersion": "v1.1",
-   "rank": 434
+   "rank": 435
   },
   {
    "apartmentKey": "28185-794",
@@ -14865,7 +14897,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 60.0,
    "calculationVersion": "v1.1",
-   "rank": 435
+   "rank": 436
   },
   {
    "apartmentKey": "41173-97",
@@ -14898,38 +14930,6 @@
    "directTradeWarning": false,
    "compositionWarning": true,
    "exclusiveAreaGroup": 80.4,
-   "calculationVersion": "v1.1",
-   "rank": 436
-  },
-  {
-   "apartmentKey": "41597-41590-1067",
-   "aptSeq": "41590-1067",
-   "apartmentName": "신일유토빌",
-   "sidoCode": "41",
-   "sggCode": "41597",
-   "areaGroup": 101.9,
-   "buildYear": 2008,
-   "referenceMonth": "202606",
-   "baselineMedian": 749000000,
-   "currentMedian": 805000000.0,
-   "riseAmount": 56000000,
-   "riseRate": 7.48,
-   "baselineTradeCount": 9,
-   "currentTradeCount": 8,
-   "confidence": "high",
-   "warnings": [],
-   "region": "41597 석우동",
-   "exactAreas": [
-    101.857
-   ],
-   "baselineFloorMedian": 11,
-   "currentFloorMedian": 9.0,
-   "baselineDirectTradeCount": 0,
-   "currentDirectTradeCount": 0,
-   "floorMixWarning": false,
-   "directTradeWarning": false,
-   "compositionWarning": false,
-   "exclusiveAreaGroup": 101.9,
    "calculationVersion": "v1.1",
    "rank": 437
   },
