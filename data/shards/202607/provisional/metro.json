@@ -3,7 +3,7 @@
  "referenceMonth": "202607",
  "status": "provisional",
  "validationStatus": "valid",
- "generatedAt": "2026-08-17T19:43:35.497906+09:00",
+ "generatedAt": "2026-08-23T04:01:52.593427+09:00",
  "calculationVersion": "v1.1",
  "schemaVersion": "v1.0",
  "includedSidoCodes": [
@@ -88,12 +88,12 @@
   "31710"
  ],
  "failedSggCodes": [],
- "rawTradeCount": 6292,
- "validTradeCount": 6123,
- "cancelledTradeCount": 169,
- "directTradeCount": 422,
- "candidateGroupCount": 3978,
- "filteredOutGroupCount": 3924,
+ "rawTradeCount": 6389,
+ "validTradeCount": 6207,
+ "cancelledTradeCount": 182,
+ "directTradeCount": 431,
+ "candidateGroupCount": 4011,
+ "filteredOutGroupCount": 3955,
  "items": [
   {
    "apartmentKey": "27110-341",
@@ -342,42 +342,6 @@
    "rank": 7
   },
   {
-   "apartmentKey": "26380-1617",
-   "aptSeq": "1617",
-   "apartmentName": "다대동롯데캐슬몰운대",
-   "sidoCode": "26",
-   "sggCode": "26380",
-   "areaGroup": 85.0,
-   "buildYear": 2007,
-   "referenceMonth": "202607",
-   "baselineMedian": 235000000,
-   "currentMedian": 273500000.0,
-   "riseAmount": 38500000,
-   "riseRate": 16.38,
-   "baselineTradeCount": 13,
-   "currentTradeCount": 4,
-   "confidence": "low",
-   "warnings": [
-    "층수 차이(8층 이상 또는 구간 차이)",
-    "서로 다른 세부 전용면적 혼합"
-   ],
-   "region": "26380 다대동",
-   "exactAreas": [
-    84.9748,
-    84.9902
-   ],
-   "baselineFloorMedian": 15,
-   "currentFloorMedian": 16.5,
-   "baselineDirectTradeCount": 0,
-   "currentDirectTradeCount": 0,
-   "floorMixWarning": true,
-   "directTradeWarning": false,
-   "compositionWarning": true,
-   "exclusiveAreaGroup": 85.0,
-   "calculationVersion": "v1.1",
-   "rank": 8
-  },
-  {
    "apartmentKey": "31140-159",
    "aptSeq": "159",
    "apartmentName": "삼산선경",
@@ -410,7 +374,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 9
+   "rank": 8
   },
   {
    "apartmentKey": "26380-1610",
@@ -443,6 +407,42 @@
    "directTradeWarning": false,
    "compositionWarning": true,
    "exclusiveAreaGroup": 59.9,
+   "calculationVersion": "v1.1",
+   "rank": 9
+  },
+  {
+   "apartmentKey": "26380-1617",
+   "aptSeq": "1617",
+   "apartmentName": "다대동롯데캐슬몰운대",
+   "sidoCode": "26",
+   "sggCode": "26380",
+   "areaGroup": 85.0,
+   "buildYear": 2007,
+   "referenceMonth": "202607",
+   "baselineMedian": 235000000,
+   "currentMedian": 267000000,
+   "riseAmount": 32000000,
+   "riseRate": 13.62,
+   "baselineTradeCount": 13,
+   "currentTradeCount": 5,
+   "confidence": "medium",
+   "warnings": [
+    "층수 차이(8층 이상 또는 구간 차이)",
+    "서로 다른 세부 전용면적 혼합"
+   ],
+   "region": "26380 다대동",
+   "exactAreas": [
+    84.9748,
+    84.9902
+   ],
+   "baselineFloorMedian": 15,
+   "currentFloorMedian": 16,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": true,
+   "directTradeWarning": false,
+   "compositionWarning": true,
+   "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
    "rank": 10
   },
@@ -563,11 +563,11 @@
    "areaGroup": 84.9,
    "buildYear": 2022,
    "referenceMonth": "202607",
-   "baselineMedian": 620000000,
+   "baselineMedian": 620000000.0,
    "currentMedian": 696500000.0,
    "riseAmount": 76500000,
    "riseRate": 12.34,
-   "baselineTradeCount": 13,
+   "baselineTradeCount": 12,
    "currentTradeCount": 2,
    "confidence": "low",
    "warnings": [
@@ -580,7 +580,7 @@
     84.9082,
     84.918
    ],
-   "baselineFloorMedian": 15,
+   "baselineFloorMedian": 15.0,
    "currentFloorMedian": 25.0,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
@@ -1594,38 +1594,6 @@
    "rank": 43
   },
   {
-   "apartmentKey": "30170-87",
-   "aptSeq": "87",
-   "apartmentName": "한마루아파트",
-   "sidoCode": "30",
-   "sggCode": "30170",
-   "areaGroup": 101.9,
-   "buildYear": 1992,
-   "referenceMonth": "202607",
-   "baselineMedian": 997000000.0,
-   "currentMedian": 1055000000.0,
-   "riseAmount": 58000000,
-   "riseRate": 5.82,
-   "baselineTradeCount": 10,
-   "currentTradeCount": 4,
-   "confidence": "medium",
-   "warnings": [],
-   "region": "30170 둔산동",
-   "exactAreas": [
-    101.94
-   ],
-   "baselineFloorMedian": 6.5,
-   "currentFloorMedian": 12.5,
-   "baselineDirectTradeCount": 0,
-   "currentDirectTradeCount": 0,
-   "floorMixWarning": false,
-   "directTradeWarning": false,
-   "compositionWarning": false,
-   "exclusiveAreaGroup": 101.9,
-   "calculationVersion": "v1.1",
-   "rank": 44
-  },
-  {
    "apartmentKey": "30200-14",
    "aptSeq": "14",
    "apartmentName": "열매마을7단지(현대1차)",
@@ -1657,7 +1625,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 45
+   "rank": 44
   },
   {
    "apartmentKey": "27230-1402",
@@ -1691,7 +1659,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 46
+   "rank": 45
   },
   {
    "apartmentKey": "27260-1616",
@@ -1728,6 +1696,38 @@
    "directTradeWarning": true,
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
+   "calculationVersion": "v1.1",
+   "rank": 46
+  },
+  {
+   "apartmentKey": "30170-87",
+   "aptSeq": "87",
+   "apartmentName": "한마루아파트",
+   "sidoCode": "30",
+   "sggCode": "30170",
+   "areaGroup": 101.9,
+   "buildYear": 1992,
+   "referenceMonth": "202607",
+   "baselineMedian": 997000000.0,
+   "currentMedian": 1050000000.0,
+   "riseAmount": 53000000,
+   "riseRate": 5.32,
+   "baselineTradeCount": 10,
+   "currentTradeCount": 6,
+   "confidence": "high",
+   "warnings": [],
+   "region": "30170 둔산동",
+   "exactAreas": [
+    101.94
+   ],
+   "baselineFloorMedian": 6.5,
+   "currentFloorMedian": 9.5,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": false,
+   "directTradeWarning": false,
+   "compositionWarning": false,
+   "exclusiveAreaGroup": 101.9,
    "calculationVersion": "v1.1",
    "rank": 47
   },
@@ -1832,6 +1832,41 @@
    "rank": 50
   },
   {
+   "apartmentKey": "31110-2249",
+   "aptSeq": "2249",
+   "apartmentName": "번영로센트리지5단지",
+   "sidoCode": "31",
+   "sggCode": "31110",
+   "areaGroup": 84.9,
+   "buildYear": 2023,
+   "referenceMonth": "202607",
+   "baselineMedian": 831000000.0,
+   "currentMedian": 868500000.0,
+   "riseAmount": 37500000,
+   "riseRate": 4.51,
+   "baselineTradeCount": 4,
+   "currentTradeCount": 4,
+   "confidence": "low",
+   "warnings": [
+    "서로 다른 세부 전용면적 혼합"
+   ],
+   "region": "31110 복산동",
+   "exactAreas": [
+    84.893,
+    84.926
+   ],
+   "baselineFloorMedian": 11.0,
+   "currentFloorMedian": 14.0,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": false,
+   "directTradeWarning": false,
+   "compositionWarning": true,
+   "exclusiveAreaGroup": 84.9,
+   "calculationVersion": "v1.1",
+   "rank": 51
+  },
+  {
    "apartmentKey": "27260-1330",
    "aptSeq": "1330",
    "apartmentName": "두산위브더제니스",
@@ -1861,7 +1896,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 143.8,
    "calculationVersion": "v1.1",
-   "rank": 51
+   "rank": 52
   },
   {
    "apartmentKey": "30200-683",
@@ -1898,7 +1933,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 52
+   "rank": 53
   },
   {
    "apartmentKey": "27260-1536",
@@ -1932,7 +1967,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 77.7,
    "calculationVersion": "v1.1",
-   "rank": 53
+   "rank": 54
   },
   {
    "apartmentKey": "27260-1332",
@@ -1964,7 +1999,41 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 54
+   "rank": 55
+  },
+  {
+   "apartmentKey": "30170-82",
+   "aptSeq": "82",
+   "apartmentName": "영진햇님",
+   "sidoCode": "30",
+   "sggCode": "30170",
+   "areaGroup": 127.6,
+   "buildYear": 1993,
+   "referenceMonth": "202607",
+   "baselineMedian": 1017500000.0,
+   "currentMedian": 1050000000,
+   "riseAmount": 32500000,
+   "riseRate": 3.19,
+   "baselineTradeCount": 2,
+   "currentTradeCount": 3,
+   "confidence": "low",
+   "warnings": [
+    "층수 차이(8층 이상 또는 구간 차이)"
+   ],
+   "region": "30170 둔산동",
+   "exactAreas": [
+    127.56
+   ],
+   "baselineFloorMedian": 3.0,
+   "currentFloorMedian": 14,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": true,
+   "directTradeWarning": false,
+   "compositionWarning": true,
+   "exclusiveAreaGroup": 127.6,
+   "calculationVersion": "v1.1",
+   "rank": 56
   }
  ]
 }

@@ -3,7 +3,7 @@
  "referenceMonth": "202606",
  "status": "stable",
  "validationStatus": "valid",
- "generatedAt": "2026-08-17T19:48:04.330614+09:00",
+ "generatedAt": "2026-08-23T04:05:36.987536+09:00",
  "calculationVersion": "v1.1",
  "schemaVersion": "v1.0",
  "includedSidoCodes": [
@@ -119,12 +119,12 @@
   "51830"
  ],
  "failedSggCodes": [],
- "rawTradeCount": 5048,
- "validTradeCount": 4870,
- "cancelledTradeCount": 178,
- "directTradeCount": 573,
- "candidateGroupCount": 2858,
- "filteredOutGroupCount": 2818,
+ "rawTradeCount": 5046,
+ "validTradeCount": 4861,
+ "cancelledTradeCount": 185,
+ "directTradeCount": 571,
+ "candidateGroupCount": 2853,
+ "filteredOutGroupCount": 2813,
  "items": [
   {
    "apartmentKey": "51210-167",
@@ -275,11 +275,11 @@
    "areaGroup": 80.5,
    "buildYear": 2015,
    "referenceMonth": "202606",
-   "baselineMedian": 765000000.0,
+   "baselineMedian": 760000000,
    "currentMedian": 945000000,
-   "riseAmount": 180000000,
-   "riseRate": 23.53,
-   "baselineTradeCount": 18,
+   "riseAmount": 185000000,
+   "riseRate": 24.34,
+   "baselineTradeCount": 17,
    "currentTradeCount": 5,
    "confidence": "medium",
    "warnings": [
@@ -289,7 +289,7 @@
    "exactAreas": [
     80.499
    ],
-   "baselineFloorMedian": 22.0,
+   "baselineFloorMedian": 23,
    "currentFloorMedian": 21,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
@@ -576,40 +576,6 @@
    "rank": 13
   },
   {
-   "apartmentKey": "43113-426",
-   "aptSeq": "426",
-   "apartmentName": "신영지웰시티1차",
-   "sidoCode": "43",
-   "sggCode": "43113",
-   "areaGroup": 124.8,
-   "buildYear": 2010,
-   "referenceMonth": "202606",
-   "baselineMedian": 1090000000.0,
-   "currentMedian": 1225000000.0,
-   "riseAmount": 135000000,
-   "riseRate": 12.39,
-   "baselineTradeCount": 20,
-   "currentTradeCount": 8,
-   "confidence": "medium",
-   "warnings": [
-    "직거래 포함 이력 존재"
-   ],
-   "region": "43113 복대동",
-   "exactAreas": [
-    124.816
-   ],
-   "baselineFloorMedian": 21.5,
-   "currentFloorMedian": 28.5,
-   "baselineDirectTradeCount": 2,
-   "currentDirectTradeCount": 0,
-   "floorMixWarning": false,
-   "directTradeWarning": true,
-   "compositionWarning": true,
-   "exclusiveAreaGroup": 124.8,
-   "calculationVersion": "v1.1",
-   "rank": 14
-  },
-  {
    "apartmentKey": "43113-532",
    "aptSeq": "532",
    "apartmentName": "청주지웰시티푸르지오",
@@ -642,6 +608,40 @@
    "directTradeWarning": false,
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.7,
+   "calculationVersion": "v1.1",
+   "rank": 14
+  },
+  {
+   "apartmentKey": "43113-426",
+   "aptSeq": "426",
+   "apartmentName": "신영지웰시티1차",
+   "sidoCode": "43",
+   "sggCode": "43113",
+   "areaGroup": 124.8,
+   "buildYear": 2010,
+   "referenceMonth": "202606",
+   "baselineMedian": 1100000000,
+   "currentMedian": 1225000000.0,
+   "riseAmount": 125000000,
+   "riseRate": 11.36,
+   "baselineTradeCount": 19,
+   "currentTradeCount": 8,
+   "confidence": "medium",
+   "warnings": [
+    "직거래 포함 이력 존재"
+   ],
+   "region": "43113 복대동",
+   "exactAreas": [
+    124.816
+   ],
+   "baselineFloorMedian": 21,
+   "currentFloorMedian": 28.5,
+   "baselineDirectTradeCount": 2,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": false,
+   "directTradeWarning": true,
+   "compositionWarning": true,
+   "exclusiveAreaGroup": 124.8,
    "calculationVersion": "v1.1",
    "rank": 15
   },
@@ -989,6 +989,38 @@
    "rank": 25
   },
   {
+   "apartmentKey": "51130-416",
+   "aptSeq": "416",
+   "apartmentName": "원주혁신도시제일풍경채센텀포레",
+   "sidoCode": "51",
+   "sggCode": "51130",
+   "areaGroup": 91.4,
+   "buildYear": 2023,
+   "referenceMonth": "202606",
+   "baselineMedian": 435000000,
+   "currentMedian": 468000000,
+   "riseAmount": 33000000,
+   "riseRate": 7.59,
+   "baselineTradeCount": 7,
+   "currentTradeCount": 5,
+   "confidence": "high",
+   "warnings": [],
+   "region": "51130 반곡동",
+   "exactAreas": [
+    91.4007
+   ],
+   "baselineFloorMedian": 8,
+   "currentFloorMedian": 13,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": false,
+   "directTradeWarning": false,
+   "compositionWarning": false,
+   "exclusiveAreaGroup": 91.4,
+   "calculationVersion": "v1.1",
+   "rank": 26
+  },
+  {
    "apartmentKey": "43113-542",
    "aptSeq": "542",
    "apartmentName": "청주가경아이파크3단지",
@@ -1018,7 +1050,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 105.6,
    "calculationVersion": "v1.1",
-   "rank": 26
+   "rank": 27
   },
   {
    "apartmentKey": "51110-429",
@@ -1052,7 +1084,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 73.4,
    "calculationVersion": "v1.1",
-   "rank": 27
+   "rank": 28
   },
   {
    "apartmentKey": "44133-860",
@@ -1086,7 +1118,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 28
+   "rank": 29
   },
   {
    "apartmentKey": "44133-870",
@@ -1117,38 +1149,6 @@
    "directTradeWarning": false,
    "compositionWarning": false,
    "exclusiveAreaGroup": 59.9,
-   "calculationVersion": "v1.1",
-   "rank": 29
-  },
-  {
-   "apartmentKey": "51130-416",
-   "aptSeq": "416",
-   "apartmentName": "원주혁신도시제일풍경채센텀포레",
-   "sidoCode": "51",
-   "sggCode": "51130",
-   "areaGroup": 91.4,
-   "buildYear": 2023,
-   "referenceMonth": "202606",
-   "baselineMedian": 437500000.0,
-   "currentMedian": 468000000,
-   "riseAmount": 30500000,
-   "riseRate": 6.97,
-   "baselineTradeCount": 8,
-   "currentTradeCount": 5,
-   "confidence": "high",
-   "warnings": [],
-   "region": "51130 반곡동",
-   "exactAreas": [
-    91.4007
-   ],
-   "baselineFloorMedian": 9.0,
-   "currentFloorMedian": 13,
-   "baselineDirectTradeCount": 0,
-   "currentDirectTradeCount": 0,
-   "floorMixWarning": false,
-   "directTradeWarning": false,
-   "compositionWarning": false,
-   "exclusiveAreaGroup": 91.4,
    "calculationVersion": "v1.1",
    "rank": 30
   },

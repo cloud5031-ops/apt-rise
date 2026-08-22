@@ -3,7 +3,7 @@
  "referenceMonth": "202607",
  "status": "provisional",
  "validationStatus": "valid",
- "generatedAt": "2026-08-17T19:53:40.053101+09:00",
+ "generatedAt": "2026-08-23T04:10:14.181614+09:00",
  "calculationVersion": "v1.1",
  "schemaVersion": "v1.0",
  "includedSidoCodes": [
@@ -149,12 +149,12 @@
   "52800"
  ],
  "failedSggCodes": [],
- "rawTradeCount": 5451,
- "validTradeCount": 5285,
- "cancelledTradeCount": 166,
- "directTradeCount": 556,
- "candidateGroupCount": 3334,
- "filteredOutGroupCount": 3278,
+ "rawTradeCount": 5535,
+ "validTradeCount": 5350,
+ "cancelledTradeCount": 185,
+ "directTradeCount": 575,
+ "candidateGroupCount": 3380,
+ "filteredOutGroupCount": 3324,
  "items": [
   {
    "apartmentKey": "48123-29",
@@ -810,6 +810,40 @@
    "rank": 19
   },
   {
+   "apartmentKey": "48127-817",
+   "aptSeq": "817",
+   "apartmentName": "창원메트로시티석전",
+   "sidoCode": "48",
+   "sggCode": "48127",
+   "areaGroup": 85.0,
+   "buildYear": 2019,
+   "referenceMonth": "202607",
+   "baselineMedian": 560000000,
+   "currentMedian": 616500000.0,
+   "riseAmount": 56500000,
+   "riseRate": 10.09,
+   "baselineTradeCount": 3,
+   "currentTradeCount": 2,
+   "confidence": "low",
+   "warnings": [
+    "층수 차이(8층 이상 또는 구간 차이)"
+   ],
+   "region": "48127 석전동",
+   "exactAreas": [
+    84.9952
+   ],
+   "baselineFloorMedian": 11,
+   "currentFloorMedian": 18.5,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": true,
+   "directTradeWarning": false,
+   "compositionWarning": true,
+   "exclusiveAreaGroup": 85.0,
+   "calculationVersion": "v1.1",
+   "rank": 20
+  },
+  {
    "apartmentKey": "48170-664",
    "aptSeq": "664",
    "apartmentName": "신진주역세권우미린더시그니처",
@@ -842,7 +876,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 20
+   "rank": 21
   },
   {
    "apartmentKey": "48123-64",
@@ -876,7 +910,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 69.8,
    "calculationVersion": "v1.1",
-   "rank": 21
+   "rank": 22
   },
   {
    "apartmentKey": "48123-44",
@@ -910,7 +944,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 22
+   "rank": 23
   },
   {
    "apartmentKey": "48123-178",
@@ -937,43 +971,6 @@
    ],
    "baselineFloorMedian": 26,
    "currentFloorMedian": 13,
-   "baselineDirectTradeCount": 0,
-   "currentDirectTradeCount": 0,
-   "floorMixWarning": true,
-   "directTradeWarning": false,
-   "compositionWarning": true,
-   "exclusiveAreaGroup": 85.0,
-   "calculationVersion": "v1.1",
-   "rank": 23
-  },
-  {
-   "apartmentKey": "48170-548",
-   "aptSeq": "548",
-   "apartmentName": "스카이시티프라디움",
-   "sidoCode": "48",
-   "sggCode": "48170",
-   "areaGroup": 85.0,
-   "buildYear": 2019,
-   "referenceMonth": "202607",
-   "baselineMedian": 596500000.0,
-   "currentMedian": 652000000.0,
-   "riseAmount": 55500000,
-   "riseRate": 9.3,
-   "baselineTradeCount": 20,
-   "currentTradeCount": 4,
-   "confidence": "low",
-   "warnings": [
-    "층수 차이(8층 이상 또는 구간 차이)",
-    "서로 다른 세부 전용면적 혼합"
-   ],
-   "region": "48170 가좌동",
-   "exactAreas": [
-    84.9898,
-    84.991,
-    84.9818
-   ],
-   "baselineFloorMedian": 17.0,
-   "currentFloorMedian": 26.5,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -1019,6 +1016,43 @@
    "rank": 25
   },
   {
+   "apartmentKey": "48170-548",
+   "aptSeq": "548",
+   "apartmentName": "스카이시티프라디움",
+   "sidoCode": "48",
+   "sggCode": "48170",
+   "areaGroup": 85.0,
+   "buildYear": 2019,
+   "referenceMonth": "202607",
+   "baselineMedian": 598000000,
+   "currentMedian": 652000000.0,
+   "riseAmount": 54000000,
+   "riseRate": 9.03,
+   "baselineTradeCount": 19,
+   "currentTradeCount": 4,
+   "confidence": "low",
+   "warnings": [
+    "층수 차이(8층 이상 또는 구간 차이)",
+    "서로 다른 세부 전용면적 혼합"
+   ],
+   "region": "48170 가좌동",
+   "exactAreas": [
+    84.9898,
+    84.991,
+    84.9818
+   ],
+   "baselineFloorMedian": 18,
+   "currentFloorMedian": 26.5,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": true,
+   "directTradeWarning": false,
+   "compositionWarning": true,
+   "exclusiveAreaGroup": 85.0,
+   "calculationVersion": "v1.1",
+   "rank": 26
+  },
+  {
    "apartmentKey": "48170-114",
    "aptSeq": "114",
    "apartmentName": "들말흥한타운",
@@ -1048,7 +1082,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 125.6,
    "calculationVersion": "v1.1",
-   "rank": 26
+   "rank": 27
   },
   {
    "apartmentKey": "48220-431",
@@ -1084,7 +1118,41 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 27
+   "rank": 28
+  },
+  {
+   "apartmentKey": "48250-1704",
+   "aptSeq": "1704",
+   "apartmentName": "신리마을중앙하이츠8단지",
+   "sidoCode": "48",
+   "sggCode": "48250",
+   "areaGroup": 128.6,
+   "buildYear": 2009,
+   "referenceMonth": "202607",
+   "baselineMedian": 479000000.0,
+   "currentMedian": 520000000.0,
+   "riseAmount": 41000000,
+   "riseRate": 8.56,
+   "baselineTradeCount": 6,
+   "currentTradeCount": 2,
+   "confidence": "low",
+   "warnings": [
+    "층수 차이(8층 이상 또는 구간 차이)"
+   ],
+   "region": "48250 율하동",
+   "exactAreas": [
+    128.5692
+   ],
+   "baselineFloorMedian": 5.0,
+   "currentFloorMedian": 15.0,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": true,
+   "directTradeWarning": false,
+   "compositionWarning": true,
+   "exclusiveAreaGroup": 128.6,
+   "calculationVersion": "v1.1",
+   "rank": 29
   },
   {
    "apartmentKey": "52113-687",
@@ -1116,7 +1184,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 28
+   "rank": 30
   },
   {
    "apartmentKey": "48170-532",
@@ -1150,41 +1218,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 29
-  },
-  {
-   "apartmentKey": "48250-1704",
-   "aptSeq": "1704",
-   "apartmentName": "신리마을중앙하이츠8단지",
-   "sidoCode": "48",
-   "sggCode": "48250",
-   "areaGroup": 128.6,
-   "buildYear": 2009,
-   "referenceMonth": "202607",
-   "baselineMedian": 480000000,
-   "currentMedian": 520000000.0,
-   "riseAmount": 40000000,
-   "riseRate": 8.33,
-   "baselineTradeCount": 7,
-   "currentTradeCount": 2,
-   "confidence": "low",
-   "warnings": [
-    "층수 차이(8층 이상 또는 구간 차이)"
-   ],
-   "region": "48250 율하동",
-   "exactAreas": [
-    128.5692
-   ],
-   "baselineFloorMedian": 5,
-   "currentFloorMedian": 15.0,
-   "baselineDirectTradeCount": 0,
-   "currentDirectTradeCount": 0,
-   "floorMixWarning": true,
-   "directTradeWarning": false,
-   "compositionWarning": true,
-   "exclusiveAreaGroup": 128.6,
-   "calculationVersion": "v1.1",
-   "rank": 30
+   "rank": 31
   },
   {
    "apartmentKey": "48170-505",
@@ -1215,38 +1249,6 @@
    "directTradeWarning": false,
    "compositionWarning": false,
    "exclusiveAreaGroup": 75.8,
-   "calculationVersion": "v1.1",
-   "rank": 31
-  },
-  {
-   "apartmentKey": "48127-817",
-   "aptSeq": "817",
-   "apartmentName": "창원메트로시티석전",
-   "sidoCode": "48",
-   "sggCode": "48127",
-   "areaGroup": 85.0,
-   "buildYear": 2019,
-   "referenceMonth": "202607",
-   "baselineMedian": 571250000.0,
-   "currentMedian": 616500000.0,
-   "riseAmount": 45250000,
-   "riseRate": 7.92,
-   "baselineTradeCount": 4,
-   "currentTradeCount": 2,
-   "confidence": "medium",
-   "warnings": [],
-   "region": "48127 석전동",
-   "exactAreas": [
-    84.9952
-   ],
-   "baselineFloorMedian": 17.0,
-   "currentFloorMedian": 18.5,
-   "baselineDirectTradeCount": 0,
-   "currentDirectTradeCount": 0,
-   "floorMixWarning": false,
-   "directTradeWarning": false,
-   "compositionWarning": false,
-   "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
    "rank": 32
   },
@@ -1319,6 +1321,40 @@
    "rank": 34
   },
   {
+   "apartmentKey": "48170-554",
+   "aptSeq": "554",
+   "apartmentName": "진주혁신도시중흥에스-클래스센트럴시티2단지",
+   "sidoCode": "48",
+   "sggCode": "48170",
+   "areaGroup": 99.9,
+   "buildYear": 2020,
+   "referenceMonth": "202607",
+   "baselineMedian": 738000000,
+   "currentMedian": 794000000,
+   "riseAmount": 56000000,
+   "riseRate": 7.59,
+   "baselineTradeCount": 3,
+   "currentTradeCount": 3,
+   "confidence": "low",
+   "warnings": [
+    "층수 차이(8층 이상 또는 구간 차이)"
+   ],
+   "region": "48170 충무공동",
+   "exactAreas": [
+    99.8723
+   ],
+   "baselineFloorMedian": 27,
+   "currentFloorMedian": 16,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": true,
+   "directTradeWarning": false,
+   "compositionWarning": true,
+   "exclusiveAreaGroup": 99.9,
+   "calculationVersion": "v1.1",
+   "rank": 35
+  },
+  {
    "apartmentKey": "48170-516",
    "aptSeq": "516",
    "apartmentName": "한림풀에버",
@@ -1350,7 +1386,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 35
+   "rank": 36
   },
   {
    "apartmentKey": "48170-523",
@@ -1384,7 +1420,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 60.0,
    "calculationVersion": "v1.1",
-   "rank": 36
+   "rank": 37
   },
   {
    "apartmentKey": "48170-553",
@@ -1420,7 +1456,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 37
+   "rank": 38
   },
   {
    "apartmentKey": "47170-273",
@@ -1455,7 +1491,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.7,
    "calculationVersion": "v1.1",
-   "rank": 38
+   "rank": 39
   },
   {
    "apartmentKey": "48127-790",
@@ -1489,7 +1525,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 114.1,
    "calculationVersion": "v1.1",
-   "rank": 39
+   "rank": 40
   },
   {
    "apartmentKey": "48127-734",
@@ -1521,7 +1557,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 124.4,
    "calculationVersion": "v1.1",
-   "rank": 40
+   "rank": 41
   },
   {
    "apartmentKey": "52113-730",
@@ -1555,7 +1591,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 41
+   "rank": 42
   },
   {
    "apartmentKey": "48123-184",
@@ -1587,7 +1623,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 64.8,
    "calculationVersion": "v1.1",
-   "rank": 42
+   "rank": 43
   },
   {
    "apartmentKey": "48170-506",
@@ -1619,7 +1655,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 43
+   "rank": 44
   },
   {
    "apartmentKey": "48123-207",
@@ -1651,7 +1687,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 80.0,
    "calculationVersion": "v1.1",
-   "rank": 44
+   "rank": 45
   },
   {
    "apartmentKey": "52113-692",
@@ -1685,7 +1721,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 45
+   "rank": 46
   },
   {
    "apartmentKey": "47130-1157",
@@ -1719,7 +1755,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 101.8,
    "calculationVersion": "v1.1",
-   "rank": 46
+   "rank": 47
   },
   {
    "apartmentKey": "48170-545",
@@ -1754,7 +1790,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 47
+   "rank": 48
   },
   {
    "apartmentKey": "48123-180",
@@ -1787,40 +1823,6 @@
    "directTradeWarning": false,
    "compositionWarning": true,
    "exclusiveAreaGroup": 73.7,
-   "calculationVersion": "v1.1",
-   "rank": 48
-  },
-  {
-   "apartmentKey": "48170-536",
-   "aptSeq": "536",
-   "apartmentName": "이지더원",
-   "sidoCode": "48",
-   "sggCode": "48170",
-   "areaGroup": 85.0,
-   "buildYear": 2018,
-   "referenceMonth": "202607",
-   "baselineMedian": 558000000.0,
-   "currentMedian": 588500000.0,
-   "riseAmount": 30500000,
-   "riseRate": 5.47,
-   "baselineTradeCount": 4,
-   "currentTradeCount": 2,
-   "confidence": "low",
-   "warnings": [
-    "층수 차이(8층 이상 또는 구간 차이)"
-   ],
-   "region": "48170 초전동",
-   "exactAreas": [
-    84.9614
-   ],
-   "baselineFloorMedian": 8.0,
-   "currentFloorMedian": 17.0,
-   "baselineDirectTradeCount": 0,
-   "currentDirectTradeCount": 0,
-   "floorMixWarning": true,
-   "directTradeWarning": false,
-   "compositionWarning": true,
-   "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
    "rank": 49
   },
@@ -1929,18 +1931,18 @@
    "rank": 52
   },
   {
-   "apartmentKey": "48170-554",
-   "aptSeq": "554",
-   "apartmentName": "진주혁신도시중흥에스-클래스센트럴시티2단지",
+   "apartmentKey": "48170-535",
+   "aptSeq": "535",
+   "apartmentName": "진주혁신도시대방노블랜드더캐슬아파트",
    "sidoCode": "48",
    "sggCode": "48170",
-   "areaGroup": 99.9,
-   "buildYear": 2020,
+   "areaGroup": 84.9,
+   "buildYear": 2018,
    "referenceMonth": "202607",
-   "baselineMedian": 738000000,
-   "currentMedian": 772000000.0,
-   "riseAmount": 34000000,
-   "riseRate": 4.61,
+   "baselineMedian": 740000000,
+   "currentMedian": 774500000.0,
+   "riseAmount": 34500000,
+   "riseRate": 4.66,
    "baselineTradeCount": 3,
    "currentTradeCount": 2,
    "confidence": "low",
@@ -1949,16 +1951,16 @@
    ],
    "region": "48170 충무공동",
    "exactAreas": [
-    99.8723
+    84.9474
    ],
-   "baselineFloorMedian": 27,
-   "currentFloorMedian": 10.0,
+   "baselineFloorMedian": 14,
+   "currentFloorMedian": 16.0,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
    "directTradeWarning": false,
    "compositionWarning": true,
-   "exclusiveAreaGroup": 99.9,
+   "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
    "rank": 53
   },
