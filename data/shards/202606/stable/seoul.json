@@ -3,7 +3,7 @@
  "referenceMonth": "202606",
  "status": "stable",
  "validationStatus": "valid",
- "generatedAt": "2026-09-01T08:14:12.702716+09:00",
+ "generatedAt": "2026-09-02T06:48:03.142120+09:00",
  "calculationVersion": "v1.1",
  "schemaVersion": "v1.0",
  "includedSidoCodes": [
@@ -64,12 +64,12 @@
   "11740"
  ],
  "failedSggCodes": [],
- "rawTradeCount": 5315,
- "validTradeCount": 5190,
- "cancelledTradeCount": 125,
+ "rawTradeCount": 5314,
+ "validTradeCount": 5188,
+ "cancelledTradeCount": 126,
  "directTradeCount": 171,
- "candidateGroupCount": 3509,
- "filteredOutGroupCount": 3141,
+ "candidateGroupCount": 3508,
+ "filteredOutGroupCount": 3140,
  "items": [
   {
    "apartmentKey": "11530-56",
@@ -985,6 +985,41 @@
    "rank": 27
   },
   {
+   "apartmentKey": "11740-5273",
+   "aptSeq": "5273",
+   "apartmentName": "올림픽파크포레온",
+   "sidoCode": "11",
+   "sggCode": "11740",
+   "areaGroup": 85.0,
+   "buildYear": 2024,
+   "referenceMonth": "202606",
+   "baselineMedian": 2775000000.0,
+   "currentMedian": 3130000000,
+   "riseAmount": 355000000,
+   "riseRate": 12.79,
+   "baselineTradeCount": 34,
+   "currentTradeCount": 3,
+   "confidence": "low",
+   "warnings": [
+    "서로 다른 세부 전용면적 혼합"
+   ],
+   "region": "11740 둔촌동",
+   "exactAreas": [
+    84.99,
+    84.98
+   ],
+   "baselineFloorMedian": 22.0,
+   "currentFloorMedian": 19,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": false,
+   "directTradeWarning": false,
+   "compositionWarning": true,
+   "exclusiveAreaGroup": 85.0,
+   "calculationVersion": "v1.1",
+   "rank": 28
+  },
+  {
    "apartmentKey": "11350-141",
    "aptSeq": "141",
    "apartmentName": "사슴3",
@@ -1016,41 +1051,6 @@
    "directTradeWarning": true,
    "compositionWarning": true,
    "exclusiveAreaGroup": 39.6,
-   "calculationVersion": "v1.1",
-   "rank": 28
-  },
-  {
-   "apartmentKey": "11740-5273",
-   "aptSeq": "5273",
-   "apartmentName": "올림픽파크포레온",
-   "sidoCode": "11",
-   "sggCode": "11740",
-   "areaGroup": 85.0,
-   "buildYear": 2024,
-   "referenceMonth": "202606",
-   "baselineMedian": 2780000000,
-   "currentMedian": 3130000000,
-   "riseAmount": 350000000,
-   "riseRate": 12.59,
-   "baselineTradeCount": 33,
-   "currentTradeCount": 3,
-   "confidence": "low",
-   "warnings": [
-    "서로 다른 세부 전용면적 혼합"
-   ],
-   "region": "11740 둔촌동",
-   "exactAreas": [
-    84.99,
-    84.98
-   ],
-   "baselineFloorMedian": 22,
-   "currentFloorMedian": 19,
-   "baselineDirectTradeCount": 0,
-   "currentDirectTradeCount": 0,
-   "floorMixWarning": false,
-   "directTradeWarning": false,
-   "compositionWarning": true,
-   "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
    "rank": 29
   },
