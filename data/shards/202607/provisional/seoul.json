@@ -3,7 +3,7 @@
  "referenceMonth": "202607",
  "status": "provisional",
  "validationStatus": "valid",
- "generatedAt": "2026-09-04T06:44:09.213548+09:00",
+ "generatedAt": "2026-09-05T06:29:25.004276+09:00",
  "calculationVersion": "v1.1",
  "schemaVersion": "v1.0",
  "includedSidoCodes": [
@@ -64,12 +64,12 @@
   "11740"
  ],
  "failedSggCodes": [],
- "rawTradeCount": 5626,
- "validTradeCount": 5510,
+ "rawTradeCount": 5633,
+ "validTradeCount": 5517,
  "cancelledTradeCount": 116,
  "directTradeCount": 281,
- "candidateGroupCount": 3484,
- "filteredOutGroupCount": 2995,
+ "candidateGroupCount": 3488,
+ "filteredOutGroupCount": 2999,
  "items": [
   {
    "apartmentKey": "11560-2006",
@@ -8104,6 +8104,38 @@
    "rank": 240
   },
   {
+   "apartmentKey": "11590-3954",
+   "aptSeq": "3954",
+   "apartmentName": "힐스테이트 상도 센트럴파크",
+   "sidoCode": "11",
+   "sggCode": "11590",
+   "areaGroup": 84.6,
+   "buildYear": 2012,
+   "referenceMonth": "202607",
+   "baselineMedian": 1845000000,
+   "currentMedian": 1975000000.0,
+   "riseAmount": 130000000,
+   "riseRate": 7.05,
+   "baselineTradeCount": 7,
+   "currentTradeCount": 4,
+   "confidence": "medium",
+   "warnings": [],
+   "region": "11590 상도동",
+   "exactAreas": [
+    84.6099
+   ],
+   "baselineFloorMedian": 7,
+   "currentFloorMedian": 13.0,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": false,
+   "directTradeWarning": false,
+   "compositionWarning": false,
+   "exclusiveAreaGroup": 84.6,
+   "calculationVersion": "v1.1",
+   "rank": 241
+  },
+  {
    "apartmentKey": "11410-104",
    "aptSeq": "104",
    "apartmentName": "남가좌동현대",
@@ -8135,7 +8167,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 59.4,
    "calculationVersion": "v1.1",
-   "rank": 241
+   "rank": 242
   },
   {
    "apartmentKey": "11410-108",
@@ -8169,7 +8201,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 65.3,
    "calculationVersion": "v1.1",
-   "rank": 242
+   "rank": 243
   },
   {
    "apartmentKey": "11560-2123",
@@ -8201,7 +8233,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 243
+   "rank": 244
   },
   {
    "apartmentKey": "11710-8865",
@@ -8239,7 +8271,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 244
+   "rank": 245
   },
   {
    "apartmentKey": "11350-2280",
@@ -8273,7 +8305,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 245
+   "rank": 246
   },
   {
    "apartmentKey": "11530-3775",
@@ -8308,7 +8340,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 246
+   "rank": 247
   },
   {
    "apartmentKey": "11290-3622",
@@ -8342,7 +8374,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 60.0,
    "calculationVersion": "v1.1",
-   "rank": 247
+   "rank": 248
   },
   {
    "apartmentKey": "11710-59",
@@ -8374,7 +8406,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 84.7,
    "calculationVersion": "v1.1",
-   "rank": 248
+   "rank": 249
   },
   {
    "apartmentKey": "11530-180",
@@ -8406,7 +8438,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 249
+   "rank": 250
   },
   {
    "apartmentKey": "11740-2852",
@@ -8442,7 +8474,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 59.9,
    "calculationVersion": "v1.1",
-   "rank": 250
+   "rank": 251
   },
   {
    "apartmentKey": "11350-31",
@@ -8474,7 +8506,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 49.9,
    "calculationVersion": "v1.1",
-   "rank": 251
+   "rank": 252
   },
   {
    "apartmentKey": "11530-3391",
@@ -8508,38 +8540,6 @@
    "directTradeWarning": false,
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
-   "calculationVersion": "v1.1",
-   "rank": 252
-  },
-  {
-   "apartmentKey": "11590-3954",
-   "aptSeq": "3954",
-   "apartmentName": "힐스테이트 상도 센트럴파크",
-   "sidoCode": "11",
-   "sggCode": "11590",
-   "areaGroup": 84.6,
-   "buildYear": 2012,
-   "referenceMonth": "202607",
-   "baselineMedian": 1845000000,
-   "currentMedian": 1970000000,
-   "riseAmount": 125000000,
-   "riseRate": 6.78,
-   "baselineTradeCount": 7,
-   "currentTradeCount": 3,
-   "confidence": "medium",
-   "warnings": [],
-   "region": "11590 상도동",
-   "exactAreas": [
-    84.6099
-   ],
-   "baselineFloorMedian": 7,
-   "currentFloorMedian": 14,
-   "baselineDirectTradeCount": 0,
-   "currentDirectTradeCount": 0,
-   "floorMixWarning": false,
-   "directTradeWarning": false,
-   "compositionWarning": false,
-   "exclusiveAreaGroup": 84.6,
    "calculationVersion": "v1.1",
    "rank": 253
   },
@@ -12807,6 +12807,42 @@
    "rank": 380
   },
   {
+   "apartmentKey": "11620-6128",
+   "aptSeq": "6128",
+   "apartmentName": "힐스테이트뉴포레",
+   "sidoCode": "11",
+   "sggCode": "11620",
+   "areaGroup": 60.0,
+   "buildYear": 2022,
+   "referenceMonth": "202607",
+   "baselineMedian": 1360000000,
+   "currentMedian": 1425000000.0,
+   "riseAmount": 65000000,
+   "riseRate": 4.78,
+   "baselineTradeCount": 17,
+   "currentTradeCount": 2,
+   "confidence": "low",
+   "warnings": [
+    "층수 차이(8층 이상 또는 구간 차이)",
+    "서로 다른 세부 전용면적 혼합"
+   ],
+   "region": "11620 신림동",
+   "exactAreas": [
+    59.9882,
+    59.9986
+   ],
+   "baselineFloorMedian": 15,
+   "currentFloorMedian": 20.5,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": true,
+   "directTradeWarning": false,
+   "compositionWarning": true,
+   "exclusiveAreaGroup": 60.0,
+   "calculationVersion": "v1.1",
+   "rank": 381
+  },
+  {
    "apartmentKey": "11740-2931",
    "aptSeq": "2931",
    "apartmentName": "둔촌푸르지오",
@@ -12836,7 +12872,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 60.0,
    "calculationVersion": "v1.1",
-   "rank": 381
+   "rank": 382
   },
   {
    "apartmentKey": "11305-4123",
@@ -12868,7 +12904,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 382
+   "rank": 383
   },
   {
    "apartmentKey": "11545-22",
@@ -12900,7 +12936,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 129.7,
    "calculationVersion": "v1.1",
-   "rank": 383
+   "rank": 384
   },
   {
    "apartmentKey": "11380-8619",
@@ -12934,7 +12970,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.8,
    "calculationVersion": "v1.1",
-   "rank": 384
+   "rank": 385
   },
   {
    "apartmentKey": "11740-91",
@@ -12965,41 +13001,6 @@
    "directTradeWarning": false,
    "compositionWarning": false,
    "exclusiveAreaGroup": 72.8,
-   "calculationVersion": "v1.1",
-   "rank": 385
-  },
-  {
-   "apartmentKey": "11620-6128",
-   "aptSeq": "6128",
-   "apartmentName": "힐스테이트뉴포레",
-   "sidoCode": "11",
-   "sggCode": "11620",
-   "areaGroup": 60.0,
-   "buildYear": 2022,
-   "referenceMonth": "202607",
-   "baselineMedian": 1362000000.0,
-   "currentMedian": 1425000000.0,
-   "riseAmount": 63000000,
-   "riseRate": 4.63,
-   "baselineTradeCount": 18,
-   "currentTradeCount": 2,
-   "confidence": "low",
-   "warnings": [
-    "서로 다른 세부 전용면적 혼합"
-   ],
-   "region": "11620 신림동",
-   "exactAreas": [
-    59.9882,
-    59.9986
-   ],
-   "baselineFloorMedian": 15.5,
-   "currentFloorMedian": 20.5,
-   "baselineDirectTradeCount": 0,
-   "currentDirectTradeCount": 0,
-   "floorMixWarning": false,
-   "directTradeWarning": false,
-   "compositionWarning": true,
-   "exclusiveAreaGroup": 60.0,
    "calculationVersion": "v1.1",
    "rank": 386
   },
