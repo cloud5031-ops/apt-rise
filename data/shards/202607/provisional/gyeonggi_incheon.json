@@ -3,7 +3,7 @@
  "referenceMonth": "202607",
  "status": "provisional",
  "validationStatus": "valid",
- "generatedAt": "2026-09-05T06:37:05.625345+09:00",
+ "generatedAt": "2026-09-07T06:27:08.569989+09:00",
  "calculationVersion": "v1.1",
  "schemaVersion": "v1.0",
  "includedSidoCodes": [
@@ -147,12 +147,12 @@
   "41830"
  ],
  "failedSggCodes": [],
- "rawTradeCount": 16681,
- "validTradeCount": 16234,
- "cancelledTradeCount": 447,
- "directTradeCount": 548,
- "candidateGroupCount": 8320,
- "filteredOutGroupCount": 7565,
+ "rawTradeCount": 16678,
+ "validTradeCount": 16230,
+ "cancelledTradeCount": 448,
+ "directTradeCount": 549,
+ "candidateGroupCount": 8317,
+ "filteredOutGroupCount": 7562,
  "items": [
   {
    "apartmentKey": "41173-133",
@@ -9354,18 +9354,19 @@
    "currentTradeCount": 5,
    "confidence": "medium",
    "warnings": [
-    "층수 차이(8층 이상 또는 구간 차이)"
+    "층수 차이(8층 이상 또는 구간 차이)",
+    "직거래 포함 이력 존재"
    ],
    "region": "41465 성복동",
    "exactAreas": [
     84.9126
    ],
    "baselineFloorMedian": 22.0,
-   "currentFloorMedian": 12,
+   "currentFloorMedian": 11.0,
    "baselineDirectTradeCount": 0,
-   "currentDirectTradeCount": 0,
+   "currentDirectTradeCount": 1,
    "floorMixWarning": true,
-   "directTradeWarning": false,
+   "directTradeWarning": true,
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
@@ -19267,11 +19268,11 @@
    "areaGroup": 85.0,
    "buildYear": 2021,
    "referenceMonth": "202607",
-   "baselineMedian": 758000000,
+   "baselineMedian": 758000000.0,
    "currentMedian": 800000000,
    "riseAmount": 42000000,
    "riseRate": 5.54,
-   "baselineTradeCount": 49,
+   "baselineTradeCount": 48,
    "currentTradeCount": 23,
    "confidence": "medium",
    "warnings": [
@@ -19283,7 +19284,7 @@
     84.98,
     84.96
    ],
-   "baselineFloorMedian": 15,
+   "baselineFloorMedian": 15.0,
    "currentFloorMedian": 11,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
