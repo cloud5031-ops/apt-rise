@@ -7,8 +7,8 @@
  "sggCode": "41465",
  "dongName": "상현동",
  "referenceMonths": [
-  "202606",
-  "202607"
+  "202607",
+  "202608"
  ],
  "availableAreas": [
   106.52,
@@ -16,6 +16,24 @@
   164.2368
  ],
  "transactions": [
+  {
+   "contractDate": "2026-08-19",
+   "priceWon": 1000000000,
+   "floor": 17,
+   "exclusiveArea": 106.52,
+   "areaGroup": 107,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
+  {
+   "contractDate": "2026-08-07",
+   "priceWon": 940000000,
+   "floor": 13,
+   "exclusiveArea": 106.52,
+   "areaGroup": 107,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
   {
    "contractDate": "2026-07-25",
    "priceWon": 930000000,
@@ -1023,38 +1041,11 @@
    "areaGroup": 107,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
-  },
-  {
-   "contractDate": "2023-08-30",
-   "priceWon": 785000000,
-   "floor": 16,
-   "exclusiveArea": 106.52,
-   "areaGroup": 107,
-   "dealType": "중개거래",
-   "cancellationStatus": "COMPLETED"
-  },
-  {
-   "contractDate": "2023-08-30",
-   "priceWon": 741000000,
-   "floor": 19,
-   "exclusiveArea": 106.52,
-   "areaGroup": 107,
-   "dealType": "중개거래",
-   "cancellationStatus": "COMPLETED"
-  },
-  {
-   "contractDate": "2023-08-17",
-   "priceWon": 730000000,
-   "floor": 19,
-   "exclusiveArea": 106.52,
-   "areaGroup": 107,
-   "dealType": "중개거래",
-   "cancellationStatus": "COMPLETED"
   }
  ],
  "historyCoverage": {
-  "startMonth": "202308",
-  "endMonth": "202607",
+  "startMonth": "202309",
+  "endMonth": "202608",
   "months": 36,
   "complete": true
  },

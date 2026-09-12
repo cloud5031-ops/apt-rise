@@ -7,8 +7,8 @@
  "sggCode": "41570",
  "dongName": "감정동",
  "referenceMonths": [
-  "202606",
-  "202607"
+  "202607",
+  "202608"
  ],
  "availableAreas": [
   84.8026,
@@ -17,6 +17,15 @@
   153.2305
  ],
  "transactions": [
+  {
+   "contractDate": "2026-08-21",
+   "priceWon": 440000000,
+   "floor": 2,
+   "exclusiveArea": 84.8674,
+   "areaGroup": 85,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
   {
    "contractDate": "2026-07-30",
    "priceWon": 468500000,
@@ -1006,38 +1015,11 @@
    "areaGroup": 118,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
-  },
-  {
-   "contractDate": "2023-08-29",
-   "priceWon": 435000000,
-   "floor": 8,
-   "exclusiveArea": 84.8674,
-   "areaGroup": 85,
-   "dealType": "중개거래",
-   "cancellationStatus": "COMPLETED"
-  },
-  {
-   "contractDate": "2023-08-28",
-   "priceWon": 390000000,
-   "floor": 4,
-   "exclusiveArea": 84.8026,
-   "areaGroup": 85,
-   "dealType": "중개거래",
-   "cancellationStatus": "COMPLETED"
-  },
-  {
-   "contractDate": "2023-08-05",
-   "priceWon": 395000000,
-   "floor": 13,
-   "exclusiveArea": 84.8674,
-   "areaGroup": 85,
-   "dealType": "중개거래",
-   "cancellationStatus": "COMPLETED"
   }
  ],
  "historyCoverage": {
-  "startMonth": "202308",
-  "endMonth": "202607",
+  "startMonth": "202309",
+  "endMonth": "202608",
   "months": 36,
   "complete": true
  },

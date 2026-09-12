@@ -7,14 +7,32 @@
  "sggCode": "41285",
  "dongName": "마두동",
  "referenceMonths": [
-  "202606",
-  "202607"
+  "202607",
+  "202608"
  ],
  "availableAreas": [
   41.85,
   83.77
  ],
  "transactions": [
+  {
+   "contractDate": "2026-08-30",
+   "priceWon": 555000000,
+   "floor": 19,
+   "exclusiveArea": 83.77,
+   "areaGroup": 84,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
+  {
+   "contractDate": "2026-08-29",
+   "priceWon": 575000000,
+   "floor": 11,
+   "exclusiveArea": 83.77,
+   "areaGroup": 84,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
   {
    "contractDate": "2026-07-26",
    "priceWon": 570000000,
@@ -134,8 +152,8 @@
   }
  ],
  "historyCoverage": {
-  "startMonth": "202308",
-  "endMonth": "202607",
+  "startMonth": "202309",
+  "endMonth": "202608",
   "months": 36,
   "complete": true
  },

@@ -7,8 +7,8 @@
  "sggCode": "41135",
  "dongName": "야탑동",
  "referenceMonths": [
-  "202606",
-  "202607"
+  "202607",
+  "202608"
  ],
  "availableAreas": [
   35.28,
@@ -16,6 +16,24 @@
   41.85
  ],
  "transactions": [
+  {
+   "contractDate": "2026-08-13",
+   "priceWon": 950000000,
+   "floor": 8,
+   "exclusiveArea": 41.85,
+   "areaGroup": 42,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
+  {
+   "contractDate": "2026-08-12",
+   "priceWon": 830000000,
+   "floor": 3,
+   "exclusiveArea": 36.0,
+   "areaGroup": 36,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
   {
    "contractDate": "2026-07-24",
    "priceWon": 955000000,
@@ -915,38 +933,11 @@
    "areaGroup": 35,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
-  },
-  {
-   "contractDate": "2023-08-23",
-   "priceWon": 550000000,
-   "floor": 9,
-   "exclusiveArea": 41.85,
-   "areaGroup": 42,
-   "dealType": "중개거래",
-   "cancellationStatus": "COMPLETED"
-  },
-  {
-   "contractDate": "2023-08-19",
-   "priceWon": 533000000,
-   "floor": 7,
-   "exclusiveArea": 35.28,
-   "areaGroup": 35,
-   "dealType": "중개거래",
-   "cancellationStatus": "COMPLETED"
-  },
-  {
-   "contractDate": "2023-08-11",
-   "priceWon": 513000000,
-   "floor": 2,
-   "exclusiveArea": 36.0,
-   "areaGroup": 36,
-   "dealType": "중개거래",
-   "cancellationStatus": "COMPLETED"
   }
  ],
  "historyCoverage": {
-  "startMonth": "202308",
-  "endMonth": "202607",
+  "startMonth": "202309",
+  "endMonth": "202608",
   "months": 36,
   "complete": true
  },

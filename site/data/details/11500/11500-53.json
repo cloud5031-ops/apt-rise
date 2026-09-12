@@ -7,14 +7,32 @@
  "sggCode": "11500",
  "dongName": "등촌동",
  "referenceMonths": [
-  "202606",
-  "202607"
+  "202607",
+  "202608"
  ],
  "availableAreas": [
   37.67,
   58.14
  ],
  "transactions": [
+  {
+   "contractDate": "2026-08-11",
+   "priceWon": 1120000000,
+   "floor": 6,
+   "exclusiveArea": 58.14,
+   "areaGroup": 58,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
+  {
+   "contractDate": "2026-08-06",
+   "priceWon": 1070000000,
+   "floor": 2,
+   "exclusiveArea": 58.14,
+   "areaGroup": 58,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
   {
    "contractDate": "2026-07-29",
    "priceWon": 1138000000,
@@ -215,8 +233,8 @@
   }
  ],
  "historyCoverage": {
-  "startMonth": "202308",
-  "endMonth": "202607",
+  "startMonth": "202309",
+  "endMonth": "202608",
   "months": 36,
   "complete": true
  },

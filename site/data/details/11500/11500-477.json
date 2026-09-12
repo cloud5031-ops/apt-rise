@@ -7,8 +7,8 @@
  "sggCode": "11500",
  "dongName": "내발산동",
  "referenceMonths": [
-  "202606",
-  "202607"
+  "202607",
+  "202608"
  ],
  "availableAreas": [
   59.98,
@@ -17,6 +17,15 @@
   126.65
  ],
  "transactions": [
+  {
+   "contractDate": "2026-08-18",
+   "priceWon": 1450000000,
+   "floor": 13,
+   "exclusiveArea": 59.98,
+   "areaGroup": 60,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
   {
    "contractDate": "2026-07-30",
    "priceWon": 1500000000,
@@ -2239,38 +2248,11 @@
    "areaGroup": 60,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
-  },
-  {
-   "contractDate": "2023-08-21",
-   "priceWon": 1240000000,
-   "floor": 12,
-   "exclusiveArea": 84.98,
-   "areaGroup": 85,
-   "dealType": "중개거래",
-   "cancellationStatus": "COMPLETED"
-  },
-  {
-   "contractDate": "2023-08-19",
-   "priceWon": 1200000000,
-   "floor": 15,
-   "exclusiveArea": 84.98,
-   "areaGroup": 85,
-   "dealType": "중개거래",
-   "cancellationStatus": "CANCELLED"
-  },
-  {
-   "contractDate": "2023-08-19",
-   "priceWon": 1197000000,
-   "floor": 15,
-   "exclusiveArea": 84.98,
-   "areaGroup": 85,
-   "dealType": "중개거래",
-   "cancellationStatus": "COMPLETED"
   }
  ],
  "historyCoverage": {
-  "startMonth": "202308",
-  "endMonth": "202607",
+  "startMonth": "202309",
+  "endMonth": "202608",
   "months": 36,
   "complete": true
  },

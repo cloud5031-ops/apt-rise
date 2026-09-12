@@ -7,8 +7,8 @@
  "sggCode": "41113",
  "dongName": "금곡동",
  "referenceMonths": [
-  "202606",
-  "202607"
+  "202607",
+  "202608"
  ],
  "availableAreas": [
   84.8763,
@@ -17,6 +17,15 @@
   99.8817
  ],
  "transactions": [
+  {
+   "contractDate": "2026-08-17",
+   "priceWon": 740000000,
+   "floor": 1,
+   "exclusiveArea": 84.8763,
+   "areaGroup": 85,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
   {
    "contractDate": "2026-07-29",
    "priceWon": 890000000,
@@ -907,20 +916,11 @@
    "areaGroup": 100,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
-  },
-  {
-   "contractDate": "2023-08-25",
-   "priceWon": 680000000,
-   "floor": 24,
-   "exclusiveArea": 84.9728,
-   "areaGroup": 85,
-   "dealType": "중개거래",
-   "cancellationStatus": "COMPLETED"
   }
  ],
  "historyCoverage": {
-  "startMonth": "202308",
-  "endMonth": "202607",
+  "startMonth": "202309",
+  "endMonth": "202608",
   "months": 36,
   "complete": true
  },

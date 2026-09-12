@@ -7,14 +7,32 @@
  "sggCode": "11590",
  "dongName": "상도동",
  "referenceMonths": [
-  "202606",
-  "202607"
+  "202607",
+  "202608"
  ],
  "availableAreas": [
   84.52,
   114.63
  ],
  "transactions": [
+  {
+   "contractDate": "2026-08-28",
+   "priceWon": 1300000000,
+   "floor": 11,
+   "exclusiveArea": 84.52,
+   "areaGroup": 85,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
+  {
+   "contractDate": "2026-08-21",
+   "priceWon": 1160000000,
+   "floor": 10,
+   "exclusiveArea": 84.52,
+   "areaGroup": 85,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
   {
    "contractDate": "2026-07-22",
    "priceWon": 1190000000,
@@ -197,8 +215,8 @@
   }
  ],
  "historyCoverage": {
-  "startMonth": "202308",
-  "endMonth": "202607",
+  "startMonth": "202309",
+  "endMonth": "202608",
   "months": 36,
   "complete": true
  },

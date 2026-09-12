@@ -7,14 +7,32 @@
  "sggCode": "41410",
  "dongName": "산본동",
  "referenceMonths": [
-  "202606",
-  "202607"
+  "202607",
+  "202608"
  ],
  "availableAreas": [
   72.32,
   84.97
  ],
  "transactions": [
+  {
+   "contractDate": "2026-08-17",
+   "priceWon": 680000000,
+   "floor": 15,
+   "exclusiveArea": 84.97,
+   "areaGroup": 85,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
+  {
+   "contractDate": "2026-08-02",
+   "priceWon": 650000000,
+   "floor": 14,
+   "exclusiveArea": 72.32,
+   "areaGroup": 72,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
   {
    "contractDate": "2026-07-14",
    "priceWon": 670000000,
@@ -152,8 +170,8 @@
   }
  ],
  "historyCoverage": {
-  "startMonth": "202308",
-  "endMonth": "202607",
+  "startMonth": "202309",
+  "endMonth": "202608",
   "months": 36,
   "complete": true
  },

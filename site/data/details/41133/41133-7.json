@@ -7,8 +7,8 @@
  "sggCode": "41133",
  "dongName": "은행동",
  "referenceMonths": [
-  "202606",
-  "202607"
+  "202607",
+  "202608"
  ],
  "availableAreas": [
   29.25,
@@ -25,6 +25,24 @@
   83.82
  ],
  "transactions": [
+  {
+   "contractDate": "2026-08-26",
+   "priceWon": 688580000,
+   "floor": 1,
+   "exclusiveArea": 61.52,
+   "areaGroup": 62,
+   "dealType": "직거래",
+   "cancellationStatus": "COMPLETED"
+  },
+  {
+   "contractDate": "2026-08-01",
+   "priceWon": 900000000,
+   "floor": 12,
+   "exclusiveArea": 67.28,
+   "areaGroup": 67,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
   {
    "contractDate": "2026-07-29",
    "priceWon": 460000000,
@@ -590,7 +608,7 @@
    "exclusiveArea": 66.56,
    "areaGroup": 67,
    "dealType": "직거래",
-   "cancellationStatus": "COMPLETED"
+   "cancellationStatus": "CANCELLED"
   },
   {
    "contractDate": "2026-04-25",
@@ -2121,65 +2139,11 @@
    "areaGroup": 65,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
-  },
-  {
-   "contractDate": "2023-08-25",
-   "priceWon": 550000000,
-   "floor": 13,
-   "exclusiveArea": 54.9,
-   "areaGroup": 55,
-   "dealType": "중개거래",
-   "cancellationStatus": "COMPLETED"
-  },
-  {
-   "contractDate": "2023-08-17",
-   "priceWon": 630000000,
-   "floor": 7,
-   "exclusiveArea": 66.56,
-   "areaGroup": 67,
-   "dealType": "중개거래",
-   "cancellationStatus": "COMPLETED"
-  },
-  {
-   "contractDate": "2023-08-12",
-   "priceWon": 545000000,
-   "floor": 13,
-   "exclusiveArea": 54.9,
-   "areaGroup": 55,
-   "dealType": "중개거래",
-   "cancellationStatus": "COMPLETED"
-  },
-  {
-   "contractDate": "2023-08-11",
-   "priceWon": 630000000,
-   "floor": 7,
-   "exclusiveArea": 66.56,
-   "areaGroup": 67,
-   "dealType": "중개거래",
-   "cancellationStatus": "COMPLETED"
-  },
-  {
-   "contractDate": "2023-08-05",
-   "priceWon": 450000000,
-   "floor": 2,
-   "exclusiveArea": 39.15,
-   "areaGroup": 39,
-   "dealType": "중개거래",
-   "cancellationStatus": "COMPLETED"
-  },
-  {
-   "contractDate": "2023-08-04",
-   "priceWon": 620000000,
-   "floor": 7,
-   "exclusiveArea": 64.62,
-   "areaGroup": 65,
-   "dealType": "중개거래",
-   "cancellationStatus": "COMPLETED"
   }
  ],
  "historyCoverage": {
-  "startMonth": "202308",
-  "endMonth": "202607",
+  "startMonth": "202309",
+  "endMonth": "202608",
   "months": 36,
   "complete": true
  },

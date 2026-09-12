@@ -7,8 +7,8 @@
  "sggCode": "41135",
  "dongName": "야탑동",
  "referenceMonths": [
-  "202606",
-  "202607"
+  "202607",
+  "202608"
  ],
  "availableAreas": [
   35.28,
@@ -16,6 +16,15 @@
   41.85
  ],
  "transactions": [
+  {
+   "contractDate": "2026-08-06",
+   "priceWon": 790000000,
+   "floor": 14,
+   "exclusiveArea": 41.85,
+   "areaGroup": 42,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
   {
    "contractDate": "2026-07-24",
    "priceWon": 790000000,
@@ -870,20 +879,11 @@
    "areaGroup": 42,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
-  },
-  {
-   "contractDate": "2023-08-03",
-   "priceWon": 455000000,
-   "floor": 13,
-   "exclusiveArea": 41.85,
-   "areaGroup": 42,
-   "dealType": "직거래",
-   "cancellationStatus": "COMPLETED"
   }
  ],
  "historyCoverage": {
-  "startMonth": "202308",
-  "endMonth": "202607",
+  "startMonth": "202309",
+  "endMonth": "202608",
   "months": 36,
   "complete": true
  },

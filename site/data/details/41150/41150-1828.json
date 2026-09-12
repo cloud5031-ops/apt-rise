@@ -7,8 +7,8 @@
  "sggCode": "41150",
  "dongName": "장암동",
  "referenceMonths": [
-  "202606",
-  "202607"
+  "202607",
+  "202608"
  ],
  "availableAreas": [
   59.5,
@@ -16,6 +16,24 @@
   84.81
  ],
  "transactions": [
+  {
+   "contractDate": "2026-08-31",
+   "priceWon": 520000000,
+   "floor": 14,
+   "exclusiveArea": 59.5,
+   "areaGroup": 60,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
+  {
+   "contractDate": "2026-08-08",
+   "priceWon": 518000000,
+   "floor": 10,
+   "exclusiveArea": 59.5,
+   "areaGroup": 60,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
   {
    "contractDate": "2026-07-27",
    "priceWon": 633000000,
@@ -321,20 +339,11 @@
    "areaGroup": 60,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
-  },
-  {
-   "contractDate": "2023-08-28",
-   "priceWon": 595000000,
-   "floor": 6,
-   "exclusiveArea": 84.81,
-   "areaGroup": 85,
-   "dealType": "중개거래",
-   "cancellationStatus": "COMPLETED"
   }
  ],
  "historyCoverage": {
-  "startMonth": "202308",
-  "endMonth": "202607",
+  "startMonth": "202309",
+  "endMonth": "202608",
   "months": 36,
   "complete": true
  },

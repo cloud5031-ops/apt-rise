@@ -7,14 +7,23 @@
  "sggCode": "11305",
  "dongName": "번동",
  "referenceMonths": [
-  "202606",
-  "202607"
+  "202607",
+  "202608"
  ],
  "availableAreas": [
   58.65,
   59.91
  ],
  "transactions": [
+  {
+   "contractDate": "2026-08-22",
+   "priceWon": 520000000,
+   "floor": 12,
+   "exclusiveArea": 58.65,
+   "areaGroup": 59,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
   {
    "contractDate": "2026-07-23",
    "priceWon": 508000000,
@@ -80,8 +89,8 @@
   }
  ],
  "historyCoverage": {
-  "startMonth": "202308",
-  "endMonth": "202607",
+  "startMonth": "202309",
+  "endMonth": "202608",
   "months": 36,
   "complete": true
  },

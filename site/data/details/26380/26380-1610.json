@@ -7,8 +7,8 @@
  "sggCode": "26380",
  "dongName": "괴정동",
  "referenceMonths": [
-  "202606",
-  "202607"
+  "202607",
+  "202608"
  ],
  "availableAreas": [
   59.8915,
@@ -17,6 +17,15 @@
   84.977
  ],
  "transactions": [
+  {
+   "contractDate": "2026-08-24",
+   "priceWon": 370000000,
+   "floor": 21,
+   "exclusiveArea": 84.977,
+   "areaGroup": 85,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
   {
    "contractDate": "2026-07-20",
    "priceWon": 320000000,
@@ -511,29 +520,11 @@
    "areaGroup": 85,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
-  },
-  {
-   "contractDate": "2023-08-18",
-   "priceWon": 330000000,
-   "floor": 17,
-   "exclusiveArea": 84.898,
-   "areaGroup": 85,
-   "dealType": "중개거래",
-   "cancellationStatus": "COMPLETED"
-  },
-  {
-   "contractDate": "2023-08-07",
-   "priceWon": 390000000,
-   "floor": 8,
-   "exclusiveArea": 84.977,
-   "areaGroup": 85,
-   "dealType": "중개거래",
-   "cancellationStatus": "COMPLETED"
   }
  ],
  "historyCoverage": {
-  "startMonth": "202308",
-  "endMonth": "202607",
+  "startMonth": "202309",
+  "endMonth": "202608",
   "months": 36,
   "complete": true
  },

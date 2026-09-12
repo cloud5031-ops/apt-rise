@@ -7,14 +7,32 @@
  "sggCode": "41430",
  "dongName": "포일동",
  "referenceMonths": [
-  "202606",
-  "202607"
+  "202607",
+  "202608"
  ],
  "availableAreas": [
   59.99,
   84.97
  ],
  "transactions": [
+  {
+   "contractDate": "2026-08-25",
+   "priceWon": 1000000000,
+   "floor": 16,
+   "exclusiveArea": 84.97,
+   "areaGroup": 85,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
+  {
+   "contractDate": "2026-08-10",
+   "priceWon": 1049000000,
+   "floor": 5,
+   "exclusiveArea": 84.97,
+   "areaGroup": 85,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
   {
    "contractDate": "2026-07-18",
    "priceWon": 1020000000,
@@ -1004,20 +1022,11 @@
    "areaGroup": 85,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
-  },
-  {
-   "contractDate": "2023-08-19",
-   "priceWon": 598000000,
-   "floor": 4,
-   "exclusiveArea": 59.99,
-   "areaGroup": 60,
-   "dealType": "중개거래",
-   "cancellationStatus": "COMPLETED"
   }
  ],
  "historyCoverage": {
-  "startMonth": "202308",
-  "endMonth": "202607",
+  "startMonth": "202309",
+  "endMonth": "202608",
   "months": 36,
   "complete": true
  },

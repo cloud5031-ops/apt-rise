@@ -7,8 +7,8 @@
  "sggCode": "41595",
  "dongName": "반월동",
  "referenceMonths": [
-  "202606",
-  "202607"
+  "202607",
+  "202608"
  ],
  "availableAreas": [
   59.9951,
@@ -19,6 +19,42 @@
   111.8909
  ],
  "transactions": [
+  {
+   "contractDate": "2026-08-25",
+   "priceWon": 800000000,
+   "floor": 4,
+   "exclusiveArea": 84.9935,
+   "areaGroup": 85,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
+  {
+   "contractDate": "2026-08-18",
+   "priceWon": 850000000,
+   "floor": 6,
+   "exclusiveArea": 84.9964,
+   "areaGroup": 85,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
+  {
+   "contractDate": "2026-08-13",
+   "priceWon": 900000000,
+   "floor": 16,
+   "exclusiveArea": 84.9964,
+   "areaGroup": 85,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
+  {
+   "contractDate": "2026-08-06",
+   "priceWon": 685000000,
+   "floor": 3,
+   "exclusiveArea": 59.9951,
+   "areaGroup": 60,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
   {
    "contractDate": "2026-07-25",
    "priceWon": 800000000,
@@ -35,7 +71,7 @@
    "exclusiveArea": 84.9964,
    "areaGroup": 85,
    "dealType": "중개거래",
-   "cancellationStatus": "COMPLETED"
+   "cancellationStatus": "CANCELLED"
   },
   {
    "contractDate": "2026-07-20",
@@ -912,8 +948,8 @@
   }
  ],
  "historyCoverage": {
-  "startMonth": "202308",
-  "endMonth": "202607",
+  "startMonth": "202309",
+  "endMonth": "202608",
   "months": 36,
   "complete": true
  },

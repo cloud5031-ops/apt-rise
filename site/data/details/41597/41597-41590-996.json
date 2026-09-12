@@ -7,18 +7,26 @@
  "sggCode": "41597",
  "dongName": "능동",
  "referenceMonths": [
-  "202606",
-  "202607"
+  "202607",
+  "202608"
  ],
  "availableAreas": [
   72.68,
   73.33,
   81.12,
   81.49,
-  101.71,
-  153.41
+  101.71
  ],
  "transactions": [
+  {
+   "contractDate": "2026-08-23",
+   "priceWon": 608000000,
+   "floor": 30,
+   "exclusiveArea": 73.33,
+   "areaGroup": 73,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
   {
    "contractDate": "2026-07-29",
    "priceWon": 590000000,
@@ -1224,65 +1232,11 @@
    "areaGroup": 73,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
-  },
-  {
-   "contractDate": "2023-08-24",
-   "priceWon": 460000000,
-   "floor": 2,
-   "exclusiveArea": 72.68,
-   "areaGroup": 73,
-   "dealType": "중개거래",
-   "cancellationStatus": "COMPLETED"
-  },
-  {
-   "contractDate": "2023-08-22",
-   "priceWon": 830000000,
-   "floor": 1,
-   "exclusiveArea": 153.41,
-   "areaGroup": 153,
-   "dealType": "중개거래",
-   "cancellationStatus": "COMPLETED"
-  },
-  {
-   "contractDate": "2023-08-19",
-   "priceWon": 460000000,
-   "floor": 35,
-   "exclusiveArea": 72.68,
-   "areaGroup": 73,
-   "dealType": "중개거래",
-   "cancellationStatus": "COMPLETED"
-  },
-  {
-   "contractDate": "2023-08-18",
-   "priceWon": 498000000,
-   "floor": 14,
-   "exclusiveArea": 72.68,
-   "areaGroup": 73,
-   "dealType": "중개거래",
-   "cancellationStatus": "COMPLETED"
-  },
-  {
-   "contractDate": "2023-08-05",
-   "priceWon": 455000000,
-   "floor": 17,
-   "exclusiveArea": 73.33,
-   "areaGroup": 73,
-   "dealType": "중개거래",
-   "cancellationStatus": "COMPLETED"
-  },
-  {
-   "contractDate": "2023-08-04",
-   "priceWon": 470000000,
-   "floor": 18,
-   "exclusiveArea": 73.33,
-   "areaGroup": 73,
-   "dealType": "중개거래",
-   "cancellationStatus": "COMPLETED"
   }
  ],
  "historyCoverage": {
-  "startMonth": "202308",
-  "endMonth": "202607",
+  "startMonth": "202309",
+  "endMonth": "202608",
   "months": 36,
   "complete": true
  },

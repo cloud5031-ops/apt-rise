@@ -7,8 +7,8 @@
  "sggCode": "11410",
  "dongName": "홍제동",
  "referenceMonths": [
-  "202606",
-  "202607"
+  "202607",
+  "202608"
  ],
  "availableAreas": [
   59.9728,
@@ -23,6 +23,24 @@
   117.8711
  ],
  "transactions": [
+  {
+   "contractDate": "2026-08-25",
+   "priceWon": 1300000000,
+   "floor": 2,
+   "exclusiveArea": 84.9602,
+   "areaGroup": 85,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
+  {
+   "contractDate": "2026-08-21",
+   "priceWon": 1620000000,
+   "floor": 13,
+   "exclusiveArea": 84.9728,
+   "areaGroup": 85,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
   {
    "contractDate": "2026-07-22",
    "priceWon": 1400000000,
@@ -1165,20 +1183,11 @@
    "areaGroup": 85,
    "dealType": "중개거래",
    "cancellationStatus": "CANCELLED"
-  },
-  {
-   "contractDate": "2023-08-27",
-   "priceWon": 994000000,
-   "floor": 7,
-   "exclusiveArea": 59.9728,
-   "areaGroup": 60,
-   "dealType": "중개거래",
-   "cancellationStatus": "COMPLETED"
   }
  ],
  "historyCoverage": {
-  "startMonth": "202308",
-  "endMonth": "202607",
+  "startMonth": "202309",
+  "endMonth": "202608",
   "months": 36,
   "complete": true
  },

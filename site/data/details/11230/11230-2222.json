@@ -7,8 +7,8 @@
  "sggCode": "11230",
  "dongName": "전농동",
  "referenceMonths": [
-  "202606",
-  "202607"
+  "202607",
+  "202608"
  ],
  "availableAreas": [
   59.9,
@@ -21,6 +21,15 @@
   114.92
  ],
  "transactions": [
+  {
+   "contractDate": "2026-08-03",
+   "priceWon": 1470000000,
+   "floor": 9,
+   "exclusiveArea": 114.92,
+   "areaGroup": 115,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
   {
    "contractDate": "2026-07-24",
    "priceWon": 1415000000,
@@ -938,20 +947,11 @@
    "areaGroup": 85,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
-  },
-  {
-   "contractDate": "2023-08-15",
-   "priceWon": 1040000000,
-   "floor": 14,
-   "exclusiveArea": 84.91,
-   "areaGroup": 85,
-   "dealType": "중개거래",
-   "cancellationStatus": "COMPLETED"
   }
  ],
  "historyCoverage": {
-  "startMonth": "202308",
-  "endMonth": "202607",
+  "startMonth": "202309",
+  "endMonth": "202608",
   "months": 36,
   "complete": true
  },

@@ -7,8 +7,8 @@
  "sggCode": "28177",
  "dongName": "주안동",
  "referenceMonths": [
-  "202606",
-  "202607"
+  "202607",
+  "202608"
  ],
  "availableAreas": [
   59.919,
@@ -22,6 +22,15 @@
   147.8682
  ],
  "transactions": [
+  {
+   "contractDate": "2026-08-22",
+   "priceWon": 550000000,
+   "floor": 13,
+   "exclusiveArea": 76.5267,
+   "areaGroup": 77,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
   {
    "contractDate": "2026-07-18",
    "priceWon": 585000000,
@@ -678,38 +687,11 @@
    "areaGroup": 77,
    "dealType": "직거래",
    "cancellationStatus": "COMPLETED"
-  },
-  {
-   "contractDate": "2023-08-24",
-   "priceWon": 340000000,
-   "floor": 29,
-   "exclusiveArea": 59.919,
-   "areaGroup": 60,
-   "dealType": "직거래",
-   "cancellationStatus": "COMPLETED"
-  },
-  {
-   "contractDate": "2023-08-13",
-   "priceWon": 460000000,
-   "floor": 16,
-   "exclusiveArea": 70.9508,
-   "areaGroup": 71,
-   "dealType": "중개거래",
-   "cancellationStatus": "COMPLETED"
-  },
-  {
-   "contractDate": "2023-08-06",
-   "priceWon": 445000000,
-   "floor": 40,
-   "exclusiveArea": 70.9508,
-   "areaGroup": 71,
-   "dealType": "중개거래",
-   "cancellationStatus": "COMPLETED"
   }
  ],
  "historyCoverage": {
-  "startMonth": "202308",
-  "endMonth": "202607",
+  "startMonth": "202309",
+  "endMonth": "202608",
   "months": 36,
   "complete": true
  },

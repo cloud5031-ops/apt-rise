@@ -7,14 +7,23 @@
  "sggCode": "41310",
  "dongName": "교문동",
  "referenceMonths": [
-  "202606",
-  "202607"
+  "202607",
+  "202608"
  ],
  "availableAreas": [
   71.076,
   122.58
  ],
  "transactions": [
+  {
+   "contractDate": "2026-08-21",
+   "priceWon": 920000000,
+   "floor": 10,
+   "exclusiveArea": 71.076,
+   "areaGroup": 71,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
   {
    "contractDate": "2026-07-29",
    "priceWon": 930000000,
@@ -49,7 +58,7 @@
    "exclusiveArea": 122.58,
    "areaGroup": 123,
    "dealType": "중개거래",
-   "cancellationStatus": "COMPLETED"
+   "cancellationStatus": "CANCELLED"
   },
   {
    "contractDate": "2026-05-23",
@@ -89,8 +98,8 @@
   }
  ],
  "historyCoverage": {
-  "startMonth": "202308",
-  "endMonth": "202607",
+  "startMonth": "202309",
+  "endMonth": "202608",
   "months": 36,
   "complete": true
  },

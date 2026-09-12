@@ -7,13 +7,31 @@
  "sggCode": "11350",
  "dongName": "월계동",
  "referenceMonths": [
-  "202606",
-  "202607"
+  "202607",
+  "202608"
  ],
  "availableAreas": [
   51.48
  ],
  "transactions": [
+  {
+   "contractDate": "2026-08-11",
+   "priceWon": 970000000,
+   "floor": 1,
+   "exclusiveArea": 51.48,
+   "areaGroup": 51,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
+  {
+   "contractDate": "2026-08-08",
+   "priceWon": 1000000000,
+   "floor": 8,
+   "exclusiveArea": 51.48,
+   "areaGroup": 51,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
   {
    "contractDate": "2026-07-22",
    "priceWon": 975000000,
@@ -1111,20 +1129,11 @@
    "areaGroup": 51,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
-  },
-  {
-   "contractDate": "2023-08-12",
-   "priceWon": 680000000,
-   "floor": 13,
-   "exclusiveArea": 51.48,
-   "areaGroup": 51,
-   "dealType": "중개거래",
-   "cancellationStatus": "COMPLETED"
   }
  ],
  "historyCoverage": {
-  "startMonth": "202308",
-  "endMonth": "202607",
+  "startMonth": "202309",
+  "endMonth": "202608",
   "months": 36,
   "complete": true
  },

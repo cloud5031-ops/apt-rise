@@ -7,13 +7,40 @@
  "sggCode": "41133",
  "dongName": "은행동",
  "referenceMonths": [
-  "202606",
-  "202607"
+  "202607",
+  "202608"
  ],
  "availableAreas": [
   56.6448
  ],
  "transactions": [
+  {
+   "contractDate": "2026-08-10",
+   "priceWon": 737000000,
+   "floor": 6,
+   "exclusiveArea": 56.6448,
+   "areaGroup": 57,
+   "dealType": "중개거래",
+   "cancellationStatus": "CANCELLED"
+  },
+  {
+   "contractDate": "2026-08-07",
+   "priceWon": 705000000,
+   "floor": 5,
+   "exclusiveArea": 56.6448,
+   "areaGroup": 57,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
+  {
+   "contractDate": "2026-08-06",
+   "priceWon": 690000000,
+   "floor": 4,
+   "exclusiveArea": 56.6448,
+   "areaGroup": 57,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
   {
    "contractDate": "2026-07-29",
    "priceWon": 710000000,
@@ -607,29 +634,11 @@
    "areaGroup": 57,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
-  },
-  {
-   "contractDate": "2023-08-19",
-   "priceWon": 570000000,
-   "floor": 8,
-   "exclusiveArea": 56.6448,
-   "areaGroup": 57,
-   "dealType": "중개거래",
-   "cancellationStatus": "COMPLETED"
-  },
-  {
-   "contractDate": "2023-08-09",
-   "priceWon": 570000000,
-   "floor": 9,
-   "exclusiveArea": 56.6448,
-   "areaGroup": 57,
-   "dealType": "중개거래",
-   "cancellationStatus": "COMPLETED"
   }
  ],
  "historyCoverage": {
-  "startMonth": "202308",
-  "endMonth": "202607",
+  "startMonth": "202309",
+  "endMonth": "202608",
   "months": 36,
   "complete": true
  },

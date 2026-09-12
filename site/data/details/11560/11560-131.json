@@ -7,8 +7,8 @@
  "sggCode": "11560",
  "dongName": "대림동",
  "referenceMonths": [
-  "202606",
-  "202607"
+  "202607",
+  "202608"
  ],
  "availableAreas": [
   52.07,
@@ -16,6 +16,24 @@
   83.59
  ],
  "transactions": [
+  {
+   "contractDate": "2026-08-29",
+   "priceWon": 790000000,
+   "floor": 6,
+   "exclusiveArea": 62.37,
+   "areaGroup": 62,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
+  {
+   "contractDate": "2026-08-15",
+   "priceWon": 1015000000,
+   "floor": 9,
+   "exclusiveArea": 83.59,
+   "areaGroup": 84,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
   {
    "contractDate": "2026-07-11",
    "priceWon": 695000000,
@@ -555,20 +573,11 @@
    "areaGroup": 84,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
-  },
-  {
-   "contractDate": "2023-08-04",
-   "priceWon": 925000000,
-   "floor": 13,
-   "exclusiveArea": 83.59,
-   "areaGroup": 84,
-   "dealType": "중개거래",
-   "cancellationStatus": "COMPLETED"
   }
  ],
  "historyCoverage": {
-  "startMonth": "202308",
-  "endMonth": "202607",
+  "startMonth": "202309",
+  "endMonth": "202608",
   "months": 36,
   "complete": true
  },

@@ -7,14 +7,42 @@
  "sggCode": "41133",
  "dongName": "하대원동",
  "referenceMonths": [
-  "202606",
-  "202607"
+  "202607",
+  "202608"
  ],
  "availableAreas": [
   59.99,
-  84.99
+  84.99,
+  124.42
  ],
  "transactions": [
+  {
+   "contractDate": "2026-08-08",
+   "priceWon": 900000000,
+   "floor": 20,
+   "exclusiveArea": 84.99,
+   "areaGroup": 85,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
+  {
+   "contractDate": "2026-08-01",
+   "priceWon": 920000000,
+   "floor": 5,
+   "exclusiveArea": 124.42,
+   "areaGroup": 124,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
+  {
+   "contractDate": "2026-08-01",
+   "priceWon": 845000000,
+   "floor": 5,
+   "exclusiveArea": 84.99,
+   "areaGroup": 85,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
   {
    "contractDate": "2026-07-28",
    "priceWon": 897000000,
@@ -188,8 +216,8 @@
   }
  ],
  "historyCoverage": {
-  "startMonth": "202308",
-  "endMonth": "202607",
+  "startMonth": "202309",
+  "endMonth": "202608",
   "months": 36,
   "complete": true
  },

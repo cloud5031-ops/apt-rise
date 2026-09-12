@@ -7,14 +7,41 @@
  "sggCode": "41463",
  "dongName": "상갈동",
  "referenceMonths": [
-  "202605",
-  "202606"
+  "202607",
+  "202608"
  ],
  "availableAreas": [
   84.43,
   84.86
  ],
  "transactions": [
+  {
+   "contractDate": "2026-08-07",
+   "priceWon": 680000000,
+   "floor": 17,
+   "exclusiveArea": 84.43,
+   "areaGroup": 84,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
+  {
+   "contractDate": "2026-08-06",
+   "priceWon": 645000000,
+   "floor": 3,
+   "exclusiveArea": 84.43,
+   "areaGroup": 84,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
+  {
+   "contractDate": "2026-07-04",
+   "priceWon": 650000000,
+   "floor": 10,
+   "exclusiveArea": 84.43,
+   "areaGroup": 84,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
   {
    "contractDate": "2026-06-30",
    "priceWon": 620000000,
@@ -112,7 +139,7 @@
    "exclusiveArea": 84.43,
    "areaGroup": 84,
    "dealType": "중개거래",
-   "cancellationStatus": "COMPLETED"
+   "cancellationStatus": "CANCELLED"
   },
   {
    "contractDate": "2026-05-05",
@@ -296,10 +323,10 @@
   }
  ],
  "historyCoverage": {
-  "startMonth": "202307",
-  "endMonth": "202606",
+  "startMonth": "202309",
+  "endMonth": "202608",
   "months": 36,
-  "complete": false
+  "complete": true
  },
  "location": {
   "latitude": 37.2626347094225,

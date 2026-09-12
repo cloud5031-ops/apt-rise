@@ -7,8 +7,8 @@
  "sggCode": "30200",
  "dongName": "지족동",
  "referenceMonths": [
-  "202606",
-  "202607"
+  "202607",
+  "202608"
  ],
  "availableAreas": [
   77.046,
@@ -16,6 +16,33 @@
   84.934
  ],
  "transactions": [
+  {
+   "contractDate": "2026-08-11",
+   "priceWon": 565000000,
+   "floor": 10,
+   "exclusiveArea": 84.716,
+   "areaGroup": 85,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
+  {
+   "contractDate": "2026-08-06",
+   "priceWon": 450000000,
+   "floor": 18,
+   "exclusiveArea": 77.046,
+   "areaGroup": 77,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
+  {
+   "contractDate": "2026-08-03",
+   "priceWon": 490000000,
+   "floor": 12,
+   "exclusiveArea": 77.046,
+   "areaGroup": 77,
+   "dealType": "직거래",
+   "cancellationStatus": "COMPLETED"
+  },
   {
    "contractDate": "2026-07-18",
    "priceWon": 560000000,
@@ -171,8 +198,8 @@
   }
  ],
  "historyCoverage": {
-  "startMonth": "202308",
-  "endMonth": "202607",
+  "startMonth": "202309",
+  "endMonth": "202608",
   "months": 36,
   "complete": true
  },

@@ -7,14 +7,59 @@
  "sggCode": "26350",
  "dongName": "우동",
  "referenceMonths": [
-  "202605",
-  "202606"
+  "202607",
+  "202608"
  ],
  "availableAreas": [
   59.84,
   84.92
  ],
  "transactions": [
+  {
+   "contractDate": "2026-08-31",
+   "priceWon": 485000000,
+   "floor": 17,
+   "exclusiveArea": 84.92,
+   "areaGroup": 85,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
+  {
+   "contractDate": "2026-08-15",
+   "priceWon": 472000000,
+   "floor": 18,
+   "exclusiveArea": 84.92,
+   "areaGroup": 85,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
+  {
+   "contractDate": "2026-08-06",
+   "priceWon": 480000000,
+   "floor": 11,
+   "exclusiveArea": 84.92,
+   "areaGroup": 85,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
+  {
+   "contractDate": "2026-07-09",
+   "priceWon": 345000000,
+   "floor": 3,
+   "exclusiveArea": 59.84,
+   "areaGroup": 60,
+   "dealType": "중개거래",
+   "cancellationStatus": "CANCELLED"
+  },
+  {
+   "contractDate": "2026-07-07",
+   "priceWon": 440000000,
+   "floor": 4,
+   "exclusiveArea": 84.92,
+   "areaGroup": 85,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
   {
    "contractDate": "2026-06-20",
    "priceWon": 390000000,
@@ -71,19 +116,19 @@
   },
   {
    "contractDate": "2026-05-23",
-   "priceWon": 345000000,
-   "floor": 4,
-   "exclusiveArea": 59.84,
-   "areaGroup": 60,
-   "dealType": "중개거래",
-   "cancellationStatus": "COMPLETED"
-  },
-  {
-   "contractDate": "2026-05-23",
    "priceWon": 448000000,
    "floor": 11,
    "exclusiveArea": 84.92,
    "areaGroup": 85,
+   "dealType": "중개거래",
+   "cancellationStatus": "CANCELLED"
+  },
+  {
+   "contractDate": "2026-05-23",
+   "priceWon": 345000000,
+   "floor": 4,
+   "exclusiveArea": 59.84,
+   "areaGroup": 60,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
   },
@@ -205,6 +250,12 @@
    "cancellationStatus": "COMPLETED"
   }
  ],
+ "historyCoverage": {
+  "startMonth": "202309",
+  "endMonth": "202608",
+  "months": 36,
+  "complete": true
+ },
  "location": {
   "latitude": 35.1706465632144,
   "longitude": 129.141600191468,

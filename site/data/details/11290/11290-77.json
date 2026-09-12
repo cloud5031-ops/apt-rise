@@ -7,8 +7,8 @@
  "sggCode": "11290",
  "dongName": "석관동",
  "referenceMonths": [
-  "202606",
-  "202607"
+  "202607",
+  "202608"
  ],
  "availableAreas": [
   59.94,
@@ -17,6 +17,15 @@
   114.84
  ],
  "transactions": [
+  {
+   "contractDate": "2026-08-01",
+   "priceWon": 818500000,
+   "floor": 4,
+   "exclusiveArea": 59.94,
+   "areaGroup": 60,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
   {
    "contractDate": "2026-07-24",
    "priceWon": 745000000,
@@ -565,20 +574,11 @@
    "areaGroup": 60,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
-  },
-  {
-   "contractDate": "2023-08-28",
-   "priceWon": 773000000,
-   "floor": 8,
-   "exclusiveArea": 114.84,
-   "areaGroup": 115,
-   "dealType": "중개거래",
-   "cancellationStatus": "COMPLETED"
   }
  ],
  "historyCoverage": {
-  "startMonth": "202308",
-  "endMonth": "202607",
+  "startMonth": "202309",
+  "endMonth": "202608",
   "months": 36,
   "complete": true
  },

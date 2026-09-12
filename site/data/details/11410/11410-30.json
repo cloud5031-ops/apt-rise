@@ -7,16 +7,35 @@
  "sggCode": "11410",
  "dongName": "연희동",
  "referenceMonths": [
-  "202606",
-  "202607"
+  "202607",
+  "202608"
  ],
  "availableAreas": [
   59.61,
   84.95,
   115.06,
+  120.2,
   135.2
  ],
  "transactions": [
+  {
+   "contractDate": "2026-08-28",
+   "priceWon": 945000000,
+   "floor": 4,
+   "exclusiveArea": 84.95,
+   "areaGroup": 85,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
+  {
+   "contractDate": "2026-08-11",
+   "priceWon": 1050000000,
+   "floor": 1,
+   "exclusiveArea": 120.2,
+   "areaGroup": 120,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
   {
    "contractDate": "2026-07-09",
    "priceWon": 930000000,
@@ -619,20 +638,11 @@
    "areaGroup": 85,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
-  },
-  {
-   "contractDate": "2023-08-14",
-   "priceWon": 714000000,
-   "floor": 11,
-   "exclusiveArea": 59.61,
-   "areaGroup": 60,
-   "dealType": "중개거래",
-   "cancellationStatus": "COMPLETED"
   }
  ],
  "historyCoverage": {
-  "startMonth": "202308",
-  "endMonth": "202607",
+  "startMonth": "202309",
+  "endMonth": "202608",
   "months": 36,
   "complete": true
  },

@@ -7,8 +7,8 @@
  "sggCode": "41117",
  "dongName": "매탄동",
  "referenceMonths": [
-  "202606",
-  "202607"
+  "202607",
+  "202608"
  ],
  "availableAreas": [
   66.48,
@@ -16,6 +16,24 @@
   84.45
  ],
  "transactions": [
+  {
+   "contractDate": "2026-08-11",
+   "priceWon": 485000000,
+   "floor": 6,
+   "exclusiveArea": 75.95,
+   "areaGroup": 76,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
+  {
+   "contractDate": "2026-08-10",
+   "priceWon": 548000000,
+   "floor": 11,
+   "exclusiveArea": 84.45,
+   "areaGroup": 84,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
   {
    "contractDate": "2026-07-30",
    "priceWon": 580000000,
@@ -852,29 +870,11 @@
    "areaGroup": 84,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
-  },
-  {
-   "contractDate": "2023-08-24",
-   "priceWon": 458000000,
-   "floor": 7,
-   "exclusiveArea": 84.45,
-   "areaGroup": 84,
-   "dealType": "중개거래",
-   "cancellationStatus": "COMPLETED"
-  },
-  {
-   "contractDate": "2023-08-15",
-   "priceWon": 435000000,
-   "floor": 8,
-   "exclusiveArea": 75.95,
-   "areaGroup": 76,
-   "dealType": "중개거래",
-   "cancellationStatus": "COMPLETED"
   }
  ],
  "historyCoverage": {
-  "startMonth": "202308",
-  "endMonth": "202607",
+  "startMonth": "202309",
+  "endMonth": "202608",
   "months": 36,
   "complete": true
  },

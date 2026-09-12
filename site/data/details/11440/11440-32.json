@@ -7,8 +7,8 @@
  "sggCode": "11440",
  "dongName": "대흥동",
  "referenceMonths": [
-  "202606",
-  "202607"
+  "202607",
+  "202608"
  ],
  "availableAreas": [
   59.4,
@@ -16,6 +16,15 @@
   114.93
  ],
  "transactions": [
+  {
+   "contractDate": "2026-08-15",
+   "priceWon": 2140000000,
+   "floor": 16,
+   "exclusiveArea": 84.77,
+   "areaGroup": 85,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
   {
    "contractDate": "2026-07-16",
    "priceWon": 2180000000,
@@ -1833,29 +1842,11 @@
    "areaGroup": 85,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
-  },
-  {
-   "contractDate": "2023-08-22",
-   "priceWon": 1648000000,
-   "floor": 8,
-   "exclusiveArea": 114.93,
-   "areaGroup": 115,
-   "dealType": "중개거래",
-   "cancellationStatus": "COMPLETED"
-  },
-  {
-   "contractDate": "2023-08-03",
-   "priceWon": 1090000000,
-   "floor": 20,
-   "exclusiveArea": 59.4,
-   "areaGroup": 59,
-   "dealType": "중개거래",
-   "cancellationStatus": "COMPLETED"
   }
  ],
  "historyCoverage": {
-  "startMonth": "202308",
-  "endMonth": "202607",
+  "startMonth": "202309",
+  "endMonth": "202608",
   "months": 36,
   "complete": true
  },

@@ -7,8 +7,8 @@
  "sggCode": "11305",
  "dongName": "미아동",
  "referenceMonths": [
-  "202606",
-  "202607"
+  "202607",
+  "202608"
  ],
  "availableAreas": [
   46.68,
@@ -20,9 +20,55 @@
   84.67,
   84.86,
   84.88,
-  99.93
+  99.93,
+  115.61
  ],
  "transactions": [
+  {
+   "contractDate": "2026-08-28",
+   "priceWon": 730000000,
+   "floor": 4,
+   "exclusiveArea": 46.68,
+   "areaGroup": 47,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
+  {
+   "contractDate": "2026-08-23",
+   "priceWon": 1400000000,
+   "floor": 5,
+   "exclusiveArea": 115.61,
+   "areaGroup": 116,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
+  {
+   "contractDate": "2026-08-23",
+   "priceWon": 1100000000,
+   "floor": 7,
+   "exclusiveArea": 84.67,
+   "areaGroup": 85,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
+  {
+   "contractDate": "2026-08-10",
+   "priceWon": 1030000000,
+   "floor": 11,
+   "exclusiveArea": 84.67,
+   "areaGroup": 85,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
+  {
+   "contractDate": "2026-08-01",
+   "priceWon": 1075000000,
+   "floor": 4,
+   "exclusiveArea": 84.67,
+   "areaGroup": 85,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
   {
    "contractDate": "2026-07-11",
    "priceWon": 980000000,
@@ -1471,29 +1517,11 @@
    "areaGroup": 59,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
-  },
-  {
-   "contractDate": "2023-08-26",
-   "priceWon": 890000000,
-   "floor": 14,
-   "exclusiveArea": 84.88,
-   "areaGroup": 85,
-   "dealType": "중개거래",
-   "cancellationStatus": "COMPLETED"
-  },
-  {
-   "contractDate": "2023-08-02",
-   "priceWon": 879000000,
-   "floor": 10,
-   "exclusiveArea": 84.67,
-   "areaGroup": 85,
-   "dealType": "중개거래",
-   "cancellationStatus": "COMPLETED"
   }
  ],
  "historyCoverage": {
-  "startMonth": "202308",
-  "endMonth": "202607",
+  "startMonth": "202309",
+  "endMonth": "202608",
   "months": 36,
   "complete": true
  },
