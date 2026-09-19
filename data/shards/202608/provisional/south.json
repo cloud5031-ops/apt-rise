@@ -3,7 +3,7 @@
  "referenceMonth": "202608",
  "status": "provisional",
  "validationStatus": "valid",
- "generatedAt": "2026-09-13T06:00:58.820069+09:00",
+ "generatedAt": "2026-09-20T06:00:09.641581+09:00",
  "calculationVersion": "v1.1",
  "schemaVersion": "v1.0",
  "includedSidoCodes": [
@@ -149,12 +149,12 @@
   "52800"
  ],
  "failedSggCodes": [],
- "rawTradeCount": 4875,
- "validTradeCount": 4750,
- "cancelledTradeCount": 125,
- "directTradeCount": 576,
- "candidateGroupCount": 3092,
- "filteredOutGroupCount": 3068,
+ "rawTradeCount": 5015,
+ "validTradeCount": 4870,
+ "cancelledTradeCount": 145,
+ "directTradeCount": 611,
+ "candidateGroupCount": 3143,
+ "filteredOutGroupCount": 3116,
  "items": [
   {
    "apartmentKey": "48170-117",
@@ -226,6 +226,41 @@
    "rank": 2
   },
   {
+   "apartmentKey": "47130-45",
+   "aptSeq": "45",
+   "apartmentName": "황성현대2차",
+   "sidoCode": "47",
+   "sggCode": "47130",
+   "areaGroup": 84.9,
+   "buildYear": 1992,
+   "referenceMonth": "202608",
+   "baselineMedian": 128500000.0,
+   "currentMedian": 172500000.0,
+   "riseAmount": 44000000,
+   "riseRate": 34.24,
+   "baselineTradeCount": 2,
+   "currentTradeCount": 2,
+   "confidence": "low",
+   "warnings": [
+    "비교/기준 기간 거래량 모두 최소 조건(2건)",
+    "20% 이상 급변동"
+   ],
+   "region": "47130 황성동",
+   "exactAreas": [
+    84.945
+   ],
+   "baselineFloorMedian": 11.5,
+   "currentFloorMedian": 8.0,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": false,
+   "directTradeWarning": false,
+   "compositionWarning": true,
+   "exclusiveAreaGroup": 84.9,
+   "calculationVersion": "v1.1",
+   "rank": 3
+  },
+  {
    "apartmentKey": "48129-66",
    "aptSeq": "66",
    "apartmentName": "우성",
@@ -258,7 +293,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.8,
    "calculationVersion": "v1.1",
-   "rank": 3
+   "rank": 4
   },
   {
    "apartmentKey": "47130-112",
@@ -294,7 +329,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 4
+   "rank": 5
   },
   {
    "apartmentKey": "48330-612",
@@ -328,7 +363,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 5
+   "rank": 6
   },
   {
    "apartmentKey": "52113-117",
@@ -360,7 +395,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 6
+   "rank": 7
   },
   {
    "apartmentKey": "48170-505",
@@ -392,7 +427,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 7
+   "rank": 8
   },
   {
    "apartmentKey": "52113-627",
@@ -430,7 +465,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 60.0,
    "calculationVersion": "v1.1",
-   "rank": 8
+   "rank": 9
   },
   {
    "apartmentKey": "47290-557",
@@ -464,7 +499,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 9
+   "rank": 10
   },
   {
    "apartmentKey": "52111-597",
@@ -498,7 +533,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 83.7,
    "calculationVersion": "v1.1",
-   "rank": 10
+   "rank": 11
   },
   {
    "apartmentKey": "48330-611",
@@ -533,7 +568,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 11
+   "rank": 12
   },
   {
    "apartmentKey": "52113-687",
@@ -567,7 +602,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 12
+   "rank": 13
   },
   {
    "apartmentKey": "48123-156",
@@ -604,7 +639,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 13
+   "rank": 14
   },
   {
    "apartmentKey": "48170-509",
@@ -639,7 +674,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 14
+   "rank": 15
   },
   {
    "apartmentKey": "48125-556",
@@ -674,7 +709,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.0,
    "calculationVersion": "v1.1",
-   "rank": 15
+   "rank": 16
   },
   {
    "apartmentKey": "48127-790",
@@ -709,7 +744,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 16
+   "rank": 17
   },
   {
    "apartmentKey": "52113-733",
@@ -741,7 +776,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 74.1,
    "calculationVersion": "v1.1",
-   "rank": 17
+   "rank": 18
   },
   {
    "apartmentKey": "52113-696",
@@ -775,7 +810,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 102.6,
    "calculationVersion": "v1.1",
-   "rank": 18
+   "rank": 19
   },
   {
    "apartmentKey": "52111-654",
@@ -809,7 +844,42 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.8,
    "calculationVersion": "v1.1",
-   "rank": 19
+   "rank": 20
+  },
+  {
+   "apartmentKey": "52113-751",
+   "aptSeq": "751",
+   "apartmentName": "에코시티더샵3차",
+   "sidoCode": "52",
+   "sggCode": "52113",
+   "areaGroup": 85.0,
+   "buildYear": 2019,
+   "referenceMonth": "202608",
+   "baselineMedian": 649000000.0,
+   "currentMedian": 690000000.0,
+   "riseAmount": 41000000,
+   "riseRate": 6.32,
+   "baselineTradeCount": 4,
+   "currentTradeCount": 2,
+   "confidence": "low",
+   "warnings": [
+    "서로 다른 세부 전용면적 혼합"
+   ],
+   "region": "52113 송천동2가",
+   "exactAreas": [
+    84.99,
+    84.98
+   ],
+   "baselineFloorMedian": 17.0,
+   "currentFloorMedian": 19.5,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": false,
+   "directTradeWarning": false,
+   "compositionWarning": true,
+   "exclusiveAreaGroup": 85.0,
+   "calculationVersion": "v1.1",
+   "rank": 21
   },
   {
    "apartmentKey": "52111-672",
@@ -843,7 +913,39 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 20
+   "rank": 22
+  },
+  {
+   "apartmentKey": "48123-205",
+   "aptSeq": "205",
+   "apartmentName": "은아",
+   "sidoCode": "48",
+   "sggCode": "48123",
+   "areaGroup": 84.8,
+   "buildYear": 1988,
+   "referenceMonth": "202608",
+   "baselineMedian": 788000000,
+   "currentMedian": 832500000.0,
+   "riseAmount": 44500000,
+   "riseRate": 5.65,
+   "baselineTradeCount": 17,
+   "currentTradeCount": 2,
+   "confidence": "medium",
+   "warnings": [],
+   "region": "48123 신월동",
+   "exactAreas": [
+    84.78
+   ],
+   "baselineFloorMedian": 3,
+   "currentFloorMedian": 3.5,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": false,
+   "directTradeWarning": false,
+   "compositionWarning": false,
+   "exclusiveAreaGroup": 84.8,
+   "calculationVersion": "v1.1",
+   "rank": 23
   },
   {
    "apartmentKey": "48121-791",
@@ -877,7 +979,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.8,
    "calculationVersion": "v1.1",
-   "rank": 21
+   "rank": 24
   },
   {
    "apartmentKey": "48170-548",
@@ -914,7 +1016,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 22
+   "rank": 25
   },
   {
    "apartmentKey": "52113-712",
@@ -946,7 +1048,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 111.0,
    "calculationVersion": "v1.1",
-   "rank": 23
+   "rank": 26
   },
   {
    "apartmentKey": "48170-554",
@@ -980,7 +1082,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 117.7,
    "calculationVersion": "v1.1",
-   "rank": 24
+   "rank": 27
   }
  ]
 }

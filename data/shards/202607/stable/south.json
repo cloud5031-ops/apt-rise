@@ -3,7 +3,7 @@
  "referenceMonth": "202607",
  "status": "stable",
  "validationStatus": "valid",
- "generatedAt": "2026-09-13T06:00:58.820069+09:00",
+ "generatedAt": "2026-09-20T06:00:09.641581+09:00",
  "calculationVersion": "v1.1",
  "schemaVersion": "v1.0",
  "includedSidoCodes": [
@@ -149,12 +149,12 @@
   "52800"
  ],
  "failedSggCodes": [],
- "rawTradeCount": 5582,
- "validTradeCount": 5369,
- "cancelledTradeCount": 213,
- "directTradeCount": 585,
- "candidateGroupCount": 3388,
- "filteredOutGroupCount": 3332,
+ "rawTradeCount": 5583,
+ "validTradeCount": 5354,
+ "cancelledTradeCount": 229,
+ "directTradeCount": 586,
+ "candidateGroupCount": 3383,
+ "filteredOutGroupCount": 3328,
  "items": [
   {
    "apartmentKey": "48123-29",
@@ -2032,40 +2032,6 @@
    "exclusiveAreaGroup": 75.5,
    "calculationVersion": "v1.1",
    "rank": 55
-  },
-  {
-   "apartmentKey": "52113-761",
-   "aptSeq": "761",
-   "apartmentName": "대방디엠시티",
-   "sidoCode": "52",
-   "sggCode": "52113",
-   "areaGroup": 106.2,
-   "buildYear": 2020,
-   "referenceMonth": "202607",
-   "baselineMedian": 820000000,
-   "currentMedian": 850000000,
-   "riseAmount": 30000000,
-   "riseRate": 3.66,
-   "baselineTradeCount": 5,
-   "currentTradeCount": 3,
-   "confidence": "low",
-   "warnings": [
-    "층수 차이(8층 이상 또는 구간 차이)"
-   ],
-   "region": "52113 장동",
-   "exactAreas": [
-    106.163
-   ],
-   "baselineFloorMedian": 31,
-   "currentFloorMedian": 23,
-   "baselineDirectTradeCount": 0,
-   "currentDirectTradeCount": 0,
-   "floorMixWarning": true,
-   "directTradeWarning": false,
-   "compositionWarning": true,
-   "exclusiveAreaGroup": 106.2,
-   "calculationVersion": "v1.1",
-   "rank": 56
   }
  ]
 }

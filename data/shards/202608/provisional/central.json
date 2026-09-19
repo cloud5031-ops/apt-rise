@@ -3,7 +3,7 @@
  "referenceMonth": "202608",
  "status": "provisional",
  "validationStatus": "valid",
- "generatedAt": "2026-09-13T05:55:52.437710+09:00",
+ "generatedAt": "2026-09-20T05:56:21.981719+09:00",
  "calculationVersion": "v1.1",
  "schemaVersion": "v1.0",
  "includedSidoCodes": [
@@ -119,12 +119,12 @@
   "51830"
  ],
  "failedSggCodes": [],
- "rawTradeCount": 4167,
- "validTradeCount": 4039,
- "cancelledTradeCount": 128,
- "directTradeCount": 450,
- "candidateGroupCount": 2520,
- "filteredOutGroupCount": 2506,
+ "rawTradeCount": 4264,
+ "validTradeCount": 4119,
+ "cancelledTradeCount": 145,
+ "directTradeCount": 470,
+ "candidateGroupCount": 2551,
+ "filteredOutGroupCount": 2536,
  "items": [
   {
    "apartmentKey": "43130-33",
@@ -329,6 +329,40 @@
    "rank": 6
   },
   {
+   "apartmentKey": "36110-283",
+   "aptSeq": "283",
+   "apartmentName": "범지기마을12단지(중흥S-에코타운)",
+   "sidoCode": "36",
+   "sggCode": "36110",
+   "areaGroup": 96.3,
+   "buildYear": 2015,
+   "referenceMonth": "202608",
+   "baselineMedian": 622500000.0,
+   "currentMedian": 695000000.0,
+   "riseAmount": 72500000,
+   "riseRate": 11.65,
+   "baselineTradeCount": 2,
+   "currentTradeCount": 2,
+   "confidence": "low",
+   "warnings": [
+    "비교/기준 기간 거래량 모두 최소 조건(2건)"
+   ],
+   "region": "36110 아름동",
+   "exactAreas": [
+    96.252
+   ],
+   "baselineFloorMedian": 7.0,
+   "currentFloorMedian": 11.0,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": false,
+   "directTradeWarning": false,
+   "compositionWarning": true,
+   "exclusiveAreaGroup": 96.3,
+   "calculationVersion": "v1.1",
+   "rank": 7
+  },
+  {
    "apartmentKey": "44200-526",
    "aptSeq": "526",
    "apartmentName": "배방자이",
@@ -360,7 +394,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 123.4,
    "calculationVersion": "v1.1",
-   "rank": 7
+   "rank": 8
   },
   {
    "apartmentKey": "44133-860",
@@ -394,7 +428,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.7,
    "calculationVersion": "v1.1",
-   "rank": 8
+   "rank": 9
   },
   {
    "apartmentKey": "51170-357",
@@ -429,7 +463,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 9
+   "rank": 10
   },
   {
    "apartmentKey": "43114-313",
@@ -467,7 +501,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 10
+   "rank": 11
   },
   {
    "apartmentKey": "36110-422",
@@ -503,7 +537,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 99.9,
    "calculationVersion": "v1.1",
-   "rank": 11
+   "rank": 12
   },
   {
    "apartmentKey": "43113-540",
@@ -537,7 +571,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.8,
    "calculationVersion": "v1.1",
-   "rank": 12
+   "rank": 13
   },
   {
    "apartmentKey": "36110-422",
@@ -573,7 +607,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.8,
    "calculationVersion": "v1.1",
-   "rank": 13
+   "rank": 14
   },
   {
    "apartmentKey": "43113-534",
@@ -607,7 +641,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 105.4,
    "calculationVersion": "v1.1",
-   "rank": 14
+   "rank": 15
   }
  ]
 }
