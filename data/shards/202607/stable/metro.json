@@ -3,7 +3,7 @@
  "referenceMonth": "202607",
  "status": "stable",
  "validationStatus": "valid",
- "generatedAt": "2026-09-20T05:53:19.996340+09:00",
+ "generatedAt": "2026-09-27T06:24:52.870998+09:00",
  "calculationVersion": "v1.1",
  "schemaVersion": "v1.0",
  "includedSidoCodes": [
@@ -88,12 +88,12 @@
   "31710"
  ],
  "failedSggCodes": [],
- "rawTradeCount": 6429,
- "validTradeCount": 6171,
- "cancelledTradeCount": 258,
+ "rawTradeCount": 6439,
+ "validTradeCount": 6175,
+ "cancelledTradeCount": 264,
  "directTradeCount": 438,
- "candidateGroupCount": 3999,
- "filteredOutGroupCount": 3944,
+ "candidateGroupCount": 4002,
+ "filteredOutGroupCount": 3947,
  "items": [
   {
    "apartmentKey": "26530-89",
@@ -1982,21 +1982,22 @@
    "buildYear": 1993,
    "referenceMonth": "202607",
    "baselineMedian": 1017500000.0,
-   "currentMedian": 1050000000,
-   "riseAmount": 32500000,
-   "riseRate": 3.19,
+   "currentMedian": 1055000000.0,
+   "riseAmount": 37500000,
+   "riseRate": 3.69,
    "baselineTradeCount": 2,
-   "currentTradeCount": 3,
+   "currentTradeCount": 2,
    "confidence": "low",
    "warnings": [
-    "층수 차이(8층 이상 또는 구간 차이)"
+    "층수 차이(8층 이상 또는 구간 차이)",
+    "비교/기준 기간 거래량 모두 최소 조건(2건)"
    ],
    "region": "30170 둔산동",
    "exactAreas": [
     127.56
    ],
    "baselineFloorMedian": 3.0,
-   "currentFloorMedian": 14,
+   "currentFloorMedian": 9.5,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,

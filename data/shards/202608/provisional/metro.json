@@ -3,7 +3,7 @@
  "referenceMonth": "202608",
  "status": "provisional",
  "validationStatus": "valid",
- "generatedAt": "2026-09-20T05:53:19.996340+09:00",
+ "generatedAt": "2026-09-27T06:24:52.870998+09:00",
  "calculationVersion": "v1.1",
  "schemaVersion": "v1.0",
  "includedSidoCodes": [
@@ -88,12 +88,12 @@
   "31710"
  ],
  "failedSggCodes": [],
- "rawTradeCount": 5393,
- "validTradeCount": 5252,
- "cancelledTradeCount": 141,
- "directTradeCount": 348,
- "candidateGroupCount": 3569,
- "filteredOutGroupCount": 3528,
+ "rawTradeCount": 5446,
+ "validTradeCount": 5293,
+ "cancelledTradeCount": 153,
+ "directTradeCount": 352,
+ "candidateGroupCount": 3581,
+ "filteredOutGroupCount": 3540,
  "items": [
   {
    "apartmentKey": "27290-135",
@@ -507,38 +507,6 @@
    "rank": 12
   },
   {
-   "apartmentKey": "26350-8",
-   "aptSeq": "8",
-   "apartmentName": "동부올림픽타운",
-   "sidoCode": "26",
-   "sggCode": "26350",
-   "areaGroup": 85.0,
-   "buildYear": 1999,
-   "referenceMonth": "202608",
-   "baselineMedian": 920000000,
-   "currentMedian": 1007500000.0,
-   "riseAmount": 87500000,
-   "riseRate": 9.51,
-   "baselineTradeCount": 11,
-   "currentTradeCount": 2,
-   "confidence": "medium",
-   "warnings": [],
-   "region": "26350 우동",
-   "exactAreas": [
-    84.96
-   ],
-   "baselineFloorMedian": 10,
-   "currentFloorMedian": 11.5,
-   "baselineDirectTradeCount": 0,
-   "currentDirectTradeCount": 0,
-   "floorMixWarning": false,
-   "directTradeWarning": false,
-   "compositionWarning": false,
-   "exclusiveAreaGroup": 85.0,
-   "calculationVersion": "v1.1",
-   "rank": 13
-  },
-  {
    "apartmentKey": "27110-309",
    "aptSeq": "309",
    "apartmentName": "더샵리비테르1차",
@@ -570,7 +538,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 74.2,
    "calculationVersion": "v1.1",
-   "rank": 14
+   "rank": 13
   },
   {
    "apartmentKey": "27260-21",
@@ -605,7 +573,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 60.0,
    "calculationVersion": "v1.1",
-   "rank": 15
+   "rank": 14
   },
   {
    "apartmentKey": "26350-189",
@@ -638,6 +606,38 @@
    "directTradeWarning": false,
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.9,
+   "calculationVersion": "v1.1",
+   "rank": 15
+  },
+  {
+   "apartmentKey": "30200-663",
+   "aptSeq": "663",
+   "apartmentName": "양우내안애레이크힐",
+   "sidoCode": "30",
+   "sggCode": "30200",
+   "areaGroup": 70.9,
+   "buildYear": 2015,
+   "referenceMonth": "202608",
+   "baselineMedian": 448000000,
+   "currentMedian": 485000000.0,
+   "riseAmount": 37000000,
+   "riseRate": 8.26,
+   "baselineTradeCount": 3,
+   "currentTradeCount": 2,
+   "confidence": "medium",
+   "warnings": [],
+   "region": "30200 원신흥동",
+   "exactAreas": [
+    70.8741
+   ],
+   "baselineFloorMedian": 11,
+   "currentFloorMedian": 7.0,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": false,
+   "directTradeWarning": false,
+   "compositionWarning": false,
+   "exclusiveAreaGroup": 70.9,
    "calculationVersion": "v1.1",
    "rank": 16
   },
@@ -1169,7 +1169,9 @@
    "currentTradeCount": 10,
    "confidence": "medium",
    "warnings": [
-    "서로 다른 세부 전용면적 혼합"
+    "층수 차이(8층 이상 또는 구간 차이)",
+    "서로 다른 세부 전용면적 혼합",
+    "직거래 포함 이력 존재"
    ],
    "region": "30200 용산동",
    "exactAreas": [
@@ -1177,11 +1179,11 @@
     84.9769
    ],
    "baselineFloorMedian": 13,
-   "currentFloorMedian": 15.0,
+   "currentFloorMedian": 16,
    "baselineDirectTradeCount": 0,
-   "currentDirectTradeCount": 0,
-   "floorMixWarning": false,
-   "directTradeWarning": false,
+   "currentDirectTradeCount": 1,
+   "floorMixWarning": true,
+   "directTradeWarning": true,
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",

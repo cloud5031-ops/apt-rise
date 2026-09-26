@@ -3,7 +3,7 @@
  "referenceMonth": "202607",
  "status": "stable",
  "validationStatus": "valid",
- "generatedAt": "2026-09-20T06:00:09.641581+09:00",
+ "generatedAt": "2026-09-27T06:33:23.448350+09:00",
  "calculationVersion": "v1.1",
  "schemaVersion": "v1.0",
  "includedSidoCodes": [
@@ -149,9 +149,9 @@
   "52800"
  ],
  "failedSggCodes": [],
- "rawTradeCount": 5583,
- "validTradeCount": 5354,
- "cancelledTradeCount": 229,
+ "rawTradeCount": 5585,
+ "validTradeCount": 5352,
+ "cancelledTradeCount": 233,
  "directTradeCount": 586,
  "candidateGroupCount": 3383,
  "filteredOutGroupCount": 3328,
@@ -566,6 +566,41 @@
    "rank": 12
   },
   {
+   "apartmentKey": "52111-526",
+   "aptSeq": "526",
+   "apartmentName": "아르팰리스휴먼시아",
+   "sidoCode": "52",
+   "sggCode": "52111",
+   "areaGroup": 85.0,
+   "buildYear": 2010,
+   "referenceMonth": "202607",
+   "baselineMedian": 424000000.0,
+   "currentMedian": 482500000.0,
+   "riseAmount": 58500000,
+   "riseRate": 13.8,
+   "baselineTradeCount": 2,
+   "currentTradeCount": 2,
+   "confidence": "low",
+   "warnings": [
+    "직거래 포함 이력 존재",
+    "비교/기준 기간 거래량 모두 최소 조건(2건)"
+   ],
+   "region": "52111 효자동2가",
+   "exactAreas": [
+    84.97
+   ],
+   "baselineFloorMedian": 12,
+   "currentFloorMedian": 14.0,
+   "baselineDirectTradeCount": 1,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": false,
+   "directTradeWarning": true,
+   "compositionWarning": true,
+   "exclusiveAreaGroup": 85.0,
+   "calculationVersion": "v1.1",
+   "rank": 13
+  },
+  {
    "apartmentKey": "52113-624",
    "aptSeq": "624",
    "apartmentName": "송천아이파크6단지",
@@ -597,7 +632,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 101.9,
    "calculationVersion": "v1.1",
-   "rank": 13
+   "rank": 14
   },
   {
    "apartmentKey": "48170-139",
@@ -631,7 +666,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 114.6,
    "calculationVersion": "v1.1",
-   "rank": 14
+   "rank": 15
   },
   {
    "apartmentKey": "48330-531",
@@ -666,7 +701,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 60.0,
    "calculationVersion": "v1.1",
-   "rank": 15
+   "rank": 16
   },
   {
    "apartmentKey": "48125-499",
@@ -701,7 +736,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 16
+   "rank": 17
   },
   {
    "apartmentKey": "47290-389",
@@ -738,7 +773,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 17
+   "rank": 18
   },
   {
    "apartmentKey": "47190-1667",
@@ -770,40 +805,6 @@
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
    "directTradeWarning": false,
-   "compositionWarning": true,
-   "exclusiveAreaGroup": 85.0,
-   "calculationVersion": "v1.1",
-   "rank": 18
-  },
-  {
-   "apartmentKey": "52111-526",
-   "aptSeq": "526",
-   "apartmentName": "아르팰리스휴먼시아",
-   "sidoCode": "52",
-   "sggCode": "52111",
-   "areaGroup": 85.0,
-   "buildYear": 2010,
-   "referenceMonth": "202607",
-   "baselineMedian": 438000000,
-   "currentMedian": 482500000.0,
-   "riseAmount": 44500000,
-   "riseRate": 10.16,
-   "baselineTradeCount": 3,
-   "currentTradeCount": 2,
-   "confidence": "low",
-   "warnings": [
-    "직거래 포함 이력 존재"
-   ],
-   "region": "52111 효자동2가",
-   "exactAreas": [
-    84.97
-   ],
-   "baselineFloorMedian": 11.0,
-   "currentFloorMedian": 14.0,
-   "baselineDirectTradeCount": 1,
-   "currentDirectTradeCount": 0,
-   "floorMixWarning": false,
-   "directTradeWarning": true,
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
@@ -2002,7 +2003,7 @@
   {
    "apartmentKey": "48123-583",
    "aptSeq": "583",
-   "apartmentName": "에일린의뜰1단지",
+   "apartmentName": "에일린의뜰",
    "sidoCode": "48",
    "sggCode": "48123",
    "areaGroup": 75.5,
