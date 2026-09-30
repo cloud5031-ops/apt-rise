@@ -3,7 +3,7 @@
  "referenceMonth": "202607",
  "status": "stable",
  "validationStatus": "valid",
- "generatedAt": "2026-09-30T07:58:37.601476+09:00",
+ "generatedAt": "2026-10-01T08:01:26.689199+09:00",
  "calculationVersion": "v1.1",
  "schemaVersion": "v1.0",
  "includedSidoCodes": [
@@ -64,12 +64,12 @@
   "11740"
  ],
  "failedSggCodes": [],
- "rawTradeCount": 5684,
- "validTradeCount": 5542,
- "cancelledTradeCount": 142,
+ "rawTradeCount": 5685,
+ "validTradeCount": 5540,
+ "cancelledTradeCount": 145,
  "directTradeCount": 281,
- "candidateGroupCount": 3497,
- "filteredOutGroupCount": 3010,
+ "candidateGroupCount": 3496,
+ "filteredOutGroupCount": 3009,
  "items": [
   {
    "apartmentKey": "11560-2006",
@@ -4685,6 +4685,38 @@
    "rank": 138
   },
   {
+   "apartmentKey": "11350-40",
+   "aptSeq": "40",
+   "apartmentName": "상계주공6(고층)",
+   "sidoCode": "11",
+   "sggCode": "11350",
+   "areaGroup": 41.3,
+   "buildYear": 1988,
+   "referenceMonth": "202607",
+   "baselineMedian": 598000000,
+   "currentMedian": 655000000.0,
+   "riseAmount": 57000000,
+   "riseRate": 9.53,
+   "baselineTradeCount": 17,
+   "currentTradeCount": 2,
+   "confidence": "medium",
+   "warnings": [],
+   "region": "11350 상계동",
+   "exactAreas": [
+    41.3
+   ],
+   "baselineFloorMedian": 7,
+   "currentFloorMedian": 7.0,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": false,
+   "directTradeWarning": false,
+   "compositionWarning": false,
+   "exclusiveAreaGroup": 41.3,
+   "calculationVersion": "v1.1",
+   "rank": 139
+  },
+  {
    "apartmentKey": "11380-8922",
    "aptSeq": "8922",
    "apartmentName": "북한산힐스테이트7차",
@@ -4718,7 +4750,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 139
+   "rank": 140
   },
   {
    "apartmentKey": "11305-46",
@@ -4750,7 +4782,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 114.9,
    "calculationVersion": "v1.1",
-   "rank": 140
+   "rank": 141
   },
   {
    "apartmentKey": "11320-98",
@@ -4784,7 +4816,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 49.9,
    "calculationVersion": "v1.1",
-   "rank": 141
+   "rank": 142
   },
   {
    "apartmentKey": "11350-29",
@@ -4809,38 +4841,6 @@
    ],
    "baselineFloorMedian": 8,
    "currentFloorMedian": 14,
-   "baselineDirectTradeCount": 0,
-   "currentDirectTradeCount": 0,
-   "floorMixWarning": false,
-   "directTradeWarning": false,
-   "compositionWarning": false,
-   "exclusiveAreaGroup": 41.3,
-   "calculationVersion": "v1.1",
-   "rank": 142
-  },
-  {
-   "apartmentKey": "11350-40",
-   "aptSeq": "40",
-   "apartmentName": "상계주공6(고층)",
-   "sidoCode": "11",
-   "sggCode": "11350",
-   "areaGroup": 41.3,
-   "buildYear": 1988,
-   "referenceMonth": "202607",
-   "baselineMedian": 598500000.0,
-   "currentMedian": 655000000.0,
-   "riseAmount": 56500000,
-   "riseRate": 9.44,
-   "baselineTradeCount": 18,
-   "currentTradeCount": 2,
-   "confidence": "medium",
-   "warnings": [],
-   "region": "11350 상계동",
-   "exactAreas": [
-    41.3
-   ],
-   "baselineFloorMedian": 7.0,
-   "currentFloorMedian": 7.0,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
