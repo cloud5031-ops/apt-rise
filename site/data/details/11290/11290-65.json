@@ -7,8 +7,8 @@
  "sggCode": "11290",
  "dongName": "종암동",
  "referenceMonths": [
-  "202607",
-  "202608"
+  "202608",
+  "202609"
  ],
  "availableAreas": [
   59.04,
@@ -17,6 +17,15 @@
   114.75
  ],
  "transactions": [
+  {
+   "contractDate": "2026-09-03",
+   "priceWon": 958000000,
+   "floor": 19,
+   "exclusiveArea": 59.04,
+   "areaGroup": 59,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
   {
    "contractDate": "2026-08-18",
    "priceWon": 1200000000,
@@ -1438,29 +1447,11 @@
    "areaGroup": 60,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
-  },
-  {
-   "contractDate": "2023-09-21",
-   "priceWon": 640000000,
-   "floor": 15,
-   "exclusiveArea": 59.86,
-   "areaGroup": 60,
-   "dealType": "중개거래",
-   "cancellationStatus": "COMPLETED"
-  },
-  {
-   "contractDate": "2023-09-15",
-   "priceWon": 768000000,
-   "floor": 12,
-   "exclusiveArea": 84.72,
-   "areaGroup": 85,
-   "dealType": "중개거래",
-   "cancellationStatus": "COMPLETED"
   }
  ],
  "historyCoverage": {
-  "startMonth": "202309",
-  "endMonth": "202608",
+  "startMonth": "202310",
+  "endMonth": "202609",
   "months": 36,
   "complete": true
  },

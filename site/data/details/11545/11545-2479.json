@@ -7,8 +7,8 @@
  "sggCode": "11545",
  "dongName": "독산동",
  "referenceMonths": [
-  "202607",
-  "202608"
+  "202608",
+  "202609"
  ],
  "availableAreas": [
   59.9662,
@@ -19,6 +19,42 @@
   84.4855
  ],
  "transactions": [
+  {
+   "contractDate": "2026-09-14",
+   "priceWon": 1070000000,
+   "floor": 11,
+   "exclusiveArea": 59.9672,
+   "areaGroup": 60,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
+  {
+   "contractDate": "2026-09-12",
+   "priceWon": 1120000000,
+   "floor": 32,
+   "exclusiveArea": 59.9662,
+   "areaGroup": 60,
+   "dealType": "중개거래",
+   "cancellationStatus": "CANCELLED"
+  },
+  {
+   "contractDate": "2026-09-08",
+   "priceWon": 1300000000,
+   "floor": 38,
+   "exclusiveArea": 84.408,
+   "areaGroup": 84,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
+  {
+   "contractDate": "2026-09-07",
+   "priceWon": 1045000000,
+   "floor": 26,
+   "exclusiveArea": 59.9672,
+   "areaGroup": 60,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
   {
    "contractDate": "2026-08-29",
    "priceWon": 1120000000,
@@ -1764,20 +1800,11 @@
    "areaGroup": 84,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
-  },
-  {
-   "contractDate": "2023-09-25",
-   "priceWon": 1175000000,
-   "floor": 7,
-   "exclusiveArea": 84.408,
-   "areaGroup": 84,
-   "dealType": "중개거래",
-   "cancellationStatus": "COMPLETED"
   }
  ],
  "historyCoverage": {
-  "startMonth": "202309",
-  "endMonth": "202608",
+  "startMonth": "202310",
+  "endMonth": "202609",
   "months": 36,
   "complete": true
  },

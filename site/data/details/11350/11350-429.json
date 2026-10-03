@@ -7,14 +7,23 @@
  "sggCode": "11350",
  "dongName": "중계동",
  "referenceMonths": [
-  "202607",
-  "202608"
+  "202608",
+  "202609"
  ],
  "availableAreas": [
   59.941,
   84.902
  ],
  "transactions": [
+  {
+   "contractDate": "2026-09-01",
+   "priceWon": 900000000,
+   "floor": 9,
+   "exclusiveArea": 84.902,
+   "areaGroup": 85,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
   {
    "contractDate": "2026-08-28",
    "priceWon": 745000000,
@@ -170,8 +179,8 @@
   }
  ],
  "historyCoverage": {
-  "startMonth": "202309",
-  "endMonth": "202608",
+  "startMonth": "202310",
+  "endMonth": "202609",
   "months": 36,
   "complete": true
  },

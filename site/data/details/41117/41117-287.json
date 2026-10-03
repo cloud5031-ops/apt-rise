@@ -7,8 +7,8 @@
  "sggCode": "41117",
  "dongName": "하동",
  "referenceMonths": [
-  "202607",
-  "202608"
+  "202608",
+  "202609"
  ],
  "availableAreas": [
   74.78,
@@ -16,6 +16,24 @@
   84.92
  ],
  "transactions": [
+  {
+   "contractDate": "2026-09-19",
+   "priceWon": 1580000000,
+   "floor": 15,
+   "exclusiveArea": 84.81,
+   "areaGroup": 85,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
+  {
+   "contractDate": "2026-09-09",
+   "priceWon": 1480000000,
+   "floor": 12,
+   "exclusiveArea": 84.81,
+   "areaGroup": 85,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
   {
    "contractDate": "2026-08-19",
    "priceWon": 1490000000,
@@ -1590,20 +1608,11 @@
    "areaGroup": 85,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
-  },
-  {
-   "contractDate": "2023-09-07",
-   "priceWon": 925000000,
-   "floor": 17,
-   "exclusiveArea": 84.92,
-   "areaGroup": 85,
-   "dealType": "직거래",
-   "cancellationStatus": "COMPLETED"
   }
  ],
  "historyCoverage": {
-  "startMonth": "202309",
-  "endMonth": "202608",
+  "startMonth": "202310",
+  "endMonth": "202609",
   "months": 36,
   "complete": true
  },

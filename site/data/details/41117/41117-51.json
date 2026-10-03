@@ -7,13 +7,22 @@
  "sggCode": "41117",
  "dongName": "영통동",
  "referenceMonths": [
-  "202607",
-  "202608"
+  "202608",
+  "202609"
  ],
  "availableAreas": [
   59.965
  ],
  "transactions": [
+  {
+   "contractDate": "2026-09-08",
+   "priceWon": 520000000,
+   "floor": 13,
+   "exclusiveArea": 59.965,
+   "areaGroup": 60,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
   {
    "contractDate": "2026-08-21",
    "priceWon": 510000000,
@@ -634,29 +643,11 @@
    "areaGroup": 60,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
-  },
-  {
-   "contractDate": "2023-09-12",
-   "priceWon": 375000000,
-   "floor": 8,
-   "exclusiveArea": 59.965,
-   "areaGroup": 60,
-   "dealType": "중개거래",
-   "cancellationStatus": "CANCELLED"
-  },
-  {
-   "contractDate": "2023-09-07",
-   "priceWon": 400000000,
-   "floor": 11,
-   "exclusiveArea": 59.965,
-   "areaGroup": 60,
-   "dealType": "중개거래",
-   "cancellationStatus": "COMPLETED"
   }
  ],
  "historyCoverage": {
-  "startMonth": "202309",
-  "endMonth": "202608",
+  "startMonth": "202310",
+  "endMonth": "202609",
   "months": 36,
   "complete": true
  },

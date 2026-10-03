@@ -7,8 +7,8 @@
  "sggCode": "52111",
  "dongName": "효자동1가",
  "referenceMonths": [
-  "202607",
-  "202608"
+  "202608",
+  "202609"
  ],
  "availableAreas": [
   39.5527,
@@ -19,9 +19,37 @@
   78.9927,
   84.9149,
   84.9887,
-  101.6981
+  101.6981,
+  101.879
  ],
  "transactions": [
+  {
+   "contractDate": "2026-09-22",
+   "priceWon": 670000000,
+   "floor": 2,
+   "exclusiveArea": 101.879,
+   "areaGroup": 102,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
+  {
+   "contractDate": "2026-09-12",
+   "priceWon": 635000000,
+   "floor": 9,
+   "exclusiveArea": 84.9887,
+   "areaGroup": 85,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
+  {
+   "contractDate": "2026-09-02",
+   "priceWon": 387000000,
+   "floor": 3,
+   "exclusiveArea": 70.6418,
+   "areaGroup": 71,
+   "dealType": "직거래",
+   "cancellationStatus": "COMPLETED"
+  },
   {
    "contractDate": "2026-08-30",
    "priceWon": 582000000,
@@ -699,8 +727,8 @@
   }
  ],
  "historyCoverage": {
-  "startMonth": "202309",
-  "endMonth": "202608",
+  "startMonth": "202310",
+  "endMonth": "202609",
   "months": 36,
   "complete": false
  },

@@ -7,8 +7,8 @@
  "sggCode": "41287",
  "dongName": "주엽동",
  "referenceMonths": [
-  "202607",
-  "202608"
+  "202608",
+  "202609"
  ],
  "availableAreas": [
   58.579,
@@ -16,6 +16,33 @@
   84.63
  ],
  "transactions": [
+  {
+   "contractDate": "2026-09-20",
+   "priceWon": 497000000,
+   "floor": 8,
+   "exclusiveArea": 71.063,
+   "areaGroup": 71,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
+  {
+   "contractDate": "2026-09-10",
+   "priceWon": 410000000,
+   "floor": 10,
+   "exclusiveArea": 58.579,
+   "areaGroup": 59,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
+  {
+   "contractDate": "2026-09-04",
+   "priceWon": 420000000,
+   "floor": 6,
+   "exclusiveArea": 58.579,
+   "areaGroup": 59,
+   "dealType": "중개거래",
+   "cancellationStatus": "CANCELLED"
+  },
   {
    "contractDate": "2026-08-29",
    "priceWon": 700000000,
@@ -216,8 +243,8 @@
   }
  ],
  "historyCoverage": {
-  "startMonth": "202309",
-  "endMonth": "202608",
+  "startMonth": "202310",
+  "endMonth": "202609",
   "months": 36,
   "complete": true
  },

@@ -7,14 +7,42 @@
  "sggCode": "41287",
  "dongName": "대화동",
  "referenceMonths": [
-  "202607",
-  "202608"
+  "202608",
+  "202609"
  ],
  "availableAreas": [
+  59.05,
   69.31,
   84.88
  ],
  "transactions": [
+  {
+   "contractDate": "2026-09-30",
+   "priceWon": 435000000,
+   "floor": 3,
+   "exclusiveArea": 84.88,
+   "areaGroup": 85,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
+  {
+   "contractDate": "2026-09-22",
+   "priceWon": 368000000,
+   "floor": 14,
+   "exclusiveArea": 59.05,
+   "areaGroup": 59,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
+  {
+   "contractDate": "2026-09-21",
+   "priceWon": 448000000,
+   "floor": 11,
+   "exclusiveArea": 84.88,
+   "areaGroup": 85,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
   {
    "contractDate": "2026-08-17",
    "priceWon": 430000000,
@@ -134,8 +162,8 @@
   }
  ],
  "historyCoverage": {
-  "startMonth": "202309",
-  "endMonth": "202608",
+  "startMonth": "202310",
+  "endMonth": "202609",
   "months": 36,
   "complete": true
  },

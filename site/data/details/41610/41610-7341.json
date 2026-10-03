@@ -7,8 +7,8 @@
  "sggCode": "41610",
  "dongName": "역동",
  "referenceMonths": [
-  "202607",
-  "202608"
+  "202608",
+  "202609"
  ],
  "availableAreas": [
   74.7643,
@@ -17,6 +17,24 @@
   84.5516
  ],
  "transactions": [
+  {
+   "contractDate": "2026-09-14",
+   "priceWon": 810000000,
+   "floor": 1,
+   "exclusiveArea": 74.7643,
+   "areaGroup": 75,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
+  {
+   "contractDate": "2026-09-05",
+   "priceWon": 955000000,
+   "floor": 6,
+   "exclusiveArea": 84.5516,
+   "areaGroup": 85,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
   {
    "contractDate": "2026-08-29",
    "priceWon": 990000000,
@@ -1474,20 +1492,11 @@
    "areaGroup": 85,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
-  },
-  {
-   "contractDate": "2023-09-16",
-   "priceWon": 779000000,
-   "floor": 7,
-   "exclusiveArea": 84.5432,
-   "areaGroup": 85,
-   "dealType": "중개거래",
-   "cancellationStatus": "COMPLETED"
   }
  ],
  "historyCoverage": {
-  "startMonth": "202309",
-  "endMonth": "202608",
+  "startMonth": "202310",
+  "endMonth": "202609",
   "months": 36,
   "complete": true
  },

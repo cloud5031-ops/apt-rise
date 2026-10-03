@@ -7,8 +7,8 @@
  "sggCode": "11200",
  "dongName": "행당동",
  "referenceMonths": [
-  "202607",
-  "202608"
+  "202608",
+  "202609"
  ],
  "availableAreas": [
   59.91,
@@ -17,6 +17,15 @@
   114.97
  ],
  "transactions": [
+  {
+   "contractDate": "2026-09-05",
+   "priceWon": 1740000000,
+   "floor": 1,
+   "exclusiveArea": 84.95,
+   "areaGroup": 85,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
   {
    "contractDate": "2026-08-12",
    "priceWon": 1915000000,
@@ -1708,29 +1717,11 @@
    "areaGroup": 85,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
-  },
-  {
-   "contractDate": "2023-09-16",
-   "priceWon": 1025000000,
-   "floor": 19,
-   "exclusiveArea": 59.94,
-   "areaGroup": 60,
-   "dealType": "중개거래",
-   "cancellationStatus": "COMPLETED"
-  },
-  {
-   "contractDate": "2023-09-12",
-   "priceWon": 1500000000,
-   "floor": 7,
-   "exclusiveArea": 114.97,
-   "areaGroup": 115,
-   "dealType": "중개거래",
-   "cancellationStatus": "CANCELLED"
   }
  ],
  "historyCoverage": {
-  "startMonth": "202309",
-  "endMonth": "202608",
+  "startMonth": "202310",
+  "endMonth": "202609",
   "months": 36,
   "complete": true
  },

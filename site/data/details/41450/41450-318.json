@@ -7,14 +7,32 @@
  "sggCode": "41450",
  "dongName": "풍산동",
  "referenceMonths": [
-  "202607",
-  "202608"
+  "202608",
+  "202609"
  ],
  "availableAreas": [
   74.7041,
   84.3852
  ],
  "transactions": [
+  {
+   "contractDate": "2026-09-17",
+   "priceWon": 1230000000,
+   "floor": 23,
+   "exclusiveArea": 84.3852,
+   "areaGroup": 84,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
+  {
+   "contractDate": "2026-09-17",
+   "priceWon": 1180000000,
+   "floor": 23,
+   "exclusiveArea": 74.7041,
+   "areaGroup": 75,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
   {
    "contractDate": "2026-08-28",
    "priceWon": 1180000000,
@@ -1247,38 +1265,11 @@
    "areaGroup": 84,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
-  },
-  {
-   "contractDate": "2023-09-16",
-   "priceWon": 920000000,
-   "floor": 11,
-   "exclusiveArea": 84.3852,
-   "areaGroup": 84,
-   "dealType": "중개거래",
-   "cancellationStatus": "COMPLETED"
-  },
-  {
-   "contractDate": "2023-09-02",
-   "priceWon": 905000000,
-   "floor": 6,
-   "exclusiveArea": 84.3852,
-   "areaGroup": 84,
-   "dealType": "중개거래",
-   "cancellationStatus": "CANCELLED"
-  },
-  {
-   "contractDate": "2023-09-01",
-   "priceWon": 915000000,
-   "floor": 18,
-   "exclusiveArea": 84.3852,
-   "areaGroup": 84,
-   "dealType": "중개거래",
-   "cancellationStatus": "COMPLETED"
   }
  ],
  "historyCoverage": {
-  "startMonth": "202309",
-  "endMonth": "202608",
+  "startMonth": "202310",
+  "endMonth": "202609",
   "months": 36,
   "complete": true
  },

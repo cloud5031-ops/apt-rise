@@ -7,8 +7,8 @@
  "sggCode": "41173",
  "dongName": "평촌동",
  "referenceMonths": [
-  "202607",
-  "202608"
+  "202608",
+  "202609"
  ],
  "availableAreas": [
   56.065,
@@ -16,6 +16,15 @@
   80.374
  ],
  "transactions": [
+  {
+   "contractDate": "2026-09-01",
+   "priceWon": 1190000000,
+   "floor": 10,
+   "exclusiveArea": 56.065,
+   "areaGroup": 56,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
   {
    "contractDate": "2026-08-27",
    "priceWon": 1545000000,
@@ -1707,56 +1716,11 @@
    "areaGroup": 80,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
-  },
-  {
-   "contractDate": "2023-09-21",
-   "priceWon": 1045000000,
-   "floor": 5,
-   "exclusiveArea": 80.374,
-   "areaGroup": 80,
-   "dealType": "중개거래",
-   "cancellationStatus": "COMPLETED"
-  },
-  {
-   "contractDate": "2023-09-17",
-   "priceWon": 1030000000,
-   "floor": 9,
-   "exclusiveArea": 80.374,
-   "areaGroup": 80,
-   "dealType": "중개거래",
-   "cancellationStatus": "COMPLETED"
-  },
-  {
-   "contractDate": "2023-09-16",
-   "priceWon": 840000000,
-   "floor": 19,
-   "exclusiveArea": 56.065,
-   "areaGroup": 56,
-   "dealType": "중개거래",
-   "cancellationStatus": "COMPLETED"
-  },
-  {
-   "contractDate": "2023-09-15",
-   "priceWon": 770000000,
-   "floor": 6,
-   "exclusiveArea": 56.065,
-   "areaGroup": 56,
-   "dealType": "중개거래",
-   "cancellationStatus": "COMPLETED"
-  },
-  {
-   "contractDate": "2023-09-15",
-   "priceWon": 1040000000,
-   "floor": 12,
-   "exclusiveArea": 80.374,
-   "areaGroup": 80,
-   "dealType": "중개거래",
-   "cancellationStatus": "COMPLETED"
   }
  ],
  "historyCoverage": {
-  "startMonth": "202309",
-  "endMonth": "202608",
+  "startMonth": "202310",
+  "endMonth": "202609",
   "months": 36,
   "complete": true
  },

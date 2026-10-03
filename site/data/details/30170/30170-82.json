@@ -7,8 +7,8 @@
  "sggCode": "30170",
  "dongName": "둔산동",
  "referenceMonths": [
-  "202607",
-  "202608"
+  "202608",
+  "202609"
  ],
  "availableAreas": [
   75.42,
@@ -17,6 +17,15 @@
   164.58
  ],
  "transactions": [
+  {
+   "contractDate": "2026-09-02",
+   "priceWon": 730000000,
+   "floor": 3,
+   "exclusiveArea": 75.42,
+   "areaGroup": 75,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
   {
    "contractDate": "2026-08-29",
    "priceWon": 960000000,
@@ -970,20 +979,11 @@
    "areaGroup": 93,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
-  },
-  {
-   "contractDate": "2023-09-04",
-   "priceWon": 728000000,
-   "floor": 3,
-   "exclusiveArea": 93.105,
-   "areaGroup": 93,
-   "dealType": "중개거래",
-   "cancellationStatus": "COMPLETED"
   }
  ],
  "historyCoverage": {
-  "startMonth": "202309",
-  "endMonth": "202608",
+  "startMonth": "202310",
+  "endMonth": "202609",
   "months": 36,
   "complete": true
  },

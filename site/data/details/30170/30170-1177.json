@@ -7,16 +7,26 @@
  "sggCode": "30170",
  "dongName": "탄방동",
  "referenceMonths": [
-  "202607",
-  "202608"
+  "202608",
+  "202609"
  ],
  "availableAreas": [
+  59.9773,
   72.471,
   84.3876,
   84.5892,
   84.8747
  ],
  "transactions": [
+  {
+   "contractDate": "2026-09-23",
+   "priceWon": 639000000,
+   "floor": 4,
+   "exclusiveArea": 59.9773,
+   "areaGroup": 60,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
   {
    "contractDate": "2026-08-17",
    "priceWon": 870000000,
@@ -199,8 +209,8 @@
   }
  ],
  "historyCoverage": {
-  "startMonth": "202309",
-  "endMonth": "202608",
+  "startMonth": "202310",
+  "endMonth": "202609",
   "months": 36,
   "complete": true
  },

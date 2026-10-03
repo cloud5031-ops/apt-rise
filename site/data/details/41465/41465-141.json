@@ -7,8 +7,8 @@
  "sggCode": "41465",
  "dongName": "성복동",
  "referenceMonths": [
-  "202607",
-  "202608"
+  "202608",
+  "202609"
  ],
  "availableAreas": [
   133.148,
@@ -17,6 +17,15 @@
   191.754
  ],
  "transactions": [
+  {
+   "contractDate": "2026-09-03",
+   "priceWon": 830000000,
+   "floor": 7,
+   "exclusiveArea": 134.242,
+   "areaGroup": 134,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
   {
    "contractDate": "2026-08-22",
    "priceWon": 800000000,
@@ -1168,29 +1177,11 @@
    "areaGroup": 133,
    "dealType": "중개거래",
    "cancellationStatus": "CANCELLED"
-  },
-  {
-   "contractDate": "2023-09-13",
-   "priceWon": 700000000,
-   "floor": 9,
-   "exclusiveArea": 134.242,
-   "areaGroup": 134,
-   "dealType": "중개거래",
-   "cancellationStatus": "COMPLETED"
-  },
-  {
-   "contractDate": "2023-09-06",
-   "priceWon": 640000000,
-   "floor": 3,
-   "exclusiveArea": 133.148,
-   "areaGroup": 133,
-   "dealType": "중개거래",
-   "cancellationStatus": "COMPLETED"
   }
  ],
  "historyCoverage": {
-  "startMonth": "202309",
-  "endMonth": "202608",
+  "startMonth": "202310",
+  "endMonth": "202609",
   "months": 36,
   "complete": true
  },

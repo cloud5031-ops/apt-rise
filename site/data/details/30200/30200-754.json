@@ -7,14 +7,32 @@
  "sggCode": "30200",
  "dongName": "용산동",
  "referenceMonths": [
-  "202607",
-  "202608"
+  "202608",
+  "202609"
  ],
  "availableAreas": [
   84.9769,
   84.9899
  ],
  "transactions": [
+  {
+   "contractDate": "2026-09-28",
+   "priceWon": 700000000,
+   "floor": 27,
+   "exclusiveArea": 84.9769,
+   "areaGroup": 85,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
+  {
+   "contractDate": "2026-09-05",
+   "priceWon": 708000000,
+   "floor": 26,
+   "exclusiveArea": 84.9769,
+   "areaGroup": 85,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
   {
    "contractDate": "2026-08-29",
    "priceWon": 600000000,
@@ -242,8 +260,8 @@
   }
  ],
  "historyCoverage": {
-  "startMonth": "202309",
-  "endMonth": "202608",
+  "startMonth": "202310",
+  "endMonth": "202609",
   "months": 36,
   "complete": true
  },

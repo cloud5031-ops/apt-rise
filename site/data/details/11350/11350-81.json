@@ -7,8 +7,8 @@
  "sggCode": "11350",
  "dongName": "하계동",
  "referenceMonths": [
-  "202607",
-  "202608"
+  "202608",
+  "202609"
  ],
  "availableAreas": [
   27.0,
@@ -16,6 +16,15 @@
   44.52
  ],
  "transactions": [
+  {
+   "contractDate": "2026-09-04",
+   "priceWon": 345000000,
+   "floor": 6,
+   "exclusiveArea": 27.0,
+   "areaGroup": 27,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
   {
    "contractDate": "2026-08-31",
    "priceWon": 500000000,
@@ -1419,65 +1428,11 @@
    "areaGroup": 27,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
-  },
-  {
-   "contractDate": "2023-09-25",
-   "priceWon": 300000000,
-   "floor": 12,
-   "exclusiveArea": 27.0,
-   "areaGroup": 27,
-   "dealType": "중개거래",
-   "cancellationStatus": "COMPLETED"
-  },
-  {
-   "contractDate": "2023-09-23",
-   "priceWon": 295000000,
-   "floor": 3,
-   "exclusiveArea": 27.0,
-   "areaGroup": 27,
-   "dealType": "중개거래",
-   "cancellationStatus": "COMPLETED"
-  },
-  {
-   "contractDate": "2023-09-21",
-   "priceWon": 417000000,
-   "floor": 9,
-   "exclusiveArea": 35.28,
-   "areaGroup": 35,
-   "dealType": "중개거래",
-   "cancellationStatus": "COMPLETED"
-  },
-  {
-   "contractDate": "2023-09-06",
-   "priceWon": 300000000,
-   "floor": 14,
-   "exclusiveArea": 27.0,
-   "areaGroup": 27,
-   "dealType": "중개거래",
-   "cancellationStatus": "COMPLETED"
-  },
-  {
-   "contractDate": "2023-09-02",
-   "priceWon": 300000000,
-   "floor": 2,
-   "exclusiveArea": 27.0,
-   "areaGroup": 27,
-   "dealType": "중개거래",
-   "cancellationStatus": "COMPLETED"
-  },
-  {
-   "contractDate": "2023-09-01",
-   "priceWon": 298000000,
-   "floor": 15,
-   "exclusiveArea": 27.0,
-   "areaGroup": 27,
-   "dealType": "중개거래",
-   "cancellationStatus": "COMPLETED"
   }
  ],
  "historyCoverage": {
-  "startMonth": "202309",
-  "endMonth": "202608",
+  "startMonth": "202310",
+  "endMonth": "202609",
   "months": 36,
   "complete": true
  },

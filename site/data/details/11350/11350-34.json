@@ -7,8 +7,8 @@
  "sggCode": "11350",
  "dongName": "상계동",
  "referenceMonths": [
-  "202607",
-  "202608"
+  "202608",
+  "202609"
  ],
  "availableAreas": [
   41.3,
@@ -19,6 +19,15 @@
   90.94
  ],
  "transactions": [
+  {
+   "contractDate": "2026-09-12",
+   "priceWon": 690000000,
+   "floor": 14,
+   "exclusiveArea": 59.39,
+   "areaGroup": 59,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
   {
    "contractDate": "2026-08-24",
    "priceWon": 500000000,
@@ -2277,20 +2286,11 @@
    "areaGroup": 41,
    "dealType": "직거래",
    "cancellationStatus": "COMPLETED"
-  },
-  {
-   "contractDate": "2023-09-21",
-   "priceWon": 525000000,
-   "floor": 9,
-   "exclusiveArea": 59.39,
-   "areaGroup": 59,
-   "dealType": "중개거래",
-   "cancellationStatus": "COMPLETED"
   }
  ],
  "historyCoverage": {
-  "startMonth": "202309",
-  "endMonth": "202608",
+  "startMonth": "202310",
+  "endMonth": "202609",
   "months": 36,
   "complete": true
  },

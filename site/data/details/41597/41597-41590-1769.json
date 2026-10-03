@@ -7,8 +7,8 @@
  "sggCode": "41597",
  "dongName": "영천동",
  "referenceMonths": [
-  "202605",
-  "202606"
+  "202608",
+  "202609"
  ],
  "availableAreas": [
   59.7224,
@@ -16,6 +16,24 @@
   84.9889
  ],
  "transactions": [
+  {
+   "contractDate": "2026-09-22",
+   "priceWon": 930000000,
+   "floor": 13,
+   "exclusiveArea": 59.7224,
+   "areaGroup": 60,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
+  {
+   "contractDate": "2026-09-18",
+   "priceWon": 940000000,
+   "floor": 20,
+   "exclusiveArea": 59.7224,
+   "areaGroup": 60,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
   {
    "contractDate": "2026-06-30",
    "priceWon": 900000000,
@@ -432,10 +450,10 @@
   }
  ],
  "historyCoverage": {
-  "startMonth": "202307",
-  "endMonth": "202606",
+  "startMonth": "202310",
+  "endMonth": "202609",
   "months": 36,
-  "complete": false
+  "complete": true
  },
  "location": {
   "latitude": 37.2105520181269,

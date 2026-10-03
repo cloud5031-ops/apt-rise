@@ -7,8 +7,8 @@
  "sggCode": "41465",
  "dongName": "동천동",
  "referenceMonths": [
-  "202607",
-  "202608"
+  "202608",
+  "202609"
  ],
  "availableAreas": [
   74.8994,
@@ -26,6 +26,15 @@
   100.9018
  ],
  "transactions": [
+  {
+   "contractDate": "2026-09-12",
+   "priceWon": 1250000000,
+   "floor": 36,
+   "exclusiveArea": 84.7646,
+   "areaGroup": 85,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
   {
    "contractDate": "2026-08-28",
    "priceWon": 1340000000,
@@ -2230,56 +2239,11 @@
    "areaGroup": 101,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
-  },
-  {
-   "contractDate": "2023-09-26",
-   "priceWon": 940000000,
-   "floor": 10,
-   "exclusiveArea": 84.805,
-   "areaGroup": 85,
-   "dealType": "중개거래",
-   "cancellationStatus": "COMPLETED"
-  },
-  {
-   "contractDate": "2023-09-16",
-   "priceWon": 925000000,
-   "floor": 15,
-   "exclusiveArea": 84.9575,
-   "areaGroup": 85,
-   "dealType": "중개거래",
-   "cancellationStatus": "CANCELLED"
-  },
-  {
-   "contractDate": "2023-09-16",
-   "priceWon": 880000000,
-   "floor": 29,
-   "exclusiveArea": 74.9725,
-   "areaGroup": 75,
-   "dealType": "중개거래",
-   "cancellationStatus": "CANCELLED"
-  },
-  {
-   "contractDate": "2023-09-16",
-   "priceWon": 1080000000,
-   "floor": 9,
-   "exclusiveArea": 100.24,
-   "areaGroup": 100,
-   "dealType": "중개거래",
-   "cancellationStatus": "COMPLETED"
-  },
-  {
-   "contractDate": "2023-09-10",
-   "priceWon": 865000000,
-   "floor": 27,
-   "exclusiveArea": 74.9725,
-   "areaGroup": 75,
-   "dealType": "중개거래",
-   "cancellationStatus": "COMPLETED"
   }
  ],
  "historyCoverage": {
-  "startMonth": "202309",
-  "endMonth": "202608",
+  "startMonth": "202310",
+  "endMonth": "202609",
   "months": 36,
   "complete": true
  },

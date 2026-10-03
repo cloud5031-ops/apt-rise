@@ -7,14 +7,23 @@
  "sggCode": "47290",
  "dongName": "사동",
  "referenceMonths": [
-  "202607",
-  "202608"
+  "202608",
+  "202609"
  ],
  "availableAreas": [
   66.4388,
   84.9898
  ],
  "transactions": [
+  {
+   "contractDate": "2026-09-18",
+   "priceWon": 260000000,
+   "floor": 10,
+   "exclusiveArea": 84.9898,
+   "areaGroup": 85,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
   {
    "contractDate": "2026-08-29",
    "priceWon": 205000000,
@@ -188,8 +197,8 @@
   }
  ],
  "historyCoverage": {
-  "startMonth": "202309",
-  "endMonth": "202608",
+  "startMonth": "202310",
+  "endMonth": "202609",
   "months": 36,
   "complete": false
  },

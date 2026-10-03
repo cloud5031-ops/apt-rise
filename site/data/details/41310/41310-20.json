@@ -7,14 +7,23 @@
  "sggCode": "41310",
  "dongName": "인창동",
  "referenceMonths": [
-  "202607",
-  "202608"
+  "202608",
+  "202609"
  ],
  "availableAreas": [
   59.937,
   84.973
  ],
  "transactions": [
+  {
+   "contractDate": "2026-09-18",
+   "priceWon": 600000000,
+   "floor": 22,
+   "exclusiveArea": 84.973,
+   "areaGroup": 85,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
   {
    "contractDate": "2026-08-31",
    "priceWon": 512000000,
@@ -395,8 +404,8 @@
   }
  ],
  "historyCoverage": {
-  "startMonth": "202309",
-  "endMonth": "202608",
+  "startMonth": "202310",
+  "endMonth": "202609",
   "months": 36,
   "complete": true
  },

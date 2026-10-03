@@ -7,16 +7,26 @@
  "sggCode": "41117",
  "dongName": "망포동",
  "referenceMonths": [
-  "202607",
-  "202608"
+  "202608",
+  "202609"
  ],
  "availableAreas": [
   59.9617,
   84.985,
+  105.6598,
   122.3994,
   142.8429
  ],
  "transactions": [
+  {
+   "contractDate": "2026-09-05",
+   "priceWon": 950000000,
+   "floor": 2,
+   "exclusiveArea": 105.6598,
+   "areaGroup": 106,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
   {
    "contractDate": "2026-08-27",
    "priceWon": 965000000,
@@ -163,8 +173,8 @@
   }
  ],
  "historyCoverage": {
-  "startMonth": "202309",
-  "endMonth": "202608",
+  "startMonth": "202310",
+  "endMonth": "202609",
   "months": 36,
   "complete": true
  },
