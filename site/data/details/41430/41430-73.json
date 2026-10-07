@@ -7,13 +7,31 @@
  "sggCode": "41430",
  "dongName": "오전동",
  "referenceMonths": [
-  "202607",
-  "202608"
+  "202608",
+  "202609"
  ],
  "availableAreas": [
   84.818
  ],
  "transactions": [
+  {
+   "contractDate": "2026-09-21",
+   "priceWon": 610000000,
+   "floor": 17,
+   "exclusiveArea": 84.818,
+   "areaGroup": 85,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
+  {
+   "contractDate": "2026-09-18",
+   "priceWon": 682000000,
+   "floor": 10,
+   "exclusiveArea": 84.818,
+   "areaGroup": 85,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
   {
    "contractDate": "2026-08-22",
    "priceWon": 625000000,
@@ -39,7 +57,7 @@
    "exclusiveArea": 84.818,
    "areaGroup": 85,
    "dealType": "중개거래",
-   "cancellationStatus": "COMPLETED"
+   "cancellationStatus": "CANCELLED"
   },
   {
    "contractDate": "2026-07-31",
@@ -583,8 +601,8 @@
   }
  ],
  "historyCoverage": {
-  "startMonth": "202309",
-  "endMonth": "202608",
+  "startMonth": "202310",
+  "endMonth": "202609",
   "months": 36,
   "complete": true
  },

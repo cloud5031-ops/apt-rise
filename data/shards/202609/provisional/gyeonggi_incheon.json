@@ -3,7 +3,7 @@
  "referenceMonth": "202609",
  "status": "provisional",
  "validationStatus": "valid",
- "generatedAt": "2026-10-06T09:54:52.690177+09:00",
+ "generatedAt": "2026-10-08T08:43:30.852858+09:00",
  "calculationVersion": "v1.1",
  "schemaVersion": "v1.0",
  "includedSidoCodes": [
@@ -147,12 +147,12 @@
   "41830"
  ],
  "failedSggCodes": [],
- "rawTradeCount": 10536,
- "validTradeCount": 10356,
- "cancelledTradeCount": 180,
- "directTradeCount": 343,
- "candidateGroupCount": 6280,
- "filteredOutGroupCount": 5876,
+ "rawTradeCount": 11438,
+ "validTradeCount": 11227,
+ "cancelledTradeCount": 211,
+ "directTradeCount": 375,
+ "candidateGroupCount": 6663,
+ "filteredOutGroupCount": 6213,
  "items": [
   {
    "apartmentKey": "41117-69",
@@ -190,40 +190,6 @@
    "rank": 1
   },
   {
-   "apartmentKey": "41360-121",
-   "aptSeq": "121",
-   "apartmentName": "건영덕소리버파크",
-   "sidoCode": "41",
-   "sggCode": "41360",
-   "areaGroup": 85.0,
-   "buildYear": 2002,
-   "referenceMonth": "202609",
-   "baselineMedian": 522500000.0,
-   "currentMedian": 656250000.0,
-   "riseAmount": 133750000,
-   "riseRate": 25.6,
-   "baselineTradeCount": 16,
-   "currentTradeCount": 4,
-   "confidence": "low",
-   "warnings": [
-    "20% 이상 급변동"
-   ],
-   "region": "41360 와부읍 도곡리",
-   "exactAreas": [
-    84.97
-   ],
-   "baselineFloorMedian": 13.0,
-   "currentFloorMedian": 6.5,
-   "baselineDirectTradeCount": 0,
-   "currentDirectTradeCount": 0,
-   "floorMixWarning": false,
-   "directTradeWarning": false,
-   "compositionWarning": true,
-   "exclusiveAreaGroup": 85.0,
-   "calculationVersion": "v1.1",
-   "rank": 2
-  },
-  {
    "apartmentKey": "41410-91",
    "aptSeq": "91",
    "apartmentName": "퇴계주공(351~359동)",
@@ -255,6 +221,40 @@
    "directTradeWarning": false,
    "compositionWarning": true,
    "exclusiveAreaGroup": 41.9,
+   "calculationVersion": "v1.1",
+   "rank": 2
+  },
+  {
+   "apartmentKey": "41360-121",
+   "aptSeq": "121",
+   "apartmentName": "건영덕소리버파크",
+   "sidoCode": "41",
+   "sggCode": "41360",
+   "areaGroup": 85.0,
+   "buildYear": 2002,
+   "referenceMonth": "202609",
+   "baselineMedian": 522500000.0,
+   "currentMedian": 650000000,
+   "riseAmount": 127500000,
+   "riseRate": 24.4,
+   "baselineTradeCount": 16,
+   "currentTradeCount": 5,
+   "confidence": "medium",
+   "warnings": [
+    "20% 이상 급변동"
+   ],
+   "region": "41360 와부읍 도곡리",
+   "exactAreas": [
+    84.97
+   ],
+   "baselineFloorMedian": 13.0,
+   "currentFloorMedian": 9,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": false,
+   "directTradeWarning": false,
+   "compositionWarning": true,
+   "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
    "rank": 3
   },
@@ -471,36 +471,36 @@
    "rank": 9
   },
   {
-   "apartmentKey": "41173-39",
-   "aptSeq": "39",
-   "apartmentName": "공작아파트",
+   "apartmentKey": "41173-16",
+   "aptSeq": "16",
+   "apartmentName": "샛별한양4-2",
    "sidoCode": "41",
    "sggCode": "41173",
-   "areaGroup": 37.9,
+   "areaGroup": 41.3,
    "buildYear": 1993,
    "referenceMonth": "202609",
-   "baselineMedian": 447500000.0,
-   "currentMedian": 547500000.0,
-   "riseAmount": 100000000,
-   "riseRate": 22.35,
-   "baselineTradeCount": 30,
-   "currentTradeCount": 2,
+   "baselineMedian": 478500000.0,
+   "currentMedian": 585000000,
+   "riseAmount": 106500000,
+   "riseRate": 22.26,
+   "baselineTradeCount": 4,
+   "currentTradeCount": 3,
    "confidence": "low",
    "warnings": [
     "20% 이상 급변동"
    ],
-   "region": "41173 관양동",
+   "region": "41173 비산동",
    "exactAreas": [
-    37.85
+    41.265
    ],
-   "baselineFloorMedian": 6.5,
-   "currentFloorMedian": 11.5,
+   "baselineFloorMedian": 8.5,
+   "currentFloorMedian": 12,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
    "directTradeWarning": false,
    "compositionWarning": true,
-   "exclusiveAreaGroup": 37.9,
+   "exclusiveAreaGroup": 41.3,
    "calculationVersion": "v1.1",
    "rank": 10
   },
@@ -644,6 +644,40 @@
    "rank": 14
   },
   {
+   "apartmentKey": "41173-39",
+   "aptSeq": "39",
+   "apartmentName": "공작아파트",
+   "sidoCode": "41",
+   "sggCode": "41173",
+   "areaGroup": 37.9,
+   "buildYear": 1993,
+   "referenceMonth": "202609",
+   "baselineMedian": 447500000.0,
+   "currentMedian": 540000000,
+   "riseAmount": 92500000,
+   "riseRate": 20.67,
+   "baselineTradeCount": 30,
+   "currentTradeCount": 3,
+   "confidence": "low",
+   "warnings": [
+    "20% 이상 급변동"
+   ],
+   "region": "41173 관양동",
+   "exactAreas": [
+    37.85
+   ],
+   "baselineFloorMedian": 6.5,
+   "currentFloorMedian": 12,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": false,
+   "directTradeWarning": false,
+   "compositionWarning": true,
+   "exclusiveAreaGroup": 37.9,
+   "calculationVersion": "v1.1",
+   "rank": 15
+  },
+  {
    "apartmentKey": "41117-52",
    "aptSeq": "52",
    "apartmentName": "신나무실휴먼시아5단지",
@@ -653,11 +687,11 @@
    "buildYear": 1997,
    "referenceMonth": "202609",
    "baselineMedian": 450000000,
-   "currentMedian": 538500000.0,
-   "riseAmount": 88500000,
-   "riseRate": 19.67,
+   "currentMedian": 538000000,
+   "riseAmount": 88000000,
+   "riseRate": 19.56,
    "baselineTradeCount": 29,
-   "currentTradeCount": 12,
+   "currentTradeCount": 13,
    "confidence": "medium",
    "warnings": [
     "서로 다른 세부 전용면적 혼합"
@@ -668,7 +702,7 @@
     59.99
    ],
    "baselineFloorMedian": 10,
-   "currentFloorMedian": 12.0,
+   "currentFloorMedian": 12,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -676,7 +710,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 60.0,
    "calculationVersion": "v1.1",
-   "rank": 15
+   "rank": 16
   },
   {
    "apartmentKey": "41117-64",
@@ -711,7 +745,41 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 59.8,
    "calculationVersion": "v1.1",
-   "rank": 16
+   "rank": 17
+  },
+  {
+   "apartmentKey": "41595-41590-2063",
+   "aptSeq": "41590-2063",
+   "apartmentName": "병점역아이파크캐슬",
+   "sidoCode": "41",
+   "sggCode": "41595",
+   "areaGroup": 75.9,
+   "buildYear": 2021,
+   "referenceMonth": "202609",
+   "baselineMedian": 707500000.0,
+   "currentMedian": 845000000,
+   "riseAmount": 137500000,
+   "riseRate": 19.43,
+   "baselineTradeCount": 8,
+   "currentTradeCount": 3,
+   "confidence": "low",
+   "warnings": [
+    "층수 차이(8층 이상 또는 구간 차이)"
+   ],
+   "region": "41595 병점동",
+   "exactAreas": [
+    75.94
+   ],
+   "baselineFloorMedian": 7.5,
+   "currentFloorMedian": 5,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": true,
+   "directTradeWarning": false,
+   "compositionWarning": true,
+   "exclusiveAreaGroup": 75.9,
+   "calculationVersion": "v1.1",
+   "rank": 18
   },
   {
    "apartmentKey": "41465-104",
@@ -743,7 +811,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 84.8,
    "calculationVersion": "v1.1",
-   "rank": 17
+   "rank": 19
   },
   {
    "apartmentKey": "41630-6",
@@ -777,7 +845,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 18
+   "rank": 20
   },
   {
    "apartmentKey": "41595-41590-1605",
@@ -813,7 +881,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 60.0,
    "calculationVersion": "v1.1",
-   "rank": 19
+   "rank": 21
   },
   {
    "apartmentKey": "41463-4",
@@ -845,7 +913,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 84.8,
    "calculationVersion": "v1.1",
-   "rank": 20
+   "rank": 22
   },
   {
    "apartmentKey": "41390-2603",
@@ -882,7 +950,39 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 21
+   "rank": 23
+  },
+  {
+   "apartmentKey": "41597-41590-966",
+   "aptSeq": "41590-966",
+   "apartmentName": "시범다은마을우남퍼스트빌",
+   "sidoCode": "41",
+   "sggCode": "41597",
+   "areaGroup": 67.1,
+   "buildYear": 2007,
+   "referenceMonth": "202609",
+   "baselineMedian": 705000000,
+   "currentMedian": 835000000,
+   "riseAmount": 130000000,
+   "riseRate": 18.44,
+   "baselineTradeCount": 3,
+   "currentTradeCount": 3,
+   "confidence": "medium",
+   "warnings": [],
+   "region": "41597 반송동",
+   "exactAreas": [
+    67.0661
+   ],
+   "baselineFloorMedian": 13,
+   "currentFloorMedian": 10,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": false,
+   "directTradeWarning": false,
+   "compositionWarning": false,
+   "exclusiveAreaGroup": 67.1,
+   "calculationVersion": "v1.1",
+   "rank": 24
   },
   {
    "apartmentKey": "41360-117",
@@ -916,7 +1016,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 60.0,
    "calculationVersion": "v1.1",
-   "rank": 22
+   "rank": 25
   },
   {
    "apartmentKey": "41595-41590-2063",
@@ -950,7 +1050,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 76.0,
    "calculationVersion": "v1.1",
-   "rank": 23
+   "rank": 26
   },
   {
    "apartmentKey": "41597-41590-1069",
@@ -986,7 +1086,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.5,
    "calculationVersion": "v1.1",
-   "rank": 24
+   "rank": 27
   },
   {
    "apartmentKey": "41597-41590-1695",
@@ -1018,7 +1118,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 59.6,
    "calculationVersion": "v1.1",
-   "rank": 25
+   "rank": 28
   },
   {
    "apartmentKey": "41117-78",
@@ -1050,7 +1150,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 26
+   "rank": 29
   },
   {
    "apartmentKey": "41465-107",
@@ -1084,7 +1184,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 27
+   "rank": 30
   },
   {
    "apartmentKey": "41595-41590-2063",
@@ -1120,7 +1220,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 28
+   "rank": 31
   },
   {
    "apartmentKey": "41597-41590-1026",
@@ -1152,7 +1252,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 59.2,
    "calculationVersion": "v1.1",
-   "rank": 29
+   "rank": 32
   },
   {
    "apartmentKey": "41117-336",
@@ -1186,7 +1286,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.5,
    "calculationVersion": "v1.1",
-   "rank": 30
+   "rank": 33
   },
   {
    "apartmentKey": "41410-88",
@@ -1218,7 +1318,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 51.6,
    "calculationVersion": "v1.1",
-   "rank": 31
+   "rank": 34
   },
   {
    "apartmentKey": "41597-41590-1802",
@@ -1252,7 +1352,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 60.0,
    "calculationVersion": "v1.1",
-   "rank": 32
+   "rank": 35
   },
   {
    "apartmentKey": "41192-216",
@@ -1284,7 +1384,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 51.7,
    "calculationVersion": "v1.1",
-   "rank": 33
+   "rank": 36
   },
   {
    "apartmentKey": "41597-41590-1782",
@@ -1316,7 +1416,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 59.6,
    "calculationVersion": "v1.1",
-   "rank": 34
+   "rank": 37
   },
   {
    "apartmentKey": "41410-89",
@@ -1350,7 +1450,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 44.1,
    "calculationVersion": "v1.1",
-   "rank": 35
+   "rank": 38
   },
   {
    "apartmentKey": "41173-22",
@@ -1384,7 +1484,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 35.1,
    "calculationVersion": "v1.1",
-   "rank": 36
+   "rank": 39
   },
   {
    "apartmentKey": "41192-332",
@@ -1416,39 +1516,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 47.4,
    "calculationVersion": "v1.1",
-   "rank": 37
-  },
-  {
-   "apartmentKey": "41595-41590-2063",
-   "aptSeq": "41590-2063",
-   "apartmentName": "병점역아이파크캐슬",
-   "sidoCode": "41",
-   "sggCode": "41595",
-   "areaGroup": 75.9,
-   "buildYear": 2021,
-   "referenceMonth": "202609",
-   "baselineMedian": 707500000.0,
-   "currentMedian": 827500000.0,
-   "riseAmount": 120000000,
-   "riseRate": 16.96,
-   "baselineTradeCount": 8,
-   "currentTradeCount": 2,
-   "confidence": "medium",
-   "warnings": [],
-   "region": "41595 병점동",
-   "exactAreas": [
-    75.94
-   ],
-   "baselineFloorMedian": 7.5,
-   "currentFloorMedian": 10.0,
-   "baselineDirectTradeCount": 0,
-   "currentDirectTradeCount": 0,
-   "floorMixWarning": false,
-   "directTradeWarning": false,
-   "compositionWarning": false,
-   "exclusiveAreaGroup": 75.9,
-   "calculationVersion": "v1.1",
-   "rank": 38
+   "rank": 40
   },
   {
    "apartmentKey": "41117-56",
@@ -1482,7 +1550,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 38.2,
    "calculationVersion": "v1.1",
-   "rank": 39
+   "rank": 41
   },
   {
    "apartmentKey": "41117-65",
@@ -1498,7 +1566,7 @@
    "riseAmount": 80000000,
    "riseRate": 16.67,
    "baselineTradeCount": 7,
-   "currentTradeCount": 5,
+   "currentTradeCount": 7,
    "confidence": "high",
    "warnings": [],
    "region": "41117 영통동",
@@ -1506,7 +1574,7 @@
     49.76
    ],
    "baselineFloorMedian": 7,
-   "currentFloorMedian": 14,
+   "currentFloorMedian": 11,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -1514,7 +1582,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 49.8,
    "calculationVersion": "v1.1",
-   "rank": 40
+   "rank": 42
   },
   {
    "apartmentKey": "41113-22",
@@ -1548,7 +1616,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 47.8,
    "calculationVersion": "v1.1",
-   "rank": 41
+   "rank": 43
   },
   {
    "apartmentKey": "41463-55",
@@ -1582,7 +1650,41 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 60.0,
    "calculationVersion": "v1.1",
-   "rank": 42
+   "rank": 44
+  },
+  {
+   "apartmentKey": "41117-26",
+   "aptSeq": "26",
+   "apartmentName": "주공그린빌5",
+   "sidoCode": "41",
+   "sggCode": "41117",
+   "areaGroup": 59.9,
+   "buildYear": 2002,
+   "referenceMonth": "202609",
+   "baselineMedian": 480000000,
+   "currentMedian": 558500000.0,
+   "riseAmount": 78500000,
+   "riseRate": 16.35,
+   "baselineTradeCount": 9,
+   "currentTradeCount": 2,
+   "confidence": "low",
+   "warnings": [
+    "층수 차이(8층 이상 또는 구간 차이)"
+   ],
+   "region": "41117 매탄동",
+   "exactAreas": [
+    59.92
+   ],
+   "baselineFloorMedian": 4,
+   "currentFloorMedian": 14.5,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": true,
+   "directTradeWarning": false,
+   "compositionWarning": true,
+   "exclusiveAreaGroup": 59.9,
+   "calculationVersion": "v1.1",
+   "rank": 45
   },
   {
    "apartmentKey": "41173-39",
@@ -1614,7 +1716,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 50.0,
    "calculationVersion": "v1.1",
-   "rank": 43
+   "rank": 46
   },
   {
    "apartmentKey": "41595-41590-1335",
@@ -1651,7 +1753,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 60.0,
    "calculationVersion": "v1.1",
-   "rank": 44
+   "rank": 47
   },
   {
    "apartmentKey": "41595-41590-2164",
@@ -1686,7 +1788,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 45
+   "rank": 48
   },
   {
    "apartmentKey": "41597-41590-2146",
@@ -1721,7 +1823,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 56.0,
    "calculationVersion": "v1.1",
-   "rank": 46
+   "rank": 49
   },
   {
    "apartmentKey": "41595-41590-23",
@@ -1753,39 +1855,41 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 47
+   "rank": 50
   },
   {
-   "apartmentKey": "41597-41590-966",
-   "aptSeq": "41590-966",
-   "apartmentName": "시범다은마을우남퍼스트빌",
+   "apartmentKey": "41135-147",
+   "aptSeq": "147",
+   "apartmentName": "탑마을(주공)",
    "sidoCode": "41",
-   "sggCode": "41597",
-   "areaGroup": 67.1,
-   "buildYear": 2007,
+   "sggCode": "41135",
+   "areaGroup": 35.3,
+   "buildYear": 1993,
    "referenceMonth": "202609",
-   "baselineMedian": 705000000,
-   "currentMedian": 817500000.0,
-   "riseAmount": 112500000,
-   "riseRate": 15.96,
-   "baselineTradeCount": 3,
-   "currentTradeCount": 2,
-   "confidence": "medium",
-   "warnings": [],
-   "region": "41597 반송동",
-   "exactAreas": [
-    67.0661
+   "baselineMedian": 750000000,
+   "currentMedian": 870000000,
+   "riseAmount": 120000000,
+   "riseRate": 16.0,
+   "baselineTradeCount": 5,
+   "currentTradeCount": 3,
+   "confidence": "low",
+   "warnings": [
+    "층수 차이(8층 이상 또는 구간 차이)"
    ],
-   "baselineFloorMedian": 13,
-   "currentFloorMedian": 11.0,
+   "region": "41135 야탑동",
+   "exactAreas": [
+    35.28
+   ],
+   "baselineFloorMedian": 5,
+   "currentFloorMedian": 8,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
-   "floorMixWarning": false,
+   "floorMixWarning": true,
    "directTradeWarning": false,
-   "compositionWarning": false,
-   "exclusiveAreaGroup": 67.1,
+   "compositionWarning": true,
+   "exclusiveAreaGroup": 35.3,
    "calculationVersion": "v1.1",
-   "rank": 48
+   "rank": 51
   },
   {
    "apartmentKey": "41111-62",
@@ -1820,7 +1924,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 59.9,
    "calculationVersion": "v1.1",
-   "rank": 49
+   "rank": 52
   },
   {
    "apartmentKey": "41595-41590-1062",
@@ -1854,7 +1958,39 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 100.3,
    "calculationVersion": "v1.1",
-   "rank": 50
+   "rank": 53
+  },
+  {
+   "apartmentKey": "41370-814",
+   "aptSeq": "814",
+   "apartmentName": "오산대역세교자이",
+   "sidoCode": "41",
+   "sggCode": "41370",
+   "areaGroup": 83.2,
+   "buildYear": 2018,
+   "referenceMonth": "202609",
+   "baselineMedian": 562500000.0,
+   "currentMedian": 650500000.0,
+   "riseAmount": 88000000,
+   "riseRate": 15.64,
+   "baselineTradeCount": 6,
+   "currentTradeCount": 2,
+   "confidence": "medium",
+   "warnings": [],
+   "region": "41370 내삼미동",
+   "exactAreas": [
+    83.2216
+   ],
+   "baselineFloorMedian": 10.0,
+   "currentFloorMedian": 10.0,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": false,
+   "directTradeWarning": false,
+   "compositionWarning": false,
+   "exclusiveAreaGroup": 83.2,
+   "calculationVersion": "v1.1",
+   "rank": 54
   },
   {
    "apartmentKey": "41597-41590-1068",
@@ -1889,7 +2025,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 76.5,
    "calculationVersion": "v1.1",
-   "rank": 51
+   "rank": 55
   },
   {
    "apartmentKey": "41410-55",
@@ -1923,7 +2059,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 36.2,
    "calculationVersion": "v1.1",
-   "rank": 52
+   "rank": 56
   },
   {
    "apartmentKey": "41597-41590-1813",
@@ -1955,7 +2091,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 60.4,
    "calculationVersion": "v1.1",
-   "rank": 53
+   "rank": 57
   },
   {
    "apartmentKey": "41410-90",
@@ -1987,7 +2123,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 39.9,
    "calculationVersion": "v1.1",
-   "rank": 54
+   "rank": 58
   },
   {
    "apartmentKey": "41595-41590-1568",
@@ -2021,7 +2157,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 58.2,
    "calculationVersion": "v1.1",
-   "rank": 55
+   "rank": 59
   },
   {
    "apartmentKey": "41113-57",
@@ -2055,7 +2191,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 56
+   "rank": 60
   },
   {
    "apartmentKey": "41593-41590-1047",
@@ -2089,7 +2225,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.8,
    "calculationVersion": "v1.1",
-   "rank": 57
+   "rank": 61
   },
   {
    "apartmentKey": "41597-41590-1763",
@@ -2121,7 +2257,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 74.1,
    "calculationVersion": "v1.1",
-   "rank": 58
+   "rank": 62
   },
   {
    "apartmentKey": "41310-18",
@@ -2155,7 +2291,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 58.1,
    "calculationVersion": "v1.1",
-   "rank": 59
+   "rank": 63
   },
   {
    "apartmentKey": "41113-2568",
@@ -2187,7 +2323,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 60
+   "rank": 64
   },
   {
    "apartmentKey": "41597-41590-1570",
@@ -2223,7 +2359,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.5,
    "calculationVersion": "v1.1",
-   "rank": 61
+   "rank": 65
   },
   {
    "apartmentKey": "41173-186",
@@ -2259,7 +2395,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 59.9,
    "calculationVersion": "v1.1",
-   "rank": 62
+   "rank": 66
   },
   {
    "apartmentKey": "41597-41590-1336",
@@ -2295,39 +2431,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 60.0,
    "calculationVersion": "v1.1",
-   "rank": 63
-  },
-  {
-   "apartmentKey": "41410-56",
-   "aptSeq": "56",
-   "apartmentName": "주몽2-10",
-   "sidoCode": "41",
-   "sggCode": "41410",
-   "areaGroup": 37.7,
-   "buildYear": 1996,
-   "referenceMonth": "202609",
-   "baselineMedian": 248000000.0,
-   "currentMedian": 284500000.0,
-   "riseAmount": 36500000,
-   "riseRate": 14.72,
-   "baselineTradeCount": 6,
-   "currentTradeCount": 2,
-   "confidence": "medium",
-   "warnings": [],
-   "region": "41410 산본동",
-   "exactAreas": [
-    37.67
-   ],
-   "baselineFloorMedian": 7.0,
-   "currentFloorMedian": 8.5,
-   "baselineDirectTradeCount": 0,
-   "currentDirectTradeCount": 0,
-   "floorMixWarning": false,
-   "directTradeWarning": false,
-   "compositionWarning": false,
-   "exclusiveAreaGroup": 37.7,
-   "calculationVersion": "v1.1",
-   "rank": 64
+   "rank": 67
   },
   {
    "apartmentKey": "41192-245",
@@ -2363,7 +2467,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 49.7,
    "calculationVersion": "v1.1",
-   "rank": 65
+   "rank": 68
   },
   {
    "apartmentKey": "41360-166",
@@ -2395,7 +2499,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 72.5,
    "calculationVersion": "v1.1",
-   "rank": 66
+   "rank": 69
   },
   {
    "apartmentKey": "41430-20",
@@ -2429,7 +2533,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 67
+   "rank": 70
   },
   {
    "apartmentKey": "41595-41590-1568",
@@ -2461,7 +2565,73 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 68
+   "rank": 71
+  },
+  {
+   "apartmentKey": "41360-2505",
+   "aptSeq": "2505",
+   "apartmentName": "덕소아이파크",
+   "sidoCode": "41",
+   "sggCode": "41360",
+   "areaGroup": 101.5,
+   "buildYear": 2007,
+   "referenceMonth": "202609",
+   "baselineMedian": 738500000.0,
+   "currentMedian": 845000000.0,
+   "riseAmount": 106500000,
+   "riseRate": 14.42,
+   "baselineTradeCount": 8,
+   "currentTradeCount": 2,
+   "confidence": "low",
+   "warnings": [
+    "층수 차이(8층 이상 또는 구간 차이)"
+   ],
+   "region": "41360 와부읍 덕소리",
+   "exactAreas": [
+    101.4855
+   ],
+   "baselineFloorMedian": 9.0,
+   "currentFloorMedian": 16.5,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": true,
+   "directTradeWarning": false,
+   "compositionWarning": true,
+   "exclusiveAreaGroup": 101.5,
+   "calculationVersion": "v1.1",
+   "rank": 72
+  },
+  {
+   "apartmentKey": "41390-148",
+   "aptSeq": "148",
+   "apartmentName": "세종1",
+   "sidoCode": "41",
+   "sggCode": "41390",
+   "areaGroup": 84.9,
+   "buildYear": 1996,
+   "referenceMonth": "202609",
+   "baselineMedian": 365000000,
+   "currentMedian": 417500000.0,
+   "riseAmount": 52500000,
+   "riseRate": 14.38,
+   "baselineTradeCount": 3,
+   "currentTradeCount": 2,
+   "confidence": "medium",
+   "warnings": [],
+   "region": "41390 정왕동",
+   "exactAreas": [
+    84.94
+   ],
+   "baselineFloorMedian": 9,
+   "currentFloorMedian": 7.0,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": false,
+   "directTradeWarning": false,
+   "compositionWarning": false,
+   "exclusiveAreaGroup": 84.9,
+   "calculationVersion": "v1.1",
+   "rank": 73
   },
   {
    "apartmentKey": "28237-111",
@@ -2495,7 +2665,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 39.5,
    "calculationVersion": "v1.1",
-   "rank": 69
+   "rank": 74
   },
   {
    "apartmentKey": "41463-9",
@@ -2529,7 +2699,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 59.9,
    "calculationVersion": "v1.1",
-   "rank": 70
+   "rank": 75
   },
   {
    "apartmentKey": "41192-222",
@@ -2561,39 +2731,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 58.7,
    "calculationVersion": "v1.1",
-   "rank": 71
-  },
-  {
-   "apartmentKey": "41192-216",
-   "aptSeq": "216",
-   "apartmentName": "금강마을(주공)",
-   "sidoCode": "41",
-   "sggCode": "41192",
-   "areaGroup": 42.8,
-   "buildYear": 1994,
-   "referenceMonth": "202609",
-   "baselineMedian": 349000000,
-   "currentMedian": 397500000.0,
-   "riseAmount": 48500000,
-   "riseRate": 13.9,
-   "baselineTradeCount": 17,
-   "currentTradeCount": 6,
-   "confidence": "high",
-   "warnings": [],
-   "region": "41192 중동",
-   "exactAreas": [
-    42.75
-   ],
-   "baselineFloorMedian": 8,
-   "currentFloorMedian": 15.0,
-   "baselineDirectTradeCount": 0,
-   "currentDirectTradeCount": 0,
-   "floorMixWarning": false,
-   "directTradeWarning": false,
-   "compositionWarning": false,
-   "exclusiveAreaGroup": 42.8,
-   "calculationVersion": "v1.1",
-   "rank": 72
+   "rank": 76
   },
   {
    "apartmentKey": "41117-69",
@@ -2625,7 +2763,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 73
+   "rank": 77
   },
   {
    "apartmentKey": "41113-42",
@@ -2659,7 +2797,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 59.8,
    "calculationVersion": "v1.1",
-   "rank": 74
+   "rank": 78
   },
   {
    "apartmentKey": "41281-127",
@@ -2691,76 +2829,41 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 60.0,
    "calculationVersion": "v1.1",
-   "rank": 75
+   "rank": 79
   },
   {
-   "apartmentKey": "41173-183",
-   "aptSeq": "183",
-   "apartmentName": "대림e-편한세상",
+   "apartmentKey": "41360-119",
+   "aptSeq": "119",
+   "apartmentName": "한강우성",
    "sidoCode": "41",
-   "sggCode": "41173",
-   "areaGroup": 84.8,
-   "buildYear": 2003,
+   "sggCode": "41360",
+   "areaGroup": 102.0,
+   "buildYear": 1998,
    "referenceMonth": "202609",
-   "baselineMedian": 730000000,
-   "currentMedian": 830000000.0,
-   "riseAmount": 100000000,
-   "riseRate": 13.7,
-   "baselineTradeCount": 13,
-   "currentTradeCount": 2,
-   "confidence": "low",
-   "warnings": [
-    "층수 차이(8층 이상 또는 구간 차이)"
-   ],
-   "region": "41173 호계동",
-   "exactAreas": [
-    84.846
-   ],
-   "baselineFloorMedian": 13,
-   "currentFloorMedian": 18.0,
-   "baselineDirectTradeCount": 0,
-   "currentDirectTradeCount": 0,
-   "floorMixWarning": true,
-   "directTradeWarning": false,
-   "compositionWarning": true,
-   "exclusiveAreaGroup": 84.8,
-   "calculationVersion": "v1.1",
-   "rank": 76
-  },
-  {
-   "apartmentKey": "41115-1188",
-   "aptSeq": "1188",
-   "apartmentName": "화서위브하늘채",
-   "sidoCode": "41",
-   "sggCode": "41115",
-   "areaGroup": 59.9,
-   "buildYear": 2009,
-   "referenceMonth": "202609",
-   "baselineMedian": 632500000.0,
-   "currentMedian": 717500000.0,
-   "riseAmount": 85000000,
-   "riseRate": 13.44,
+   "baselineMedian": 550000000.0,
+   "currentMedian": 625000000.0,
+   "riseAmount": 75000000,
+   "riseRate": 13.64,
    "baselineTradeCount": 2,
    "currentTradeCount": 2,
    "confidence": "low",
    "warnings": [
-    "층수 차이(8층 이상 또는 구간 차이)",
     "비교/기준 기간 거래량 모두 최소 조건(2건)"
    ],
-   "region": "41115 화서동",
+   "region": "41360 와부읍 도곡리",
    "exactAreas": [
-    59.9052
+    101.973
    ],
-   "baselineFloorMedian": 15.5,
-   "currentFloorMedian": 14.0,
+   "baselineFloorMedian": 6.5,
+   "currentFloorMedian": 11.0,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
-   "floorMixWarning": true,
+   "floorMixWarning": false,
    "directTradeWarning": false,
    "compositionWarning": true,
-   "exclusiveAreaGroup": 59.9,
+   "exclusiveAreaGroup": 102.0,
    "calculationVersion": "v1.1",
-   "rank": 77
+   "rank": 80
   },
   {
    "apartmentKey": "28185-23",
@@ -2792,7 +2895,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 68.4,
    "calculationVersion": "v1.1",
-   "rank": 78
+   "rank": 81
   },
   {
    "apartmentKey": "41111-23",
@@ -2824,7 +2927,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 59.8,
    "calculationVersion": "v1.1",
-   "rank": 79
+   "rank": 82
   },
   {
    "apartmentKey": "41113-2569",
@@ -2860,41 +2963,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 60.0,
    "calculationVersion": "v1.1",
-   "rank": 80
-  },
-  {
-   "apartmentKey": "41117-60",
-   "aptSeq": "60",
-   "apartmentName": "청명마을(주공)",
-   "sidoCode": "41",
-   "sggCode": "41117",
-   "areaGroup": 60.0,
-   "buildYear": 1997,
-   "referenceMonth": "202609",
-   "baselineMedian": 582500000.0,
-   "currentMedian": 660000000,
-   "riseAmount": 77500000,
-   "riseRate": 13.3,
-   "baselineTradeCount": 8,
-   "currentTradeCount": 5,
-   "confidence": "medium",
-   "warnings": [
-    "직거래 포함 이력 존재"
-   ],
-   "region": "41117 영통동",
-   "exactAreas": [
-    59.99
-   ],
-   "baselineFloorMedian": 8.5,
-   "currentFloorMedian": 14.0,
-   "baselineDirectTradeCount": 0,
-   "currentDirectTradeCount": 1,
-   "floorMixWarning": false,
-   "directTradeWarning": true,
-   "compositionWarning": true,
-   "exclusiveAreaGroup": 60.0,
-   "calculationVersion": "v1.1",
-   "rank": 81
+   "rank": 83
   },
   {
    "apartmentKey": "41463-520",
@@ -2928,7 +2997,41 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 82
+   "rank": 84
+  },
+  {
+   "apartmentKey": "41192-216",
+   "aptSeq": "216",
+   "apartmentName": "금강마을(주공)",
+   "sidoCode": "41",
+   "sggCode": "41192",
+   "areaGroup": 42.8,
+   "buildYear": 1994,
+   "referenceMonth": "202609",
+   "baselineMedian": 349000000,
+   "currentMedian": 395000000,
+   "riseAmount": 46000000,
+   "riseRate": 13.18,
+   "baselineTradeCount": 17,
+   "currentTradeCount": 7,
+   "confidence": "medium",
+   "warnings": [
+    "층수 차이(8층 이상 또는 구간 차이)"
+   ],
+   "region": "41192 중동",
+   "exactAreas": [
+    42.75
+   ],
+   "baselineFloorMedian": 8,
+   "currentFloorMedian": 16,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": true,
+   "directTradeWarning": false,
+   "compositionWarning": true,
+   "exclusiveAreaGroup": 42.8,
+   "calculationVersion": "v1.1",
+   "rank": 85
   },
   {
    "apartmentKey": "41210-3",
@@ -2962,7 +3065,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 59.9,
    "calculationVersion": "v1.1",
-   "rank": 83
+   "rank": 86
   },
   {
    "apartmentKey": "41595-41590-2173",
@@ -2994,7 +3097,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 84.7,
    "calculationVersion": "v1.1",
-   "rank": 84
+   "rank": 87
   },
   {
    "apartmentKey": "41192-312",
@@ -3028,7 +3131,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 101.8,
    "calculationVersion": "v1.1",
-   "rank": 85
+   "rank": 88
   },
   {
    "apartmentKey": "41150-84",
@@ -3064,7 +3167,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 59.5,
    "calculationVersion": "v1.1",
-   "rank": 86
+   "rank": 89
   },
   {
    "apartmentKey": "41192-245",
@@ -3096,7 +3199,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 37.7,
    "calculationVersion": "v1.1",
-   "rank": 87
+   "rank": 90
   },
   {
    "apartmentKey": "41570-17",
@@ -3132,7 +3235,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 59.5,
    "calculationVersion": "v1.1",
-   "rank": 88
+   "rank": 91
   },
   {
    "apartmentKey": "41597-41590-1061",
@@ -3168,39 +3271,41 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 75.9,
    "calculationVersion": "v1.1",
-   "rank": 89
+   "rank": 92
   },
   {
-   "apartmentKey": "41173-38",
-   "aptSeq": "38",
-   "apartmentName": "공작럭키",
+   "apartmentKey": "41410-56",
+   "aptSeq": "56",
+   "apartmentName": "주몽2-10",
    "sidoCode": "41",
-   "sggCode": "41173",
-   "areaGroup": 49.8,
-   "buildYear": 1993,
+   "sggCode": "41410",
+   "areaGroup": 37.7,
+   "buildYear": 1996,
    "referenceMonth": "202609",
-   "baselineMedian": 670000000,
-   "currentMedian": 757000000,
-   "riseAmount": 87000000,
-   "riseRate": 12.99,
-   "baselineTradeCount": 17,
+   "baselineMedian": 248000000.0,
+   "currentMedian": 280000000,
+   "riseAmount": 32000000,
+   "riseRate": 12.9,
+   "baselineTradeCount": 6,
    "currentTradeCount": 3,
-   "confidence": "medium",
-   "warnings": [],
-   "region": "41173 관양동",
-   "exactAreas": [
-    49.8
+   "confidence": "low",
+   "warnings": [
+    "층수 차이(8층 이상 또는 구간 차이)"
    ],
-   "baselineFloorMedian": 7,
-   "currentFloorMedian": 6,
+   "region": "41410 산본동",
+   "exactAreas": [
+    37.67
+   ],
+   "baselineFloorMedian": 7.0,
+   "currentFloorMedian": 5,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
-   "floorMixWarning": false,
+   "floorMixWarning": true,
    "directTradeWarning": false,
-   "compositionWarning": false,
-   "exclusiveAreaGroup": 49.8,
+   "compositionWarning": true,
+   "exclusiveAreaGroup": 37.7,
    "calculationVersion": "v1.1",
-   "rank": 90
+   "rank": 93
   },
   {
    "apartmentKey": "41370-859",
@@ -3234,44 +3339,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 62.0,
    "calculationVersion": "v1.1",
-   "rank": 91
-  },
-  {
-   "apartmentKey": "41595-41590-1605",
-   "aptSeq": "41590-1605",
-   "apartmentName": "에스케이뷰파크2차",
-   "sidoCode": "41",
-   "sggCode": "41595",
-   "areaGroup": 85.0,
-   "buildYear": 2017,
-   "referenceMonth": "202609",
-   "baselineMedian": 654000000.0,
-   "currentMedian": 737500000.0,
-   "riseAmount": 83500000,
-   "riseRate": 12.77,
-   "baselineTradeCount": 16,
-   "currentTradeCount": 4,
-   "confidence": "low",
-   "warnings": [
-    "서로 다른 세부 전용면적 혼합",
-    "직거래 포함 이력 존재"
-   ],
-   "region": "41595 기산동",
-   "exactAreas": [
-    84.992,
-    84.9675,
-    84.9815
-   ],
-   "baselineFloorMedian": 13,
-   "currentFloorMedian": 6.0,
-   "baselineDirectTradeCount": 1,
-   "currentDirectTradeCount": 0,
-   "floorMixWarning": false,
-   "directTradeWarning": true,
-   "compositionWarning": true,
-   "exclusiveAreaGroup": 85.0,
-   "calculationVersion": "v1.1",
-   "rank": 92
+   "rank": 94
   },
   {
    "apartmentKey": "41171-3524",
@@ -3305,7 +3373,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 63.7,
    "calculationVersion": "v1.1",
-   "rank": 93
+   "rank": 95
   },
   {
    "apartmentKey": "41117-65",
@@ -3337,7 +3405,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 60.0,
    "calculationVersion": "v1.1",
-   "rank": 94
+   "rank": 96
   },
   {
    "apartmentKey": "41595-41590-1335",
@@ -3377,7 +3445,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 95
+   "rank": 97
   },
   {
    "apartmentKey": "41113-1632",
@@ -3414,7 +3482,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 96
+   "rank": 98
   },
   {
    "apartmentKey": "41111-1610",
@@ -3448,7 +3516,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 60.0,
    "calculationVersion": "v1.1",
-   "rank": 97
+   "rank": 99
   },
   {
    "apartmentKey": "41281-144",
@@ -3480,7 +3548,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 60.0,
    "calculationVersion": "v1.1",
-   "rank": 98
+   "rank": 100
   },
   {
    "apartmentKey": "41480-240",
@@ -3512,7 +3580,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 84.8,
    "calculationVersion": "v1.1",
-   "rank": 99
+   "rank": 101
   },
   {
    "apartmentKey": "41593-41590-1084",
@@ -3546,7 +3614,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.7,
    "calculationVersion": "v1.1",
-   "rank": 100
+   "rank": 102
   },
   {
    "apartmentKey": "41595-41590-59",
@@ -3578,7 +3646,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 51.7,
    "calculationVersion": "v1.1",
-   "rank": 101
+   "rank": 103
   },
   {
    "apartmentKey": "41595-41590-24",
@@ -3610,7 +3678,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 102
+   "rank": 104
   },
   {
    "apartmentKey": "41113-2569",
@@ -3642,7 +3710,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 103
+   "rank": 105
   },
   {
    "apartmentKey": "41192-216",
@@ -3676,7 +3744,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 41.9,
    "calculationVersion": "v1.1",
-   "rank": 104
+   "rank": 106
   },
   {
    "apartmentKey": "41115-1932",
@@ -3708,7 +3776,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 105
+   "rank": 107
   },
   {
    "apartmentKey": "41192-257",
@@ -3740,7 +3808,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 41.9,
    "calculationVersion": "v1.1",
-   "rank": 106
+   "rank": 108
   },
   {
    "apartmentKey": "41287-64",
@@ -3772,7 +3840,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 130.4,
    "calculationVersion": "v1.1",
-   "rank": 107
+   "rank": 109
   },
   {
    "apartmentKey": "41192-290",
@@ -3806,7 +3874,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 50.0,
    "calculationVersion": "v1.1",
-   "rank": 108
+   "rank": 110
   },
   {
    "apartmentKey": "41220-3561",
@@ -3841,7 +3909,41 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 60.0,
    "calculationVersion": "v1.1",
-   "rank": 109
+   "rank": 111
+  },
+  {
+   "apartmentKey": "41173-38",
+   "aptSeq": "38",
+   "apartmentName": "공작럭키",
+   "sidoCode": "41",
+   "sggCode": "41173",
+   "areaGroup": 49.8,
+   "buildYear": 1993,
+   "referenceMonth": "202609",
+   "baselineMedian": 670000000,
+   "currentMedian": 751000000.0,
+   "riseAmount": 81000000,
+   "riseRate": 12.09,
+   "baselineTradeCount": 17,
+   "currentTradeCount": 4,
+   "confidence": "low",
+   "warnings": [
+    "층수 차이(8층 이상 또는 구간 차이)"
+   ],
+   "region": "41173 관양동",
+   "exactAreas": [
+    49.8
+   ],
+   "baselineFloorMedian": 7,
+   "currentFloorMedian": 5.0,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": true,
+   "directTradeWarning": false,
+   "compositionWarning": true,
+   "exclusiveAreaGroup": 49.8,
+   "calculationVersion": "v1.1",
+   "rank": 112
   },
   {
    "apartmentKey": "41597-41590-1612",
@@ -3877,7 +3979,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 110
+   "rank": 113
   },
   {
    "apartmentKey": "41111-49",
@@ -3909,7 +4011,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 59.8,
    "calculationVersion": "v1.1",
-   "rank": 111
+   "rank": 114
   },
   {
    "apartmentKey": "41595-41590-54",
@@ -3944,7 +4046,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 112
+   "rank": 115
   },
   {
    "apartmentKey": "41113-24",
@@ -3978,7 +4080,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 73.6,
    "calculationVersion": "v1.1",
-   "rank": 113
+   "rank": 116
   },
   {
    "apartmentKey": "41281-3177",
@@ -4014,7 +4116,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 114
+   "rank": 117
   },
   {
    "apartmentKey": "41220-3493",
@@ -4050,7 +4152,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 115
+   "rank": 118
   },
   {
    "apartmentKey": "41450-407",
@@ -4082,7 +4184,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 99.9,
    "calculationVersion": "v1.1",
-   "rank": 116
+   "rank": 119
   },
   {
    "apartmentKey": "41360-3760",
@@ -4116,7 +4218,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 60.0,
    "calculationVersion": "v1.1",
-   "rank": 117
+   "rank": 120
   },
   {
    "apartmentKey": "41192-301",
@@ -4148,7 +4250,45 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 118
+   "rank": 121
+  },
+  {
+   "apartmentKey": "41595-41590-1605",
+   "aptSeq": "41590-1605",
+   "apartmentName": "에스케이뷰파크2차",
+   "sidoCode": "41",
+   "sggCode": "41595",
+   "areaGroup": 85.0,
+   "buildYear": 2017,
+   "referenceMonth": "202609",
+   "baselineMedian": 654000000.0,
+   "currentMedian": 728000000,
+   "riseAmount": 74000000,
+   "riseRate": 11.31,
+   "baselineTradeCount": 16,
+   "currentTradeCount": 5,
+   "confidence": "medium",
+   "warnings": [
+    "층수 차이(8층 이상 또는 구간 차이)",
+    "서로 다른 세부 전용면적 혼합",
+    "직거래 포함 이력 존재"
+   ],
+   "region": "41595 기산동",
+   "exactAreas": [
+    84.992,
+    84.9675,
+    84.9815
+   ],
+   "baselineFloorMedian": 13,
+   "currentFloorMedian": 5,
+   "baselineDirectTradeCount": 1,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": true,
+   "directTradeWarning": true,
+   "compositionWarning": true,
+   "exclusiveAreaGroup": 85.0,
+   "calculationVersion": "v1.1",
+   "rank": 122
   },
   {
    "apartmentKey": "41117-272",
@@ -4185,7 +4325,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.4,
    "calculationVersion": "v1.1",
-   "rank": 119
+   "rank": 123
   },
   {
    "apartmentKey": "41117-40",
@@ -4217,7 +4357,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 101.2,
    "calculationVersion": "v1.1",
-   "rank": 120
+   "rank": 124
   },
   {
    "apartmentKey": "41171-3120",
@@ -4251,7 +4391,41 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.7,
    "calculationVersion": "v1.1",
-   "rank": 121
+   "rank": 125
+  },
+  {
+   "apartmentKey": "41410-28",
+   "aptSeq": "28",
+   "apartmentName": "가야주공",
+   "sidoCode": "41",
+   "sggCode": "41410",
+   "areaGroup": 41.9,
+   "buildYear": 1993,
+   "referenceMonth": "202609",
+   "baselineMedian": 324000000.0,
+   "currentMedian": 360000000,
+   "riseAmount": 36000000,
+   "riseRate": 11.11,
+   "baselineTradeCount": 14,
+   "currentTradeCount": 3,
+   "confidence": "low",
+   "warnings": [
+    "층수 차이(8층 이상 또는 구간 차이)"
+   ],
+   "region": "41410 산본동",
+   "exactAreas": [
+    41.85
+   ],
+   "baselineFloorMedian": 7.5,
+   "currentFloorMedian": 3,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": true,
+   "directTradeWarning": false,
+   "compositionWarning": true,
+   "exclusiveAreaGroup": 41.9,
+   "calculationVersion": "v1.1",
+   "rank": 126
   },
   {
    "apartmentKey": "41450-12",
@@ -4287,7 +4461,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 135.0,
    "calculationVersion": "v1.1",
-   "rank": 122
+   "rank": 127
   },
   {
    "apartmentKey": "41463-87",
@@ -4319,7 +4493,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 84.8,
    "calculationVersion": "v1.1",
-   "rank": 123
+   "rank": 128
   },
   {
    "apartmentKey": "41115-1932",
@@ -4354,7 +4528,39 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 60.0,
    "calculationVersion": "v1.1",
-   "rank": 124
+   "rank": 129
+  },
+  {
+   "apartmentKey": "41173-183",
+   "aptSeq": "183",
+   "apartmentName": "대림e-편한세상",
+   "sidoCode": "41",
+   "sggCode": "41173",
+   "areaGroup": 84.8,
+   "buildYear": 2003,
+   "referenceMonth": "202609",
+   "baselineMedian": 730000000,
+   "currentMedian": 810000000,
+   "riseAmount": 80000000,
+   "riseRate": 10.96,
+   "baselineTradeCount": 13,
+   "currentTradeCount": 3,
+   "confidence": "medium",
+   "warnings": [],
+   "region": "41173 호계동",
+   "exactAreas": [
+    84.846
+   ],
+   "baselineFloorMedian": 13,
+   "currentFloorMedian": 12,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": false,
+   "directTradeWarning": false,
+   "compositionWarning": false,
+   "exclusiveAreaGroup": 84.8,
+   "calculationVersion": "v1.1",
+   "rank": 130
   },
   {
    "apartmentKey": "41360-3385",
@@ -4386,7 +4592,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 125
+   "rank": 131
   },
   {
    "apartmentKey": "41597-41590-1771",
@@ -4418,7 +4624,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 126
+   "rank": 132
   },
   {
    "apartmentKey": "41192-253",
@@ -4452,7 +4658,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 37.7,
    "calculationVersion": "v1.1",
-   "rank": 127
+   "rank": 133
   },
   {
    "apartmentKey": "41450-187",
@@ -4484,39 +4690,76 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 59.9,
    "calculationVersion": "v1.1",
-   "rank": 128
+   "rank": 134
   },
   {
-   "apartmentKey": "41220-3512",
-   "aptSeq": "3512",
-   "apartmentName": "지제역더샵센트럴시티",
+   "apartmentKey": "41117-61",
+   "aptSeq": "61",
+   "apartmentName": "풍림",
    "sidoCode": "41",
-   "sggCode": "41220",
-   "areaGroup": 64.9,
-   "buildYear": 2022,
+   "sggCode": "41117",
+   "areaGroup": 84.8,
+   "buildYear": 1997,
    "referenceMonth": "202609",
-   "baselineMedian": 690000000.0,
-   "currentMedian": 764000000.0,
-   "riseAmount": 74000000,
-   "riseRate": 10.72,
-   "baselineTradeCount": 20,
-   "currentTradeCount": 4,
-   "confidence": "medium",
-   "warnings": [],
-   "region": "41220 지제동",
-   "exactAreas": [
-    64.9377
+   "baselineMedian": 650000000,
+   "currentMedian": 720000000.0,
+   "riseAmount": 70000000,
+   "riseRate": 10.77,
+   "baselineTradeCount": 7,
+   "currentTradeCount": 2,
+   "confidence": "low",
+   "warnings": [
+    "직거래 포함 이력 존재"
    ],
-   "baselineFloorMedian": 12.0,
-   "currentFloorMedian": 12.0,
-   "baselineDirectTradeCount": 0,
+   "region": "41117 영통동",
+   "exactAreas": [
+    84.84
+   ],
+   "baselineFloorMedian": 11.5,
+   "currentFloorMedian": 13.5,
+   "baselineDirectTradeCount": 1,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
-   "directTradeWarning": false,
-   "compositionWarning": false,
-   "exclusiveAreaGroup": 64.9,
+   "directTradeWarning": true,
+   "compositionWarning": true,
+   "exclusiveAreaGroup": 84.8,
    "calculationVersion": "v1.1",
-   "rank": 129
+   "rank": 135
+  },
+  {
+   "apartmentKey": "41117-60",
+   "aptSeq": "60",
+   "apartmentName": "청명마을(주공)",
+   "sidoCode": "41",
+   "sggCode": "41117",
+   "areaGroup": 60.0,
+   "buildYear": 1997,
+   "referenceMonth": "202609",
+   "baselineMedian": 582500000.0,
+   "currentMedian": 645000000.0,
+   "riseAmount": 62500000,
+   "riseRate": 10.73,
+   "baselineTradeCount": 8,
+   "currentTradeCount": 6,
+   "confidence": "medium",
+   "warnings": [
+    "층수 차이(8층 이상 또는 구간 차이)",
+    "직거래 포함 이력 존재"
+   ],
+   "region": "41117 영통동",
+   "exactAreas": [
+    59.99
+   ],
+   "baselineFloorMedian": 8.5,
+   "currentFloorMedian": 16,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 1,
+   "floorMixWarning": true,
+   "directTradeWarning": true,
+   "compositionWarning": true,
+   "exclusiveAreaGroup": 60.0,
+   "calculationVersion": "v1.1",
+   "rank": 136
   },
   {
    "apartmentKey": "41173-66",
@@ -4550,7 +4793,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 51.8,
    "calculationVersion": "v1.1",
-   "rank": 130
+   "rank": 137
   },
   {
    "apartmentKey": "41271-29",
@@ -4584,7 +4827,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 74.5,
    "calculationVersion": "v1.1",
-   "rank": 131
+   "rank": 138
   },
   {
    "apartmentKey": "41115-13",
@@ -4616,7 +4859,39 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 84.5,
    "calculationVersion": "v1.1",
-   "rank": 132
+   "rank": 139
+  },
+  {
+   "apartmentKey": "41173-188",
+   "aptSeq": "188",
+   "apartmentName": "초원마을세경",
+   "sidoCode": "41",
+   "sggCode": "41173",
+   "areaGroup": 49.7,
+   "buildYear": 1996,
+   "referenceMonth": "202609",
+   "baselineMedian": 777500000.0,
+   "currentMedian": 860000000,
+   "riseAmount": 82500000,
+   "riseRate": 10.61,
+   "baselineTradeCount": 12,
+   "currentTradeCount": 3,
+   "confidence": "medium",
+   "warnings": [],
+   "region": "41173 평촌동",
+   "exactAreas": [
+    49.68
+   ],
+   "baselineFloorMedian": 9.0,
+   "currentFloorMedian": 6,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": false,
+   "directTradeWarning": false,
+   "compositionWarning": false,
+   "exclusiveAreaGroup": 49.7,
+   "calculationVersion": "v1.1",
+   "rank": 140
   },
   {
    "apartmentKey": "41410-40",
@@ -4651,7 +4926,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 94.4,
    "calculationVersion": "v1.1",
-   "rank": 133
+   "rank": 141
   },
   {
    "apartmentKey": "41570-1105",
@@ -4687,7 +4962,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 103.0,
    "calculationVersion": "v1.1",
-   "rank": 134
+   "rank": 142
   },
   {
    "apartmentKey": "41192-227",
@@ -4721,7 +4996,42 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 52.9,
    "calculationVersion": "v1.1",
-   "rank": 135
+   "rank": 143
+  },
+  {
+   "apartmentKey": "41597-41590-1790",
+   "aptSeq": "41590-1790",
+   "apartmentName": "동탄2신도시 베라체",
+   "sidoCode": "41",
+   "sggCode": "41597",
+   "areaGroup": 60.0,
+   "buildYear": 2018,
+   "referenceMonth": "202609",
+   "baselineMedian": 585000000,
+   "currentMedian": 646500000.0,
+   "riseAmount": 61500000,
+   "riseRate": 10.51,
+   "baselineTradeCount": 15,
+   "currentTradeCount": 8,
+   "confidence": "medium",
+   "warnings": [
+    "서로 다른 세부 전용면적 혼합"
+   ],
+   "region": "41597 목동",
+   "exactAreas": [
+    59.98,
+    59.99
+   ],
+   "baselineFloorMedian": 7,
+   "currentFloorMedian": 13.0,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": false,
+   "directTradeWarning": false,
+   "compositionWarning": true,
+   "exclusiveAreaGroup": 60.0,
+   "calculationVersion": "v1.1",
+   "rank": 144
   },
   {
    "apartmentKey": "41117-56",
@@ -4753,7 +5063,39 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 49.7,
    "calculationVersion": "v1.1",
-   "rank": 136
+   "rank": 145
+  },
+  {
+   "apartmentKey": "41465-94",
+   "aptSeq": "94",
+   "apartmentName": "수지금호베스트빌TheEdu",
+   "sidoCode": "41",
+   "sggCode": "41465",
+   "areaGroup": 135.6,
+   "buildYear": 2001,
+   "referenceMonth": "202609",
+   "baselineMedian": 910000000,
+   "currentMedian": 1005000000.0,
+   "riseAmount": 95000000,
+   "riseRate": 10.44,
+   "baselineTradeCount": 7,
+   "currentTradeCount": 2,
+   "confidence": "medium",
+   "warnings": [],
+   "region": "41465 상현동",
+   "exactAreas": [
+    135.554
+   ],
+   "baselineFloorMedian": 13,
+   "currentFloorMedian": 11.0,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": false,
+   "directTradeWarning": false,
+   "compositionWarning": false,
+   "exclusiveAreaGroup": 135.6,
+   "calculationVersion": "v1.1",
+   "rank": 146
   },
   {
    "apartmentKey": "41117-336",
@@ -4785,7 +5127,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 137
+   "rank": 147
   },
   {
    "apartmentKey": "41171-3120",
@@ -4819,7 +5161,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 39.5,
    "calculationVersion": "v1.1",
-   "rank": 138
+   "rank": 148
   },
   {
    "apartmentKey": "41287-26",
@@ -4853,43 +5195,39 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 68.1,
    "calculationVersion": "v1.1",
-   "rank": 139
+   "rank": 149
   },
   {
-   "apartmentKey": "41360-3696",
-   "aptSeq": "3696",
-   "apartmentName": "e편한세상 다산",
+   "apartmentKey": "41370-608",
+   "aptSeq": "608",
+   "apartmentName": "세마역 트루엘 더퍼스트",
    "sidoCode": "41",
-   "sggCode": "41360",
-   "areaGroup": 85.0,
-   "buildYear": 2017,
+   "sggCode": "41370",
+   "areaGroup": 84.6,
+   "buildYear": 2013,
    "referenceMonth": "202609",
-   "baselineMedian": 983500000.0,
-   "currentMedian": 1085000000.0,
-   "riseAmount": 101500000,
-   "riseRate": 10.32,
-   "baselineTradeCount": 20,
+   "baselineMedian": 460000000,
+   "currentMedian": 507500000.0,
+   "riseAmount": 47500000,
+   "riseRate": 10.33,
+   "baselineTradeCount": 9,
    "currentTradeCount": 2,
-   "confidence": "low",
-   "warnings": [
-    "서로 다른 세부 전용면적 혼합"
-   ],
-   "region": "41360 다산동",
+   "confidence": "medium",
+   "warnings": [],
+   "region": "41370 세교동",
    "exactAreas": [
-    84.97,
-    84.99,
-    84.96
+    84.61
    ],
-   "baselineFloorMedian": 12.5,
-   "currentFloorMedian": 8.5,
+   "baselineFloorMedian": 14,
+   "currentFloorMedian": 14.0,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
    "directTradeWarning": false,
-   "compositionWarning": true,
-   "exclusiveAreaGroup": 85.0,
+   "compositionWarning": false,
+   "exclusiveAreaGroup": 84.6,
    "calculationVersion": "v1.1",
-   "rank": 140
+   "rank": 150
   },
   {
    "apartmentKey": "41597-41590-973",
@@ -4901,29 +5239,59 @@
    "buildYear": 2007,
    "referenceMonth": "202609",
    "baselineMedian": 825000000,
-   "currentMedian": 910000000.0,
+   "currentMedian": 910000000,
    "riseAmount": 85000000,
    "riseRate": 10.3,
    "baselineTradeCount": 15,
-   "currentTradeCount": 6,
-   "confidence": "medium",
-   "warnings": [
-    "층수 차이(8층 이상 또는 구간 차이)"
-   ],
+   "currentTradeCount": 7,
+   "confidence": "high",
+   "warnings": [],
    "region": "41597 반송동",
    "exactAreas": [
     59.07
    ],
    "baselineFloorMedian": 9,
-   "currentFloorMedian": 15.5,
+   "currentFloorMedian": 15,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
-   "floorMixWarning": true,
+   "floorMixWarning": false,
    "directTradeWarning": false,
-   "compositionWarning": true,
+   "compositionWarning": false,
    "exclusiveAreaGroup": 59.1,
    "calculationVersion": "v1.1",
-   "rank": 141
+   "rank": 151
+  },
+  {
+   "apartmentKey": "41360-30",
+   "aptSeq": "30",
+   "apartmentName": "세종리젠시빌",
+   "sidoCode": "41",
+   "sggCode": "41360",
+   "areaGroup": 84.7,
+   "buildYear": 2000,
+   "referenceMonth": "202609",
+   "baselineMedian": 330000000,
+   "currentMedian": 364000000.0,
+   "riseAmount": 34000000,
+   "riseRate": 10.3,
+   "baselineTradeCount": 3,
+   "currentTradeCount": 2,
+   "confidence": "medium",
+   "warnings": [],
+   "region": "41360 평내동",
+   "exactAreas": [
+    84.69
+   ],
+   "baselineFloorMedian": 13,
+   "currentFloorMedian": 12.0,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": false,
+   "directTradeWarning": false,
+   "compositionWarning": false,
+   "exclusiveAreaGroup": 84.7,
+   "calculationVersion": "v1.1",
+   "rank": 152
   },
   {
    "apartmentKey": "41117-66",
@@ -4955,42 +5323,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 60.0,
    "calculationVersion": "v1.1",
-   "rank": 142
-  },
-  {
-   "apartmentKey": "41597-41590-1790",
-   "aptSeq": "41590-1790",
-   "apartmentName": "동탄2신도시 베라체",
-   "sidoCode": "41",
-   "sggCode": "41597",
-   "areaGroup": 60.0,
-   "buildYear": 2018,
-   "referenceMonth": "202609",
-   "baselineMedian": 585000000,
-   "currentMedian": 645000000,
-   "riseAmount": 60000000,
-   "riseRate": 10.26,
-   "baselineTradeCount": 15,
-   "currentTradeCount": 7,
-   "confidence": "medium",
-   "warnings": [
-    "서로 다른 세부 전용면적 혼합"
-   ],
-   "region": "41597 목동",
-   "exactAreas": [
-    59.98,
-    59.99
-   ],
-   "baselineFloorMedian": 7,
-   "currentFloorMedian": 13,
-   "baselineDirectTradeCount": 0,
-   "currentDirectTradeCount": 0,
-   "floorMixWarning": false,
-   "directTradeWarning": false,
-   "compositionWarning": true,
-   "exclusiveAreaGroup": 60.0,
-   "calculationVersion": "v1.1",
-   "rank": 143
+   "rank": 153
   },
   {
    "apartmentKey": "41117-47",
@@ -5022,7 +5355,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 144
+   "rank": 154
   },
   {
    "apartmentKey": "41113-1808",
@@ -5056,39 +5389,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 59.9,
    "calculationVersion": "v1.1",
-   "rank": 145
-  },
-  {
-   "apartmentKey": "41360-44",
-   "aptSeq": "44",
-   "apartmentName": "청학주공(5단지)",
-   "sidoCode": "41",
-   "sggCode": "41360",
-   "areaGroup": 118.6,
-   "buildYear": 2000,
-   "referenceMonth": "202609",
-   "baselineMedian": 440000000,
-   "currentMedian": 484500000.0,
-   "riseAmount": 44500000,
-   "riseRate": 10.11,
-   "baselineTradeCount": 3,
-   "currentTradeCount": 2,
-   "confidence": "medium",
-   "warnings": [],
-   "region": "41360 별내면 청학리",
-   "exactAreas": [
-    118.61
-   ],
-   "baselineFloorMedian": 7,
-   "currentFloorMedian": 13.0,
-   "baselineDirectTradeCount": 0,
-   "currentDirectTradeCount": 0,
-   "floorMixWarning": false,
-   "directTradeWarning": false,
-   "compositionWarning": false,
-   "exclusiveAreaGroup": 118.6,
-   "calculationVersion": "v1.1",
-   "rank": 146
+   "rank": 155
   },
   {
    "apartmentKey": "41450-520",
@@ -5120,7 +5421,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 60.0,
    "calculationVersion": "v1.1",
-   "rank": 147
+   "rank": 156
   },
   {
    "apartmentKey": "41131-1624",
@@ -5156,7 +5457,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 60.0,
    "calculationVersion": "v1.1",
-   "rank": 148
+   "rank": 157
   },
   {
    "apartmentKey": "41220-3258",
@@ -5188,7 +5489,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 84.5,
    "calculationVersion": "v1.1",
-   "rank": 149
+   "rank": 158
   },
   {
    "apartmentKey": "41360-3895",
@@ -5224,7 +5525,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 150
+   "rank": 159
   },
   {
    "apartmentKey": "41410-59",
@@ -5236,27 +5537,29 @@
    "buildYear": 1992,
    "referenceMonth": "202609",
    "baselineMedian": 500000000,
-   "currentMedian": 550000000.0,
+   "currentMedian": 550000000,
    "riseAmount": 50000000,
    "riseRate": 10.0,
    "baselineTradeCount": 5,
-   "currentTradeCount": 2,
-   "confidence": "medium",
-   "warnings": [],
+   "currentTradeCount": 3,
+   "confidence": "low",
+   "warnings": [
+    "층수 차이(8층 이상 또는 구간 차이)"
+   ],
    "region": "41410 산본동",
    "exactAreas": [
     51.66
    ],
    "baselineFloorMedian": 8,
-   "currentFloorMedian": 6.0,
+   "currentFloorMedian": 5,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
-   "floorMixWarning": false,
+   "floorMixWarning": true,
    "directTradeWarning": false,
-   "compositionWarning": false,
+   "compositionWarning": true,
    "exclusiveAreaGroup": 51.7,
    "calculationVersion": "v1.1",
-   "rank": 151
+   "rank": 160
   },
   {
    "apartmentKey": "41461-2479",
@@ -5288,7 +5591,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 60.0,
    "calculationVersion": "v1.1",
-   "rank": 152
+   "rank": 161
   },
   {
    "apartmentKey": "41463-683",
@@ -5322,7 +5625,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 106.2,
    "calculationVersion": "v1.1",
-   "rank": 153
+   "rank": 162
   },
   {
    "apartmentKey": "41410-1262",
@@ -5356,7 +5659,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 154
+   "rank": 163
   },
   {
    "apartmentKey": "28245-27",
@@ -5390,7 +5693,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 68.0,
    "calculationVersion": "v1.1",
-   "rank": 155
+   "rank": 164
   },
   {
    "apartmentKey": "41117-45",
@@ -5422,7 +5725,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 156
+   "rank": 165
   },
   {
    "apartmentKey": "41360-165",
@@ -5454,7 +5757,39 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 157
+   "rank": 166
+  },
+  {
+   "apartmentKey": "41113-65",
+   "aptSeq": "65",
+   "apartmentName": "수원권선삼성래미안",
+   "sidoCode": "41",
+   "sggCode": "41113",
+   "areaGroup": 84.8,
+   "buildYear": 2000,
+   "referenceMonth": "202609",
+   "baselineMedian": 369500000.0,
+   "currentMedian": 406000000.0,
+   "riseAmount": 36500000,
+   "riseRate": 9.88,
+   "baselineTradeCount": 4,
+   "currentTradeCount": 4,
+   "confidence": "medium",
+   "warnings": [],
+   "region": "41113 곡반정동",
+   "exactAreas": [
+    84.8381
+   ],
+   "baselineFloorMedian": 9.5,
+   "currentFloorMedian": 8.5,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": false,
+   "directTradeWarning": false,
+   "compositionWarning": false,
+   "exclusiveAreaGroup": 84.8,
+   "calculationVersion": "v1.1",
+   "rank": 167
   },
   {
    "apartmentKey": "41463-565",
@@ -5486,7 +5821,39 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 158
+   "rank": 168
+  },
+  {
+   "apartmentKey": "41410-87",
+   "aptSeq": "87",
+   "apartmentName": "주공(1단지)",
+   "sidoCode": "41",
+   "sggCode": "41410",
+   "areaGroup": 58.6,
+   "buildYear": 1992,
+   "referenceMonth": "202609",
+   "baselineMedian": 500000000,
+   "currentMedian": 549000000,
+   "riseAmount": 49000000,
+   "riseRate": 9.8,
+   "baselineTradeCount": 3,
+   "currentTradeCount": 3,
+   "confidence": "medium",
+   "warnings": [],
+   "region": "41410 금정동",
+   "exactAreas": [
+    58.65
+   ],
+   "baselineFloorMedian": 5,
+   "currentFloorMedian": 5,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": false,
+   "directTradeWarning": false,
+   "compositionWarning": false,
+   "exclusiveAreaGroup": 58.6,
+   "calculationVersion": "v1.1",
+   "rank": 169
   },
   {
    "apartmentKey": "41597-41590-1498",
@@ -5522,7 +5889,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 60.0,
    "calculationVersion": "v1.1",
-   "rank": 159
+   "rank": 170
   },
   {
    "apartmentKey": "41360-3835",
@@ -5557,7 +5924,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 160
+   "rank": 171
   },
   {
    "apartmentKey": "41597-41590-1896",
@@ -5589,7 +5956,41 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 161
+   "rank": 172
+  },
+  {
+   "apartmentKey": "41465-28",
+   "aptSeq": "28",
+   "apartmentName": "한국",
+   "sidoCode": "41",
+   "sggCode": "41465",
+   "areaGroup": 84.4,
+   "buildYear": 1995,
+   "referenceMonth": "202609",
+   "baselineMedian": 1135000000.0,
+   "currentMedian": 1245000000.0,
+   "riseAmount": 110000000,
+   "riseRate": 9.69,
+   "baselineTradeCount": 2,
+   "currentTradeCount": 2,
+   "confidence": "low",
+   "warnings": [
+    "비교/기준 기간 거래량 모두 최소 조건(2건)"
+   ],
+   "region": "41465 풍덕천동",
+   "exactAreas": [
+    84.36
+   ],
+   "baselineFloorMedian": 5.5,
+   "currentFloorMedian": 13.0,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": false,
+   "directTradeWarning": false,
+   "compositionWarning": true,
+   "exclusiveAreaGroup": 84.4,
+   "calculationVersion": "v1.1",
+   "rank": 173
   },
   {
    "apartmentKey": "41597-41590-2053",
@@ -5621,7 +6022,41 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 59.5,
    "calculationVersion": "v1.1",
-   "rank": 162
+   "rank": 174
+  },
+  {
+   "apartmentKey": "41117-337",
+   "aptSeq": "337",
+   "apartmentName": "영통라온프라이빗",
+   "sidoCode": "41",
+   "sggCode": "41117",
+   "areaGroup": 59.8,
+   "buildYear": 2017,
+   "referenceMonth": "202609",
+   "baselineMedian": 750000000.0,
+   "currentMedian": 822500000.0,
+   "riseAmount": 72500000,
+   "riseRate": 9.67,
+   "baselineTradeCount": 8,
+   "currentTradeCount": 2,
+   "confidence": "low",
+   "warnings": [
+    "층수 차이(8층 이상 또는 구간 차이)"
+   ],
+   "region": "41117 영통동",
+   "exactAreas": [
+    59.8334
+   ],
+   "baselineFloorMedian": 15.5,
+   "currentFloorMedian": 6.0,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": true,
+   "directTradeWarning": false,
+   "compositionWarning": true,
+   "exclusiveAreaGroup": 59.8,
+   "calculationVersion": "v1.1",
+   "rank": 175
   },
   {
    "apartmentKey": "41287-16",
@@ -5653,7 +6088,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 69.4,
    "calculationVersion": "v1.1",
-   "rank": 163
+   "rank": 176
   },
   {
    "apartmentKey": "41360-45",
@@ -5688,7 +6123,41 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 164
+   "rank": 177
+  },
+  {
+   "apartmentKey": "41281-88",
+   "aptSeq": "88",
+   "apartmentName": "은빛마을6단지",
+   "sidoCode": "41",
+   "sggCode": "41281",
+   "areaGroup": 164.3,
+   "buildYear": 1996,
+   "referenceMonth": "202609",
+   "baselineMedian": 907500000.0,
+   "currentMedian": 995000000.0,
+   "riseAmount": 87500000,
+   "riseRate": 9.64,
+   "baselineTradeCount": 2,
+   "currentTradeCount": 2,
+   "confidence": "low",
+   "warnings": [
+    "비교/기준 기간 거래량 모두 최소 조건(2건)"
+   ],
+   "region": "41281 화정동",
+   "exactAreas": [
+    164.34
+   ],
+   "baselineFloorMedian": 5.5,
+   "currentFloorMedian": 10.5,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": false,
+   "directTradeWarning": false,
+   "compositionWarning": true,
+   "exclusiveAreaGroup": 164.3,
+   "calculationVersion": "v1.1",
+   "rank": 178
   },
   {
    "apartmentKey": "41360-112",
@@ -5722,7 +6191,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 165
+   "rank": 179
   },
   {
    "apartmentKey": "41135-165",
@@ -5754,7 +6223,43 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 130.8,
    "calculationVersion": "v1.1",
-   "rank": 166
+   "rank": 180
+  },
+  {
+   "apartmentKey": "41117-27",
+   "aptSeq": "27",
+   "apartmentName": "주공그린빌3",
+   "sidoCode": "41",
+   "sggCode": "41117",
+   "areaGroup": 84.5,
+   "buildYear": 2002,
+   "referenceMonth": "202609",
+   "baselineMedian": 538500000.0,
+   "currentMedian": 590000000,
+   "riseAmount": 51500000,
+   "riseRate": 9.56,
+   "baselineTradeCount": 8,
+   "currentTradeCount": 3,
+   "confidence": "low",
+   "warnings": [
+    "서로 다른 세부 전용면적 혼합",
+    "직거래 포함 이력 존재"
+   ],
+   "region": "41117 매탄동",
+   "exactAreas": [
+    84.45,
+    84.51
+   ],
+   "baselineFloorMedian": 9,
+   "currentFloorMedian": 6,
+   "baselineDirectTradeCount": 1,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": false,
+   "directTradeWarning": true,
+   "compositionWarning": true,
+   "exclusiveAreaGroup": 84.5,
+   "calculationVersion": "v1.1",
+   "rank": 181
   },
   {
    "apartmentKey": "41113-57",
@@ -5788,7 +6293,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 74.6,
    "calculationVersion": "v1.1",
-   "rank": 167
+   "rank": 182
   },
   {
    "apartmentKey": "41360-2416",
@@ -5822,7 +6327,42 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 168
+   "rank": 183
+  },
+  {
+   "apartmentKey": "28275-28260-4659",
+   "aptSeq": "28260-4659",
+   "apartmentName": "루원더퍼스트",
+   "sidoCode": "28",
+   "sggCode": "28275",
+   "areaGroup": 60.0,
+   "buildYear": 2019,
+   "referenceMonth": "202609",
+   "baselineMedian": 437500000.0,
+   "currentMedian": 479000000.0,
+   "riseAmount": 41500000,
+   "riseRate": 9.49,
+   "baselineTradeCount": 2,
+   "currentTradeCount": 2,
+   "confidence": "low",
+   "warnings": [
+    "층수 차이(8층 이상 또는 구간 차이)",
+    "비교/기준 기간 거래량 모두 최소 조건(2건)"
+   ],
+   "region": "28275 가정동",
+   "exactAreas": [
+    59.96
+   ],
+   "baselineFloorMedian": 1.0,
+   "currentFloorMedian": 9.5,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": true,
+   "directTradeWarning": false,
+   "compositionWarning": true,
+   "exclusiveAreaGroup": 60.0,
+   "calculationVersion": "v1.1",
+   "rank": 184
   },
   {
    "apartmentKey": "41360-3909",
@@ -5856,7 +6396,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 60.0,
    "calculationVersion": "v1.1",
-   "rank": 169
+   "rank": 185
   },
   {
    "apartmentKey": "41113-80",
@@ -5890,7 +6430,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 59.9,
    "calculationVersion": "v1.1",
-   "rank": 170
+   "rank": 186
   },
   {
    "apartmentKey": "41115-1905",
@@ -5906,8 +6446,8 @@
    "riseAmount": 80000000,
    "riseRate": 9.41,
    "baselineTradeCount": 26,
-   "currentTradeCount": 4,
-   "confidence": "low",
+   "currentTradeCount": 8,
+   "confidence": "medium",
    "warnings": [
     "서로 다른 세부 전용면적 혼합"
    ],
@@ -5917,7 +6457,7 @@
     59.94
    ],
    "baselineFloorMedian": 9.0,
-   "currentFloorMedian": 14.0,
+   "currentFloorMedian": 12.5,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -5925,39 +6465,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 59.9,
    "calculationVersion": "v1.1",
-   "rank": 171
-  },
-  {
-   "apartmentKey": "41171-105",
-   "aptSeq": "105",
-   "apartmentName": "주공그린빌",
-   "sidoCode": "41",
-   "sggCode": "41171",
-   "areaGroup": 52.9,
-   "buildYear": 2003,
-   "referenceMonth": "202609",
-   "baselineMedian": 490000000,
-   "currentMedian": 536000000,
-   "riseAmount": 46000000,
-   "riseRate": 9.39,
-   "baselineTradeCount": 7,
-   "currentTradeCount": 3,
-   "confidence": "medium",
-   "warnings": [],
-   "region": "41171 석수동",
-   "exactAreas": [
-    52.88
-   ],
-   "baselineFloorMedian": 13,
-   "currentFloorMedian": 9,
-   "baselineDirectTradeCount": 0,
-   "currentDirectTradeCount": 0,
-   "floorMixWarning": false,
-   "directTradeWarning": false,
-   "compositionWarning": false,
-   "exclusiveAreaGroup": 52.9,
-   "calculationVersion": "v1.1",
-   "rank": 172
+   "rank": 187
   },
   {
    "apartmentKey": "41113-2238",
@@ -5992,7 +6500,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 60.0,
    "calculationVersion": "v1.1",
-   "rank": 173
+   "rank": 188
   },
   {
    "apartmentKey": "41111-105",
@@ -6026,7 +6534,75 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 60.0,
    "calculationVersion": "v1.1",
-   "rank": 174
+   "rank": 189
+  },
+  {
+   "apartmentKey": "41220-3777",
+   "aptSeq": "3777",
+   "apartmentName": "평택지제역자이",
+   "sidoCode": "41",
+   "sggCode": "41220",
+   "areaGroup": 85.0,
+   "buildYear": 2023,
+   "referenceMonth": "202609",
+   "baselineMedian": 725000000.0,
+   "currentMedian": 792500000.0,
+   "riseAmount": 67500000,
+   "riseRate": 9.31,
+   "baselineTradeCount": 24,
+   "currentTradeCount": 2,
+   "confidence": "low",
+   "warnings": [
+    "서로 다른 세부 전용면적 혼합",
+    "직거래 포함 이력 존재"
+   ],
+   "region": "41220 동삭동",
+   "exactAreas": [
+    84.9953,
+    84.9807
+   ],
+   "baselineFloorMedian": 17,
+   "currentFloorMedian": 15.5,
+   "baselineDirectTradeCount": 1,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": false,
+   "directTradeWarning": true,
+   "compositionWarning": true,
+   "exclusiveAreaGroup": 85.0,
+   "calculationVersion": "v1.1",
+   "rank": 190
+  },
+  {
+   "apartmentKey": "41171-105",
+   "aptSeq": "105",
+   "apartmentName": "주공그린빌",
+   "sidoCode": "41",
+   "sggCode": "41171",
+   "areaGroup": 52.9,
+   "buildYear": 2003,
+   "referenceMonth": "202609",
+   "baselineMedian": 490000000,
+   "currentMedian": 535500000.0,
+   "riseAmount": 45500000,
+   "riseRate": 9.29,
+   "baselineTradeCount": 7,
+   "currentTradeCount": 4,
+   "confidence": "medium",
+   "warnings": [],
+   "region": "41171 석수동",
+   "exactAreas": [
+    52.88
+   ],
+   "baselineFloorMedian": 13,
+   "currentFloorMedian": 6.0,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": false,
+   "directTradeWarning": false,
+   "compositionWarning": false,
+   "exclusiveAreaGroup": 52.9,
+   "calculationVersion": "v1.1",
+   "rank": 191
   },
   {
    "apartmentKey": "41597-41590-996",
@@ -6058,41 +6634,41 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 72.7,
    "calculationVersion": "v1.1",
-   "rank": 175
+   "rank": 192
   },
   {
-   "apartmentKey": "41410-63",
-   "aptSeq": "63",
-   "apartmentName": "한양수리",
+   "apartmentKey": "41113-2568",
+   "aptSeq": "2568",
+   "apartmentName": "수원하늘채더퍼스트1단지",
    "sidoCode": "41",
-   "sggCode": "41410",
-   "areaGroup": 151.4,
-   "buildYear": 1994,
+   "sggCode": "41113",
+   "areaGroup": 85.0,
+   "buildYear": 2022,
    "referenceMonth": "202609",
-   "baselineMedian": 730000000,
-   "currentMedian": 797500000.0,
-   "riseAmount": 67500000,
-   "riseRate": 9.25,
-   "baselineTradeCount": 5,
-   "currentTradeCount": 2,
-   "confidence": "low",
+   "baselineMedian": 810000000,
+   "currentMedian": 885000000.0,
+   "riseAmount": 75000000,
+   "riseRate": 9.26,
+   "baselineTradeCount": 23,
+   "currentTradeCount": 6,
+   "confidence": "medium",
    "warnings": [
     "층수 차이(8층 이상 또는 구간 차이)"
    ],
-   "region": "41410 산본동",
+   "region": "41113 곡반정동",
    "exactAreas": [
-    151.397
+    84.96
    ],
-   "baselineFloorMedian": 10,
-   "currentFloorMedian": 5.0,
+   "baselineFloorMedian": 5,
+   "currentFloorMedian": 12.5,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
    "directTradeWarning": false,
    "compositionWarning": true,
-   "exclusiveAreaGroup": 151.4,
+   "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 176
+   "rank": 193
   },
   {
    "apartmentKey": "28185-12",
@@ -6127,7 +6703,42 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 59.8,
    "calculationVersion": "v1.1",
-   "rank": 177
+   "rank": 194
+  },
+  {
+   "apartmentKey": "41360-2555",
+   "aptSeq": "2555",
+   "apartmentName": "호평임광그대가",
+   "sidoCode": "41",
+   "sggCode": "41360",
+   "areaGroup": 85.0,
+   "buildYear": 2008,
+   "referenceMonth": "202609",
+   "baselineMedian": 380000000,
+   "currentMedian": 415000000.0,
+   "riseAmount": 35000000,
+   "riseRate": 9.21,
+   "baselineTradeCount": 3,
+   "currentTradeCount": 2,
+   "confidence": "low",
+   "warnings": [
+    "서로 다른 세부 전용면적 혼합"
+   ],
+   "region": "41360 호평동",
+   "exactAreas": [
+    84.9887,
+    84.9759
+   ],
+   "baselineFloorMedian": 11,
+   "currentFloorMedian": 7.5,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": false,
+   "directTradeWarning": false,
+   "compositionWarning": true,
+   "exclusiveAreaGroup": 85.0,
+   "calculationVersion": "v1.1",
+   "rank": 195
   },
   {
    "apartmentKey": "41360-3935",
@@ -6163,7 +6774,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 178
+   "rank": 196
   },
   {
    "apartmentKey": "41113-24",
@@ -6195,7 +6806,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 54.7,
    "calculationVersion": "v1.1",
-   "rank": 179
+   "rank": 197
   },
   {
    "apartmentKey": "41210-3302",
@@ -6227,42 +6838,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 84.5,
    "calculationVersion": "v1.1",
-   "rank": 180
-  },
-  {
-   "apartmentKey": "41113-2056",
-   "aptSeq": "2056",
-   "apartmentName": "수원아이파크시티7단지",
-   "sidoCode": "41",
-   "sggCode": "41113",
-   "areaGroup": 59.9,
-   "buildYear": 2016,
-   "referenceMonth": "202609",
-   "baselineMedian": 605000000,
-   "currentMedian": 660000000,
-   "riseAmount": 55000000,
-   "riseRate": 9.09,
-   "baselineTradeCount": 35,
-   "currentTradeCount": 11,
-   "confidence": "medium",
-   "warnings": [
-    "서로 다른 세부 전용면적 혼합"
-   ],
-   "region": "41113 권선동",
-   "exactAreas": [
-    59.87,
-    59.88
-   ],
-   "baselineFloorMedian": 7,
-   "currentFloorMedian": 12,
-   "baselineDirectTradeCount": 0,
-   "currentDirectTradeCount": 0,
-   "floorMixWarning": false,
-   "directTradeWarning": false,
-   "compositionWarning": true,
-   "exclusiveAreaGroup": 59.9,
-   "calculationVersion": "v1.1",
-   "rank": 181
+   "rank": 198
   },
   {
    "apartmentKey": "41220-3512",
@@ -6298,7 +6874,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 182
+   "rank": 199
   },
   {
    "apartmentKey": "41360-3340",
@@ -6332,7 +6908,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 72.5,
    "calculationVersion": "v1.1",
-   "rank": 183
+   "rank": 200
   },
   {
    "apartmentKey": "41410-50",
@@ -6367,7 +6943,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 49.9,
    "calculationVersion": "v1.1",
-   "rank": 184
+   "rank": 201
   },
   {
    "apartmentKey": "28200-4746",
@@ -6399,39 +6975,41 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 123.8,
    "calculationVersion": "v1.1",
-   "rank": 185
+   "rank": 202
   },
   {
-   "apartmentKey": "41113-65",
-   "aptSeq": "65",
-   "apartmentName": "수원권선삼성래미안",
+   "apartmentKey": "41113-2011",
+   "aptSeq": "2011",
+   "apartmentName": "오목천역 서희스타힐스 아파트",
    "sidoCode": "41",
    "sggCode": "41113",
-   "areaGroup": 84.8,
-   "buildYear": 2000,
+   "areaGroup": 59.9,
+   "buildYear": 2016,
    "referenceMonth": "202609",
-   "baselineMedian": 369500000.0,
-   "currentMedian": 403000000,
-   "riseAmount": 33500000,
-   "riseRate": 9.07,
-   "baselineTradeCount": 4,
-   "currentTradeCount": 3,
-   "confidence": "medium",
-   "warnings": [],
-   "region": "41113 곡반정동",
-   "exactAreas": [
-    84.8381
+   "baselineMedian": 437500000.0,
+   "currentMedian": 477000000.0,
+   "riseAmount": 39500000,
+   "riseRate": 9.03,
+   "baselineTradeCount": 8,
+   "currentTradeCount": 2,
+   "confidence": "low",
+   "warnings": [
+    "층수 차이(8층 이상 또는 구간 차이)"
    ],
-   "baselineFloorMedian": 9.5,
-   "currentFloorMedian": 7,
+   "region": "41113 오목천동",
+   "exactAreas": [
+    59.9433
+   ],
+   "baselineFloorMedian": 10.0,
+   "currentFloorMedian": 16.5,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
-   "floorMixWarning": false,
+   "floorMixWarning": true,
    "directTradeWarning": false,
-   "compositionWarning": false,
-   "exclusiveAreaGroup": 84.8,
+   "compositionWarning": true,
+   "exclusiveAreaGroup": 59.9,
    "calculationVersion": "v1.1",
-   "rank": 186
+   "rank": 203
   },
   {
    "apartmentKey": "41113-1866",
@@ -6463,7 +7041,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 59.7,
    "calculationVersion": "v1.1",
-   "rank": 187
+   "rank": 204
   },
   {
    "apartmentKey": "41410-31",
@@ -6497,7 +7075,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 103.2,
    "calculationVersion": "v1.1",
-   "rank": 188
+   "rank": 205
   },
   {
    "apartmentKey": "41192-225",
@@ -6529,7 +7107,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 189
+   "rank": 206
   },
   {
    "apartmentKey": "41113-1866",
@@ -6563,7 +7141,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 59.9,
    "calculationVersion": "v1.1",
-   "rank": 190
+   "rank": 207
   },
   {
    "apartmentKey": "41597-41590-1814",
@@ -6598,7 +7176,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 191
+   "rank": 208
   },
   {
    "apartmentKey": "41117-234",
@@ -6630,7 +7208,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 60.0,
    "calculationVersion": "v1.1",
-   "rank": 192
+   "rank": 209
   },
   {
    "apartmentKey": "41430-1048",
@@ -6667,7 +7245,43 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 193
+   "rank": 210
+  },
+  {
+   "apartmentKey": "41360-3696",
+   "aptSeq": "3696",
+   "apartmentName": "e편한세상 다산",
+   "sidoCode": "41",
+   "sggCode": "41360",
+   "areaGroup": 85.0,
+   "buildYear": 2017,
+   "referenceMonth": "202609",
+   "baselineMedian": 983500000.0,
+   "currentMedian": 1070000000,
+   "riseAmount": 86500000,
+   "riseRate": 8.8,
+   "baselineTradeCount": 20,
+   "currentTradeCount": 3,
+   "confidence": "low",
+   "warnings": [
+    "서로 다른 세부 전용면적 혼합"
+   ],
+   "region": "41360 다산동",
+   "exactAreas": [
+    84.97,
+    84.99,
+    84.96
+   ],
+   "baselineFloorMedian": 12.5,
+   "currentFloorMedian": 12,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": false,
+   "directTradeWarning": false,
+   "compositionWarning": true,
+   "exclusiveAreaGroup": 85.0,
+   "calculationVersion": "v1.1",
+   "rank": 211
   },
   {
    "apartmentKey": "41410-83",
@@ -6701,39 +7315,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 58.5,
    "calculationVersion": "v1.1",
-   "rank": 194
-  },
-  {
-   "apartmentKey": "41111-2267",
-   "aptSeq": "2267",
-   "apartmentName": "화서역파크푸르지오",
-   "sidoCode": "41",
-   "sggCode": "41111",
-   "areaGroup": 84.7,
-   "buildYear": 2021,
-   "referenceMonth": "202609",
-   "baselineMedian": 1380000000,
-   "currentMedian": 1500000000,
-   "riseAmount": 120000000,
-   "riseRate": 8.7,
-   "baselineTradeCount": 9,
-   "currentTradeCount": 3,
-   "confidence": "medium",
-   "warnings": [],
-   "region": "41111 정자동",
-   "exactAreas": [
-    84.7
-   ],
-   "baselineFloorMedian": 22,
-   "currentFloorMedian": 20,
-   "baselineDirectTradeCount": 0,
-   "currentDirectTradeCount": 0,
-   "floorMixWarning": false,
-   "directTradeWarning": false,
-   "compositionWarning": false,
-   "exclusiveAreaGroup": 84.7,
-   "calculationVersion": "v1.1",
-   "rank": 195
+   "rank": 212
   },
   {
    "apartmentKey": "41360-3865",
@@ -6768,7 +7350,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 196
+   "rank": 213
   },
   {
    "apartmentKey": "41192-305",
@@ -6800,7 +7382,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 84.8,
    "calculationVersion": "v1.1",
-   "rank": 197
+   "rank": 214
   },
   {
    "apartmentKey": "41192-227",
@@ -6834,7 +7416,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.6,
    "calculationVersion": "v1.1",
-   "rank": 198
+   "rank": 215
   },
   {
    "apartmentKey": "41360-4024",
@@ -6868,7 +7450,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 59.6,
    "calculationVersion": "v1.1",
-   "rank": 199
+   "rank": 216
   },
   {
    "apartmentKey": "41173-180",
@@ -6902,7 +7484,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 114.6,
    "calculationVersion": "v1.1",
-   "rank": 200
+   "rank": 217
   },
   {
    "apartmentKey": "41370-532",
@@ -6937,7 +7519,140 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 101.2,
    "calculationVersion": "v1.1",
-   "rank": 201
+   "rank": 218
+  },
+  {
+   "apartmentKey": "41173-15",
+   "aptSeq": "15",
+   "apartmentName": "샛별마을한양4-1",
+   "sidoCode": "41",
+   "sggCode": "41173",
+   "areaGroup": 42.6,
+   "buildYear": 1993,
+   "referenceMonth": "202609",
+   "baselineMedian": 570000000.0,
+   "currentMedian": 619000000.0,
+   "riseAmount": 49000000,
+   "riseRate": 8.6,
+   "baselineTradeCount": 14,
+   "currentTradeCount": 4,
+   "confidence": "medium",
+   "warnings": [],
+   "region": "41173 비산동",
+   "exactAreas": [
+    42.615
+   ],
+   "baselineFloorMedian": 10.5,
+   "currentFloorMedian": 13.0,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": false,
+   "directTradeWarning": false,
+   "compositionWarning": false,
+   "exclusiveAreaGroup": 42.6,
+   "calculationVersion": "v1.1",
+   "rank": 219
+  },
+  {
+   "apartmentKey": "41210-3310",
+   "aptSeq": "3310",
+   "apartmentName": "광명해모로이연",
+   "sidoCode": "41",
+   "sggCode": "41210",
+   "areaGroup": 85.0,
+   "buildYear": 2015,
+   "referenceMonth": "202609",
+   "baselineMedian": 994000000,
+   "currentMedian": 1079500000.0,
+   "riseAmount": 85500000,
+   "riseRate": 8.6,
+   "baselineTradeCount": 11,
+   "currentTradeCount": 2,
+   "confidence": "low",
+   "warnings": [
+    "층수 차이(8층 이상 또는 구간 차이)",
+    "서로 다른 세부 전용면적 혼합"
+   ],
+   "region": "41210 광명동",
+   "exactAreas": [
+    84.995,
+    84.986,
+    84.99
+   ],
+   "baselineFloorMedian": 16,
+   "currentFloorMedian": 10.0,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": true,
+   "directTradeWarning": false,
+   "compositionWarning": true,
+   "exclusiveAreaGroup": 85.0,
+   "calculationVersion": "v1.1",
+   "rank": 220
+  },
+  {
+   "apartmentKey": "41410-35",
+   "aptSeq": "35",
+   "apartmentName": "주공9단지금강",
+   "sidoCode": "41",
+   "sggCode": "41410",
+   "areaGroup": 58.7,
+   "buildYear": 1994,
+   "referenceMonth": "202609",
+   "baselineMedian": 373000000.0,
+   "currentMedian": 405000000.0,
+   "riseAmount": 32000000,
+   "riseRate": 8.58,
+   "baselineTradeCount": 16,
+   "currentTradeCount": 4,
+   "confidence": "medium",
+   "warnings": [],
+   "region": "41410 산본동",
+   "exactAreas": [
+    58.71
+   ],
+   "baselineFloorMedian": 13.5,
+   "currentFloorMedian": 9.5,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": false,
+   "directTradeWarning": false,
+   "compositionWarning": false,
+   "exclusiveAreaGroup": 58.7,
+   "calculationVersion": "v1.1",
+   "rank": 221
+  },
+  {
+   "apartmentKey": "41463-619",
+   "aptSeq": "619",
+   "apartmentName": "흥덕마을동원로얄듀크",
+   "sidoCode": "41",
+   "sggCode": "41463",
+   "areaGroup": 84.9,
+   "buildYear": 2010,
+   "referenceMonth": "202609",
+   "baselineMedian": 740000000.0,
+   "currentMedian": 803500000.0,
+   "riseAmount": 63500000,
+   "riseRate": 8.58,
+   "baselineTradeCount": 4,
+   "currentTradeCount": 2,
+   "confidence": "medium",
+   "warnings": [],
+   "region": "41463 영덕동",
+   "exactAreas": [
+    84.9157
+   ],
+   "baselineFloorMedian": 8.5,
+   "currentFloorMedian": 12.0,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": false,
+   "directTradeWarning": false,
+   "compositionWarning": false,
+   "exclusiveAreaGroup": 84.9,
+   "calculationVersion": "v1.1",
+   "rank": 222
   },
   {
    "apartmentKey": "41360-120",
@@ -6971,7 +7686,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 134.7,
    "calculationVersion": "v1.1",
-   "rank": 202
+   "rank": 223
   },
   {
    "apartmentKey": "41465-298",
@@ -7003,7 +7718,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 134.9,
    "calculationVersion": "v1.1",
-   "rank": 203
+   "rank": 224
   },
   {
    "apartmentKey": "41595-41590-25",
@@ -7035,7 +7750,41 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 204
+   "rank": 225
+  },
+  {
+   "apartmentKey": "41360-3385",
+   "aptSeq": "3385",
+   "apartmentName": "별내푸르지오",
+   "sidoCode": "41",
+   "sggCode": "41360",
+   "areaGroup": 84.8,
+   "buildYear": 2015,
+   "referenceMonth": "202609",
+   "baselineMedian": 630000000.0,
+   "currentMedian": 683500000.0,
+   "riseAmount": 53500000,
+   "riseRate": 8.49,
+   "baselineTradeCount": 12,
+   "currentTradeCount": 4,
+   "confidence": "low",
+   "warnings": [
+    "층수 차이(8층 이상 또는 구간 차이)"
+   ],
+   "region": "41360 별내동",
+   "exactAreas": [
+    84.8194
+   ],
+   "baselineFloorMedian": 4.0,
+   "currentFloorMedian": 6.5,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": true,
+   "directTradeWarning": false,
+   "compositionWarning": true,
+   "exclusiveAreaGroup": 84.8,
+   "calculationVersion": "v1.1",
+   "rank": 226
   },
   {
    "apartmentKey": "41595-41590-49",
@@ -7067,7 +7816,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 205
+   "rank": 227
   },
   {
    "apartmentKey": "41595-41590-18",
@@ -7099,7 +7848,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 206
+   "rank": 228
   },
   {
    "apartmentKey": "41113-2568",
@@ -7135,7 +7884,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 74.9,
    "calculationVersion": "v1.1",
-   "rank": 207
+   "rank": 229
   },
   {
    "apartmentKey": "41133-2759",
@@ -7171,7 +7920,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 208
+   "rank": 230
   },
   {
    "apartmentKey": "41111-43",
@@ -7206,7 +7955,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 60.0,
    "calculationVersion": "v1.1",
-   "rank": 209
+   "rank": 231
   },
   {
    "apartmentKey": "41360-3214",
@@ -7222,8 +7971,8 @@
    "riseAmount": 52500000,
    "riseRate": 8.37,
    "baselineTradeCount": 12,
-   "currentTradeCount": 3,
-   "confidence": "low",
+   "currentTradeCount": 5,
+   "confidence": "medium",
    "warnings": [
     "서로 다른 세부 전용면적 혼합",
     "직거래 포함 이력 존재"
@@ -7234,7 +7983,7 @@
     84.9838
    ],
    "baselineFloorMedian": 8,
-   "currentFloorMedian": 10,
+   "currentFloorMedian": 9,
    "baselineDirectTradeCount": 1,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -7242,7 +7991,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 210
+   "rank": 232
   },
   {
    "apartmentKey": "41117-57",
@@ -7274,7 +8023,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 59.4,
    "calculationVersion": "v1.1",
-   "rank": 211
+   "rank": 233
   },
   {
    "apartmentKey": "41595-41590-1466",
@@ -7310,7 +8059,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 212
+   "rank": 234
   },
   {
    "apartmentKey": "41360-48",
@@ -7342,7 +8091,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 213
+   "rank": 235
   },
   {
    "apartmentKey": "41192-241",
@@ -7377,7 +8126,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 60.0,
    "calculationVersion": "v1.1",
-   "rank": 214
+   "rank": 236
   },
   {
    "apartmentKey": "41220-3777",
@@ -7412,7 +8161,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 60.0,
    "calculationVersion": "v1.1",
-   "rank": 215
+   "rank": 237
   },
   {
    "apartmentKey": "41115-1905",
@@ -7446,7 +8195,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 99.9,
    "calculationVersion": "v1.1",
-   "rank": 216
+   "rank": 238
   },
   {
    "apartmentKey": "41450-184",
@@ -7478,7 +8227,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 217
+   "rank": 239
   },
   {
    "apartmentKey": "41360-4024",
@@ -7512,7 +8261,41 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 51.9,
    "calculationVersion": "v1.1",
-   "rank": 218
+   "rank": 240
+  },
+  {
+   "apartmentKey": "41173-68",
+   "aptSeq": "68",
+   "apartmentName": "한가람(한양)",
+   "sidoCode": "41",
+   "sggCode": "41173",
+   "areaGroup": 41.1,
+   "buildYear": 1995,
+   "referenceMonth": "202609",
+   "baselineMedian": 541000000.0,
+   "currentMedian": 585000000.0,
+   "riseAmount": 44000000,
+   "riseRate": 8.13,
+   "baselineTradeCount": 6,
+   "currentTradeCount": 2,
+   "confidence": "low",
+   "warnings": [
+    "직거래 포함 이력 존재"
+   ],
+   "region": "41173 관양동",
+   "exactAreas": [
+    41.09
+   ],
+   "baselineFloorMedian": 8,
+   "currentFloorMedian": 11.0,
+   "baselineDirectTradeCount": 1,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": false,
+   "directTradeWarning": true,
+   "compositionWarning": true,
+   "exclusiveAreaGroup": 41.1,
+   "calculationVersion": "v1.1",
+   "rank": 241
   },
   {
    "apartmentKey": "41610-24",
@@ -7544,7 +8327,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 84.8,
    "calculationVersion": "v1.1",
-   "rank": 219
+   "rank": 242
   },
   {
    "apartmentKey": "41310-44",
@@ -7576,7 +8359,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 62.2,
    "calculationVersion": "v1.1",
-   "rank": 220
+   "rank": 243
   },
   {
    "apartmentKey": "41113-63",
@@ -7608,7 +8391,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 60.0,
    "calculationVersion": "v1.1",
-   "rank": 221
+   "rank": 244
   },
   {
    "apartmentKey": "41117-38",
@@ -7640,7 +8423,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 60.0,
    "calculationVersion": "v1.1",
-   "rank": 222
+   "rank": 245
   },
   {
    "apartmentKey": "41360-3901",
@@ -7675,7 +8458,41 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 52.0,
    "calculationVersion": "v1.1",
-   "rank": 223
+   "rank": 246
+  },
+  {
+   "apartmentKey": "41111-2267",
+   "aptSeq": "2267",
+   "apartmentName": "화서역파크푸르지오",
+   "sidoCode": "41",
+   "sggCode": "41111",
+   "areaGroup": 84.7,
+   "buildYear": 2021,
+   "referenceMonth": "202609",
+   "baselineMedian": 1380000000,
+   "currentMedian": 1490000000.0,
+   "riseAmount": 110000000,
+   "riseRate": 7.97,
+   "baselineTradeCount": 9,
+   "currentTradeCount": 4,
+   "confidence": "low",
+   "warnings": [
+    "직거래 포함 이력 존재"
+   ],
+   "region": "41111 정자동",
+   "exactAreas": [
+    84.7
+   ],
+   "baselineFloorMedian": 22,
+   "currentFloorMedian": 16,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 1,
+   "floorMixWarning": false,
+   "directTradeWarning": true,
+   "compositionWarning": true,
+   "exclusiveAreaGroup": 84.7,
+   "calculationVersion": "v1.1",
+   "rank": 247
   },
   {
    "apartmentKey": "41465-436",
@@ -7707,7 +8524,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 224
+   "rank": 248
   },
   {
    "apartmentKey": "41113-33",
@@ -7741,41 +8558,39 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 59.8,
    "calculationVersion": "v1.1",
-   "rank": 225
+   "rank": 249
   },
   {
-   "apartmentKey": "41360-3385",
-   "aptSeq": "3385",
-   "apartmentName": "별내푸르지오",
+   "apartmentKey": "41113-1915",
+   "aptSeq": "1915",
+   "apartmentName": "수원아이파크시티5단지",
    "sidoCode": "41",
-   "sggCode": "41360",
+   "sggCode": "41113",
    "areaGroup": 84.8,
    "buildYear": 2015,
    "referenceMonth": "202609",
-   "baselineMedian": 630000000.0,
-   "currentMedian": 680000000,
-   "riseAmount": 50000000,
+   "baselineMedian": 655000000,
+   "currentMedian": 707000000.0,
+   "riseAmount": 52000000,
    "riseRate": 7.94,
-   "baselineTradeCount": 12,
-   "currentTradeCount": 3,
-   "confidence": "low",
-   "warnings": [
-    "층수 차이(8층 이상 또는 구간 차이)"
-   ],
-   "region": "41360 별내동",
+   "baselineTradeCount": 5,
+   "currentTradeCount": 2,
+   "confidence": "medium",
+   "warnings": [],
+   "region": "41113 권선동",
    "exactAreas": [
-    84.8194
+    84.8
    ],
-   "baselineFloorMedian": 4.0,
-   "currentFloorMedian": 7,
+   "baselineFloorMedian": 7,
+   "currentFloorMedian": 7.5,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
-   "floorMixWarning": true,
+   "floorMixWarning": false,
    "directTradeWarning": false,
-   "compositionWarning": true,
+   "compositionWarning": false,
    "exclusiveAreaGroup": 84.8,
    "calculationVersion": "v1.1",
-   "rank": 226
+   "rank": 250
   },
   {
    "apartmentKey": "41113-68",
@@ -7807,7 +8622,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 84.6,
    "calculationVersion": "v1.1",
-   "rank": 227
+   "rank": 251
   },
   {
    "apartmentKey": "41310-1140",
@@ -7841,7 +8656,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 228
+   "rank": 252
   },
   {
    "apartmentKey": "41370-859",
@@ -7875,7 +8690,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 74.7,
    "calculationVersion": "v1.1",
-   "rank": 229
+   "rank": 253
   },
   {
    "apartmentKey": "41463-867",
@@ -7909,7 +8724,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 60.0,
    "calculationVersion": "v1.1",
-   "rank": 230
+   "rank": 254
   },
   {
    "apartmentKey": "41461-2422",
@@ -7941,7 +8756,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 83.8,
    "calculationVersion": "v1.1",
-   "rank": 231
+   "rank": 255
   },
   {
    "apartmentKey": "41115-10",
@@ -7973,7 +8788,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 84.7,
    "calculationVersion": "v1.1",
-   "rank": 232
+   "rank": 256
   },
   {
    "apartmentKey": "41480-544",
@@ -8005,7 +8820,39 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 102.0,
    "calculationVersion": "v1.1",
-   "rank": 233
+   "rank": 257
+  },
+  {
+   "apartmentKey": "41220-3512",
+   "aptSeq": "3512",
+   "apartmentName": "지제역더샵센트럴시티",
+   "sidoCode": "41",
+   "sggCode": "41220",
+   "areaGroup": 64.9,
+   "buildYear": 2022,
+   "referenceMonth": "202609",
+   "baselineMedian": 690000000.0,
+   "currentMedian": 744000000,
+   "riseAmount": 54000000,
+   "riseRate": 7.83,
+   "baselineTradeCount": 20,
+   "currentTradeCount": 5,
+   "confidence": "high",
+   "warnings": [],
+   "region": "41220 지제동",
+   "exactAreas": [
+    64.9377
+   ],
+   "baselineFloorMedian": 12.0,
+   "currentFloorMedian": 15,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": false,
+   "directTradeWarning": false,
+   "compositionWarning": false,
+   "exclusiveAreaGroup": 64.9,
+   "calculationVersion": "v1.1",
+   "rank": 258
   },
   {
    "apartmentKey": "41610-6163",
@@ -8039,7 +8886,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 59.9,
    "calculationVersion": "v1.1",
-   "rank": 234
+   "rank": 259
   },
   {
    "apartmentKey": "41113-2569",
@@ -8076,7 +8923,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 74.9,
    "calculationVersion": "v1.1",
-   "rank": 235
+   "rank": 260
   },
   {
    "apartmentKey": "41115-1905",
@@ -8108,7 +8955,41 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 236
+   "rank": 261
+  },
+  {
+   "apartmentKey": "41273-2385",
+   "aptSeq": "2385",
+   "apartmentName": "초지역메이저타운푸르지오에코단지",
+   "sidoCode": "41",
+   "sggCode": "41273",
+   "areaGroup": 49.5,
+   "buildYear": 2019,
+   "referenceMonth": "202609",
+   "baselineMedian": 529000000.0,
+   "currentMedian": 570000000,
+   "riseAmount": 41000000,
+   "riseRate": 7.75,
+   "baselineTradeCount": 8,
+   "currentTradeCount": 3,
+   "confidence": "low",
+   "warnings": [
+    "층수 차이(8층 이상 또는 구간 차이)"
+   ],
+   "region": "41273 원곡동",
+   "exactAreas": [
+    49.4932
+   ],
+   "baselineFloorMedian": 14.0,
+   "currentFloorMedian": 20,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": true,
+   "directTradeWarning": false,
+   "compositionWarning": true,
+   "exclusiveAreaGroup": 49.5,
+   "calculationVersion": "v1.1",
+   "rank": 262
   },
   {
    "apartmentKey": "41111-71",
@@ -8142,7 +9023,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.3,
    "calculationVersion": "v1.1",
-   "rank": 237
+   "rank": 263
   },
   {
    "apartmentKey": "41597-41590-1590",
@@ -8178,7 +9059,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 74.9,
    "calculationVersion": "v1.1",
-   "rank": 238
+   "rank": 264
   },
   {
    "apartmentKey": "41210-3293",
@@ -8215,7 +9096,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 239
+   "rank": 265
   },
   {
    "apartmentKey": "41113-1412",
@@ -8249,7 +9130,39 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 240
+   "rank": 266
+  },
+  {
+   "apartmentKey": "41430-73",
+   "aptSeq": "73",
+   "apartmentName": "대명구름채",
+   "sidoCode": "41",
+   "sggCode": "41430",
+   "areaGroup": 84.8,
+   "buildYear": 2004,
+   "referenceMonth": "202609",
+   "baselineMedian": 600000000,
+   "currentMedian": 646000000.0,
+   "riseAmount": 46000000,
+   "riseRate": 7.67,
+   "baselineTradeCount": 7,
+   "currentTradeCount": 2,
+   "confidence": "medium",
+   "warnings": [],
+   "region": "41430 오전동",
+   "exactAreas": [
+    84.818
+   ],
+   "baselineFloorMedian": 10,
+   "currentFloorMedian": 13.5,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": false,
+   "directTradeWarning": false,
+   "compositionWarning": false,
+   "exclusiveAreaGroup": 84.8,
+   "calculationVersion": "v1.1",
+   "rank": 267
   },
   {
    "apartmentKey": "41450-18",
@@ -8281,7 +9194,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 59.9,
    "calculationVersion": "v1.1",
-   "rank": 241
+   "rank": 268
   },
   {
    "apartmentKey": "41310-22",
@@ -8315,7 +9228,39 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 242
+   "rank": 269
+  },
+  {
+   "apartmentKey": "41360-3925",
+   "aptSeq": "3925",
+   "apartmentName": "별내우미린스타포레",
+   "sidoCode": "41",
+   "sggCode": "41360",
+   "areaGroup": 84.8,
+   "buildYear": 2019,
+   "referenceMonth": "202609",
+   "baselineMedian": 667350000.0,
+   "currentMedian": 718000000,
+   "riseAmount": 50650000,
+   "riseRate": 7.59,
+   "baselineTradeCount": 10,
+   "currentTradeCount": 5,
+   "confidence": "high",
+   "warnings": [],
+   "region": "41360 별내동",
+   "exactAreas": [
+    84.8413
+   ],
+   "baselineFloorMedian": 12.5,
+   "currentFloorMedian": 8,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": false,
+   "directTradeWarning": false,
+   "compositionWarning": false,
+   "exclusiveAreaGroup": 84.8,
+   "calculationVersion": "v1.1",
+   "rank": 270
   },
   {
    "apartmentKey": "41410-38",
@@ -8347,7 +9292,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 101.5,
    "calculationVersion": "v1.1",
-   "rank": 243
+   "rank": 271
   },
   {
    "apartmentKey": "41597-41590-1836",
@@ -8381,7 +9326,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 244
+   "rank": 272
   },
   {
    "apartmentKey": "41287-302",
@@ -8417,7 +9362,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 59.9,
    "calculationVersion": "v1.1",
-   "rank": 245
+   "rank": 273
   },
   {
    "apartmentKey": "41410-54",
@@ -8449,7 +9394,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 58.5,
    "calculationVersion": "v1.1",
-   "rank": 246
+   "rank": 274
   },
   {
    "apartmentKey": "41192-218",
@@ -8481,7 +9426,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 84.7,
    "calculationVersion": "v1.1",
-   "rank": 247
+   "rank": 275
   },
   {
    "apartmentKey": "41480-631",
@@ -8517,7 +9462,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 248
+   "rank": 276
   },
   {
    "apartmentKey": "41410-58",
@@ -8549,41 +9494,42 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 249
+   "rank": 277
   },
   {
-   "apartmentKey": "41113-2568",
-   "aptSeq": "2568",
-   "apartmentName": "수원하늘채더퍼스트1단지",
+   "apartmentKey": "41113-2056",
+   "aptSeq": "2056",
+   "apartmentName": "수원아이파크시티7단지",
    "sidoCode": "41",
    "sggCode": "41113",
-   "areaGroup": 85.0,
-   "buildYear": 2022,
+   "areaGroup": 59.9,
+   "buildYear": 2016,
    "referenceMonth": "202609",
-   "baselineMedian": 810000000,
-   "currentMedian": 870000000,
-   "riseAmount": 60000000,
-   "riseRate": 7.41,
-   "baselineTradeCount": 23,
-   "currentTradeCount": 5,
+   "baselineMedian": 605000000,
+   "currentMedian": 650000000,
+   "riseAmount": 45000000,
+   "riseRate": 7.44,
+   "baselineTradeCount": 35,
+   "currentTradeCount": 13,
    "confidence": "medium",
    "warnings": [
-    "층수 차이(8층 이상 또는 구간 차이)"
+    "서로 다른 세부 전용면적 혼합"
    ],
-   "region": "41113 곡반정동",
+   "region": "41113 권선동",
    "exactAreas": [
-    84.96
+    59.87,
+    59.88
    ],
-   "baselineFloorMedian": 5,
-   "currentFloorMedian": 12,
+   "baselineFloorMedian": 7,
+   "currentFloorMedian": 11,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
-   "floorMixWarning": true,
+   "floorMixWarning": false,
    "directTradeWarning": false,
    "compositionWarning": true,
-   "exclusiveAreaGroup": 85.0,
+   "exclusiveAreaGroup": 59.9,
    "calculationVersion": "v1.1",
-   "rank": 250
+   "rank": 278
   },
   {
    "apartmentKey": "41360-3737",
@@ -8615,7 +9561,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 82.2,
    "calculationVersion": "v1.1",
-   "rank": 251
+   "rank": 279
   },
   {
    "apartmentKey": "41117-324",
@@ -8650,7 +9596,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 59.9,
    "calculationVersion": "v1.1",
-   "rank": 252
+   "rank": 280
   },
   {
    "apartmentKey": "41597-41590-1837",
@@ -8685,7 +9631,74 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 253
+   "rank": 281
+  },
+  {
+   "apartmentKey": "41113-2660",
+   "aptSeq": "2660",
+   "apartmentName": "쌍용더플래티넘오목천역",
+   "sidoCode": "41",
+   "sggCode": "41113",
+   "areaGroup": 60.0,
+   "buildYear": 2023,
+   "referenceMonth": "202609",
+   "baselineMedian": 575000000,
+   "currentMedian": 617000000.0,
+   "riseAmount": 42000000,
+   "riseRate": 7.3,
+   "baselineTradeCount": 21,
+   "currentTradeCount": 4,
+   "confidence": "low",
+   "warnings": [
+    "서로 다른 세부 전용면적 혼합"
+   ],
+   "region": "41113 오목천동",
+   "exactAreas": [
+    59.98,
+    59.99
+   ],
+   "baselineFloorMedian": 9,
+   "currentFloorMedian": 13.0,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": false,
+   "directTradeWarning": false,
+   "compositionWarning": true,
+   "exclusiveAreaGroup": 60.0,
+   "calculationVersion": "v1.1",
+   "rank": 282
+  },
+  {
+   "apartmentKey": "41360-113",
+   "aptSeq": "113",
+   "apartmentName": "현대",
+   "sidoCode": "41",
+   "sggCode": "41360",
+   "areaGroup": 84.4,
+   "buildYear": 1997,
+   "referenceMonth": "202609",
+   "baselineMedian": 487000000.0,
+   "currentMedian": 522500000.0,
+   "riseAmount": 35500000,
+   "riseRate": 7.29,
+   "baselineTradeCount": 10,
+   "currentTradeCount": 4,
+   "confidence": "medium",
+   "warnings": [],
+   "region": "41360 와부읍 덕소리",
+   "exactAreas": [
+    84.41
+   ],
+   "baselineFloorMedian": 13.0,
+   "currentFloorMedian": 9.5,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": false,
+   "directTradeWarning": false,
+   "compositionWarning": false,
+   "exclusiveAreaGroup": 84.4,
+   "calculationVersion": "v1.1",
+   "rank": 283
   },
   {
    "apartmentKey": "41570-694",
@@ -8719,7 +9732,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 254
+   "rank": 284
   },
   {
    "apartmentKey": "41480-1955",
@@ -8755,7 +9768,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 60.0,
    "calculationVersion": "v1.1",
-   "rank": 255
+   "rank": 285
   },
   {
    "apartmentKey": "41370-859",
@@ -8787,7 +9800,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 61.9,
    "calculationVersion": "v1.1",
-   "rank": 256
+   "rank": 286
   },
   {
    "apartmentKey": "41111-60",
@@ -8822,7 +9835,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 60.0,
    "calculationVersion": "v1.1",
-   "rank": 257
+   "rank": 287
   },
   {
    "apartmentKey": "41465-271",
@@ -8854,7 +9867,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 129.4,
    "calculationVersion": "v1.1",
-   "rank": 258
+   "rank": 288
   },
   {
    "apartmentKey": "41171-3120",
@@ -8888,7 +9901,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 59.8,
    "calculationVersion": "v1.1",
-   "rank": 259
+   "rank": 289
   },
   {
    "apartmentKey": "41117-287",
@@ -8920,41 +9933,43 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 84.8,
    "calculationVersion": "v1.1",
-   "rank": 260
+   "rank": 290
   },
   {
-   "apartmentKey": "41115-1904",
-   "aptSeq": "1904",
-   "apartmentName": "힐스테이트푸르지오수원",
+   "apartmentKey": "41210-64",
+   "aptSeq": "64",
+   "apartmentName": "도덕파크타운2단지",
    "sidoCode": "41",
-   "sggCode": "41115",
-   "areaGroup": 60.0,
-   "buildYear": 2023,
+   "sggCode": "41210",
+   "areaGroup": 50.0,
+   "buildYear": 2001,
    "referenceMonth": "202609",
-   "baselineMedian": 813000000,
-   "currentMedian": 870000000,
-   "riseAmount": 57000000,
-   "riseRate": 7.01,
-   "baselineTradeCount": 9,
-   "currentTradeCount": 7,
+   "baselineMedian": 795000000,
+   "currentMedian": 851000000.0,
+   "riseAmount": 56000000,
+   "riseRate": 7.04,
+   "baselineTradeCount": 15,
+   "currentTradeCount": 6,
    "confidence": "medium",
    "warnings": [
-    "직거래 포함 이력 존재"
+    "층수 차이(8층 이상 또는 구간 차이)",
+    "서로 다른 세부 전용면적 혼합"
    ],
-   "region": "41115 매교동",
+   "region": "41210 철산동",
    "exactAreas": [
-    59.95
+    49.97,
+    49.98
    ],
-   "baselineFloorMedian": 13,
-   "currentFloorMedian": 11.0,
+   "baselineFloorMedian": 17,
+   "currentFloorMedian": 10.0,
    "baselineDirectTradeCount": 0,
-   "currentDirectTradeCount": 1,
-   "floorMixWarning": false,
-   "directTradeWarning": true,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": true,
+   "directTradeWarning": false,
    "compositionWarning": true,
-   "exclusiveAreaGroup": 60.0,
+   "exclusiveAreaGroup": 50.0,
    "calculationVersion": "v1.1",
-   "rank": 261
+   "rank": 291
   },
   {
    "apartmentKey": "41465-278",
@@ -8988,7 +10003,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 262
+   "rank": 292
   },
   {
    "apartmentKey": "41465-29",
@@ -9022,7 +10037,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 59.5,
    "calculationVersion": "v1.1",
-   "rank": 263
+   "rank": 293
   },
   {
    "apartmentKey": "41115-1198",
@@ -9057,42 +10072,41 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 264
+   "rank": 294
   },
   {
-   "apartmentKey": "41210-64",
-   "aptSeq": "64",
-   "apartmentName": "도덕파크타운2단지",
+   "apartmentKey": "41135-477",
+   "aptSeq": "477",
+   "apartmentName": "산운마을13단지(태영)",
    "sidoCode": "41",
-   "sggCode": "41210",
-   "areaGroup": 50.0,
-   "buildYear": 2001,
+   "sggCode": "41135",
+   "areaGroup": 101.7,
+   "buildYear": 2010,
    "referenceMonth": "202609",
-   "baselineMedian": 795000000,
-   "currentMedian": 850000000,
-   "riseAmount": 55000000,
-   "riseRate": 6.92,
-   "baselineTradeCount": 15,
-   "currentTradeCount": 3,
+   "baselineMedian": 1800000000,
+   "currentMedian": 1925000000.0,
+   "riseAmount": 125000000,
+   "riseRate": 6.94,
+   "baselineTradeCount": 3,
+   "currentTradeCount": 2,
    "confidence": "low",
    "warnings": [
-    "서로 다른 세부 전용면적 혼합"
+    "층수 차이(8층 이상 또는 구간 차이)"
    ],
-   "region": "41210 철산동",
+   "region": "41135 운중동",
    "exactAreas": [
-    49.97,
-    49.98
+    101.67
    ],
-   "baselineFloorMedian": 17,
-   "currentFloorMedian": 19,
+   "baselineFloorMedian": 21,
+   "currentFloorMedian": 12.0,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
-   "floorMixWarning": false,
+   "floorMixWarning": true,
    "directTradeWarning": false,
    "compositionWarning": true,
-   "exclusiveAreaGroup": 50.0,
+   "exclusiveAreaGroup": 101.7,
    "calculationVersion": "v1.1",
-   "rank": 265
+   "rank": 295
   },
   {
    "apartmentKey": "41192-309",
@@ -9124,7 +10138,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 266
+   "rank": 296
   },
   {
    "apartmentKey": "41410-54",
@@ -9136,11 +10150,11 @@
    "buildYear": 1994,
    "referenceMonth": "202609",
    "baselineMedian": 538000000,
-   "currentMedian": 575000000.0,
+   "currentMedian": 575000000,
    "riseAmount": 37000000,
    "riseRate": 6.88,
    "baselineTradeCount": 15,
-   "currentTradeCount": 6,
+   "currentTradeCount": 7,
    "confidence": "medium",
    "warnings": [
     "직거래 포함 이력 존재"
@@ -9150,7 +10164,7 @@
     58.71
    ],
    "baselineFloorMedian": 12.5,
-   "currentFloorMedian": 9.5,
+   "currentFloorMedian": 10,
    "baselineDirectTradeCount": 1,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -9158,7 +10172,41 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 58.7,
    "calculationVersion": "v1.1",
-   "rank": 267
+   "rank": 297
+  },
+  {
+   "apartmentKey": "41117-65",
+   "aptSeq": "65",
+   "apartmentName": "황골마을주공1",
+   "sidoCode": "41",
+   "sggCode": "41117",
+   "areaGroup": 59.8,
+   "buildYear": 1997,
+   "referenceMonth": "202609",
+   "baselineMedian": 568500000.0,
+   "currentMedian": 607500000.0,
+   "riseAmount": 39000000,
+   "riseRate": 6.86,
+   "baselineTradeCount": 6,
+   "currentTradeCount": 2,
+   "confidence": "low",
+   "warnings": [
+    "층수 차이(8층 이상 또는 구간 차이)"
+   ],
+   "region": "41117 영통동",
+   "exactAreas": [
+    59.8
+   ],
+   "baselineFloorMedian": 3.5,
+   "currentFloorMedian": 11.0,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": true,
+   "directTradeWarning": false,
+   "compositionWarning": true,
+   "exclusiveAreaGroup": 59.8,
+   "calculationVersion": "v1.1",
+   "rank": 298
   },
   {
    "apartmentKey": "41133-32",
@@ -9192,7 +10240,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 56.6,
    "calculationVersion": "v1.1",
-   "rank": 268
+   "rank": 299
   },
   {
    "apartmentKey": "41465-24",
@@ -9224,7 +10272,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 49.3,
    "calculationVersion": "v1.1",
-   "rank": 269
+   "rank": 300
   },
   {
    "apartmentKey": "41360-3052",
@@ -9259,7 +10307,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 270
+   "rank": 301
   },
   {
    "apartmentKey": "41117-388",
@@ -9295,7 +10343,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 271
+   "rank": 302
   },
   {
    "apartmentKey": "41610-6161",
@@ -9331,7 +10379,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.8,
    "calculationVersion": "v1.1",
-   "rank": 272
+   "rank": 303
   },
   {
    "apartmentKey": "41111-33",
@@ -9365,7 +10413,41 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 49.6,
    "calculationVersion": "v1.1",
-   "rank": 273
+   "rank": 304
+  },
+  {
+   "apartmentKey": "41360-44",
+   "aptSeq": "44",
+   "apartmentName": "청학주공(5단지)",
+   "sidoCode": "41",
+   "sggCode": "41360",
+   "areaGroup": 118.6,
+   "buildYear": 2000,
+   "referenceMonth": "202609",
+   "baselineMedian": 440000000,
+   "currentMedian": 470000000,
+   "riseAmount": 30000000,
+   "riseRate": 6.82,
+   "baselineTradeCount": 3,
+   "currentTradeCount": 3,
+   "confidence": "low",
+   "warnings": [
+    "층수 차이(8층 이상 또는 구간 차이)"
+   ],
+   "region": "41360 별내면 청학리",
+   "exactAreas": [
+    118.61
+   ],
+   "baselineFloorMedian": 7,
+   "currentFloorMedian": 17,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": true,
+   "directTradeWarning": false,
+   "compositionWarning": true,
+   "exclusiveAreaGroup": 118.6,
+   "calculationVersion": "v1.1",
+   "rank": 305
   },
   {
    "apartmentKey": "41463-955",
@@ -9399,7 +10481,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 74.9,
    "calculationVersion": "v1.1",
-   "rank": 274
+   "rank": 306
   },
   {
    "apartmentKey": "41113-1611",
@@ -9434,7 +10516,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 60.0,
    "calculationVersion": "v1.1",
-   "rank": 275
+   "rank": 307
   },
   {
    "apartmentKey": "41135-249",
@@ -9466,7 +10548,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 35.3,
    "calculationVersion": "v1.1",
-   "rank": 276
+   "rank": 308
   },
   {
    "apartmentKey": "41310-1115",
@@ -9500,7 +10582,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 277
+   "rank": 309
   },
   {
    "apartmentKey": "41360-163",
@@ -9535,7 +10617,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 134.9,
    "calculationVersion": "v1.1",
-   "rank": 278
+   "rank": 310
   },
   {
    "apartmentKey": "41192-10713",
@@ -9570,7 +10652,73 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.6,
    "calculationVersion": "v1.1",
-   "rank": 279
+   "rank": 311
+  },
+  {
+   "apartmentKey": "41281-2530",
+   "aptSeq": "2530",
+   "apartmentName": "도래울센트럴더힐",
+   "sidoCode": "41",
+   "sggCode": "41281",
+   "areaGroup": 85.0,
+   "buildYear": 2015,
+   "referenceMonth": "202609",
+   "baselineMedian": 697500000.0,
+   "currentMedian": 744500000.0,
+   "riseAmount": 47000000,
+   "riseRate": 6.74,
+   "baselineTradeCount": 6,
+   "currentTradeCount": 2,
+   "confidence": "medium",
+   "warnings": [],
+   "region": "41281 도내동",
+   "exactAreas": [
+    84.99
+   ],
+   "baselineFloorMedian": 7.5,
+   "currentFloorMedian": 9.0,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": false,
+   "directTradeWarning": false,
+   "compositionWarning": false,
+   "exclusiveAreaGroup": 85.0,
+   "calculationVersion": "v1.1",
+   "rank": 312
+  },
+  {
+   "apartmentKey": "41115-1904",
+   "aptSeq": "1904",
+   "apartmentName": "힐스테이트푸르지오수원",
+   "sidoCode": "41",
+   "sggCode": "41115",
+   "areaGroup": 60.0,
+   "buildYear": 2023,
+   "referenceMonth": "202609",
+   "baselineMedian": 813000000,
+   "currentMedian": 867500000.0,
+   "riseAmount": 54500000,
+   "riseRate": 6.7,
+   "baselineTradeCount": 9,
+   "currentTradeCount": 8,
+   "confidence": "medium",
+   "warnings": [
+    "직거래 포함 이력 존재"
+   ],
+   "region": "41115 매교동",
+   "exactAreas": [
+    59.95
+   ],
+   "baselineFloorMedian": 13,
+   "currentFloorMedian": 11,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 1,
+   "floorMixWarning": false,
+   "directTradeWarning": true,
+   "compositionWarning": true,
+   "exclusiveAreaGroup": 60.0,
+   "calculationVersion": "v1.1",
+   "rank": 313
   },
   {
    "apartmentKey": "41133-9",
@@ -9602,7 +10750,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 84.6,
    "calculationVersion": "v1.1",
-   "rank": 280
+   "rank": 314
   },
   {
    "apartmentKey": "41192-289",
@@ -9636,7 +10784,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 82.9,
    "calculationVersion": "v1.1",
-   "rank": 281
+   "rank": 315
   },
   {
    "apartmentKey": "41597-41590-1538",
@@ -9671,7 +10819,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 60.0,
    "calculationVersion": "v1.1",
-   "rank": 282
+   "rank": 316
   },
   {
    "apartmentKey": "41610-2388",
@@ -9708,7 +10856,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 101.9,
    "calculationVersion": "v1.1",
-   "rank": 283
+   "rank": 317
   },
   {
    "apartmentKey": "41360-3051",
@@ -9742,7 +10890,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 284
+   "rank": 318
   },
   {
    "apartmentKey": "41595-41590-979",
@@ -9777,7 +10925,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 285
+   "rank": 319
   },
   {
    "apartmentKey": "41370-523",
@@ -9811,7 +10959,42 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 102.0,
    "calculationVersion": "v1.1",
-   "rank": 286
+   "rank": 320
+  },
+  {
+   "apartmentKey": "41360-4159",
+   "aptSeq": "4159",
+   "apartmentName": "덕소강변서희스타힐스",
+   "sidoCode": "41",
+   "sggCode": "41360",
+   "areaGroup": 59.8,
+   "buildYear": 2026,
+   "referenceMonth": "202609",
+   "baselineMedian": 655000000.0,
+   "currentMedian": 698000000,
+   "riseAmount": 43000000,
+   "riseRate": 6.56,
+   "baselineTradeCount": 10,
+   "currentTradeCount": 3,
+   "confidence": "low",
+   "warnings": [
+    "층수 차이(8층 이상 또는 구간 차이)",
+    "직거래 포함 이력 존재"
+   ],
+   "region": "41360 와부읍 도곡리",
+   "exactAreas": [
+    59.79
+   ],
+   "baselineFloorMedian": 14,
+   "currentFloorMedian": 18,
+   "baselineDirectTradeCount": 1,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": true,
+   "directTradeWarning": true,
+   "compositionWarning": true,
+   "exclusiveAreaGroup": 59.8,
+   "calculationVersion": "v1.1",
+   "rank": 321
   },
   {
    "apartmentKey": "41463-601",
@@ -9846,7 +11029,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 287
+   "rank": 322
   },
   {
    "apartmentKey": "41117-226",
@@ -9878,7 +11061,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 59.6,
    "calculationVersion": "v1.1",
-   "rank": 288
+   "rank": 323
   },
   {
    "apartmentKey": "41117-55",
@@ -9912,41 +11095,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 135.0,
    "calculationVersion": "v1.1",
-   "rank": 289
-  },
-  {
-   "apartmentKey": "41273-2",
-   "aptSeq": "2",
-   "apartmentName": "네오빌6단지",
-   "sidoCode": "41",
-   "sggCode": "41273",
-   "areaGroup": 84.5,
-   "buildYear": 2000,
-   "referenceMonth": "202609",
-   "baselineMedian": 523000000,
-   "currentMedian": 556500000.0,
-   "riseAmount": 33500000,
-   "riseRate": 6.41,
-   "baselineTradeCount": 7,
-   "currentTradeCount": 2,
-   "confidence": "low",
-   "warnings": [
-    "직거래 포함 이력 존재"
-   ],
-   "region": "41273 고잔동",
-   "exactAreas": [
-    84.5
-   ],
-   "baselineFloorMedian": 6.5,
-   "currentFloorMedian": 9,
-   "baselineDirectTradeCount": 1,
-   "currentDirectTradeCount": 1,
-   "floorMixWarning": false,
-   "directTradeWarning": true,
-   "compositionWarning": true,
-   "exclusiveAreaGroup": 84.5,
-   "calculationVersion": "v1.1",
-   "rank": 290
+   "rank": 324
   },
   {
    "apartmentKey": "41192-8444",
@@ -9962,7 +11111,7 @@
    "riseAmount": 46000000,
    "riseRate": 6.4,
    "baselineTradeCount": 18,
-   "currentTradeCount": 5,
+   "currentTradeCount": 7,
    "confidence": "medium",
    "warnings": [
     "층수 차이(8층 이상 또는 구간 차이)",
@@ -9982,7 +11131,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 291
+   "rank": 325
   },
   {
    "apartmentKey": "41595-41590-1786",
@@ -10020,39 +11169,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 292
-  },
-  {
-   "apartmentKey": "41281-2530",
-   "aptSeq": "2530",
-   "apartmentName": "도래울센트럴더힐",
-   "sidoCode": "41",
-   "sggCode": "41281",
-   "areaGroup": 85.0,
-   "buildYear": 2015,
-   "referenceMonth": "202609",
-   "baselineMedian": 700000000,
-   "currentMedian": 744500000.0,
-   "riseAmount": 44500000,
-   "riseRate": 6.36,
-   "baselineTradeCount": 7,
-   "currentTradeCount": 2,
-   "confidence": "medium",
-   "warnings": [],
-   "region": "41281 도내동",
-   "exactAreas": [
-    84.99
-   ],
-   "baselineFloorMedian": 6,
-   "currentFloorMedian": 9.0,
-   "baselineDirectTradeCount": 0,
-   "currentDirectTradeCount": 0,
-   "floorMixWarning": false,
-   "directTradeWarning": false,
-   "compositionWarning": false,
-   "exclusiveAreaGroup": 85.0,
-   "calculationVersion": "v1.1",
-   "rank": 293
+   "rank": 326
   },
   {
    "apartmentKey": "41597-41590-1815",
@@ -10086,7 +11203,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 59.5,
    "calculationVersion": "v1.1",
-   "rank": 294
+   "rank": 327
   },
   {
    "apartmentKey": "41117-30",
@@ -10118,7 +11235,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 60.0,
    "calculationVersion": "v1.1",
-   "rank": 295
+   "rank": 328
   },
   {
    "apartmentKey": "41115-1905",
@@ -10150,7 +11267,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 74.7,
    "calculationVersion": "v1.1",
-   "rank": 296
+   "rank": 329
   },
   {
    "apartmentKey": "41133-29",
@@ -10182,7 +11299,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 50.0,
    "calculationVersion": "v1.1",
-   "rank": 297
+   "rank": 330
   },
   {
    "apartmentKey": "41220-3485",
@@ -10214,7 +11331,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 298
+   "rank": 331
   },
   {
    "apartmentKey": "41281-3194",
@@ -10248,7 +11365,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 299
+   "rank": 332
   },
   {
    "apartmentKey": "41113-1915",
@@ -10284,7 +11401,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 60.0,
    "calculationVersion": "v1.1",
-   "rank": 300
+   "rank": 333
   },
   {
    "apartmentKey": "41117-415",
@@ -10321,7 +11438,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 301
+   "rank": 334
   },
   {
    "apartmentKey": "41465-34",
@@ -10356,7 +11473,39 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 60.0,
    "calculationVersion": "v1.1",
-   "rank": 302
+   "rank": 335
+  },
+  {
+   "apartmentKey": "41115-1904",
+   "aptSeq": "1904",
+   "apartmentName": "힐스테이트푸르지오수원",
+   "sidoCode": "41",
+   "sggCode": "41115",
+   "areaGroup": 59.9,
+   "buildYear": 2023,
+   "referenceMonth": "202609",
+   "baselineMedian": 810000000,
+   "currentMedian": 860000000.0,
+   "riseAmount": 50000000,
+   "riseRate": 6.17,
+   "baselineTradeCount": 19,
+   "currentTradeCount": 2,
+   "confidence": "medium",
+   "warnings": [],
+   "region": "41115 매교동",
+   "exactAreas": [
+    59.88
+   ],
+   "baselineFloorMedian": 6,
+   "currentFloorMedian": 9.5,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": false,
+   "directTradeWarning": false,
+   "compositionWarning": false,
+   "exclusiveAreaGroup": 59.9,
+   "calculationVersion": "v1.1",
+   "rank": 336
   },
   {
    "apartmentKey": "41410-46",
@@ -10390,7 +11539,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 101.8,
    "calculationVersion": "v1.1",
-   "rank": 303
+   "rank": 337
   },
   {
    "apartmentKey": "41595-41590-1568",
@@ -10422,7 +11571,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 75.4,
    "calculationVersion": "v1.1",
-   "rank": 304
+   "rank": 338
   },
   {
    "apartmentKey": "41450-304",
@@ -10454,7 +11603,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 51.7,
    "calculationVersion": "v1.1",
-   "rank": 305
+   "rank": 339
   },
   {
    "apartmentKey": "41111-72",
@@ -10489,7 +11638,42 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.8,
    "calculationVersion": "v1.1",
-   "rank": 306
+   "rank": 340
+  },
+  {
+   "apartmentKey": "41171-3384",
+   "aptSeq": "3384",
+   "apartmentName": "안양광신프로그레스리버뷰",
+   "sidoCode": "41",
+   "sggCode": "41171",
+   "areaGroup": 59.0,
+   "buildYear": 2021,
+   "referenceMonth": "202609",
+   "baselineMedian": 610000000,
+   "currentMedian": 646500000.0,
+   "riseAmount": 36500000,
+   "riseRate": 5.98,
+   "baselineTradeCount": 5,
+   "currentTradeCount": 2,
+   "confidence": "low",
+   "warnings": [
+    "서로 다른 세부 전용면적 혼합"
+   ],
+   "region": "41171 안양동",
+   "exactAreas": [
+    59.04,
+    59.02
+   ],
+   "baselineFloorMedian": 14,
+   "currentFloorMedian": 13.0,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": false,
+   "directTradeWarning": false,
+   "compositionWarning": true,
+   "exclusiveAreaGroup": 59.0,
+   "calculationVersion": "v1.1",
+   "rank": 341
   },
   {
    "apartmentKey": "41194-439",
@@ -10523,7 +11707,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 307
+   "rank": 342
   },
   {
    "apartmentKey": "41173-2108",
@@ -10557,7 +11741,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 39.9,
    "calculationVersion": "v1.1",
-   "rank": 308
+   "rank": 343
   },
   {
    "apartmentKey": "28237-4344",
@@ -10591,7 +11775,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 309
+   "rank": 344
   },
   {
    "apartmentKey": "41463-736",
@@ -10626,7 +11810,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 310
+   "rank": 345
   },
   {
    "apartmentKey": "41450-450",
@@ -10658,44 +11842,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 102.9,
    "calculationVersion": "v1.1",
-   "rank": 311
-  },
-  {
-   "apartmentKey": "41117-27",
-   "aptSeq": "27",
-   "apartmentName": "주공그린빌3",
-   "sidoCode": "41",
-   "sggCode": "41117",
-   "areaGroup": 84.5,
-   "buildYear": 2002,
-   "referenceMonth": "202609",
-   "baselineMedian": 538500000.0,
-   "currentMedian": 570000000.0,
-   "riseAmount": 31500000,
-   "riseRate": 5.85,
-   "baselineTradeCount": 8,
-   "currentTradeCount": 2,
-   "confidence": "low",
-   "warnings": [
-    "층수 차이(8층 이상 또는 구간 차이)",
-    "서로 다른 세부 전용면적 혼합",
-    "직거래 포함 이력 존재"
-   ],
-   "region": "41117 매탄동",
-   "exactAreas": [
-    84.45,
-    84.51
-   ],
-   "baselineFloorMedian": 9,
-   "currentFloorMedian": 5.0,
-   "baselineDirectTradeCount": 1,
-   "currentDirectTradeCount": 0,
-   "floorMixWarning": true,
-   "directTradeWarning": true,
-   "compositionWarning": true,
-   "exclusiveAreaGroup": 84.5,
-   "calculationVersion": "v1.1",
-   "rank": 312
+   "rank": 346
   },
   {
    "apartmentKey": "41430-40",
@@ -10729,7 +11876,73 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 55.5,
    "calculationVersion": "v1.1",
-   "rank": 313
+   "rank": 347
+  },
+  {
+   "apartmentKey": "41465-30",
+   "aptSeq": "30",
+   "apartmentName": "현대",
+   "sidoCode": "41",
+   "sggCode": "41465",
+   "areaGroup": 84.5,
+   "buildYear": 1994,
+   "referenceMonth": "202609",
+   "baselineMedian": 1200000000,
+   "currentMedian": 1270000000.0,
+   "riseAmount": 70000000,
+   "riseRate": 5.83,
+   "baselineTradeCount": 15,
+   "currentTradeCount": 2,
+   "confidence": "medium",
+   "warnings": [],
+   "region": "41465 풍덕천동",
+   "exactAreas": [
+    84.51
+   ],
+   "baselineFloorMedian": 6,
+   "currentFloorMedian": 11.5,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": false,
+   "directTradeWarning": false,
+   "compositionWarning": false,
+   "exclusiveAreaGroup": 84.5,
+   "calculationVersion": "v1.1",
+   "rank": 348
+  },
+  {
+   "apartmentKey": "41210-13",
+   "aptSeq": "13",
+   "apartmentName": "주공1",
+   "sidoCode": "41",
+   "sggCode": "41210",
+   "areaGroup": 41.3,
+   "buildYear": 1989,
+   "referenceMonth": "202609",
+   "baselineMedian": 567000000,
+   "currentMedian": 600000000,
+   "riseAmount": 33000000,
+   "riseRate": 5.82,
+   "baselineTradeCount": 15,
+   "currentTradeCount": 3,
+   "confidence": "low",
+   "warnings": [
+    "층수 차이(8층 이상 또는 구간 차이)"
+   ],
+   "region": "41210 하안동",
+   "exactAreas": [
+    41.3
+   ],
+   "baselineFloorMedian": 8,
+   "currentFloorMedian": 5,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": true,
+   "directTradeWarning": false,
+   "compositionWarning": true,
+   "exclusiveAreaGroup": 41.3,
+   "calculationVersion": "v1.1",
+   "rank": 349
   },
   {
    "apartmentKey": "41113-1552",
@@ -10761,7 +11974,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 314
+   "rank": 350
   },
   {
    "apartmentKey": "41171-2487",
@@ -10793,35 +12006,67 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 315
+   "rank": 351
   },
   {
-   "apartmentKey": "28275-28260-4679",
-   "aptSeq": "28260-4679",
-   "apartmentName": "청라호수공원한신더휴",
-   "sidoCode": "28",
-   "sggCode": "28275",
-   "areaGroup": 85.0,
-   "buildYear": 2020,
+   "apartmentKey": "41570-840",
+   "aptSeq": "840",
+   "apartmentName": "풍무푸르지오센트레빌",
+   "sidoCode": "41",
+   "sggCode": "41570",
+   "areaGroup": 72.2,
+   "buildYear": 2016,
    "referenceMonth": "202609",
-   "baselineMedian": 737500000,
-   "currentMedian": 780000000.0,
-   "riseAmount": 42500000,
-   "riseRate": 5.76,
-   "baselineTradeCount": 7,
+   "baselineMedian": 630000000,
+   "currentMedian": 666500000.0,
+   "riseAmount": 36500000,
+   "riseRate": 5.79,
+   "baselineTradeCount": 5,
    "currentTradeCount": 2,
    "confidence": "low",
    "warnings": [
-    "층수 차이(8층 이상 또는 구간 차이)",
-    "서로 다른 세부 전용면적 혼합"
+    "층수 차이(8층 이상 또는 구간 차이)"
    ],
-   "region": "28275 청라동",
+   "region": "41570 풍무동",
    "exactAreas": [
-    84.9613,
-    84.9878
+    72.1871
    ],
-   "baselineFloorMedian": 16,
-   "currentFloorMedian": 15.0,
+   "baselineFloorMedian": 18,
+   "currentFloorMedian": 28.0,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": true,
+   "directTradeWarning": false,
+   "compositionWarning": true,
+   "exclusiveAreaGroup": 72.2,
+   "calculationVersion": "v1.1",
+   "rank": 352
+  },
+  {
+   "apartmentKey": "41360-3987",
+   "aptSeq": "3987",
+   "apartmentName": "두산알프하임",
+   "sidoCode": "41",
+   "sggCode": "41360",
+   "areaGroup": 85.0,
+   "buildYear": 2021,
+   "referenceMonth": "202609",
+   "baselineMedian": 564000000,
+   "currentMedian": 596500000.0,
+   "riseAmount": 32500000,
+   "riseRate": 5.76,
+   "baselineTradeCount": 3,
+   "currentTradeCount": 4,
+   "confidence": "low",
+   "warnings": [
+    "층수 차이(8층 이상 또는 구간 차이)"
+   ],
+   "region": "41360 호평동",
+   "exactAreas": [
+    84.9558
+   ],
+   "baselineFloorMedian": 23,
+   "currentFloorMedian": 11.5,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -10829,7 +12074,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 316
+   "rank": 353
   },
   {
    "apartmentKey": "41360-4146",
@@ -10864,7 +12109,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.6,
    "calculationVersion": "v1.1",
-   "rank": 317
+   "rank": 354
   },
   {
    "apartmentKey": "41465-13",
@@ -10896,7 +12141,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 59.8,
    "calculationVersion": "v1.1",
-   "rank": 318
+   "rank": 355
   },
   {
    "apartmentKey": "41111-1610",
@@ -10932,7 +12177,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 319
+   "rank": 356
   },
   {
    "apartmentKey": "41430-1053",
@@ -10964,7 +12209,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 320
+   "rank": 357
   },
   {
    "apartmentKey": "41135-207",
@@ -10996,7 +12241,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 35.3,
    "calculationVersion": "v1.1",
-   "rank": 321
+   "rank": 358
   },
   {
    "apartmentKey": "41192-9838",
@@ -11032,39 +12277,42 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 322
+   "rank": 359
   },
   {
-   "apartmentKey": "41113-27",
-   "aptSeq": "27",
-   "apartmentName": "코오롱하늘채",
+   "apartmentKey": "41281-3207",
+   "aptSeq": "3207",
+   "apartmentName": "지축역한림풀에버",
    "sidoCode": "41",
-   "sggCode": "41113",
+   "sggCode": "41281",
    "areaGroup": 85.0,
-   "buildYear": 1999,
+   "buildYear": 2020,
    "referenceMonth": "202609",
-   "baselineMedian": 630000000,
-   "currentMedian": 665000000.0,
-   "riseAmount": 35000000,
-   "riseRate": 5.56,
-   "baselineTradeCount": 5,
-   "currentTradeCount": 2,
-   "confidence": "medium",
-   "warnings": [],
-   "region": "41113 구운동",
-   "exactAreas": [
-    84.99
+   "baselineMedian": 850000000,
+   "currentMedian": 897500000.0,
+   "riseAmount": 47500000,
+   "riseRate": 5.59,
+   "baselineTradeCount": 19,
+   "currentTradeCount": 4,
+   "confidence": "low",
+   "warnings": [
+    "서로 다른 세부 전용면적 혼합"
    ],
-   "baselineFloorMedian": 9,
+   "region": "41281 지축동",
+   "exactAreas": [
+    84.982,
+    84.968
+   ],
+   "baselineFloorMedian": 13,
    "currentFloorMedian": 10.5,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
    "directTradeWarning": false,
-   "compositionWarning": false,
+   "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 323
+   "rank": 360
   },
   {
    "apartmentKey": "41173-114",
@@ -11098,7 +12346,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 56.7,
    "calculationVersion": "v1.1",
-   "rank": 324
+   "rank": 361
   },
   {
    "apartmentKey": "41117-333",
@@ -11130,7 +12378,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 100.5,
    "calculationVersion": "v1.1",
-   "rank": 325
+   "rank": 362
   },
   {
    "apartmentKey": "41465-27",
@@ -11164,7 +12412,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 59.8,
    "calculationVersion": "v1.1",
-   "rank": 326
+   "rank": 363
   },
   {
    "apartmentKey": "41192-234",
@@ -11198,41 +12446,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 327
-  },
-  {
-   "apartmentKey": "41360-3987",
-   "aptSeq": "3987",
-   "apartmentName": "두산알프하임",
-   "sidoCode": "41",
-   "sggCode": "41360",
-   "areaGroup": 85.0,
-   "buildYear": 2021,
-   "referenceMonth": "202609",
-   "baselineMedian": 564000000,
-   "currentMedian": 595000000,
-   "riseAmount": 31000000,
-   "riseRate": 5.5,
-   "baselineTradeCount": 3,
-   "currentTradeCount": 3,
-   "confidence": "low",
-   "warnings": [
-    "층수 차이(8층 이상 또는 구간 차이)"
-   ],
-   "region": "41360 호평동",
-   "exactAreas": [
-    84.9558
-   ],
-   "baselineFloorMedian": 23,
-   "currentFloorMedian": 10,
-   "baselineDirectTradeCount": 0,
-   "currentDirectTradeCount": 0,
-   "floorMixWarning": true,
-   "directTradeWarning": false,
-   "compositionWarning": true,
-   "exclusiveAreaGroup": 85.0,
-   "calculationVersion": "v1.1",
-   "rank": 328
+   "rank": 364
   },
   {
    "apartmentKey": "41115-1826",
@@ -11268,7 +12482,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 75.0,
    "calculationVersion": "v1.1",
-   "rank": 329
+   "rank": 365
   },
   {
    "apartmentKey": "41113-1631",
@@ -11305,7 +12519,39 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 330
+   "rank": 366
+  },
+  {
+   "apartmentKey": "41171-146",
+   "aptSeq": "146",
+   "apartmentName": "주공뜨란채(아)",
+   "sidoCode": "41",
+   "sggCode": "41171",
+   "areaGroup": 84.8,
+   "buildYear": 2004,
+   "referenceMonth": "202609",
+   "baselineMedian": 920000000,
+   "currentMedian": 970000000.0,
+   "riseAmount": 50000000,
+   "riseRate": 5.43,
+   "baselineTradeCount": 7,
+   "currentTradeCount": 2,
+   "confidence": "medium",
+   "warnings": [],
+   "region": "41171 안양동",
+   "exactAreas": [
+    84.8
+   ],
+   "baselineFloorMedian": 9,
+   "currentFloorMedian": 9.0,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": false,
+   "directTradeWarning": false,
+   "compositionWarning": false,
+   "exclusiveAreaGroup": 84.8,
+   "calculationVersion": "v1.1",
+   "rank": 367
   },
   {
    "apartmentKey": "41360-3219",
@@ -11340,7 +12586,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.3,
    "calculationVersion": "v1.1",
-   "rank": 331
+   "rank": 368
   },
   {
    "apartmentKey": "41281-2489",
@@ -11372,7 +12618,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 332
+   "rank": 369
   },
   {
    "apartmentKey": "41465-112",
@@ -11404,7 +12650,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 59.9,
    "calculationVersion": "v1.1",
-   "rank": 333
+   "rank": 370
   },
   {
    "apartmentKey": "41117-59",
@@ -11439,7 +12685,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 134.6,
    "calculationVersion": "v1.1",
-   "rank": 334
+   "rank": 371
   },
   {
    "apartmentKey": "41597-41590-2053",
@@ -11473,7 +12719,43 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 56.4,
    "calculationVersion": "v1.1",
-   "rank": 335
+   "rank": 372
+  },
+  {
+   "apartmentKey": "41131-1711",
+   "aptSeq": "1711",
+   "apartmentName": "산성역자이푸르지오2단지",
+   "sidoCode": "41",
+   "sggCode": "41131",
+   "areaGroup": 60.0,
+   "buildYear": 2024,
+   "referenceMonth": "202609",
+   "baselineMedian": 1300000000,
+   "currentMedian": 1370000000.0,
+   "riseAmount": 70000000,
+   "riseRate": 5.38,
+   "baselineTradeCount": 9,
+   "currentTradeCount": 2,
+   "confidence": "low",
+   "warnings": [
+    "서로 다른 세부 전용면적 혼합"
+   ],
+   "region": "41131 신흥동",
+   "exactAreas": [
+    59.97,
+    59.98,
+    59.96
+   ],
+   "baselineFloorMedian": 8,
+   "currentFloorMedian": 14.5,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": false,
+   "directTradeWarning": false,
+   "compositionWarning": true,
+   "exclusiveAreaGroup": 60.0,
+   "calculationVersion": "v1.1",
+   "rank": 373
   },
   {
    "apartmentKey": "41194-10681",
@@ -11507,7 +12789,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 74.5,
    "calculationVersion": "v1.1",
-   "rank": 336
+   "rank": 374
   },
   {
    "apartmentKey": "41192-219",
@@ -11539,7 +12821,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 81.5,
    "calculationVersion": "v1.1",
-   "rank": 337
+   "rank": 375
   },
   {
    "apartmentKey": "41465-30",
@@ -11571,7 +12853,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 60.0,
    "calculationVersion": "v1.1",
-   "rank": 338
+   "rank": 376
   },
   {
    "apartmentKey": "41117-298",
@@ -11605,35 +12887,36 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 59.9,
    "calculationVersion": "v1.1",
-   "rank": 339
+   "rank": 377
   },
   {
-   "apartmentKey": "41281-3207",
-   "aptSeq": "3207",
-   "apartmentName": "지축역한림풀에버",
+   "apartmentKey": "41450-305",
+   "aptSeq": "305",
+   "apartmentName": "미사강변루나리움",
    "sidoCode": "41",
-   "sggCode": "41281",
+   "sggCode": "41450",
    "areaGroup": 85.0,
-   "buildYear": 2020,
+   "buildYear": 2015,
    "referenceMonth": "202609",
-   "baselineMedian": 850000000,
-   "currentMedian": 895000000,
-   "riseAmount": 45000000,
-   "riseRate": 5.29,
-   "baselineTradeCount": 19,
-   "currentTradeCount": 3,
+   "baselineMedian": 1270000000,
+   "currentMedian": 1337500000.0,
+   "riseAmount": 67500000,
+   "riseRate": 5.31,
+   "baselineTradeCount": 5,
+   "currentTradeCount": 2,
    "confidence": "low",
    "warnings": [
     "층수 차이(8층 이상 또는 구간 차이)",
     "서로 다른 세부 전용면적 혼합"
    ],
-   "region": "41281 지축동",
+   "region": "41450 망월동",
    "exactAreas": [
-    84.982,
-    84.968
+    84.96,
+    84.98,
+    84.99
    ],
-   "baselineFloorMedian": 13,
-   "currentFloorMedian": 5,
+   "baselineFloorMedian": 17,
+   "currentFloorMedian": 10.0,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -11641,7 +12924,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 340
+   "rank": 378
   },
   {
    "apartmentKey": "41463-952",
@@ -11675,7 +12958,39 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 341
+   "rank": 379
+  },
+  {
+   "apartmentKey": "41287-302",
+   "aptSeq": "302",
+   "apartmentName": "일산두산위브더제니스",
+   "sidoCode": "41",
+   "sggCode": "41287",
+   "areaGroup": 120.8,
+   "buildYear": 2013,
+   "referenceMonth": "202609",
+   "baselineMedian": 665000000,
+   "currentMedian": 700000000.0,
+   "riseAmount": 35000000,
+   "riseRate": 5.26,
+   "baselineTradeCount": 3,
+   "currentTradeCount": 4,
+   "confidence": "medium",
+   "warnings": [],
+   "region": "41287 탄현동",
+   "exactAreas": [
+    120.7818
+   ],
+   "baselineFloorMedian": 29,
+   "currentFloorMedian": 28.5,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": false,
+   "directTradeWarning": false,
+   "compositionWarning": false,
+   "exclusiveAreaGroup": 120.8,
+   "calculationVersion": "v1.1",
+   "rank": 380
   },
   {
    "apartmentKey": "41131-13",
@@ -11709,7 +13024,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 59.8,
    "calculationVersion": "v1.1",
-   "rank": 342
+   "rank": 381
   },
   {
    "apartmentKey": "41595-41590-2184",
@@ -11743,7 +13058,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 60.0,
    "calculationVersion": "v1.1",
-   "rank": 343
+   "rank": 382
   },
   {
    "apartmentKey": "41113-1905",
@@ -11755,11 +13070,11 @@
    "buildYear": 2015,
    "referenceMonth": "202609",
    "baselineMedian": 599000000.0,
-   "currentMedian": 630000000,
+   "currentMedian": 630000000.0,
    "riseAmount": 31000000,
    "riseRate": 5.18,
    "baselineTradeCount": 18,
-   "currentTradeCount": 9,
+   "currentTradeCount": 10,
    "confidence": "medium",
    "warnings": [
     "직거래 포함 이력 존재"
@@ -11769,7 +13084,7 @@
     84.98
    ],
    "baselineFloorMedian": 8,
-   "currentFloorMedian": 8,
+   "currentFloorMedian": 8.5,
    "baselineDirectTradeCount": 1,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -11777,7 +13092,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 344
+   "rank": 383
   },
   {
    "apartmentKey": "41410-51",
@@ -11789,11 +13104,11 @@
    "buildYear": 1994,
    "referenceMonth": "202609",
    "baselineMedian": 599000000,
-   "currentMedian": 630000000.0,
+   "currentMedian": 630000000,
    "riseAmount": 31000000,
    "riseRate": 5.18,
    "baselineTradeCount": 23,
-   "currentTradeCount": 8,
+   "currentTradeCount": 9,
    "confidence": "high",
    "warnings": [],
    "region": "41410 산본동",
@@ -11801,7 +13116,7 @@
     58.46
    ],
    "baselineFloorMedian": 8,
-   "currentFloorMedian": 9.0,
+   "currentFloorMedian": 10,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -11809,7 +13124,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 58.5,
    "calculationVersion": "v1.1",
-   "rank": 345
+   "rank": 384
   },
   {
    "apartmentKey": "41131-17",
@@ -11844,7 +13159,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 77.8,
    "calculationVersion": "v1.1",
-   "rank": 346
+   "rank": 385
   },
   {
    "apartmentKey": "41115-1904",
@@ -11876,7 +13191,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 347
+   "rank": 386
   },
   {
    "apartmentKey": "41463-54",
@@ -11908,7 +13223,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 84.4,
    "calculationVersion": "v1.1",
-   "rank": 348
+   "rank": 387
   },
   {
    "apartmentKey": "41597-41590-1815",
@@ -11940,7 +13255,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 84.3,
    "calculationVersion": "v1.1",
-   "rank": 349
+   "rank": 388
   },
   {
    "apartmentKey": "41410-1225",
@@ -11972,7 +13287,44 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 350
+   "rank": 389
+  },
+  {
+   "apartmentKey": "41281-2329",
+   "aptSeq": "2329",
+   "apartmentName": "삼송리슈빌센트럴파크",
+   "sidoCode": "41",
+   "sggCode": "41281",
+   "areaGroup": 85.0,
+   "buildYear": 2012,
+   "referenceMonth": "202609",
+   "baselineMedian": 734500000.0,
+   "currentMedian": 771500000.0,
+   "riseAmount": 37000000,
+   "riseRate": 5.04,
+   "baselineTradeCount": 18,
+   "currentTradeCount": 2,
+   "confidence": "low",
+   "warnings": [
+    "서로 다른 세부 전용면적 혼합"
+   ],
+   "region": "41281 원흥동",
+   "exactAreas": [
+    84.9984,
+    84.9904,
+    84.9993,
+    84.9908
+   ],
+   "baselineFloorMedian": 8.5,
+   "currentFloorMedian": 8.0,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": false,
+   "directTradeWarning": false,
+   "compositionWarning": true,
+   "exclusiveAreaGroup": 85.0,
+   "calculationVersion": "v1.1",
+   "rank": 390
   },
   {
    "apartmentKey": "41192-214",
@@ -12004,7 +13356,173 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 133.1,
    "calculationVersion": "v1.1",
-   "rank": 351
+   "rank": 391
+  },
+  {
+   "apartmentKey": "41210-3238",
+   "aptSeq": "3238",
+   "apartmentName": "금호어울림",
+   "sidoCode": "41",
+   "sggCode": "41210",
+   "areaGroup": 60.0,
+   "buildYear": 2006,
+   "referenceMonth": "202609",
+   "baselineMedian": 630000000,
+   "currentMedian": 661500000.0,
+   "riseAmount": 31500000,
+   "riseRate": 5.0,
+   "baselineTradeCount": 3,
+   "currentTradeCount": 2,
+   "confidence": "medium",
+   "warnings": [],
+   "region": "41210 소하동",
+   "exactAreas": [
+    59.97
+   ],
+   "baselineFloorMedian": 10,
+   "currentFloorMedian": 5.5,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": false,
+   "directTradeWarning": false,
+   "compositionWarning": false,
+   "exclusiveAreaGroup": 60.0,
+   "calculationVersion": "v1.1",
+   "rank": 392
+  },
+  {
+   "apartmentKey": "41465-8",
+   "aptSeq": "8",
+   "apartmentName": "보원",
+   "sidoCode": "41",
+   "sggCode": "41465",
+   "areaGroup": 59.7,
+   "buildYear": 1994,
+   "referenceMonth": "202609",
+   "baselineMedian": 805000000.0,
+   "currentMedian": 845000000.0,
+   "riseAmount": 40000000,
+   "riseRate": 4.97,
+   "baselineTradeCount": 18,
+   "currentTradeCount": 4,
+   "confidence": "medium",
+   "warnings": [],
+   "region": "41465 풍덕천동",
+   "exactAreas": [
+    59.721
+   ],
+   "baselineFloorMedian": 7.0,
+   "currentFloorMedian": 9.0,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": false,
+   "directTradeWarning": false,
+   "compositionWarning": false,
+   "exclusiveAreaGroup": 59.7,
+   "calculationVersion": "v1.1",
+   "rank": 393
+  },
+  {
+   "apartmentKey": "41117-291",
+   "aptSeq": "291",
+   "apartmentName": "광교더포레스트",
+   "sidoCode": "41",
+   "sggCode": "41117",
+   "areaGroup": 75.0,
+   "buildYear": 2013,
+   "referenceMonth": "202609",
+   "baselineMedian": 907500000.0,
+   "currentMedian": 952500000.0,
+   "riseAmount": 45000000,
+   "riseRate": 4.96,
+   "baselineTradeCount": 10,
+   "currentTradeCount": 4,
+   "confidence": "medium",
+   "warnings": [],
+   "region": "41117 하동",
+   "exactAreas": [
+    74.97
+   ],
+   "baselineFloorMedian": 18.5,
+   "currentFloorMedian": 16.0,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": false,
+   "directTradeWarning": false,
+   "compositionWarning": false,
+   "exclusiveAreaGroup": 75.0,
+   "calculationVersion": "v1.1",
+   "rank": 394
+  },
+  {
+   "apartmentKey": "41281-3207",
+   "aptSeq": "3207",
+   "apartmentName": "지축역한림풀에버",
+   "sidoCode": "41",
+   "sggCode": "41281",
+   "areaGroup": 72.9,
+   "buildYear": 2020,
+   "referenceMonth": "202609",
+   "baselineMedian": 799000000,
+   "currentMedian": 838500000.0,
+   "riseAmount": 39500000,
+   "riseRate": 4.94,
+   "baselineTradeCount": 11,
+   "currentTradeCount": 2,
+   "confidence": "low",
+   "warnings": [
+    "서로 다른 세부 전용면적 혼합"
+   ],
+   "region": "41281 지축동",
+   "exactAreas": [
+    72.937,
+    72.936
+   ],
+   "baselineFloorMedian": 16,
+   "currentFloorMedian": 19.5,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": false,
+   "directTradeWarning": false,
+   "compositionWarning": true,
+   "exclusiveAreaGroup": 72.9,
+   "calculationVersion": "v1.1",
+   "rank": 395
+  },
+  {
+   "apartmentKey": "41410-62",
+   "aptSeq": "62",
+   "apartmentName": "한양백두",
+   "sidoCode": "41",
+   "sggCode": "41410",
+   "areaGroup": 96.4,
+   "buildYear": 1994,
+   "referenceMonth": "202609",
+   "baselineMedian": 710000000.0,
+   "currentMedian": 745000000.0,
+   "riseAmount": 35000000,
+   "riseRate": 4.93,
+   "baselineTradeCount": 12,
+   "currentTradeCount": 6,
+   "confidence": "medium",
+   "warnings": [
+    "층수 차이(8층 이상 또는 구간 차이)",
+    "직거래 포함 이력 존재"
+   ],
+   "region": "41410 산본동",
+   "exactAreas": [
+    96.359
+   ],
+   "baselineFloorMedian": 18,
+   "currentFloorMedian": 9.5,
+   "baselineDirectTradeCount": 1,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": true,
+   "directTradeWarning": true,
+   "compositionWarning": true,
+   "exclusiveAreaGroup": 96.4,
+   "calculationVersion": "v1.1",
+   "rank": 396
   },
   {
    "apartmentKey": "41465-93",
@@ -12036,7 +13554,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 164.2,
    "calculationVersion": "v1.1",
-   "rank": 352
+   "rank": 397
   },
   {
    "apartmentKey": "28185-822",
@@ -12072,7 +13590,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 353
+   "rank": 398
   },
   {
    "apartmentKey": "41210-13",
@@ -12104,7 +13622,73 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 49.9,
    "calculationVersion": "v1.1",
-   "rank": 354
+   "rank": 399
+  },
+  {
+   "apartmentKey": "41465-19",
+   "aptSeq": "19",
+   "apartmentName": "현대성우8차",
+   "sidoCode": "41",
+   "sggCode": "41465",
+   "areaGroup": 60.0,
+   "buildYear": 1999,
+   "referenceMonth": "202609",
+   "baselineMedian": 1125000000.0,
+   "currentMedian": 1180000000,
+   "riseAmount": 55000000,
+   "riseRate": 4.89,
+   "baselineTradeCount": 20,
+   "currentTradeCount": 7,
+   "confidence": "medium",
+   "warnings": [
+    "직거래 포함 이력 존재"
+   ],
+   "region": "41465 풍덕천동",
+   "exactAreas": [
+    59.99
+   ],
+   "baselineFloorMedian": 9,
+   "currentFloorMedian": 10,
+   "baselineDirectTradeCount": 1,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": false,
+   "directTradeWarning": true,
+   "compositionWarning": true,
+   "exclusiveAreaGroup": 60.0,
+   "calculationVersion": "v1.1",
+   "rank": 400
+  },
+  {
+   "apartmentKey": "41465-185",
+   "aptSeq": "185",
+   "apartmentName": "우남퍼스트빌",
+   "sidoCode": "41",
+   "sggCode": "41465",
+   "areaGroup": 60.0,
+   "buildYear": 2004,
+   "referenceMonth": "202609",
+   "baselineMedian": 1010000000,
+   "currentMedian": 1058500000.0,
+   "riseAmount": 48500000,
+   "riseRate": 4.8,
+   "baselineTradeCount": 15,
+   "currentTradeCount": 4,
+   "confidence": "medium",
+   "warnings": [],
+   "region": "41465 신봉동",
+   "exactAreas": [
+    59.9524
+   ],
+   "baselineFloorMedian": 11,
+   "currentFloorMedian": 6.0,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": false,
+   "directTradeWarning": false,
+   "compositionWarning": false,
+   "exclusiveAreaGroup": 60.0,
+   "calculationVersion": "v1.1",
+   "rank": 401
   },
   {
    "apartmentKey": "41465-84",
@@ -12138,7 +13722,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 355
+   "rank": 402
   },
   {
    "apartmentKey": "41360-3984",
@@ -12170,7 +13754,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 111.0,
    "calculationVersion": "v1.1",
-   "rank": 356
+   "rank": 403
   },
   {
    "apartmentKey": "41465-24",
@@ -12205,7 +13789,45 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 59.4,
    "calculationVersion": "v1.1",
-   "rank": 357
+   "rank": 404
+  },
+  {
+   "apartmentKey": "41360-3901",
+   "aptSeq": "3901",
+   "apartmentName": "다산자연앤e편한세상3차",
+   "sidoCode": "41",
+   "sggCode": "41360",
+   "areaGroup": 60.0,
+   "buildYear": 2019,
+   "referenceMonth": "202609",
+   "baselineMedian": 850000000.0,
+   "currentMedian": 890000000.0,
+   "riseAmount": 40000000,
+   "riseRate": 4.71,
+   "baselineTradeCount": 30,
+   "currentTradeCount": 4,
+   "confidence": "low",
+   "warnings": [
+    "층수 차이(8층 이상 또는 구간 차이)",
+    "서로 다른 세부 전용면적 혼합",
+    "직거래 포함 이력 존재"
+   ],
+   "region": "41360 다산동",
+   "exactAreas": [
+    59.9617,
+    59.9806,
+    59.9925
+   ],
+   "baselineFloorMedian": 14,
+   "currentFloorMedian": 17,
+   "baselineDirectTradeCount": 1,
+   "currentDirectTradeCount": 1,
+   "floorMixWarning": true,
+   "directTradeWarning": true,
+   "compositionWarning": true,
+   "exclusiveAreaGroup": 60.0,
+   "calculationVersion": "v1.1",
+   "rank": 405
   },
   {
    "apartmentKey": "41465-161",
@@ -12237,7 +13859,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 358
+   "rank": 406
   },
   {
    "apartmentKey": "41113-1611",
@@ -12269,7 +13891,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 123.5,
    "calculationVersion": "v1.1",
-   "rank": 359
+   "rank": 407
   },
   {
    "apartmentKey": "41113-1611",
@@ -12304,73 +13926,41 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 360
+   "rank": 408
   },
   {
-   "apartmentKey": "41117-291",
-   "aptSeq": "291",
-   "apartmentName": "광교더포레스트",
-   "sidoCode": "41",
-   "sggCode": "41117",
-   "areaGroup": 75.0,
-   "buildYear": 2013,
+   "apartmentKey": "28185-782",
+   "aptSeq": "782",
+   "apartmentName": "베르디움더퍼스트",
+   "sidoCode": "28",
+   "sggCode": "28185",
+   "areaGroup": 74.6,
+   "buildYear": 2017,
    "referenceMonth": "202609",
-   "baselineMedian": 907500000.0,
-   "currentMedian": 950000000,
-   "riseAmount": 42500000,
-   "riseRate": 4.68,
-   "baselineTradeCount": 10,
-   "currentTradeCount": 3,
-   "confidence": "medium",
-   "warnings": [],
-   "region": "41117 하동",
-   "exactAreas": [
-    74.97
-   ],
-   "baselineFloorMedian": 18.5,
-   "currentFloorMedian": 22,
-   "baselineDirectTradeCount": 0,
-   "currentDirectTradeCount": 0,
-   "floorMixWarning": false,
-   "directTradeWarning": false,
-   "compositionWarning": false,
-   "exclusiveAreaGroup": 75.0,
-   "calculationVersion": "v1.1",
-   "rank": 361
-  },
-  {
-   "apartmentKey": "41465-185",
-   "aptSeq": "185",
-   "apartmentName": "우남퍼스트빌",
-   "sidoCode": "41",
-   "sggCode": "41465",
-   "areaGroup": 60.0,
-   "buildYear": 2004,
-   "referenceMonth": "202609",
-   "baselineMedian": 1010000000,
-   "currentMedian": 1057000000,
-   "riseAmount": 47000000,
+   "baselineMedian": 645000000.0,
+   "currentMedian": 675000000.0,
+   "riseAmount": 30000000,
    "riseRate": 4.65,
-   "baselineTradeCount": 15,
-   "currentTradeCount": 3,
+   "baselineTradeCount": 6,
+   "currentTradeCount": 2,
    "confidence": "low",
    "warnings": [
     "층수 차이(8층 이상 또는 구간 차이)"
    ],
-   "region": "41465 신봉동",
+   "region": "28185 송도동",
    "exactAreas": [
-    59.9524
+    74.5812
    ],
-   "baselineFloorMedian": 11,
-   "currentFloorMedian": 5,
+   "baselineFloorMedian": 9.5,
+   "currentFloorMedian": 15.5,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
    "directTradeWarning": false,
    "compositionWarning": true,
-   "exclusiveAreaGroup": 60.0,
+   "exclusiveAreaGroup": 74.6,
    "calculationVersion": "v1.1",
-   "rank": 362
+   "rank": 409
   },
   {
    "apartmentKey": "41465-277",
@@ -12404,7 +13994,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 134.3,
    "calculationVersion": "v1.1",
-   "rank": 363
+   "rank": 410
   },
   {
    "apartmentKey": "41463-580",
@@ -12436,7 +14026,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 115.0,
    "calculationVersion": "v1.1",
-   "rank": 364
+   "rank": 411
   },
   {
    "apartmentKey": "41117-323",
@@ -12472,7 +14062,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 59.9,
    "calculationVersion": "v1.1",
-   "rank": 365
+   "rank": 412
   },
   {
    "apartmentKey": "41410-42",
@@ -12506,44 +14096,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 134.8,
    "calculationVersion": "v1.1",
-   "rank": 366
-  },
-  {
-   "apartmentKey": "41450-361",
-   "aptSeq": "361",
-   "apartmentName": "미사레스티아",
-   "sidoCode": "41",
-   "sggCode": "41450",
-   "areaGroup": 85.0,
-   "buildYear": 2017,
-   "referenceMonth": "202609",
-   "baselineMedian": 1195000000.0,
-   "currentMedian": 1250000000,
-   "riseAmount": 55000000,
-   "riseRate": 4.6,
-   "baselineTradeCount": 14,
-   "currentTradeCount": 3,
-   "confidence": "low",
-   "warnings": [
-    "층수 차이(8층 이상 또는 구간 차이)",
-    "서로 다른 세부 전용면적 혼합"
-   ],
-   "region": "41450 망월동",
-   "exactAreas": [
-    84.9786,
-    84.9918,
-    84.9917
-   ],
-   "baselineFloorMedian": 15.0,
-   "currentFloorMedian": 17,
-   "baselineDirectTradeCount": 0,
-   "currentDirectTradeCount": 0,
-   "floorMixWarning": true,
-   "directTradeWarning": false,
-   "compositionWarning": true,
-   "exclusiveAreaGroup": 85.0,
-   "calculationVersion": "v1.1",
-   "rank": 367
+   "rank": 413
   },
   {
    "apartmentKey": "41113-2660",
@@ -12578,7 +14131,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 368
+   "rank": 414
   },
   {
    "apartmentKey": "41281-3408",
@@ -12615,74 +14168,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 369
-  },
-  {
-   "apartmentKey": "41173-2100",
-   "aptSeq": "2100",
-   "apartmentName": "평촌어바인퍼스트",
-   "sidoCode": "41",
-   "sggCode": "41173",
-   "areaGroup": 59.9,
-   "buildYear": 2021,
-   "referenceMonth": "202609",
-   "baselineMedian": 1043500000.0,
-   "currentMedian": 1090000000,
-   "riseAmount": 46500000,
-   "riseRate": 4.46,
-   "baselineTradeCount": 20,
-   "currentTradeCount": 3,
-   "confidence": "medium",
-   "warnings": [],
-   "region": "41173 호계동",
-   "exactAreas": [
-    59.87
-   ],
-   "baselineFloorMedian": 8.5,
-   "currentFloorMedian": 15,
-   "baselineDirectTradeCount": 0,
-   "currentDirectTradeCount": 0,
-   "floorMixWarning": false,
-   "directTradeWarning": false,
-   "compositionWarning": false,
-   "exclusiveAreaGroup": 59.9,
-   "calculationVersion": "v1.1",
-   "rank": 370
-  },
-  {
-   "apartmentKey": "41465-19",
-   "aptSeq": "19",
-   "apartmentName": "현대성우8차",
-   "sidoCode": "41",
-   "sggCode": "41465",
-   "areaGroup": 60.0,
-   "buildYear": 1999,
-   "referenceMonth": "202609",
-   "baselineMedian": 1125000000.0,
-   "currentMedian": 1175000000,
-   "riseAmount": 50000000,
-   "riseRate": 4.44,
-   "baselineTradeCount": 20,
-   "currentTradeCount": 5,
-   "confidence": "medium",
-   "warnings": [
-    "층수 차이(8층 이상 또는 구간 차이)",
-    "직거래 포함 이력 존재"
-   ],
-   "region": "41465 풍덕천동",
-   "exactAreas": [
-    59.99
-   ],
-   "baselineFloorMedian": 9,
-   "currentFloorMedian": 5,
-   "baselineDirectTradeCount": 1,
-   "currentDirectTradeCount": 0,
-   "floorMixWarning": true,
-   "directTradeWarning": true,
-   "compositionWarning": true,
-   "exclusiveAreaGroup": 60.0,
-   "calculationVersion": "v1.1",
-   "rank": 371
+   "rank": 415
   },
   {
    "apartmentKey": "41210-3252",
@@ -12714,7 +14200,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 84.6,
    "calculationVersion": "v1.1",
-   "rank": 372
+   "rank": 416
   },
   {
    "apartmentKey": "41390-2333",
@@ -12748,7 +14234,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.7,
    "calculationVersion": "v1.1",
-   "rank": 373
+   "rank": 417
   },
   {
    "apartmentKey": "41173-115",
@@ -12780,7 +14266,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 58.3,
    "calculationVersion": "v1.1",
-   "rank": 374
+   "rank": 418
   },
   {
    "apartmentKey": "41463-623",
@@ -12816,7 +14302,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 127.8,
    "calculationVersion": "v1.1",
-   "rank": 375
+   "rank": 419
   },
   {
    "apartmentKey": "41465-134",
@@ -12850,7 +14336,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 109.8,
    "calculationVersion": "v1.1",
-   "rank": 376
+   "rank": 420
   },
   {
    "apartmentKey": "41281-3149",
@@ -12884,7 +14370,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 71.0,
    "calculationVersion": "v1.1",
-   "rank": 377
+   "rank": 421
   },
   {
    "apartmentKey": "41150-4086",
@@ -12916,7 +14402,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 84.8,
    "calculationVersion": "v1.1",
-   "rank": 378
+   "rank": 422
   },
   {
    "apartmentKey": "28290-28260-4716",
@@ -12952,7 +14438,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 379
+   "rank": 423
   },
   {
    "apartmentKey": "41450-303",
@@ -12986,7 +14472,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 380
+   "rank": 424
   },
   {
    "apartmentKey": "41410-52",
@@ -13018,7 +14504,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 101.9,
    "calculationVersion": "v1.1",
-   "rank": 381
+   "rank": 425
   },
   {
    "apartmentKey": "41194-11920",
@@ -13050,7 +14536,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 84.7,
    "calculationVersion": "v1.1",
-   "rank": 382
+   "rank": 426
   },
   {
    "apartmentKey": "41465-11",
@@ -13082,7 +14568,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 59.8,
    "calculationVersion": "v1.1",
-   "rank": 383
+   "rank": 427
   },
   {
    "apartmentKey": "41410-1629",
@@ -13116,7 +14602,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 73.6,
    "calculationVersion": "v1.1",
-   "rank": 384
+   "rank": 428
   },
   {
    "apartmentKey": "41390-2655",
@@ -13151,7 +14637,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 385
+   "rank": 429
   },
   {
    "apartmentKey": "41410-52",
@@ -13183,39 +14669,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 127.0,
    "calculationVersion": "v1.1",
-   "rank": 386
-  },
-  {
-   "apartmentKey": "41131-1652",
-   "aptSeq": "1652",
-   "apartmentName": "산성역포레스티아",
-   "sidoCode": "41",
-   "sggCode": "41131",
-   "areaGroup": 59.8,
-   "buildYear": 2020,
-   "referenceMonth": "202609",
-   "baselineMedian": 1437500000.0,
-   "currentMedian": 1497500000.0,
-   "riseAmount": 60000000,
-   "riseRate": 4.17,
-   "baselineTradeCount": 12,
-   "currentTradeCount": 6,
-   "confidence": "high",
-   "warnings": [],
-   "region": "41131 신흥동",
-   "exactAreas": [
-    59.84
-   ],
-   "baselineFloorMedian": 15.0,
-   "currentFloorMedian": 11.5,
-   "baselineDirectTradeCount": 0,
-   "currentDirectTradeCount": 0,
-   "floorMixWarning": false,
-   "directTradeWarning": false,
-   "compositionWarning": false,
-   "exclusiveAreaGroup": 59.8,
-   "calculationVersion": "v1.1",
-   "rank": 387
+   "rank": 430
   },
   {
    "apartmentKey": "41450-200",
@@ -13249,7 +14703,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.8,
    "calculationVersion": "v1.1",
-   "rank": 388
+   "rank": 431
   },
   {
    "apartmentKey": "41115-20",
@@ -13281,7 +14735,71 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 60.0,
    "calculationVersion": "v1.1",
-   "rank": 389
+   "rank": 432
+  },
+  {
+   "apartmentKey": "41131-1652",
+   "aptSeq": "1652",
+   "apartmentName": "산성역포레스티아",
+   "sidoCode": "41",
+   "sggCode": "41131",
+   "areaGroup": 59.8,
+   "buildYear": 2020,
+   "referenceMonth": "202609",
+   "baselineMedian": 1437500000.0,
+   "currentMedian": 1495000000,
+   "riseAmount": 57500000,
+   "riseRate": 4.0,
+   "baselineTradeCount": 12,
+   "currentTradeCount": 7,
+   "confidence": "high",
+   "warnings": [],
+   "region": "41131 신흥동",
+   "exactAreas": [
+    59.84
+   ],
+   "baselineFloorMedian": 15.0,
+   "currentFloorMedian": 10,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": false,
+   "directTradeWarning": false,
+   "compositionWarning": false,
+   "exclusiveAreaGroup": 59.8,
+   "calculationVersion": "v1.1",
+   "rank": 433
+  },
+  {
+   "apartmentKey": "41173-2100",
+   "aptSeq": "2100",
+   "apartmentName": "평촌어바인퍼스트",
+   "sidoCode": "41",
+   "sggCode": "41173",
+   "areaGroup": 59.9,
+   "buildYear": 2021,
+   "referenceMonth": "202609",
+   "baselineMedian": 1043500000.0,
+   "currentMedian": 1085000000.0,
+   "riseAmount": 41500000,
+   "riseRate": 3.98,
+   "baselineTradeCount": 20,
+   "currentTradeCount": 4,
+   "confidence": "medium",
+   "warnings": [],
+   "region": "41173 호계동",
+   "exactAreas": [
+    59.87
+   ],
+   "baselineFloorMedian": 8.5,
+   "currentFloorMedian": 14.0,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": false,
+   "directTradeWarning": false,
+   "compositionWarning": false,
+   "exclusiveAreaGroup": 59.9,
+   "calculationVersion": "v1.1",
+   "rank": 434
   },
   {
    "apartmentKey": "41390-2655",
@@ -13293,11 +14811,11 @@
    "buildYear": 2020,
    "referenceMonth": "202609",
    "baselineMedian": 817500000.0,
-   "currentMedian": 850000000,
+   "currentMedian": 850000000.0,
    "riseAmount": 32500000,
    "riseRate": 3.98,
    "baselineTradeCount": 4,
-   "currentTradeCount": 3,
+   "currentTradeCount": 4,
    "confidence": "medium",
    "warnings": [],
    "region": "41390 대야동",
@@ -13305,7 +14823,7 @@
     106.9313
    ],
    "baselineFloorMedian": 18.0,
-   "currentFloorMedian": 17,
+   "currentFloorMedian": 20.0,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -13313,7 +14831,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 106.9,
    "calculationVersion": "v1.1",
-   "rank": 390
+   "rank": 435
   },
   {
    "apartmentKey": "41463-892",
@@ -13347,7 +14865,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 391
+   "rank": 436
   },
   {
    "apartmentKey": "28185-750",
@@ -13382,39 +14900,76 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.7,
    "calculationVersion": "v1.1",
-   "rank": 392
+   "rank": 437
   },
   {
-   "apartmentKey": "41192-314",
-   "aptSeq": "314",
-   "apartmentName": "라일락마을(대우유림)",
+   "apartmentKey": "41173-2150",
+   "aptSeq": "2150",
+   "apartmentName": "평촌센텀퍼스트",
    "sidoCode": "41",
-   "sggCode": "41192",
-   "areaGroup": 85.0,
-   "buildYear": 2002,
+   "sggCode": "41173",
+   "areaGroup": 60.0,
+   "buildYear": 2023,
    "referenceMonth": "202609",
-   "baselineMedian": 799000000,
-   "currentMedian": 830000000.0,
-   "riseAmount": 31000000,
-   "riseRate": 3.88,
-   "baselineTradeCount": 3,
+   "baselineMedian": 1198000000,
+   "currentMedian": 1244000000.0,
+   "riseAmount": 46000000,
+   "riseRate": 3.84,
+   "baselineTradeCount": 11,
    "currentTradeCount": 2,
-   "confidence": "medium",
-   "warnings": [],
-   "region": "41192 상동",
-   "exactAreas": [
-    84.9854
+   "confidence": "low",
+   "warnings": [
+    "층수 차이(8층 이상 또는 구간 차이)",
+    "직거래 포함 이력 존재"
    ],
-   "baselineFloorMedian": 13,
-   "currentFloorMedian": 12.0,
+   "region": "41173 호계동",
+   "exactAreas": [
+    59.997
+   ],
+   "baselineFloorMedian": 14.0,
+   "currentFloorMedian": 17.0,
+   "baselineDirectTradeCount": 1,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": true,
+   "directTradeWarning": true,
+   "compositionWarning": true,
+   "exclusiveAreaGroup": 60.0,
+   "calculationVersion": "v1.1",
+   "rank": 438
+  },
+  {
+   "apartmentKey": "41173-2114",
+   "aptSeq": "2114",
+   "apartmentName": "힐스테이트비산파크뷰",
+   "sidoCode": "41",
+   "sggCode": "41173",
+   "areaGroup": 76.8,
+   "buildYear": 2022,
+   "referenceMonth": "202609",
+   "baselineMedian": 855000000,
+   "currentMedian": 887500000.0,
+   "riseAmount": 32500000,
+   "riseRate": 3.8,
+   "baselineTradeCount": 5,
+   "currentTradeCount": 2,
+   "confidence": "low",
+   "warnings": [
+    "층수 차이(8층 이상 또는 구간 차이)"
+   ],
+   "region": "41173 비산동",
+   "exactAreas": [
+    76.7856
+   ],
+   "baselineFloorMedian": 9,
+   "currentFloorMedian": 18.0,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
-   "floorMixWarning": false,
+   "floorMixWarning": true,
    "directTradeWarning": false,
-   "compositionWarning": false,
-   "exclusiveAreaGroup": 85.0,
+   "compositionWarning": true,
+   "exclusiveAreaGroup": 76.8,
    "calculationVersion": "v1.1",
-   "rank": 393
+   "rank": 439
   },
   {
    "apartmentKey": "41135-67",
@@ -13446,7 +15001,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 35.3,
    "calculationVersion": "v1.1",
-   "rank": 394
+   "rank": 440
   },
   {
    "apartmentKey": "41410-1322",
@@ -13462,9 +15017,10 @@
    "riseAmount": 40000000,
    "riseRate": 3.57,
    "baselineTradeCount": 9,
-   "currentTradeCount": 2,
+   "currentTradeCount": 4,
    "confidence": "low",
    "warnings": [
+    "층수 차이(8층 이상 또는 구간 차이)",
     "서로 다른 세부 전용면적 혼합"
    ],
    "region": "41410 산본동",
@@ -13473,53 +15029,15 @@
     84.95
    ],
    "baselineFloorMedian": 17,
-   "currentFloorMedian": 22.0,
+   "currentFloorMedian": 12.0,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
-   "floorMixWarning": false,
+   "floorMixWarning": true,
    "directTradeWarning": false,
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 395
-  },
-  {
-   "apartmentKey": "41360-3901",
-   "aptSeq": "3901",
-   "apartmentName": "다산자연앤e편한세상3차",
-   "sidoCode": "41",
-   "sggCode": "41360",
-   "areaGroup": 60.0,
-   "buildYear": 2019,
-   "referenceMonth": "202609",
-   "baselineMedian": 850000000.0,
-   "currentMedian": 880000000,
-   "riseAmount": 30000000,
-   "riseRate": 3.53,
-   "baselineTradeCount": 30,
-   "currentTradeCount": 3,
-   "confidence": "low",
-   "warnings": [
-    "층수 차이(8층 이상 또는 구간 차이)",
-    "서로 다른 세부 전용면적 혼합",
-    "직거래 포함 이력 존재"
-   ],
-   "region": "41360 다산동",
-   "exactAreas": [
-    59.9617,
-    59.9806,
-    59.9925
-   ],
-   "baselineFloorMedian": 14,
-   "currentFloorMedian": 17.0,
-   "baselineDirectTradeCount": 1,
-   "currentDirectTradeCount": 1,
-   "floorMixWarning": true,
-   "directTradeWarning": true,
-   "compositionWarning": true,
-   "exclusiveAreaGroup": 60.0,
-   "calculationVersion": "v1.1",
-   "rank": 396
+   "rank": 441
   },
   {
    "apartmentKey": "41450-438",
@@ -13551,7 +15069,43 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 101.3,
    "calculationVersion": "v1.1",
-   "rank": 397
+   "rank": 442
+  },
+  {
+   "apartmentKey": "41450-361",
+   "aptSeq": "361",
+   "apartmentName": "미사레스티아",
+   "sidoCode": "41",
+   "sggCode": "41450",
+   "areaGroup": 85.0,
+   "buildYear": 2017,
+   "referenceMonth": "202609",
+   "baselineMedian": 1195000000.0,
+   "currentMedian": 1235000000.0,
+   "riseAmount": 40000000,
+   "riseRate": 3.35,
+   "baselineTradeCount": 14,
+   "currentTradeCount": 4,
+   "confidence": "low",
+   "warnings": [
+    "서로 다른 세부 전용면적 혼합"
+   ],
+   "region": "41450 망월동",
+   "exactAreas": [
+    84.9786,
+    84.9918,
+    84.9917
+   ],
+   "baselineFloorMedian": 15.0,
+   "currentFloorMedian": 15.0,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": false,
+   "directTradeWarning": false,
+   "compositionWarning": true,
+   "exclusiveAreaGroup": 85.0,
+   "calculationVersion": "v1.1",
+   "rank": 443
   },
   {
    "apartmentKey": "41173-2100",
@@ -13585,7 +15139,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.6,
    "calculationVersion": "v1.1",
-   "rank": 398
+   "rank": 444
   },
   {
    "apartmentKey": "41360-4146",
@@ -13617,7 +15171,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 399
+   "rank": 445
   },
   {
    "apartmentKey": "41465-282",
@@ -13629,11 +15183,11 @@
    "buildYear": 2010,
    "referenceMonth": "202609",
    "baselineMedian": 1100000000.0,
-   "currentMedian": 1135000000.0,
+   "currentMedian": 1135000000,
    "riseAmount": 35000000,
    "riseRate": 3.18,
    "baselineTradeCount": 4,
-   "currentTradeCount": 4,
+   "currentTradeCount": 5,
    "confidence": "medium",
    "warnings": [],
    "region": "41465 성복동",
@@ -13641,7 +15195,7 @@
     134.859
    ],
    "baselineFloorMedian": 11.5,
-   "currentFloorMedian": 9.5,
+   "currentFloorMedian": 9,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -13649,7 +15203,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 134.9,
    "calculationVersion": "v1.1",
-   "rank": 400
+   "rank": 446
   },
   {
    "apartmentKey": "41210-53",
@@ -13681,7 +15235,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 89.5,
    "calculationVersion": "v1.1",
-   "rank": 401
+   "rank": 447
   },
   {
    "apartmentKey": "41597-41590-1365",
@@ -13716,7 +15270,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 59.4,
    "calculationVersion": "v1.1",
-   "rank": 402
+   "rank": 448
   },
   {
    "apartmentKey": "41210-3290",
@@ -13751,7 +15305,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.3,
    "calculationVersion": "v1.1",
-   "rank": 403
+   "rank": 449
   },
   {
    "apartmentKey": "41360-3834",
@@ -13783,7 +15337,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 66.8,
    "calculationVersion": "v1.1",
-   "rank": 404
+   "rank": 450
   }
  ]
 }
