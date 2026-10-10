@@ -3,7 +3,7 @@
  "referenceMonth": "202609",
  "status": "provisional",
  "validationStatus": "valid",
- "generatedAt": "2026-10-04T06:41:24.873639+09:00",
+ "generatedAt": "2026-10-11T07:04:56.031820+09:00",
  "calculationVersion": "v1.1",
  "schemaVersion": "v1.0",
  "includedSidoCodes": [
@@ -149,12 +149,12 @@
   "52800"
  ],
  "failedSggCodes": [],
- "rawTradeCount": 4310,
- "validTradeCount": 4226,
- "cancelledTradeCount": 84,
- "directTradeCount": 468,
- "candidateGroupCount": 2881,
- "filteredOutGroupCount": 2862,
+ "rawTradeCount": 4614,
+ "validTradeCount": 4514,
+ "cancelledTradeCount": 100,
+ "directTradeCount": 511,
+ "candidateGroupCount": 3031,
+ "filteredOutGroupCount": 3009,
  "items": [
   {
    "apartmentKey": "52111-57",
@@ -301,6 +301,75 @@
    "rank": 4
   },
   {
+   "apartmentKey": "48170-501",
+   "aptSeq": "501",
+   "apartmentName": "진주혁신도시센텀리버파크",
+   "sidoCode": "48",
+   "sggCode": "48170",
+   "areaGroup": 85.0,
+   "buildYear": 2013,
+   "referenceMonth": "202609",
+   "baselineMedian": 507500000.0,
+   "currentMedian": 595000000,
+   "riseAmount": 87500000,
+   "riseRate": 17.24,
+   "baselineTradeCount": 2,
+   "currentTradeCount": 3,
+   "confidence": "medium",
+   "warnings": [],
+   "region": "48170 충무공동",
+   "exactAreas": [
+    84.95
+   ],
+   "baselineFloorMedian": 10.0,
+   "currentFloorMedian": 15,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": false,
+   "directTradeWarning": false,
+   "compositionWarning": false,
+   "exclusiveAreaGroup": 85.0,
+   "calculationVersion": "v1.1",
+   "rank": 5
+  },
+  {
+   "apartmentKey": "52130-403",
+   "aptSeq": "403",
+   "apartmentName": "제일오투그란데1단지",
+   "sidoCode": "52",
+   "sggCode": "52130",
+   "areaGroup": 84.9,
+   "buildYear": 2008,
+   "referenceMonth": "202609",
+   "baselineMedian": 202000000,
+   "currentMedian": 236000000.0,
+   "riseAmount": 34000000,
+   "riseRate": 16.83,
+   "baselineTradeCount": 5,
+   "currentTradeCount": 2,
+   "confidence": "low",
+   "warnings": [
+    "층수 차이(8층 이상 또는 구간 차이)",
+    "서로 다른 세부 전용면적 혼합"
+   ],
+   "region": "52130 수송동",
+   "exactAreas": [
+    84.9144,
+    84.9339,
+    84.8518
+   ],
+   "baselineFloorMedian": 6,
+   "currentFloorMedian": 14.5,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": true,
+   "directTradeWarning": false,
+   "compositionWarning": true,
+   "exclusiveAreaGroup": 84.9,
+   "calculationVersion": "v1.1",
+   "rank": 6
+  },
+  {
    "apartmentKey": "47113-934",
    "aptSeq": "934",
    "apartmentName": "장성 푸르지오",
@@ -332,7 +401,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 5
+   "rank": 7
   },
   {
    "apartmentKey": "50130-836",
@@ -364,7 +433,39 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 6
+   "rank": 8
+  },
+  {
+   "apartmentKey": "48123-44",
+   "aptSeq": "44",
+   "apartmentName": "대동",
+   "sidoCode": "48",
+   "sggCode": "48123",
+   "areaGroup": 59.8,
+   "buildYear": 1994,
+   "referenceMonth": "202609",
+   "baselineMedian": 323500000.0,
+   "currentMedian": 357000000.0,
+   "riseAmount": 33500000,
+   "riseRate": 10.36,
+   "baselineTradeCount": 12,
+   "currentTradeCount": 2,
+   "confidence": "medium",
+   "warnings": [],
+   "region": "48123 상남동",
+   "exactAreas": [
+    59.832
+   ],
+   "baselineFloorMedian": 8.5,
+   "currentFloorMedian": 12.0,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": false,
+   "directTradeWarning": false,
+   "compositionWarning": false,
+   "exclusiveAreaGroup": 59.8,
+   "calculationVersion": "v1.1",
+   "rank": 9
   },
   {
    "apartmentKey": "47130-1158",
@@ -398,7 +499,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.8,
    "calculationVersion": "v1.1",
-   "rank": 7
+   "rank": 10
   },
   {
    "apartmentKey": "48123-44",
@@ -432,7 +533,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 115.0,
    "calculationVersion": "v1.1",
-   "rank": 8
+   "rank": 11
   },
   {
    "apartmentKey": "48123-154",
@@ -466,7 +567,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 60.0,
    "calculationVersion": "v1.1",
-   "rank": 9
+   "rank": 12
   },
   {
    "apartmentKey": "52710-77",
@@ -500,7 +601,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 10
+   "rank": 13
   },
   {
    "apartmentKey": "48123-64",
@@ -532,7 +633,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 69.8,
    "calculationVersion": "v1.1",
-   "rank": 11
+   "rank": 14
   },
   {
    "apartmentKey": "47290-553",
@@ -568,7 +669,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 72.6,
    "calculationVersion": "v1.1",
-   "rank": 12
+   "rank": 15
   },
   {
    "apartmentKey": "48123-63",
@@ -603,7 +704,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.5,
    "calculationVersion": "v1.1",
-   "rank": 13
+   "rank": 16
   },
   {
    "apartmentKey": "48123-163",
@@ -635,7 +736,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 125.0,
    "calculationVersion": "v1.1",
-   "rank": 14
+   "rank": 17
   },
   {
    "apartmentKey": "48123-205",
@@ -667,7 +768,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 74.2,
    "calculationVersion": "v1.1",
-   "rank": 15
+   "rank": 18
   },
   {
    "apartmentKey": "48123-583",
@@ -699,7 +800,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 59.9,
    "calculationVersion": "v1.1",
-   "rank": 16
+   "rank": 19
   },
   {
    "apartmentKey": "48127-734",
@@ -731,7 +832,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 134.7,
    "calculationVersion": "v1.1",
-   "rank": 17
+   "rank": 20
   },
   {
    "apartmentKey": "48121-791",
@@ -763,7 +864,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 100.3,
    "calculationVersion": "v1.1",
-   "rank": 18
+   "rank": 21
   },
   {
    "apartmentKey": "48123-177",
@@ -798,7 +899,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.7,
    "calculationVersion": "v1.1",
-   "rank": 19
+   "rank": 22
   }
  ]
 }

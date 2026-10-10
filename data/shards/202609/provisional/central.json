@@ -3,7 +3,7 @@
  "referenceMonth": "202609",
  "status": "provisional",
  "validationStatus": "valid",
- "generatedAt": "2026-10-04T06:36:32.603845+09:00",
+ "generatedAt": "2026-10-11T07:00:36.788150+09:00",
  "calculationVersion": "v1.1",
  "schemaVersion": "v1.0",
  "includedSidoCodes": [
@@ -119,12 +119,12 @@
   "51830"
  ],
  "failedSggCodes": [],
- "rawTradeCount": 3838,
- "validTradeCount": 3766,
- "cancelledTradeCount": 72,
- "directTradeCount": 434,
- "candidateGroupCount": 2353,
- "filteredOutGroupCount": 2339,
+ "rawTradeCount": 4057,
+ "validTradeCount": 3977,
+ "cancelledTradeCount": 80,
+ "directTradeCount": 475,
+ "candidateGroupCount": 2450,
+ "filteredOutGroupCount": 2435,
  "items": [
   {
    "apartmentKey": "44133-642",
@@ -585,6 +585,40 @@
    "rank": 13
   },
   {
+   "apartmentKey": "44200-723",
+   "aptSeq": "723",
+   "apartmentName": "신영한들물빛도시지웰시티센트럴푸르지오3단지",
+   "sidoCode": "44",
+   "sggCode": "44200",
+   "areaGroup": 84.7,
+   "buildYear": 2022,
+   "referenceMonth": "202609",
+   "baselineMedian": 718000000.0,
+   "currentMedian": 750000000,
+   "riseAmount": 32000000,
+   "riseRate": 4.46,
+   "baselineTradeCount": 16,
+   "currentTradeCount": 3,
+   "confidence": "low",
+   "warnings": [
+    "층수 차이(8층 이상 또는 구간 차이)"
+   ],
+   "region": "44200 탕정면 매곡리",
+   "exactAreas": [
+    84.716
+   ],
+   "baselineFloorMedian": 18.5,
+   "currentFloorMedian": 11,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": true,
+   "directTradeWarning": false,
+   "compositionWarning": true,
+   "exclusiveAreaGroup": 84.7,
+   "calculationVersion": "v1.1",
+   "rank": 14
+  },
+  {
    "apartmentKey": "36110-356",
    "aptSeq": "356",
    "apartmentName": "호려울마을5단지(제일풍경채)",
@@ -616,7 +650,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 14
+   "rank": 15
   }
  ]
 }
