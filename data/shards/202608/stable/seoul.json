@@ -3,7 +3,7 @@
  "referenceMonth": "202608",
  "status": "stable",
  "validationStatus": "valid",
- "generatedAt": "2026-10-16T07:17:10.439090+09:00",
+ "generatedAt": "2026-10-17T07:06:16.568055+09:00",
  "calculationVersion": "v1.1",
  "schemaVersion": "v1.0",
  "includedSidoCodes": [
@@ -64,12 +64,12 @@
   "11740"
  ],
  "failedSggCodes": [],
- "rawTradeCount": 3587,
+ "rawTradeCount": 3589,
  "validTradeCount": 3483,
- "cancelledTradeCount": 104,
+ "cancelledTradeCount": 106,
  "directTradeCount": 155,
  "candidateGroupCount": 2545,
- "filteredOutGroupCount": 2314,
+ "filteredOutGroupCount": 2315,
  "items": [
   {
    "apartmentKey": "11350-43",
@@ -5718,11 +5718,11 @@
    "buildYear": 1988,
    "referenceMonth": "202608",
    "baselineMedian": 2950000000,
-   "currentMedian": 3100000000.0,
+   "currentMedian": 3100000000,
    "riseAmount": 150000000,
    "riseRate": 5.08,
    "baselineTradeCount": 15,
-   "currentTradeCount": 4,
+   "currentTradeCount": 3,
    "confidence": "low",
    "warnings": [
     "층수 차이(8층 이상 또는 구간 차이)"
@@ -5732,7 +5732,7 @@
     136.325
    ],
    "baselineFloorMedian": 5,
-   "currentFloorMedian": 10.5,
+   "currentFloorMedian": 11,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -7554,46 +7554,6 @@
    "rank": 225
   },
   {
-   "apartmentKey": "11230-3346",
-   "aptSeq": "3346",
-   "apartmentName": "청량리역롯데캐슬 SKY-L65",
-   "sidoCode": "11",
-   "sggCode": "11230",
-   "areaGroup": 85.0,
-   "buildYear": 2023,
-   "referenceMonth": "202608",
-   "baselineMedian": 1934500000.0,
-   "currentMedian": 1995000000.0,
-   "riseAmount": 60500000,
-   "riseRate": 3.13,
-   "baselineTradeCount": 12,
-   "currentTradeCount": 2,
-   "confidence": "low",
-   "warnings": [
-    "층수 차이(8층 이상 또는 구간 차이)",
-    "서로 다른 세부 전용면적 혼합",
-    "직거래 포함 이력 존재"
-   ],
-   "region": "11230 전농동",
-   "exactAreas": [
-    84.983,
-    84.975,
-    84.993,
-    84.971,
-    84.981
-   ],
-   "baselineFloorMedian": 18.5,
-   "currentFloorMedian": 33,
-   "baselineDirectTradeCount": 4,
-   "currentDirectTradeCount": 1,
-   "floorMixWarning": true,
-   "directTradeWarning": true,
-   "compositionWarning": true,
-   "exclusiveAreaGroup": 85.0,
-   "calculationVersion": "v1.1",
-   "rank": 226
-  },
-  {
    "apartmentKey": "11710-137",
    "aptSeq": "137",
    "apartmentName": "거여5단지",
@@ -7623,7 +7583,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 59.7,
    "calculationVersion": "v1.1",
-   "rank": 227
+   "rank": 226
   },
   {
    "apartmentKey": "11260-4104",
@@ -7658,7 +7618,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 228
+   "rank": 227
   },
   {
    "apartmentKey": "11290-5086",
@@ -7690,7 +7650,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 59.8,
    "calculationVersion": "v1.1",
-   "rank": 229
+   "rank": 228
   },
   {
    "apartmentKey": "11350-2313",
@@ -7727,7 +7687,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 75.0,
    "calculationVersion": "v1.1",
-   "rank": 230
+   "rank": 229
   },
   {
    "apartmentKey": "11230-2578",
@@ -7759,7 +7719,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 60.0,
    "calculationVersion": "v1.1",
-   "rank": 231
+   "rank": 230
   }
  ]
 }
