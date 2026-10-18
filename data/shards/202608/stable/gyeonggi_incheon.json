@@ -3,7 +3,7 @@
  "referenceMonth": "202608",
  "status": "stable",
  "validationStatus": "valid",
- "generatedAt": "2026-10-17T07:11:35.151072+09:00",
+ "generatedAt": "2026-10-19T06:39:13.341262+09:00",
  "calculationVersion": "v1.1",
  "schemaVersion": "v1.0",
  "includedSidoCodes": [
@@ -147,12 +147,12 @@
   "41830"
  ],
  "failedSggCodes": [],
- "rawTradeCount": 13149,
- "validTradeCount": 12771,
- "cancelledTradeCount": 378,
+ "rawTradeCount": 13144,
+ "validTradeCount": 12760,
+ "cancelledTradeCount": 384,
  "directTradeCount": 430,
- "candidateGroupCount": 7326,
- "filteredOutGroupCount": 6774,
+ "candidateGroupCount": 7318,
+ "filteredOutGroupCount": 6766,
  "items": [
   {
    "apartmentKey": "41173-15",
@@ -4805,43 +4805,6 @@
    "rank": 137
   },
   {
-   "apartmentKey": "41220-3512",
-   "aptSeq": "3512",
-   "apartmentName": "지제역더샵센트럴시티",
-   "sidoCode": "41",
-   "sggCode": "41220",
-   "areaGroup": 84.9,
-   "buildYear": 2022,
-   "referenceMonth": "202608",
-   "baselineMedian": 800000000,
-   "currentMedian": 890000000.0,
-   "riseAmount": 90000000,
-   "riseRate": 11.25,
-   "baselineTradeCount": 55,
-   "currentTradeCount": 4,
-   "confidence": "low",
-   "warnings": [
-    "층수 차이(8층 이상 또는 구간 차이)",
-    "서로 다른 세부 전용면적 혼합"
-   ],
-   "region": "41220 지제동",
-   "exactAreas": [
-    84.9247,
-    84.9264,
-    84.9206
-   ],
-   "baselineFloorMedian": 14,
-   "currentFloorMedian": 19.5,
-   "baselineDirectTradeCount": 0,
-   "currentDirectTradeCount": 0,
-   "floorMixWarning": true,
-   "directTradeWarning": false,
-   "compositionWarning": true,
-   "exclusiveAreaGroup": 84.9,
-   "calculationVersion": "v1.1",
-   "rank": 138
-  },
-  {
    "apartmentKey": "41173-24",
    "aptSeq": "24",
    "apartmentName": "은하수신성",
@@ -4873,7 +4836,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.6,
    "calculationVersion": "v1.1",
-   "rank": 139
+   "rank": 138
   },
   {
    "apartmentKey": "41360-154",
@@ -4908,7 +4871,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 80.2,
    "calculationVersion": "v1.1",
-   "rank": 140
+   "rank": 139
   },
   {
    "apartmentKey": "41173-159",
@@ -4942,7 +4905,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 141
+   "rank": 140
   },
   {
    "apartmentKey": "41595-41590-1335",
@@ -4974,7 +4937,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 101.9,
    "calculationVersion": "v1.1",
-   "rank": 142
+   "rank": 141
   },
   {
    "apartmentKey": "41410-28",
@@ -5006,7 +4969,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 41.9,
    "calculationVersion": "v1.1",
-   "rank": 143
+   "rank": 142
   },
   {
    "apartmentKey": "41117-370",
@@ -5041,7 +5004,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 144
+   "rank": 143
   },
   {
    "apartmentKey": "41360-3760",
@@ -5077,7 +5040,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 145
+   "rank": 144
   },
   {
    "apartmentKey": "41465-104",
@@ -5109,7 +5072,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 84.8,
    "calculationVersion": "v1.1",
-   "rank": 146
+   "rank": 145
   },
   {
    "apartmentKey": "41210-3304",
@@ -5145,7 +5108,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 147
+   "rank": 146
   },
   {
    "apartmentKey": "28245-2690",
@@ -5182,7 +5145,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 148
+   "rank": 147
   },
   {
    "apartmentKey": "28290-28260-197",
@@ -5214,7 +5177,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 149
+   "rank": 148
   },
   {
    "apartmentKey": "41287-111",
@@ -5248,7 +5211,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 69.3,
    "calculationVersion": "v1.1",
-   "rank": 150
+   "rank": 149
   },
   {
    "apartmentKey": "41117-78",
@@ -5280,7 +5243,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 151
+   "rank": 150
   },
   {
    "apartmentKey": "41595-41590-2250",
@@ -5312,7 +5275,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 56.0,
    "calculationVersion": "v1.1",
-   "rank": 152
+   "rank": 151
   },
   {
    "apartmentKey": "41595-41590-1568",
@@ -5346,7 +5309,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.8,
    "calculationVersion": "v1.1",
-   "rank": 153
+   "rank": 152
   },
   {
    "apartmentKey": "41360-2524",
@@ -5380,7 +5343,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 154
+   "rank": 153
   },
   {
    "apartmentKey": "28275-28260-4679",
@@ -5416,7 +5379,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 155
+   "rank": 154
   },
   {
    "apartmentKey": "41117-30",
@@ -5450,7 +5413,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 59.8,
    "calculationVersion": "v1.1",
-   "rank": 156
+   "rank": 155
   },
   {
    "apartmentKey": "41450-11",
@@ -5484,7 +5447,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 60.0,
    "calculationVersion": "v1.1",
-   "rank": 157
+   "rank": 156
   },
   {
    "apartmentKey": "41117-388",
@@ -5520,7 +5483,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 158
+   "rank": 157
   },
   {
    "apartmentKey": "41595-41590-979",
@@ -5552,7 +5515,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 159
+   "rank": 158
   },
   {
    "apartmentKey": "41465-280",
@@ -5584,7 +5547,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 160
+   "rank": 159
   },
   {
    "apartmentKey": "41115-20",
@@ -5618,7 +5581,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 50.0,
    "calculationVersion": "v1.1",
-   "rank": 161
+   "rank": 160
   },
   {
    "apartmentKey": "41430-1118",
@@ -5650,7 +5613,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 162
+   "rank": 161
   },
   {
    "apartmentKey": "41171-87",
@@ -5683,6 +5646,43 @@
    "directTradeWarning": false,
    "compositionWarning": true,
    "exclusiveAreaGroup": 60.0,
+   "calculationVersion": "v1.1",
+   "rank": 162
+  },
+  {
+   "apartmentKey": "41220-3512",
+   "aptSeq": "3512",
+   "apartmentName": "지제역더샵센트럴시티",
+   "sidoCode": "41",
+   "sggCode": "41220",
+   "areaGroup": 84.9,
+   "buildYear": 2022,
+   "referenceMonth": "202608",
+   "baselineMedian": 805000000.0,
+   "currentMedian": 890000000.0,
+   "riseAmount": 85000000,
+   "riseRate": 10.56,
+   "baselineTradeCount": 54,
+   "currentTradeCount": 4,
+   "confidence": "low",
+   "warnings": [
+    "층수 차이(8층 이상 또는 구간 차이)",
+    "서로 다른 세부 전용면적 혼합"
+   ],
+   "region": "41220 지제동",
+   "exactAreas": [
+    84.9247,
+    84.9264,
+    84.9206
+   ],
+   "baselineFloorMedian": 13.5,
+   "currentFloorMedian": 19.5,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": true,
+   "directTradeWarning": false,
+   "compositionWarning": true,
+   "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
    "rank": 163
   },
