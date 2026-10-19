@@ -3,7 +3,7 @@
  "referenceMonth": "202608",
  "status": "stable",
  "validationStatus": "valid",
- "generatedAt": "2026-10-19T06:32:21.386894+09:00",
+ "generatedAt": "2026-10-20T07:55:39.502373+09:00",
  "calculationVersion": "v1.1",
  "schemaVersion": "v1.0",
  "includedSidoCodes": [
@@ -64,12 +64,12 @@
   "11740"
  ],
  "failedSggCodes": [],
- "rawTradeCount": 3587,
- "validTradeCount": 3481,
- "cancelledTradeCount": 106,
+ "rawTradeCount": 3595,
+ "validTradeCount": 3488,
+ "cancelledTradeCount": 107,
  "directTradeCount": 155,
- "candidateGroupCount": 2543,
- "filteredOutGroupCount": 2313,
+ "candidateGroupCount": 2550,
+ "filteredOutGroupCount": 2318,
  "items": [
   {
    "apartmentKey": "11350-43",
@@ -7253,6 +7253,38 @@
    "rank": 216
   },
   {
+   "apartmentKey": "11230-5",
+   "aptSeq": "5",
+   "apartmentName": "한신아파트",
+   "sidoCode": "11",
+   "sggCode": "11230",
+   "areaGroup": 59.8,
+   "buildYear": 2004,
+   "referenceMonth": "202608",
+   "baselineMedian": 1040000000,
+   "currentMedian": 1076000000.0,
+   "riseAmount": 36000000,
+   "riseRate": 3.46,
+   "baselineTradeCount": 9,
+   "currentTradeCount": 2,
+   "confidence": "medium",
+   "warnings": [],
+   "region": "11230 제기동",
+   "exactAreas": [
+    59.84
+   ],
+   "baselineFloorMedian": 15,
+   "currentFloorMedian": 11.0,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": false,
+   "directTradeWarning": false,
+   "compositionWarning": false,
+   "exclusiveAreaGroup": 59.8,
+   "calculationVersion": "v1.1",
+   "rank": 217
+  },
+  {
    "apartmentKey": "11545-2262",
    "aptSeq": "2262",
    "apartmentName": "금천롯데캐슬골드파크1차",
@@ -7286,7 +7318,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.4,
    "calculationVersion": "v1.1",
-   "rank": 217
+   "rank": 218
   },
   {
    "apartmentKey": "11350-139",
@@ -7320,7 +7352,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 51.5,
    "calculationVersion": "v1.1",
-   "rank": 218
+   "rank": 219
   },
   {
    "apartmentKey": "11560-1955",
@@ -7357,7 +7389,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.7,
    "calculationVersion": "v1.1",
-   "rank": 219
+   "rank": 220
   },
   {
    "apartmentKey": "11230-129",
@@ -7389,7 +7421,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 81.0,
    "calculationVersion": "v1.1",
-   "rank": 220
+   "rank": 221
   },
   {
    "apartmentKey": "11500-263",
@@ -7421,7 +7453,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 221
+   "rank": 222
   },
   {
    "apartmentKey": "11590-49",
@@ -7453,7 +7485,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 59.9,
    "calculationVersion": "v1.1",
-   "rank": 222
+   "rank": 223
   },
   {
    "apartmentKey": "11710-9347",
@@ -7487,7 +7519,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 60.0,
    "calculationVersion": "v1.1",
-   "rank": 223
+   "rank": 224
   },
   {
    "apartmentKey": "11620-4",
@@ -7519,7 +7551,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 114.8,
    "calculationVersion": "v1.1",
-   "rank": 224
+   "rank": 225
   },
   {
    "apartmentKey": "11470-120",
@@ -7551,7 +7583,47 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 51.5,
    "calculationVersion": "v1.1",
-   "rank": 225
+   "rank": 226
+  },
+  {
+   "apartmentKey": "11230-3346",
+   "aptSeq": "3346",
+   "apartmentName": "청량리역롯데캐슬 SKY-L65",
+   "sidoCode": "11",
+   "sggCode": "11230",
+   "areaGroup": 85.0,
+   "buildYear": 2023,
+   "referenceMonth": "202608",
+   "baselineMedian": 1934500000.0,
+   "currentMedian": 1995000000.0,
+   "riseAmount": 60500000,
+   "riseRate": 3.13,
+   "baselineTradeCount": 12,
+   "currentTradeCount": 2,
+   "confidence": "low",
+   "warnings": [
+    "층수 차이(8층 이상 또는 구간 차이)",
+    "서로 다른 세부 전용면적 혼합",
+    "직거래 포함 이력 존재"
+   ],
+   "region": "11230 전농동",
+   "exactAreas": [
+    84.983,
+    84.975,
+    84.993,
+    84.971,
+    84.981
+   ],
+   "baselineFloorMedian": 18.5,
+   "currentFloorMedian": 33,
+   "baselineDirectTradeCount": 4,
+   "currentDirectTradeCount": 1,
+   "floorMixWarning": true,
+   "directTradeWarning": true,
+   "compositionWarning": true,
+   "exclusiveAreaGroup": 85.0,
+   "calculationVersion": "v1.1",
+   "rank": 227
   },
   {
    "apartmentKey": "11710-137",
@@ -7583,7 +7655,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 59.7,
    "calculationVersion": "v1.1",
-   "rank": 226
+   "rank": 228
   },
   {
    "apartmentKey": "11260-4104",
@@ -7618,7 +7690,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 227
+   "rank": 229
   },
   {
    "apartmentKey": "11290-5086",
@@ -7650,7 +7722,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 59.8,
    "calculationVersion": "v1.1",
-   "rank": 228
+   "rank": 230
   },
   {
    "apartmentKey": "11350-2313",
@@ -7687,7 +7759,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 75.0,
    "calculationVersion": "v1.1",
-   "rank": 229
+   "rank": 231
   },
   {
    "apartmentKey": "11230-2578",
@@ -7719,7 +7791,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 60.0,
    "calculationVersion": "v1.1",
-   "rank": 230
+   "rank": 232
   }
  ]
 }
