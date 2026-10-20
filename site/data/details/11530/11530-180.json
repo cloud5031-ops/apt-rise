@@ -7,8 +7,8 @@
  "sggCode": "11530",
  "dongName": "고척동",
  "referenceMonths": [
-  "202607",
-  "202608"
+  "202608",
+  "202609"
  ],
  "availableAreas": [
   59.998,
@@ -16,6 +16,24 @@
   102.375
  ],
  "transactions": [
+  {
+   "contractDate": "2026-09-23",
+   "priceWon": 1150000000,
+   "floor": 9,
+   "exclusiveArea": 84.994,
+   "areaGroup": 85,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
+  {
+   "contractDate": "2026-09-12",
+   "priceWon": 1130000000,
+   "floor": 10,
+   "exclusiveArea": 84.994,
+   "areaGroup": 85,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
   {
    "contractDate": "2026-08-08",
    "priceWon": 965000000,
@@ -528,29 +546,11 @@
    "areaGroup": 60,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
-  },
-  {
-   "contractDate": "2023-09-15",
-   "priceWon": 725000000,
-   "floor": 15,
-   "exclusiveArea": 59.998,
-   "areaGroup": 60,
-   "dealType": "중개거래",
-   "cancellationStatus": "CANCELLED"
-  },
-  {
-   "contractDate": "2023-09-08",
-   "priceWon": 808000000,
-   "floor": 6,
-   "exclusiveArea": 84.994,
-   "areaGroup": 85,
-   "dealType": "중개거래",
-   "cancellationStatus": "COMPLETED"
   }
  ],
  "historyCoverage": {
-  "startMonth": "202309",
-  "endMonth": "202608",
+  "startMonth": "202310",
+  "endMonth": "202609",
   "months": 36,
   "complete": true
  },

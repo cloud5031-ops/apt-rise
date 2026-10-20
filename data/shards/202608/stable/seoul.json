@@ -3,7 +3,7 @@
  "referenceMonth": "202608",
  "status": "stable",
  "validationStatus": "valid",
- "generatedAt": "2026-10-20T07:55:39.502373+09:00",
+ "generatedAt": "2026-10-21T07:18:39.068876+09:00",
  "calculationVersion": "v1.1",
  "schemaVersion": "v1.0",
  "includedSidoCodes": [
@@ -64,8 +64,8 @@
   "11740"
  ],
  "failedSggCodes": [],
- "rawTradeCount": 3595,
- "validTradeCount": 3488,
+ "rawTradeCount": 3596,
+ "validTradeCount": 3489,
  "cancelledTradeCount": 107,
  "directTradeCount": 155,
  "candidateGroupCount": 2550,
@@ -4486,6 +4486,38 @@
    "rank": 133
   },
   {
+   "apartmentKey": "11500-53",
+   "aptSeq": "53",
+   "apartmentName": "주공10",
+   "sidoCode": "11",
+   "sggCode": "11500",
+   "areaGroup": 58.1,
+   "buildYear": 1995,
+   "referenceMonth": "202608",
+   "baselineMedian": 1050000000,
+   "currentMedian": 1120000000,
+   "riseAmount": 70000000,
+   "riseRate": 6.67,
+   "baselineTradeCount": 7,
+   "currentTradeCount": 3,
+   "confidence": "medium",
+   "warnings": [],
+   "region": "11500 등촌동",
+   "exactAreas": [
+    58.14
+   ],
+   "baselineFloorMedian": 9,
+   "currentFloorMedian": 6,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": false,
+   "directTradeWarning": false,
+   "compositionWarning": false,
+   "exclusiveAreaGroup": 58.1,
+   "calculationVersion": "v1.1",
+   "rank": 134
+  },
+  {
    "apartmentKey": "11350-43",
    "aptSeq": "43",
    "apartmentName": "상계주공9(고층)",
@@ -4515,7 +4547,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 79.1,
    "calculationVersion": "v1.1",
-   "rank": 134
+   "rank": 135
   },
   {
    "apartmentKey": "11740-5273",
@@ -4550,7 +4582,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 135
+   "rank": 136
   },
   {
    "apartmentKey": "11290-82",
@@ -4582,7 +4614,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 84.1,
    "calculationVersion": "v1.1",
-   "rank": 136
+   "rank": 137
   },
   {
    "apartmentKey": "11500-57",
@@ -4614,7 +4646,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 41.9,
    "calculationVersion": "v1.1",
-   "rank": 137
+   "rank": 138
   },
   {
    "apartmentKey": "11350-183",
@@ -4646,7 +4678,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 59.9,
    "calculationVersion": "v1.1",
-   "rank": 138
+   "rank": 139
   },
   {
    "apartmentKey": "11530-27",
@@ -4680,7 +4712,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 59.8,
    "calculationVersion": "v1.1",
-   "rank": 139
+   "rank": 140
   },
   {
    "apartmentKey": "11380-11",
@@ -4714,38 +4746,6 @@
    "directTradeWarning": true,
    "compositionWarning": true,
    "exclusiveAreaGroup": 66.7,
-   "calculationVersion": "v1.1",
-   "rank": 140
-  },
-  {
-   "apartmentKey": "11500-53",
-   "aptSeq": "53",
-   "apartmentName": "주공10",
-   "sidoCode": "11",
-   "sggCode": "11500",
-   "areaGroup": 58.1,
-   "buildYear": 1995,
-   "referenceMonth": "202608",
-   "baselineMedian": 1053500000.0,
-   "currentMedian": 1120000000,
-   "riseAmount": 66500000,
-   "riseRate": 6.31,
-   "baselineTradeCount": 8,
-   "currentTradeCount": 3,
-   "confidence": "medium",
-   "warnings": [],
-   "region": "11500 등촌동",
-   "exactAreas": [
-    58.14
-   ],
-   "baselineFloorMedian": 9.0,
-   "currentFloorMedian": 6,
-   "baselineDirectTradeCount": 0,
-   "currentDirectTradeCount": 0,
-   "floorMixWarning": false,
-   "directTradeWarning": false,
-   "compositionWarning": false,
-   "exclusiveAreaGroup": 58.1,
    "calculationVersion": "v1.1",
    "rank": 141
   },
