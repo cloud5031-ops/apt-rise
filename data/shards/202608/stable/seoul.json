@@ -3,7 +3,7 @@
  "referenceMonth": "202608",
  "status": "stable",
  "validationStatus": "valid",
- "generatedAt": "2026-10-22T07:20:33.196641+09:00",
+ "generatedAt": "2026-10-23T07:20:33.019594+09:00",
  "calculationVersion": "v1.1",
  "schemaVersion": "v1.0",
  "includedSidoCodes": [
@@ -64,12 +64,12 @@
   "11740"
  ],
  "failedSggCodes": [],
- "rawTradeCount": 3611,
+ "rawTradeCount": 3613,
  "validTradeCount": 3503,
- "cancelledTradeCount": 108,
+ "cancelledTradeCount": 110,
  "directTradeCount": 170,
- "candidateGroupCount": 2554,
- "filteredOutGroupCount": 2322,
+ "candidateGroupCount": 2553,
+ "filteredOutGroupCount": 2321,
  "items": [
   {
    "apartmentKey": "11350-43",
@@ -353,19 +353,22 @@
    "riseRate": 17.65,
    "baselineTradeCount": 9,
    "currentTradeCount": 2,
-   "confidence": "medium",
-   "warnings": [],
+   "confidence": "low",
+   "warnings": [
+    "층수 차이(8층 이상 또는 구간 차이)",
+    "직거래 포함 이력 존재"
+   ],
    "region": "11500 방화동",
    "exactAreas": [
     51.03
    ],
-   "baselineFloorMedian": 5,
+   "baselineFloorMedian": 5.5,
    "currentFloorMedian": 2.5,
-   "baselineDirectTradeCount": 0,
+   "baselineDirectTradeCount": 1,
    "currentDirectTradeCount": 0,
-   "floorMixWarning": false,
-   "directTradeWarning": false,
-   "compositionWarning": false,
+   "floorMixWarning": true,
+   "directTradeWarning": true,
+   "compositionWarning": true,
    "exclusiveAreaGroup": 51.0,
    "calculationVersion": "v1.1",
    "rank": 9

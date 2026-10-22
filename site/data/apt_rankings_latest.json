@@ -1,7 +1,7 @@
 {
  "referenceMonth": "202608",
  "status": "stable",
- "collectedAt": "2026-10-22T07:25:51.157395+09:00",
+ "collectedAt": "2026-10-23T07:28:44.470530+09:00",
  "itemCount": 870,
  "items": [
   {
@@ -1149,6 +1149,40 @@
    "rank": 33
   },
   {
+   "apartmentKey": "41173-15",
+   "aptSeq": "15",
+   "apartmentName": "샛별마을한양4-1",
+   "sidoCode": "41",
+   "sggCode": "41173",
+   "areaGroup": 42.6,
+   "buildYear": 1993,
+   "referenceMonth": "202608",
+   "baselineMedian": 500000000,
+   "currentMedian": 600000000,
+   "riseAmount": 100000000,
+   "riseRate": 20.0,
+   "baselineTradeCount": 13,
+   "currentTradeCount": 7,
+   "confidence": "medium",
+   "warnings": [
+    "20% 이상 급변동"
+   ],
+   "region": "41173 비산동",
+   "exactAreas": [
+    42.615
+   ],
+   "baselineFloorMedian": 7,
+   "currentFloorMedian": 10,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": false,
+   "directTradeWarning": false,
+   "compositionWarning": true,
+   "exclusiveAreaGroup": 42.6,
+   "calculationVersion": "v1.1",
+   "rank": 34
+  },
+  {
    "apartmentKey": "11320-100",
    "aptSeq": "100",
    "apartmentName": "주공17단지",
@@ -1178,7 +1212,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 36.2,
    "calculationVersion": "v1.1",
-   "rank": 34
+   "rank": 35
   },
   {
    "apartmentKey": "26320-46",
@@ -1213,38 +1247,6 @@
    "directTradeWarning": false,
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
-   "calculationVersion": "v1.1",
-   "rank": 35
-  },
-  {
-   "apartmentKey": "41173-15",
-   "aptSeq": "15",
-   "apartmentName": "샛별마을한양4-1",
-   "sidoCode": "41",
-   "sggCode": "41173",
-   "areaGroup": 42.6,
-   "buildYear": 1993,
-   "referenceMonth": "202608",
-   "baselineMedian": 502500000.0,
-   "currentMedian": 600000000,
-   "riseAmount": 97500000,
-   "riseRate": 19.4,
-   "baselineTradeCount": 14,
-   "currentTradeCount": 7,
-   "confidence": "high",
-   "warnings": [],
-   "region": "41173 비산동",
-   "exactAreas": [
-    42.615
-   ],
-   "baselineFloorMedian": 8.5,
-   "currentFloorMedian": 10,
-   "baselineDirectTradeCount": 0,
-   "currentDirectTradeCount": 0,
-   "floorMixWarning": false,
-   "directTradeWarning": false,
-   "compositionWarning": false,
-   "exclusiveAreaGroup": 42.6,
    "calculationVersion": "v1.1",
    "rank": 36
   },
@@ -1970,19 +1972,22 @@
    "riseRate": 17.65,
    "baselineTradeCount": 9,
    "currentTradeCount": 2,
-   "confidence": "medium",
-   "warnings": [],
+   "confidence": "low",
+   "warnings": [
+    "층수 차이(8층 이상 또는 구간 차이)",
+    "직거래 포함 이력 존재"
+   ],
    "region": "11500 방화동",
    "exactAreas": [
     51.03
    ],
-   "baselineFloorMedian": 5,
+   "baselineFloorMedian": 5.5,
    "currentFloorMedian": 2.5,
-   "baselineDirectTradeCount": 0,
+   "baselineDirectTradeCount": 1,
    "currentDirectTradeCount": 0,
-   "floorMixWarning": false,
-   "directTradeWarning": false,
-   "compositionWarning": false,
+   "floorMixWarning": true,
+   "directTradeWarning": true,
+   "compositionWarning": true,
    "exclusiveAreaGroup": 51.0,
    "calculationVersion": "v1.1",
    "rank": 58
