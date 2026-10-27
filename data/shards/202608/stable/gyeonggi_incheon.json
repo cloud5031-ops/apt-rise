@@ -3,7 +3,7 @@
  "referenceMonth": "202608",
  "status": "stable",
  "validationStatus": "valid",
- "generatedAt": "2026-10-27T08:13:08.623413+09:00",
+ "generatedAt": "2026-10-28T08:05:16.404723+09:00",
  "calculationVersion": "v1.1",
  "schemaVersion": "v1.0",
  "includedSidoCodes": [
@@ -147,12 +147,12 @@
   "41830"
  ],
  "failedSggCodes": [],
- "rawTradeCount": 13163,
- "validTradeCount": 12745,
- "cancelledTradeCount": 418,
+ "rawTradeCount": 13167,
+ "validTradeCount": 12746,
+ "cancelledTradeCount": 421,
  "directTradeCount": 430,
- "candidateGroupCount": 7319,
- "filteredOutGroupCount": 6765,
+ "candidateGroupCount": 7320,
+ "filteredOutGroupCount": 6766,
  "items": [
   {
    "apartmentKey": "41173-15",
@@ -11206,6 +11206,41 @@
    "rank": 327
   },
   {
+   "apartmentKey": "41131-1652",
+   "aptSeq": "1652",
+   "apartmentName": "산성역포레스티아",
+   "sidoCode": "41",
+   "sggCode": "41131",
+   "areaGroup": 75.0,
+   "buildYear": 2020,
+   "referenceMonth": "202608",
+   "baselineMedian": 1490000000,
+   "currentMedian": 1600000000,
+   "riseAmount": 110000000,
+   "riseRate": 7.38,
+   "baselineTradeCount": 31,
+   "currentTradeCount": 5,
+   "confidence": "medium",
+   "warnings": [
+    "서로 다른 세부 전용면적 혼합"
+   ],
+   "region": "41131 신흥동",
+   "exactAreas": [
+    74.96,
+    74.98
+   ],
+   "baselineFloorMedian": 10,
+   "currentFloorMedian": 8,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": false,
+   "directTradeWarning": false,
+   "compositionWarning": true,
+   "exclusiveAreaGroup": 75.0,
+   "calculationVersion": "v1.1",
+   "rank": 328
+  },
+  {
    "apartmentKey": "41150-2590",
    "aptSeq": "2590",
    "apartmentName": "e편한세상신곡포레스타뷰",
@@ -11235,7 +11270,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 84.4,
    "calculationVersion": "v1.1",
-   "rank": 328
+   "rank": 329
   },
   {
    "apartmentKey": "41115-1904",
@@ -11267,7 +11302,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 59.9,
    "calculationVersion": "v1.1",
-   "rank": 329
+   "rank": 330
   },
   {
    "apartmentKey": "41463-54",
@@ -11299,7 +11334,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 84.4,
    "calculationVersion": "v1.1",
-   "rank": 330
+   "rank": 331
   },
   {
    "apartmentKey": "41430-813",
@@ -11331,7 +11366,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 331
+   "rank": 332
   },
   {
    "apartmentKey": "41192-245",
@@ -11366,7 +11401,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 49.7,
    "calculationVersion": "v1.1",
-   "rank": 332
+   "rank": 333
   },
   {
    "apartmentKey": "41360-2997",
@@ -11400,7 +11435,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 104.0,
    "calculationVersion": "v1.1",
-   "rank": 333
+   "rank": 334
   },
   {
    "apartmentKey": "28275-28260-4210",
@@ -11434,7 +11469,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 106.9,
    "calculationVersion": "v1.1",
-   "rank": 334
+   "rank": 335
   },
   {
    "apartmentKey": "41595-41590-61",
@@ -11468,7 +11503,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 102.0,
    "calculationVersion": "v1.1",
-   "rank": 335
+   "rank": 336
   },
   {
    "apartmentKey": "41360-4149",
@@ -11500,7 +11535,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 336
+   "rank": 337
   },
   {
    "apartmentKey": "41113-2569",
@@ -11533,41 +11568,6 @@
    "directTradeWarning": false,
    "compositionWarning": true,
    "exclusiveAreaGroup": 59.9,
-   "calculationVersion": "v1.1",
-   "rank": 337
-  },
-  {
-   "apartmentKey": "41131-1652",
-   "aptSeq": "1652",
-   "apartmentName": "산성역포레스티아",
-   "sidoCode": "41",
-   "sggCode": "41131",
-   "areaGroup": 75.0,
-   "buildYear": 2020,
-   "referenceMonth": "202608",
-   "baselineMedian": 1492500000.0,
-   "currentMedian": 1600000000,
-   "riseAmount": 107500000,
-   "riseRate": 7.2,
-   "baselineTradeCount": 32,
-   "currentTradeCount": 5,
-   "confidence": "medium",
-   "warnings": [
-    "서로 다른 세부 전용면적 혼합"
-   ],
-   "region": "41131 신흥동",
-   "exactAreas": [
-    74.96,
-    74.98
-   ],
-   "baselineFloorMedian": 10.5,
-   "currentFloorMedian": 8,
-   "baselineDirectTradeCount": 0,
-   "currentDirectTradeCount": 0,
-   "floorMixWarning": false,
-   "directTradeWarning": false,
-   "compositionWarning": true,
-   "exclusiveAreaGroup": 75.0,
    "calculationVersion": "v1.1",
    "rank": 338
   },

@@ -3,7 +3,7 @@
  "referenceMonth": "202608",
  "status": "stable",
  "validationStatus": "valid",
- "generatedAt": "2026-10-27T08:08:22.205024+09:00",
+ "generatedAt": "2026-10-28T07:58:38.178636+09:00",
  "calculationVersion": "v1.1",
  "schemaVersion": "v1.0",
  "includedSidoCodes": [
@@ -64,12 +64,12 @@
   "11740"
  ],
  "failedSggCodes": [],
- "rawTradeCount": 3615,
- "validTradeCount": 3504,
- "cancelledTradeCount": 111,
+ "rawTradeCount": 3617,
+ "validTradeCount": 3505,
+ "cancelledTradeCount": 112,
  "directTradeCount": 170,
- "candidateGroupCount": 2554,
- "filteredOutGroupCount": 2322,
+ "candidateGroupCount": 2556,
+ "filteredOutGroupCount": 2324,
  "items": [
   {
    "apartmentKey": "11350-43",
@@ -937,6 +937,41 @@
    "rank": 26
   },
   {
+   "apartmentKey": "11290-48",
+   "aptSeq": "48",
+   "apartmentName": "정릉우성아파트 101~105동",
+   "sidoCode": "11",
+   "sggCode": "11290",
+   "areaGroup": 85.0,
+   "buildYear": 2000,
+   "referenceMonth": "202608",
+   "baselineMedian": 735000000,
+   "currentMedian": 825000000.0,
+   "riseAmount": 90000000,
+   "riseRate": 12.24,
+   "baselineTradeCount": 7,
+   "currentTradeCount": 2,
+   "confidence": "low",
+   "warnings": [
+    "서로 다른 세부 전용면적 혼합"
+   ],
+   "region": "11290 정릉동",
+   "exactAreas": [
+    84.96,
+    84.99
+   ],
+   "baselineFloorMedian": 7,
+   "currentFloorMedian": 7.0,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": false,
+   "directTradeWarning": false,
+   "compositionWarning": true,
+   "exclusiveAreaGroup": 85.0,
+   "calculationVersion": "v1.1",
+   "rank": 27
+  },
+  {
    "apartmentKey": "11260-35",
    "aptSeq": "35",
    "apartmentName": "동부아파트",
@@ -969,7 +1004,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 54.0,
    "calculationVersion": "v1.1",
-   "rank": 27
+   "rank": 28
   },
   {
    "apartmentKey": "11620-183",
@@ -1003,7 +1038,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.8,
    "calculationVersion": "v1.1",
-   "rank": 28
+   "rank": 29
   },
   {
    "apartmentKey": "11305-46",
@@ -1035,7 +1070,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 84.7,
    "calculationVersion": "v1.1",
-   "rank": 29
+   "rank": 30
   },
   {
    "apartmentKey": "11350-149",
@@ -1067,7 +1102,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 44.9,
    "calculationVersion": "v1.1",
-   "rank": 30
+   "rank": 31
   },
   {
    "apartmentKey": "11230-2",
@@ -1101,7 +1136,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.6,
    "calculationVersion": "v1.1",
-   "rank": 31
+   "rank": 32
   },
   {
    "apartmentKey": "11230-84",
@@ -1133,7 +1168,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 116.7,
    "calculationVersion": "v1.1",
-   "rank": 32
+   "rank": 33
   },
   {
    "apartmentKey": "11350-2313",
@@ -1167,7 +1202,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 33
+   "rank": 34
   },
   {
    "apartmentKey": "11500-146",
@@ -1199,7 +1234,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 39.6,
    "calculationVersion": "v1.1",
-   "rank": 34
+   "rank": 35
   },
   {
    "apartmentKey": "11560-108",
@@ -1235,7 +1270,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.8,
    "calculationVersion": "v1.1",
-   "rank": 35
+   "rank": 36
   },
   {
    "apartmentKey": "11680-121",
@@ -1269,7 +1304,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 36
+   "rank": 37
   },
   {
    "apartmentKey": "11500-151",
@@ -1300,41 +1335,6 @@
    "directTradeWarning": false,
    "compositionWarning": false,
    "exclusiveAreaGroup": 34.4,
-   "calculationVersion": "v1.1",
-   "rank": 37
-  },
-  {
-   "apartmentKey": "11290-48",
-   "aptSeq": "48",
-   "apartmentName": "정릉우성아파트 101~105동",
-   "sidoCode": "11",
-   "sggCode": "11290",
-   "areaGroup": 85.0,
-   "buildYear": 2000,
-   "referenceMonth": "202608",
-   "baselineMedian": 741000000.0,
-   "currentMedian": 825000000.0,
-   "riseAmount": 84000000,
-   "riseRate": 11.34,
-   "baselineTradeCount": 6,
-   "currentTradeCount": 2,
-   "confidence": "low",
-   "warnings": [
-    "서로 다른 세부 전용면적 혼합"
-   ],
-   "region": "11290 정릉동",
-   "exactAreas": [
-    84.96,
-    84.99
-   ],
-   "baselineFloorMedian": 9.5,
-   "currentFloorMedian": 7.0,
-   "baselineDirectTradeCount": 0,
-   "currentDirectTradeCount": 0,
-   "floorMixWarning": false,
-   "directTradeWarning": false,
-   "compositionWarning": true,
-   "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
    "rank": 38
   },
