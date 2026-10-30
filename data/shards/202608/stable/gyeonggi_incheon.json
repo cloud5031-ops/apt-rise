@@ -3,7 +3,7 @@
  "referenceMonth": "202608",
  "status": "stable",
  "validationStatus": "valid",
- "generatedAt": "2026-10-30T08:24:41.486170+09:00",
+ "generatedAt": "2026-10-31T08:04:22.027585+09:00",
  "calculationVersion": "v1.1",
  "schemaVersion": "v1.0",
  "includedSidoCodes": [
@@ -147,12 +147,12 @@
   "41830"
  ],
  "failedSggCodes": [],
- "rawTradeCount": 13163,
- "validTradeCount": 12736,
- "cancelledTradeCount": 427,
+ "rawTradeCount": 13166,
+ "validTradeCount": 12735,
+ "cancelledTradeCount": 431,
  "directTradeCount": 430,
- "candidateGroupCount": 7318,
- "filteredOutGroupCount": 6764,
+ "candidateGroupCount": 7319,
+ "filteredOutGroupCount": 6765,
  "items": [
   {
    "apartmentKey": "41173-15",
@@ -10465,6 +10465,41 @@
    "rank": 305
   },
   {
+   "apartmentKey": "41131-1652",
+   "aptSeq": "1652",
+   "apartmentName": "산성역포레스티아",
+   "sidoCode": "41",
+   "sggCode": "41131",
+   "areaGroup": 75.0,
+   "buildYear": 2020,
+   "referenceMonth": "202608",
+   "baselineMedian": 1485000000.0,
+   "currentMedian": 1600000000,
+   "riseAmount": 115000000,
+   "riseRate": 7.74,
+   "baselineTradeCount": 30,
+   "currentTradeCount": 5,
+   "confidence": "medium",
+   "warnings": [
+    "서로 다른 세부 전용면적 혼합"
+   ],
+   "region": "41131 신흥동",
+   "exactAreas": [
+    74.96,
+    74.98
+   ],
+   "baselineFloorMedian": 9.5,
+   "currentFloorMedian": 8,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": false,
+   "directTradeWarning": false,
+   "compositionWarning": true,
+   "exclusiveAreaGroup": 75.0,
+   "calculationVersion": "v1.1",
+   "rank": 306
+  },
+  {
    "apartmentKey": "41465-283",
    "aptSeq": "283",
    "apartmentName": "버들치마을성복힐스테이트3차",
@@ -10494,7 +10529,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 153.2,
    "calculationVersion": "v1.1",
-   "rank": 306
+   "rank": 307
   },
   {
    "apartmentKey": "41113-2568",
@@ -10526,7 +10561,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 60.0,
    "calculationVersion": "v1.1",
-   "rank": 307
+   "rank": 308
   },
   {
    "apartmentKey": "41173-183",
@@ -10561,7 +10596,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 308
+   "rank": 309
   },
   {
    "apartmentKey": "41360-3737",
@@ -10595,7 +10630,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 82.2,
    "calculationVersion": "v1.1",
-   "rank": 309
+   "rank": 310
   },
   {
    "apartmentKey": "41595-41590-2164",
@@ -10630,7 +10665,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 310
+   "rank": 311
   },
   {
    "apartmentKey": "41117-47",
@@ -10662,7 +10697,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 311
+   "rank": 312
   },
   {
    "apartmentKey": "41410-83",
@@ -10694,7 +10729,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 58.5,
    "calculationVersion": "v1.1",
-   "rank": 312
+   "rank": 313
   },
   {
    "apartmentKey": "41111-44",
@@ -10728,7 +10763,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 59.9,
    "calculationVersion": "v1.1",
-   "rank": 313
+   "rank": 314
   },
   {
    "apartmentKey": "41133-2868",
@@ -10762,7 +10797,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 51.7,
    "calculationVersion": "v1.1",
-   "rank": 314
+   "rank": 315
   },
   {
    "apartmentKey": "41610-6487",
@@ -10796,7 +10831,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 315
+   "rank": 316
   },
   {
    "apartmentKey": "41273-2289",
@@ -10831,7 +10866,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 316
+   "rank": 317
   },
   {
    "apartmentKey": "41173-188",
@@ -10863,7 +10898,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 49.7,
    "calculationVersion": "v1.1",
-   "rank": 317
+   "rank": 318
   },
   {
    "apartmentKey": "41410-1273",
@@ -10899,7 +10934,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.8,
    "calculationVersion": "v1.1",
-   "rank": 318
+   "rank": 319
   },
   {
    "apartmentKey": "41117-39",
@@ -10933,7 +10968,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 59.7,
    "calculationVersion": "v1.1",
-   "rank": 319
+   "rank": 320
   },
   {
    "apartmentKey": "41171-73",
@@ -10967,7 +11002,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 320
+   "rank": 321
   },
   {
    "apartmentKey": "41360-4024",
@@ -11001,7 +11036,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 59.6,
    "calculationVersion": "v1.1",
-   "rank": 321
+   "rank": 322
   },
   {
    "apartmentKey": "41192-8995",
@@ -11036,7 +11071,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 117.4,
    "calculationVersion": "v1.1",
-   "rank": 322
+   "rank": 323
   },
   {
    "apartmentKey": "41410-55",
@@ -11068,7 +11103,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 58.0,
    "calculationVersion": "v1.1",
-   "rank": 323
+   "rank": 324
   },
   {
    "apartmentKey": "41113-1809",
@@ -11102,7 +11137,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.8,
    "calculationVersion": "v1.1",
-   "rank": 324
+   "rank": 325
   },
   {
    "apartmentKey": "41360-3891",
@@ -11136,7 +11171,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 325
+   "rank": 326
   },
   {
    "apartmentKey": "41111-29",
@@ -11171,7 +11206,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 60.0,
    "calculationVersion": "v1.1",
-   "rank": 326
+   "rank": 327
   },
   {
    "apartmentKey": "41410-28",
@@ -11202,41 +11237,6 @@
    "directTradeWarning": false,
    "compositionWarning": false,
    "exclusiveAreaGroup": 58.5,
-   "calculationVersion": "v1.1",
-   "rank": 327
-  },
-  {
-   "apartmentKey": "41131-1652",
-   "aptSeq": "1652",
-   "apartmentName": "산성역포레스티아",
-   "sidoCode": "41",
-   "sggCode": "41131",
-   "areaGroup": 75.0,
-   "buildYear": 2020,
-   "referenceMonth": "202608",
-   "baselineMedian": 1490000000,
-   "currentMedian": 1600000000,
-   "riseAmount": 110000000,
-   "riseRate": 7.38,
-   "baselineTradeCount": 31,
-   "currentTradeCount": 5,
-   "confidence": "medium",
-   "warnings": [
-    "서로 다른 세부 전용면적 혼합"
-   ],
-   "region": "41131 신흥동",
-   "exactAreas": [
-    74.96,
-    74.98
-   ],
-   "baselineFloorMedian": 10,
-   "currentFloorMedian": 8,
-   "baselineDirectTradeCount": 0,
-   "currentDirectTradeCount": 0,
-   "floorMixWarning": false,
-   "directTradeWarning": false,
-   "compositionWarning": true,
-   "exclusiveAreaGroup": 75.0,
    "calculationVersion": "v1.1",
    "rank": 328
   },
