@@ -7,8 +7,8 @@
  "sggCode": "43113",
  "dongName": "가경동",
  "referenceMonths": [
-  "202608",
-  "202609"
+  "202609",
+  "202610"
  ],
  "availableAreas": [
   59.81,
@@ -19,6 +19,33 @@
   114.52
  ],
  "transactions": [
+  {
+   "contractDate": "2026-10-18",
+   "priceWon": 675000000,
+   "floor": 16,
+   "exclusiveArea": 84.69,
+   "areaGroup": 85,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
+  {
+   "contractDate": "2026-10-17",
+   "priceWon": 710000000,
+   "floor": 23,
+   "exclusiveArea": 84.69,
+   "areaGroup": 85,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
+  {
+   "contractDate": "2026-10-09",
+   "priceWon": 590000000,
+   "floor": 17,
+   "exclusiveArea": 72.53,
+   "areaGroup": 73,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
   {
    "contractDate": "2026-09-29",
    "priceWon": 657000000,
@@ -197,7 +224,7 @@
    "exclusiveArea": 59.81,
    "areaGroup": 60,
    "dealType": "중개거래",
-   "cancellationStatus": "COMPLETED"
+   "cancellationStatus": "CANCELLED"
   },
   {
    "contractDate": "2026-06-30",
@@ -1548,47 +1575,11 @@
    "areaGroup": 60,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
-  },
-  {
-   "contractDate": "2023-10-27",
-   "priceWon": 416000000,
-   "floor": 6,
-   "exclusiveArea": 59.81,
-   "areaGroup": 60,
-   "dealType": "중개거래",
-   "cancellationStatus": "COMPLETED"
-  },
-  {
-   "contractDate": "2023-10-21",
-   "priceWon": 485000000,
-   "floor": 11,
-   "exclusiveArea": 72.53,
-   "areaGroup": 73,
-   "dealType": "중개거래",
-   "cancellationStatus": "COMPLETED"
-  },
-  {
-   "contractDate": "2023-10-21",
-   "priceWon": 464000000,
-   "floor": 10,
-   "exclusiveArea": 72.53,
-   "areaGroup": 73,
-   "dealType": "중개거래",
-   "cancellationStatus": "COMPLETED"
-  },
-  {
-   "contractDate": "2023-10-07",
-   "priceWon": 467000000,
-   "floor": 17,
-   "exclusiveArea": 72.53,
-   "areaGroup": 73,
-   "dealType": "중개거래",
-   "cancellationStatus": "COMPLETED"
   }
  ],
  "historyCoverage": {
-  "startMonth": "202310",
-  "endMonth": "202609",
+  "startMonth": "202311",
+  "endMonth": "202610",
   "months": 36,
   "complete": true
  },

@@ -7,8 +7,8 @@
  "sggCode": "26350",
  "dongName": "중동",
  "referenceMonths": [
-  "202608",
-  "202609"
+  "202609",
+  "202610"
  ],
  "availableAreas": [
   84.9177,
@@ -17,6 +17,15 @@
   95.9115
  ],
  "transactions": [
+  {
+   "contractDate": "2026-10-10",
+   "priceWon": 1090000000,
+   "floor": 31,
+   "exclusiveArea": 84.9177,
+   "areaGroup": 85,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
   {
    "contractDate": "2026-09-15",
    "priceWon": 1160000000,
@@ -145,8 +154,8 @@
   }
  ],
  "historyCoverage": {
-  "startMonth": "202310",
-  "endMonth": "202609",
+  "startMonth": "202311",
+  "endMonth": "202610",
   "months": 36,
   "complete": true
  },

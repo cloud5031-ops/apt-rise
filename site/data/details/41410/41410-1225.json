@@ -7,8 +7,8 @@
  "sggCode": "41410",
  "dongName": "당동",
  "referenceMonths": [
-  "202608",
-  "202609"
+  "202609",
+  "202610"
  ],
  "availableAreas": [
   59.895,
@@ -16,6 +16,33 @@
   120.631
  ],
  "transactions": [
+  {
+   "contractDate": "2026-10-27",
+   "priceWon": 515000000,
+   "floor": 7,
+   "exclusiveArea": 59.895,
+   "areaGroup": 60,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
+  {
+   "contractDate": "2026-10-16",
+   "priceWon": 514000000,
+   "floor": 11,
+   "exclusiveArea": 59.895,
+   "areaGroup": 60,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
+  {
+   "contractDate": "2026-10-13",
+   "priceWon": 400000000,
+   "floor": 12,
+   "exclusiveArea": 84.969,
+   "areaGroup": 85,
+   "dealType": "직거래",
+   "cancellationStatus": "COMPLETED"
+  },
   {
    "contractDate": "2026-09-26",
    "priceWon": 622000000,
@@ -261,8 +288,8 @@
   }
  ],
  "historyCoverage": {
-  "startMonth": "202310",
-  "endMonth": "202609",
+  "startMonth": "202311",
+  "endMonth": "202610",
   "months": 36,
   "complete": true
  },

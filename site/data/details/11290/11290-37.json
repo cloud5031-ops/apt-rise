@@ -7,8 +7,8 @@
  "sggCode": "11290",
  "dongName": "정릉동",
  "referenceMonths": [
-  "202608",
-  "202609"
+  "202609",
+  "202610"
  ],
  "availableAreas": [
   45.77,
@@ -19,6 +19,15 @@
   114.63
  ],
  "transactions": [
+  {
+   "contractDate": "2026-10-10",
+   "priceWon": 1050000000,
+   "floor": 13,
+   "exclusiveArea": 84.87,
+   "areaGroup": 85,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
   {
    "contractDate": "2026-09-29",
    "priceWon": 650000000,
@@ -1152,47 +1161,11 @@
    "areaGroup": 50,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
-  },
-  {
-   "contractDate": "2023-10-21",
-   "priceWon": 585000000,
-   "floor": 12,
-   "exclusiveArea": 59.59,
-   "areaGroup": 60,
-   "dealType": "중개거래",
-   "cancellationStatus": "COMPLETED"
-  },
-  {
-   "contractDate": "2023-10-18",
-   "priceWon": 590000000,
-   "floor": 17,
-   "exclusiveArea": 59.59,
-   "areaGroup": 60,
-   "dealType": "중개거래",
-   "cancellationStatus": "COMPLETED"
-  },
-  {
-   "contractDate": "2023-10-14",
-   "priceWon": 600000000,
-   "floor": 12,
-   "exclusiveArea": 59.59,
-   "areaGroup": 60,
-   "dealType": "중개거래",
-   "cancellationStatus": "COMPLETED"
-  },
-  {
-   "contractDate": "2023-10-13",
-   "priceWon": 595000000,
-   "floor": 21,
-   "exclusiveArea": 59.59,
-   "areaGroup": 60,
-   "dealType": "중개거래",
-   "cancellationStatus": "COMPLETED"
   }
  ],
  "historyCoverage": {
-  "startMonth": "202310",
-  "endMonth": "202609",
+  "startMonth": "202311",
+  "endMonth": "202610",
   "months": 36,
   "complete": true
  },

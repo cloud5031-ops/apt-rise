@@ -7,14 +7,32 @@
  "sggCode": "11740",
  "dongName": "천호동",
  "referenceMonths": [
-  "202608",
-  "202609"
+  "202609",
+  "202610"
  ],
  "availableAreas": [
   59.98,
   84.97
  ],
  "transactions": [
+  {
+   "contractDate": "2026-10-10",
+   "priceWon": 1830000000,
+   "floor": 12,
+   "exclusiveArea": 84.97,
+   "areaGroup": 85,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
+  {
+   "contractDate": "2026-10-03",
+   "priceWon": 1770000000,
+   "floor": 7,
+   "exclusiveArea": 84.97,
+   "areaGroup": 85,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
   {
    "contractDate": "2026-09-08",
    "priceWon": 1900000000,
@@ -260,8 +278,8 @@
   }
  ],
  "historyCoverage": {
-  "startMonth": "202310",
-  "endMonth": "202609",
+  "startMonth": "202311",
+  "endMonth": "202610",
   "months": 36,
   "complete": true
  },

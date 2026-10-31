@@ -7,14 +7,32 @@
  "sggCode": "41115",
  "dongName": "화서동",
  "referenceMonths": [
-  "202608",
-  "202609"
+  "202609",
+  "202610"
  ],
  "availableAreas": [
   39.99,
   49.99
  ],
  "transactions": [
+  {
+   "contractDate": "2026-10-22",
+   "priceWon": 760000000,
+   "floor": 7,
+   "exclusiveArea": 49.99,
+   "areaGroup": 50,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
+  {
+   "contractDate": "2026-10-01",
+   "priceWon": 705000000,
+   "floor": 2,
+   "exclusiveArea": 49.99,
+   "areaGroup": 50,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
   {
    "contractDate": "2026-09-20",
    "priceWon": 720000000,
@@ -707,20 +725,11 @@
    "areaGroup": 50,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
-  },
-  {
-   "contractDate": "2023-10-23",
-   "priceWon": 410000000,
-   "floor": 9,
-   "exclusiveArea": 49.99,
-   "areaGroup": 50,
-   "dealType": "중개거래",
-   "cancellationStatus": "COMPLETED"
   }
  ],
  "historyCoverage": {
-  "startMonth": "202310",
-  "endMonth": "202609",
+  "startMonth": "202311",
+  "endMonth": "202610",
   "months": 36,
   "complete": true
  },

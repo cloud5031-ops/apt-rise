@@ -7,8 +7,8 @@
  "sggCode": "41135",
  "dongName": "구미동",
  "referenceMonths": [
-  "202608",
-  "202609"
+  "202609",
+  "202610"
  ],
  "availableAreas": [
   35.28,
@@ -17,6 +17,24 @@
   39.01
  ],
  "transactions": [
+  {
+   "contractDate": "2026-10-08",
+   "priceWon": 1000000000,
+   "floor": 6,
+   "exclusiveArea": 35.28,
+   "areaGroup": 35,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
+  {
+   "contractDate": "2026-10-01",
+   "priceWon": 1040000000,
+   "floor": 16,
+   "exclusiveArea": 38.07,
+   "areaGroup": 38,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
   {
    "contractDate": "2026-09-30",
    "priceWon": 1050000000,
@@ -1348,29 +1366,11 @@
    "areaGroup": 35,
    "dealType": "직거래",
    "cancellationStatus": "COMPLETED"
-  },
-  {
-   "contractDate": "2023-10-23",
-   "priceWon": 520000000,
-   "floor": 2,
-   "exclusiveArea": 35.28,
-   "areaGroup": 35,
-   "dealType": "중개거래",
-   "cancellationStatus": "COMPLETED"
-  },
-  {
-   "contractDate": "2023-10-09",
-   "priceWon": 550000000,
-   "floor": 5,
-   "exclusiveArea": 35.28,
-   "areaGroup": 35,
-   "dealType": "중개거래",
-   "cancellationStatus": "COMPLETED"
   }
  ],
  "historyCoverage": {
-  "startMonth": "202310",
-  "endMonth": "202609",
+  "startMonth": "202311",
+  "endMonth": "202610",
   "months": 36,
   "complete": true
  },

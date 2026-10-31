@@ -7,8 +7,8 @@
  "sggCode": "11620",
  "dongName": "신림동",
  "referenceMonths": [
-  "202608",
-  "202609"
+  "202609",
+  "202610"
  ],
  "availableAreas": [
   58.89,
@@ -18,6 +18,24 @@
   84.82
  ],
  "transactions": [
+  {
+   "contractDate": "2026-10-19",
+   "priceWon": 599000000,
+   "floor": 3,
+   "exclusiveArea": 58.9,
+   "areaGroup": 59,
+   "dealType": "중개거래",
+   "cancellationStatus": "CANCELLED"
+  },
+  {
+   "contractDate": "2026-10-14",
+   "priceWon": 700000000,
+   "floor": 4,
+   "exclusiveArea": 69.17,
+   "areaGroup": 69,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
   {
    "contractDate": "2026-09-23",
    "priceWon": 785000000,
@@ -263,8 +281,8 @@
   }
  ],
  "historyCoverage": {
-  "startMonth": "202310",
-  "endMonth": "202609",
+  "startMonth": "202311",
+  "endMonth": "202610",
   "months": 36,
   "complete": true
  },

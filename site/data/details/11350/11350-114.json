@@ -7,8 +7,8 @@
  "sggCode": "11350",
  "dongName": "중계동",
  "referenceMonths": [
-  "202608",
-  "202609"
+  "202609",
+  "202610"
  ],
  "availableAreas": [
   38.64,
@@ -19,6 +19,42 @@
   84.79
  ],
  "transactions": [
+  {
+   "contractDate": "2026-10-12",
+   "priceWon": 515000000,
+   "floor": 9,
+   "exclusiveArea": 44.94,
+   "areaGroup": 45,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
+  {
+   "contractDate": "2026-10-12",
+   "priceWon": 430000000,
+   "floor": 8,
+   "exclusiveArea": 38.64,
+   "areaGroup": 39,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
+  {
+   "contractDate": "2026-10-07",
+   "priceWon": 490000000,
+   "floor": 13,
+   "exclusiveArea": 44.52,
+   "areaGroup": 45,
+   "dealType": "직거래",
+   "cancellationStatus": "COMPLETED"
+  },
+  {
+   "contractDate": "2026-10-02",
+   "priceWon": 750000000,
+   "floor": 1,
+   "exclusiveArea": 58.46,
+   "areaGroup": 58,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
   {
    "contractDate": "2026-09-23",
    "priceWon": 600000000,
@@ -2268,29 +2304,11 @@
    "areaGroup": 58,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
-  },
-  {
-   "contractDate": "2023-10-29",
-   "priceWon": 310000000,
-   "floor": 10,
-   "exclusiveArea": 38.64,
-   "areaGroup": 39,
-   "dealType": "중개거래",
-   "cancellationStatus": "COMPLETED"
-  },
-  {
-   "contractDate": "2023-10-26",
-   "priceWon": 410000000,
-   "floor": 2,
-   "exclusiveArea": 44.52,
-   "areaGroup": 45,
-   "dealType": "중개거래",
-   "cancellationStatus": "CANCELLED"
   }
  ],
  "historyCoverage": {
-  "startMonth": "202310",
-  "endMonth": "202609",
+  "startMonth": "202311",
+  "endMonth": "202610",
   "months": 36,
   "complete": true
  },

@@ -7,13 +7,31 @@
  "sggCode": "41465",
  "dongName": "죽전동",
  "referenceMonths": [
-  "202608",
-  "202609"
+  "202609",
+  "202610"
  ],
  "availableAreas": [
   84.9959
  ],
  "transactions": [
+  {
+   "contractDate": "2026-10-16",
+   "priceWon": 785000000,
+   "floor": 10,
+   "exclusiveArea": 84.9959,
+   "areaGroup": 85,
+   "dealType": "직거래",
+   "cancellationStatus": "COMPLETED"
+  },
+  {
+   "contractDate": "2026-10-09",
+   "priceWon": 1092000000,
+   "floor": 13,
+   "exclusiveArea": 84.9959,
+   "areaGroup": 85,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
   {
    "contractDate": "2026-09-18",
    "priceWon": 1100000000,
@@ -1030,29 +1048,11 @@
    "areaGroup": 85,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
-  },
-  {
-   "contractDate": "2023-10-13",
-   "priceWon": 760000000,
-   "floor": 14,
-   "exclusiveArea": 84.9959,
-   "areaGroup": 85,
-   "dealType": "중개거래",
-   "cancellationStatus": "CANCELLED"
-  },
-  {
-   "contractDate": "2023-10-09",
-   "priceWon": 760000000,
-   "floor": 14,
-   "exclusiveArea": 84.9959,
-   "areaGroup": 85,
-   "dealType": "중개거래",
-   "cancellationStatus": "COMPLETED"
   }
  ],
  "historyCoverage": {
-  "startMonth": "202310",
-  "endMonth": "202609",
+  "startMonth": "202311",
+  "endMonth": "202610",
   "months": 36,
   "complete": true
  },

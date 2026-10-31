@@ -7,8 +7,8 @@
  "sggCode": "41597",
  "dongName": "영천동",
  "referenceMonths": [
-  "202608",
-  "202609"
+  "202609",
+  "202610"
  ],
  "availableAreas": [
   74.364,
@@ -16,6 +16,15 @@
   84.9921
  ],
  "transactions": [
+  {
+   "contractDate": "2026-10-20",
+   "priceWon": 940000000,
+   "floor": 11,
+   "exclusiveArea": 84.9921,
+   "areaGroup": 85,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
   {
    "contractDate": "2026-09-16",
    "priceWon": 900000000,
@@ -1878,38 +1887,11 @@
    "areaGroup": 85,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
-  },
-  {
-   "contractDate": "2023-10-21",
-   "priceWon": 600000000,
-   "floor": 20,
-   "exclusiveArea": 74.364,
-   "areaGroup": 74,
-   "dealType": "중개거래",
-   "cancellationStatus": "COMPLETED"
-  },
-  {
-   "contractDate": "2023-10-05",
-   "priceWon": 615000000,
-   "floor": 10,
-   "exclusiveArea": 84.9921,
-   "areaGroup": 85,
-   "dealType": "중개거래",
-   "cancellationStatus": "COMPLETED"
-  },
-  {
-   "contractDate": "2023-10-04",
-   "priceWon": 600000000,
-   "floor": 23,
-   "exclusiveArea": 84.9921,
-   "areaGroup": 85,
-   "dealType": "중개거래",
-   "cancellationStatus": "COMPLETED"
   }
  ],
  "historyCoverage": {
-  "startMonth": "202310",
-  "endMonth": "202609",
+  "startMonth": "202311",
+  "endMonth": "202610",
   "months": 36,
   "complete": true
  },

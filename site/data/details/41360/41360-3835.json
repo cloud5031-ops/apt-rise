@@ -7,14 +7,32 @@
  "sggCode": "41360",
  "dongName": "다산동",
  "referenceMonths": [
-  "202608",
-  "202609"
+  "202609",
+  "202610"
  ],
  "availableAreas": [
   84.9301,
   84.9527
  ],
  "transactions": [
+  {
+   "contractDate": "2026-10-21",
+   "priceWon": 1074000000,
+   "floor": 7,
+   "exclusiveArea": 84.9527,
+   "areaGroup": 85,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
+  {
+   "contractDate": "2026-10-16",
+   "priceWon": 1125000000,
+   "floor": 28,
+   "exclusiveArea": 84.9301,
+   "areaGroup": 85,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
   {
    "contractDate": "2026-09-21",
    "priceWon": 1080000000,
@@ -1358,8 +1376,8 @@
   }
  ],
  "historyCoverage": {
-  "startMonth": "202310",
-  "endMonth": "202609",
+  "startMonth": "202311",
+  "endMonth": "202610",
   "months": 36,
   "complete": true
  },

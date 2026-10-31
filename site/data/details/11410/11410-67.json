@@ -7,8 +7,8 @@
  "sggCode": "11410",
  "dongName": "홍제동",
  "referenceMonths": [
-  "202608",
-  "202609"
+  "202609",
+  "202610"
  ],
  "availableAreas": [
   60.06,
@@ -16,6 +16,33 @@
   120.14
  ],
  "transactions": [
+  {
+   "contractDate": "2026-10-16",
+   "priceWon": 605000000,
+   "floor": 4,
+   "exclusiveArea": 60.06,
+   "areaGroup": 60,
+   "dealType": "중개거래",
+   "cancellationStatus": "CANCELLED"
+  },
+  {
+   "contractDate": "2026-10-09",
+   "priceWon": 1200000000,
+   "floor": 11,
+   "exclusiveArea": 84.77,
+   "areaGroup": 85,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
+  {
+   "contractDate": "2026-10-09",
+   "priceWon": 1050000000,
+   "floor": 7,
+   "exclusiveArea": 60.06,
+   "areaGroup": 60,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
   {
    "contractDate": "2026-09-21",
    "priceWon": 1062000000,
@@ -1275,38 +1302,11 @@
    "areaGroup": 60,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
-  },
-  {
-   "contractDate": "2023-10-31",
-   "priceWon": 690000000,
-   "floor": 8,
-   "exclusiveArea": 120.14,
-   "areaGroup": 120,
-   "dealType": "중개거래",
-   "cancellationStatus": "COMPLETED"
-  },
-  {
-   "contractDate": "2023-10-21",
-   "priceWon": 695000000,
-   "floor": 7,
-   "exclusiveArea": 60.06,
-   "areaGroup": 60,
-   "dealType": "중개거래",
-   "cancellationStatus": "COMPLETED"
-  },
-  {
-   "contractDate": "2023-10-06",
-   "priceWon": 738000000,
-   "floor": 11,
-   "exclusiveArea": 60.06,
-   "areaGroup": 60,
-   "dealType": "중개거래",
-   "cancellationStatus": "COMPLETED"
   }
  ],
  "historyCoverage": {
-  "startMonth": "202310",
-  "endMonth": "202609",
+  "startMonth": "202311",
+  "endMonth": "202610",
   "months": 36,
   "complete": true
  },

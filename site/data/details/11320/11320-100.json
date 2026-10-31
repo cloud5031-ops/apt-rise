@@ -7,8 +7,8 @@
  "sggCode": "11320",
  "dongName": "창동",
  "referenceMonths": [
-  "202608",
-  "202609"
+  "202609",
+  "202610"
  ],
  "availableAreas": [
   36.16,
@@ -17,6 +17,24 @@
   49.94
  ],
  "transactions": [
+  {
+   "contractDate": "2026-10-05",
+   "priceWon": 420000000,
+   "floor": 6,
+   "exclusiveArea": 36.16,
+   "areaGroup": 36,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
+  {
+   "contractDate": "2026-10-03",
+   "priceWon": 395000000,
+   "floor": 8,
+   "exclusiveArea": 36.16,
+   "areaGroup": 36,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
   {
    "contractDate": "2026-09-30",
    "priceWon": 340000000,
@@ -2473,74 +2491,11 @@
    "areaGroup": 36,
    "dealType": "직거래",
    "cancellationStatus": "COMPLETED"
-  },
-  {
-   "contractDate": "2023-10-23",
-   "priceWon": 323000000,
-   "floor": 1,
-   "exclusiveArea": 36.34,
-   "areaGroup": 36,
-   "dealType": "중개거래",
-   "cancellationStatus": "COMPLETED"
-  },
-  {
-   "contractDate": "2023-10-23",
-   "priceWon": 318000000,
-   "floor": 1,
-   "exclusiveArea": 36.16,
-   "areaGroup": 36,
-   "dealType": "중개거래",
-   "cancellationStatus": "COMPLETED"
-  },
-  {
-   "contractDate": "2023-10-11",
-   "priceWon": 355000000,
-   "floor": 10,
-   "exclusiveArea": 36.16,
-   "areaGroup": 36,
-   "dealType": "중개거래",
-   "cancellationStatus": "CANCELLED"
-  },
-  {
-   "contractDate": "2023-10-11",
-   "priceWon": 345000000,
-   "floor": 10,
-   "exclusiveArea": 36.16,
-   "areaGroup": 36,
-   "dealType": "중개거래",
-   "cancellationStatus": "COMPLETED"
-  },
-  {
-   "contractDate": "2023-10-10",
-   "priceWon": 350000000,
-   "floor": 10,
-   "exclusiveArea": 36.16,
-   "areaGroup": 36,
-   "dealType": "중개거래",
-   "cancellationStatus": "COMPLETED"
-  },
-  {
-   "contractDate": "2023-10-09",
-   "priceWon": 337000000,
-   "floor": 2,
-   "exclusiveArea": 36.34,
-   "areaGroup": 36,
-   "dealType": "중개거래",
-   "cancellationStatus": "COMPLETED"
-  },
-  {
-   "contractDate": "2023-10-06",
-   "priceWon": 330000000,
-   "floor": 2,
-   "exclusiveArea": 36.16,
-   "areaGroup": 36,
-   "dealType": "중개거래",
-   "cancellationStatus": "COMPLETED"
   }
  ],
  "historyCoverage": {
-  "startMonth": "202310",
-  "endMonth": "202609",
+  "startMonth": "202311",
+  "endMonth": "202610",
   "months": 36,
   "complete": true
  },

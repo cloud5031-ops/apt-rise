@@ -7,15 +7,34 @@
  "sggCode": "41192",
  "dongName": "중동",
  "referenceMonths": [
-  "202608",
-  "202609"
+  "202609",
+  "202610"
  ],
  "availableAreas": [
   113.58,
   133.12,
-  149.47
+  149.47,
+  184.72
  ],
  "transactions": [
+  {
+   "contractDate": "2026-10-03",
+   "priceWon": 690000000,
+   "floor": 3,
+   "exclusiveArea": 133.12,
+   "areaGroup": 133,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
+  {
+   "contractDate": "2026-10-02",
+   "priceWon": 835000000,
+   "floor": 12,
+   "exclusiveArea": 184.72,
+   "areaGroup": 185,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
   {
    "contractDate": "2026-09-19",
    "priceWon": 735000000,
@@ -117,8 +136,8 @@
   }
  ],
  "historyCoverage": {
-  "startMonth": "202310",
-  "endMonth": "202609",
+  "startMonth": "202311",
+  "endMonth": "202610",
   "months": 36,
   "complete": true
  },

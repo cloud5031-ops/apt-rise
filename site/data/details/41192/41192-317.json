@@ -7,14 +7,23 @@
  "sggCode": "41192",
  "dongName": "상동",
  "referenceMonths": [
-  "202608",
-  "202609"
+  "202609",
+  "202610"
  ],
  "availableAreas": [
   112.155,
   127.738
  ],
  "transactions": [
+  {
+   "contractDate": "2026-10-24",
+   "priceWon": 1265000000,
+   "floor": 3,
+   "exclusiveArea": 127.738,
+   "areaGroup": 128,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
   {
    "contractDate": "2026-09-30",
    "priceWon": 1170000000,
@@ -143,8 +152,8 @@
   }
  ],
  "historyCoverage": {
-  "startMonth": "202310",
-  "endMonth": "202609",
+  "startMonth": "202311",
+  "endMonth": "202610",
   "months": 36,
   "complete": true
  },

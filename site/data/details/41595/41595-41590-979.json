@@ -7,14 +7,41 @@
  "sggCode": "41595",
  "dongName": "반월동",
  "referenceMonths": [
-  "202608",
-  "202609"
+  "202609",
+  "202610"
  ],
  "availableAreas": [
   59.964,
   84.899
  ],
  "transactions": [
+  {
+   "contractDate": "2026-10-26",
+   "priceWon": 500000000,
+   "floor": 12,
+   "exclusiveArea": 59.964,
+   "areaGroup": 60,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
+  {
+   "contractDate": "2026-10-17",
+   "priceWon": 490000000,
+   "floor": 1,
+   "exclusiveArea": 84.899,
+   "areaGroup": 85,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
+  {
+   "contractDate": "2026-10-15",
+   "priceWon": 570000000,
+   "floor": 12,
+   "exclusiveArea": 84.899,
+   "areaGroup": 85,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
   {
    "contractDate": "2026-09-23",
    "priceWon": 490000000,
@@ -386,8 +413,8 @@
   }
  ],
  "historyCoverage": {
-  "startMonth": "202310",
-  "endMonth": "202609",
+  "startMonth": "202311",
+  "endMonth": "202610",
   "months": 36,
   "complete": true
  },

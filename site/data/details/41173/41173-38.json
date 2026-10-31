@@ -7,13 +7,31 @@
  "sggCode": "41173",
  "dongName": "관양동",
  "referenceMonths": [
-  "202608",
-  "202609"
+  "202609",
+  "202610"
  ],
  "availableAreas": [
   49.8
  ],
  "transactions": [
+  {
+   "contractDate": "2026-10-12",
+   "priceWon": 800000000,
+   "floor": 14,
+   "exclusiveArea": 49.8,
+   "areaGroup": 50,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
+  {
+   "contractDate": "2026-10-07",
+   "priceWon": 775000000,
+   "floor": 16,
+   "exclusiveArea": 49.8,
+   "areaGroup": 50,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
   {
    "contractDate": "2026-09-28",
    "priceWon": 757000000,
@@ -1492,8 +1510,8 @@
   }
  ],
  "historyCoverage": {
-  "startMonth": "202310",
-  "endMonth": "202609",
+  "startMonth": "202311",
+  "endMonth": "202610",
   "months": 36,
   "complete": true
  },

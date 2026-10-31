@@ -7,8 +7,8 @@
  "sggCode": "11350",
  "dongName": "공릉동",
  "referenceMonths": [
-  "202608",
-  "202609"
+  "202609",
+  "202610"
  ],
  "availableAreas": [
   34.44,
@@ -16,6 +16,15 @@
   49.5
  ],
  "transactions": [
+  {
+   "contractDate": "2026-10-08",
+   "priceWon": 520000000,
+   "floor": 12,
+   "exclusiveArea": 39.6,
+   "areaGroup": 40,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
   {
    "contractDate": "2026-09-29",
    "priceWon": 380000000,
@@ -1329,29 +1338,11 @@
    "areaGroup": 40,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
-  },
-  {
-   "contractDate": "2023-10-13",
-   "priceWon": 345000000,
-   "floor": 7,
-   "exclusiveArea": 39.6,
-   "areaGroup": 40,
-   "dealType": "중개거래",
-   "cancellationStatus": "COMPLETED"
-  },
-  {
-   "contractDate": "2023-10-07",
-   "priceWon": 325000000,
-   "floor": 13,
-   "exclusiveArea": 34.44,
-   "areaGroup": 34,
-   "dealType": "중개거래",
-   "cancellationStatus": "COMPLETED"
   }
  ],
  "historyCoverage": {
-  "startMonth": "202310",
-  "endMonth": "202609",
+  "startMonth": "202311",
+  "endMonth": "202610",
   "months": 36,
   "complete": true
  },

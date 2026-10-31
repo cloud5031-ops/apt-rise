@@ -7,18 +7,46 @@
  "sggCode": "41117",
  "dongName": "원천동",
  "referenceMonths": [
-  "202608",
-  "202609"
+  "202609",
+  "202610"
  ],
  "availableAreas": [
   77.9781,
   84.9839,
   84.9868,
+  84.9954,
   84.9957,
   117.4366,
   117.7413
  ],
  "transactions": [
+  {
+   "contractDate": "2026-10-16",
+   "priceWon": 1420000000,
+   "floor": 15,
+   "exclusiveArea": 117.7413,
+   "areaGroup": 118,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
+  {
+   "contractDate": "2026-10-07",
+   "priceWon": 890000000,
+   "floor": 3,
+   "exclusiveArea": 84.9957,
+   "areaGroup": 85,
+   "dealType": "직거래",
+   "cancellationStatus": "COMPLETED"
+  },
+  {
+   "contractDate": "2026-10-01",
+   "priceWon": 945000000,
+   "floor": 6,
+   "exclusiveArea": 84.9954,
+   "areaGroup": 85,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
   {
    "contractDate": "2026-09-30",
    "priceWon": 930000000,
@@ -300,8 +328,8 @@
   }
  ],
  "historyCoverage": {
-  "startMonth": "202310",
-  "endMonth": "202609",
+  "startMonth": "202311",
+  "endMonth": "202610",
   "months": 36,
   "complete": true
  },

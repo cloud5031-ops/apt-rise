@@ -7,8 +7,8 @@
  "sggCode": "41210",
  "dongName": "하안동",
  "referenceMonths": [
-  "202608",
-  "202609"
+  "202609",
+  "202610"
  ],
  "availableAreas": [
   59.982,
@@ -22,6 +22,24 @@
   146.68
  ],
  "transactions": [
+  {
+   "contractDate": "2026-10-14",
+   "priceWon": 1149000000,
+   "floor": 2,
+   "exclusiveArea": 59.982,
+   "areaGroup": 60,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
+  {
+   "contractDate": "2026-10-12",
+   "priceWon": 1394000000,
+   "floor": 24,
+   "exclusiveArea": 123.7,
+   "areaGroup": 124,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
   {
    "contractDate": "2026-09-28",
    "priceWon": 1260000000,
@@ -4215,38 +4233,11 @@
    "areaGroup": 124,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
-  },
-  {
-   "contractDate": "2023-10-25",
-   "priceWon": 980000000,
-   "floor": 26,
-   "exclusiveArea": 84.975,
-   "areaGroup": 85,
-   "dealType": "중개거래",
-   "cancellationStatus": "COMPLETED"
-  },
-  {
-   "contractDate": "2023-10-25",
-   "priceWon": 935000000,
-   "floor": 14,
-   "exclusiveArea": 84.981,
-   "areaGroup": 85,
-   "dealType": "중개거래",
-   "cancellationStatus": "COMPLETED"
-  },
-  {
-   "contractDate": "2023-10-10",
-   "priceWon": 1070000000,
-   "floor": 1,
-   "exclusiveArea": 123.7,
-   "areaGroup": 124,
-   "dealType": "중개거래",
-   "cancellationStatus": "COMPLETED"
   }
  ],
  "historyCoverage": {
-  "startMonth": "202310",
-  "endMonth": "202609",
+  "startMonth": "202311",
+  "endMonth": "202610",
   "months": 36,
   "complete": true
  },

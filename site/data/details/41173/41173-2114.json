@@ -7,14 +7,32 @@
  "sggCode": "41173",
  "dongName": "비산동",
  "referenceMonths": [
-  "202608",
-  "202609"
+  "202609",
+  "202610"
  ],
  "availableAreas": [
   59.9085,
   76.7856
  ],
  "transactions": [
+  {
+   "contractDate": "2026-10-14",
+   "priceWon": 788000000,
+   "floor": 18,
+   "exclusiveArea": 59.9085,
+   "areaGroup": 60,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
+  {
+   "contractDate": "2026-10-12",
+   "priceWon": 860000000,
+   "floor": 14,
+   "exclusiveArea": 76.7856,
+   "areaGroup": 77,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
   {
    "contractDate": "2026-09-21",
    "priceWon": 880000000,
@@ -665,8 +683,8 @@
   }
  ],
  "historyCoverage": {
-  "startMonth": "202310",
-  "endMonth": "202609",
+  "startMonth": "202311",
+  "endMonth": "202610",
   "months": 36,
   "complete": true
  },

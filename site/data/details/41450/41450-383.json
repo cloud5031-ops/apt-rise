@@ -7,14 +7,23 @@
  "sggCode": "41450",
  "dongName": "풍산동",
  "referenceMonths": [
-  "202608",
-  "202609"
+  "202609",
+  "202610"
  ],
  "availableAreas": [
   98.5653,
   98.9628
  ],
  "transactions": [
+  {
+   "contractDate": "2026-10-02",
+   "priceWon": 1000000000,
+   "floor": 1,
+   "exclusiveArea": 98.9628,
+   "areaGroup": 99,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
   {
    "contractDate": "2026-09-29",
    "priceWon": 917000000,
@@ -143,8 +152,8 @@
   }
  ],
  "historyCoverage": {
-  "startMonth": "202310",
-  "endMonth": "202609",
+  "startMonth": "202311",
+  "endMonth": "202610",
   "months": 36,
   "complete": true
  },

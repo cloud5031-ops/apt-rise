@@ -7,17 +7,63 @@
  "sggCode": "31140",
  "dongName": "신정동",
  "referenceMonths": [
-  "202608",
-  "202609"
+  "202609",
+  "202610"
  ],
  "availableAreas": [
   59.97,
   84.94,
   84.95,
   84.96,
+  84.99,
   119.94
  ],
  "transactions": [
+  {
+   "contractDate": "2026-10-20",
+   "priceWon": 590000000,
+   "floor": 10,
+   "exclusiveArea": 84.95,
+   "areaGroup": 85,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
+  {
+   "contractDate": "2026-10-14",
+   "priceWon": 520000000,
+   "floor": 8,
+   "exclusiveArea": 59.97,
+   "areaGroup": 60,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
+  {
+   "contractDate": "2026-10-10",
+   "priceWon": 625000000,
+   "floor": 1,
+   "exclusiveArea": 84.94,
+   "areaGroup": 85,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
+  {
+   "contractDate": "2026-10-09",
+   "priceWon": 515000000,
+   "floor": 2,
+   "exclusiveArea": 84.99,
+   "areaGroup": 85,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
+  {
+   "contractDate": "2026-10-03",
+   "priceWon": 440000000,
+   "floor": 6,
+   "exclusiveArea": 59.97,
+   "areaGroup": 60,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
   {
    "contractDate": "2026-09-30",
    "priceWon": 590000000,
@@ -70,7 +116,7 @@
    "exclusiveArea": 59.97,
    "areaGroup": 60,
    "dealType": "중개거래",
-   "cancellationStatus": "COMPLETED"
+   "cancellationStatus": "CANCELLED"
   },
   {
    "contractDate": "2026-08-02",
@@ -146,8 +192,8 @@
   }
  ],
  "historyCoverage": {
-  "startMonth": "202310",
-  "endMonth": "202609",
+  "startMonth": "202311",
+  "endMonth": "202610",
   "months": 36,
   "complete": true
  },

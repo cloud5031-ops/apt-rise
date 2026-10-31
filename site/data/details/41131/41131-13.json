@@ -7,8 +7,8 @@
  "sggCode": "41131",
  "dongName": "수진동",
  "referenceMonths": [
-  "202608",
-  "202609"
+  "202609",
+  "202610"
  ],
  "availableAreas": [
   59.76,
@@ -16,6 +16,15 @@
   134.97
  ],
  "transactions": [
+  {
+   "contractDate": "2026-10-17",
+   "priceWon": 935000000,
+   "floor": 14,
+   "exclusiveArea": 59.76,
+   "areaGroup": 60,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
   {
    "contractDate": "2026-09-21",
    "priceWon": 900000000,
@@ -780,20 +789,11 @@
    "areaGroup": 60,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
-  },
-  {
-   "contractDate": "2023-10-12",
-   "priceWon": 627000000,
-   "floor": 5,
-   "exclusiveArea": 59.76,
-   "areaGroup": 60,
-   "dealType": "중개거래",
-   "cancellationStatus": "COMPLETED"
   }
  ],
  "historyCoverage": {
-  "startMonth": "202310",
-  "endMonth": "202609",
+  "startMonth": "202311",
+  "endMonth": "202610",
   "months": 36,
   "complete": true
  },

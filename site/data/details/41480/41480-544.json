@@ -7,14 +7,23 @@
  "sggCode": "41480",
  "dongName": "동패동",
  "referenceMonths": [
-  "202608",
-  "202609"
+  "202609",
+  "202610"
  ],
  "availableAreas": [
   101.9776,
   128.9612
  ],
  "transactions": [
+  {
+   "contractDate": "2026-10-02",
+   "priceWon": 407000000,
+   "floor": 4,
+   "exclusiveArea": 101.9776,
+   "areaGroup": 102,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
   {
    "contractDate": "2026-09-28",
    "priceWon": 435000000,
@@ -89,8 +98,8 @@
   }
  ],
  "historyCoverage": {
-  "startMonth": "202310",
-  "endMonth": "202609",
+  "startMonth": "202311",
+  "endMonth": "202610",
   "months": 36,
   "complete": true
  },

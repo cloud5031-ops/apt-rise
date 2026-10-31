@@ -7,8 +7,8 @@
  "sggCode": "11290",
  "dongName": "돈암동",
  "referenceMonths": [
-  "202608",
-  "202609"
+  "202609",
+  "202610"
  ],
  "availableAreas": [
   59.4,
@@ -16,6 +16,15 @@
   114.66
  ],
  "transactions": [
+  {
+   "contractDate": "2026-10-07",
+   "priceWon": 990000000,
+   "floor": 14,
+   "exclusiveArea": 84.59,
+   "areaGroup": 85,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
   {
    "contractDate": "2026-09-16",
    "priceWon": 1050000000,
@@ -1257,38 +1266,11 @@
    "areaGroup": 85,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
-  },
-  {
-   "contractDate": "2023-10-28",
-   "priceWon": 745000000,
-   "floor": 22,
-   "exclusiveArea": 84.59,
-   "areaGroup": 85,
-   "dealType": "중개거래",
-   "cancellationStatus": "COMPLETED"
-  },
-  {
-   "contractDate": "2023-10-12",
-   "priceWon": 530000000,
-   "floor": 4,
-   "exclusiveArea": 59.4,
-   "areaGroup": 59,
-   "dealType": "중개거래",
-   "cancellationStatus": "COMPLETED"
-  },
-  {
-   "contractDate": "2023-10-07",
-   "priceWon": 704000000,
-   "floor": 11,
-   "exclusiveArea": 84.59,
-   "areaGroup": 85,
-   "dealType": "중개거래",
-   "cancellationStatus": "COMPLETED"
   }
  ],
  "historyCoverage": {
-  "startMonth": "202310",
-  "endMonth": "202609",
+  "startMonth": "202311",
+  "endMonth": "202610",
   "months": 36,
   "complete": true
  },

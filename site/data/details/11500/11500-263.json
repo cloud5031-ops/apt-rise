@@ -7,8 +7,8 @@
  "sggCode": "11500",
  "dongName": "등촌동",
  "referenceMonths": [
-  "202608",
-  "202609"
+  "202609",
+  "202610"
  ],
  "availableAreas": [
   84.7556,
@@ -21,6 +21,15 @@
   233.695
  ],
  "transactions": [
+  {
+   "contractDate": "2026-10-14",
+   "priceWon": 1370000000,
+   "floor": 4,
+   "exclusiveArea": 84.7556,
+   "areaGroup": 85,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
   {
    "contractDate": "2026-09-30",
    "priceWon": 1600000000,
@@ -1721,38 +1730,11 @@
    "areaGroup": 85,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
-  },
-  {
-   "contractDate": "2023-10-28",
-   "priceWon": 1285000000,
-   "floor": 2,
-   "exclusiveArea": 165.8299,
-   "areaGroup": 166,
-   "dealType": "중개거래",
-   "cancellationStatus": "COMPLETED"
-  },
-  {
-   "contractDate": "2023-10-20",
-   "priceWon": 1250000000,
-   "floor": 1,
-   "exclusiveArea": 165.8299,
-   "areaGroup": 166,
-   "dealType": "중개거래",
-   "cancellationStatus": "COMPLETED"
-  },
-  {
-   "contractDate": "2023-10-14",
-   "priceWon": 1290000000,
-   "floor": 16,
-   "exclusiveArea": 134.9883,
-   "areaGroup": 135,
-   "dealType": "중개거래",
-   "cancellationStatus": "CANCELLED"
   }
  ],
  "historyCoverage": {
-  "startMonth": "202310",
-  "endMonth": "202609",
+  "startMonth": "202311",
+  "endMonth": "202610",
   "months": 36,
   "complete": true
  },

@@ -7,15 +7,34 @@
  "sggCode": "11710",
  "dongName": "문정동",
  "referenceMonths": [
-  "202608",
-  "202609"
+  "202609",
+  "202610"
  ],
  "availableAreas": [
   84.9072,
   84.9648,
-  84.9725
+  84.9725,
+  116.1338
  ],
  "transactions": [
+  {
+   "contractDate": "2026-10-10",
+   "priceWon": 2300000000,
+   "floor": 14,
+   "exclusiveArea": 116.1338,
+   "areaGroup": 116,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
+  {
+   "contractDate": "2026-10-07",
+   "priceWon": 1800000000,
+   "floor": 15,
+   "exclusiveArea": 84.9072,
+   "areaGroup": 85,
+   "dealType": "직거래",
+   "cancellationStatus": "COMPLETED"
+  },
   {
    "contractDate": "2026-09-14",
    "priceWon": 2045000000,
@@ -99,8 +118,8 @@
   }
  ],
  "historyCoverage": {
-  "startMonth": "202310",
-  "endMonth": "202609",
+  "startMonth": "202311",
+  "endMonth": "202610",
   "months": 36,
   "complete": true
  },

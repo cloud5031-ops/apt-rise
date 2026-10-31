@@ -7,8 +7,8 @@
  "sggCode": "30170",
  "dongName": "월평동",
  "referenceMonths": [
-  "202608",
-  "202609"
+  "202609",
+  "202610"
  ],
  "availableAreas": [
   84.87,
@@ -16,6 +16,24 @@
   126.45
  ],
  "transactions": [
+  {
+   "contractDate": "2026-10-08",
+   "priceWon": 837000000,
+   "floor": 12,
+   "exclusiveArea": 126.45,
+   "areaGroup": 126,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
+  {
+   "contractDate": "2026-10-03",
+   "priceWon": 730000000,
+   "floor": 4,
+   "exclusiveArea": 126.45,
+   "areaGroup": 126,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
   {
    "contractDate": "2026-09-28",
    "priceWon": 680000000,
@@ -122,7 +140,7 @@
    "exclusiveArea": 126.45,
    "areaGroup": 126,
    "dealType": "중개거래",
-   "cancellationStatus": "COMPLETED"
+   "cancellationStatus": "CANCELLED"
   },
   {
    "contractDate": "2026-08-08",
@@ -149,7 +167,7 @@
    "exclusiveArea": 126.45,
    "areaGroup": 126,
    "dealType": "중개거래",
-   "cancellationStatus": "COMPLETED"
+   "cancellationStatus": "CANCELLED"
   },
   {
    "contractDate": "2026-07-25",
@@ -167,7 +185,7 @@
    "exclusiveArea": 101.88,
    "areaGroup": 102,
    "dealType": "중개거래",
-   "cancellationStatus": "COMPLETED"
+   "cancellationStatus": "CANCELLED"
   },
   {
    "contractDate": "2026-07-21",
@@ -432,8 +450,8 @@
   }
  ],
  "historyCoverage": {
-  "startMonth": "202310",
-  "endMonth": "202609",
+  "startMonth": "202311",
+  "endMonth": "202610",
   "months": 36,
   "complete": true
  },

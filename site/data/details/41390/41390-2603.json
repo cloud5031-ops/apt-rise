@@ -7,8 +7,8 @@
  "sggCode": "41390",
  "dongName": "배곧동",
  "referenceMonths": [
-  "202608",
-  "202609"
+  "202609",
+  "202610"
  ],
  "availableAreas": [
   84.9643,
@@ -16,6 +16,42 @@
   84.9906
  ],
  "transactions": [
+  {
+   "contractDate": "2026-10-12",
+   "priceWon": 535000000,
+   "floor": 6,
+   "exclusiveArea": 84.9894,
+   "areaGroup": 85,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
+  {
+   "contractDate": "2026-10-10",
+   "priceWon": 615000000,
+   "floor": 10,
+   "exclusiveArea": 84.9906,
+   "areaGroup": 85,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
+  {
+   "contractDate": "2026-10-07",
+   "priceWon": 625000000,
+   "floor": 24,
+   "exclusiveArea": 84.9894,
+   "areaGroup": 85,
+   "dealType": "중개거래",
+   "cancellationStatus": "CANCELLED"
+  },
+  {
+   "contractDate": "2026-10-05",
+   "priceWon": 595000000,
+   "floor": 20,
+   "exclusiveArea": 84.9894,
+   "areaGroup": 85,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
   {
    "contractDate": "2026-09-22",
    "priceWon": 670000000,
@@ -243,8 +279,8 @@
   }
  ],
  "historyCoverage": {
-  "startMonth": "202310",
-  "endMonth": "202609",
+  "startMonth": "202311",
+  "endMonth": "202610",
   "months": 36,
   "complete": true
  },

@@ -7,14 +7,32 @@
  "sggCode": "41450",
  "dongName": "신장동",
  "referenceMonths": [
-  "202608",
-  "202609"
+  "202609",
+  "202610"
  ],
  "availableAreas": [
   44.55,
   59.91
  ],
  "transactions": [
+  {
+   "contractDate": "2026-10-13",
+   "priceWon": 583000000,
+   "floor": 14,
+   "exclusiveArea": 44.55,
+   "areaGroup": 45,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
+  {
+   "contractDate": "2026-10-10",
+   "priceWon": 790000000,
+   "floor": 13,
+   "exclusiveArea": 59.91,
+   "areaGroup": 60,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
   {
    "contractDate": "2026-09-26",
    "priceWon": 755000000,
@@ -1097,8 +1115,8 @@
   }
  ],
  "historyCoverage": {
-  "startMonth": "202310",
-  "endMonth": "202609",
+  "startMonth": "202311",
+  "endMonth": "202610",
   "months": 36,
   "complete": true
  },

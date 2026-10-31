@@ -7,14 +7,32 @@
  "sggCode": "41595",
  "dongName": "병점동",
  "referenceMonths": [
-  "202608",
-  "202609"
+  "202609",
+  "202610"
  ],
  "availableAreas": [
   101.983,
   122.709
  ],
  "transactions": [
+  {
+   "contractDate": "2026-10-29",
+   "priceWon": 575000000,
+   "floor": 1,
+   "exclusiveArea": 122.709,
+   "areaGroup": 123,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
+  {
+   "contractDate": "2026-10-03",
+   "priceWon": 575000000,
+   "floor": 20,
+   "exclusiveArea": 122.709,
+   "areaGroup": 123,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
   {
    "contractDate": "2026-09-17",
    "priceWon": 525000000,
@@ -296,8 +314,8 @@
   }
  ],
  "historyCoverage": {
-  "startMonth": "202310",
-  "endMonth": "202609",
+  "startMonth": "202311",
+  "endMonth": "202610",
   "months": 36,
   "complete": true
  },
