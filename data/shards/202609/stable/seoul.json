@@ -3,7 +3,7 @@
  "referenceMonth": "202609",
  "status": "stable",
  "validationStatus": "valid",
- "generatedAt": "2026-11-02T07:49:03.921626+09:00",
+ "generatedAt": "2026-11-03T10:35:54.087513+09:00",
  "calculationVersion": "v1.1",
  "schemaVersion": "v1.0",
  "includedSidoCodes": [
@@ -64,12 +64,12 @@
   "11740"
  ],
  "failedSggCodes": [],
- "rawTradeCount": 3259,
- "validTradeCount": 3185,
- "cancelledTradeCount": 74,
+ "rawTradeCount": 3267,
+ "validTradeCount": 3192,
+ "cancelledTradeCount": 75,
  "directTradeCount": 221,
- "candidateGroupCount": 2273,
- "filteredOutGroupCount": 2122,
+ "candidateGroupCount": 2279,
+ "filteredOutGroupCount": 2128,
  "items": [
   {
    "apartmentKey": "11350-33",
@@ -2329,6 +2329,40 @@
    "rank": 67
   },
   {
+   "apartmentKey": "11530-91",
+   "aptSeq": "91",
+   "apartmentName": "현대",
+   "sidoCode": "11",
+   "sggCode": "11530",
+   "areaGroup": 85.0,
+   "buildYear": 2001,
+   "referenceMonth": "202609",
+   "baselineMedian": 1040000000.0,
+   "currentMedian": 1115000000.0,
+   "riseAmount": 75000000,
+   "riseRate": 7.21,
+   "baselineTradeCount": 4,
+   "currentTradeCount": 4,
+   "confidence": "low",
+   "warnings": [
+    "층수 차이(8층 이상 또는 구간 차이)"
+   ],
+   "region": "11530 개봉동",
+   "exactAreas": [
+    84.99
+   ],
+   "baselineFloorMedian": 4.5,
+   "currentFloorMedian": 17.0,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": true,
+   "directTradeWarning": false,
+   "compositionWarning": true,
+   "exclusiveAreaGroup": 85.0,
+   "calculationVersion": "v1.1",
+   "rank": 68
+  },
+  {
    "apartmentKey": "11350-120",
    "aptSeq": "120",
    "apartmentName": "중계그린1단지",
@@ -2360,7 +2394,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 49.5,
    "calculationVersion": "v1.1",
-   "rank": 68
+   "rank": 69
   },
   {
    "apartmentKey": "11350-78",
@@ -2394,7 +2428,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.6,
    "calculationVersion": "v1.1",
-   "rank": 69
+   "rank": 70
   },
   {
    "apartmentKey": "11350-6",
@@ -2428,7 +2462,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 70
+   "rank": 71
   },
   {
    "apartmentKey": "11500-332",
@@ -2463,7 +2497,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 64.0,
    "calculationVersion": "v1.1",
-   "rank": 71
+   "rank": 72
   },
   {
    "apartmentKey": "11410-4947",
@@ -2495,7 +2529,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 59.8,
    "calculationVersion": "v1.1",
-   "rank": 72
+   "rank": 73
   },
   {
    "apartmentKey": "11410-82",
@@ -2530,7 +2564,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.8,
    "calculationVersion": "v1.1",
-   "rank": 73
+   "rank": 74
   },
   {
    "apartmentKey": "11320-86",
@@ -2562,7 +2596,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 74
+   "rank": 75
   },
   {
    "apartmentKey": "11350-115",
@@ -2594,7 +2628,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 44.1,
    "calculationVersion": "v1.1",
-   "rank": 75
+   "rank": 76
   },
   {
    "apartmentKey": "11530-89",
@@ -2626,7 +2660,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 59.6,
    "calculationVersion": "v1.1",
-   "rank": 76
+   "rank": 77
   },
   {
    "apartmentKey": "11350-32",
@@ -2658,7 +2692,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 49.9,
    "calculationVersion": "v1.1",
-   "rank": 77
+   "rank": 78
   },
   {
    "apartmentKey": "11350-35",
@@ -2690,7 +2724,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 59.4,
    "calculationVersion": "v1.1",
-   "rank": 78
+   "rank": 79
   },
   {
    "apartmentKey": "11230-19",
@@ -2724,7 +2758,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 35.5,
    "calculationVersion": "v1.1",
-   "rank": 79
+   "rank": 80
   },
   {
    "apartmentKey": "11530-3249",
@@ -2756,7 +2790,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 36.9,
    "calculationVersion": "v1.1",
-   "rank": 80
+   "rank": 81
   },
   {
    "apartmentKey": "11200-56",
@@ -2790,7 +2824,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.8,
    "calculationVersion": "v1.1",
-   "rank": 81
+   "rank": 82
   },
   {
    "apartmentKey": "11350-117",
@@ -2824,7 +2858,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 49.7,
    "calculationVersion": "v1.1",
-   "rank": 82
+   "rank": 83
   },
   {
    "apartmentKey": "11350-72",
@@ -2856,7 +2890,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 49.5,
    "calculationVersion": "v1.1",
-   "rank": 83
+   "rank": 84
   },
   {
    "apartmentKey": "11350-68",
@@ -2890,7 +2924,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 55.7,
    "calculationVersion": "v1.1",
-   "rank": 84
+   "rank": 85
   },
   {
    "apartmentKey": "11230-84",
@@ -2922,7 +2956,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 116.7,
    "calculationVersion": "v1.1",
-   "rank": 85
+   "rank": 86
   },
   {
    "apartmentKey": "11740-4804",
@@ -2954,7 +2988,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 60.0,
    "calculationVersion": "v1.1",
-   "rank": 86
+   "rank": 87
   },
   {
    "apartmentKey": "11290-82",
@@ -2987,40 +3021,6 @@
    "directTradeWarning": false,
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.1,
-   "calculationVersion": "v1.1",
-   "rank": 87
-  },
-  {
-   "apartmentKey": "11530-91",
-   "aptSeq": "91",
-   "apartmentName": "현대",
-   "sidoCode": "11",
-   "sggCode": "11530",
-   "areaGroup": 85.0,
-   "buildYear": 2001,
-   "referenceMonth": "202609",
-   "baselineMedian": 1050000000,
-   "currentMedian": 1115000000.0,
-   "riseAmount": 65000000,
-   "riseRate": 6.19,
-   "baselineTradeCount": 5,
-   "currentTradeCount": 4,
-   "confidence": "low",
-   "warnings": [
-    "층수 차이(8층 이상 또는 구간 차이)"
-   ],
-   "region": "11530 개봉동",
-   "exactAreas": [
-    84.99
-   ],
-   "baselineFloorMedian": 5,
-   "currentFloorMedian": 17.0,
-   "baselineDirectTradeCount": 0,
-   "currentDirectTradeCount": 0,
-   "floorMixWarning": true,
-   "directTradeWarning": false,
-   "compositionWarning": true,
-   "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
    "rank": 88
   },

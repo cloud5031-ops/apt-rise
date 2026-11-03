@@ -7,8 +7,8 @@
  "sggCode": "11620",
  "dongName": "봉천동",
  "referenceMonths": [
-  "202608",
-  "202609"
+  "202609",
+  "202610"
  ],
  "availableAreas": [
   58.59,
@@ -20,6 +20,42 @@
   123.29
  ],
  "transactions": [
+  {
+   "contractDate": "2026-10-17",
+   "priceWon": 1048000000,
+   "floor": 13,
+   "exclusiveArea": 58.59,
+   "areaGroup": 59,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
+  {
+   "contractDate": "2026-10-14",
+   "priceWon": 1220000000,
+   "floor": 4,
+   "exclusiveArea": 116.72,
+   "areaGroup": 117,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
+  {
+   "contractDate": "2026-10-13",
+   "priceWon": 1090000000,
+   "floor": 8,
+   "exclusiveArea": 58.59,
+   "areaGroup": 59,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
+  {
+   "contractDate": "2026-10-06",
+   "priceWon": 1070000000,
+   "floor": 15,
+   "exclusiveArea": 58.59,
+   "areaGroup": 59,
+   "dealType": "중개거래",
+   "cancellationStatus": "CANCELLED"
+  },
   {
    "contractDate": "2026-09-30",
    "priceWon": 1295000000,
@@ -2044,20 +2080,11 @@
    "areaGroup": 85,
    "dealType": "중개거래",
    "cancellationStatus": "COMPLETED"
-  },
-  {
-   "contractDate": "2023-10-26",
-   "priceWon": 905000000,
-   "floor": 9,
-   "exclusiveArea": 105.84,
-   "areaGroup": 106,
-   "dealType": "중개거래",
-   "cancellationStatus": "COMPLETED"
   }
  ],
  "historyCoverage": {
-  "startMonth": "202310",
-  "endMonth": "202609",
+  "startMonth": "202311",
+  "endMonth": "202610",
   "months": 36,
   "complete": true
  },
