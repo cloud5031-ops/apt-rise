@@ -3,7 +3,7 @@
  "referenceMonth": "202609",
  "status": "stable",
  "validationStatus": "valid",
- "generatedAt": "2026-11-03T10:35:54.087513+09:00",
+ "generatedAt": "2026-11-04T09:00:10.184601+09:00",
  "calculationVersion": "v1.1",
  "schemaVersion": "v1.0",
  "includedSidoCodes": [
@@ -64,12 +64,12 @@
   "11740"
  ],
  "failedSggCodes": [],
- "rawTradeCount": 3267,
- "validTradeCount": 3192,
- "cancelledTradeCount": 75,
+ "rawTradeCount": 3271,
+ "validTradeCount": 3195,
+ "cancelledTradeCount": 76,
  "directTradeCount": 221,
- "candidateGroupCount": 2279,
- "filteredOutGroupCount": 2128,
+ "candidateGroupCount": 2281,
+ "filteredOutGroupCount": 2130,
  "items": [
   {
    "apartmentKey": "11350-33",
@@ -2727,6 +2727,40 @@
    "rank": 79
   },
   {
+   "apartmentKey": "11740-4804",
+   "aptSeq": "4804",
+   "apartmentName": "강동리버스트8단지",
+   "sidoCode": "11",
+   "sggCode": "11740",
+   "areaGroup": 60.0,
+   "buildYear": 2021,
+   "referenceMonth": "202609",
+   "baselineMedian": 1200000000,
+   "currentMedian": 1280000000,
+   "riseAmount": 80000000,
+   "riseRate": 6.67,
+   "baselineTradeCount": 5,
+   "currentTradeCount": 3,
+   "confidence": "low",
+   "warnings": [
+    "층수 차이(8층 이상 또는 구간 차이)"
+   ],
+   "region": "11740 강일동",
+   "exactAreas": [
+    59.97
+   ],
+   "baselineFloorMedian": 10,
+   "currentFloorMedian": 5,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": true,
+   "directTradeWarning": false,
+   "compositionWarning": true,
+   "exclusiveAreaGroup": 60.0,
+   "calculationVersion": "v1.1",
+   "rank": 80
+  },
+  {
    "apartmentKey": "11230-19",
    "aptSeq": "19",
    "apartmentName": "동답한신",
@@ -2758,7 +2792,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 35.5,
    "calculationVersion": "v1.1",
-   "rank": 80
+   "rank": 81
   },
   {
    "apartmentKey": "11530-3249",
@@ -2790,7 +2824,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 36.9,
    "calculationVersion": "v1.1",
-   "rank": 81
+   "rank": 82
   },
   {
    "apartmentKey": "11200-56",
@@ -2824,7 +2858,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.8,
    "calculationVersion": "v1.1",
-   "rank": 82
+   "rank": 83
   },
   {
    "apartmentKey": "11350-117",
@@ -2858,7 +2892,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 49.7,
    "calculationVersion": "v1.1",
-   "rank": 83
+   "rank": 84
   },
   {
    "apartmentKey": "11350-72",
@@ -2890,7 +2924,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 49.5,
    "calculationVersion": "v1.1",
-   "rank": 84
+   "rank": 85
   },
   {
    "apartmentKey": "11350-68",
@@ -2924,7 +2958,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 55.7,
    "calculationVersion": "v1.1",
-   "rank": 85
+   "rank": 86
   },
   {
    "apartmentKey": "11230-84",
@@ -2955,38 +2989,6 @@
    "directTradeWarning": false,
    "compositionWarning": false,
    "exclusiveAreaGroup": 116.7,
-   "calculationVersion": "v1.1",
-   "rank": 86
-  },
-  {
-   "apartmentKey": "11740-4804",
-   "aptSeq": "4804",
-   "apartmentName": "강동리버스트8단지",
-   "sidoCode": "11",
-   "sggCode": "11740",
-   "areaGroup": 60.0,
-   "buildYear": 2021,
-   "referenceMonth": "202609",
-   "baselineMedian": 1200000000,
-   "currentMedian": 1275000000.0,
-   "riseAmount": 75000000,
-   "riseRate": 6.25,
-   "baselineTradeCount": 5,
-   "currentTradeCount": 2,
-   "confidence": "medium",
-   "warnings": [],
-   "region": "11740 강일동",
-   "exactAreas": [
-    59.97
-   ],
-   "baselineFloorMedian": 10,
-   "currentFloorMedian": 13.5,
-   "baselineDirectTradeCount": 0,
-   "currentDirectTradeCount": 0,
-   "floorMixWarning": false,
-   "directTradeWarning": false,
-   "compositionWarning": false,
-   "exclusiveAreaGroup": 60.0,
    "calculationVersion": "v1.1",
    "rank": 87
   },
