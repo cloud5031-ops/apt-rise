@@ -7,16 +7,35 @@
  "sggCode": "41450",
  "dongName": "덕풍동",
  "referenceMonths": [
-  "202608",
-  "202609"
+  "202609",
+  "202610"
  ],
  "availableAreas": [
   84.956,
   84.962,
+  84.966,
   84.969,
   100.906
  ],
  "transactions": [
+  {
+   "contractDate": "2026-10-31",
+   "priceWon": 1165000000,
+   "floor": 4,
+   "exclusiveArea": 84.966,
+   "areaGroup": 85,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
+  {
+   "contractDate": "2026-10-08",
+   "priceWon": 1240000000,
+   "floor": 8,
+   "exclusiveArea": 84.962,
+   "areaGroup": 85,
+   "dealType": "중개거래",
+   "cancellationStatus": "COMPLETED"
+  },
   {
    "contractDate": "2026-09-02",
    "priceWon": 1190000000,
@@ -163,8 +182,8 @@
   }
  ],
  "historyCoverage": {
-  "startMonth": "202310",
-  "endMonth": "202609",
+  "startMonth": "202311",
+  "endMonth": "202610",
   "months": 36,
   "complete": true
  },
