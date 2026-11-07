@@ -3,7 +3,7 @@
  "referenceMonth": "202610",
  "status": "provisional",
  "validationStatus": "valid",
- "generatedAt": "2026-11-01T06:59:39.451816+09:00",
+ "generatedAt": "2026-11-08T07:15:41.338010+09:00",
  "calculationVersion": "v1.1",
  "schemaVersion": "v1.0",
  "includedSidoCodes": [
@@ -149,12 +149,12 @@
   "52800"
  ],
  "failedSggCodes": [],
- "rawTradeCount": 5046,
- "validTradeCount": 4957,
- "cancelledTradeCount": 89,
- "directTradeCount": 540,
- "candidateGroupCount": 3202,
- "filteredOutGroupCount": 3178,
+ "rawTradeCount": 5769,
+ "validTradeCount": 5649,
+ "cancelledTradeCount": 120,
+ "directTradeCount": 595,
+ "candidateGroupCount": 3545,
+ "filteredOutGroupCount": 3519,
  "items": [
   {
    "apartmentKey": "48170-485",
@@ -263,6 +263,42 @@
    "rank": 3
   },
   {
+   "apartmentKey": "47210-52",
+   "aptSeq": "52",
+   "apartmentName": "휴천현대1차",
+   "sidoCode": "47",
+   "sggCode": "47210",
+   "areaGroup": 74.5,
+   "buildYear": 1992,
+   "referenceMonth": "202610",
+   "baselineMedian": 130000000.0,
+   "currentMedian": 164000000.0,
+   "riseAmount": 34000000,
+   "riseRate": 26.15,
+   "baselineTradeCount": 2,
+   "currentTradeCount": 2,
+   "confidence": "low",
+   "warnings": [
+    "직거래 포함 이력 존재",
+    "비교/기준 기간 거래량 모두 최소 조건(2건)",
+    "20% 이상 급변동"
+   ],
+   "region": "47210 휴천동",
+   "exactAreas": [
+    74.507
+   ],
+   "baselineFloorMedian": 11,
+   "currentFloorMedian": 10.0,
+   "baselineDirectTradeCount": 1,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": false,
+   "directTradeWarning": true,
+   "compositionWarning": true,
+   "exclusiveAreaGroup": 74.5,
+   "calculationVersion": "v1.1",
+   "rank": 4
+  },
+  {
    "apartmentKey": "48123-19",
    "aptSeq": "19",
    "apartmentName": "대동청솔",
@@ -294,7 +330,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 4
+   "rank": 5
   },
   {
    "apartmentKey": "48127-790",
@@ -328,7 +364,43 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 102.0,
    "calculationVersion": "v1.1",
-   "rank": 5
+   "rank": 6
+  },
+  {
+   "apartmentKey": "48250-1640",
+   "aptSeq": "1640",
+   "apartmentName": "쌍용스윗닷홈",
+   "sidoCode": "48",
+   "sggCode": "48250",
+   "areaGroup": 85.0,
+   "buildYear": 2005,
+   "referenceMonth": "202610",
+   "baselineMedian": 206500000.0,
+   "currentMedian": 238500000.0,
+   "riseAmount": 32000000,
+   "riseRate": 15.5,
+   "baselineTradeCount": 2,
+   "currentTradeCount": 2,
+   "confidence": "low",
+   "warnings": [
+    "층수 차이(8층 이상 또는 구간 차이)",
+    "직거래 포함 이력 존재",
+    "비교/기준 기간 거래량 모두 최소 조건(2건)"
+   ],
+   "region": "48250 외동",
+   "exactAreas": [
+    84.979
+   ],
+   "baselineFloorMedian": 4,
+   "currentFloorMedian": 8.5,
+   "baselineDirectTradeCount": 1,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": true,
+   "directTradeWarning": true,
+   "compositionWarning": true,
+   "exclusiveAreaGroup": 85.0,
+   "calculationVersion": "v1.1",
+   "rank": 7
   },
   {
    "apartmentKey": "48129-568",
@@ -360,43 +432,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 6
-  },
-  {
-   "apartmentKey": "48123-156",
-   "aptSeq": "156",
-   "apartmentName": "노블파크",
-   "sidoCode": "48",
-   "sggCode": "48123",
-   "areaGroup": 85.0,
-   "buildYear": 2007,
-   "referenceMonth": "202610",
-   "baselineMedian": 605000000,
-   "currentMedian": 690000000.0,
-   "riseAmount": 85000000,
-   "riseRate": 14.05,
-   "baselineTradeCount": 13,
-   "currentTradeCount": 2,
-   "confidence": "low",
-   "warnings": [
-    "서로 다른 세부 전용면적 혼합"
-   ],
-   "region": "48123 반림동",
-   "exactAreas": [
-    84.97,
-    84.95,
-    84.98
-   ],
-   "baselineFloorMedian": 8,
-   "currentFloorMedian": 9.0,
-   "baselineDirectTradeCount": 0,
-   "currentDirectTradeCount": 0,
-   "floorMixWarning": false,
-   "directTradeWarning": false,
-   "compositionWarning": true,
-   "exclusiveAreaGroup": 85.0,
-   "calculationVersion": "v1.1",
-   "rank": 7
+   "rank": 8
   },
   {
    "apartmentKey": "48250-1971",
@@ -432,7 +468,44 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 8
+   "rank": 9
+  },
+  {
+   "apartmentKey": "48250-2001",
+   "aptSeq": "2001",
+   "apartmentName": "연지공원푸르지오",
+   "sidoCode": "48",
+   "sggCode": "48250",
+   "areaGroup": 85.0,
+   "buildYear": 2022,
+   "referenceMonth": "202610",
+   "baselineMedian": 470000000.0,
+   "currentMedian": 530000000,
+   "riseAmount": 60000000,
+   "riseRate": 12.77,
+   "baselineTradeCount": 4,
+   "currentTradeCount": 3,
+   "confidence": "low",
+   "warnings": [
+    "층수 차이(8층 이상 또는 구간 차이)",
+    "서로 다른 세부 전용면적 혼합",
+    "직거래 포함 이력 존재"
+   ],
+   "region": "48250 내동",
+   "exactAreas": [
+    84.969,
+    84.996
+   ],
+   "baselineFloorMedian": 5,
+   "currentFloorMedian": 15,
+   "baselineDirectTradeCount": 1,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": true,
+   "directTradeWarning": true,
+   "compositionWarning": true,
+   "exclusiveAreaGroup": 85.0,
+   "calculationVersion": "v1.1",
+   "rank": 10
   },
   {
    "apartmentKey": "48170-541",
@@ -467,39 +540,44 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 9
+   "rank": 11
   },
   {
-   "apartmentKey": "48123-64",
-   "aptSeq": "64",
-   "apartmentName": "현대2차",
+   "apartmentKey": "48123-156",
+   "aptSeq": "156",
+   "apartmentName": "노블파크",
    "sidoCode": "48",
    "sggCode": "48123",
-   "areaGroup": 69.8,
-   "buildYear": 1989,
+   "areaGroup": 85.0,
+   "buildYear": 2007,
    "referenceMonth": "202610",
-   "baselineMedian": 465000000,
-   "currentMedian": 515000000.0,
-   "riseAmount": 50000000,
-   "riseRate": 10.75,
-   "baselineTradeCount": 9,
-   "currentTradeCount": 2,
-   "confidence": "medium",
-   "warnings": [],
+   "baselineMedian": 605000000,
+   "currentMedian": 670000000,
+   "riseAmount": 65000000,
+   "riseRate": 10.74,
+   "baselineTradeCount": 13,
+   "currentTradeCount": 3,
+   "confidence": "low",
+   "warnings": [
+    "서로 다른 세부 전용면적 혼합",
+    "직거래 포함 이력 존재"
+   ],
    "region": "48123 반림동",
    "exactAreas": [
-    69.84
+    84.97,
+    84.95,
+    84.98
    ],
-   "baselineFloorMedian": 7,
-   "currentFloorMedian": 12.5,
+   "baselineFloorMedian": 8,
+   "currentFloorMedian": 13.0,
    "baselineDirectTradeCount": 0,
-   "currentDirectTradeCount": 0,
+   "currentDirectTradeCount": 1,
    "floorMixWarning": false,
-   "directTradeWarning": false,
-   "compositionWarning": false,
-   "exclusiveAreaGroup": 69.8,
+   "directTradeWarning": true,
+   "compositionWarning": true,
+   "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 10
+   "rank": 12
   },
   {
    "apartmentKey": "48240-395",
@@ -536,7 +614,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 11
+   "rank": 13
   },
   {
    "apartmentKey": "48170-487",
@@ -573,7 +651,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 12
+   "rank": 14
   },
   {
    "apartmentKey": "52130-543",
@@ -610,7 +688,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 13
+   "rank": 15
   },
   {
    "apartmentKey": "48125-554",
@@ -647,7 +725,73 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 14
+   "rank": 16
+  },
+  {
+   "apartmentKey": "48123-64",
+   "aptSeq": "64",
+   "apartmentName": "현대2차",
+   "sidoCode": "48",
+   "sggCode": "48123",
+   "areaGroup": 69.8,
+   "buildYear": 1989,
+   "referenceMonth": "202610",
+   "baselineMedian": 465000000,
+   "currentMedian": 510000000,
+   "riseAmount": 45000000,
+   "riseRate": 9.68,
+   "baselineTradeCount": 9,
+   "currentTradeCount": 3,
+   "confidence": "medium",
+   "warnings": [],
+   "region": "48123 반림동",
+   "exactAreas": [
+    69.84
+   ],
+   "baselineFloorMedian": 7,
+   "currentFloorMedian": 10,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": false,
+   "directTradeWarning": false,
+   "compositionWarning": false,
+   "exclusiveAreaGroup": 69.8,
+   "calculationVersion": "v1.1",
+   "rank": 17
+  },
+  {
+   "apartmentKey": "47190-1696",
+   "aptSeq": "1696",
+   "apartmentName": "구미확장단지골드클래스",
+   "sidoCode": "47",
+   "sggCode": "47190",
+   "areaGroup": 85.0,
+   "buildYear": 2017,
+   "referenceMonth": "202610",
+   "baselineMedian": 364000000.0,
+   "currentMedian": 397500000.0,
+   "riseAmount": 33500000,
+   "riseRate": 9.2,
+   "baselineTradeCount": 6,
+   "currentTradeCount": 4,
+   "confidence": "low",
+   "warnings": [
+    "층수 차이(8층 이상 또는 구간 차이)"
+   ],
+   "region": "47190 산동읍 신당리",
+   "exactAreas": [
+    84.9696
+   ],
+   "baselineFloorMedian": 5.0,
+   "currentFloorMedian": 13.0,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": true,
+   "directTradeWarning": false,
+   "compositionWarning": true,
+   "exclusiveAreaGroup": 85.0,
+   "calculationVersion": "v1.1",
+   "rank": 18
   },
   {
    "apartmentKey": "48123-63",
@@ -682,41 +826,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.5,
    "calculationVersion": "v1.1",
-   "rank": 15
-  },
-  {
-   "apartmentKey": "47190-1696",
-   "aptSeq": "1696",
-   "apartmentName": "구미확장단지골드클래스",
-   "sidoCode": "47",
-   "sggCode": "47190",
-   "areaGroup": 85.0,
-   "buildYear": 2017,
-   "referenceMonth": "202610",
-   "baselineMedian": 364000000.0,
-   "currentMedian": 395000000,
-   "riseAmount": 31000000,
-   "riseRate": 8.52,
-   "baselineTradeCount": 6,
-   "currentTradeCount": 3,
-   "confidence": "low",
-   "warnings": [
-    "층수 차이(8층 이상 또는 구간 차이)"
-   ],
-   "region": "47190 산동읍 신당리",
-   "exactAreas": [
-    84.9696
-   ],
-   "baselineFloorMedian": 5.0,
-   "currentFloorMedian": 13,
-   "baselineDirectTradeCount": 0,
-   "currentDirectTradeCount": 0,
-   "floorMixWarning": true,
-   "directTradeWarning": false,
-   "compositionWarning": true,
-   "exclusiveAreaGroup": 85.0,
-   "calculationVersion": "v1.1",
-   "rank": 16
+   "rank": 19
   },
   {
    "apartmentKey": "52130-548",
@@ -752,75 +862,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 17
-  },
-  {
-   "apartmentKey": "48170-506",
-   "aptSeq": "506",
-   "apartmentName": "엠코타운더프라하",
-   "sidoCode": "48",
-   "sggCode": "48170",
-   "areaGroup": 85.0,
-   "buildYear": 2014,
-   "referenceMonth": "202610",
-   "baselineMedian": 539000000,
-   "currentMedian": 580000000,
-   "riseAmount": 41000000,
-   "riseRate": 7.61,
-   "baselineTradeCount": 5,
-   "currentTradeCount": 3,
-   "confidence": "low",
-   "warnings": [
-    "층수 차이(8층 이상 또는 구간 차이)"
-   ],
-   "region": "48170 평거동",
-   "exactAreas": [
-    84.9651
-   ],
-   "baselineFloorMedian": 26,
-   "currentFloorMedian": 10,
-   "baselineDirectTradeCount": 0,
-   "currentDirectTradeCount": 0,
-   "floorMixWarning": true,
-   "directTradeWarning": false,
-   "compositionWarning": true,
-   "exclusiveAreaGroup": 85.0,
-   "calculationVersion": "v1.1",
-   "rank": 18
-  },
-  {
-   "apartmentKey": "52111-602",
-   "aptSeq": "602",
-   "apartmentName": "코오롱스카이타워",
-   "sidoCode": "52",
-   "sggCode": "52111",
-   "areaGroup": 84.2,
-   "buildYear": 2015,
-   "referenceMonth": "202610",
-   "baselineMedian": 517000000,
-   "currentMedian": 556000000.0,
-   "riseAmount": 39000000,
-   "riseRate": 7.54,
-   "baselineTradeCount": 9,
-   "currentTradeCount": 2,
-   "confidence": "low",
-   "warnings": [
-    "직거래 포함 이력 존재"
-   ],
-   "region": "52111 효자동3가",
-   "exactAreas": [
-    84.1884
-   ],
-   "baselineFloorMedian": 27.5,
-   "currentFloorMedian": 35.0,
-   "baselineDirectTradeCount": 1,
-   "currentDirectTradeCount": 0,
-   "floorMixWarning": false,
-   "directTradeWarning": true,
-   "compositionWarning": true,
-   "exclusiveAreaGroup": 84.2,
-   "calculationVersion": "v1.1",
-   "rank": 19
+   "rank": 20
   },
   {
    "apartmentKey": "47130-1157",
@@ -856,79 +898,112 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.7,
    "calculationVersion": "v1.1",
-   "rank": 20
+   "rank": 21
   },
   {
-   "apartmentKey": "48250-2001",
-   "aptSeq": "2001",
-   "apartmentName": "연지공원푸르지오",
-   "sidoCode": "48",
-   "sggCode": "48250",
-   "areaGroup": 85.0,
-   "buildYear": 2022,
+   "apartmentKey": "52111-602",
+   "aptSeq": "602",
+   "apartmentName": "코오롱스카이타워",
+   "sidoCode": "52",
+   "sggCode": "52111",
+   "areaGroup": 84.2,
+   "buildYear": 2015,
    "referenceMonth": "202610",
-   "baselineMedian": 470000000.0,
-   "currentMedian": 502500000.0,
-   "riseAmount": 32500000,
-   "riseRate": 6.91,
-   "baselineTradeCount": 4,
+   "baselineMedian": 517000000,
+   "currentMedian": 547000000,
+   "riseAmount": 30000000,
+   "riseRate": 5.8,
+   "baselineTradeCount": 9,
+   "currentTradeCount": 3,
+   "confidence": "low",
+   "warnings": [
+    "직거래 포함 이력 존재"
+   ],
+   "region": "52111 효자동3가",
+   "exactAreas": [
+    84.1884
+   ],
+   "baselineFloorMedian": 27.5,
+   "currentFloorMedian": 30,
+   "baselineDirectTradeCount": 1,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": false,
+   "directTradeWarning": true,
+   "compositionWarning": true,
+   "exclusiveAreaGroup": 84.2,
+   "calculationVersion": "v1.1",
+   "rank": 22
+  },
+  {
+   "apartmentKey": "48170-506",
+   "aptSeq": "506",
+   "apartmentName": "엠코타운더프라하",
+   "sidoCode": "48",
+   "sggCode": "48170",
+   "areaGroup": 85.0,
+   "buildYear": 2014,
+   "referenceMonth": "202610",
+   "baselineMedian": 539000000,
+   "currentMedian": 570000000.0,
+   "riseAmount": 31000000,
+   "riseRate": 5.75,
+   "baselineTradeCount": 5,
+   "currentTradeCount": 4,
+   "confidence": "low",
+   "warnings": [
+    "층수 차이(8층 이상 또는 구간 차이)"
+   ],
+   "region": "48170 평거동",
+   "exactAreas": [
+    84.9651
+   ],
+   "baselineFloorMedian": 26,
+   "currentFloorMedian": 8.5,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": true,
+   "directTradeWarning": false,
+   "compositionWarning": true,
+   "exclusiveAreaGroup": 85.0,
+   "calculationVersion": "v1.1",
+   "rank": 23
+  },
+  {
+   "apartmentKey": "48170-549",
+   "aptSeq": "549",
+   "apartmentName": "포레나신진주",
+   "sidoCode": "48",
+   "sggCode": "48170",
+   "areaGroup": 85.0,
+   "buildYear": 2019,
+   "referenceMonth": "202610",
+   "baselineMedian": 579000000.0,
+   "currentMedian": 611000000.0,
+   "riseAmount": 32000000,
+   "riseRate": 5.53,
+   "baselineTradeCount": 2,
    "currentTradeCount": 2,
    "confidence": "low",
    "warnings": [
     "층수 차이(8층 이상 또는 구간 차이)",
     "서로 다른 세부 전용면적 혼합",
-    "직거래 포함 이력 존재"
+    "비교/기준 기간 거래량 모두 최소 조건(2건)"
    ],
-   "region": "48250 내동",
+   "region": "48170 가좌동",
    "exactAreas": [
-    84.969,
-    84.996
+    84.9515,
+    84.9543
    ],
-   "baselineFloorMedian": 5,
-   "currentFloorMedian": 12.0,
-   "baselineDirectTradeCount": 1,
-   "currentDirectTradeCount": 0,
-   "floorMixWarning": true,
-   "directTradeWarning": true,
-   "compositionWarning": true,
-   "exclusiveAreaGroup": 85.0,
-   "calculationVersion": "v1.1",
-   "rank": 21
-  },
-  {
-   "apartmentKey": "48127-841",
-   "aptSeq": "841",
-   "apartmentName": "창원롯데캐슬센텀골드",
-   "sidoCode": "48",
-   "sggCode": "48127",
-   "areaGroup": 85.0,
-   "buildYear": 2023,
-   "referenceMonth": "202610",
-   "baselineMedian": 589500000.0,
-   "currentMedian": 623000000.0,
-   "riseAmount": 33500000,
-   "riseRate": 5.68,
-   "baselineTradeCount": 8,
-   "currentTradeCount": 2,
-   "confidence": "low",
-   "warnings": [
-    "서로 다른 세부 전용면적 혼합"
-   ],
-   "region": "48127 양덕동",
-   "exactAreas": [
-    84.9653,
-    84.9774
-   ],
-   "baselineFloorMedian": 21.5,
-   "currentFloorMedian": 29.0,
+   "baselineFloorMedian": 17.0,
+   "currentFloorMedian": 14.5,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
-   "floorMixWarning": false,
+   "floorMixWarning": true,
    "directTradeWarning": false,
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 22
+   "rank": 24
   },
   {
    "apartmentKey": "48127-790",
@@ -962,7 +1037,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 114.1,
    "calculationVersion": "v1.1",
-   "rank": 23
+   "rank": 25
   },
   {
    "apartmentKey": "52111-654",
@@ -997,7 +1072,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.8,
    "calculationVersion": "v1.1",
-   "rank": 24
+   "rank": 26
   }
  ]
 }

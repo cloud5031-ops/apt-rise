@@ -3,7 +3,7 @@
  "referenceMonth": "202610",
  "status": "provisional",
  "validationStatus": "valid",
- "generatedAt": "2026-11-01T06:55:02.309738+09:00",
+ "generatedAt": "2026-11-08T07:09:58.007347+09:00",
  "calculationVersion": "v1.1",
  "schemaVersion": "v1.0",
  "includedSidoCodes": [
@@ -119,47 +119,84 @@
   "51830"
  ],
  "failedSggCodes": [],
- "rawTradeCount": 4383,
- "validTradeCount": 4294,
- "cancelledTradeCount": 89,
- "directTradeCount": 405,
- "candidateGroupCount": 2635,
- "filteredOutGroupCount": 2619,
+ "rawTradeCount": 5019,
+ "validTradeCount": 4912,
+ "cancelledTradeCount": 107,
+ "directTradeCount": 458,
+ "candidateGroupCount": 2873,
+ "filteredOutGroupCount": 2850,
  "items": [
   {
-   "apartmentKey": "51130-16",
-   "aptSeq": "16",
-   "apartmentName": "대성현대",
-   "sidoCode": "51",
-   "sggCode": "51130",
-   "areaGroup": 75.4,
-   "buildYear": 1991,
+   "apartmentKey": "43130-70",
+   "aptSeq": "70",
+   "apartmentName": "용산주공3차",
+   "sidoCode": "43",
+   "sggCode": "43130",
+   "areaGroup": 51.5,
+   "buildYear": 2003,
    "referenceMonth": "202610",
-   "baselineMedian": 95000000,
-   "currentMedian": 128500000.0,
-   "riseAmount": 33500000,
-   "riseRate": 35.26,
-   "baselineTradeCount": 3,
+   "baselineMedian": 127500000.0,
+   "currentMedian": 165000000.0,
+   "riseAmount": 37500000,
+   "riseRate": 29.41,
+   "baselineTradeCount": 2,
+   "currentTradeCount": 2,
+   "confidence": "low",
+   "warnings": [
+    "비교/기준 기간 거래량 모두 최소 조건(2건)",
+    "20% 이상 급변동"
+   ],
+   "region": "43130 용산동",
+   "exactAreas": [
+    51.49
+   ],
+   "baselineFloorMedian": 7.0,
+   "currentFloorMedian": 10.0,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": false,
+   "directTradeWarning": false,
+   "compositionWarning": true,
+   "exclusiveAreaGroup": 51.5,
+   "calculationVersion": "v1.1",
+   "rank": 1
+  },
+  {
+   "apartmentKey": "51170-24",
+   "aptSeq": "24",
+   "apartmentName": "현대1차",
+   "sidoCode": "51",
+   "sggCode": "51170",
+   "areaGroup": 84.9,
+   "buildYear": 1992,
+   "referenceMonth": "202610",
+   "baselineMedian": 141000000.0,
+   "currentMedian": 175750000.0,
+   "riseAmount": 34750000,
+   "riseRate": 24.65,
+   "baselineTradeCount": 2,
    "currentTradeCount": 2,
    "confidence": "low",
    "warnings": [
     "층수 차이(8층 이상 또는 구간 차이)",
+    "직거래 포함 이력 존재",
+    "비교/기준 기간 거래량 모두 최소 조건(2건)",
     "20% 이상 급변동"
    ],
-   "region": "51130 명륜동",
+   "region": "51170 천곡동",
    "exactAreas": [
-    75.42
+    84.945
    ],
-   "baselineFloorMedian": 6,
-   "currentFloorMedian": 5.0,
+   "baselineFloorMedian": 4.0,
+   "currentFloorMedian": 11,
    "baselineDirectTradeCount": 0,
-   "currentDirectTradeCount": 0,
+   "currentDirectTradeCount": 1,
    "floorMixWarning": true,
-   "directTradeWarning": false,
+   "directTradeWarning": true,
    "compositionWarning": true,
-   "exclusiveAreaGroup": 75.4,
+   "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 1
+   "rank": 2
   },
   {
    "apartmentKey": "44133-888",
@@ -193,7 +230,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 2
+   "rank": 3
   },
   {
    "apartmentKey": "43112-279",
@@ -225,7 +262,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 59.7,
    "calculationVersion": "v1.1",
-   "rank": 3
+   "rank": 4
   },
   {
    "apartmentKey": "36110-419",
@@ -257,7 +294,77 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 95.6,
    "calculationVersion": "v1.1",
-   "rank": 4
+   "rank": 5
+  },
+  {
+   "apartmentKey": "44200-723",
+   "aptSeq": "723",
+   "apartmentName": "신영한들물빛도시지웰시티센트럴푸르지오3단지",
+   "sidoCode": "44",
+   "sggCode": "44200",
+   "areaGroup": 84.7,
+   "buildYear": 2022,
+   "referenceMonth": "202610",
+   "baselineMedian": 719000000.0,
+   "currentMedian": 818500000.0,
+   "riseAmount": 99500000,
+   "riseRate": 13.84,
+   "baselineTradeCount": 12,
+   "currentTradeCount": 2,
+   "confidence": "low",
+   "warnings": [
+    "층수 차이(8층 이상 또는 구간 차이)"
+   ],
+   "region": "44200 탕정면 매곡리",
+   "exactAreas": [
+    84.716
+   ],
+   "baselineFloorMedian": 11.0,
+   "currentFloorMedian": 21.0,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": true,
+   "directTradeWarning": false,
+   "compositionWarning": true,
+   "exclusiveAreaGroup": 84.7,
+   "calculationVersion": "v1.1",
+   "rank": 6
+  },
+  {
+   "apartmentKey": "36110-186",
+   "aptSeq": "186",
+   "apartmentName": "조치원죽림자이",
+   "sidoCode": "36",
+   "sggCode": "36110",
+   "areaGroup": 84.7,
+   "buildYear": 2008,
+   "referenceMonth": "202610",
+   "baselineMedian": 245000000,
+   "currentMedian": 278000000.0,
+   "riseAmount": 33000000,
+   "riseRate": 13.47,
+   "baselineTradeCount": 5,
+   "currentTradeCount": 6,
+   "confidence": "medium",
+   "warnings": [
+    "서로 다른 세부 전용면적 혼합",
+    "직거래 포함 이력 존재"
+   ],
+   "region": "36110 조치원읍 죽림리",
+   "exactAreas": [
+    84.6641,
+    84.6682
+   ],
+   "baselineFloorMedian": 3,
+   "currentFloorMedian": 5,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 1,
+   "floorMixWarning": false,
+   "directTradeWarning": true,
+   "compositionWarning": true,
+   "exclusiveAreaGroup": 84.7,
+   "calculationVersion": "v1.1",
+   "rank": 7
   },
   {
    "apartmentKey": "51130-345",
@@ -276,8 +383,8 @@
    "currentTradeCount": 3,
    "confidence": "low",
    "warnings": [
-    "층수 차이(8층 이상 또는 구간 차이)",
-    "서로 다른 세부 전용면적 혼합"
+    "서로 다른 세부 전용면적 혼합",
+    "직거래 포함 이력 존재"
    ],
    "region": "51130 무실동",
    "exactAreas": [
@@ -285,15 +392,15 @@
     84.9616
    ],
    "baselineFloorMedian": 10.0,
-   "currentFloorMedian": 16,
+   "currentFloorMedian": 13.5,
    "baselineDirectTradeCount": 0,
-   "currentDirectTradeCount": 0,
-   "floorMixWarning": true,
-   "directTradeWarning": false,
+   "currentDirectTradeCount": 1,
+   "floorMixWarning": false,
+   "directTradeWarning": true,
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 5
+   "rank": 8
   },
   {
    "apartmentKey": "44131-980",
@@ -327,7 +434,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 6
+   "rank": 9
   },
   {
    "apartmentKey": "51130-344",
@@ -339,11 +446,11 @@
    "buildYear": 2015,
    "referenceMonth": "202610",
    "baselineMedian": 370000000,
-   "currentMedian": 410000000,
-   "riseAmount": 40000000,
-   "riseRate": 10.81,
+   "currentMedian": 407000000.0,
+   "riseAmount": 37000000,
+   "riseRate": 10.0,
    "baselineTradeCount": 11,
-   "currentTradeCount": 5,
+   "currentTradeCount": 6,
    "confidence": "medium",
    "warnings": [
     "층수 차이(8층 이상 또는 구간 차이)",
@@ -355,7 +462,7 @@
     84.9671
    ],
    "baselineFloorMedian": 8,
-   "currentFloorMedian": 18,
+   "currentFloorMedian": 15.5,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -363,7 +470,109 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 7
+   "rank": 10
+  },
+  {
+   "apartmentKey": "36110-278",
+   "aptSeq": "278",
+   "apartmentName": "가재마을12단지",
+   "sidoCode": "36",
+   "sggCode": "36110",
+   "areaGroup": 85.0,
+   "buildYear": 2015,
+   "referenceMonth": "202610",
+   "baselineMedian": 555000000,
+   "currentMedian": 603000000,
+   "riseAmount": 48000000,
+   "riseRate": 8.65,
+   "baselineTradeCount": 3,
+   "currentTradeCount": 3,
+   "confidence": "low",
+   "warnings": [
+    "서로 다른 세부 전용면적 혼합",
+    "직거래 포함 이력 존재"
+   ],
+   "region": "36110 종촌동",
+   "exactAreas": [
+    84.9941,
+    84.9911
+   ],
+   "baselineFloorMedian": 13.5,
+   "currentFloorMedian": 11,
+   "baselineDirectTradeCount": 1,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": false,
+   "directTradeWarning": true,
+   "compositionWarning": true,
+   "exclusiveAreaGroup": 85.0,
+   "calculationVersion": "v1.1",
+   "rank": 11
+  },
+  {
+   "apartmentKey": "44200-602",
+   "aptSeq": "602",
+   "apartmentName": "탕정삼성트라팰리스(5단지)",
+   "sidoCode": "44",
+   "sggCode": "44200",
+   "areaGroup": 84.7,
+   "buildYear": 2014,
+   "referenceMonth": "202610",
+   "baselineMedian": 405000000,
+   "currentMedian": 440000000,
+   "riseAmount": 35000000,
+   "riseRate": 8.64,
+   "baselineTradeCount": 3,
+   "currentTradeCount": 3,
+   "confidence": "low",
+   "warnings": [
+    "층수 차이(8층 이상 또는 구간 차이)"
+   ],
+   "region": "44200 탕정면 명암리",
+   "exactAreas": [
+    84.68
+   ],
+   "baselineFloorMedian": 14,
+   "currentFloorMedian": 31,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": true,
+   "directTradeWarning": false,
+   "compositionWarning": true,
+   "exclusiveAreaGroup": 84.7,
+   "calculationVersion": "v1.1",
+   "rank": 12
+  },
+  {
+   "apartmentKey": "44200-725",
+   "aptSeq": "725",
+   "apartmentName": "한들물빛도시신영지웰시티센트럴푸르지오1단지",
+   "sidoCode": "44",
+   "sggCode": "44200",
+   "areaGroup": 85.0,
+   "buildYear": 2022,
+   "referenceMonth": "202610",
+   "baselineMedian": 677500000.0,
+   "currentMedian": 730000000,
+   "riseAmount": 52500000,
+   "riseRate": 7.75,
+   "baselineTradeCount": 6,
+   "currentTradeCount": 5,
+   "confidence": "high",
+   "warnings": [],
+   "region": "44200 탕정면 매곡리",
+   "exactAreas": [
+    84.9779
+   ],
+   "baselineFloorMedian": 15.5,
+   "currentFloorMedian": 17,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": false,
+   "directTradeWarning": false,
+   "compositionWarning": false,
+   "exclusiveAreaGroup": 85.0,
+   "calculationVersion": "v1.1",
+   "rank": 13
   },
   {
    "apartmentKey": "51150-432",
@@ -397,39 +606,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 118.1,
    "calculationVersion": "v1.1",
-   "rank": 8
-  },
-  {
-   "apartmentKey": "44200-725",
-   "aptSeq": "725",
-   "apartmentName": "한들물빛도시신영지웰시티센트럴푸르지오1단지",
-   "sidoCode": "44",
-   "sggCode": "44200",
-   "areaGroup": 85.0,
-   "buildYear": 2022,
-   "referenceMonth": "202610",
-   "baselineMedian": 677500000.0,
-   "currentMedian": 725000000.0,
-   "riseAmount": 47500000,
-   "riseRate": 7.01,
-   "baselineTradeCount": 6,
-   "currentTradeCount": 4,
-   "confidence": "medium",
-   "warnings": [],
-   "region": "44200 탕정면 매곡리",
-   "exactAreas": [
-    84.9779
-   ],
-   "baselineFloorMedian": 15.5,
-   "currentFloorMedian": 23.0,
-   "baselineDirectTradeCount": 0,
-   "currentDirectTradeCount": 0,
-   "floorMixWarning": false,
-   "directTradeWarning": false,
-   "compositionWarning": false,
-   "exclusiveAreaGroup": 85.0,
-   "calculationVersion": "v1.1",
-   "rank": 9
+   "rank": 14
   },
   {
    "apartmentKey": "36110-421",
@@ -465,7 +642,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.8,
    "calculationVersion": "v1.1",
-   "rank": 10
+   "rank": 15
   },
   {
    "apartmentKey": "36110-344",
@@ -501,7 +678,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 11
+   "rank": 16
   },
   {
    "apartmentKey": "36110-273",
@@ -538,7 +715,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 12
+   "rank": 17
   },
   {
    "apartmentKey": "36110-385",
@@ -572,7 +749,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 13
+   "rank": 18
   },
   {
    "apartmentKey": "36110-400",
@@ -607,7 +784,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 70.0,
    "calculationVersion": "v1.1",
-   "rank": 14
+   "rank": 19
   },
   {
    "apartmentKey": "36110-399",
@@ -643,7 +820,75 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 15
+   "rank": 20
+  },
+  {
+   "apartmentKey": "36110-373",
+   "aptSeq": "373",
+   "apartmentName": "가온마을1단지(힐스테이트)",
+   "sidoCode": "36",
+   "sggCode": "36110",
+   "areaGroup": 85.0,
+   "buildYear": 2018,
+   "referenceMonth": "202610",
+   "baselineMedian": 670000000,
+   "currentMedian": 700000000,
+   "riseAmount": 30000000,
+   "riseRate": 4.48,
+   "baselineTradeCount": 7,
+   "currentTradeCount": 3,
+   "confidence": "low",
+   "warnings": [
+    "서로 다른 세부 전용면적 혼합"
+   ],
+   "region": "36110 다정동",
+   "exactAreas": [
+    84.975,
+    84.9576,
+    84.9676
+   ],
+   "baselineFloorMedian": 14,
+   "currentFloorMedian": 10,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": false,
+   "directTradeWarning": false,
+   "compositionWarning": true,
+   "exclusiveAreaGroup": 85.0,
+   "calculationVersion": "v1.1",
+   "rank": 21
+  },
+  {
+   "apartmentKey": "44200-733",
+   "aptSeq": "733",
+   "apartmentName": "한들물빛도시예미지",
+   "sidoCode": "44",
+   "sggCode": "44200",
+   "areaGroup": 102.5,
+   "buildYear": 2022,
+   "referenceMonth": "202610",
+   "baselineMedian": 690000000.0,
+   "currentMedian": 720000000,
+   "riseAmount": 30000000,
+   "riseRate": 4.35,
+   "baselineTradeCount": 6,
+   "currentTradeCount": 3,
+   "confidence": "medium",
+   "warnings": [],
+   "region": "44200 탕정면 매곡리",
+   "exactAreas": [
+    102.4595
+   ],
+   "baselineFloorMedian": 15.0,
+   "currentFloorMedian": 9,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": false,
+   "directTradeWarning": false,
+   "compositionWarning": false,
+   "exclusiveAreaGroup": 102.5,
+   "calculationVersion": "v1.1",
+   "rank": 22
   },
   {
    "apartmentKey": "43113-426",
@@ -655,29 +900,27 @@
    "buildYear": 2010,
    "referenceMonth": "202610",
    "baselineMedian": 1620000000,
-   "currentMedian": 1675000000.0,
-   "riseAmount": 55000000,
-   "riseRate": 3.4,
+   "currentMedian": 1670000000,
+   "riseAmount": 50000000,
+   "riseRate": 3.09,
    "baselineTradeCount": 3,
-   "currentTradeCount": 4,
-   "confidence": "low",
-   "warnings": [
-    "층수 차이(8층 이상 또는 구간 차이)"
-   ],
+   "currentTradeCount": 5,
+   "confidence": "medium",
+   "warnings": [],
    "region": "43113 복대동",
    "exactAreas": [
     152.652
    ],
    "baselineFloorMedian": 19,
-   "currentFloorMedian": 30.5,
+   "currentFloorMedian": 26,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
-   "floorMixWarning": true,
+   "floorMixWarning": false,
    "directTradeWarning": false,
-   "compositionWarning": true,
+   "compositionWarning": false,
    "exclusiveAreaGroup": 152.7,
    "calculationVersion": "v1.1",
-   "rank": 16
+   "rank": 23
   }
  ]
 }

@@ -3,7 +3,7 @@
  "referenceMonth": "202610",
  "status": "provisional",
  "validationStatus": "valid",
- "generatedAt": "2026-11-01T06:50:59.023891+09:00",
+ "generatedAt": "2026-11-08T07:05:48.762757+09:00",
  "calculationVersion": "v1.1",
  "schemaVersion": "v1.0",
  "includedSidoCodes": [
@@ -88,12 +88,12 @@
   "31710"
  ],
  "failedSggCodes": [],
- "rawTradeCount": 5543,
- "validTradeCount": 5445,
- "cancelledTradeCount": 98,
- "directTradeCount": 329,
- "candidateGroupCount": 3642,
- "filteredOutGroupCount": 3588,
+ "rawTradeCount": 6437,
+ "validTradeCount": 6301,
+ "cancelledTradeCount": 136,
+ "directTradeCount": 372,
+ "candidateGroupCount": 4027,
+ "filteredOutGroupCount": 3969,
  "items": [
   {
    "apartmentKey": "27290-167",
@@ -105,11 +105,11 @@
    "buildYear": 1997,
    "referenceMonth": "202610",
    "baselineMedian": 107000000,
-   "currentMedian": 157250000.0,
-   "riseAmount": 50250000,
-   "riseRate": 46.96,
+   "currentMedian": 153000000,
+   "riseAmount": 46000000,
+   "riseRate": 42.99,
    "baselineTradeCount": 3,
-   "currentTradeCount": 4,
+   "currentTradeCount": 5,
    "confidence": "low",
    "warnings": [
     "층수 차이(8층 이상 또는 구간 차이)",
@@ -121,7 +121,7 @@
     59.63
    ],
    "baselineFloorMedian": 4.5,
-   "currentFloorMedian": 8,
+   "currentFloorMedian": 7.0,
    "baselineDirectTradeCount": 1,
    "currentDirectTradeCount": 1,
    "floorMixWarning": true,
@@ -235,41 +235,6 @@
    "rank": 4
   },
   {
-   "apartmentKey": "27260-193",
-   "aptSeq": "193",
-   "apartmentName": "사월보성",
-   "sidoCode": "27",
-   "sggCode": "27260",
-   "areaGroup": 60.0,
-   "buildYear": 1996,
-   "referenceMonth": "202610",
-   "baselineMedian": 134000000,
-   "currentMedian": 170000000.0,
-   "riseAmount": 36000000,
-   "riseRate": 26.87,
-   "baselineTradeCount": 7,
-   "currentTradeCount": 2,
-   "confidence": "low",
-   "warnings": [
-    "직거래 포함 이력 존재",
-    "20% 이상 급변동"
-   ],
-   "region": "27260 사월동",
-   "exactAreas": [
-    59.97
-   ],
-   "baselineFloorMedian": 11.0,
-   "currentFloorMedian": 6.5,
-   "baselineDirectTradeCount": 1,
-   "currentDirectTradeCount": 0,
-   "floorMixWarning": false,
-   "directTradeWarning": true,
-   "compositionWarning": true,
-   "exclusiveAreaGroup": 60.0,
-   "calculationVersion": "v1.1",
-   "rank": 5
-  },
-  {
    "apartmentKey": "26350-134",
    "aptSeq": "134",
    "apartmentName": "SKVIEW",
@@ -299,6 +264,42 @@
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
    "directTradeWarning": false,
+   "compositionWarning": true,
+   "exclusiveAreaGroup": 60.0,
+   "calculationVersion": "v1.1",
+   "rank": 5
+  },
+  {
+   "apartmentKey": "27260-193",
+   "aptSeq": "193",
+   "apartmentName": "사월보성",
+   "sidoCode": "27",
+   "sggCode": "27260",
+   "areaGroup": 60.0,
+   "buildYear": 1996,
+   "referenceMonth": "202610",
+   "baselineMedian": 134000000,
+   "currentMedian": 164000000,
+   "riseAmount": 30000000,
+   "riseRate": 22.39,
+   "baselineTradeCount": 7,
+   "currentTradeCount": 3,
+   "confidence": "low",
+   "warnings": [
+    "층수 차이(8층 이상 또는 구간 차이)",
+    "직거래 포함 이력 존재",
+    "20% 이상 급변동"
+   ],
+   "region": "27260 사월동",
+   "exactAreas": [
+    59.97
+   ],
+   "baselineFloorMedian": 11.0,
+   "currentFloorMedian": 5,
+   "baselineDirectTradeCount": 1,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": true,
+   "directTradeWarning": true,
    "compositionWarning": true,
    "exclusiveAreaGroup": 60.0,
    "calculationVersion": "v1.1",
@@ -350,11 +351,11 @@
    "buildYear": 1994,
    "referenceMonth": "202610",
    "baselineMedian": 215000000,
-   "currentMedian": 260000000.0,
+   "currentMedian": 260000000,
    "riseAmount": 45000000,
    "riseRate": 20.93,
    "baselineTradeCount": 3,
-   "currentTradeCount": 2,
+   "currentTradeCount": 3,
    "confidence": "low",
    "warnings": [
     "20% 이상 급변동"
@@ -364,7 +365,7 @@
     84.96
    ],
    "baselineFloorMedian": 13,
-   "currentFloorMedian": 8.0,
+   "currentFloorMedian": 11,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -618,72 +619,6 @@
    "rank": 15
   },
   {
-   "apartmentKey": "30170-94",
-   "aptSeq": "94",
-   "apartmentName": "다모아",
-   "sidoCode": "30",
-   "sggCode": "30170",
-   "areaGroup": 84.4,
-   "buildYear": 1994,
-   "referenceMonth": "202610",
-   "baselineMedian": 395000000.0,
-   "currentMedian": 449000000,
-   "riseAmount": 54000000,
-   "riseRate": 13.67,
-   "baselineTradeCount": 14,
-   "currentTradeCount": 3,
-   "confidence": "medium",
-   "warnings": [],
-   "region": "30170 월평동",
-   "exactAreas": [
-    84.36
-   ],
-   "baselineFloorMedian": 9.5,
-   "currentFloorMedian": 6,
-   "baselineDirectTradeCount": 0,
-   "currentDirectTradeCount": 0,
-   "floorMixWarning": false,
-   "directTradeWarning": false,
-   "compositionWarning": false,
-   "exclusiveAreaGroup": 84.4,
-   "calculationVersion": "v1.1",
-   "rank": 16
-  },
-  {
-   "apartmentKey": "27230-184",
-   "aptSeq": "184",
-   "apartmentName": "부영그린타운(2단지)",
-   "sidoCode": "27",
-   "sggCode": "27230",
-   "areaGroup": 81.2,
-   "buildYear": 2003,
-   "referenceMonth": "202610",
-   "baselineMedian": 260000000.0,
-   "currentMedian": 295000000,
-   "riseAmount": 35000000,
-   "riseRate": 13.46,
-   "baselineTradeCount": 6,
-   "currentTradeCount": 3,
-   "confidence": "low",
-   "warnings": [
-    "직거래 포함 이력 존재"
-   ],
-   "region": "27230 동천동",
-   "exactAreas": [
-    81.1718
-   ],
-   "baselineFloorMedian": 5,
-   "currentFloorMedian": 5,
-   "baselineDirectTradeCount": 1,
-   "currentDirectTradeCount": 0,
-   "floorMixWarning": false,
-   "directTradeWarning": true,
-   "compositionWarning": true,
-   "exclusiveAreaGroup": 81.2,
-   "calculationVersion": "v1.1",
-   "rank": 17
-  },
-  {
    "apartmentKey": "30170-41",
    "aptSeq": "41",
    "apartmentName": "한가람",
@@ -713,7 +648,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 59.8,
    "calculationVersion": "v1.1",
-   "rank": 18
+   "rank": 16
   },
   {
    "apartmentKey": "30170-82",
@@ -747,7 +682,41 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 93.1,
    "calculationVersion": "v1.1",
-   "rank": 19
+   "rank": 17
+  },
+  {
+   "apartmentKey": "30170-168",
+   "aptSeq": "168",
+   "apartmentName": "샘머리2차",
+   "sidoCode": "30",
+   "sggCode": "30170",
+   "areaGroup": 84.9,
+   "buildYear": 1998,
+   "referenceMonth": "202610",
+   "baselineMedian": 532500000.0,
+   "currentMedian": 599450000.0,
+   "riseAmount": 66950000,
+   "riseRate": 12.57,
+   "baselineTradeCount": 30,
+   "currentTradeCount": 8,
+   "confidence": "medium",
+   "warnings": [
+    "직거래 포함 이력 존재"
+   ],
+   "region": "30170 둔산동",
+   "exactAreas": [
+    84.945
+   ],
+   "baselineFloorMedian": 12.5,
+   "currentFloorMedian": 8,
+   "baselineDirectTradeCount": 2,
+   "currentDirectTradeCount": 1,
+   "floorMixWarning": false,
+   "directTradeWarning": true,
+   "compositionWarning": true,
+   "exclusiveAreaGroup": 84.9,
+   "calculationVersion": "v1.1",
+   "rank": 18
   },
   {
    "apartmentKey": "30170-105",
@@ -781,41 +750,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 20
-  },
-  {
-   "apartmentKey": "30170-168",
-   "aptSeq": "168",
-   "apartmentName": "샘머리2차",
-   "sidoCode": "30",
-   "sggCode": "30170",
-   "areaGroup": 84.9,
-   "buildYear": 1998,
-   "referenceMonth": "202610",
-   "baselineMedian": 532500000.0,
-   "currentMedian": 599000000,
-   "riseAmount": 66500000,
-   "riseRate": 12.49,
-   "baselineTradeCount": 30,
-   "currentTradeCount": 7,
-   "confidence": "medium",
-   "warnings": [
-    "직거래 포함 이력 존재"
-   ],
-   "region": "30170 둔산동",
-   "exactAreas": [
-    84.945
-   ],
-   "baselineFloorMedian": 12.5,
-   "currentFloorMedian": 6.5,
-   "baselineDirectTradeCount": 2,
-   "currentDirectTradeCount": 1,
-   "floorMixWarning": false,
-   "directTradeWarning": true,
-   "compositionWarning": true,
-   "exclusiveAreaGroup": 84.9,
-   "calculationVersion": "v1.1",
-   "rank": 21
+   "rank": 19
   },
   {
    "apartmentKey": "26710-609",
@@ -850,7 +785,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 22
+   "rank": 20
   },
   {
    "apartmentKey": "26290-1885",
@@ -887,7 +822,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 23
+   "rank": 21
   },
   {
    "apartmentKey": "26320-1659",
@@ -922,7 +857,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 24
+   "rank": 22
   },
   {
    "apartmentKey": "27710-304",
@@ -957,6 +892,72 @@
    "directTradeWarning": false,
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
+   "calculationVersion": "v1.1",
+   "rank": 23
+  },
+  {
+   "apartmentKey": "30230-27",
+   "aptSeq": "27",
+   "apartmentName": "선비마을4단지",
+   "sidoCode": "30",
+   "sggCode": "30230",
+   "areaGroup": 84.8,
+   "buildYear": 1999,
+   "referenceMonth": "202610",
+   "baselineMedian": 311500000.0,
+   "currentMedian": 345500000,
+   "riseAmount": 34000000,
+   "riseRate": 10.91,
+   "baselineTradeCount": 2,
+   "currentTradeCount": 3,
+   "confidence": "medium",
+   "warnings": [],
+   "region": "30230 송촌동",
+   "exactAreas": [
+    84.84
+   ],
+   "baselineFloorMedian": 9.5,
+   "currentFloorMedian": 10,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": false,
+   "directTradeWarning": false,
+   "compositionWarning": false,
+   "exclusiveAreaGroup": 84.8,
+   "calculationVersion": "v1.1",
+   "rank": 24
+  },
+  {
+   "apartmentKey": "30200-65",
+   "aptSeq": "65",
+   "apartmentName": "송림마을2단지(우미이노스빌1차)",
+   "sidoCode": "30",
+   "sggCode": "30200",
+   "areaGroup": 84.5,
+   "buildYear": 2004,
+   "referenceMonth": "202610",
+   "baselineMedian": 404500000.0,
+   "currentMedian": 446500000.0,
+   "riseAmount": 42000000,
+   "riseRate": 10.38,
+   "baselineTradeCount": 2,
+   "currentTradeCount": 2,
+   "confidence": "low",
+   "warnings": [
+    "비교/기준 기간 거래량 모두 최소 조건(2건)"
+   ],
+   "region": "30200 하기동",
+   "exactAreas": [
+    84.5123
+   ],
+   "baselineFloorMedian": 6.5,
+   "currentFloorMedian": 14.0,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": false,
+   "directTradeWarning": false,
+   "compositionWarning": true,
+   "exclusiveAreaGroup": 84.5,
    "calculationVersion": "v1.1",
    "rank": 25
   },
@@ -1030,6 +1031,40 @@
    "rank": 27
   },
   {
+   "apartmentKey": "31140-174",
+   "aptSeq": "174",
+   "apartmentName": "세양청구마을",
+   "sidoCode": "31",
+   "sggCode": "31140",
+   "areaGroup": 85.0,
+   "buildYear": 1997,
+   "referenceMonth": "202610",
+   "baselineMedian": 372500000.0,
+   "currentMedian": 407500000.0,
+   "riseAmount": 35000000,
+   "riseRate": 9.4,
+   "baselineTradeCount": 2,
+   "currentTradeCount": 2,
+   "confidence": "low",
+   "warnings": [
+    "비교/기준 기간 거래량 모두 최소 조건(2건)"
+   ],
+   "region": "31140 삼산동",
+   "exactAreas": [
+    84.99
+   ],
+   "baselineFloorMedian": 14.0,
+   "currentFloorMedian": 15.0,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": false,
+   "directTradeWarning": false,
+   "compositionWarning": true,
+   "exclusiveAreaGroup": 85.0,
+   "calculationVersion": "v1.1",
+   "rank": 28
+  },
+  {
    "apartmentKey": "26530-837",
    "aptSeq": "837",
    "apartmentName": "롯데캐슬",
@@ -1063,7 +1098,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 28
+   "rank": 29
   },
   {
    "apartmentKey": "26260-2119",
@@ -1075,11 +1110,11 @@
    "buildYear": 2019,
    "referenceMonth": "202610",
    "baselineMedian": 466500000.0,
-   "currentMedian": 509500000.0,
-   "riseAmount": 43000000,
-   "riseRate": 9.22,
+   "currentMedian": 510000000,
+   "riseAmount": 43500000,
+   "riseRate": 9.32,
    "baselineTradeCount": 6,
-   "currentTradeCount": 2,
+   "currentTradeCount": 3,
    "confidence": "medium",
    "warnings": [],
    "region": "26260 온천동",
@@ -1087,7 +1122,7 @@
     84.8128
    ],
    "baselineFloorMedian": 11.0,
-   "currentFloorMedian": 15.0,
+   "currentFloorMedian": 13,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -1095,7 +1130,39 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 84.8,
    "calculationVersion": "v1.1",
-   "rank": 29
+   "rank": 30
+  },
+  {
+   "apartmentKey": "26410-1938",
+   "aptSeq": "1938",
+   "apartmentName": "장전동금정산SKVIEW",
+   "sidoCode": "26",
+   "sggCode": "26410",
+   "areaGroup": 85.0,
+   "buildYear": 2010,
+   "referenceMonth": "202610",
+   "baselineMedian": 546500000.0,
+   "currentMedian": 596500000.0,
+   "riseAmount": 50000000,
+   "riseRate": 9.15,
+   "baselineTradeCount": 4,
+   "currentTradeCount": 2,
+   "confidence": "medium",
+   "warnings": [],
+   "region": "26410 장전동",
+   "exactAreas": [
+    84.997
+   ],
+   "baselineFloorMedian": 14.5,
+   "currentFloorMedian": 9.0,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": false,
+   "directTradeWarning": false,
+   "compositionWarning": false,
+   "exclusiveAreaGroup": 85.0,
+   "calculationVersion": "v1.1",
+   "rank": 31
   },
   {
    "apartmentKey": "30170-78",
@@ -1129,7 +1196,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.6,
    "calculationVersion": "v1.1",
-   "rank": 30
+   "rank": 32
   },
   {
    "apartmentKey": "26320-46",
@@ -1163,7 +1230,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 111.7,
    "calculationVersion": "v1.1",
-   "rank": 31
+   "rank": 33
   },
   {
    "apartmentKey": "26410-1938",
@@ -1198,7 +1265,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 60.0,
    "calculationVersion": "v1.1",
-   "rank": 32
+   "rank": 34
   },
   {
    "apartmentKey": "27260-100",
@@ -1230,7 +1297,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 76.4,
    "calculationVersion": "v1.1",
-   "rank": 33
+   "rank": 35
   },
   {
    "apartmentKey": "27290-1339",
@@ -1266,7 +1333,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 34
+   "rank": 36
   },
   {
    "apartmentKey": "26140-1243",
@@ -1304,7 +1371,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.7,
    "calculationVersion": "v1.1",
-   "rank": 35
+   "rank": 37
   },
   {
    "apartmentKey": "26290-2646",
@@ -1316,13 +1383,14 @@
    "buildYear": 2019,
    "referenceMonth": "202610",
    "baselineMedian": 503500000.0,
-   "currentMedian": 540000000.0,
+   "currentMedian": 540000000,
    "riseAmount": 36500000,
    "riseRate": 7.25,
    "baselineTradeCount": 10,
-   "currentTradeCount": 4,
-   "confidence": "low",
+   "currentTradeCount": 5,
+   "confidence": "medium",
    "warnings": [
+    "층수 차이(8층 이상 또는 구간 차이)",
     "서로 다른 세부 전용면적 혼합"
    ],
    "region": "26290 문현동",
@@ -1331,15 +1399,15 @@
     59.9849
    ],
    "baselineFloorMedian": 15.0,
-   "currentFloorMedian": 14.0,
+   "currentFloorMedian": 17,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
-   "floorMixWarning": false,
+   "floorMixWarning": true,
    "directTradeWarning": false,
    "compositionWarning": true,
    "exclusiveAreaGroup": 60.0,
    "calculationVersion": "v1.1",
-   "rank": 36
+   "rank": 38
   },
   {
    "apartmentKey": "26470-1481",
@@ -1373,7 +1441,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 77.9,
    "calculationVersion": "v1.1",
-   "rank": 37
+   "rank": 39
   },
   {
    "apartmentKey": "27260-1330",
@@ -1389,7 +1457,7 @@
    "riseAmount": 140000000,
    "riseRate": 7.18,
    "baselineTradeCount": 3,
-   "currentTradeCount": 3,
+   "currentTradeCount": 5,
    "confidence": "low",
    "warnings": [
     "층수 차이(8층 이상 또는 구간 차이)"
@@ -1399,7 +1467,7 @@
     129.0208
    ],
    "baselineFloorMedian": 28,
-   "currentFloorMedian": 49,
+   "currentFloorMedian": 47,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -1407,7 +1475,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 129.0,
    "calculationVersion": "v1.1",
-   "rank": 38
+   "rank": 40
   },
   {
    "apartmentKey": "31140-57",
@@ -1441,7 +1509,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 39
+   "rank": 41
   },
   {
    "apartmentKey": "30170-98",
@@ -1475,7 +1543,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.8,
    "calculationVersion": "v1.1",
-   "rank": 40
+   "rank": 42
   },
   {
    "apartmentKey": "27260-1508",
@@ -1509,7 +1577,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.6,
    "calculationVersion": "v1.1",
-   "rank": 41
+   "rank": 43
   },
   {
    "apartmentKey": "31710-621",
@@ -1543,76 +1611,43 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 42
+   "rank": 44
   },
   {
-   "apartmentKey": "30200-514",
-   "aptSeq": "514",
-   "apartmentName": "우림필유12단지",
-   "sidoCode": "30",
-   "sggCode": "30200",
-   "areaGroup": 84.7,
-   "buildYear": 2007,
+   "apartmentKey": "27140-2243",
+   "aptSeq": "2243",
+   "apartmentName": "동대구역센트럴시티자이",
+   "sidoCode": "27",
+   "sggCode": "27140",
+   "areaGroup": 85.0,
+   "buildYear": 2022,
    "referenceMonth": "202610",
-   "baselineMedian": 507500000.0,
-   "currentMedian": 540000000.0,
-   "riseAmount": 32500000,
-   "riseRate": 6.4,
-   "baselineTradeCount": 4,
-   "currentTradeCount": 2,
-   "confidence": "medium",
-   "warnings": [],
-   "region": "30200 용산동",
-   "exactAreas": [
-    84.659
-   ],
-   "baselineFloorMedian": 5.5,
-   "currentFloorMedian": 6.5,
-   "baselineDirectTradeCount": 0,
-   "currentDirectTradeCount": 0,
-   "floorMixWarning": false,
-   "directTradeWarning": false,
-   "compositionWarning": false,
-   "exclusiveAreaGroup": 84.7,
-   "calculationVersion": "v1.1",
-   "rank": 43
-  },
-  {
-   "apartmentKey": "26290-4786",
-   "aptSeq": "4786",
-   "apartmentName": "롯데캐슬인피니엘",
-   "sidoCode": "26",
-   "sggCode": "26290",
-   "areaGroup": 60.0,
-   "buildYear": 2026,
-   "referenceMonth": "202610",
-   "baselineMedian": 557500000.0,
-   "currentMedian": 592000000,
-   "riseAmount": 34500000,
-   "riseRate": 6.19,
-   "baselineTradeCount": 42,
-   "currentTradeCount": 9,
-   "confidence": "medium",
+   "baselineMedian": 660000000,
+   "currentMedian": 701000000.0,
+   "riseAmount": 41000000,
+   "riseRate": 6.21,
+   "baselineTradeCount": 11,
+   "currentTradeCount": 4,
+   "confidence": "low",
    "warnings": [
     "층수 차이(8층 이상 또는 구간 차이)",
-    "서로 다른 세부 전용면적 혼합",
-    "직거래 포함 이력 존재"
+    "서로 다른 세부 전용면적 혼합"
    ],
-   "region": "26290 문현동",
+   "region": "27140 신천동",
    "exactAreas": [
-    59.9664,
-    59.9665
+    84.9866,
+    84.9812
    ],
-   "baselineFloorMedian": 15,
-   "currentFloorMedian": 20.0,
-   "baselineDirectTradeCount": 3,
-   "currentDirectTradeCount": 1,
+   "baselineFloorMedian": 11,
+   "currentFloorMedian": 24.0,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 0,
    "floorMixWarning": true,
-   "directTradeWarning": true,
+   "directTradeWarning": false,
    "compositionWarning": true,
-   "exclusiveAreaGroup": 60.0,
+   "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 44
+   "rank": 45
   },
   {
    "apartmentKey": "26500-2455",
@@ -1646,7 +1681,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 59.2,
    "calculationVersion": "v1.1",
-   "rank": 45
+   "rank": 46
   },
   {
    "apartmentKey": "27110-301",
@@ -1680,7 +1715,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.6,
    "calculationVersion": "v1.1",
-   "rank": 46
+   "rank": 47
   },
   {
    "apartmentKey": "27260-1514",
@@ -1715,7 +1750,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 47
+   "rank": 48
   },
   {
    "apartmentKey": "27290-1557",
@@ -1749,7 +1784,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.8,
    "calculationVersion": "v1.1",
-   "rank": 48
+   "rank": 49
   },
   {
    "apartmentKey": "26350-8",
@@ -1765,7 +1800,7 @@
    "riseAmount": 52500000,
    "riseRate": 5.71,
    "baselineTradeCount": 11,
-   "currentTradeCount": 2,
+   "currentTradeCount": 4,
    "confidence": "low",
    "warnings": [
     "직거래 포함 이력 존재"
@@ -1775,7 +1810,7 @@
     84.96
    ],
    "baselineFloorMedian": 14.5,
-   "currentFloorMedian": 10.0,
+   "currentFloorMedian": 9.5,
    "baselineDirectTradeCount": 1,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
@@ -1783,7 +1818,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 49
+   "rank": 50
   },
   {
    "apartmentKey": "31110-2249",
@@ -1820,7 +1855,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 50
+   "rank": 51
   },
   {
    "apartmentKey": "30170-1175",
@@ -1854,7 +1889,39 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 72.5,
    "calculationVersion": "v1.1",
-   "rank": 51
+   "rank": 52
+  },
+  {
+   "apartmentKey": "30170-93",
+   "aptSeq": "93",
+   "apartmentName": "누리",
+   "sidoCode": "30",
+   "sggCode": "30170",
+   "areaGroup": 126.5,
+   "buildYear": 1994,
+   "referenceMonth": "202610",
+   "baselineMedian": 785000000,
+   "currentMedian": 820000000,
+   "riseAmount": 35000000,
+   "riseRate": 4.46,
+   "baselineTradeCount": 7,
+   "currentTradeCount": 5,
+   "confidence": "high",
+   "warnings": [],
+   "region": "30170 월평동",
+   "exactAreas": [
+    126.45
+   ],
+   "baselineFloorMedian": 7,
+   "currentFloorMedian": 10,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": false,
+   "directTradeWarning": false,
+   "compositionWarning": false,
+   "exclusiveAreaGroup": 126.5,
+   "calculationVersion": "v1.1",
+   "rank": 53
   },
   {
    "apartmentKey": "26440-109",
@@ -1886,41 +1953,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 135.8,
    "calculationVersion": "v1.1",
-   "rank": 52
-  },
-  {
-   "apartmentKey": "26350-2093",
-   "aptSeq": "2093",
-   "apartmentName": "더샵센텀파크1차",
-   "sidoCode": "26",
-   "sggCode": "26350",
-   "areaGroup": 84.6,
-   "buildYear": 2005,
-   "referenceMonth": "202610",
-   "baselineMedian": 1160000000.0,
-   "currentMedian": 1203500000.0,
-   "riseAmount": 43500000,
-   "riseRate": 3.75,
-   "baselineTradeCount": 8,
-   "currentTradeCount": 2,
-   "confidence": "low",
-   "warnings": [
-    "층수 차이(8층 이상 또는 구간 차이)"
-   ],
-   "region": "26350 재송동",
-   "exactAreas": [
-    84.6389
-   ],
-   "baselineFloorMedian": 31.0,
-   "currentFloorMedian": 14.5,
-   "baselineDirectTradeCount": 0,
-   "currentDirectTradeCount": 0,
-   "floorMixWarning": true,
-   "directTradeWarning": false,
-   "compositionWarning": true,
-   "exclusiveAreaGroup": 84.6,
-   "calculationVersion": "v1.1",
-   "rank": 53
+   "rank": 54
   },
   {
    "apartmentKey": "26470-3048",
@@ -1932,11 +1965,11 @@
    "buildYear": 2023,
    "referenceMonth": "202610",
    "baselineMedian": 1165000000,
-   "currentMedian": 1207500000.0,
-   "riseAmount": 42500000,
-   "riseRate": 3.65,
+   "currentMedian": 1213000000,
+   "riseAmount": 48000000,
+   "riseRate": 4.12,
    "baselineTradeCount": 5,
-   "currentTradeCount": 2,
+   "currentTradeCount": 3,
    "confidence": "low",
    "warnings": [
     "층수 차이(8층 이상 또는 구간 차이)",
@@ -1947,7 +1980,7 @@
     84.8261
    ],
    "baselineFloorMedian": 7,
-   "currentFloorMedian": 25,
+   "currentFloorMedian": 22.0,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 1,
    "floorMixWarning": true,
@@ -1955,7 +1988,105 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.8,
    "calculationVersion": "v1.1",
-   "rank": 54
+   "rank": 55
+  },
+  {
+   "apartmentKey": "26350-2229",
+   "aptSeq": "2229",
+   "apartmentName": "해운대자이1단지",
+   "sidoCode": "26",
+   "sggCode": "26350",
+   "areaGroup": 59.1,
+   "buildYear": 2013,
+   "referenceMonth": "202610",
+   "baselineMedian": 830000000,
+   "currentMedian": 860000000,
+   "riseAmount": 30000000,
+   "riseRate": 3.61,
+   "baselineTradeCount": 3,
+   "currentTradeCount": 3,
+   "confidence": "medium",
+   "warnings": [],
+   "region": "26350 우동",
+   "exactAreas": [
+    59.0621
+   ],
+   "baselineFloorMedian": 8,
+   "currentFloorMedian": 12,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": false,
+   "directTradeWarning": false,
+   "compositionWarning": false,
+   "exclusiveAreaGroup": 59.1,
+   "calculationVersion": "v1.1",
+   "rank": 56
+  },
+  {
+   "apartmentKey": "26350-2093",
+   "aptSeq": "2093",
+   "apartmentName": "더샵센텀파크1차",
+   "sidoCode": "26",
+   "sggCode": "26350",
+   "areaGroup": 84.6,
+   "buildYear": 2005,
+   "referenceMonth": "202610",
+   "baselineMedian": 1160000000.0,
+   "currentMedian": 1200000000,
+   "riseAmount": 40000000,
+   "riseRate": 3.45,
+   "baselineTradeCount": 8,
+   "currentTradeCount": 3,
+   "confidence": "low",
+   "warnings": [
+    "층수 차이(8층 이상 또는 구간 차이)"
+   ],
+   "region": "26350 재송동",
+   "exactAreas": [
+    84.6389
+   ],
+   "baselineFloorMedian": 31.0,
+   "currentFloorMedian": 15,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": true,
+   "directTradeWarning": false,
+   "compositionWarning": true,
+   "exclusiveAreaGroup": 84.6,
+   "calculationVersion": "v1.1",
+   "rank": 57
+  },
+  {
+   "apartmentKey": "26470-3047",
+   "aptSeq": "3047",
+   "apartmentName": "레이카운티(1단지)",
+   "sidoCode": "26",
+   "sggCode": "26470",
+   "areaGroup": 85.0,
+   "buildYear": 2023,
+   "referenceMonth": "202610",
+   "baselineMedian": 1034000000.0,
+   "currentMedian": 1065000000,
+   "riseAmount": 31000000,
+   "riseRate": 3.0,
+   "baselineTradeCount": 12,
+   "currentTradeCount": 3,
+   "confidence": "medium",
+   "warnings": [],
+   "region": "26470 거제동",
+   "exactAreas": [
+    84.9823
+   ],
+   "baselineFloorMedian": 9.0,
+   "currentFloorMedian": 11,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": false,
+   "directTradeWarning": false,
+   "compositionWarning": false,
+   "exclusiveAreaGroup": 85.0,
+   "calculationVersion": "v1.1",
+   "rank": 58
   }
  ]
 }
