@@ -3,7 +3,7 @@
  "referenceMonth": "202609",
  "status": "stable",
  "validationStatus": "valid",
- "generatedAt": "2026-11-10T11:07:06.443964+09:00",
+ "generatedAt": "2026-11-11T09:04:18.025691+09:00",
  "calculationVersion": "v1.1",
  "schemaVersion": "v1.0",
  "includedSidoCodes": [
@@ -64,12 +64,12 @@
   "11740"
  ],
  "failedSggCodes": [],
- "rawTradeCount": 3277,
- "validTradeCount": 3195,
- "cancelledTradeCount": 82,
+ "rawTradeCount": 3283,
+ "validTradeCount": 3200,
+ "cancelledTradeCount": 83,
  "directTradeCount": 220,
- "candidateGroupCount": 2283,
- "filteredOutGroupCount": 2132,
+ "candidateGroupCount": 2286,
+ "filteredOutGroupCount": 2135,
  "items": [
   {
    "apartmentKey": "11350-33",
@@ -2242,21 +2242,19 @@
    "riseRate": 7.48,
    "baselineTradeCount": 4,
    "currentTradeCount": 3,
-   "confidence": "low",
-   "warnings": [
-    "직거래 포함 이력 존재"
-   ],
+   "confidence": "medium",
+   "warnings": [],
    "region": "11380 녹번동",
    "exactAreas": [
     59.866
    ],
-   "baselineFloorMedian": 10,
+   "baselineFloorMedian": 12.0,
    "currentFloorMedian": 8,
-   "baselineDirectTradeCount": 1,
+   "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": false,
-   "directTradeWarning": true,
-   "compositionWarning": true,
+   "directTradeWarning": false,
+   "compositionWarning": false,
    "exclusiveAreaGroup": 59.9,
    "calculationVersion": "v1.1",
    "rank": 65
