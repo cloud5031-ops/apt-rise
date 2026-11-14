@@ -3,7 +3,7 @@
  "referenceMonth": "202610",
  "status": "provisional",
  "validationStatus": "valid",
- "generatedAt": "2026-11-08T07:15:41.338010+09:00",
+ "generatedAt": "2026-11-15T07:52:47.383259+09:00",
  "calculationVersion": "v1.1",
  "schemaVersion": "v1.0",
  "includedSidoCodes": [
@@ -149,12 +149,12 @@
   "52800"
  ],
  "failedSggCodes": [],
- "rawTradeCount": 5769,
- "validTradeCount": 5649,
- "cancelledTradeCount": 120,
- "directTradeCount": 595,
- "candidateGroupCount": 3545,
- "filteredOutGroupCount": 3519,
+ "rawTradeCount": 6008,
+ "validTradeCount": 5864,
+ "cancelledTradeCount": 144,
+ "directTradeCount": 632,
+ "candidateGroupCount": 3640,
+ "filteredOutGroupCount": 3615,
  "items": [
   {
    "apartmentKey": "48170-485",
@@ -626,11 +626,11 @@
    "buildYear": 2011,
    "referenceMonth": "202610",
    "baselineMedian": 448000000,
-   "currentMedian": 492500000.0,
-   "riseAmount": 44500000,
-   "riseRate": 9.93,
+   "currentMedian": 495000000,
+   "riseAmount": 47000000,
+   "riseRate": 10.49,
    "baselineTradeCount": 3,
-   "currentTradeCount": 2,
+   "currentTradeCount": 3,
    "confidence": "low",
    "warnings": [
     "층수 차이(8층 이상 또는 구간 차이)",
@@ -643,7 +643,7 @@
     84.97
    ],
    "baselineFloorMedian": 3,
-   "currentFloorMedian": 12.5,
+   "currentFloorMedian": 12,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
    "floorMixWarning": true,
@@ -969,43 +969,6 @@
    "rank": 23
   },
   {
-   "apartmentKey": "48170-549",
-   "aptSeq": "549",
-   "apartmentName": "포레나신진주",
-   "sidoCode": "48",
-   "sggCode": "48170",
-   "areaGroup": 85.0,
-   "buildYear": 2019,
-   "referenceMonth": "202610",
-   "baselineMedian": 579000000.0,
-   "currentMedian": 611000000.0,
-   "riseAmount": 32000000,
-   "riseRate": 5.53,
-   "baselineTradeCount": 2,
-   "currentTradeCount": 2,
-   "confidence": "low",
-   "warnings": [
-    "층수 차이(8층 이상 또는 구간 차이)",
-    "서로 다른 세부 전용면적 혼합",
-    "비교/기준 기간 거래량 모두 최소 조건(2건)"
-   ],
-   "region": "48170 가좌동",
-   "exactAreas": [
-    84.9515,
-    84.9543
-   ],
-   "baselineFloorMedian": 17.0,
-   "currentFloorMedian": 14.5,
-   "baselineDirectTradeCount": 0,
-   "currentDirectTradeCount": 0,
-   "floorMixWarning": true,
-   "directTradeWarning": false,
-   "compositionWarning": true,
-   "exclusiveAreaGroup": 85.0,
-   "calculationVersion": "v1.1",
-   "rank": 24
-  },
-  {
    "apartmentKey": "48127-790",
    "aptSeq": "790",
    "apartmentName": "메트로시티2단지",
@@ -1037,7 +1000,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 114.1,
    "calculationVersion": "v1.1",
-   "rank": 25
+   "rank": 24
   },
   {
    "apartmentKey": "52111-654",
@@ -1072,7 +1035,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.8,
    "calculationVersion": "v1.1",
-   "rank": 26
+   "rank": 25
   }
  ]
 }
