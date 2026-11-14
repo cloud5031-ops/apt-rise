@@ -3,7 +3,7 @@
  "referenceMonth": "202609",
  "status": "stable",
  "validationStatus": "valid",
- "generatedAt": "2026-11-13T09:30:27.005364+09:00",
+ "generatedAt": "2026-11-14T09:31:55.652486+09:00",
  "calculationVersion": "v1.1",
  "schemaVersion": "v1.0",
  "includedSidoCodes": [
@@ -147,12 +147,12 @@
   "41830"
  ],
  "failedSggCodes": [],
- "rawTradeCount": 12782,
- "validTradeCount": 12425,
- "cancelledTradeCount": 357,
+ "rawTradeCount": 12783,
+ "validTradeCount": 12417,
+ "cancelledTradeCount": 366,
  "directTradeCount": 438,
- "candidateGroupCount": 7188,
- "filteredOutGroupCount": 6656,
+ "candidateGroupCount": 7185,
+ "filteredOutGroupCount": 6653,
  "items": [
   {
    "apartmentKey": "41117-69",
@@ -6235,11 +6235,11 @@
    "areaGroup": 85.0,
    "buildYear": 2019,
    "referenceMonth": "202609",
-   "baselineMedian": 900000000.0,
+   "baselineMedian": 900000000,
    "currentMedian": 990000000,
    "riseAmount": 90000000,
    "riseRate": 10.0,
-   "baselineTradeCount": 20,
+   "baselineTradeCount": 19,
    "currentTradeCount": 3,
    "confidence": "low",
    "warnings": [
@@ -6251,7 +6251,7 @@
     84.9558,
     84.965
    ],
-   "baselineFloorMedian": 7.5,
+   "baselineFloorMedian": 7,
    "currentFloorMedian": 17,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
@@ -16124,38 +16124,6 @@
    "apartmentName": "권선자이e편한세상",
    "sidoCode": "41",
    "sggCode": "41113",
-   "areaGroup": 123.5,
-   "buildYear": 2011,
-   "referenceMonth": "202609",
-   "baselineMedian": 733500000.0,
-   "currentMedian": 768000000,
-   "riseAmount": 34500000,
-   "riseRate": 4.7,
-   "baselineTradeCount": 6,
-   "currentTradeCount": 3,
-   "confidence": "medium",
-   "warnings": [],
-   "region": "41113 권선동",
-   "exactAreas": [
-    123.4823
-   ],
-   "baselineFloorMedian": 12.5,
-   "currentFloorMedian": 8,
-   "baselineDirectTradeCount": 0,
-   "currentDirectTradeCount": 0,
-   "floorMixWarning": false,
-   "directTradeWarning": false,
-   "compositionWarning": false,
-   "exclusiveAreaGroup": 123.5,
-   "calculationVersion": "v1.1",
-   "rank": 474
-  },
-  {
-   "apartmentKey": "41113-1611",
-   "aptSeq": "1611",
-   "apartmentName": "권선자이e편한세상",
-   "sidoCode": "41",
-   "sggCode": "41113",
    "areaGroup": 84.9,
    "buildYear": 2011,
    "referenceMonth": "202609",
@@ -16183,7 +16151,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 475
+   "rank": 474
   },
   {
    "apartmentKey": "28185-782",
@@ -16217,7 +16185,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 74.6,
    "calculationVersion": "v1.1",
-   "rank": 476
+   "rank": 475
   },
   {
    "apartmentKey": "41465-277",
@@ -16251,7 +16219,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 134.3,
    "calculationVersion": "v1.1",
-   "rank": 477
+   "rank": 476
   },
   {
    "apartmentKey": "41463-580",
@@ -16283,7 +16251,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 115.0,
    "calculationVersion": "v1.1",
-   "rank": 478
+   "rank": 477
   },
   {
    "apartmentKey": "41117-323",
@@ -16319,7 +16287,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 59.9,
    "calculationVersion": "v1.1",
-   "rank": 479
+   "rank": 478
   },
   {
    "apartmentKey": "41410-42",
@@ -16353,7 +16321,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 134.8,
    "calculationVersion": "v1.1",
-   "rank": 480
+   "rank": 479
   },
   {
    "apartmentKey": "41111-2367",
@@ -16388,7 +16356,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 59.8,
    "calculationVersion": "v1.1",
-   "rank": 481
+   "rank": 480
   },
   {
    "apartmentKey": "41113-2660",
@@ -16423,7 +16391,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 482
+   "rank": 481
   },
   {
    "apartmentKey": "41310-1",
@@ -16455,7 +16423,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 83.9,
    "calculationVersion": "v1.1",
-   "rank": 483
+   "rank": 482
   },
   {
    "apartmentKey": "41281-3408",
@@ -16491,6 +16459,38 @@
    "directTradeWarning": false,
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
+   "calculationVersion": "v1.1",
+   "rank": 483
+  },
+  {
+   "apartmentKey": "41113-1611",
+   "aptSeq": "1611",
+   "apartmentName": "권선자이e편한세상",
+   "sidoCode": "41",
+   "sggCode": "41113",
+   "areaGroup": 123.5,
+   "buildYear": 2011,
+   "referenceMonth": "202609",
+   "baselineMedian": 735000000,
+   "currentMedian": 768000000,
+   "riseAmount": 33000000,
+   "riseRate": 4.49,
+   "baselineTradeCount": 5,
+   "currentTradeCount": 3,
+   "confidence": "medium",
+   "warnings": [],
+   "region": "41113 권선동",
+   "exactAreas": [
+    123.4823
+   ],
+   "baselineFloorMedian": 14,
+   "currentFloorMedian": 8,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": false,
+   "directTradeWarning": false,
+   "compositionWarning": false,
+   "exclusiveAreaGroup": 123.5,
    "calculationVersion": "v1.1",
    "rank": 484
   },
@@ -17206,11 +17206,11 @@
    "areaGroup": 60.0,
    "buildYear": 1997,
    "referenceMonth": "202609",
-   "baselineMedian": 850000000.0,
+   "baselineMedian": 850000000,
    "currentMedian": 885000000,
    "riseAmount": 35000000,
    "riseRate": 4.12,
-   "baselineTradeCount": 14,
+   "baselineTradeCount": 13,
    "currentTradeCount": 7,
    "confidence": "high",
    "warnings": [],
@@ -17218,7 +17218,7 @@
    "exactAreas": [
     59.98
    ],
-   "baselineFloorMedian": 10.5,
+   "baselineFloorMedian": 11,
    "currentFloorMedian": 11,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
