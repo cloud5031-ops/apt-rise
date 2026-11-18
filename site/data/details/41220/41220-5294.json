@@ -7,14 +7,34 @@
  "sggCode": "41220",
  "dongName": "현덕면 화양리",
  "referenceMonths": [
-  "202608",
-  "202609"
+  "202609",
+  "202610"
  ],
  "availableAreas": [
+  72.0705,
+  76.1275,
   84.5911,
   84.9803
  ],
  "transactions": [
+  {
+   "contractDate": "2026-10-13",
+   "priceWon": 402200000,
+   "floor": 12,
+   "exclusiveArea": 76.1275,
+   "areaGroup": 76,
+   "dealType": "직거래",
+   "cancellationStatus": "COMPLETED"
+  },
+  {
+   "contractDate": "2026-10-03",
+   "priceWon": 306930000,
+   "floor": 6,
+   "exclusiveArea": 72.0705,
+   "areaGroup": 72,
+   "dealType": "중개거래",
+   "cancellationStatus": "CANCELLED"
+  },
   {
    "contractDate": "2026-09-23",
    "priceWon": 460000000,
@@ -71,8 +91,8 @@
   }
  ],
  "historyCoverage": {
-  "startMonth": "202310",
-  "endMonth": "202609",
+  "startMonth": "202311",
+  "endMonth": "202610",
   "months": 36,
   "complete": true
  },
