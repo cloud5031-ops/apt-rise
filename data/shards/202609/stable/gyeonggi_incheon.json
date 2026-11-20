@@ -3,7 +3,7 @@
  "referenceMonth": "202609",
  "status": "stable",
  "validationStatus": "valid",
- "generatedAt": "2026-11-19T10:23:37.790927+09:00",
+ "generatedAt": "2026-11-20T10:25:50.729295+09:00",
  "calculationVersion": "v1.1",
  "schemaVersion": "v1.0",
  "includedSidoCodes": [
@@ -147,12 +147,12 @@
   "41830"
  ],
  "failedSggCodes": [],
- "rawTradeCount": 12798,
- "validTradeCount": 12420,
- "cancelledTradeCount": 378,
+ "rawTradeCount": 12796,
+ "validTradeCount": 12414,
+ "cancelledTradeCount": 382,
  "directTradeCount": 438,
- "candidateGroupCount": 7187,
- "filteredOutGroupCount": 6652,
+ "candidateGroupCount": 7182,
+ "filteredOutGroupCount": 6647,
  "items": [
   {
    "apartmentKey": "41117-69",
@@ -13573,11 +13573,11 @@
    "buildYear": 1998,
    "referenceMonth": "202609",
    "baselineMedian": 500000000,
-   "currentMedian": 530000000,
+   "currentMedian": 530000000.0,
    "riseAmount": 30000000,
    "riseRate": 6.0,
    "baselineTradeCount": 35,
-   "currentTradeCount": 29,
+   "currentTradeCount": 30,
    "confidence": "medium",
    "warnings": [
     "직거래 포함 이력 존재"
@@ -13587,7 +13587,7 @@
     59.84
    ],
    "baselineFloorMedian": 10,
-   "currentFloorMedian": 10.0,
+   "currentFloorMedian": 10,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 1,
    "floorMixWarning": false,
