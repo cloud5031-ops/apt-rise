@@ -3,7 +3,7 @@
  "referenceMonth": "202610",
  "status": "provisional",
  "validationStatus": "valid",
- "generatedAt": "2026-11-21T09:50:14.955035+09:00",
+ "generatedAt": "2026-11-22T08:24:14.971088+09:00",
  "calculationVersion": "v1.1",
  "schemaVersion": "v1.0",
  "includedSidoCodes": [
@@ -64,12 +64,12 @@
   "11740"
  ],
  "failedSggCodes": [],
- "rawTradeCount": 3943,
- "validTradeCount": 3868,
- "cancelledTradeCount": 75,
+ "rawTradeCount": 3941,
+ "validTradeCount": 3865,
+ "cancelledTradeCount": 76,
  "directTradeCount": 192,
- "candidateGroupCount": 2681,
- "filteredOutGroupCount": 2515,
+ "candidateGroupCount": 2679,
+ "filteredOutGroupCount": 2513,
  "items": [
   {
    "apartmentKey": "11320-57",
@@ -518,6 +518,38 @@
    "rank": 13
   },
   {
+   "apartmentKey": "11350-5",
+   "aptSeq": "5",
+   "apartmentName": "상계대림",
+   "sidoCode": "11",
+   "sggCode": "11350",
+   "areaGroup": 59.7,
+   "buildYear": 1989,
+   "referenceMonth": "202610",
+   "baselineMedian": 550000000.0,
+   "currentMedian": 627500000.0,
+   "riseAmount": 77500000,
+   "riseRate": 14.09,
+   "baselineTradeCount": 8,
+   "currentTradeCount": 2,
+   "confidence": "medium",
+   "warnings": [],
+   "region": "11350 상계동",
+   "exactAreas": [
+    59.67
+   ],
+   "baselineFloorMedian": 8.5,
+   "currentFloorMedian": 13.0,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": false,
+   "directTradeWarning": false,
+   "compositionWarning": false,
+   "exclusiveAreaGroup": 59.7,
+   "calculationVersion": "v1.1",
+   "rank": 14
+  },
+  {
    "apartmentKey": "11320-100",
    "aptSeq": "100",
    "apartmentName": "주공17단지",
@@ -547,7 +579,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 36.2,
    "calculationVersion": "v1.1",
-   "rank": 14
+   "rank": 15
   },
   {
    "apartmentKey": "11530-9",
@@ -579,7 +611,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 44.6,
    "calculationVersion": "v1.1",
-   "rank": 15
+   "rank": 16
   },
   {
    "apartmentKey": "11650-605",
@@ -613,7 +645,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 49.9,
    "calculationVersion": "v1.1",
-   "rank": 16
+   "rank": 17
   },
   {
    "apartmentKey": "11320-99",
@@ -647,7 +679,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 41.3,
    "calculationVersion": "v1.1",
-   "rank": 17
+   "rank": 18
   },
   {
    "apartmentKey": "11530-1",
@@ -679,7 +711,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 59.4,
    "calculationVersion": "v1.1",
-   "rank": 18
+   "rank": 19
   },
   {
    "apartmentKey": "11410-69",
@@ -711,7 +743,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 19
+   "rank": 20
   },
   {
    "apartmentKey": "11560-2267",
@@ -745,7 +777,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 49.0,
    "calculationVersion": "v1.1",
-   "rank": 20
+   "rank": 21
   },
   {
    "apartmentKey": "11620-4347",
@@ -780,7 +812,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 60.0,
    "calculationVersion": "v1.1",
-   "rank": 21
+   "rank": 22
   },
   {
    "apartmentKey": "11350-160",
@@ -812,7 +844,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 39.6,
    "calculationVersion": "v1.1",
-   "rank": 22
+   "rank": 23
   },
   {
    "apartmentKey": "11350-149",
@@ -844,7 +876,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 38.6,
    "calculationVersion": "v1.1",
-   "rank": 23
+   "rank": 24
   },
   {
    "apartmentKey": "11350-10",
@@ -876,7 +908,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 43.4,
    "calculationVersion": "v1.1",
-   "rank": 24
+   "rank": 25
   },
   {
    "apartmentKey": "11440-5606",
@@ -909,38 +941,6 @@
    "directTradeWarning": false,
    "compositionWarning": true,
    "exclusiveAreaGroup": 83.5,
-   "calculationVersion": "v1.1",
-   "rank": 25
-  },
-  {
-   "apartmentKey": "11350-5",
-   "aptSeq": "5",
-   "apartmentName": "상계대림",
-   "sidoCode": "11",
-   "sggCode": "11350",
-   "areaGroup": 59.7,
-   "buildYear": 1989,
-   "referenceMonth": "202610",
-   "baselineMedian": 550000000.0,
-   "currentMedian": 610000000,
-   "riseAmount": 60000000,
-   "riseRate": 10.91,
-   "baselineTradeCount": 8,
-   "currentTradeCount": 3,
-   "confidence": "medium",
-   "warnings": [],
-   "region": "11350 상계동",
-   "exactAreas": [
-    59.67
-   ],
-   "baselineFloorMedian": 8.5,
-   "currentFloorMedian": 12,
-   "baselineDirectTradeCount": 0,
-   "currentDirectTradeCount": 0,
-   "floorMixWarning": false,
-   "directTradeWarning": false,
-   "compositionWarning": false,
-   "exclusiveAreaGroup": 59.7,
    "calculationVersion": "v1.1",
    "rank": 26
   },

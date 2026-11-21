@@ -3,7 +3,7 @@
  "referenceMonth": "202609",
  "status": "stable",
  "validationStatus": "valid",
- "generatedAt": "2026-11-15T07:47:03.730028+09:00",
+ "generatedAt": "2026-11-22T08:39:16.643191+09:00",
  "calculationVersion": "v1.1",
  "schemaVersion": "v1.0",
  "includedSidoCodes": [
@@ -119,12 +119,12 @@
   "51830"
  ],
  "failedSggCodes": [],
- "rawTradeCount": 4301,
- "validTradeCount": 4159,
- "cancelledTradeCount": 142,
+ "rawTradeCount": 4302,
+ "validTradeCount": 4155,
+ "cancelledTradeCount": 147,
  "directTradeCount": 518,
- "candidateGroupCount": 2537,
- "filteredOutGroupCount": 2519,
+ "candidateGroupCount": 2534,
+ "filteredOutGroupCount": 2517,
  "items": [
   {
    "apartmentKey": "44200-21",
@@ -657,40 +657,6 @@
    "rank": 15
   },
   {
-   "apartmentKey": "44200-723",
-   "aptSeq": "723",
-   "apartmentName": "신영한들물빛도시지웰시티센트럴푸르지오3단지",
-   "sidoCode": "44",
-   "sggCode": "44200",
-   "areaGroup": 84.7,
-   "buildYear": 2022,
-   "referenceMonth": "202609",
-   "baselineMedian": 718000000.0,
-   "currentMedian": 750000000,
-   "riseAmount": 32000000,
-   "riseRate": 4.46,
-   "baselineTradeCount": 16,
-   "currentTradeCount": 3,
-   "confidence": "low",
-   "warnings": [
-    "층수 차이(8층 이상 또는 구간 차이)"
-   ],
-   "region": "44200 탕정면 매곡리",
-   "exactAreas": [
-    84.716
-   ],
-   "baselineFloorMedian": 18.5,
-   "currentFloorMedian": 11,
-   "baselineDirectTradeCount": 0,
-   "currentDirectTradeCount": 0,
-   "floorMixWarning": true,
-   "directTradeWarning": false,
-   "compositionWarning": true,
-   "exclusiveAreaGroup": 84.7,
-   "calculationVersion": "v1.1",
-   "rank": 16
-  },
-  {
    "apartmentKey": "43113-426",
    "aptSeq": "426",
    "apartmentName": "신영지웰시티1차",
@@ -720,7 +686,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 99.1,
    "calculationVersion": "v1.1",
-   "rank": 17
+   "rank": 16
   },
   {
    "apartmentKey": "36110-356",
@@ -754,7 +720,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 18
+   "rank": 17
   }
  ]
 }

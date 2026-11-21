@@ -3,7 +3,7 @@
  "referenceMonth": "202610",
  "status": "provisional",
  "validationStatus": "valid",
- "generatedAt": "2026-11-15T07:52:47.383259+09:00",
+ "generatedAt": "2026-11-22T08:45:12.813243+09:00",
  "calculationVersion": "v1.1",
  "schemaVersion": "v1.0",
  "includedSidoCodes": [
@@ -149,12 +149,12 @@
   "52800"
  ],
  "failedSggCodes": [],
- "rawTradeCount": 6008,
- "validTradeCount": 5864,
- "cancelledTradeCount": 144,
- "directTradeCount": 632,
- "candidateGroupCount": 3640,
- "filteredOutGroupCount": 3615,
+ "rawTradeCount": 6116,
+ "validTradeCount": 5957,
+ "cancelledTradeCount": 159,
+ "directTradeCount": 655,
+ "candidateGroupCount": 3691,
+ "filteredOutGroupCount": 3664,
  "items": [
   {
    "apartmentKey": "48170-485",
@@ -829,6 +829,40 @@
    "rank": 19
   },
   {
+   "apartmentKey": "52113-624",
+   "aptSeq": "624",
+   "apartmentName": "송천아이파크6단지",
+   "sidoCode": "52",
+   "sggCode": "52113",
+   "areaGroup": 101.9,
+   "buildYear": 2009,
+   "referenceMonth": "202610",
+   "baselineMedian": 526500000.0,
+   "currentMedian": 571500000.0,
+   "riseAmount": 45000000,
+   "riseRate": 8.55,
+   "baselineTradeCount": 2,
+   "currentTradeCount": 2,
+   "confidence": "low",
+   "warnings": [
+    "비교/기준 기간 거래량 모두 최소 조건(2건)"
+   ],
+   "region": "52113 송천동1가",
+   "exactAreas": [
+    101.8963
+   ],
+   "baselineFloorMedian": 6.0,
+   "currentFloorMedian": 10.5,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": false,
+   "directTradeWarning": false,
+   "compositionWarning": true,
+   "exclusiveAreaGroup": 101.9,
+   "calculationVersion": "v1.1",
+   "rank": 20
+  },
+  {
    "apartmentKey": "52130-548",
    "aptSeq": "548",
    "apartmentName": "군산신역세권우미린센텀오션",
@@ -862,7 +896,41 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 20
+   "rank": 21
+  },
+  {
+   "apartmentKey": "48170-506",
+   "aptSeq": "506",
+   "apartmentName": "엠코타운더프라하",
+   "sidoCode": "48",
+   "sggCode": "48170",
+   "areaGroup": 85.0,
+   "buildYear": 2014,
+   "referenceMonth": "202610",
+   "baselineMedian": 539000000,
+   "currentMedian": 580000000,
+   "riseAmount": 41000000,
+   "riseRate": 7.61,
+   "baselineTradeCount": 5,
+   "currentTradeCount": 3,
+   "confidence": "low",
+   "warnings": [
+    "층수 차이(8층 이상 또는 구간 차이)"
+   ],
+   "region": "48170 평거동",
+   "exactAreas": [
+    84.9651
+   ],
+   "baselineFloorMedian": 26,
+   "currentFloorMedian": 10,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": true,
+   "directTradeWarning": false,
+   "compositionWarning": true,
+   "exclusiveAreaGroup": 85.0,
+   "calculationVersion": "v1.1",
+   "rank": 22
   },
   {
    "apartmentKey": "47130-1157",
@@ -898,7 +966,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.7,
    "calculationVersion": "v1.1",
-   "rank": 21
+   "rank": 23
   },
   {
    "apartmentKey": "52111-602",
@@ -932,41 +1000,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.2,
    "calculationVersion": "v1.1",
-   "rank": 22
-  },
-  {
-   "apartmentKey": "48170-506",
-   "aptSeq": "506",
-   "apartmentName": "엠코타운더프라하",
-   "sidoCode": "48",
-   "sggCode": "48170",
-   "areaGroup": 85.0,
-   "buildYear": 2014,
-   "referenceMonth": "202610",
-   "baselineMedian": 539000000,
-   "currentMedian": 570000000.0,
-   "riseAmount": 31000000,
-   "riseRate": 5.75,
-   "baselineTradeCount": 5,
-   "currentTradeCount": 4,
-   "confidence": "low",
-   "warnings": [
-    "층수 차이(8층 이상 또는 구간 차이)"
-   ],
-   "region": "48170 평거동",
-   "exactAreas": [
-    84.9651
-   ],
-   "baselineFloorMedian": 26,
-   "currentFloorMedian": 8.5,
-   "baselineDirectTradeCount": 0,
-   "currentDirectTradeCount": 0,
-   "floorMixWarning": true,
-   "directTradeWarning": false,
-   "compositionWarning": true,
-   "exclusiveAreaGroup": 85.0,
-   "calculationVersion": "v1.1",
-   "rank": 23
+   "rank": 24
   },
   {
    "apartmentKey": "48127-790",
@@ -1000,7 +1034,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 114.1,
    "calculationVersion": "v1.1",
-   "rank": 24
+   "rank": 25
   },
   {
    "apartmentKey": "52111-654",
@@ -1035,7 +1069,42 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.8,
    "calculationVersion": "v1.1",
-   "rank": 25
+   "rank": 26
+  },
+  {
+   "apartmentKey": "48123-156",
+   "aptSeq": "156",
+   "apartmentName": "노블파크",
+   "sidoCode": "48",
+   "sggCode": "48123",
+   "areaGroup": 76.0,
+   "buildYear": 2007,
+   "referenceMonth": "202610",
+   "baselineMedian": 590000000,
+   "currentMedian": 620000000,
+   "riseAmount": 30000000,
+   "riseRate": 5.08,
+   "baselineTradeCount": 3,
+   "currentTradeCount": 3,
+   "confidence": "low",
+   "warnings": [
+    "서로 다른 세부 전용면적 혼합"
+   ],
+   "region": "48123 반림동",
+   "exactAreas": [
+    75.98,
+    76.03
+   ],
+   "baselineFloorMedian": 13,
+   "currentFloorMedian": 9,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": false,
+   "directTradeWarning": false,
+   "compositionWarning": true,
+   "exclusiveAreaGroup": 76.0,
+   "calculationVersion": "v1.1",
+   "rank": 27
   }
  ]
 }

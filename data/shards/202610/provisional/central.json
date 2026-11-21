@@ -3,7 +3,7 @@
  "referenceMonth": "202610",
  "status": "provisional",
  "validationStatus": "valid",
- "generatedAt": "2026-11-15T07:47:03.730028+09:00",
+ "generatedAt": "2026-11-22T08:39:16.643191+09:00",
  "calculationVersion": "v1.1",
  "schemaVersion": "v1.0",
  "includedSidoCodes": [
@@ -119,12 +119,12 @@
   "51830"
  ],
  "failedSggCodes": [],
- "rawTradeCount": 5208,
- "validTradeCount": 5086,
- "cancelledTradeCount": 122,
- "directTradeCount": 486,
- "candidateGroupCount": 2952,
- "filteredOutGroupCount": 2926,
+ "rawTradeCount": 5299,
+ "validTradeCount": 5154,
+ "cancelledTradeCount": 145,
+ "directTradeCount": 516,
+ "candidateGroupCount": 2983,
+ "filteredOutGroupCount": 2956,
  "items": [
   {
    "apartmentKey": "43130-70",
@@ -305,11 +305,11 @@
    "areaGroup": 84.7,
    "buildYear": 2022,
    "referenceMonth": "202610",
-   "baselineMedian": 719000000.0,
+   "baselineMedian": 718000000,
    "currentMedian": 818500000.0,
-   "riseAmount": 99500000,
-   "riseRate": 13.84,
-   "baselineTradeCount": 12,
+   "riseAmount": 100500000,
+   "riseRate": 14.0,
+   "baselineTradeCount": 11,
    "currentTradeCount": 2,
    "confidence": "low",
    "warnings": [
@@ -319,7 +319,7 @@
    "exactAreas": [
     84.716
    ],
-   "baselineFloorMedian": 11.0,
+   "baselineFloorMedian": 11,
    "currentFloorMedian": 21.0,
    "baselineDirectTradeCount": 0,
    "currentDirectTradeCount": 0,
@@ -892,6 +892,41 @@
    "rank": 22
   },
   {
+   "apartmentKey": "36110-348",
+   "aptSeq": "348",
+   "apartmentName": "새뜸마을5단지(메이저시티)",
+   "sidoCode": "36",
+   "sggCode": "36110",
+   "areaGroup": 85.0,
+   "buildYear": 2017,
+   "referenceMonth": "202610",
+   "baselineMedian": 810000000.0,
+   "currentMedian": 849000000.0,
+   "riseAmount": 39000000,
+   "riseRate": 4.81,
+   "baselineTradeCount": 2,
+   "currentTradeCount": 2,
+   "confidence": "low",
+   "warnings": [
+    "층수 차이(8층 이상 또는 구간 차이)",
+    "비교/기준 기간 거래량 모두 최소 조건(2건)"
+   ],
+   "region": "36110 새롬동",
+   "exactAreas": [
+    84.9645
+   ],
+   "baselineFloorMedian": 4.0,
+   "currentFloorMedian": 8.0,
+   "baselineDirectTradeCount": 0,
+   "currentDirectTradeCount": 0,
+   "floorMixWarning": true,
+   "directTradeWarning": false,
+   "compositionWarning": true,
+   "exclusiveAreaGroup": 85.0,
+   "calculationVersion": "v1.1",
+   "rank": 23
+  },
+  {
    "apartmentKey": "36110-373",
    "aptSeq": "373",
    "apartmentName": "가온마을1단지(힐스테이트)",
@@ -925,7 +960,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 85.0,
    "calculationVersion": "v1.1",
-   "rank": 23
+   "rank": 24
   },
   {
    "apartmentKey": "44200-733",
@@ -957,7 +992,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 102.5,
    "calculationVersion": "v1.1",
-   "rank": 24
+   "rank": 25
   },
   {
    "apartmentKey": "36110-351",
@@ -992,7 +1027,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 98.2,
    "calculationVersion": "v1.1",
-   "rank": 25
+   "rank": 26
   },
   {
    "apartmentKey": "43113-426",
@@ -1024,7 +1059,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 152.7,
    "calculationVersion": "v1.1",
-   "rank": 26
+   "rank": 27
   }
  ]
 }
