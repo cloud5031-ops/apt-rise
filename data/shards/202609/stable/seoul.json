@@ -3,7 +3,7 @@
  "referenceMonth": "202609",
  "status": "stable",
  "validationStatus": "valid",
- "generatedAt": "2026-11-23T09:19:07.922088+09:00",
+ "generatedAt": "2026-11-25T12:03:52.876379+09:00",
  "calculationVersion": "v1.1",
  "schemaVersion": "v1.0",
  "includedSidoCodes": [
@@ -64,12 +64,12 @@
   "11740"
  ],
  "failedSggCodes": [],
- "rawTradeCount": 3292,
- "validTradeCount": 3198,
+ "rawTradeCount": 3295,
+ "validTradeCount": 3201,
  "cancelledTradeCount": 94,
  "directTradeCount": 220,
- "candidateGroupCount": 2285,
- "filteredOutGroupCount": 2134,
+ "candidateGroupCount": 2288,
+ "filteredOutGroupCount": 2138,
  "items": [
   {
    "apartmentKey": "11350-33",
@@ -4991,45 +4991,6 @@
    "rank": 146
   },
   {
-   "apartmentKey": "11230-3346",
-   "aptSeq": "3346",
-   "apartmentName": "청량리역롯데캐슬 SKY-L65",
-   "sidoCode": "11",
-   "sggCode": "11230",
-   "areaGroup": 85.0,
-   "buildYear": 2023,
-   "referenceMonth": "202609",
-   "baselineMedian": 1939000000,
-   "currentMedian": 2000000000.0,
-   "riseAmount": 61000000,
-   "riseRate": 3.15,
-   "baselineTradeCount": 11,
-   "currentTradeCount": 2,
-   "confidence": "low",
-   "warnings": [
-    "층수 차이(8층 이상 또는 구간 차이)",
-    "서로 다른 세부 전용면적 혼합",
-    "직거래 포함 이력 존재"
-   ],
-   "region": "11230 전농동",
-   "exactAreas": [
-    84.975,
-    84.993,
-    84.971,
-    84.981
-   ],
-   "baselineFloorMedian": 17,
-   "currentFloorMedian": 36.0,
-   "baselineDirectTradeCount": 4,
-   "currentDirectTradeCount": 0,
-   "floorMixWarning": true,
-   "directTradeWarning": true,
-   "compositionWarning": true,
-   "exclusiveAreaGroup": 85.0,
-   "calculationVersion": "v1.1",
-   "rank": 147
-  },
-  {
    "apartmentKey": "11290-4786",
    "aptSeq": "4786",
    "apartmentName": "래미안길음센터피스",
@@ -5062,7 +5023,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 60.0,
    "calculationVersion": "v1.1",
-   "rank": 148
+   "rank": 147
   },
   {
    "apartmentKey": "11290-5086",
@@ -5094,7 +5055,7 @@
    "compositionWarning": false,
    "exclusiveAreaGroup": 59.9,
    "calculationVersion": "v1.1",
-   "rank": 149
+   "rank": 148
   },
   {
    "apartmentKey": "11290-20",
@@ -5128,7 +5089,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 84.9,
    "calculationVersion": "v1.1",
-   "rank": 150
+   "rank": 149
   },
   {
    "apartmentKey": "11500-5547",
@@ -5163,7 +5124,7 @@
    "compositionWarning": true,
    "exclusiveAreaGroup": 59.8,
    "calculationVersion": "v1.1",
-   "rank": 151
+   "rank": 150
   }
  ]
 }
